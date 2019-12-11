@@ -108,6 +108,8 @@ exclude_patterns = [
         'repos',
         'requirements.txt',
         'bbsim/README.md',
+        'CODE_OF_CONDUCT.md',
+        '*/CODE_OF_CONDUCT.md',
 ]
 
 # The name of the Pygments (syntax highlighting) style to use.
