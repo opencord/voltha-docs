@@ -3,11 +3,22 @@ VOLTHA Documentation
 
 .. image:: images/VOLTHA_LOGO.png
 
-This documents the VOLTHA project
+Welcome to the VOLTHA project documentation.
 
 .. toctree::
    :maxdepth: 1
-   :caption: VOLTHA Core
+   :caption: Overview
+
+   overview/deploy-physical.rst
+   overview/deploy-virtual.rst
+   overview/development_loop.rst
+   overview/troubleshooting.rst
+   overview/known_issues.rst
+   overview/contribute.rst
+
+.. toctree::
+   :maxdepth: 1
+   :caption: VOLTHA Core (outdated)
 
    voltha-go/README.md
    voltha-go/quickstart.md
@@ -18,13 +29,13 @@ This documents the VOLTHA project
 
 .. toctree::
    :maxdepth: 1
-   :caption: Adapters
+   :caption: Adapters (outdated)
 
    voltha-openolt-adapter/README.md
 
 .. toctree::
    :maxdepth: 1
-   :caption: VOLTHA-protos
+   :caption: VOLTHA-protos (outdated)
 
    voltha-protos/README.md
 
@@ -48,4 +59,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
