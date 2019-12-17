@@ -7,6 +7,17 @@ This documents the VOLTHA project
 
 .. toctree::
    :maxdepth: 1
+   :caption: Overview
+
+   overview/deploy-physical.rst
+   overview/deploy-virtual.rst
+   overview/development_loop.rst
+   overview/troubleshooting.rst
+   overview/known_issues.rst
+   overview/contribute.rst
+
+.. toctree::
+   :maxdepth: 1
    :caption: VOLTHA Core
 
    voltha-go/README.md
@@ -48,4 +59,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
