@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "80d81134_d63a168a",
+        "filename": "voltha-dev.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2019-12-17T21:27:38Z",
+      "side": 1,
+      "message": "in the `voltha-go` repo",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 25
+      },
+      "revId": "aa7dbe59367bf22d970fee3c90911f06e2a3f409",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "09a8183f_7165e999",
+        "filename": "voltha-dev.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2019-12-17T21:27:38Z",
+      "side": 1,
+      "message": "I agree that a private docker registry hides the complexity for local/remote dev but since most devs like to have local dev environment you can avoid this by \n- building the image (make docker-build)\n- pushing the image to kind (kind load docker-image \u003cimage_tag\u003e\n- deploying with DEPLOY_K8S\u003dno (thanks @teone) and then",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 34
+      },
+      "revId": "aa7dbe59367bf22d970fee3c90911f06e2a3f409",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f81903b_9622cff4",
+        "filename": "voltha-dev.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2019-12-17T21:27:38Z",
+      "side": 1,
+      "message": "i think it\u0027s best to specify that this is under the kind-voltha repo. At a firt read i was expecting it to be in the voltha repo.",
+      "range": {
+        "startLine": 28,
+        "startChar": 22,
+        "endLine": 28,
+        "endChar": 41
+      },
+      "revId": "aa7dbe59367bf22d970fee3c90911f06e2a3f409",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c339dda6_68ba3f0f",
+        "filename": "voltha-dev.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2019-12-17T21:27:38Z",
+      "side": 1,
+      "message": "in the kind-voltha repo",
+      "range": {
+        "startLine": 28,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 14
+      },
+      "revId": "aa7dbe59367bf22d970fee3c90911f06e2a3f409",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "62310ef8_fa5379f9",
+        "filename": "voltha-dev.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2019-12-17T21:27:38Z",
+      "side": 1,
+      "message": "question, why don\u0027t we default this to latest ? if we always build the image with latest and we push the latest version on he web this step can be skipped.",
+      "range": {
+        "startLine": 42,
+        "startChar": 8,
+        "endLine": 42,
+        "endChar": 16
+      },
+      "revId": "aa7dbe59367bf22d970fee3c90911f06e2a3f409",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
