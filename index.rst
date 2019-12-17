@@ -11,6 +11,7 @@ This documents the VOLTHA project
 
    voltha-go/README.md
    voltha-go/quickstart.md
+   voltha-dev.rst
    voltha-go/BUILD.md
    voltha-go/python/adapters/BUILD_ENV.md
    voltha-go/python/adapters/README.md
@@ -48,4 +49,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
