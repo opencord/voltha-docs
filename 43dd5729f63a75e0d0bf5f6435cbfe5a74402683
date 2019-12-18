@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b15f4b90_cec17018",
+        "filename": "index.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1000068
+      },
+      "writtenOn": "2019-12-18T00:57:24Z",
+      "side": 1,
+      "message": "Welcome to VOLTHA project documentation.",
+      "revId": "43dd5729f63a75e0d0bf5f6435cbfe5a74402683",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "01a3ae6e_7d25a761",
+        "filename": "overview/contribute.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000068
+      },
+      "writtenOn": "2019-12-18T00:57:24Z",
+      "side": 1,
+      "message": "missing 3, and better to point to brigade dashboards",
+      "revId": "43dd5729f63a75e0d0bf5f6435cbfe5a74402683",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
