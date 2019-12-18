@@ -17,6 +17,10 @@ To check the formatting of documentation, run ``make lint``. This will be done
 in Jenkins to validate the documentation, so please do this before you create a
 patchset.
 
+To check spelling, run ``make spelling``. If there are additional words that
+are correctly spelled but not in the dictionary (acronyms, trademarks, etc.)
+please add them to the ``dict.txt`` file.
+
 Writing Docs
 ------------
 

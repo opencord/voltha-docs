@@ -11,7 +11,7 @@ BUILDDIR     ?= _build
 
 # Put it first so that "make" without argument is like "make help".
 help: doc_venv
-	source ./doc_venv/bin/activate ;\
+	source $</bin/activate ; set -u ;\
 	$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 .PHONY: help test lint reload Makefile
@@ -19,25 +19,24 @@ help: doc_venv
 # Create the virtualenv with all the tools installed
 doc_venv:
 	virtualenv doc_venv ;\
-	source ./doc_venv/bin/activate ;\
+	source $@/bin/activate ;\
 	pip install livereload ;\
 	pip install -r requirements.txt
 
 # automatically reload changes in browser as they're made
 reload: doc_venv
-	source ./doc_venv/bin/activate ;\
-	set -u ;\
+	source $</bin/activate ; set -u ;\
 	sphinx-reload $(SOURCEDIR)
 
 # lint and link verification. linkcheck is part of sphinx
 test: lint linkcheck
 
-lint: rst-lint
+lint: doc8
 
-rst-lint: doc_venv | $(OTHER_REPO_DOCS)
-	source ./doc_venv/bin/activate ;\
-	set -u ;\
-	rstcheck -r $$(find . -name \*.rst ! -path "*doc_venv*" ! -path "./repos/*" ! -path "*vendor*")
+doc8: doc_venv | $(OTHER_REPO_DOCS)
+	source $</bin/activate ; set -u ;\
+	doc8 --max-line-length 119 \
+	     $$(find . -name \*.rst ! -path "*doc_venv*" ! -path "*vendor*")
 
 # markdown linting
 #  currently not enabled, should be added to lint target
@@ -105,7 +104,7 @@ freeze: repos
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
-%: Makefile doc_venv | $(OTHER_REPO_DOCS)
-	source ./doc_venv/bin/activate ;\
+%: doc_venv Makefile | $(OTHER_REPO_DOCS)
+	source $</bin/activate ; set -u ;\
 	$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 

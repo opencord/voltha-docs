@@ -60,6 +60,7 @@ extensions = [
     'sphinxcontrib.packetdiag',
     'sphinxcontrib.rackdiag',
     'sphinxcontrib.seqdiag',
+    'sphinxcontrib.spelling',
 #    'sphinxcontrib.golangdomain',
 #    'autoapi.extension',
 ]
@@ -75,6 +76,9 @@ extensions = [
 #       'voltha-go/rw_core/graph',
 #       'voltha-go/rw_core/utils',
 #   ]
+
+# Text files with lists of words that shouldn't fail the spellchecker:
+spelling_word_list_filename=['dict.txt', ]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

@@ -10,6 +10,7 @@ Welcome to the VOLTHA project documentation.
    :caption: Overview
 
    overview/deploy-physical.rst
+   overview/physical_layout.rst
    overview/deploy-virtual.rst
    overview/development_loop.rst
    overview/troubleshooting.rst
@@ -23,9 +24,6 @@ Welcome to the VOLTHA project documentation.
    voltha-go/README.md
    voltha-go/quickstart.md
    voltha-go/BUILD.md
-   voltha-go/python/adapters/BUILD_ENV.md
-   voltha-go/python/adapters/README.md
-   voltha-go/python/cli/docs/README.md
 
 .. toctree::
    :maxdepth: 1

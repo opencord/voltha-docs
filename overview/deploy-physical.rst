@@ -6,7 +6,8 @@ Deploy a physical VOLTHA POD
 Quickstart
 ----------
 
-The quickstart assumes you POD is already correctly cabled, if not you can refer to :ref:`Physical_Layout`
+The quickstart assumes you POD is already correctly cabled, if not you can
+refer to :ref:`Physical_Layout`
 
 Requires:
 
@@ -14,7 +15,8 @@ Requires:
 - `kind-voltha <https://github.com/ciena/kind-voltha>`_ cloned on your machine
 
 
-Enter the ``kind-voltha`` directory and execute this command (``kubectl`` must be installed and poiting to your cluster):
+Enter the ``kind-voltha`` directory and execute this command (``kubectl`` must
+be installed and pointing to your cluster):
 
 .. code:: bash
 
@@ -26,13 +28,13 @@ and `configure ONOS accordingly <https://github.com/opencord/aaa>`_.
 TLDR;
 -----
 
-Below are the complete steps to install a physical cluster. It assumes ``kubectl`` and ``helm`` commands are already
-available.
+Below are the complete steps to install a physical cluster. It assumes
+``kubectl`` and ``helm`` commands are already available.
 
 Configure Helm
 --------------
 
-Helm provide a capabilty to install and manage Kubernetes applications.
+Helm provide a capability to install and manage Kubernetes applications.
 VOLTHA’s default deployment mechanism utilized Helm. Before Helm can be
 used to deploy VOLTHA it must be initialized and the repositories that
 container the artifacts required to deploy VOLTHA must be added to Helm.
@@ -52,7 +54,7 @@ Install EtcdOperator
 ETCD Operator is a utility that allows applications to create and manage
 ETCD key/value clusters as Kubernetes resources. VOLTHA utilizes this
 utility to create its key/value store. *NOTE: it is not required that
-VOLTHA create its own datastore as VOLTHA can utilize and existing
+VOLTHA create its own datastore as VOLTHA can utilize an existing
 datastore, but for this example VOLTHA will creates its own datastore*
 
 .. code:: bash
@@ -62,7 +64,7 @@ datastore, but for this example VOLTHA will creates its own datastore*
 Wait for operator pods
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Before continuing the Kubernetes pods associated with ETCD Operator must
+Before continuing, the Kubernetes pods associated with ETCD Operator must
 be in the ``Running`` state.
 
 .. code:: bash
@@ -85,21 +87,20 @@ It is not just VOLTHA
 ---------------------
 
 To demonstrate the capability of VOLTHA other *partner* applications are
-required, such as ONOS. The followins sections describe how to install
+required, such as ONOS. The following sections describe how to install
 and configure these *partner* applications.
 
-*NOTE: It is important to start ONOS before VOLTHA as if they are
-started in the reverse order ofagent sometimes does not connect to the
-SDN
+*NOTE: It is important to start ONOS before VOLTHA as if they are started in
+the reverse order the ``ofagent`` sometimes does not connect to the SDN
 controller*\ `VOL-1764 <https://jira.opencord.org/browse/VOL-1764>`__.
 
 ONOS (OpenFlow Controller)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-VOLTHA exposes an OLT and its connected ONUs as an OpenFlow switch. To
-control that virtual OpenFlow switch an OpenFlow controller is required.
-For most VOLTHA deployments that controller is ONOS with a set of ONOS
-applications installed. To install ONOS use the following Helm command:
+VOLTHA exposes an OLT and its connected ONUs as an OpenFlow switch. To control
+that virtual OpenFlow switch an OpenFlow controller is required.  For most
+VOLTHA deployments that controller is ONOS, with a set of ONOS applications
+installed. To install ONOS use the following Helm command:
 
 .. code:: bash
 
@@ -146,7 +147,7 @@ SADIS Configuration
 
 The ONOS applications leverage the *Subscriber and Device Information
 Store (SADIS)* when processing EAPOL and DHCP packets from VOLTHA
-controlled devices. In order for VOLTHA to function propperly SADIS
+controlled devices. In order for VOLTHA to function properly, SADIS
 entries must be configured into ONOS.
 
 The repository contains two example SADIS configuration that can be used
@@ -179,7 +180,7 @@ core components of VOLTHA based on the desired deployment type.
        --namespace voltha --name voltha onf/voltha
 
 During the install of the core VOLTHA components some containers may
-“crash” or restart. This is normal as there are dependencies, such as
+"crash" or restart. This is normal as there are dependencies, such as
 the read/write cores cannot start until the ETCD cluster is established
 and so they crash until the ETCD cluster is operational. Eventually all
 the containers should be in a ``Running`` state as queried by the
@@ -225,7 +226,7 @@ as well as the adapters for an OpenOLT and OpenONU device.
 Exposing VOLTHA Services
 ------------------------
 
-At this point VOLTHA is deployed and from within the Kubernetes cluster
+At this point VOLTHA is deployed, and from within the Kubernetes cluster
 the VOLTHA services can be reached. However, from outside the Kubernetes
 cluster the services cannot be reached.
 
@@ -244,7 +245,7 @@ Install FreeRADIUS Service
 Configure ``voltctl`` to Connect to VOLTHA
 ------------------------------------------
 
-In order for ``voltctl`` to connect to the VOLTHA instance deplpoyed in
+In order for ``voltctl`` to connect to the VOLTHA instance deployed in
 the Kubernetes cluster it must know which IP address and port to use.
 This configuration can be persisted to a local config file using the
 following commands.
@@ -255,15 +256,11 @@ following commands.
    voltctl -a v2 -s localhost:55555 config > $HOME/.volt/config
 
 To test the connectivity you can query the version of the VOLTHA client
-and server.
-
-.. code:: bash
+and server::
 
    voltctl version
 
-The output should be similar to the following
-
-.. code:: bash
+The output should be similar to the following::
 
    Client:
     Version        unknown-version

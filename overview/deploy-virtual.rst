@@ -26,7 +26,7 @@ Create Kubernetes Cluster
 -------------------------
 
 Kind provides a command line control tool to easily create Kubernetes
-clusters using just a basic Docker envionrment. The following commands
+clusters using just a basic Docker environment. The following commands
 will create the desired deployment of Kubernetes and then configure your
 local copy of ``kubectl`` to connect to this cluster.
 
@@ -39,7 +39,7 @@ local copy of ``kubectl`` to connect to this cluster.
 Initialize Helm
 ---------------
 
-Helm provide a capabilty to install and manage Kubernetes applications.
+Helm provide a capability to install and manage Kubernetes applications.
 VOLTHA’s default deployment mechanism utilized Helm. Before Helm can be
 used to deploy VOLTHA it must be initialized and the repositories that
 container the artifacts required to deploy VOLTHA must be added to Helm.
@@ -58,7 +58,8 @@ container the artifacts required to deploy VOLTHA must be added to Helm.
    kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
    kubectl patch deploy --namespace kube-system tiller-deploy -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}'
 
-From this point follow the :ref:`physical VOLTHA POD installation instructions <installation_steps>`. Come back here once done.
+From this point follow the :ref:`physical VOLTHA POD installation instructions
+<installation_steps>`. Come back here once done.
 
 Install BBSIM (Broad Band OLT/ONU Simulator)
 --------------------------------------------
