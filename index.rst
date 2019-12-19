@@ -16,6 +16,7 @@ Welcome to the VOLTHA project documentation.
    overview/troubleshooting.rst
    overview/known_issues.rst
    overview/contribute.rst
+   overview/release-notes.rst
 
 .. toctree::
    :maxdepth: 1
