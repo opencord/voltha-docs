@@ -10,11 +10,10 @@ Welcome to the VOLTHA project documentation.
    :caption: Overview
 
    overview/deploy-physical.rst
-   overview/physical_layout.rst
    overview/deploy-virtual.rst
    overview/development_loop.rst
+   overview/release-notes.rst
    overview/troubleshooting.rst
-   overview/known_issues.rst
    overview/contribute.rst
 
 .. toctree::
