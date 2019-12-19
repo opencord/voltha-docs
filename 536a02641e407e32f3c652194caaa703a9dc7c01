@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f887ed87_e3c19b84",
+        "filename": "VERSION",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2019-12-19T05:33:30Z",
+      "side": 1,
+      "message": "This is versioning like other code repos (only one tagged version, doesn\u0027t move), not like the other docs repos (on a branch).    I think we might want to reconsider how this works before we publish a 2.2.0 tag.",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 5
+      },
+      "revId": "536a02641e407e32f3c652194caaa703a9dc7c01",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
