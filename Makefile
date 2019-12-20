@@ -80,17 +80,17 @@ $(CHECKOUT_REPOS): | repos
 	  then git clone $(REPO_HOST)/$(@F) $@ ;\
 	fi
 
-# link subdirectories (if applicable) into main docs dir, then checkout ref if
-# not under test
+# checkout correct ref if not under test, then link subdirectories into main
+# docs dir
 $(OTHER_REPO_DOCS): | $(CHECKOUT_REPOS)
-	GIT_SUBDIR=`grep '^$@ ' git_refs | awk '{print $$2}'` ;\
-	ln -s repos/$(@)$$GIT_SUBDIR $@ ;\
 	if [ "$(SKIP_CHECKOUT)" != "$@" ] ;\
 	  then GIT_REF=`grep '^$@ ' git_refs | awk '{print $$3}'` ;\
-	  pushd $@ ;\
+	  pushd repos/$@ ;\
 	    git checkout $$GIT_REF ;\
 	  popd ;\
 	fi
+	GIT_SUBDIR=`grep '^$@ ' git_refs | awk '{print $$2}'` ;\
+	ln -s repos/$(@)$$GIT_SUBDIR $@ ;\
 
 # generate a list of git checksums suitable for updating git_refs
 freeze: repos
