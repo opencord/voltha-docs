@@ -80,6 +80,12 @@ extensions = [
 # Text files with lists of words that shouldn't fail the spellchecker:
 spelling_word_list_filename=['dict.txt', ]
 
+# SCVersioning prep target commands, run in each target directory
+scv_prep_commands = [
+    'ln -sf _root_/repos _target_/repos',
+    'make prep',
+]
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
