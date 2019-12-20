@@ -8,14 +8,22 @@ Welcome to the VOLTHA project documentation.
 .. toctree::
    :maxdepth: 1
    :caption: Overview
+   :glob:
 
-   overview/deploy-physical.rst
-   overview/physical_layout.rst
-   overview/deploy-virtual.rst
-   overview/development_loop.rst
-   overview/troubleshooting.rst
-   overview/known_issues.rst
-   overview/contribute.rst
+   overview/*
+
+.. toctree::
+   :maxdepth: 2
+   :caption: BBSim
+
+   bbsim/docs/source/index.rst
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Release Notes
+   :glob:
+
+   release_notes/*
 
 .. toctree::
    :maxdepth: 1
@@ -36,12 +44,6 @@ Welcome to the VOLTHA project documentation.
    :caption: VOLTHA-protos (outdated)
 
    voltha-protos/README.md
-
-.. toctree::
-   :maxdepth: 2
-   :caption: BBSim
-
-   bbsim/docs/source/index.rst
 
 .. toctree::
    :maxdepth: 1
