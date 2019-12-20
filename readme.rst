@@ -32,6 +32,17 @@ but only .rst files can use certain features like embedded diagrams.
 reStructuredText Primer:
 http://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html
 
+Creating new Versions of Docs
+-----------------------------
+
+To change the version shown on the built site, change the ``versions`` variable in ``conf.py``.
+
+There is a ``make versioned`` target which will build all versions published on
+the remote to ``_build``.  Note that we're using a fork of the upstream version
+of the ``sphinxcontrib-versioning`` plugin, as the original isn't actively
+maintianed, and we needed it to be able to handle the symlink checkouts of
+other repos that are incorporated.
+
 Creating Diagrams
 -----------------
 
