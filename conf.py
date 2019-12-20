@@ -16,12 +16,6 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-import os
-
-def get_version():
-    with open("VERSION") as f:
-        return f.read().strip()
-
 # -- Project information -----------------------------------------------------
 
 project = u'VOLTHA Docs'
@@ -29,10 +23,10 @@ copyright = u'2019, VOLTHA Contributors'
 author = u'VOLTHA Contributors'
 
 # The short X.Y version
-version = get_version()
+version = "2.2.0-dev"
 
 # The full version, including alpha/beta/rc tags
-release = get_version()
+release = version
 
 # -- General configuration ---------------------------------------------------
 
@@ -79,6 +73,12 @@ extensions = [
 
 # Text files with lists of words that shouldn't fail the spellchecker:
 spelling_word_list_filename=['dict.txt', ]
+
+# SCVersioning prep target commands, run in each target directory
+scv_prep_commands = [
+    'ln -sf _root_/repos _target_/repos',
+    'make prep',
+]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
