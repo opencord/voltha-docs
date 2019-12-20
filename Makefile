@@ -85,9 +85,7 @@ $(CHECKOUT_REPOS): | repos
 $(OTHER_REPO_DOCS): | $(CHECKOUT_REPOS)
 	if [ "$(SKIP_CHECKOUT)" != "$@" ] ;\
 	  then GIT_REF=`grep '^$@ ' git_refs | awk '{print $$3}'` ;\
-	  pushd repos/$@ ;\
-	    git checkout $$GIT_REF ;\
-	  popd ;\
+	  cd "repos/$@" && git checkout $$GIT_REF ;\
 	fi
 	GIT_SUBDIR=`grep '^$@ ' git_refs | awk '{print $$2}'` ;\
 	ln -s repos/$(@)$$GIT_SUBDIR $@ ;\
@@ -96,10 +94,10 @@ $(OTHER_REPO_DOCS): | $(CHECKOUT_REPOS)
 freeze: repos
 	@for repo in $(OTHER_REPO_DOCS) ; do \
 	  GIT_SUBDIR=`grep "^$$repo " git_refs | awk '{print $$2}'` ;\
-	  pushd "repos/$$repo" > /dev/null ;\
+	  cd "repos/$$repo" > /dev/null ;\
 	    HEAD_SHA=`git rev-parse HEAD` ;\
 	    printf "%-24s %-8s %-40s\n" $$repo $$GIT_SUBDIR $$HEAD_SHA ;\
-	  popd ;\
+	  cd ../.. ;\
 	done
 
 # use sphinxcontrib-versioning to make a versioned copy of the
