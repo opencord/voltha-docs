@@ -14,5 +14,9 @@ sphinxcontrib-nwdiag~=0.9.5
 sphinxcontrib-openapi~=0.5.0
 sphinxcontrib-seqdiag~=0.8.5
 sphinxcontrib-spelling~=4.2.1
+# using a fork as the main branch is broken in newer sphinx, per:
+# https://github.com/sphinx-contrib/sphinxcontrib-versioning/issues/58
+# also added functionality to support working with other repos
+git+https://github.com/zdw/sphinxcontrib-versioning@0998d870b2791eb6343c98e98d6680c1e727daee
 # sphinx-autoapi~=1.2.1
 # sphinxcontrib-golangdomain
