@@ -28,6 +28,7 @@ aggregator
 amd
 app
 apps
+asfvolt
 auth
 autocomplete
 backhaul
@@ -70,6 +71,7 @@ openonu
 oper
 org
 patchset
+patchsets
 poweron
 ppa
 preprovision
@@ -86,6 +88,7 @@ rw
 sadis
 signaldegrade
 src
+symlink
 toolset
 vendored
 virtualenv
@@ -94,5 +97,7 @@ voltctl
 voltha
 wiki
 wireshark
+workflow
+Workflows
 xDSL
 zookeeper

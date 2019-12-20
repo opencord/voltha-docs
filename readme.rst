@@ -39,8 +39,8 @@ To change the version shown on the built site, change the ``versions`` variable 
 
 There is a ``make versioned`` target which will build all versions published on
 the remote to ``_build``.  Note that we're using a fork of the upstream version
-of the ``sphinxcontrib-versioning`` plugin, as the original isn't actively
-maintianed, and we needed it to be able to handle the symlink checkouts of
+of the ``sphinxcontrib-versioning`` module, as the original isn't actively
+maintained, and we needed it to be able to handle the symlink checkouts of
 other repos that are incorporated.
 
 Creating Diagrams
