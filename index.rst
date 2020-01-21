@@ -13,6 +13,13 @@ Welcome to the VOLTHA project documentation.
    overview/*
 
 .. toctree::
+   :maxdepth: 1
+   :caption: Voltctl
+   :glob:
+
+   voltctl
+
+.. toctree::
    :maxdepth: 2
    :caption: BBSim
 
