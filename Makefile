@@ -55,7 +55,7 @@ md-lint: | $(OTHER_REPO_DOCS)
 
 # clean up
 clean:
-	rm -rf $(BUILDDIR) $(OTHER_REPO_DOCS)
+	rm -rf $(BUILDDIR) $(OTHER_REPO_DOCS) repos/voltha-system-tests _static/voltha-system-tests
 
 clean-all: clean
 	rm -rf doc_venv repos
@@ -112,7 +112,16 @@ prep: | $(OTHER_REPO_DOCS)
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
-%: doc_venv Makefile | $(OTHER_REPO_DOCS)
+%: doc_venv Makefile | $(OTHER_REPO_DOCS) voltha-system-tests-docs
 	source $</bin/activate ; set -u ;\
 	$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
+repos/voltha-system-tests: | repos
+	if [ ! -d '$@' ] ;\
+	  then git clone $(REPO_HOST)/$(@F) $@ ;\
+	fi
+
+voltha-system-tests-docs: | repos/voltha-system-tests
+	make -C repos/voltha-system-tests gendocs
+	mkdir -p _static/voltha-system-tests
+	cp -r repos/voltha-system-tests/gendocs/* _static/voltha-system-tests

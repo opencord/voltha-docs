@@ -34,6 +34,12 @@ Welcome to the VOLTHA project documentation.
 
 .. toctree::
    :maxdepth: 1
+   :caption: Testing
+
+   testing/index.rst
+
+.. toctree::
+   :maxdepth: 1
    :caption: VOLTHA Core (outdated)
 
    voltha-go/README.md
