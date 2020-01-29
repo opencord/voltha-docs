@@ -40,7 +40,7 @@ lint: doc8
 doc8: doc_venv | $(OTHER_REPO_DOCS)
 	source $</bin/activate ; set -u ;\
 	doc8 --max-line-length 119 \
-	     $$(find . -name \*.rst ! -path "*doc_venv*" ! -path "*vendor*")
+	     $$(find . -name \*.rst ! -path "*doc_venv*" ! -path "*vendor*" ! -path "*repos/voltha-system-tests/vst_venv/*")
 
 # markdown linting
 #  currently not enabled, should be added to lint target
@@ -55,7 +55,7 @@ md-lint: | $(OTHER_REPO_DOCS)
 
 # clean up
 clean:
-	rm -rf $(BUILDDIR) $(OTHER_REPO_DOCS)
+	rm -rf $(BUILDDIR) $(OTHER_REPO_DOCS) repos/voltha-system-tests _static/voltha-system-tests
 
 clean-all: clean
 	rm -rf doc_venv repos
@@ -110,9 +110,22 @@ versioned: doc_venv Makefile | $(OTHER_REPO_DOCS)
 # building multiple versions
 prep: | $(OTHER_REPO_DOCS)
 
+html: doc_venv Makefile | $(OTHER_REPO_DOCS) _static/voltha-system-tests
+	source $</bin/activate ; set -u ;\
+	$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: doc_venv Makefile | $(OTHER_REPO_DOCS)
 	source $</bin/activate ; set -u ;\
 	$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
+repos/voltha-system-tests: | repos
+	if [ ! -d '$@' ] ;\
+	  then git clone $(REPO_HOST)/$(@F) $@ ;\
+	fi
+
+_static/voltha-system-tests: repos/voltha-system-tests
+	make -C $< gendocs
+	mkdir -p $@
+	cp -r $</gendocs/* $@
