@@ -109,6 +109,7 @@ exclude_patterns = [
         'Thumbs.db',
         '_build',
         'doc_venv',
+        'voltha-system-tests/vst_venv',
         'repos',
         'requirements.txt',
         'bbsim/README.md',
@@ -244,6 +245,12 @@ nwdiag_fontpath = [
 # -- Options for todo extension ----------------------------------------------
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
+
+# -- Options for linkcheck ---------------------------------------------------
+# The link checker strips off .md from links and then complains
+linkcheck_ignore = [r'https://github.com/ciena/kind-voltha/blob/master/README',
+                    r'https://github.com/opencord/voltctl/blob/master/LICENSE',
+                    r'https://github.com/ciena/kind-voltha#voltha-up-configuration-options']
 
 # -- Configure recommonmark to use AutoStructify -----------------------------
 # Docs: https://recommonmark.readthedocs.io/en/latest/auto_structify.html

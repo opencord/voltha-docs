@@ -11,6 +11,7 @@ voltha-openolt-adapter
 voltha-openonu-adapter
 voltha-protos
 voltha-system-tests
+voltctl
 
 # IDEs
 .idea
