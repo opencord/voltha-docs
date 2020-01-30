@@ -11,7 +11,7 @@ BUILDDIR     ?= _build
 
 # Other repos with documentation to include.
 # edit the `git_refs` file with the commit/tag/branch that you want to use
-OTHER_REPO_DOCS ?= bbsim voltha-go voltha-openolt-adapter voltha-openonu-adapter voltha-protos
+OTHER_REPO_DOCS ?= bbsim voltha-go voltha-openolt-adapter voltha-openonu-adapter voltha-protos voltctl voltha-system-tests
 
 # Put it first so that "make" without argument is like "make help".
 help: doc_venv
@@ -55,7 +55,7 @@ md-lint: | $(OTHER_REPO_DOCS)
 
 # clean up
 clean:
-	rm -rf $(BUILDDIR) $(OTHER_REPO_DOCS) repos/voltha-system-tests _static/voltha-system-tests
+	rm -rf $(BUILDDIR) $(OTHER_REPO_DOCS) _static/voltha-system-tests
 
 clean-all: clean
 	rm -rf doc_venv repos
@@ -120,12 +120,8 @@ html: doc_venv Makefile | $(OTHER_REPO_DOCS) _static/voltha-system-tests
 	source $</bin/activate ; set -u ;\
 	$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-repos/voltha-system-tests: | repos
-	if [ ! -d '$@' ] ;\
-	  then git clone $(REPO_HOST)/$(@F) $@ ;\
-	fi
-
-_static/voltha-system-tests: repos/voltha-system-tests
-	make -C $< gendocs
+# Build Robot documentation in voltha-system-tests and copy it into _static.
+_static/voltha-system-tests: | $(OTHER_REPO_DOCS)
+	make -C voltha-system-tests gendocs
 	mkdir -p $@
-	cp -r $</gendocs/* $@
+	cp -r voltha-system-tests/gendocs/* $@

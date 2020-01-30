@@ -109,6 +109,7 @@ exclude_patterns = [
         'Thumbs.db',
         '_build',
         'doc_venv',
+        'voltha-system-tests/vst_venv',
         'repos',
         'requirements.txt',
         'bbsim/README.md',
