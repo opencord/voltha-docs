@@ -17,7 +17,7 @@ Welcome to the VOLTHA project documentation.
    :caption: Voltctl
    :glob:
 
-   voltctl
+   voltctl/README.md
 
 .. toctree::
    :maxdepth: 2
@@ -37,6 +37,7 @@ Welcome to the VOLTHA project documentation.
    :caption: Testing
 
    testing/index.rst
+   voltha-system-tests/README.md
 
 .. toctree::
    :maxdepth: 1
