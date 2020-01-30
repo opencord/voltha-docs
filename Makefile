@@ -11,7 +11,7 @@ BUILDDIR     ?= _build
 
 # Other repos with documentation to include.
 # edit the `git_refs` file with the commit/tag/branch that you want to use
-OTHER_REPO_DOCS ?= bbsim voltha-go voltha-openolt-adapter voltha-openonu-adapter voltha-protos
+OTHER_REPO_DOCS ?= bbsim voltha-go voltha-openolt-adapter voltha-openonu-adapter voltha-protos voltctl voltha-system-tests
 
 # Put it first so that "make" without argument is like "make help".
 help: doc_venv
