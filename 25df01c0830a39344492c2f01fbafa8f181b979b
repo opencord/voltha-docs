@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "351fdfbe_4581022e",
+        "filename": "Makefile",
+        "patchSetId": 4
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2020-01-31T18:13:59Z",
+      "side": 1,
+      "message": "This should come before the `%:` target, which is a catch-all (probably near `(OTHER_REPO_DOCS):`",
+      "range": {
+        "startLine": 123,
+        "startChar": 0,
+        "endLine": 127,
+        "endChar": 39
+      },
+      "revId": "25df01c0830a39344492c2f01fbafa8f181b979b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b32bc442_c29afd8b",
+        "filename": "conf.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 250,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2020-01-31T18:13:59Z",
+      "side": 1,
+      "message": "Do we know why this happens?   Would be nice  not to have an ever-growing list of exceptions here.",
+      "range": {
+        "startLine": 249,
+        "startChar": 78,
+        "endLine": 250,
+        "endChar": 63
+      },
+      "revId": "25df01c0830a39344492c2f01fbafa8f181b979b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
