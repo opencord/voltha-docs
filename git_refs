@@ -13,6 +13,7 @@ _REPO NAME_             _DIR_    _REF_
 
 pyvoltha                /        master
 bbsim                   /        master
+cord-tester             /        master
 voltha-go               /        master
 voltha-openolt-adapter  /        master
 voltha-openonu-adapter  /        master
