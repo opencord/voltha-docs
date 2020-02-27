@@ -11,7 +11,7 @@ BUILDDIR     ?= _build
 
 # Other repos with documentation to include.
 # edit the `git_refs` file with the commit/tag/branch that you want to use
-OTHER_REPO_DOCS ?= bbsim voltha-go voltha-openolt-adapter voltha-openonu-adapter voltha-protos voltctl voltha-system-tests
+OTHER_REPO_DOCS ?= bbsim voltha-go voltha-openolt-adapter voltha-openonu-adapter voltha-protos voltctl voltha-system-tests cord-tester
 
 # Put it first so that "make" without argument is like "make help".
 help: doc_venv
@@ -40,7 +40,7 @@ lint: doc8
 doc8: doc_venv | $(OTHER_REPO_DOCS)
 	source $</bin/activate ; set -u ;\
 	doc8 --max-line-length 119 \
-	     $$(find . -name \*.rst ! -path "*doc_venv*" ! -path "*vendor*" ! -path "*repos/voltha-system-tests/vst_venv/*")
+	     $$(find . -name \*.rst ! -path "*doc_venv*" ! -path "*vendor*" ! -path "*repos/voltha-system-tests/vst_venv/*" ! -path "*repos/cord-tester/venv_cord/*")
 
 # markdown linting
 #  currently not enabled, should be added to lint target
@@ -55,7 +55,7 @@ md-lint: | $(OTHER_REPO_DOCS)
 
 # clean up
 clean:
-	rm -rf $(BUILDDIR) $(OTHER_REPO_DOCS) _static/voltha-system-tests
+	rm -rf $(BUILDDIR) $(OTHER_REPO_DOCS) _static/voltha-system-tests _static/cord-tester
 
 clean-all: clean
 	rm -rf doc_venv repos
@@ -96,6 +96,12 @@ _static/voltha-system-tests: | $(OTHER_REPO_DOCS)
 	mkdir -p $@
 	cp -r voltha-system-tests/gendocs/* $@
 
+# Build Robot documentation in cord-tester and copy it into _static.
+_static/cord-tester: | $(OTHER_REPO_DOCS)
+	make -C cord-tester gendocs
+	mkdir -p $@
+	cp -r cord-tester/gendocs/* $@
+
 # generate a list of git checksums suitable for updating git_refs
 freeze: repos
 	@for repo in $(OTHER_REPO_DOCS) ; do \
@@ -116,7 +122,7 @@ versioned: doc_venv Makefile | $(OTHER_REPO_DOCS)
 # building multiple versions
 prep: | $(OTHER_REPO_DOCS)
 
-html: doc_venv Makefile | $(OTHER_REPO_DOCS) _static/voltha-system-tests
+html: doc_venv Makefile | $(OTHER_REPO_DOCS) _static/voltha-system-tests _static/cord-tester
 	source $</bin/activate ; set -u ;\
 	$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
