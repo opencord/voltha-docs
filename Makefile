@@ -22,7 +22,7 @@ help: doc_venv
 
 # Create the virtualenv with all the tools installed
 doc_venv:
-	virtualenv doc_venv ;\
+	virtualenv -p python3 doc_venv ;\
 	source $@/bin/activate ;\
 	pip install livereload ;\
 	pip install -r requirements.txt
@@ -80,7 +80,7 @@ $(CHECKOUT_REPOS): | repos
 	  then git clone $(REPO_HOST)/$(@F) $@ ;\
 	fi
 
-# checkout correct ref if not under test, then link subdirectories into main
+# checkout correct ref if not under test, then copy subdirectories into main
 # docs dir
 $(OTHER_REPO_DOCS): | $(CHECKOUT_REPOS)
 	if [ "$(SKIP_CHECKOUT)" != "$@" ] ;\
@@ -88,7 +88,7 @@ $(OTHER_REPO_DOCS): | $(CHECKOUT_REPOS)
 	  cd "repos/$@" && git checkout $$GIT_REF ;\
 	fi
 	GIT_SUBDIR=`grep '^$@ ' git_refs | awk '{print $$2}'` ;\
-	ln -s repos/$(@)$$GIT_SUBDIR $@ ;\
+	cp -r repos/$(@)$$GIT_SUBDIR $@ ;\
 
 # Build Robot documentation in voltha-system-tests and copy it into _static.
 _static/voltha-system-tests: | $(OTHER_REPO_DOCS)
