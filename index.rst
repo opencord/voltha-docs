@@ -1,8 +1,6 @@
 VOLTHA Documentation
 ====================
 
-.. image:: images/VOLTHA_LOGO.png
-
 Welcome to the VOLTHA project documentation.
 
 .. toctree::
@@ -11,64 +9,31 @@ Welcome to the VOLTHA project documentation.
    :glob:
 
    overview/*
+   readme
 
 .. toctree::
    :maxdepth: 1
-   :caption: Voltctl
-
-   voltctl/README.md
-
-.. toctree::
-   :maxdepth: 2
-   :caption: BBSim
+   :caption: Components
 
    bbsim/docs/source/index.rst
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Release Notes
-   :glob:
-
-   release_notes/*
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Testing
-
-   testing/index.rst
-   voltha-system-tests/README.md
-
-.. toctree::
-   :maxdepth: 1
-   :caption: VOLTHA Core (outdated)
+   voltha-openolt-adapter/README.md
+   voltctl/README.md
 
    voltha-go/README.md
    voltha-go/quickstart.md
-   voltha-go/BUILD.md
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Adapters (outdated)
-
-   voltha-openolt-adapter/README.md
-
-.. toctree::
-   :maxdepth: 1
-   :caption: VOLTHA-protos (outdated)
 
    voltha-protos/README.md
 
 .. toctree::
    :maxdepth: 1
-   :caption: Documentation Notes
+   :caption: Testing
 
-   readme
+   voltha-system-tests/README.md
+   testing/index.rst
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Releases
+   :glob:
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   release_notes/*

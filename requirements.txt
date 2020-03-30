@@ -1,12 +1,10 @@
-Sphinx~=2.4.3
+Sphinx~=2.4.4
 actdiag~=2.0.0
 blockdiag~=1.5.4
 doc8~=0.8.0
-livereload~=2.6.1
 nwdiag~=2.0.0
 recommonmark~=0.6.0
 seqdiag~=2.0.0
-sphinx-reload~=0.2.0
 sphinx-rtd-theme~=0.4.3
 sphinxcontrib-actdiag~=2.0.0
 sphinxcontrib-blockdiag~=2.0.0
@@ -14,9 +12,6 @@ sphinxcontrib-nwdiag~=2.0.0
 sphinxcontrib-openapi~=0.6.0
 sphinxcontrib-seqdiag~=2.0.0
 sphinxcontrib-spelling~=4.3.0
-# using a fork as the main branch is broken in newer sphinx, per:
-# https://github.com/sphinx-contrib/sphinxcontrib-versioning/issues/58
-# also added functionality to support working with other repos
-git+https://github.com/zdw/sphinxcontrib-versioning@0998d870b2791eb6343c98e98d6680c1e727daee
+git+https://github.com/zdw/sphinx-multiversion@ec7c01cdaf2f9241245e84483dfb9bc0d0dffc62
 # sphinx-autoapi~=1.2.1
 # sphinxcontrib-golangdomain==0.2.0.dev0
