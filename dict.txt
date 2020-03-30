@@ -52,6 +52,9 @@ https
 internet
 io
 kafka
+kafkaAddress
+kafkacat
+onuAlarms
 kubernetes
 lifecycle
 localhost

@@ -1,8 +1,6 @@
 VOLTHA Documentation
 ====================
 
-.. image:: images/VOLTHA_LOGO.png
-
 Welcome to the VOLTHA project documentation.
 
 .. toctree::

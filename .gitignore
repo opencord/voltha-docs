@@ -1,5 +1,5 @@
 # build related
-doc_venv
+venv_docs
 _build
 repos
 
@@ -12,6 +12,7 @@ voltha-openonu-adapter
 voltha-protos
 voltha-system-tests
 voltctl
+cord-tester
 
 # IDEs
 .idea
