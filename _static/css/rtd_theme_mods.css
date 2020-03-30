@@ -23,3 +23,13 @@
 .wy-table-responsive table td, .wy-table-responsive table th {
   white-space: normal;
 }
+
+.wy-side-nav-search {
+  background-color: #d9d9d9;
+}
+
+.wy-side-nav-search>div.version {
+  color: #404040;
+}
+
+

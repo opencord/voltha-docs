@@ -11,12 +11,14 @@
 
 _REPO NAME_             _DIR_    _REF_
 
-pyvoltha                /        master
 bbsim                   /        master
 cord-tester             /        master
+ofagent-go              /        master
+openolt                 /        master
+pyvoltha                /        master
+voltctl                 /        master
 voltha-go               /        master
 voltha-openolt-adapter  /        master
 voltha-openonu-adapter  /        master
 voltha-protos           /        master
 voltha-system-tests     /        master
-voltctl                 /        master

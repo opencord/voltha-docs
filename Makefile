@@ -11,24 +11,29 @@ BUILDDIR     ?= _build
 
 # Other repos with documentation to include.
 # edit the `git_refs` file with the commit/tag/branch that you want to use
-OTHER_REPO_DOCS ?= bbsim voltha-go voltha-openolt-adapter voltha-openonu-adapter voltha-protos voltctl voltha-system-tests cord-tester
+OTHER_REPO_DOCS ?= bbsim cord-tester ofagent-go openolt voltctl voltha-openolt-adapter voltha-openonu-adapter voltha-protos voltha-system-tests
 
-# Put it first so that "make" without argument is like "make help".
-help: doc_venv
-	source $</bin/activate ; set -u ;\
-	$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+# Static docs, built by other means (usually robot framework)
+STATIC_DOCS    := _static/voltha-system-tests _static/cord-tester
+
+# name of python virtualenv that is used to run commands
+VENV_NAME      := venv_docs
 
 .PHONY: help test lint reload Makefile prep
 
+# Put it first so that "make" without argument is like "make help".
+help: $(VENV_NAME)
+	source $</bin/activate ; set -u ;\
+	$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
 # Create the virtualenv with all the tools installed
-doc_venv:
-	virtualenv -p python3 doc_venv ;\
+$(VENV_NAME):
+	virtualenv -p python3 $(VENV_NAME) ;\
 	source $@/bin/activate ;\
-	pip install livereload ;\
 	pip install -r requirements.txt
 
 # automatically reload changes in browser as they're made
-reload: doc_venv
+reload: $(VENV_NAME)
 	source $</bin/activate ; set -u ;\
 	sphinx-reload $(SOURCEDIR)
 
@@ -37,10 +42,10 @@ test: lint linkcheck
 
 lint: doc8
 
-doc8: doc_venv | $(OTHER_REPO_DOCS)
+doc8: $(VENV_NAME) | $(OTHER_REPO_DOCS)
 	source $</bin/activate ; set -u ;\
 	doc8 --max-line-length 119 \
-	     $$(find . -name \*.rst ! -path "*doc_venv*" ! -path "*vendor*" ! -path "*repos/voltha-system-tests/vst_venv/*" ! -path "*repos/cord-tester/venv_cord/*")
+	     $$(find . -name \*.rst ! -path "*venv*" ! -path "*vendor*" ! -path "*repos*" )
 
 # markdown linting
 #  currently not enabled, should be added to lint target
@@ -51,14 +56,14 @@ md-lint: | $(OTHER_REPO_DOCS)
 	@echo "---"
 	@cat $(LINT_STYLE)
 	@echo "---"
-	mdl -s $(LINT_STYLE) `find -L $(SOURCEDIR) ! -path "./_doc_venv/*" ! -path "./_build/*" ! -path "./repos/*" ! -path "*vendor*" -name "*.md"`
+	mdl -s $(LINT_STYLE) `find -L $(SOURCEDIR) ! -path "./_$(VENV_NAME)/*" ! -path "./_build/*" ! -path "./repos/*" ! -path "*vendor*" -name "*.md"`
 
 # clean up
 clean:
-	rm -rf $(BUILDDIR) $(OTHER_REPO_DOCS) _static/voltha-system-tests _static/cord-tester
+	rm -rf $(BUILDDIR) $(OTHER_REPO_DOCS) $(STATIC_DOCS)
 
 clean-all: clean
-	rm -rf doc_venv repos
+	rm -rf $(VENV_NAME) repos
 
 # checkout the repos inside repos/ dir
 repos:
@@ -112,23 +117,17 @@ freeze: repos
 	  cd ../.. ;\
 	done
 
-# use sphinxcontrib-versioning to make a versioned copy of the
-# NOTE: document root is now in _build, not _build/html
-versioned: doc_venv Makefile | $(OTHER_REPO_DOCS)
+# build multiple versions
+multiversion: $(VENV_NAME) Makefile | prep $(OTHER_REPO_DOCS)
 	source $</bin/activate ; set -u ;\
-	sphinx-versioning build -r master "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS)
+	sphinx-multiversion "$(SOURCEDIR)" "$(BUILDDIR)/multiversion" $(SPHINXOPTS)
+	cp "$(SOURCEDIR)/_templates/meta_refresh.html" "$(BUILDDIR)/multiversion/index.html"
 
-# prep target - used in sphinxcontrib-versioning to create versioned repos when
-# building multiple versions
-prep: | $(OTHER_REPO_DOCS)
-
-html: doc_venv Makefile | $(OTHER_REPO_DOCS) _static/voltha-system-tests _static/cord-tester
-	source $</bin/activate ; set -u ;\
-	$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+# prep target - used in sphinx-multiversion to properly link
+prep: | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
-%: doc_venv Makefile | $(OTHER_REPO_DOCS)
+%: $(VENV_NAME) Makefile | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
 	source $</bin/activate ; set -u ;\
 	$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
-

@@ -1,4 +1,4 @@
-.. _deploy_physical:
+.. _pod_physical:
 
 Deploy a physical VOLTHA POD
 ============================
@@ -7,7 +7,7 @@ Quickstart
 ----------
 
 The quickstart assumes you POD is already correctly cabled, if not you can
-refer to :ref:`Physical_Layout`
+refer to :ref:`lab_setup`
 
 Requires:
 
