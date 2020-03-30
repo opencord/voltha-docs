@@ -55,6 +55,7 @@ extensions = [
     'sphinxcontrib.rackdiag',
     'sphinxcontrib.seqdiag',
     'sphinxcontrib.spelling',
+    "sphinx_multiversion",
 #    'sphinxcontrib.golangdomain',
 #    'autoapi.extension',
 ]
@@ -74,8 +75,8 @@ extensions = [
 # Text files with lists of words that shouldn't fail the spellchecker:
 spelling_word_list_filename=['dict.txt', ]
 
-# SCVersioning prep target commands, run in each target directory
-scv_prep_commands = [
+# sphinx-multiversion prep, run in each versioned source directory
+prep_commands = [
     'ln -sf _root_/repos _target_/repos',
     'make prep',
 ]
@@ -108,7 +109,7 @@ exclude_patterns = [
         '.DS_Store',
         'Thumbs.db',
         '_build',
-        'doc_venv',
+        'venv_docs',
         'voltha-system-tests/vst_venv',
         'cord-tester/venv_cord',
         'cord-tester/docs',
