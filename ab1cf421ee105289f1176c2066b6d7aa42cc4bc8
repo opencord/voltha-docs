@@ -22,6 +22,30 @@
       "revId": "ab1cf421ee105289f1176c2066b6d7aa42cc4bc8",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2bdbfd53_0daef946",
+        "filename": "requirements.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2020-04-06T19:01:03Z",
+      "side": 1,
+      "message": "This has a change that allows a script to run on each version, which is used to check out the other project repos at the correct revision.",
+      "parentUuid": "cdae972e_b988d2c6",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 87
+      },
+      "revId": "ab1cf421ee105289f1176c2066b6d7aa42cc4bc8",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
     }
   ]
 }
