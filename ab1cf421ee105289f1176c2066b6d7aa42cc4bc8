@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cdae972e_b988d2c6",
+        "filename": "requirements.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2020-04-06T08:54:13Z",
+      "side": 1,
+      "message": "just as my personal interest, why are we not using the upstream ?",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 87
+      },
+      "revId": "ab1cf421ee105289f1176c2066b6d7aa42cc4bc8",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
