@@ -12,7 +12,8 @@ refer to :ref:`lab_setup`
 Requires:
 
 - a physical kubernetes cluster
-- `kind-voltha <https://github.com/ciena/kind-voltha>`_ cloned on your machine
+- `kind-voltha <https://gerrit.opencord.org/gitweb?p=kind-voltha.git>`_ cloned
+  on your machine
 
 
 Enter the ``kind-voltha`` directory and execute this command (``kubectl`` must

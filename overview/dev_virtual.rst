@@ -15,7 +15,8 @@ Quickstart
 Requires:
 
 - ``docker`` and ``go`` installed on your machine
-- `kind-voltha <https://github.com/ciena/kind-voltha>`_ cloned on your machine
+- `kind-voltha <https://gerrit.opencord.org/gitweb?p=kind-voltha.git>`_ cloned
+  on your machine
 
 .. code:: bash
 

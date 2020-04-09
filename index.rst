@@ -77,4 +77,4 @@ can be found on the `VOLTHA section of the CORD Wiki
    :caption: Releases
    :glob:
 
-   release-notes/*
+   release_notes/*
