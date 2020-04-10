@@ -87,6 +87,12 @@ prep_commands = [
     'make prep',
 ]
 
+# inlcude only the branches matching master and voltha-*
+smv_branch_whitelist = r'^(master|voltha-.*)$'
+
+# include all remote branches
+smv_remote_whitelist = r'^.*$'
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
