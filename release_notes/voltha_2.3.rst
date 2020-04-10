@@ -135,9 +135,9 @@ voltha ``2.3.1`` with container images:
 - `voltha-rw-core <https://gerrit.opencord.org/gitweb?p=voltha-go.git;a=tree;h=refs/heads/voltha-2.3>`_: ``2.3.6``
 - `ofagent-go <https://gerrit.opencord.org/gitweb?p=ofagent-go.git;a=tree;h=refs/heads/voltha-2.3>`_: ``1.1.6``
 
-voltha-adapter-openolt: ``2.3.1`` with container image `voltha-openolt-adapter
+voltha-adapter-openolt: ``2.3.2`` with container image `voltha-openolt-adapter
 <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree;h=refs/heads/voltha-2.3>`_:
-``2.3.22``
+``2.3.23``
 
 voltha-adapter-openonu ``2.3.0`` with container image `voltha-openonu-adapter
 <https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter.git;a=tree;h=refs/heads/voltha-2.3>`_:
@@ -160,7 +160,7 @@ ONOS App versions:
 - `sadis <https://gerrit.opencord.org/gitweb?p=sadis.git;a=summary>`_: ``5.0.1``
 
 `bbsim
-<https://gerrit.opencord.org/gitweb?p=bbsim.git;a=tree;h=refs/heads/voltha-2.3>`:
+<https://gerrit.opencord.org/gitweb?p=bbsim.git;a=tree;h=refs/heads/voltha-2.3>`_:
 `bbsim chart
 <https://gerrit.opencord.org/gitweb?p=helm-charts.git;a=tree;f=bbsim>`_
 ``3.0.18`` using container image: ``0.1.0``
