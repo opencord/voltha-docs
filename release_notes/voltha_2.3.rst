@@ -130,10 +130,10 @@ Component Versions
 
 `Helm Charts (voltha-helm-charts) <https://gerrit.opencord.org/gitweb?p=voltha-helm-charts.git;a=tree;h=refs/heads/voltha-2.3>`_
 
-voltha ``2.3.1`` with container images:
+voltha ``2.3.2`` with container images:
 
 - `voltha-rw-core <https://gerrit.opencord.org/gitweb?p=voltha-go.git;a=tree;h=refs/heads/voltha-2.3>`_: ``2.3.6``
-- `ofagent-go <https://gerrit.opencord.org/gitweb?p=ofagent-go.git;a=tree;h=refs/heads/voltha-2.3>`_: ``1.1.6``
+- `ofagent-go <https://gerrit.opencord.org/gitweb?p=ofagent-go.git;a=tree;h=refs/heads/voltha-2.3>`_: ``1.1.7``
 
 voltha-adapter-openolt: ``2.3.2`` with container image `voltha-openolt-adapter
 <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree;h=refs/heads/voltha-2.3>`_:
