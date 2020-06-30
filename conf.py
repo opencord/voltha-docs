@@ -124,6 +124,7 @@ exclude_patterns = [
         'venv_docs',
         'voltha-system-tests/vst_venv',
         'voltha-go/BUILD.md',
+        'voltha-openonu-adapter/templates/README.md',
         'cord-tester/venv_cord',
         'cord-tester/docs',
         'cord-tester/src',
