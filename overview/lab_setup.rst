@@ -19,7 +19,8 @@ deployed on a Linux development server:
    VOLTHA Lab Setup
 
 *The image above represents the data plane connections in a LAB setup.
-It does not include the kubernetes cluster for simplicity.*
+It does not include the ``kubernetes`` cluster for simplicity, but the ``dev server``
+listed above can be one of your ``kubernetes`` nodes.*
 
 What you’ll need to emulate E2E traffic is:
 
@@ -27,6 +28,8 @@ What you’ll need to emulate E2E traffic is:
 
   - 1 1G Ethernet port
   - 1 10G Ethernet port (this can be a second 1G interface as long as you have a media converter)
+
+.. _setting-up-a-client:
 
 Setting up a client
 -------------------

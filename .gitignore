@@ -1,5 +1,6 @@
 # build related
 venv_docs
+doc_venv
 _build
 repos
 
@@ -11,6 +12,7 @@ pyvoltha
 voltha-go
 voltha-openolt-adapter
 voltha-openonu-adapter
+voltha-openonu-adapter-go
 kind-voltha
 voltha-protos
 voltha-system-tests
@@ -19,3 +21,6 @@ cord-tester
 
 # IDEs
 .idea
+
+# OS
+.DS_Store
