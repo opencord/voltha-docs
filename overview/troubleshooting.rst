@@ -5,6 +5,13 @@ Here is a collection of useful commands and tools to troubleshoot VOLTHA.
 The project is still in a very early phase, so this section of the guide is more focus
 on how to collection information and packet dumps than it is on operations.
 
+Depending on your issue useful tips and tricks can be found:
+- `No ONUs are discovered <https://guide.opencord.org/profiles/seba/troubleshoot/no-onus.html>`_
+- `Can't authenticate <https://guide.opencord.org/profiles/seba/troubleshoot/no-aaa.html>`_
+- `DHCP is not working <https://guide.opencord.org/profiles/seba/troubleshoot/no-dhcp.html>`_
+- `No Ping <https://guide.opencord.org/profiles/seba/troubleshoot/no-ping.html>`_
+
+
 Trace Packets across components
 -------------------------------
 

@@ -72,7 +72,7 @@ Testing
 - Integration Tests
 
   - `Automated tests run on both hardware and BBSim platforms
-    <https://jenkins.opencord.org/view/VOLTHA-2.3/>`_
+    <https://jenkins.opencord.org/>`_
 
     - Functional Tests (ATT)
     - All Container Restart/Failure scenarios (ATT)
