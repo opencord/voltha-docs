@@ -33,6 +33,12 @@ VOLTHA is a sub-project of the `Open Networking Foundation's
 
    VOLTHA Component Diagram
 
+Here some quick links to get you started:
+
+- :doc:`./overview/deployment_environment`
+- :doc:`./overview/workflows`
+- :doc:`./overview/quickstart`
+- :doc:`./overview/troubleshooting`
 
 Community
 ---------
@@ -48,9 +54,12 @@ can be found on the `VOLTHA section of the CORD Wiki
    :hidden:
    :glob:
 
-   overview/*
+   overview/deployment_environment.rst
+   overview/workflows.rst
+   overview/quickstart.rst
+   overview/operate.rst
+   overview/troubleshooting.rst
    readme
-   VOLTHA Deployment Tool (kind-voltha) <kind-voltha/README.md>
 
 .. toctree::
    :maxdepth: 1
@@ -60,9 +69,12 @@ can be found on the `VOLTHA section of the CORD Wiki
    BBSIM <bbsim/docs/source/index.rst>
    OpenFlow Agent <ofagent-go/README.md>
    OpenOlt Adapter <voltha-openolt-adapter/README.md>
+   OpenOnu Adapter <voltha-openonu-adapter/README.md>
+   OpenOnu Adapter Go <voltha-openonu-adapter-go/README.md>
    Openolt Agent <openolt/README.md>
    VOLTHA CLI <voltctl/README.md>
    VOLTHA Protos <voltha-protos/README.md>
+   Kind-voltha <kind-voltha/README.md>
 
 .. toctree::
    :maxdepth: 1
