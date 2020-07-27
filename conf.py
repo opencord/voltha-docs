@@ -62,6 +62,7 @@ extensions = [
     'sphinxcontrib.seqdiag',
     'sphinxcontrib.spelling',
     "sphinx_multiversion",
+    "sphinx.ext.intersphinx",
 #    'sphinxcontrib.golangdomain',
 #    'autoapi.extension',
 ]
@@ -117,6 +118,7 @@ language = None
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = [
         '*/LICENSE.md',
+        '*/RELEASE_NOTES.md',
         '*/vendor',
         '.DS_Store',
         'Thumbs.db',
@@ -135,6 +137,7 @@ exclude_patterns = [
         'bbsim/README.md',
         'CODE_OF_CONDUCT.md',
         '*/CODE_OF_CONDUCT.md',
+        'doc_venv/*'
 ]
 
 # The name of the Pygments (syntax highlighting) style to use.
