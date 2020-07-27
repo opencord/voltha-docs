@@ -11,6 +11,7 @@ pyvoltha
 voltha-go
 voltha-openolt-adapter
 voltha-openonu-adapter
+kind-voltha
 voltha-protos
 voltha-system-tests
 voltctl

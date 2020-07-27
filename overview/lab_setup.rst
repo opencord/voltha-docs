@@ -143,10 +143,10 @@ The emulated BNG needs to perform only two operations: ``DHCP`` and
 
 To setup a NAT router on an Ubuntu 16.04 server you can look at this
 tutorial:
-https://www.nairabytes.net/81-linux/418-how-to-set-up-a-nat-router-on-ubuntu-server-16-04
+http://nairabytes.net/linux/how-to-set-up-a-nat-router-on-ubuntu-server-16-04
 
 To install a DHCP server you can follow this tutorial:
-http://nairabytes.net/81-linux/415-how-to-install-a-dhcp-server-in-ubuntu-server-16-04
+http://nairabytes.net/linux/how-to-install-a-dhcp-server-in-ubuntu-server-16-04
 
 Once the ``DHCP`` server is installed, you need to configure it.
 
