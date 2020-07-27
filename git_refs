@@ -22,3 +22,4 @@ voltha-openolt-adapter  /        master
 voltha-openonu-adapter  /        master
 voltha-protos           /        master
 voltha-system-tests     /        master
+kind-voltha             /        master

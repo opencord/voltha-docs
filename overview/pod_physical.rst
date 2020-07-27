@@ -26,6 +26,8 @@ be installed and pointing to your cluster):
 If you already have a ``radius`` server that you want to use, change the flag to ``WITH_RADIUS=n``
 and `configure ONOS accordingly <https://github.com/opencord/aaa>`_.
 
+For more information please check `kind-voltha page <kind-voltha/README.md>`_.
+
 TLDR;
 -----
 
