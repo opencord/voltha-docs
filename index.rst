@@ -50,25 +50,26 @@ can be found on the `VOLTHA section of the CORD Wiki
 
    overview/*
    readme
+   VOLTHA Deployment Tool (kind-voltha) <kind-voltha/README.md>
 
 .. toctree::
    :maxdepth: 1
    :hidden:
    :caption: Components
 
-   bbsim/docs/source/index.rst
-   ofagent-go/README.md
-   openolt/README.md
-   voltha-openolt-adapter/README.md
-   voltctl/README.md
-   voltha-protos/README.md
+   BBSIM <bbsim/docs/source/index.rst>
+   OpenFlow Agent <ofagent-go/README.md>
+   OpenOlt Adapter <voltha-openolt-adapter/README.md>
+   Openolt Agent <openolt/README.md>
+   VOLTHA CLI <voltctl/README.md>
+   VOLTHA Protos <voltha-protos/README.md>
 
 .. toctree::
    :maxdepth: 1
    :hidden:
    :caption: Testing
 
-   voltha-system-tests/README.md
+   VOLTHA system tests <voltha-system-tests/README.md>
    testing/index.rst
 
 .. toctree::
