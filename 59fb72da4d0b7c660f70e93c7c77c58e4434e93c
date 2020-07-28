@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7ebaddc8_e9f06ae9",
+        "filename": "overview/pod_physical.rst",
+        "patchSetId": 6
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2020-07-28T20:37:26Z",
+      "side": 1,
+      "message": "Can you add below content here. I do not have permission to submit a patch to this review.\n\n\nIf OLT is being used in in-band connectivity mode, the following `document \u003chttps://docs.google.com/document/d/1OKDJCPEFVTEythAFUS_I7Piew4jHmhk25llK6UF04Wg\u003e`_\ndetails the configuration aspects in ONOS and the aggregation switch to trunk/switch in-band packets from the OLT to BNG or Voltha.",
+      "range": {
+        "startLine": 53,
+        "startChar": 0,
+        "endLine": 53,
+        "endChar": 11
+      },
+      "revId": "59fb72da4d0b7c660f70e93c7c77c58e4434e93c",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
