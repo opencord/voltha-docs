@@ -90,7 +90,7 @@ voltha-adapter-openonu ``2.4.6`` with container image `voltha-openonu-adapter
 <https://gerrit.opencord.org/gitweb?p=voltha-onos.git;a=tree;h=refs/heads/voltha-2.4>`_:
 `onos chart
 <https://github.com/onosproject/onos-helm-charts/tree/master/onos-classic>`_
-``0.1.1`` using container image ``4.1.3``
+``0.1.1`` using container image ``4.1.4``
 
 `ONOS <https://gerrit.onosproject.org/plugins/gitiles/onos>`_: ``2.2.3``
 
