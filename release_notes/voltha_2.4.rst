@@ -73,14 +73,14 @@ Component Versions
 
 `Helm Charts (voltha-helm-charts) <https://gerrit.opencord.org/gitweb?p=voltha-helm-charts.git;a=tree;h=refs/heads/voltha-2.4>`_
 
-voltha ``2.5.5`` with container images:
+voltha ``2.5.7`` with container images:
 
-- `voltha-rw-core <https://gerrit.opencord.org/gitweb?p=voltha-go.git;a=tree;h=refs/heads/voltha-2.4>`_: ``2.4.4``
+- `voltha-rw-core <https://gerrit.opencord.org/gitweb?p=voltha-go.git;a=tree;h=refs/heads/voltha-2.4>`_: ``2.4.5``
 - `ofagent-go <https://gerrit.opencord.org/gitweb?p=ofagent-go.git;a=tree;h=refs/heads/voltha-2.4>`_: ``1.2.6``
 
-voltha-adapter-openolt: ``2.5.8`` with container image `voltha-openolt-adapter
+voltha-adapter-openolt: ``2.5.9`` with container image `voltha-openolt-adapter
 <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree;h=refs/heads/voltha-2.4>`_:
-``2.4.13``
+``2.4.14``
 
 voltha-adapter-openonu ``2.4.6`` with container image `voltha-openonu-adapter
 <https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter.git;a=tree;h=refs/heads/voltha-2.4>`_:
@@ -101,7 +101,7 @@ ONOS App versions:
 - `igmpproxy <https://gerrit.opencord.org/gitweb?p=igmpproxy.git;a=summary>`_: ``2.1.2``
 - `kafka <https://gerrit.opencord.org/gitweb?p=kafka-onos.git;a=summary>`_: ``2.3.1``
 - `mcast <https://gerrit.opencord.org/gitweb?p=mcast.git;a=summary>`_: ``2.1.0``
-- `olt <https://gerrit.opencord.org/gitweb?p=olt.git;a=summary>`_: ``4.1.2``
+- `olt <https://gerrit.opencord.org/gitweb?p=olt.git;a=summary>`_: ``4.1.3``
 - `sadis <https://gerrit.opencord.org/gitweb?p=sadis.git;a=summary>`_: ``5.1.0``
 
 `bbsim
