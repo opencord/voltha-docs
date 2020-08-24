@@ -78,7 +78,7 @@ voltha ``2.5.7`` with container images:
 - `voltha-rw-core <https://gerrit.opencord.org/gitweb?p=voltha-go.git;a=tree;h=refs/heads/voltha-2.4>`_: ``2.4.5``
 - `ofagent-go <https://gerrit.opencord.org/gitweb?p=ofagent-go.git;a=tree;h=refs/heads/voltha-2.4>`_: ``1.2.6``
 
-voltha-adapter-openolt: ``2.5.9`` with container image `voltha-openolt-adapter
+voltha-adapter-openolt: ``2.5.10`` with container image `voltha-openolt-adapter
 <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree;h=refs/heads/voltha-2.4>`_:
 ``2.4.14``
 
