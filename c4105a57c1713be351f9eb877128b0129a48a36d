@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2fc7b4df_3e051c31",
+        "filename": "index.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2020-08-31T11:59:02Z",
+      "side": 1,
+      "message": "remove line 92",
+      "revId": "c4105a57c1713be351f9eb877128b0129a48a36d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f931542f_6103ed8d",
+        "filename": "index.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2020-08-31T11:59:02Z",
+      "side": 1,
+      "message": "logging/CentralizedLogAnalysis.rst instead of testing/index.rst",
+      "revId": "c4105a57c1713be351f9eb877128b0129a48a36d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "59c2b324_15e906b6",
+        "filename": "logging/CentralizedLogAnalysis.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2020-08-31T11:59:02Z",
+      "side": 1,
+      "message": "avoid camelcase and use _ please\ncentralised_log_analysis.rst",
+      "revId": "c4105a57c1713be351f9eb877128b0129a48a36d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
