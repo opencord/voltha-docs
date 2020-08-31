@@ -87,6 +87,13 @@ can be found on the `VOLTHA section of the CORD Wiki
 .. toctree::
    :maxdepth: 1
    :hidden:
+   :caption: Logging
+
+   logging/centralised_log_analysis.rst
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
    :caption: Releases
    :glob:
 
