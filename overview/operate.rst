@@ -124,6 +124,19 @@ You can also verify that the expected flows have been created and ``ADDED`` to V
 
 *The flows above may vary in form and number from workflow to workflow, the example is given for the ATT workflow*
 
+Flows can also be checked in VOLTHA trhough `voltctl`:
+
+.. code:: bash
+
+    voltctl device flows 17bfa0c8-bd86-4ead-b755-d612bfda9c5b
+    ID                  TABLEID    PRIORITY    COOKIE       INPORT       VLANID    ETHTYPE    IPPROTO    UDPSRC    UDPDST    METADATA              TUNNELID    SETVLANID    POPVLAN    PUSHVLANID    OUTPUT        WRITEMETADATA         METERID
+    2e80b1ff53a75953    0          1000        ~986cca9a    536870912    900                                                                       16          900                     0x8100        1048576       0x0000004000000000    1
+    37931e7d3cd25140    0          10000       ~ba31a4f2    536870912    900       0x0800     17         68        67                              16                                                CONTROLLER    0x0000004000000000    1
+    6c4a02b93c22ba55    0          10000       ~ce6c3527    1048576                0x88cc                                                                                                            CONTROLLER
+    2ba82605da4ff200    0          10000       ~f81586a7    1048576                0x0800     17         67        68                                                                                CONTROLLER
+    3102d254d97eda94    0          10000       ~5eb48e6a    536870912    900       0x888e                                                          16                                                CONTROLLER    0x0384004000000000    1
+    49f503c2f9f7203b    0          1000        ~531d5ec9    1048576      900                                                 0x0000000000000384    16                       yes                      536870912     0x0384004000000010    1
+
 DHCP Allocation
 ---------------
 
