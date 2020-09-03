@@ -45,7 +45,7 @@ in the VOLTHA POD.
 .. code:: bash
 
     cd $KINDVOLTHADIR
-    WITH_BBSIM="yes" WITH_EAPOL="no" WITH_DHCP="no" CONFIG_SADIS="bbsim" EXTRA_HELM_FLAGS="--set bbsim.sadisFormat=dt" ./voltha up
+    WITH_BBSIM="yes" WITH_EAPOL="no" WITH_DHCP="no" CONFIG_SADIS="bbsim" BBSIM_CFG="configs/bbsim-sadis-dt.yaml" ./voltha up
 
 TT Workflow
 ------------
@@ -53,12 +53,10 @@ TT Workflow
 The TT workflow does not require EAPOL based authentication but expects DHCP packets
 for multiple services to be handled within the POD.
 
-*Note that the TT workflow is not fully supported yet*
-
 .. code:: bash
 
     cd $KINDVOLTHADIR
-    WITH_BBSIM="yes" WITH_EAPOL="no" WITH_DHCP="yes" CONFIG_SADIS="bbsim" EXTRA_HELM_FLAGS="--set bbsim.sadisFormat=tt" ./voltha up
+    WITH_BBSIM="yes" WITH_EAPOL="no" WITH_DHCP="yes" CONFIG_SADIS="bbsim" BBSIM_CFG="configs/bbsim-sadis-tt.yaml" ./voltha up
 
 Post deploy actions
 -------------------
