@@ -45,7 +45,7 @@ in the VOLTHA POD.
 .. code:: bash
 
     cd $KINDVOLTHADIR
-    WITH_BBSIM="yes" WITH_EAPOL="no" WITH_DHCP="no" CONFIG_SADIS="bbsim" BBSIM_CFG="configs/bbsim-sadis-dt.yaml" ./voltha up
+    WITH_BBSIM="yes" WITH_EAPOL="no" WITH_DHCP="no" CONFIG_SADIS="bbsim" BBSIM_CFG="configs/dt-services.yaml" ./voltha up
 
 TT Workflow
 ------------
@@ -56,7 +56,7 @@ for multiple services to be handled within the POD.
 .. code:: bash
 
     cd $KINDVOLTHADIR
-    WITH_BBSIM="yes" WITH_EAPOL="no" WITH_DHCP="yes" CONFIG_SADIS="bbsim" BBSIM_CFG="configs/bbsim-sadis-tt.yaml" ./voltha up
+    WITH_BBSIM="yes" WITH_EAPOL="no" WITH_DHCP="yes" CONFIG_SADIS="bbsim" BBSIM_CFG="configs/tt-services.yaml" ./voltha up
 
 Post deploy actions
 -------------------
