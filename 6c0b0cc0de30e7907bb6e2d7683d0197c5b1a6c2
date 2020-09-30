@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c57fa998_0c63b395",
+        "filename": "release_notes/voltha_2.5.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2020-09-30T18:01:24Z",
+      "side": 1,
+      "message": "please add the link here.",
+      "revId": "6c0b0cc0de30e7907bb6e2d7683d0197c5b1a6c2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7b99a884_01b54587",
+        "filename": "release_notes/voltha_2.5.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2020-09-30T18:01:24Z",
+      "side": 1,
+      "message": "link here",
+      "revId": "6c0b0cc0de30e7907bb6e2d7683d0197c5b1a6c2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
