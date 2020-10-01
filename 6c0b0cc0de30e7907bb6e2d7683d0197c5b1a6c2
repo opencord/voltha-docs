@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "cb4a536f_599455b0",
+        "filename": "release_notes/voltha_2.5.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2020-10-01T00:46:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c57fa998_0c63b395",
+      "revId": "6c0b0cc0de30e7907bb6e2d7683d0197c5b1a6c2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7b99a884_01b54587",
         "filename": "release_notes/voltha_2.5.rst",
         "patchSetId": 3
@@ -33,6 +51,24 @@
       "revId": "6c0b0cc0de30e7907bb6e2d7683d0197c5b1a6c2",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5b3883ff_f05eec7d",
+        "filename": "release_notes/voltha_2.5.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2020-10-01T00:46:26Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "7b99a884_01b54587",
+      "revId": "6c0b0cc0de30e7907bb6e2d7683d0197c5b1a6c2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
     }
   ]
 }
