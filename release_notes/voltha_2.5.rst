@@ -43,7 +43,7 @@ Development/Deployment process
 Test
 ----
 
-Voltha-2.5 tests are available on `Jenkins <https://jenkins.opencord.org/view/VOLTHA%202.5/>`_.
+Voltha-2.5 tests are available on `Jenkins <https://jenkins.opencord.org/>`_.
 
 - OLT Disable/enable test, ONOS HA test and some more
 - BBSim Turk Telekom workflow support

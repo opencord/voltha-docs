@@ -60,6 +60,7 @@ You can read more about VOLTHA deployments in:
    ./lab_setup.rst
    ./pod_physical.rst
    ./dev_virtual.rst
+   ./multi-stack.rst
 
 Tooling
 -------
