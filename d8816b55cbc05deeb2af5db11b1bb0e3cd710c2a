@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f2be886c_8089b115",
+        "filename": "overview/multi-stack.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2020-11-09T09:15:01Z",
+      "side": 1,
+      "message": "I\u0027d ride this long link behind a work. something like \nYou can read more about VOLTHA Stacks ins this `document \u003chttps://docs.google.com/document/d/1Szo7vMS7M96O4Vsm1NpDYd3zckk9g0HLMck6eldwmcI/edit?pli\u003d1#heading\u003dh.h38wcjvllfv4\u003e`_",
+      "revId": "d8816b55cbc05deeb2af5db11b1bb0e3cd710c2a",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d41c5ea3_36fc5564",
+        "filename": "overview/multi-stack.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2020-11-09T09:15:01Z",
+      "side": 1,
+      "message": "should we require 3 node ?",
+      "revId": "d8816b55cbc05deeb2af5db11b1bb0e3cd710c2a",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fc3f5028_e4feb935",
+        "filename": "overview/multi-stack.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2020-11-09T09:15:01Z",
+      "side": 1,
+      "message": "./voltha up",
+      "revId": "d8816b55cbc05deeb2af5db11b1bb0e3cd710c2a",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "531f8106_7d846842",
+        "filename": "overview/multi-stack.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2020-11-09T09:15:01Z",
+      "side": 1,
+      "message": "voltctl",
+      "revId": "d8816b55cbc05deeb2af5db11b1bb0e3cd710c2a",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
