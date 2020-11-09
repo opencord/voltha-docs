@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "25ae0730_3137f42b",
+        "filename": "overview/multi-stack.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2020-11-09T19:03:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f2be886c_8089b115",
+      "revId": "d8816b55cbc05deeb2af5db11b1bb0e3cd710c2a",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d41c5ea3_36fc5564",
         "filename": "overview/multi-stack.rst",
         "patchSetId": 1
@@ -33,6 +51,24 @@
       "revId": "d8816b55cbc05deeb2af5db11b1bb0e3cd710c2a",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c9aae512_ff1e149f",
+        "filename": "overview/multi-stack.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2020-11-09T19:03:32Z",
+      "side": 1,
+      "message": "That really depends but your deployment config. It\u0027s not strictly required for the multi-stack itslef.",
+      "parentUuid": "d41c5ea3_36fc5564",
+      "revId": "d8816b55cbc05deeb2af5db11b1bb0e3cd710c2a",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
     },
     {
       "key": {
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "3a989989_d6e5ab04",
+        "filename": "overview/multi-stack.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2020-11-09T19:03:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fc3f5028_e4feb935",
+      "revId": "d8816b55cbc05deeb2af5db11b1bb0e3cd710c2a",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "531f8106_7d846842",
         "filename": "overview/multi-stack.rst",
         "patchSetId": 1
@@ -67,6 +121,24 @@
       "revId": "d8816b55cbc05deeb2af5db11b1bb0e3cd710c2a",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1cf5bc22_64a291a6",
+        "filename": "overview/multi-stack.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2020-11-09T19:03:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "531f8106_7d846842",
+      "revId": "d8816b55cbc05deeb2af5db11b1bb0e3cd710c2a",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
     }
   ]
 }
