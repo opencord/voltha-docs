@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0e34e0c7_82327cf5",
+        "filename": "release_notes/voltha_2.6.rst",
+        "patchSetId": 7
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2020-12-15T20:20:19Z",
+      "side": 1,
+      "message": "adapter-go?",
+      "range": {
+        "startLine": 130,
+        "startChar": 18,
+        "endLine": 130,
+        "endChar": 25
+      },
+      "revId": "7f24735e9d99740605fb4cc0b982fdb11f041690",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "953a1b6b_5c68fcfd",
+        "filename": "release_notes/voltha_2.6.rst",
+        "patchSetId": 7
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2020-12-15T20:20:19Z",
+      "side": 1,
+      "message": "Should you refer to the go version here?",
+      "range": {
+        "startLine": 130,
+        "startChar": 27,
+        "endLine": 130,
+        "endChar": 121
+      },
+      "revId": "7f24735e9d99740605fb4cc0b982fdb11f041690",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "82f75841_d4449c88",
+        "filename": "release_notes/voltha_2.6.rst",
+        "patchSetId": 7
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2020-12-15T20:20:19Z",
+      "side": 1,
+      "message": "Since this tag refers to go version, we need to refer to openonu-go",
+      "range": {
+        "startLine": 130,
+        "startChar": 129,
+        "endLine": 130,
+        "endChar": 134
+      },
+      "revId": "7f24735e9d99740605fb4cc0b982fdb11f041690",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
