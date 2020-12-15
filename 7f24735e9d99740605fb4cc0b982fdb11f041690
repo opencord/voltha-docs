@@ -92,6 +92,23 @@
       "revId": "7f24735e9d99740605fb4cc0b982fdb11f041690",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "97755969_82133388",
+        "filename": "release_notes/voltha_2.6.rst",
+        "patchSetId": 7
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2020-12-15T20:21:21Z",
+      "side": 1,
+      "message": "Also document voltha-openonu-adapter (python) here?",
+      "revId": "7f24735e9d99740605fb4cc0b982fdb11f041690",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
     }
   ]
 }
