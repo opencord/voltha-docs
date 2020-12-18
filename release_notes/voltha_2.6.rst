@@ -100,20 +100,18 @@ Certification Program
 
 Thanks to the `Continuous Certification <https://opennetworking.org/continuous-certification-program>`_ program at
 ONF we can also ensure that the following devices are compatible with the VOLTHA 2.6 release:
+
 - Edgecore ASGVolt64 GPON OLT
 - Edgecore ASXVolt16 XGSGPON OLT
-- Sercomm F1000 GPON ONU
+- Sercomm FG1000 GPON ONU
+- Sercomm Glasfaser GPON ONU
 - Edgecore 6712-32X Switch
 - Edgecore 7712-32X Switch
-
-VOLTHA 2.6 is also tested with other brands, such as Alpha, Iskratel, Tibit but they are not enrolled in the
-continuous certification program thus do not appear in the list.
-
 
 Jira stories
 ------------
 A full list of stories and bugs completed can be found under the
-`VOLTHA 2.6 <https://jira.opencord.org/secure/ReleaseNote.jspa?projectId=10106&version=11900>`_ release page in Jira.
+`VOLTHA 2.6 <https://jira.opencord.org/projects/VOL/versions/11500>`_ release page in Jira.
 
 Component Versions in VOLTHA 2.6 release
 ----------------------------------------
