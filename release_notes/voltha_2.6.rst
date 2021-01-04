@@ -34,6 +34,7 @@ Features & Improvements
 - Flow replication in the openolt agent instead of the openolt adapter
 - Parallelization and scale hardening of ONOS apps (aaa, dhcpl2relay)
 - Multiple thread processing and offloading
+
   - Refactored AAA Statistic names
   - Packet cloning and flow objective ordering in the DhcpL2Relay
   - Per OLT pending queues
@@ -44,6 +45,11 @@ Features & Improvements
 - OMCC encryption support
 - OLT software upgrade support (in-band mode only)
 - Migration to BAL 3.4.9.6
+- Trap handling improvements in openolt-agent
+
+  - Include the VLAN in the trap flows
+  - Avoid unwanted traffic
+- Jaeger integration to openonu-go adapter
 
 
 Development/Deployment process
