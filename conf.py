@@ -282,6 +282,7 @@ linkcheck_ignore = [r'https://github.com/ciena/kind-voltha/blob/master/README',
                     r'https://github.com/opencord/voltctl/blob/master/LICENSE',
                     r'https://github.com/ciena/kind-voltha#voltha-up-configuration-options',
                     r'https://www.sphinx-doc.org',
+                    r'https://github.com/opencord/bbsim/blob/master/docs/source/DMI_Server_README'
                     ]
 
 # -- Configure recommonmark to use AutoStructify -----------------------------

@@ -94,6 +94,19 @@ can be found on the `VOLTHA section of the CORD Wiki
 .. toctree::
    :maxdepth: 1
    :hidden:
+   :caption: Device Management Interface
+
+   Overview <device-management-interface/README.md>
+   Image management <device-management-interface/docs/DeviceImageManagement.md>
+   Events and Metrics <device-management-interface/docs/EventsMetrics.md>
+   Managing a device <device-management-interface/docs/ManagingDevice.md>
+   Examples <device-management-interface/docs/Examples.md>
+   Guidelines <device-management-interface/docs/RpcGuidelines.md>
+   Implementation on BBSIM <bbsim/docs/source/DMI_Server_README.md>
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
    :caption: Releases
    :glob:
 
