@@ -11,7 +11,7 @@ BUILDDIR     ?= _build
 
 # Other repos with documentation to include.
 # edit the `git_refs` file with the commit/tag/branch that you want to use
-OTHER_REPO_DOCS ?= bbsim cord-tester ofagent-go openolt voltctl voltha-openolt-adapter voltha-openonu-adapter voltha-openonu-adapter-go voltha-protos voltha-system-tests kind-voltha
+OTHER_REPO_DOCS ?= bbsim cord-tester ofagent-go openolt voltctl voltha-openolt-adapter voltha-openonu-adapter voltha-openonu-adapter-go voltha-protos voltha-system-tests kind-voltha device-management-interface
 
 # Static docs, built by other means (usually robot framework)
 STATIC_DOCS    := _static/voltha-system-tests _static/cord-tester
