@@ -35,6 +35,7 @@ VOLTHA is a sub-project of the `Open Networking Foundation's
 
 Here some quick links to get you started:
 
+- :doc:`./overview/architecture_overview`
 - :doc:`./overview/deployment_environment`
 - :doc:`./overview/workflows`
 - :doc:`./overview/quickstart`
@@ -54,6 +55,7 @@ can be found on the `VOLTHA section of the CORD Wiki
    :hidden:
    :glob:
 
+   overview/architecture_overview.rst
    overview/deployment_environment.rst
    overview/workflows.rst
    overview/quickstart.rst
@@ -69,7 +71,6 @@ can be found on the `VOLTHA section of the CORD Wiki
    BBSIM <bbsim/docs/source/index.rst>
    OpenFlow Agent <ofagent-go/README.md>
    OpenOlt Adapter <voltha-openolt-adapter/README.md>
-   OpenOnu Adapter <voltha-openonu-adapter/README.md>
    OpenOnu Adapter Go <voltha-openonu-adapter-go/README.md>
    Openolt Agent <openolt/README.md>
    VOLTHA CLI <voltctl/README.md>
