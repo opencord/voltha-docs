@@ -1,0 +1,441 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3ccb7ea5_a1a6a7ea",
+        "filename": "overview/architecture_overview.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-02-03T01:01:24Z",
+      "side": 1,
+      "message": "center?",
+      "range": {
+        "startLine": 17,
+        "startChar": 5,
+        "endLine": 17,
+        "endChar": 11
+      },
+      "revId": "7b9d1bd0f76aea8b3454f9610def3846c4a8d20b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c979e4d7_d76ed07d",
+        "filename": "overview/architecture_overview.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-02-03T01:01:24Z",
+      "side": 1,
+      "message": "ONF recommends to deploy the ``kubernetes`` cluster",
+      "range": {
+        "startLine": 19,
+        "startChar": 22,
+        "endLine": 19,
+        "endChar": 59
+      },
+      "revId": "7b9d1bd0f76aea8b3454f9610def3846c4a8d20b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7b3b68d5_cd9bcb61",
+        "filename": "overview/architecture_overview.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-02-03T01:01:24Z",
+      "side": 1,
+      "message": "operator\u0027s Central office",
+      "range": {
+        "startLine": 20,
+        "startChar": 19,
+        "endLine": 20,
+        "endChar": 49
+      },
+      "revId": "7b9d1bd0f76aea8b3454f9610def3846c4a8d20b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f909196a_a7b69d5e",
+        "filename": "overview/architecture_overview.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-02-03T01:01:24Z",
+      "side": 1,
+      "message": "Alongside VOLTHA and ONOS, the Device Manager",
+      "range": {
+        "startLine": 22,
+        "startChar": 26,
+        "endLine": 22,
+        "endChar": 30
+      },
+      "revId": "7b9d1bd0f76aea8b3454f9610def3846c4a8d20b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "81bb0a85_5596da18",
+        "filename": "overview/architecture_overview.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-02-03T01:01:24Z",
+      "side": 1,
+      "message": "a",
+      "range": {
+        "startLine": 22,
+        "startChar": 51,
+        "endLine": 22,
+        "endChar": 53
+      },
+      "revId": "7b9d1bd0f76aea8b3454f9610def3846c4a8d20b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c9e81305_36999ff6",
+        "filename": "overview/architecture_overview.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-02-03T01:01:24Z",
+      "side": 1,
+      "message": "standardized APIs",
+      "range": {
+        "startLine": 24,
+        "startChar": 96,
+        "endLine": 24,
+        "endChar": 104
+      },
+      "revId": "7b9d1bd0f76aea8b3454f9610def3846c4a8d20b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f233ad89_9f605588",
+        "filename": "overview/architecture_overview.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-02-03T01:01:24Z",
+      "side": 1,
+      "message": "as data store",
+      "range": {
+        "startLine": 34,
+        "startChar": 61,
+        "endLine": 34,
+        "endChar": 91
+      },
+      "revId": "7b9d1bd0f76aea8b3454f9610def3846c4a8d20b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "691f894e_d43fee17",
+        "filename": "overview/architecture_overview.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-02-03T01:01:24Z",
+      "side": 1,
+      "message": "Do we want to add Jaeger and ELK Stack?\nCan be done in a different patch",
+      "range": {
+        "startLine": 42,
+        "startChar": 6,
+        "endLine": 42,
+        "endChar": 16
+      },
+      "revId": "7b9d1bd0f76aea8b3454f9610def3846c4a8d20b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9799f721_91383c41",
+        "filename": "overview/architecture_overview.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-02-03T01:01:24Z",
+      "side": 1,
+      "message": "support",
+      "range": {
+        "startLine": 44,
+        "startChar": 77,
+        "endLine": 44,
+        "endChar": 83
+      },
+      "revId": "7b9d1bd0f76aea8b3454f9610def3846c4a8d20b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e67fda75_250c08ae",
+        "filename": "overview/architecture_overview.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-02-03T01:01:24Z",
+      "side": 1,
+      "message": "handles",
+      "range": {
+        "startLine": 45,
+        "startChar": 11,
+        "endLine": 45,
+        "endChar": 14
+      },
+      "revId": "7b9d1bd0f76aea8b3454f9610def3846c4a8d20b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cc281a0a_bae4f581",
+        "filename": "overview/architecture_overview.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-02-03T01:01:24Z",
+      "side": 1,
+      "message": "connected to",
+      "range": {
+        "startLine": 45,
+        "startChar": 39,
+        "endLine": 45,
+        "endChar": 49
+      },
+      "revId": "7b9d1bd0f76aea8b3454f9610def3846c4a8d20b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d3f8ec53_09538e2a",
+        "filename": "overview/architecture_overview.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-02-03T01:01:24Z",
+      "side": 1,
+      "message": "through",
+      "range": {
+        "startLine": 50,
+        "startChar": 85,
+        "endLine": 50,
+        "endChar": 89
+      },
+      "revId": "7b9d1bd0f76aea8b3454f9610def3846c4a8d20b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f0e3da93_33c73b17",
+        "filename": "overview/architecture_overview.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-02-03T01:01:24Z",
+      "side": 1,
+      "message": "this is not entirely clear to me",
+      "range": {
+        "startLine": 55,
+        "startChar": 84,
+        "endLine": 56,
+        "endChar": 58
+      },
+      "revId": "7b9d1bd0f76aea8b3454f9610def3846c4a8d20b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "de756bdf_20cb8439",
+        "filename": "overview/architecture_overview.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-02-03T01:01:24Z",
+      "side": 1,
+      "message": "missing a space \"the SDN\"",
+      "range": {
+        "startLine": 60,
+        "startChar": 40,
+        "endLine": 60,
+        "endChar": 46
+      },
+      "revId": "7b9d1bd0f76aea8b3454f9610def3846c4a8d20b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8f86a50d_cf8c8799",
+        "filename": "overview/architecture_overview.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-02-03T01:01:24Z",
+      "side": 1,
+      "message": "between the SDN controller and VOLTHA core. It is the glue between the VOLTHA data model and the SDN controller, converting events coming from VOLTHA and instructions coming from ONOS between OpenFlow and gRPC calls.",
+      "range": {
+        "startLine": 60,
+        "startChar": 37,
+        "endLine": 62,
+        "endChar": 14
+      },
+      "revId": "7b9d1bd0f76aea8b3454f9610def3846c4a8d20b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "87a39a8c_81948136",
+        "filename": "overview/architecture_overview.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-02-03T01:01:24Z",
+      "side": 1,
+      "message": "`openolt.proto \u003chttps://github.com/opencord/voltha-protos/blob/master/protos/voltha_protos/openolt.proto\u003e`",
+      "range": {
+        "startLine": 71,
+        "startChar": 21,
+        "endLine": 71,
+        "endChar": 24
+      },
+      "revId": "7b9d1bd0f76aea8b3454f9610def3846c4a8d20b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0348cd84_9a846d91",
+        "filename": "overview/architecture_overview.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-02-03T01:01:24Z",
+      "side": 1,
+      "message": "changes required to",
+      "range": {
+        "startLine": 73,
+        "startChar": 14,
+        "endLine": 73,
+        "endChar": 24
+      },
+      "revId": "7b9d1bd0f76aea8b3454f9610def3846c4a8d20b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e50be7cc_48f59420",
+        "filename": "overview/architecture_overview.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-02-03T01:01:24Z",
+      "side": 1,
+      "message": "openOMIC stack",
+      "range": {
+        "startLine": 76,
+        "startChar": 155,
+        "endLine": 76,
+        "endChar": 163
+      },
+      "revId": "7b9d1bd0f76aea8b3454f9610def3846c4a8d20b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a4a86762_a6ffada0",
+        "filename": "overview/architecture_overview.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-02-03T01:01:24Z",
+      "side": 1,
+      "message": "Isn\u0027t it G.988 ? https://www.itu.int/rec/T-REC-G.988/en",
+      "range": {
+        "startLine": 77,
+        "startChar": 29,
+        "endLine": 77,
+        "endChar": 33
+      },
+      "revId": "7b9d1bd0f76aea8b3454f9610def3846c4a8d20b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
