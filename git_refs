@@ -23,5 +23,5 @@ voltha-openonu-adapter       /        master
 voltha-openonu-adapter-go    /        master
 voltha-protos                /        master
 voltha-system-tests          /        master
-kind-voltha                  /        master
 device-management-interface  /        master
+voltha-helm-charts           /        master

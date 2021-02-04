@@ -12,8 +12,8 @@ Generally VOLTHA is installed in one of two setups:
 Regardless of the chosen environment the deployment process is the same,
 more on this later, and the installation can be managed in the same way.
 
-Managing a VOLTHA deployment
-----------------------------
+VOLTHA deployment
+-----------------
 
 VOLTHA components on top of ``kubernetes`` are managed via ``helm`` charts.
 For more information about ``helm`` please refer to the `Official Documentation
@@ -49,8 +49,7 @@ Note that the ``Infrastructure`` components can be deployed outside of the
 You can read more about VOLTHA deployments in:
 
 - :doc:`lab_setup`
-- :doc:`pod_physical`
-- :doc:`dev_virtual`
+- `Deployment with HELM <./../voltha-helm-charts/README.md>`_
 
 .. toctree::
    :maxdepth: 1
@@ -58,12 +57,4 @@ You can read more about VOLTHA deployments in:
    :glob:
 
    ./lab_setup.rst
-   ./pod_physical.rst
-   ./dev_virtual.rst
-   ./multi-stack.rst
-
-Tooling
--------
-
-To simplify the installation of VOLTHA we provided a tool called ``kind-voltha``.
-You can read more on :doc:`kind-voltha <../kind-voltha/README>` in its own documentation.
+   Deploy VOLTHA <./../voltha-helm-charts/README.md>
