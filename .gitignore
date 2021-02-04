@@ -13,11 +13,12 @@ voltha-go
 voltha-openolt-adapter
 voltha-openonu-adapter
 voltha-openonu-adapter-go
-kind-voltha
+voltha-helm-charts
 voltha-protos
 voltha-system-tests
 voltctl
 cord-tester
+device-management-interface
 
 # IDEs
 .idea

@@ -5,27 +5,25 @@ Operator workflows
 
 ``Workflow`` is a term that spilled from the SEBA Reference Design (RD) into VOLTHA.
 
-In SEBA a workflow is defined as the set of operations that control the lifecycle
-of a subscriber, authentication logic, customer tag management etc... Such workflow is operator specific.
+In SEBA a workflow is a collection of subscriber management items like identification, location,
+and bandwidth profile. In addition each workflows maps to a service type which translates to a technology profile,
+and an operator desired flow of operations (i.e state-machine).
+The workflow is implemented by a selection of ONOS apps, XOS services (in SEBA)
+and a set of configurations (sadis, etcd, netcfg). Those apps paired with the configuration specified by the
+workflow (e.g. need EAPOL) in turn create low level flows, groups, meters, schedulers, queues etc.
+A workflow is then triggered by a particular set of APIs, for example the request to add a subscriber.
 
-A full description of the workflows can be `found here <https://drive.google.com/drive/folders/1MfxwoDSvAR_rgFHt6n9Sai7IuiJPrHxF>`_.
+A full description of the different operator's workflows can be
+`found here <https://drive.google.com/drive/folders/1MfxwoDSvAR_rgFHt6n9Sai7IuiJPrHxF>`_.
 
 A big part of the workflow in SEBA is defined within NEM (Network Edge Mediator).
-Given that NEM is not available in a plain VOLTHA deployment the definition
-of workflow is a subset of the SEBA one, and comprises:
+Given that NEM is not available in a plain VOLTHA deployment the user has to ensure proper config in the right places,
+and then triggering of api's themselves.
 
-- Customer tags allocation
-- Technology profile
-- Bandwidth profile
-- Flow management (EAPOL/DHCP/Data path)
-- Group management
+To deploy a specific workflow follow the steps in the voltha-helm-charts
+`README <./../voltha-helm-charts/README.md#deploying-a-different-workflow>`_.
 
-The `workflows` are often referred to as `use-cases` and the two words are interchangeable
-in the VOLTHA environment.
-
-To deploy a specific workflow through ``kind-voltha`` please visit :ref:`quickstart`.
-
-How is the workflow defined in VOLTHA?
+What does the workflow entail in VOLTHA?
 ----------------------------------------
 
 Customer tag allocation

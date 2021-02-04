@@ -50,7 +50,7 @@ to it by listing the devices:
 Authentication
 --------------
 
-If the use-case you installed (e.g. AT&T) expects EAPOL based authentication you want to make
+If the worflow you installed (e.g. AT&T) expects EAPOL based authentication you want to make
 sure that is working. Visit :ref:`workflows` for more information.
 
 In a **Physical POD** you need to trigger authentication on your client
@@ -75,7 +75,7 @@ Subscriber provisioning
 *Note that, depending on the workflow, authentication is not a requirement of subscriber provisioning*
 
 The process referred to as ``Subscriber provisioning`` causes traffic flows to be created in ONOS and
- data plane path to be configured in the device, enabling different services on a specific UNI port.
+data plane path to be configured in the device, enabling different services on a specific UNI port.
 
 In order to provision a subscriber you need to identify it. In ONOS a subscriber
 is viewed as an enabled port (UNI) on the logical switch that VOLTHA exposes, for example:
@@ -140,7 +140,7 @@ Flows can also be checked in VOLTHA trhough `voltctl`:
 DHCP Allocation
 ---------------
 
-If the use-case you installed expect DHCP to be handled by ONOS it's time to check
+If the worflow you installed expect DHCP to be handled by ONOS it's time to check
 that an IP has correctly been allocated to the subscriber.
 
 In a **Physical POD** you need to trigger a DHCP request on your client

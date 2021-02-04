@@ -7,25 +7,19 @@ Objective
 Operators should be able to view logs from all the VOLTHA components as
 well as from whitebox OLT devices in a single stream.
 
-Solution Approach For Voltha Ecosystem
+Solution Approach For VOLTHA Ecosystem
 --------------------------------------
 
 The solution we have chosen EFK (elasticsearch, kibana and
 fluentd-elasticsearch) setup for voltha enables the Operator to push
 logs from all VOLTHA components.
 
-Kind-Voltha script enables Operator to setup EFK with minimal
-configuration.The configuration set for EFK in minimal-values.yaml or
-full-values.yaml start efk stack with a single node elasticsearch and
+To deploy VOLTHA with the EFK stack follow
+`these instructions <../voltha-helm-charts#enable-log-correlation-in-voltha-optional>`_.
+
+This will deploy Efk stack with a single node elasticsearch and
 kibana instance will be deployed and a fluentd-elasticsearch pod will be
-deployed on each node that allows workloads to be scheduled.If you have
-the prerequisites installed, just execute
-
-.. code:: bash
-
-   $ DEPLOY\_K8S=y WITH\_BBSIM=y WITH\_EFK=y ./voltha up
-
-and the minimal cluster with efk should start.
+deployed on each node that allows workloads to be scheduled.
 
 The number of deployed Pods will be dependent on the value of Deployment
 Type and SCHEDULE\_ON\_CONTROL\_NODES flag as shown in the below table.
@@ -33,9 +27,6 @@ Type and SCHEDULE\_ON\_CONTROL\_NODES flag as shown in the below table.
 .. figure:: ../_static/fluentd-pods.png
    :width: 6.50000in
    :height: 1.50000in
-
-To remove voltha efk use DEPLOY\_K8S=y ./voltha down or, to avoid
-removing the k8s cluster DEPLOY\_K8S=n WITH\_EFK=y ./voltha down
 
 **To start using Kibana, In your browser ,navigate to
 http://<k8s\_node\_ip>:<exposed\_port>.** Then you can search for events

@@ -38,8 +38,6 @@ Here some quick links to get you started:
 
 - :doc:`./overview/architecture_overview`
 - :doc:`./overview/deployment_environment`
-- :doc:`./overview/workflows`
-- :doc:`./overview/quickstart`
 - :doc:`./overview/troubleshooting`
 
 Community
@@ -58,11 +56,10 @@ can be found on the `VOLTHA section of the CORD Wiki
 
    overview/architecture_overview.rst
    overview/deployment_environment.rst
+   Deploy VOLTHA <voltha-helm-charts/README.md>
    overview/workflows.rst
-   overview/quickstart.rst
    overview/operate.rst
    overview/troubleshooting.rst
-   readme
 
 .. toctree::
    :maxdepth: 1
@@ -76,7 +73,6 @@ can be found on the `VOLTHA section of the CORD Wiki
    Openolt Agent <openolt/README.md>
    VOLTHA CLI <voltctl/README.md>
    VOLTHA Protos <voltha-protos/README.md>
-   Kind-voltha <kind-voltha/README.md>
 
 .. toctree::
    :maxdepth: 1

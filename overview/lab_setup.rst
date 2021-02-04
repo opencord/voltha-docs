@@ -11,7 +11,9 @@ deployed on a Linux development server:
 
 - The ``RG`` can be emulated by an ``lxc`` container (from now on ``client``)
 - The ``BNG`` can be emulated by a Linux server
-- The ``AggSwitch`` is optional in a VOLTHA deployment.
+- The ``AggSwitch`` is mandatory if control of the OLT is done with ``in-band`` mode, while
+  optional if the OLT is controlled out of band, in this case the NNI port of the OLT will go directly
+  into the emulated BNG linux server NIC card.
 
 .. figure:: ../_static/voltha_lab_setup.png
    :alt: VOLTHA Lab Setup
@@ -196,3 +198,17 @@ range to assign to the double tagged interface:
      option routers 10.11.2.254;
      option domain-name-servers 8.8.8.8;
    }
+
+Configuration for in-band OLT control
+-------------------------------------
+
+If OLT is being used in in-band connectivity mode, the
+`document <https://docs.google.com/document/d/1OKDJCPEFVTEythAFUS_I7Piew4jHmhk25llK6UF04Wg>`_
+details the configuration aspects in ONOS and the aggregation switch to
+trunk/switch in-band packets from the OLT to BNG or Voltha.
+
+In-band OLT software upgrade
+-------------------------------------
+If OLT with openolt agent is being used in in-band connectivity mode we provide the capability
+to execute SW updates of the image present on the device, the
+`README <https://github.com/opencord/openolt/tree/master/olt-sw-upgrade>`_ provides the required details.
