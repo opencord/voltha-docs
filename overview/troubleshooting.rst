@@ -70,19 +70,20 @@ To capture the OMCI packets for all ONUs:
 
 .. code:: bash
 
-    cat openonu.logs | grep -E "receive_message|_send_next" | grep msg > omci.dump
+    cat openonu.logs | grep -E "TxOmciMessage|RxOmciMessage" | grep msg > packets.trace
 
 To capture the OMCI packets for a particular ONU:
 
 .. code:: bash
 
-    cat openonu.logs | grep -E "receive_message|_send_next" | grep msg | grep [deviceId] > omci.dump
+    cat openonu.logs | grep -E "TxOmciMessage|RxOmciMessage" | grep msg | grep [deviceId] > packets.trace
 
 Once you have the ``omci.dump`` file you need to prepare it to be imported in wireshark with this command:
 
 .. code:: bash
 
-    sed -n "s/.*[omci_msg|msg]: b'\(.*\)',.*$/\1/p" omci.dump | sed -e 's/.\{2\}/& /g' | sed -e 's/^/000000 /' > omci.hex
+    awk -F"OmciMessage" '/OmciMessage/{print $2}' packets.trace | cut -f3 -d'"' > rawdump
+    cat rawdump | sed -e 's/.\{2\}/& /g' | sed -e 's/^/000000 /' > omci.hex
 
 And then in wireshark:
 
