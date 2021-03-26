@@ -60,7 +60,7 @@ Development/Deployment process
 Test
 ----
 
-Voltha-2.6 tests are available on `Jenkins <https://jenkins.opencord.org/view/VOLTHA-2.6/>`_.
+Voltha-2.6 tests are available on `Jenkins <https://jenkins.opencord.org/>`_.
 
 - Multi-OLT tests with a single voltha stack on Physical Hardware and BBSim
 - Use of the full suite of tests for openonu-go, both on hardware and BBSim
