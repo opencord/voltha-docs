@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fe7e21f0_3c391665",
+        "filename": "release_notes/voltha_2.6.rst",
+        "patchSetId": 5
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2021-03-31T09:00:11Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this need to be 2.7?",
+      "range": {
+        "startLine": 63,
+        "startChar": 7,
+        "endLine": 63,
+        "endChar": 10
+      },
+      "revId": "e0a7e52038dd962c3380a23ff8af38ac5128d3a3",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
