@@ -23,11 +23,11 @@ and then triggering of api's themselves.
 To deploy a specific workflow follow the steps in the voltha-helm-charts
 `README <./../voltha-helm-charts/README.md#deploying-a-different-workflow>`_.
 
-What does the workflow entail in VOLTHA?
-----------------------------------------
+A workflow in VOLTHA entails different elements: Customer tag allocation, Technology profile, Bandwidth profile,
+Flow and Group Management
 
 Customer tag allocation
-***********************
+-----------------------
 
 The vlan tags for a particular subscriber are defined in the ``sadis`` configuration.
 `Sadis <https://github.com/opencord/sadis>`_ stands for `Subscriber and Device Information Service`
@@ -37,7 +37,7 @@ Information on different ``sadis`` configurations can be found here:
 https://docs.google.com/document/d/1JLQ51CZg4jsXsBQcrJn-fc2kVvXH6lw0PYoyIclwmBs
 
 Technology profile
-******************
+------------------
 
 Technology profiles describes technology specific attributes required to implement
 Subscriber Services on an OpenFlow managed Logical Switch overlaid upon an OLT
@@ -61,11 +61,14 @@ that is not the default for a particular subscriber that needs to be configured
 in `sadis`.*
 
 Bandwidth profile
-*****************
+-----------------
 
 Bandwidth profiles control the allocation Bandwidth for a particular subscriber.
-They are defined in the `sadis`.
-An example:
+They are defined in the `sadis` application.
+VOLTHA supports both the MEF and IETF definition of Bandwidth Profile.
+More information on the different definitions can be found on the `MEF wiki <https://wiki.mef.net/display/CESG/Bandwidth+Profile>`_.
+
+MEF:
 
 .. code-block:: json
 
@@ -78,10 +81,44 @@ An example:
       "air" : 1004
     }
 
+IETF:
+
+.. code-block:: json
+
+    {
+      "id" : "Default",
+      "pir": 1168192,
+      "pbs": 0,
+      "cir": 0,
+      "cbs": 0,
+      "gir": 0
+    }
+
 Each bandwidth profile is then translated into an OpenFlow Meter for configuration on the OLT.
 
+Each OpenFlow Meter is then translated to a different TCONT type in the `openolt-adapter`.
+VOLTHA supports all 5 TCONT types.
+
+The translation of Bandwidth profile parameters to TCONT types happens as follows:
+
+- | `Type-1`: If CIR > 0, CIR = PIR, additional_bw_eligibility = none --> set guaranteed_bw = maximum_bw = CBR_RT_BW
+  | (or CBR_NRT_BW) = CIR and alloc_type=none.  (alloc_type is inferred from the other parameters)
+- | `Type-2`: If CIR = 0, GIR or AIR > 0, GIR or AIR = PIR, additional_bw_eligibility = none --> set guaranteed_bw =
+  | maximum_bw = AIR, CBR_RT_BW = 0 and CBR_NRT_BW = 0 and alloc_type = NSR (alloc_type is set to NSR by default)
+- | `Type-3`: If CIR = 0, GIR or AIR > 0, PIR > GIR or AIR,  additional_bw_eligibility = non_assured -->
+  | guaranteed_bw = AIR, maximum_bw = PIR, CBR_RT_BW = 0 and CBR_NRT_BW = 0 and alloc_type = NSR and send
+  | these parameters to BAL. (alloc_type is set to NSR by default)
+- | `Type-4`: if CIR = 0, GIR or AIR = 0, PIR > 0, additional_bw_eligibility = best_effort --> set
+  | guaranteed_bw = 0, maximum_bw = PIR, CBR_RT_BW = 0 and CBR_NRT_BW = 0 and alloc_type = NSR and send
+  | (alloc_type is set to NSR by default)
+- | `Type-5`: if CIR > 0, PIR >= CIR + GIR or AIR, additional_bw_eligibility = non_assured or
+  | best_effort --> set guaranteed_bw = CIR+AIR, maximum_bw = PIR, CBR_RT_BW = 0 (or CBR_NRT_BW) = CIR
+  | and alloc_type = NSR. (alloc_type is set to NSR by default)
+
+Further implementation details can be found in `this document <https://docs.google.com/document/d/1HipmsHD5LEQlOc-Y2tYV7DHD1fn7-_1lehBgp79sRwU/edit#>`_.
+
 Flow management
-***************
+---------------
 
 Flows are managed in ONOS by the `olt` application. Through the configuration of
 this application you can define whether your setup will create:
@@ -93,7 +130,7 @@ this application you can define whether your setup will create:
 in addition to the default data plane flows.
 
 Group management
-****************
+----------------
 
 Groups are managed in ONOS by the `mcast` application. Through the configuration of
 this application you can achieve multicast for services such as IpTV.
