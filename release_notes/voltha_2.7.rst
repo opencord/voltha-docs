@@ -135,10 +135,11 @@ A full list of stories and bugs completed can be found under the
 Component Versions in VOLTHA 2.7 release
 ----------------------------------------
 
-ONOS:
-++++++++++
+ONOS and Atomix:
+++++++++++++++++
 
 - `ONOS 2.2 LTS <https://github.com/opennetworkinglab/onos/releases/tag/2.2.8>`_: ``2.2.8``
+- `ATOMIX <https://github.com/atomix/atomix/releases/tag/atomix-3.1.8>`_: ``3.1.8``
 
 ONOS Apps:
 ++++++++++
