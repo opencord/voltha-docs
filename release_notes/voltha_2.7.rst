@@ -164,7 +164,7 @@ VOLTHA Components:
 - `ofagent-go <https://gerrit.opencord.org/gitweb?p=ofagent-go.git;a=tree;h=refs/heads/voltha-2.7>`_ - ``1.5.2``  with chart ``2.8.3``
 - `voltctl <https://gerrit.opencord.org/gitweb?p=voltctl.git;a=tree>`_ - ``1.4.4``
 - `voltha-openolt-adapter <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree;h=refs/heads/voltha-2.7>`_ - ``3.1.8`` with chart ``2.8.8``
-- `voltha-openonu-adapter-go <https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter-go.git;a=tree;h=refs/heads/voltha-2.7>`_ - ``1.2.11`` with chart ``2.7.15``
+- `voltha-openonu-adapter-go <https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter-go.git;a=tree;h=refs/heads/voltha-2.7>`_ - ``1.2.11`` with chart ``2.7.16``
 - `voltha-onos <https://gerrit.opencord.org/gitweb?p=voltha-onos.git;a=tree;h=refs/heads/voltha-2.7>`_ -  ``4.3.1`` with chart ``0.1.13``
 - `openolt agent <https://gerrit.opencord.org/gitweb?p=openolt.git;a=tree;h=refs/heads/voltha-2.7>`_ - ``3.3.3``
 - `voltha-protos <https://github.com/opencord/voltha-protos/releases/tag/v4.0.5>`_ - ``4.0.16``
