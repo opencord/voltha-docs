@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "11298ca2_e1bda932",
+        "filename": "release_notes/voltha_2.7.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 167,
+      "author": {
+        "id": 1000671
+      },
+      "writtenOn": "2021-05-06T09:57:24Z",
+      "side": 1,
+      "message": "Shouldn\u0027t the chart version be 2.7.16?",
+      "range": {
+        "startLine": 167,
+        "startChar": 161,
+        "endLine": 167,
+        "endChar": 163
+      },
+      "revId": "8d480288ef995403262c7c533077839f64e4015d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
