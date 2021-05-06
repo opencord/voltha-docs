@@ -148,7 +148,7 @@ ONOS Apps:
 - `dhcpl2relay <https://gerrit.opencord.org/gitweb?p=dhcpl2relay.git;a=summary>`_: ``2.4.0``
 - `igmpproxy <https://gerrit.opencord.org/gitweb?p=igmpproxy.git;a=summary>`_: ``2.2.0``
 - `kafka <https://gerrit.opencord.org/gitweb?p=kafka-onos.git;a=summary>`_: ``2.6.0``
-- `mcast <https://gerrit.opencord.org/gitweb?p=mcast.git;a=summary>`_: ``2.3.0``
+- `mcast <https://gerrit.opencord.org/gitweb?p=mcast.git;a=summary>`_: ``2.3.2``
 - `olt <https://gerrit.opencord.org/gitweb?p=olt.git;a=summary>`_: ``4.4.0``
 - `sadis <https://gerrit.opencord.org/gitweb?p=sadis.git;a=summary>`_: ``5.3.0``
 - `bng <https://gerrit.opencord.org/gitweb?p=bng.git;a=summary>`_: ``2.0.0``
@@ -164,7 +164,7 @@ VOLTHA Components:
 - `ofagent-go <https://gerrit.opencord.org/gitweb?p=ofagent-go.git;a=tree;h=refs/heads/voltha-2.7>`_ - ``1.5.2``  with chart ``2.8.3``
 - `voltctl <https://gerrit.opencord.org/gitweb?p=voltctl.git;a=tree>`_ - ``1.4.4``
 - `voltha-openolt-adapter <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree;h=refs/heads/voltha-2.7>`_ - ``3.1.8`` with chart ``2.8.8``
-- `voltha-openonu-adapter-go <https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter-go.git;a=tree;h=refs/heads/voltha-2.7>`_ - ``1.2.8`` with chart ``2.7.15``
+- `voltha-openonu-adapter-go <https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter-go.git;a=tree;h=refs/heads/voltha-2.7>`_ - ``1.2.11`` with chart ``2.7.15``
 - `voltha-onos <https://gerrit.opencord.org/gitweb?p=voltha-onos.git;a=tree;h=refs/heads/voltha-2.7>`_ -  ``4.3.1`` with chart ``0.1.13``
 - `openolt agent <https://gerrit.opencord.org/gitweb?p=openolt.git;a=tree;h=refs/heads/voltha-2.7>`_ - ``3.3.3``
 - `voltha-protos <https://github.com/opencord/voltha-protos/releases/tag/v4.0.5>`_ - ``4.0.16``
@@ -176,7 +176,7 @@ Helm Chart Versions:
 ++++++++++++++++++++
 This section refers to the macro charts to deploy the required infrastructure and a (or many) VOLTHA stacks:
 - Voltha-infra: ``0.1.13``
-- Voltha-stack: ``0.1.17``
+- Voltha-stack: ``0.1.18``
 
 
 **Available from EdgeCore site**
