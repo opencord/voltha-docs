@@ -1,0 +1,188 @@
+=============================================
+Software update procedure for VOLTHA and ONOS
+=============================================
+
+This document described the software upgrade procedure for VOLTHA and ONOS in a deployed system.
+Distinction is made between a `minor` software upgrade, which can be done in service,
+meaning with no dataplane service interruption to existing customers, and a `major` software upgrade,
+which in turns requires a full maintenance window during which service is impacted.
+
+Changes to data-structures in storage (ETCD for VOLTHA and Atomix for ONOS) are out of scope for in-service upgrades.
+Such changes qualify as “major” software upgrades that require a maintenance windows.
+the KAFKA bus update has his own section given that the procedure is different from the resto of the components.
+The following elements expect a fully working provisioned VOLTHA and ONOS deployment on top of a Kubernetes cluster,
+with exposed ONOS REST API ports.
+It is expected also that new versions of the different components are available to the operator that performs the upgrade.
+
+Minor Software Version Update
+=============================
+The `minor` software upgrade qualifier refers to an upgrade that does not involve API
+changes, which in VOLTHA, refers to either a change to the protos or to voltha-lib-go,
+and in ONOS to a change in the Java interfaces, CLI commands or REST APIs of either the Apps or the platform.
+A `minor` software update is intended for bug fixes and not for new features.
+`Minor` software update is supported only for ONOS apps and VOLTHA components. No in service software update
+is supported for ETCD or Kafka.
+
+VOLTHA services
+---------------
+VOLTHA components `minor` software upgrade leverages `helm` and `k8s`.
+
+After changes in the code are made and verified the following steps are needed:
+
+#. Update Minor Version of the component
+#. Build a new version of the needed component to update
+#. update the component's minor version in the helm chart
+#. | issue the helm upgrade command. if the changes have been already upstreamed to ONF the upstream chart `onf/<component name>` can be used,
+   | otherwise a local copy of the chart is required.
+
+Following is an example of the `helm` command to upgrade the openonu adapter.
+Topics, kv store paths and kafka endpoints need to be adapted to the specific deployment.
+
+.. code:: bash
+
+    helm upgrade --install --create-namespace \
+      -n voltha1 opeonu-adapter onf/voltha-adapter-openonu \
+      --set global.stack_name=voltha1 \
+      --set adapter_open_onu.kv_store_data_prefix=service/voltha/voltha1_voltha1 \
+      --set adapter_open_onu.topics.core_topic=voltha1_voltha1_rwcore \
+      --set adapter_open_onu.topics.adapter_open_onu_topic=voltha1_voltha1_brcm_openomci_onu \
+      --set services.kafka.adapter.service=voltha-infra-kafka.infra.svc \
+      --set services.kafka.cluster.service=voltha-infra-kafka.infra.svc \
+      --set services.etcd.service=voltha-infra-etcd.infra.svc
+
+ONOS apps
+---------
+`Minor` software update is also available for the following ONOS apps - `sadis`, `olt`, `aaa`, `kafka`, `dhcpl2relay`,
+`mac-learning`, `igmpproxy`, and `mcast`. These apps can be thus updated with no impact on the dataplane of provisioned
+subscribers. The `minor` software update for the ONOS apps leverage existing ONOS REST APIs.
+
+After changes in the code of ONOS apps are made and verified the following steps are needed:
+
+#. | obtain the .oar of the app, either via a local build with `mvn clean install` or, if the code has been upstreamed
+   | by downloading it from `maven central <https://search.maven.org/search?q=g:org.opencord>`_ or sonatype.
+#. Delete the old version of the ONOS app.
+#. Upload install and activate the new `oar` file.
+
+Following is an example of the different `curl` commands to upgrade the olt app. This assumes the .oar to be present in
+the directory where the command is executed from/
+
+.. code:: bash
+
+    # downland the app
+    curl --fail -sSL https://oss.sonatype.org/content/groups/public/org/opencord/olt-app/4.5.0-SNAPSHOT/olt-app-4.5.0-20210504.162620-3.oar > org.opencord.olt-4.5.0.SNAPSHOT.oar
+    # delete the app
+    curl --fail -sSL -X DELETE http://karaf:karaf@127.0.0.1:8181/onos/v1/applications/org.opencord.olt
+    # instal and activate the new version of the app
+    curl --fail -sSL -H Content-Type:application/octet-stream -X POST http://karaf:karaf@127.0.0.1:8181/onos/v1/applications?activate=true --data-binary @org.opencord.olt-4.5.0.SNAPSHOT.oar 2>&1
+
+
+Major Software Version Update
+=============================
+A software update is qualified to be `major` where there are changes in the APIs or in the format of the
+data stored by a component.
+
+A major software update at the moment in VOLTHA and ONOS requires a maintenance window
+during which the dataplane for the subscribers is going to be interrupted, thus no service will be provided.
+There are several cases and they can be handled differently.
+
+VOLTHA services API or Data format changes
+------------------------------------------
+A `major` update is needed because VOLTHA API between components have been changed or because format of the data being
+stored is different, thus a complete-wipe out needs to be performed.
+In such scenario each stack can be updated independently with no teardown required of the infrastructure of ONOS,
+ETCD, KAFKA.
+Different versions of Voltha can co-exists over the same infrastructure.
+
+The procedure is iterative on each stack and is performed as follows:
+
+#. un-provision all the subscribers via ONOS REST API.
+#. delete all the OLTs managed by the stack via VOLTHA gRPC API.
+#. upgrade the stack version via `helm` upgrade command and the correct version of the `voltha-stack` chart.
+
+Details on the `helm` commands can be found in the `voltha-helm-charts README file <voltha-helm-charts/README.md>`_
+
+
+ONOS, Atomix or ONOS apps
+-------------------------
+A `major` update is needed because of changes in the interfaces (Java APIs), REST APIs, of ONOS itself or in one
+of the apps have been made, rendering incompatible the two subsequent implementations. A `major` software update is also needed for
+changes made to the data stored in Atomix or for an update of the Atomix version iself.
+In this scenarion all the stacs connected to an ONOS instance need to be cleaned of data before moving them
+over to a new ONOS cluster.
+
+The procedure is as follows:
+
+#. deploy a new ONOS cluster.
+#. un-provision all the subscribers via ONOS REST API
+#. delete the OLT device (not strictly required, but best to ensure clean state)
+#. redeploy the of-agent with the new ONOS cluster endpoints
+#. re-provision the OLT
+#. re-provision the subscribers
+#. iterate over steps 2,3,4,5,6 for each of the stack connected to the ONOS you want to update.
+
+Following is an example on how to deploy ONOS:
+
+.. code:: bash
+
+    helm install -f /tmp/tmp.taoB991mto --create-namespace \
+      --set image.pullPolicy=Always,image.repository=voltha/voltha-onos,image.tag=master,replicas=3,atomix.replicas=3 \
+      --set atomix.persistence.enabled=false \
+      --namespace default onos onos/onos-classic
+
+Following is an example on how to re-deploy the of-agent pointing new controller enpoints:
+//TODO can we redeploy just ofagent ?
+
+.. code:: bash
+
+    helm install --create-namespace \
+    --set global.topics.core_topic=voltha1_voltha1_rwcore,defaults.kv_store_data_prefix=service/minimal \
+    --set global.kv_store_data_prefix=service/voltha/voltha1_voltha1 \
+    --set services.etcd.port=2379 --set services.etcd.address=etcd.default.svc:2379 \
+    --set services.kafka.adapter.service=voltha-infra-kafka.infra.svc \
+    --set services.kafka.cluster.service=voltha-infra-kafka.infra.svc \
+    --set services.etcd.service=voltha-infra-etcd.infra.svc
+    --set 'voltha.services.controller[0].service=voltha-infra-onos-classic-0.voltha-infra-onos-classic-hs.infra.svc' \
+    --set 'voltha.services.controller[0].port=6653' \
+    --set 'voltha.services.controller[0].address=voltha-infra-onos-classic-0.voltha-infra-onos-classic-hs.infra.svc:6653' \
+    --set 'voltha.services.controller[1].service=voltha-infra-onos-classic-1.voltha-infra-onos-classic-hs.infra.svc' \
+    --set 'voltha.services.controller[1].port=6653' \
+    --set 'voltha.services.controller[1].address=voltha-infra-onos-classic-1.voltha-infra-onos-classic-hs.infra.svc:6653' \
+    --set 'voltha.services.controller[2].service=voltha-infra-onos-classic-2.voltha-infra-onos-classic-hs.infra.svc' \
+    --set 'voltha.services.controller[2].port=6653' \
+    --set 'voltha.services.controller[2].address=voltha-infra-onos-classic-2.voltha-infra-onos-classic-hs.infra.svc:6653' \
+    --set global.log_level=WARN --namespace voltha voltha onf/voltha
+
+ETCD
+----
+A `major` update is needed because tearing down the ETCD cluster means deleting the data stored,
+thus requiring a rebuild by the different components.
+
+The procedure is as follows:
+
+#. deploy a new ETCD cluster.
+#. un-provision all the subscribers via ONOS REST API
+#. delete the OLT device (not strictly required, but best to ensure clean state)
+#. redeploy the voltha stack with the `voltha-stack` `helm` chart pointing it to the new ETCD endpoints.
+#. re-provision the OLT
+#. re-provision the subscribers
+#. iterate over steps 2,3,4,5,6 for each stack connected to the ETCD cluster you want to update.
+
+Details on the `helm` commands for the voltha stack can be found in the `voltha-helm-charts README file <voltha-helm-charts/README.md>`_
+
+Following is an example on how to deploy a new 3 node ETCD cluster:
+
+.. code:: bash
+
+    helm install --create-namespace --set auth.rbac.enabled=false,persistence.enabled=false,statefulset.replicaCount=3 --namespace infra etcd bitnami/etcd
+
+
+KAFKA Update
+============
+an update of Kafka is not considered to be a `major` software upgrade because it can be performed with
+no service impact to the user.
+
+.. code:: bash
+
+    helm install --create-namespace --set global.log_level=WARN --namespace infra kafka bitnami/kafka
+
+//can we just re-deploy kafka and point the different components to it ? will it work with minor service interruption ?
