@@ -79,6 +79,7 @@ can be found on the `VOLTHA section of the CORD Wiki
    :hidden:
    :caption: Operations
 
+   operations/software-upgrade.rst
    ONU software update <voltha-openonu-adapter-go/ONU_Upgrade_Notes.md>
    ONU Performance Metrics <voltha-openonu-adapter-go/PM_Notes.md>
 
