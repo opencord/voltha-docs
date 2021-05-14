@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f5669e14_2672572d",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2021-05-14T11:28:39Z",
+      "side": 1,
+      "message": "The",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 3
+      },
+      "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "290e10ea_5ef14c1e",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2021-05-14T11:28:39Z",
+      "side": 1,
+      "message": "rest",
+      "range": {
+        "startLine": 12,
+        "startChar": 88,
+        "endLine": 12,
+        "endChar": 93
+      },
+      "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "72d36d3d_d4cbc1cc",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2021-05-14T11:28:39Z",
+      "side": 1,
+      "message": "also expected",
+      "range": {
+        "startLine": 15,
+        "startChar": 6,
+        "endLine": 15,
+        "endChar": 19
+      },
+      "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "74fbfa72_294c32d6",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2021-05-14T11:28:39Z",
+      "side": 1,
+      "message": "If",
+      "range": {
+        "startLine": 35,
+        "startChar": 37,
+        "endLine": 35,
+        "endChar": 39
+      },
+      "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "664096bf_6ee8c521",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2021-05-14T11:28:39Z",
+      "side": 1,
+      "message": "download",
+      "range": {
+        "startLine": 71,
+        "startChar": 6,
+        "endLine": 71,
+        "endChar": 14
+      },
+      "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "26e4fe60_eccd1d39",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2021-05-14T11:28:39Z",
+      "side": 1,
+      "message": "install",
+      "range": {
+        "startLine": 75,
+        "startChar": 6,
+        "endLine": 75,
+        "endChar": 12
+      },
+      "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
