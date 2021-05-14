@@ -2,6 +2,52 @@
   "comments": [
     {
       "key": {
+        "uuid": "70c94d1b_b333688b",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2021-05-14T17:44:40Z",
+      "side": 1,
+      "message": "I believe this does not include software on the OLT (agent) or does it?",
+      "range": {
+        "startLine": 2,
+        "startChar": 30,
+        "endLine": 2,
+        "endChar": 36
+      },
+      "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d3e82169_974357d4",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2021-05-14T17:44:40Z",
+      "side": 1,
+      "message": "describes",
+      "range": {
+        "startLine": 5,
+        "startChar": 14,
+        "endLine": 5,
+        "endChar": 23
+      },
+      "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "f5669e14_2672572d",
         "filename": "operations/software-upgrade.rst",
         "patchSetId": 1
@@ -48,6 +94,29 @@
     },
     {
       "key": {
+        "uuid": "7fd8d954_ea19b27c",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2021-05-14T17:44:40Z",
+      "side": 1,
+      "message": "its",
+      "range": {
+        "startLine": 12,
+        "startChar": 25,
+        "endLine": 12,
+        "endChar": 28
+      },
+      "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "72d36d3d_d4cbc1cc",
         "filename": "operations/software-upgrade.rst",
         "patchSetId": 1
@@ -71,6 +140,29 @@
     },
     {
       "key": {
+        "uuid": "77aca9a4_5b30e496",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2021-05-14T17:44:40Z",
+      "side": 1,
+      "message": "Do we need to clarify the state of the in-flight message? Should we allow active configuration of subscribers during this upgrade - does that work? If not we should clarify that.",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 15
+      },
+      "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "74fbfa72_294c32d6",
         "filename": "operations/software-upgrade.rst",
         "patchSetId": 1
@@ -87,6 +179,29 @@
         "startChar": 37,
         "endLine": 35,
         "endChar": 39
+      },
+      "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "feac2e70_8c393d2e",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2021-05-14T17:44:40Z",
+      "side": 1,
+      "message": "Do we need to clarify the state of the in-flight message? Should we allow active configuration of subscribers during this upgrade - does that work? If not we should clarify that.",
+      "range": {
+        "startLine": 55,
+        "startChar": 0,
+        "endLine": 57,
+        "endChar": 92
       },
       "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
@@ -133,6 +248,29 @@
         "startChar": 6,
         "endLine": 75,
         "endChar": 12
+      },
+      "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "04d01181_d59025f7",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2021-05-14T17:44:40Z",
+      "side": 1,
+      "message": "Interesting. So, no messages on the bus or new incoming messages are lost. They are seamlessly handovered to new instance - correct ?",
+      "range": {
+        "startLine": 181,
+        "startChar": 0,
+        "endLine": 182,
+        "endChar": 30
       },
       "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
