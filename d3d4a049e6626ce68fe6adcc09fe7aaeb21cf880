@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "631f53fb_ebacd3ef",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-05-17T10:45:21Z",
+      "side": 1,
+      "message": "I have not created a section on the OLT software, let me do that.",
+      "parentUuid": "70c94d1b_b333688b",
+      "range": {
+        "startLine": 2,
+        "startChar": 30,
+        "endLine": 2,
+        "endChar": 36
+      },
+      "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "d3e82169_974357d4",
         "filename": "operations/software-upgrade.rst",
         "patchSetId": 1
@@ -45,6 +69,30 @@
       "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bf249d9f_a3b6cdf1",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-05-17T10:45:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d3e82169_974357d4",
+      "range": {
+        "startLine": 5,
+        "startChar": 14,
+        "endLine": 5,
+        "endChar": 23
+      },
+      "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
     },
     {
       "key": {
@@ -117,6 +165,78 @@
     },
     {
       "key": {
+        "uuid": "ae1a89c0_2c2936c7",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-05-17T10:45:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7fd8d954_ea19b27c",
+      "range": {
+        "startLine": 12,
+        "startChar": 25,
+        "endLine": 12,
+        "endChar": 28
+      },
+      "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8b77ba29_fb565bae",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-05-17T10:45:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f5669e14_2672572d",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 3
+      },
+      "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "55d2be36_511c2945",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-05-17T10:45:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "290e10ea_5ef14c1e",
+      "range": {
+        "startLine": 12,
+        "startChar": 88,
+        "endLine": 12,
+        "endChar": 93
+      },
+      "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "72d36d3d_d4cbc1cc",
         "filename": "operations/software-upgrade.rst",
         "patchSetId": 1
@@ -137,6 +257,30 @@
       "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "10edd53c_5a0bcd1d",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-05-17T10:45:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "72d36d3d_d4cbc1cc",
+      "range": {
+        "startLine": 15,
+        "startChar": 6,
+        "endLine": 15,
+        "endChar": 19
+      },
+      "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
     },
     {
       "key": {
@@ -163,6 +307,30 @@
     },
     {
       "key": {
+        "uuid": "283279c4_94f73e8f",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-05-17T10:45:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "77aca9a4_5b30e496",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 15
+      },
+      "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "74fbfa72_294c32d6",
         "filename": "operations/software-upgrade.rst",
         "patchSetId": 1
@@ -186,6 +354,30 @@
     },
     {
       "key": {
+        "uuid": "f8be8271_e06e462a",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-05-17T10:45:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "74fbfa72_294c32d6",
+      "range": {
+        "startLine": 35,
+        "startChar": 37,
+        "endLine": 35,
+        "endChar": 39
+      },
+      "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "feac2e70_8c393d2e",
         "filename": "operations/software-upgrade.rst",
         "patchSetId": 1
@@ -206,6 +398,30 @@
       "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0906cc1f_8872a2a2",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-05-17T10:45:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "feac2e70_8c393d2e",
+      "range": {
+        "startLine": 55,
+        "startChar": 0,
+        "endLine": 57,
+        "endChar": 92
+      },
+      "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
     },
     {
       "key": {
@@ -266,6 +482,30 @@
       "writtenOn": "2021-05-14T17:44:40Z",
       "side": 1,
       "message": "Interesting. So, no messages on the bus or new incoming messages are lost. They are seamlessly handovered to new instance - correct ?",
+      "range": {
+        "startLine": 181,
+        "startChar": 0,
+        "endLine": 182,
+        "endChar": 30
+      },
+      "revId": "d3d4a049e6626ce68fe6adcc09fe7aaeb21cf880",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f6f0d3f6_dd575c60",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-05-17T10:45:21Z",
+      "side": 1,
+      "message": "correct, as soon as the new instance listens for that topic it receives all the messages, this ensures continuity.",
+      "parentUuid": "04d01181_d59025f7",
       "range": {
         "startLine": 181,
         "startChar": 0,
