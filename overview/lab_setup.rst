@@ -87,15 +87,32 @@ Once inside:
 
    # activate the interface
    ip link set eth1 up
-   # install the wpasupplicant tool
+   # install the required tools for testing
    apt update
-   apt install wpasupplicant
+   apt install -y wpasupplicant jq netsniff-ng build-essential tcpdump
 
 ..
 
-   NOTE: ``wpasupplicant`` is a Linux tool to perform 802.1X authentication.
-   `wpasupplicant documentation can be found here
-   <https://help.ubuntu.com/community/WifiDocs/WPAHowTo>`_.
+In the lxc container you also need to install iperf3. Iperf3 needs to be installed from source to have some
+options used in VOLTHA tests.
+
+.. code:: bash
+
+    git clone https://github.com/esnet/iperf.git -b 3.9
+    cd iperf
+    ./configure && make && sudo make install
+    ldconfig
+
+..
+
+   NOTE:
+
+   - ``wpasupplicant`` is a Linux tool to perform 802.1X authentication. `wpasupplicant documentation can be found here <https://help.ubuntu.com/community/WifiDocs/WPAHowTo>`_.
+   - ``jq`` is a linux tool to perform json parsing. `More information on jq <https://stedolan.github.io/jq/>`_
+   - ``netsniff-ng`` installs maushezan, a linux tool to perform traffic generations. `More informations on mz <https://man7.org/linux/man-pages/man8/mausezahn.8.html>`_
+   - ``iperf3`` is a linux tool to perform speed tests. `More information on iperf3 <https://iperf.fr/>`_
+
+
 
 Create a configuration file for ``wpasupplicant`` in
 ``/etc/wpa_supplicant/wpa_supplicant.conf`` with the content:
@@ -198,6 +215,73 @@ range to assign to the double tagged interface:
      option routers 10.11.2.254;
      option domain-name-servers 8.8.8.8;
    }
+
+Other BNG required tools
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Some tools are required to perform data plane tests present in voltha-system-tests.
+The following commands install them:
+
+.. code:: bash
+
+    sudo apt update
+    sudo apt-get install -y jq netsniff-ng build-essential tcpdump
+
+..
+
+In the BNG you also need to install ``iperf3``. ``Iperf3`` needs to be installed from source to have some
+options used in the tests.
+
+.. code:: bash
+
+    #remove existing installation if any
+    sudo service iperf3 stop
+    sudo apt-get remove --purge iperf3
+    #Clone and install from source
+    git clone https://github.com/esnet/iperf.git -b 3.9
+    cd iperf
+    ./configure && make && sudo make install
+    sudo ldconfig
+
+..
+
+After installing ``iperf3`` on the BNG node it needs to be configured.
+Create the ``iperf3.service`` file:
+
+.. code:: bash
+
+    sudo vi /etc/systemd/system/iperf3.service
+
+..
+
+Include this content in the newly created file:
+
+.. code:: text
+
+    [Unit]
+    Description=iperf3
+    [Service]
+    ExecStart=/usr/local/bin/iperf3 --server
+    [Install]
+    WantedBy=multi-user.target
+
+..
+
+Start the ``iperf3`` service
+
+.. code:: bash
+
+    sudo service iperf3 start
+
+..
+
+Finally, check the ``iperf3`` service
+
+.. code:: bash
+
+    sudo service iperf3 status
+
+..
 
 Configuration for in-band OLT control
 -------------------------------------

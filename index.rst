@@ -59,6 +59,7 @@ can be found on the `VOLTHA section of the CORD Wiki
    Deploy VOLTHA <voltha-helm-charts/README.md>
    overview/workflows.rst
    overview/operate.rst
+   overview/lab_setup.rst
    overview/troubleshooting.rst
 
 .. toctree::
