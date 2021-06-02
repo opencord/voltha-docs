@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d4b34fa8_a6f723e9",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 229,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2021-06-02T21:54:12Z",
+      "side": 1,
+      "message": "no",
+      "revId": "45eb6ed428ce4959922f72be8e795e2b620c062a",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f75934dc_70596b17",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 235,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2021-06-02T21:54:12Z",
+      "side": 1,
+      "message": "inconsistent",
+      "range": {
+        "startLine": 235,
+        "startChar": 75,
+        "endLine": 235,
+        "endChar": 88
+      },
+      "revId": "45eb6ed428ce4959922f72be8e795e2b620c062a",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b63aab26_e2f9485e",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 250,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2021-06-02T21:54:12Z",
+      "side": 1,
+      "message": "no",
+      "revId": "45eb6ed428ce4959922f72be8e795e2b620c062a",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
