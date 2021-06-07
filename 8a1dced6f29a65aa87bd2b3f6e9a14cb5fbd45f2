@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "195ed125_9fe3aea7",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-06-07T17:24:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "57f8bc2e_5e99462a",
+      "range": {
+        "startLine": 122,
+        "startChar": 26,
+        "endLine": 122,
+        "endChar": 31
+      },
+      "revId": "8a1dced6f29a65aa87bd2b3f6e9a14cb5fbd45f2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6525a629_fa5fcf1b",
         "filename": "operations/software-upgrade.rst",
         "patchSetId": 4
@@ -71,6 +95,54 @@
     },
     {
       "key": {
+        "uuid": "6ea5afaa_24903aa6",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-06-07T17:24:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "730917d5_5a197966",
+      "range": {
+        "startLine": 139,
+        "startChar": 17,
+        "endLine": 139,
+        "endChar": 39
+      },
+      "revId": "8a1dced6f29a65aa87bd2b3f6e9a14cb5fbd45f2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8e8dd4b1_fe5128ac",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-06-07T17:24:06Z",
+      "side": 1,
+      "message": "this is just the onos chart, not the infra chart, would you prefer to use the infra chart for this ?",
+      "parentUuid": "6525a629_fa5fcf1b",
+      "range": {
+        "startLine": 139,
+        "startChar": 3,
+        "endLine": 139,
+        "endChar": 16
+      },
+      "revId": "8a1dced6f29a65aa87bd2b3f6e9a14cb5fbd45f2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "55f9e727_e2a37288",
         "filename": "operations/software-upgrade.rst",
         "patchSetId": 4
@@ -94,6 +166,30 @@
     },
     {
       "key": {
+        "uuid": "a11c0a59_ff2adbc5",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-06-07T17:24:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "55f9e727_e2a37288",
+      "range": {
+        "startLine": 140,
+        "startChar": 6,
+        "endLine": 140,
+        "endChar": 88
+      },
+      "revId": "8a1dced6f29a65aa87bd2b3f6e9a14cb5fbd45f2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "90058047_ac8c0e98",
         "filename": "operations/software-upgrade.rst",
         "patchSetId": 4
@@ -105,6 +201,30 @@
       "writtenOn": "2021-06-07T17:07:36Z",
       "side": 1,
       "message": "we should somehow make clear than the ONOS we\u0027re installing here is the the one we should refer to in the voltha-stack upgrade",
+      "range": {
+        "startLine": 142,
+        "startChar": 18,
+        "endLine": 142,
+        "endChar": 25
+      },
+      "revId": "8a1dced6f29a65aa87bd2b3f6e9a14cb5fbd45f2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dd6ee3c9_917c0f62",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 142,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-06-07T17:24:06Z",
+      "side": 1,
+      "message": "meaning that the namespace should be `infra` ?",
+      "parentUuid": "90058047_ac8c0e98",
       "range": {
         "startLine": 142,
         "startChar": 18,
@@ -140,6 +260,30 @@
     },
     {
       "key": {
+        "uuid": "e0972222_98744973",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-06-07T17:24:06Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "8d1aba6f_2e6d2486",
+      "range": {
+        "startLine": 145,
+        "startChar": 0,
+        "endLine": 145,
+        "endChar": 37
+      },
+      "revId": "8a1dced6f29a65aa87bd2b3f6e9a14cb5fbd45f2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9b5d8aea_cc57dabb",
         "filename": "operations/software-upgrade.rst",
         "patchSetId": 4
@@ -160,6 +304,30 @@
       "revId": "8a1dced6f29a65aa87bd2b3f6e9a14cb5fbd45f2",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c43df513_0c703666",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 200,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-06-07T17:24:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9b5d8aea_cc57dabb",
+      "range": {
+        "startLine": 199,
+        "startChar": 0,
+        "endLine": 200,
+        "endChar": 14
+      },
+      "revId": "8a1dced6f29a65aa87bd2b3f6e9a14cb5fbd45f2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
     }
   ]
 }
