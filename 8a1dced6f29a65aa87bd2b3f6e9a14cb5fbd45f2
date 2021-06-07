@@ -1,0 +1,165 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "57f8bc2e_5e99462a",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-06-07T17:07:36Z",
+      "side": 1,
+      "message": "stacks",
+      "range": {
+        "startLine": 122,
+        "startChar": 26,
+        "endLine": 122,
+        "endChar": 31
+      },
+      "revId": "8a1dced6f29a65aa87bd2b3f6e9a14cb5fbd45f2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6525a629_fa5fcf1b",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-06-07T17:07:36Z",
+      "side": 1,
+      "message": "if we only need to deploy ONOS then we should set kafka.enabled\u003dfalse, etcd.enabled\u003dfalse etc...",
+      "range": {
+        "startLine": 139,
+        "startChar": 3,
+        "endLine": 139,
+        "endChar": 16
+      },
+      "revId": "8a1dced6f29a65aa87bd2b3f6e9a14cb5fbd45f2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "730917d5_5a197966",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-06-07T17:07:36Z",
+      "side": 1,
+      "message": "remove, seems a leftover from kind-voltha",
+      "range": {
+        "startLine": 139,
+        "startChar": 17,
+        "endLine": 139,
+        "endChar": 39
+      },
+      "revId": "8a1dced6f29a65aa87bd2b3f6e9a14cb5fbd45f2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "55f9e727_e2a37288",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-06-07T17:07:36Z",
+      "side": 1,
+      "message": "we shouldn\u0027t use a custom image in the example.",
+      "range": {
+        "startLine": 140,
+        "startChar": 6,
+        "endLine": 140,
+        "endChar": 88
+      },
+      "revId": "8a1dced6f29a65aa87bd2b3f6e9a14cb5fbd45f2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "90058047_ac8c0e98",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 142,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-06-07T17:07:36Z",
+      "side": 1,
+      "message": "we should somehow make clear than the ONOS we\u0027re installing here is the the one we should refer to in the voltha-stack upgrade",
+      "range": {
+        "startLine": 142,
+        "startChar": 18,
+        "endLine": 142,
+        "endChar": 25
+      },
+      "revId": "8a1dced6f29a65aa87bd2b3f6e9a14cb5fbd45f2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8d1aba6f_2e6d2486",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-06-07T17:07:36Z",
+      "side": 1,
+      "message": "if you use \"helm upgrade --install\" then only the POD with some differences will be restarted, thus that\u0027s the equivalent of only restarting ofAgent",
+      "range": {
+        "startLine": 145,
+        "startChar": 0,
+        "endLine": 145,
+        "endChar": 37
+      },
+      "revId": "8a1dced6f29a65aa87bd2b3f6e9a14cb5fbd45f2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9b5d8aea_cc57dabb",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 200,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-06-07T17:07:36Z",
+      "side": 1,
+      "message": "yes, just use `helm upgrade --install` as in the ONOS case",
+      "range": {
+        "startLine": 199,
+        "startChar": 0,
+        "endLine": 200,
+        "endChar": 14
+      },
+      "revId": "8a1dced6f29a65aa87bd2b3f6e9a14cb5fbd45f2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
