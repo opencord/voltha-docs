@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9e308d07_3f4a4bea",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 5
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-06-08T08:55:39Z",
+      "side": 1,
+      "message": "We need to set a pointer to a VOLTHA-ONOS image, otherwise we\u0027ll get the bare onos without the apps, eg:\n\n--set image.pullPolicy\u003dAlways,image.repository\u003dvoltha/voltha-onos,image.tag\u003d5.0.0",
+      "range": {
+        "startLine": 140,
+        "startChar": 6,
+        "endLine": 140,
+        "endChar": 42
+      },
+      "revId": "604f94ab75c8d772f7acc3b1ca021922eec8f606",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c226faf0_3c6d26ea",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 5
+      },
+      "lineNbr": 149,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-06-08T08:55:39Z",
+      "side": 1,
+      "message": "upgrade --install",
+      "range": {
+        "startLine": 149,
+        "startChar": 9,
+        "endLine": 149,
+        "endChar": 16
+      },
+      "revId": "604f94ab75c8d772f7acc3b1ca021922eec8f606",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bde8a8dd_dbf73cad",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 5
+      },
+      "lineNbr": 206,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-06-08T08:55:39Z",
+      "side": 1,
+      "message": "upgrade --install",
+      "range": {
+        "startLine": 206,
+        "startChar": 9,
+        "endLine": 206,
+        "endChar": 16
+      },
+      "revId": "604f94ab75c8d772f7acc3b1ca021922eec8f606",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fb3e4642_a36f85f6",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 5
+      },
+      "lineNbr": 222,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-06-08T08:55:39Z",
+      "side": 1,
+      "message": "is this voltha-stack?",
+      "range": {
+        "startLine": 222,
+        "startChar": 62,
+        "endLine": 222,
+        "endChar": 68
+      },
+      "revId": "604f94ab75c8d772f7acc3b1ca021922eec8f606",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}

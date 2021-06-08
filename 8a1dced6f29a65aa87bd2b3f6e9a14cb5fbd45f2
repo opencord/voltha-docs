@@ -143,6 +143,30 @@
     },
     {
       "key": {
+        "uuid": "e29d58ae_23f7227e",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-06-08T08:55:39Z",
+      "side": 1,
+      "message": "a my bad... I\u0027m fine with using the ONOS chart directly",
+      "parentUuid": "8e8dd4b1_fe5128ac",
+      "range": {
+        "startLine": 139,
+        "startChar": 3,
+        "endLine": 139,
+        "endChar": 16
+      },
+      "revId": "8a1dced6f29a65aa87bd2b3f6e9a14cb5fbd45f2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "55f9e727_e2a37288",
         "filename": "operations/software-upgrade.rst",
         "patchSetId": 4
@@ -225,6 +249,30 @@
       "side": 1,
       "message": "meaning that the namespace should be `infra` ?",
       "parentUuid": "90058047_ac8c0e98",
+      "range": {
+        "startLine": 142,
+        "startChar": 18,
+        "endLine": 142,
+        "endChar": 25
+      },
+      "revId": "8a1dced6f29a65aa87bd2b3f6e9a14cb5fbd45f2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cc9f6b01_1ff682c3",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 142,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-06-08T08:55:39Z",
+      "side": 1,
+      "message": "I\u0027m fine with either, but we\u0027re using \"Default\" here and \"voltha-infra-onos-classic-hs.infra.svc\" in the VOLTHA stack command",
+      "parentUuid": "dd6ee3c9_917c0f62",
       "range": {
         "startLine": 142,
         "startChar": 18,
