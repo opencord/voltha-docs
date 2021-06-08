@@ -285,6 +285,30 @@
     },
     {
       "key": {
+        "uuid": "2eb1d171_ed80f08d",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 142,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-06-08T09:07:07Z",
+      "side": 1,
+      "message": "ah, yes, changed to infra",
+      "parentUuid": "cc9f6b01_1ff682c3",
+      "range": {
+        "startLine": 142,
+        "startChar": 18,
+        "endLine": 142,
+        "endChar": 25
+      },
+      "revId": "8a1dced6f29a65aa87bd2b3f6e9a14cb5fbd45f2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "8d1aba6f_2e6d2486",
         "filename": "operations/software-upgrade.rst",
         "patchSetId": 4
