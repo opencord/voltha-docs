@@ -187,9 +187,9 @@ ONOS Apps:
 - `mcast <https://gerrit.opencord.org/gitweb?p=mcast.git;a=summary>`_: ``2.4.0``
 - `olt <https://gerrit.opencord.org/gitweb?p=olt.git;a=summary>`_: ``4.5.0``
 - `sadis <https://gerrit.opencord.org/gitweb?p=sadis.git;a=summary>`_: ``5.4.0``
-- `bng <https://gerrit.opencord.org/gitweb?p=bng.git;a=summary>`_: ``2.0.0``
-- `pppoeagent <https://gerrit.opencord.org/plugins/gitiles/pppoeagent/>`_: ``1.0.0``
-- `olttopology <https://gerrit.opencord.org/plugins/gitiles/olttopology/>`_: ``1.0.3``
+- `bng <https://gerrit.opencord.org/gitweb?p=bng.git;a=summary>`_: ``2.1.0``
+- `pppoeagent <https://gerrit.opencord.org/plugins/gitiles/pppoeagent/>`_: ``1.1.0``
+- `olttopology <https://gerrit.opencord.org/plugins/gitiles/olttopology/>`_: ``1.1.0``
 
 VOLTHA Components:
 ++++++++++++++++++
@@ -198,25 +198,27 @@ VOLTHA Components:
 - `bbsim <https://gerrit.opencord.org/gitweb?p=bbsim.git;a=tree>`_- ``1.8.0`` with `chart <https://gerrit.opencord.org/gitweb?p=helm-charts.git;a=tree;f=bbsim>`_ ``4.4.1``
 - `voltha-go <https://gerrit.opencord.org/gitweb?p=voltha-go.git;a=tree;h=refs/heads/voltha-2.8>`_ - `` 2.9.3`` with chart ``2.9.7``
 - `ofagent-go <https://gerrit.opencord.org/gitweb?p=ofagent-go.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``1.6.5``  with chart ``2.9.7``
-- `voltctl <https://gerrit.opencord.org/gitweb?p=voltctl.git;a=tree>`_ - ``1.6.10``
+- `voltctl <https://gerrit.opencord.org/gitweb?p=voltctl.git;a=tree>`_ - ``1.6.11``
 - `voltha-openolt-adapter <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``3.5.1`` with chart ``2.9.2``
-- `voltha-openonu-adapter-go <https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter-go.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``1.3.2`` with chart ``2.8.3``
+- `voltha-openonu-adapter-go <https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter-go.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``1.3.4`` with chart ``2.8.6``
 - `voltha-onos <https://gerrit.opencord.org/gitweb?p=voltha-onos.git;a=tree;h=refs/heads/voltha-2.8>`_ -  ``5.0.1`` with chart ``0.1.16``
 - `openolt agent <https://gerrit.opencord.org/gitweb?p=openolt.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``3.4.8``
 - `voltha-protos <https://github.com/opencord/voltha-protos/releases/tag/v4.0.5>`_ - ``4.2.0``
 - `voltha-lib-go <https://github.com/opencord/voltha-lib-go/releases/tag/v4.0.3>`_ - ``5.0.5``
 - `Bbsim-sadis-server <https://github.com/opencord/bbsim-sadis-server/releases/tag/v0.1.3>`_ - ``0.3.0`` with chart ``0.2.0``
-- `voltha-system-tests <https://github.com/opencord/voltha-system-tests/releases/tag/v2.8.0>`_ - ``2.8.0``
+- `voltha-system-tests <https://github.com/opencord/voltha-system-tests/releases/tag/2.8.0>`_ - ``2.8.1``
 
 
 Helm Chart Versions:
 ++++++++++++++++++++
 This section refers to the macro charts to deploy the required infrastructure and a (or many) VOLTHA stacks:
-- Voltha-infra: ``0.2.8``
-- Voltha-stack: ``0.2.9``
+- Voltha-infra: ``2.8.0``
+- Voltha-stack: ``2.8.1``
 
-
-**Available from EdgeCore site**
+Openolt Agent packages:
++++++++++++++++++++++++
+**EdgeCore**
+Available from EdgeCore site:
 
 - Out of band management
 
@@ -239,7 +241,11 @@ This section refers to the macro charts to deploy the required infrastructure an
     available at /ASXvOLT16/OpenOLT_Agent/From_ONF_Distribution/voltha-2.8/IN-BAND.
     Note that debian package available as part of the ONL support 40G NNI by default.
 
-
 Get access credentials for https://edgecore.quickconnect.to and then login
 and navigate to File_Station -> EdgecoreNAS, and then the folder
 /ASXvOLT16/OpenOLT_Agent/From_ONF_Distribution/ and pick the version above
+
+**Radisys**
+For 3200G 40G NNI .Deb Version: ``openolt_rlt-3200g-w-40g-3.4.8-eec0fc9e9a01dc0d35b0b8441e0a22a4c0cc51b4.deb``
+To get the debian package for Radisys 3200G OLT please write to `Cameron Lundberg <cameron.lundberg@radisys.com>`_
+
