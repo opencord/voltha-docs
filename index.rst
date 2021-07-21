@@ -43,9 +43,9 @@ Here some quick links to get you started:
 Community
 ---------
 
-Information about participating in the VOLTHA community and development process
-can be found on the `VOLTHA section of the CORD Wiki
-<https://wiki.opencord.org/display/CORD/VOLTHA>`_.
+VOLTHA is an open source project led by a technical steering team that holds weekly meetings.
+You can find more information about the TST, community, meetings, mailing lists and slack channels
+in the `VOLTHA wiki page <https://wiki.opennetworking.org/display/COM/VOLTHA>`_
 
 
 .. toctree::
@@ -61,6 +61,7 @@ can be found on the `VOLTHA section of the CORD Wiki
    overview/operate.rst
    overview/lab_setup.rst
    overview/troubleshooting.rst
+   overview/releases.rst
 
 .. toctree::
    :maxdepth: 1
