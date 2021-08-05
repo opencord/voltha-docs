@@ -209,7 +209,7 @@ VOLTHA Components:
 - `voltha-openolt-adapter <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``3.5.2`` with chart ``2.9.3``
 - `voltha-openonu-adapter-go <https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter-go.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``1.3.10`` with chart ``2.8.8``
 - `voltha-onos <https://gerrit.opencord.org/gitweb?p=voltha-onos.git;a=tree;h=refs/heads/voltha-2.8>`_ -  ``5.0.1`` with chart ``0.1.16``
-- `openolt agent <https://gerrit.opencord.org/gitweb?p=openolt.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``3.4.8``
+- `openolt agent <https://gerrit.opencord.org/gitweb?p=openolt.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``3.4.9``
 - `voltha-protos <https://github.com/opencord/voltha-protos/releases/tag/v4.0.5>`_ - ``4.2.0``
 - `voltha-lib-go <https://github.com/opencord/voltha-lib-go/releases/tag/v4.0.3>`_ - ``5.0.5``
 - `Bbsim-sadis-server <https://github.com/opencord/bbsim-sadis-server/releases/tag/v0.1.3>`_ - ``0.3.0`` with chart ``0.2.0``
@@ -233,18 +233,18 @@ Available from EdgeCore site:
     at /ASXvOLT16/OpenOLT_Agent/From_ONF_Distribution
   - for ASFVOLT16 available, from /ASFvOLT16/OpenOLT_Agent/From_ONF_Distribution/voltha-2.8/OUT-OF-BAND.:
 
-    - ``openolt_asfvolt16-3.4.8-eec0fc9e9a01dc0d35b0b8441e0a22a4c0cc51b4-100G-NNI.deb`` if 100G NNI port is used
-    - ``openolt_asfvolt16-3.4.8-eec0fc9e9a01dc0d35b0b8441e0a22a4c0cc51b4-40G-NNI.deb`` if 40G NNI port is used.
+    - ``openolt_asfvolt16-3.4.9-e2a9597f3d690fe3a0ea0df244571dfc9e8c2833-100G-NNI.deb`` if 100G NNI port is used
+    - ``openolt_asfvolt16-3.4.9-e2a9597f3d690fe3a0ea0df244571dfc9e8c2833-40G-NNI.deb`` if 40G NNI port is used.
 
   - for ASGVOLT64 available at /ASGvOLT64/OpenOLT_Agent/From_ONF_Distribution/voltha-2.8/OUT-OF-BAND:
 
-    - ``openolt_asgvolt64-3.4.8-eec0fc9e9a01dc0d35b0b8441e0a22a4c0cc51b4-100G-NNI.deb`` if 100G NNI port is used
-    - ``openolt_asgvolt64-3.4.8-eec0fc9e9a01dc0d35b0b8441e0a22a4c0cc51b4-40G-NNI.deb`` if 40G NNI port is used.
+    - ``openolt_asgvolt64-3.4.9-e2a9597f3d690fe3a0ea0df244571dfc9e8c2833-100G-NNI.deb`` if 100G NNI port is used
+    - ``openolt_asgvolt64-3.4.9-e2a9597f3d690fe3a0ea0df244571dfc9e8c2833-40G-NNI.deb`` if 40G NNI port is used.
 
 - In band management
 
   - use ONL image, comprising of Bal and openolt (available from edgecore site) for ASFVOLT16
-    ONL-onl-4.14_ONL-OS8_2021-03-19.0322-72b95a7_AMD64_INSTALLED_INSTALLER-40G-NNI,
+    ONL-onl-4.14_ONL-OS8_2021-08-05.0514-72b95a7_AMD64_INSTALLED_INSTALLER-40G-NNI,
     available at /ASXvOLT16/OpenOLT_Agent/From_ONF_Distribution/voltha-2.8/IN-BAND.
     Note that debian package available as part of the ONL support 40G NNI by default.
 
@@ -253,6 +253,6 @@ and navigate to File_Station -> EdgecoreNAS, and then the folder
 /ASXvOLT16/OpenOLT_Agent/From_ONF_Distribution/ and pick the version above
 
 **Radisys**
-For 3200G 40G NNI .Deb Version: ``openolt_rlt-3200g-w-40g-3.4.8-eec0fc9e9a01dc0d35b0b8441e0a22a4c0cc51b4.deb``
+For 3200G 40G NNI .Deb Version: ``openolt_rlt-3200g-w-40g-3.5.1-dev-262b6293cdeda78317dda9d3a6cfab0e7ebfbf05.deb``
 To get the debian package for Radisys 3200G OLT please write to `Cameron Lundberg <cameron.lundberg@radisys.com>`_
 
