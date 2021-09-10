@@ -206,7 +206,7 @@ VOLTHA Components:
 - `voltha-go <https://gerrit.opencord.org/gitweb?p=voltha-go.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``2.9.3`` with chart ``2.9.7``
 - `ofagent-go <https://gerrit.opencord.org/gitweb?p=ofagent-go.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``1.6.5``  with chart ``2.9.7``
 - `voltctl <https://gerrit.opencord.org/gitweb?p=voltctl.git;a=tree>`_ - ``1.6.11``
-- `voltha-openolt-adapter <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``3.5.4`` with chart ``2.9.4``
+- `voltha-openolt-adapter <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``3.5.5`` with chart ``2.9.5``
 - `voltha-openonu-adapter-go <https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter-go.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``1.3.12`` with chart ``2.8.9``
 - `voltha-onos <https://gerrit.opencord.org/gitweb?p=voltha-onos.git;a=tree;h=refs/heads/voltha-2.8>`_ -  ``5.0.1`` with chart ``0.1.16``
 - `openolt agent <https://gerrit.opencord.org/gitweb?p=openolt.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``3.4.9``
@@ -220,7 +220,7 @@ Helm Chart Versions:
 ++++++++++++++++++++
 This section refers to the macro charts to deploy the required infrastructure and a (or many) VOLTHA stacks:
 - Voltha-infra: ``2.8.0``
-- Voltha-stack: ``2.8.5``
+- Voltha-stack: ``2.8.6``
 
 Openolt Agent packages:
 +++++++++++++++++++++++

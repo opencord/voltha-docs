@@ -108,7 +108,7 @@ The procedure is iterative on each stack and is performed as follows:
 #. delete all the OLTs managed by the stack via VOLTHA gRPC API.
 #. upgrade the stack version via `helm` upgrade command and the correct version of the `voltha-stack` chart.
 
-Details on the `helm` commands can be found in the `voltha-helm-charts README file <voltha-helm-charts/README.md>`_
+Details on the `helm` commands can be found in the voltha-helm-charts README file <voltha-helm-charts/README.md>_
 
 If the API change is between the `openolt adapter` and the `openolt agent` on the OLT hardware please refer to section
 :ref:`OpenOLT Agent Update <openolt-update>`.
@@ -180,7 +180,7 @@ The procedure is as follows:
 #. re-provision the subscribers
 #. iterate over steps 2,3,4,5,6 for each stack connected to the ETCD cluster you want to update.
 
-Details on the `helm` commands for the voltha stack can be found in the `voltha-helm-charts README file <voltha-helm-charts/README.md>`_
+Details on the `helm` commands for the voltha stack can be found in the `voltha-helm-charts README file <../voltha-helm-charts/README.md>`_
 
 Following is an example on how to deploy a new 3 node ETCD cluster:
 

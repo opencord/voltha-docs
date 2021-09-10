@@ -56,6 +56,7 @@ extensions = [
     'sphinxcontrib.spelling',
     "sphinx_multiversion",
     "sphinx.ext.intersphinx",
+    "sphinxcontrib.openapi",
 ]
 
 # API documentation
