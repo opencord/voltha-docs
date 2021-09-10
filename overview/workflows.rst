@@ -43,8 +43,11 @@ Technology profiles describes technology specific attributes required to impleme
 Subscriber Services on an OpenFlow managed Logical Switch overlaid upon an OLT
 or other technology specific platform.
 
-More on Technology profiles here:
-https://wiki.opencord.org/display/CORD/Technology+Profiles#TechnologyProfiles-IntroductiontoTechnologyProfiles
+More information on Technology profiles can be found here:
+`2018/03/22 VOLTHA TST on Technology profile <https://youtu.be/L0JBJ3R1Mag>`_
+`VOLTHA technical notes on Technology profile <https://wiki-archive.opencord.org/attachments/4981667/4981671.docx>`_
+`VOLTHA Implementation of Technology profiles <https://wiki-archive.opencord.org/attachments/4981667/4981670.docx>`_
+`Technology profile instance example <https://wiki-archive.opencord.org/Technology-Profile-Instance_4982088.html>`_
 
 Technology profiles in VOLTHA are stored in ETCD. If you want to load a custom
 Technology profile in your stack you can do so by:
