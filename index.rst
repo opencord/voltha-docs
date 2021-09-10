@@ -44,8 +44,8 @@ Community
 ---------
 
 Information about participating in the VOLTHA community and development process
-can be found on the `VOLTHA section of the CORD Wiki
-<https://wiki.opencord.org/display/CORD/VOLTHA>`_.
+can be found on the `VOLTHA section of the opennetworking Wiki
+<https://wiki.opennetworking.org/display/COM/VOLTHA>`_.
 
 
 .. toctree::
