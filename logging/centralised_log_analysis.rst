@@ -14,8 +14,8 @@ The solution we have chosen EFK (elasticsearch, kibana and
 fluentd-elasticsearch) setup for voltha enables the Operator to push
 logs from all VOLTHA components.
 
-To deploy VOLTHA with the EFK stack follow
-`these instructions <../voltha-helm-charts#enable-log-correlation-in-voltha-optional>`_.
+To deploy VOLTHA with the EFK stack follow the paraghraph `Support-for-logging-and-tracing-(optional)`
+in the `voltha-helm-charts README <../voltha-helm-charts/README.md>`_.
 
 This will deploy Efk stack with a single node elasticsearch and
 kibana instance will be deployed and a fluentd-elasticsearch pod will be

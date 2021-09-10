@@ -153,6 +153,6 @@ Components (which build containers)
 - ofagent-go
 - voltha-go (rw_core)
 - voltha-openolt-adapter
-- voltha-openonu-adapter
+- voltha-openonu-adapter-go
 - voltha-onos (includes ONOS Apps)
 
