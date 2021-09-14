@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "71a281f5_a181351c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-09-14T15:29:23Z",
+      "side": 1,
+      "message": "overriding Jenkins so that other patches can build and fix links. ",
+      "revId": "6b2fcf20989ed3efd4907d1364833a100b3f2da6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
