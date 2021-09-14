@@ -25,7 +25,7 @@ def get_version():
 # -- Project information -----------------------------------------------------
 
 project = u'VOLTHA Docs'
-copyright = u'2019-2020, VOLTHA Contributors & Open Networking Foundation'
+copyright = u'2019-2021, VOLTHA Contributors & Open Networking Foundation'
 author = u'VOLTHA Contributors'
 
 # The short X.Y version
@@ -87,6 +87,9 @@ prep_commands = [
     'ln -sf _root_/repos _target_/repos',
     'make prep',
 ]
+
+# don't include tags
+smv_tag_whitelist = None
 
 # inlcude only the branches matching master and voltha-*
 smv_branch_whitelist = r'^(master|voltha-.*)$'
