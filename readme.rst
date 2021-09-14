@@ -56,17 +56,3 @@ to change and see changes over time as a diff.
 `Graphviz
 <https://www.sphinx-doc.org/en/master/usage/extensions/graphviz.html>`_
 supports many standard graph types.
-
-The `blockdiag <http://blockdiag.com/en/blockdiag/sphinxcontrib.html>`_,
-`nwdiag, and rackdiag <http://blockdiag.com/en/nwdiag/sphinxcontrib.html>`_,
-and `seqdiag <http://blockdiag.com/en/seqdiag/sphinxcontrib.html>`_ suites of
-tools can be used to create specific types of diagrams:
-
-- `blockdiag examples <http://blockdiag.com/en/blockdiag/examples.html>`_
-- `nwdiag examples <http://blockdiag.com/en/nwdiag/nwdiag-examples.html>`_
-- `rackdiag examples <http://blockdiag.com/en/nwdiag/rackdiag-examples.html>`_
-- `seqdiag examples <http://blockdiag.com/en/seqdiag/examples.html>`_
-
-The styles applied to nodes and connections in these diagrams can be customized
-using `attributes
-<http://blockdiag.com/en/blockdiag/attributes/node.attributes.html>`_.
