@@ -181,7 +181,7 @@ Component Versions in VOLTHA 2.8 release
 ONOS and Atomix:
 ++++++++++++++++
 
-- `ONOS 2.5 LTS <https://github.com/opennetworkinglab/onos/releases/tag/2.5.2>`_: ``2.5.2``
+- `ONOS 2.5 LTS <https://github.com/opennetworkinglab/onos/releases/tag/2.5.2>`_: ``2.5.3``
 - `ATOMIX <https://github.com/atomix/atomix/releases/tag/atomix-3.1.9>`_: ``3.1.9``
 
 ONOS Apps:
@@ -207,8 +207,8 @@ VOLTHA Components:
 - `ofagent-go <https://gerrit.opencord.org/gitweb?p=ofagent-go.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``1.6.5``  with chart ``2.9.7``
 - `voltctl <https://gerrit.opencord.org/gitweb?p=voltctl.git;a=tree>`_ - ``1.6.11``
 - `voltha-openolt-adapter <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``3.5.5`` with chart ``2.9.5``
-- `voltha-openonu-adapter-go <https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter-go.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``1.3.12`` with chart ``2.8.9``
-- `voltha-onos <https://gerrit.opencord.org/gitweb?p=voltha-onos.git;a=tree;h=refs/heads/voltha-2.8>`_ -  ``5.0.1`` with chart ``0.1.16``
+- `voltha-openonu-adapter-go <https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter-go.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``1.3.13`` with chart ``2.8.10``
+- `voltha-onos <https://gerrit.opencord.org/gitweb?p=voltha-onos.git;a=tree;h=refs/heads/voltha-2.8>`_ -  ``5.0.2`` with chart ``0.1.16``
 - `openolt agent <https://gerrit.opencord.org/gitweb?p=openolt.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``3.4.9``
 - `voltha-protos <https://github.com/opencord/voltha-protos/releases/tag/v4.0.5>`_ - ``4.2.0``
 - `voltha-lib-go <https://github.com/opencord/voltha-lib-go/releases/tag/v4.0.3>`_ - ``5.0.5``
@@ -219,8 +219,8 @@ VOLTHA Components:
 Helm Chart Versions:
 ++++++++++++++++++++
 This section refers to the macro charts to deploy the required infrastructure and a (or many) VOLTHA stacks:
-- Voltha-infra: ``2.8.0``
-- Voltha-stack: ``2.8.6``
+- Voltha-infra: ``2.8.1``
+- Voltha-stack: ``2.8.7``
 
 Openolt Agent packages:
 +++++++++++++++++++++++
