@@ -16,6 +16,24 @@
       "message": "why is the diagram removed?",
       "revId": "638dca08443efa37353939601bc5ef87135c0281",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1132488a_00add0eb",
+        "filename": "_static/voltha_components.svg",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-10-06T16:03:56Z",
+      "side": 1,
+      "message": "unused",
+      "parentUuid": "b7487980_5cd2036a",
+      "revId": "638dca08443efa37353939601bc5ef87135c0281",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
