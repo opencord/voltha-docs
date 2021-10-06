@@ -28,9 +28,9 @@ Infrastructure
 
 The Infrastructure for a VOLTHA deployment contains, at the bare minimum:
 
-    - A ``kafka`` cluster. `Kafka <https://kafka.apache.org>`_  is the messaging bus system used to communicate to
-      and from the different VOLTHA components and to publish events to the outside listeners, such as the Operator's
-      OSS/BSS. The recommended deployment size is 3 nodes for failure and resiliency, but can also be a single node.
+    - A ``kafka`` cluster. `Kafka <https://kafka.apache.org>`_  is the messaging bus system used publish events to the
+      outside listeners, such as the Operator's OSS/BSS. The recommended deployment size is 3 nodes for failure and
+      resiliency, but can also be a single node.
     - An ``etcd`` cluster. `ETCD <https://etcd.io>`_ is used as data store by the different VOLTHA
       components. The recommended deployment size is 3 nodes for failure and resiliency,
       but can also be a single node.

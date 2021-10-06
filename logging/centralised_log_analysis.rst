@@ -52,9 +52,9 @@ Log Collection from VOLTHA Ecosystem and Whitebox OLT Device
 ------------------------------------------------------------
 
 Below diagram depicts the log collection from voltha components and
-whitebox OLT device through EFK.The fluentd pod running kind-voltha
-setup collects logs from all the voltha components and push to
-elasticsearch pod.The td-agent(fluentd variant) service running on
+whitebox OLT device through EFK.The fluentd pod running collects logs
+from all the voltha components and push to elasticsearch pod.
+The td-agent(fluentd variant) service running on
 whitebox OLT device capture the logs from openolt agent process, device
 mgmt daemon process and system logs and transmits the logs to the
 elasticsearch pod running in voltha cluster over tcp protocol.
