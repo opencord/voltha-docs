@@ -82,8 +82,8 @@ in the `VOLTHA wiki page <https://wiki.opennetworking.org/display/COM/VOLTHA>`_
    :caption: Operations
 
    operations/software-upgrade.rst
-   ONU software update <voltha-openonu-adapter-go/ONU_Upgrade_Notes.md>
-   ONU Performance Metrics <voltha-openonu-adapter-go/PM_Notes.md>
+   ONU software update <voltha-openonu-adapter-go/docs/ONU_Upgrade_Notes.md>
+   ONU Performance Metrics <voltha-openonu-adapter-go/docs/PM_Notes.md>
 
 .. toctree::
    :maxdepth: 1
@@ -99,6 +99,7 @@ in the `VOLTHA wiki page <https://wiki.opennetworking.org/display/COM/VOLTHA>`_
    :caption: Logging
 
    logging/centralised_log_analysis.rst
+   ONU adapter per package logging <voltha-openonu-adapter-go/docs/Specific_Logging_Notes.md>
 
 .. toctree::
    :maxdepth: 1
