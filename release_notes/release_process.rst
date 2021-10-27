@@ -110,9 +110,22 @@ currently cover the particular bug. Examples:
 - Robot tests for integration-related issues
 - Unit tests for code-level issues
 
+API Deprecation policy
+----------------------
 
-Repos branched for each release
--------------------------------
+VOLTHA has in place a 2 release deprecation policy. Starting from ``voltha-2.9`` the APIs that are marked as deprecated
+are automatically removed after 2 releases.
+As an example an API marked as deprecated in ``voltha-2.9`` will be removed after the ``voltha-2.10`` release
+and will not be present anymore in ``voltha-2.11``.
+
+The removal process is intended to happen automatically, meaning no further notice of removal needs to be sent out.
+The deprecated objects and APIs are marked in the `voltha-protos <https://github.com/opencord/voltha-protos>`_ using the
+``deprecated`` construct from protobuf, as per `specification <https://developers.google.com/protocol-buffers/docs/proto3>`_.
+An example is ``int32 old_field = 6 [deprecated = true];``
+
+
+Repos (lazily) branched for each release
+----------------------------------------
 
 Charts
 """"""
@@ -123,6 +136,7 @@ Testing
 """""""
 
 - voltha-system-tests
+- pod-configs
 
 Tools
 """""
@@ -135,16 +149,16 @@ ONOS Apps
 
 - aaa
 - dhcpl2relay
-- igmp
+- igmpproxy
 - kafka
 - mcast
 - olt
 - sadis
+- mac-learning
 
 Libraries
 """""""""
 
-- pyvoltha
 - voltha-lib-go
 - voltha-protos
 
