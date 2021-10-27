@@ -201,17 +201,17 @@ ONOS Apps:
 VOLTHA Components:
 ++++++++++++++++++
 
-- `Helm Charts (voltha-helm-charts) <https://gerrit.opencord.org/gitweb?p=voltha-helm-charts.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``2.8.11``
+- `Helm Charts (voltha-helm-charts) <https://gerrit.opencord.org/gitweb?p=voltha-helm-charts.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``2.8.12``
 - `bbsim <https://gerrit.opencord.org/gitweb?p=bbsim.git;a=tree>`_- ``1.8.1`` with `chart <https://gerrit.opencord.org/gitweb?p=helm-charts.git;a=tree;f=bbsim>`_ ``4.4.3``
-- `voltha-go <https://gerrit.opencord.org/gitweb?p=voltha-go.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``2.9.4`` with chart ``2.9.8``
+- `voltha-go <https://gerrit.opencord.org/gitweb?p=voltha-go.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``2.9.5`` with chart ``2.9.9``
 - `ofagent-go <https://gerrit.opencord.org/gitweb?p=ofagent-go.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``1.6.5``  with chart ``2.9.7``
 - `voltctl <https://gerrit.opencord.org/gitweb?p=voltctl.git;a=tree>`_ - ``1.6.11``
-- `voltha-openolt-adapter <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``3.5.6`` with chart ``2.9.6``
+- `voltha-openolt-adapter <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``3.5.7`` with chart ``2.9.7``
 - `voltha-openonu-adapter-go <https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter-go.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``1.3.14`` with chart ``2.8.11``
 - `voltha-onos <https://gerrit.opencord.org/gitweb?p=voltha-onos.git;a=tree;h=refs/heads/voltha-2.8>`_ -  ``5.0.3`` with chart ``0.1.16``
 - `openolt agent <https://gerrit.opencord.org/gitweb?p=openolt.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``3.4.9``
 - `voltha-protos <https://github.com/opencord/voltha-protos/releases/tag/v4.0.5>`_ - ``4.2.0``
-- `voltha-lib-go <https://github.com/opencord/voltha-lib-go/releases/tag/v4.0.3>`_ - ``5.0.5``
+- `voltha-lib-go <https://github.com/opencord/voltha-lib-go/releases/tag/v4.0.3>`_ - ``5.0.6``
 - `Bbsim-sadis-server <https://github.com/opencord/bbsim-sadis-server/releases/tag/v0.1.3>`_ - ``0.3.0`` with chart ``0.2.0``
 - `voltha-system-tests <https://github.com/opencord/voltha-system-tests/releases/tag/2.8.0>`_ - ``2.8.10``
 
@@ -220,7 +220,7 @@ Helm Chart Versions:
 ++++++++++++++++++++
 This section refers to the macro charts to deploy the required infrastructure and a (or many) VOLTHA stacks:
 - Voltha-infra: ``2.8.2``
-- Voltha-stack: ``2.8.8``
+- Voltha-stack: ``2.8.9``
 
 Openolt Agent packages:
 +++++++++++++++++++++++
