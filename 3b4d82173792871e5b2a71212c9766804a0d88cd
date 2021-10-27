@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b4c2e388_cc9cb724",
+        "filename": "release_notes/release_process.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 1000218
+      },
+      "writtenOn": "2021-10-27T16:35:37Z",
+      "side": 1,
+      "message": "Don\u0027t we have Mac_learner also as an application?",
+      "range": {
+        "startLine": 152,
+        "startChar": 2,
+        "endLine": 152,
+        "endChar": 11
+      },
+      "revId": "3b4d82173792871e5b2a71212c9766804a0d88cd",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
