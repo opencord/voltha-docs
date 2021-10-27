@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "049f79b5_564a997c",
+        "filename": "release_notes/voltha_2.8.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 209,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2021-10-27T12:41:16Z",
+      "side": 1,
+      "message": "doesn\u0027t this also need update?",
+      "range": {
+        "startLine": 209,
+        "startChar": 128,
+        "endLine": 209,
+        "endChar": 157
+      },
+      "revId": "0723bb1d90ec69ad600c465fd6412b31dfda532d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
