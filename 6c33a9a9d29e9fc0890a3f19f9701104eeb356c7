@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7dd8489f_18aa9db7",
+        "filename": "index.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2021-11-04T18:10:39Z",
+      "side": 1,
+      "message": "Also include this https://github.com/opencord/openolt-scale-tester and https://github.com/opencord/openolt-test ?",
+      "revId": "6c33a9a9d29e9fc0890a3f19f9701104eeb356c7",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
