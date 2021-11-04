@@ -40,6 +40,67 @@ Here some quick links to get you started:
 - :doc:`./overview/deployment_environment`
 - :doc:`./overview/troubleshooting`
 
+Repositories
+------------
+
+Following is a list of all the repositories related to the VOLTHA project.
+
+Services:
+
+- `VOLTHA Core <https://github.com/opencord/voltha-go>`_
+- `OpenFlow Agent <https://github.com/opencord/ofagent-go>`_
+- `Openonu Adapter <https://github.com/opencord/voltha-openonu-adapter-go>`_
+- `Openolt Adapter <https://github.com/opencord/voltha-openolt-adapter>`_
+- `Openolt Agent <https://github.com/opencord/openolt>`_
+- `ONOS controller <https://github.com/opencord/voltha-onos>`_
+- `BBSIM <https://github.com/opencord/bbsim>`_
+- `BBSIM Sadis Server <https://github.com/opencord/bbsim-sadis-server>`_
+
+ONOS APPs:
+
+- `AAA <https://github.com/opencord/aaa>`_
+- `BNG <https://github.com/opencord/bng>`_
+- `DHCP L2 Relay <https://github.com/opencord/dhcpl2relay>`_
+- `IGMPProxy <https://github.com/opencord/igmpproxy>`_
+- `Kafka <https://github.com/opencord/kafka-onos>`_
+- `Mac Learning <https://github.com/opencord/mac-learning>`_
+- `Multicast <https://github.com/opencord/mcast>`_
+- `OLT <https://github.com/opencord/olt>`_
+- `OLT Topology <https://github.com/opencord/olttopology>`_
+- `PPPoE Agent <https://github.com/opencord/pppoeagent>`_
+- `Sadis <https://github.com/opencord/sadis>`_
+
+Libraries and APIs:
+
+- `VOLTHA protos <https://github.com/opencord/voltha-protos>`_
+- `VOLTHA Library in Go <https://github.com/opencord/voltha-lib-go>`_
+- `OMCI Library in GO <https://github.com/opencord/omci-lib-go>`_
+
+Device Management:
+
+- `Device Management Interface <https://github.com/opencord/device-management-interface>`_
+- `Device Manager <https://github.com/opencord/opendevice-manager>`_
+- `Device Manager Agent <https://github.com/opencord/opendm-agent>`_
+
+Tools:
+
+- `voltctl <https://github.com/opencord/voltctl>`_
+
+Deployment and Testing:
+
+- `VOLTHA Helm Charts <https://github.com/opencord/voltha-helm-charts>`_
+- `VOLTHA System Tests <https://github.com/opencord/voltha-system-tests>`_
+- `CORD Tester <https://github.com/opencord/cord-tester>`_
+- `Grpc robot library <https://github.com/opencord/grpc-robot>`_
+- `Kafka robot library <https://github.com/opencord/kafka-robot>`_
+- `Docker Tools <https://github.com/opencord/voltha-docker-tools>`_
+- `Openolt scale tester <https://github.com/opencord/openolt-scale-tester>`_
+- `Ci management <https://github.com/opencord/ci-management>`_
+- `Pod Configs <https://github.com/opencord/pod-configs>`_
+- `Openolt agent scale tester  <https://github.com/opencord/openolt-scale-tester>`_
+- `Openolt functional tester <https://github.com/opencord/openolt-test>`_
+
+
 Community
 ---------
 
