@@ -163,6 +163,9 @@ ONF we can also ensure that the following ONF member products are compatible wit
 - Edgecore ASGVolt64 GPON OLT
 - Edgecore ASXVolt16 XGSGPON OLT
 - Radisys 3200G GPON OLT
+- Radisys 1600G GPON OLT
+- Radisys 1600X GPON OLT
+- Adtran 6320 GPON OLT
 - Sercomm FG1000 GPON ONU
 - Sercomm Glasfaser GPON ONU
 - Edgecore 6712-32X Switch
@@ -201,13 +204,13 @@ ONOS Apps:
 VOLTHA Components:
 ++++++++++++++++++
 
-- `Helm Charts (voltha-helm-charts) <https://gerrit.opencord.org/gitweb?p=voltha-helm-charts.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``2.8.18``
+- `Helm Charts (voltha-helm-charts) <https://gerrit.opencord.org/gitweb?p=voltha-helm-charts.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``2.8.17``
 - `bbsim <https://gerrit.opencord.org/gitweb?p=bbsim.git;a=tree>`_- ``1.8.1`` with `chart <https://gerrit.opencord.org/gitweb?p=helm-charts.git;a=tree;f=bbsim>`_ ``4.4.3``
 - `voltha-go <https://gerrit.opencord.org/gitweb?p=voltha-go.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``2.9.6`` with chart ``2.9.10``
 - `ofagent-go <https://gerrit.opencord.org/gitweb?p=ofagent-go.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``1.6.5``  with chart ``2.9.10``
 - `voltctl <https://gerrit.opencord.org/gitweb?p=voltctl.git;a=tree>`_ - ``1.6.11``
-- `voltha-openolt-adapter <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``3.5.10`` with chart ``2.9.10``
-- `voltha-openonu-adapter-go <https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter-go.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``1.3.15`` with chart ``2.8.12``
+- `voltha-openolt-adapter <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``3.5.11`` with chart ``2.9.11``
+- `voltha-openonu-adapter-go <https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter-go.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``1.3.16`` with chart ``2.8.13``
 - `voltha-onos <https://gerrit.opencord.org/gitweb?p=voltha-onos.git;a=tree;h=refs/heads/voltha-2.8>`_ -  ``5.0.3`` with chart ``0.1.16``
 - `openolt agent <https://gerrit.opencord.org/gitweb?p=openolt.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``3.4.9``
 - `voltha-protos <https://github.com/opencord/voltha-protos/releases/tag/v4.0.5>`_ - ``4.2.0``
@@ -220,7 +223,11 @@ Helm Chart Versions:
 ++++++++++++++++++++
 This section refers to the macro charts to deploy the required infrastructure and a (or many) VOLTHA stacks:
 - Voltha-infra: ``2.8.2``
-- Voltha-stack: ``2.8.13``
+- Voltha-stack: ``2.8.14``
+
+BAL Version:
+++++++++++++
+Broadcom abstraction layer (BAL) version: ``3.4.9.9``.
 
 Openolt Agent packages:
 +++++++++++++++++++++++
