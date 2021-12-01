@@ -144,7 +144,21 @@ in the `VOLTHA wiki page <https://wiki.opennetworking.org/display/COM/VOLTHA>`_
 
    operations/software-upgrade.rst
    ONU software update <voltha-openonu-adapter-go/docs/ONU_Upgrade_Notes.md>
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: Performance Metrics, Alarms
+
    ONU Performance Metrics <voltha-openonu-adapter-go/docs/PM_Notes.md>
+   ONU Alarms <voltha-openonu-adapter-go/docs/ONU_Alarms.md>
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: Bandwidth Profiles
+
+   bandwidth-profiles/bandwidth-profiles.rst
 
 .. toctree::
    :maxdepth: 1
