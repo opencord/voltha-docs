@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ab4e6243_86a8dd79",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2021-12-02T06:08:05Z",
+      "side": 1,
+      "message": "format",
+      "range": {
+        "startLine": 4,
+        "startChar": 43,
+        "endLine": 4,
+        "endChar": 50
+      },
+      "revId": "1136dd2ce42f8a0da16828caade6da7f326d7910",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
