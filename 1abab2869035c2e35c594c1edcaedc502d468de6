@@ -1,0 +1,208 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "94bc695a_1714f9e4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000666
+      },
+      "writtenOn": "2021-12-03T17:51:04Z",
+      "side": 1,
+      "message": "Sorry, but I have too many question marks for this. Maybe I totally don\u0027t understand what is going on with this setting. If you consider these questions as something like out of focus, then just ignore and continue ...",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2027dd3f_db4fb2ec",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1000666
+      },
+      "writtenOn": "2021-12-03T17:51:04Z",
+      "side": 1,
+      "message": "Already here my problems of understanding start: Yes, I assume the setting has some effect on the OLT (even though I do not know which, but most of the stuff below may refer to this) and has some effect on the ONU (and I would skip Traffic descriptor here, T-Cont in any way is wrong in respect to the ONU)",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9e300d46_597021ec",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000666
+      },
+      "writtenOn": "2021-12-03T17:51:04Z",
+      "side": 1,
+      "message": "Must there always be some explicit definition of the bandwidth profile in the json file? At least with id \u0027Default\u0027? What if such does not exist? Is there some internal assumption in Voltha or is then no metering configured? What would be the internal default values?",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0db978ad_f0fa018e",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1000666
+      },
+      "writtenOn": "2021-12-03T17:51:04Z",
+      "side": 1,
+      "message": "Does the example here somehow correlate to the example json entry above? Might be for the first DefaultBand. But why are there so many DefaultBands with different parameters?",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1918eeb7_abd6a2d9",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1000666
+      },
+      "writtenOn": "2021-12-03T17:51:04Z",
+      "side": 1,
+      "message": "Not very nice to use cellId in one command and meterid in another ...",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2545a3dd_45c37f76",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1000666
+      },
+      "writtenOn": "2021-12-03T17:51:04Z",
+      "side": 1,
+      "message": "And this returns just ione (the first?) of all the entries shown above?",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "76f7fc08_ec971575",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1000666
+      },
+      "writtenOn": "2021-12-03T17:51:04Z",
+      "side": 1,
+      "message": "I have some problems with the wording here. For me it is more: Different types of ...profiles define the bandwidth type of the relevant T-CONT (but which T-CONT? - will be explained below?)",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bde0c878_3df469b8",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1000666
+      },
+      "writtenOn": "2021-12-03T17:51:04Z",
+      "side": 1,
+      "message": "So again, for m it is more vice versa: If GIR \u003e 0, .... then T-CONT type 1 is used...",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ba55858f_f360d8e4",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 1000666
+      },
+      "writtenOn": "2021-12-03T17:51:04Z",
+      "side": 1,
+      "message": "I\u0027m not sure if a reference to this development document is really helpful here (but well...)",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c798064d_38d20e22",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1000666
+      },
+      "writtenOn": "2021-12-03T17:51:04Z",
+      "side": 1,
+      "message": "I also don\u0027t find this link here helpful, especially as what you have configured in the meter profiles as CIR (e.g.) is not what is taken as CIR in the TD configuration.\nIt would be more helpful to make a statement on how the policing/shaping attributes for the ONU (CIR/PIR/CBS/PBS) are computed from the given bandwidth profile (e.g. CIR(TD)\u003dAIR(profile)+CIR(profile) - and this again perhaps also for the other type of configuration ...",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "841e18bc_468ccf5f",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1000666
+      },
+      "writtenOn": "2021-12-03T17:51:04Z",
+      "side": 1,
+      "message": "I would not include this here, this is internal implementation and not relevant to the user/operator.",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d0bd4614_097711b8",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1000666
+      },
+      "writtenOn": "2021-12-03T17:51:04Z",
+      "side": 1,
+      "message": "So I\u0027m missing how the profiles/Meters are assigned to whatever -\u003e some flow? To which flow? And what is the real effect of the setting on both the OLT and ONU. Is their effect always only related to upstream (currently on the ONU yes, on the OLT?)? Is the same profile applied with the same value to both OLT and the ONU? This generally does not fit together - a service may be related to multiple GemPorts (defined by the attached TechProfile). So basically the idea might have been to police/rate limit the upstream traffic on the ONU already according to the T-Cont bandwidth allocation ensured by the OLT (in my point of view makes only sense for a T-Cont type with some BestEffort bandwidth). But practically this currently only works for an attached TechProfile with just 1 GemPort. As the values are applied to all (existing) GemPorts (that may be related to the service) for the ONU, the resulting bandwidth in the T-Cont for the ONU is much higher than what expect the OLT T-CONT really enforces.",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
