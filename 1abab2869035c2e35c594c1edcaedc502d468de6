@@ -125,6 +125,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "50ea1751_6d197ed2",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2021-12-06T09:46:04Z",
+      "side": 1,
+      "message": "To add to Andrea\u0027s point, the number of bands in the meter are based on the BW profile. If BW profile has only PIR value, then there is only one band, but if the BW profile has all - EIR, PIR and GIR, then we have all the three bands.",
+      "parentUuid": "75aa1949_10756ad4",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "1918eeb7_abd6a2d9",
         "filename": "bandwidth-profiles/bandwidth-profiles.rst",
         "patchSetId": 2
@@ -247,6 +265,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "ccbe0ea6_8ccf2673",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2021-12-06T09:46:04Z",
+      "side": 1,
+      "message": "Andrea, I think it is more meaningful to change the wording as Michael suggested. Basically the \"If .. \" statement first and then \"X Tcont type is used .. \"",
+      "parentUuid": "bde0c878_3df469b8",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ba55858f_f360d8e4",
         "filename": "bandwidth-profiles/bandwidth-profiles.rst",
         "patchSetId": 2
@@ -293,6 +329,24 @@
       "writtenOn": "2021-12-03T17:51:04Z",
       "side": 1,
       "message": "I also don\u0027t find this link here helpful, especially as what you have configured in the meter profiles as CIR (e.g.) is not what is taken as CIR in the TD configuration.\nIt would be more helpful to make a statement on how the policing/shaping attributes for the ONU (CIR/PIR/CBS/PBS) are computed from the given bandwidth profile (e.g. CIR(TD)\u003dAIR(profile)+CIR(profile) - and this again perhaps also for the other type of configuration ...",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "60e1da25_dc62936b",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2021-12-06T09:46:04Z",
+      "side": 1,
+      "message": "Agree. We can add that statement here, considering the CIR computation for TD ME is AIR + CIR",
+      "parentUuid": "c798064d_38d20e22",
       "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     },
@@ -363,6 +417,24 @@
       "side": 1,
       "message": "added a section on subscriber mapping and description what applies where. it is also up to the operator to define proper bandwidth profiles according to the services",
       "parentUuid": "d0bd4614_097711b8",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1c095619_2026747f",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2021-12-06T09:46:04Z",
+      "side": 1,
+      "message": "Agree @michael. I am not sure of the relevance of the BW configuration on TD ME and attaching it to the GEM port - only makes (some) sense in case of 1T1G. Given that we are policing at the OLT in the upstream and also in the downstream, I am not sure of the relevance of it. Given the lack of time for this release closure, I think we should re-look at the TD ME configuration in the next release - a jira could help track it. There could be some use cases for that, but I am not sure what that is at the moment.",
+      "parentUuid": "e3641508_7604601c",
       "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
