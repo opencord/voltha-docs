@@ -55,6 +55,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "d728e749_2661927c",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1000666
+      },
+      "writtenOn": "2021-12-06T13:39:34Z",
+      "side": 1,
+      "message": "Maybe it is getting a bit clearer with this wording (even though I still did not understand what all is done on OltAdapter/OLT side with this information [upstream and downstream]):\n...to physical configuration for the OLT T-CONT configuration and the ONU upstream Traffic Descriptor configuration applied to Gem ports.",
+      "parentUuid": "517ecb24_230af08a",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "9e300d46_597021ec",
         "filename": "bandwidth-profiles/bandwidth-profiles.rst",
         "patchSetId": 2
@@ -143,6 +161,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "7e3e5b0d_4c708658",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1000666
+      },
+      "writtenOn": "2021-12-06T13:39:34Z",
+      "side": 1,
+      "message": "Ok, but perhaps that can be explained a bit more detailled. From the values given in the json Default example I can not deviate how the band with rate\u003d10100 is created. That would make it perhaps also clearer, why there are now 3 bands (if you explain the usage/use case for them).",
+      "parentUuid": "50ea1751_6d197ed2",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "1918eeb7_abd6a2d9",
         "filename": "bandwidth-profiles/bandwidth-profiles.rst",
         "patchSetId": 2
@@ -172,6 +208,24 @@
       "side": 1,
       "message": "that is the way of things, ill try to change it next version of the controller, but not while ONOS classic is used.",
       "parentUuid": "1918eeb7_abd6a2d9",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "452936a6_1662551d",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1000666
+      },
+      "writtenOn": "2021-12-06T13:39:34Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "45b4d2be_040d919a",
       "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     },
@@ -207,6 +261,24 @@
       "side": 1,
       "message": "added a phrase around this, it returns the one for the ID you pass.",
       "parentUuid": "2545a3dd_45c37f76",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e601017b_ef67f112",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1000666
+      },
+      "writtenOn": "2021-12-06T13:39:34Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "571c1ef6_235525d5",
       "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     },
@@ -353,6 +425,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "8f27e271_b598e194",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1000666
+      },
+      "writtenOn": "2021-12-06T13:39:34Z",
+      "side": 1,
+      "message": "Fine, but I would not recommended to fall back here to the json-defined parameters like AIR, because then you have to do it here again for both types of profiles. Perhaps its better done based on the voltha bandwitdhprofile with the parmaters used there (committedInformationRate, committedBurstSize, exceededInformationRate,exceededBurstSize) - if it is a bit better explained how they are generated from the two different json profiles above.",
+      "parentUuid": "60e1da25_dc62936b",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "841e18bc_468ccf5f",
         "filename": "bandwidth-profiles/bandwidth-profiles.rst",
         "patchSetId": 2
@@ -382,6 +472,24 @@
       "side": 1,
       "message": "I think this is worth putting in, to avoid mistakes and mishaps in the configuration.",
       "parentUuid": "841e18bc_468ccf5f",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c5b95a57_b3b492c3",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1000666
+      },
+      "writtenOn": "2021-12-06T13:39:34Z",
+      "side": 1,
+      "message": "My reason of not including this here is that this is implementation specific. If once there should be any change on either side of the parameter definition the computation would have to be changed, making it necessary to update this document as well. Otherwise, for now it is of course true.",
+      "parentUuid": "dd77d1b8_2b57aaa3",
       "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     },
@@ -435,6 +543,24 @@
       "side": 1,
       "message": "Agree @michael. I am not sure of the relevance of the BW configuration on TD ME and attaching it to the GEM port - only makes (some) sense in case of 1T1G. Given that we are policing at the OLT in the upstream and also in the downstream, I am not sure of the relevance of it. Given the lack of time for this release closure, I think we should re-look at the TD ME configuration in the next release - a jira could help track it. There could be some use cases for that, but I am not sure what that is at the moment.",
       "parentUuid": "e3641508_7604601c",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "20f5902e_3cce478e",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1000666
+      },
+      "writtenOn": "2021-12-06T13:39:34Z",
+      "side": 1,
+      "message": "Ok. Problem is, that 1T1Gem is not relevant to any (or most) customer(s) project(s).",
+      "parentUuid": "1c095619_2026747f",
       "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }

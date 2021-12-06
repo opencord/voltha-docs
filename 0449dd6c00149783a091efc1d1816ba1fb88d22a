@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "47954e37_15ef41f7",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000666
+      },
+      "writtenOn": "2021-12-06T13:39:34Z",
+      "side": 1,
+      "message": "The rate values contained are expressed in kilobits/second (kbps).\nThe burst sized contained are expressed in Bytes.",
+      "revId": "0449dd6c00149783a091efc1d1816ba1fb88d22a",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cc3877be_8117ddee",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 1000666
+      },
+      "writtenOn": "2021-12-06T13:39:34Z",
+      "side": 1,
+      "message": "Yes this section is helpful. So what I would understand from this is that the bandwidth profile/meter is associated with the subscriber (getting activated with the flows assigned to this subscriber). So basically from this I would assume that the rates/bursts given in the profile/meter are relevant to the subscriber. But this seems not to be true if multiple flows are assigned to one subscriber (e.g. TT scenario). Looks more to me as if the rate/burst size is applied per flow - at least on the ONU (and with further possible exceptions for e.g. multicast flows). But based on the configurarion in Voltha it does not seem to be possible to apply different rate settings to different flows for the same subscriber (which is strange as that would be basically the intention of some meaningful QOS setup in my point of view)",
+      "revId": "0449dd6c00149783a091efc1d1816ba1fb88d22a",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
