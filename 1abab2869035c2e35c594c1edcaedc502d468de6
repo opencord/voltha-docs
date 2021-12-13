@@ -179,6 +179,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "b9620446_4f847547",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-12-13T12:11:20Z",
+      "side": 1,
+      "message": "added Girish phrase.",
+      "parentUuid": "7e3e5b0d_4c708658",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "1918eeb7_abd6a2d9",
         "filename": "bandwidth-profiles/bandwidth-profiles.rst",
         "patchSetId": 2
@@ -353,6 +371,24 @@
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "aecb981c_59534eae",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-12-13T12:11:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ccbe0ea6_8ccf2673",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ba55858f_f360d8e4",
@@ -437,6 +473,24 @@
       "side": 1,
       "message": "Fine, but I would not recommended to fall back here to the json-defined parameters like AIR, because then you have to do it here again for both types of profiles. Perhaps its better done based on the voltha bandwitdhprofile with the parmaters used there (committedInformationRate, committedBurstSize, exceededInformationRate,exceededBurstSize) - if it is a bit better explained how they are generated from the two different json profiles above.",
       "parentUuid": "60e1da25_dc62936b",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4e2b7eea_ff7ca57b",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-12-13T12:11:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8f27e271_b598e194",
       "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     },
@@ -561,6 +615,24 @@
       "side": 1,
       "message": "Ok. Problem is, that 1T1Gem is not relevant to any (or most) customer(s) project(s).",
       "parentUuid": "1c095619_2026747f",
+      "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "372bdfc9_8158dea5",
+        "filename": "bandwidth-profiles/bandwidth-profiles.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-12-13T12:11:20Z",
+      "side": 1,
+      "message": "not relevant to the documentation per se for now, I\u0027d leave as is.",
+      "parentUuid": "20f5902e_3cce478e",
       "revId": "1abab2869035c2e35c594c1edcaedc502d468de6",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
