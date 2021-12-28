@@ -200,16 +200,6 @@ A full list of stories and bugs completed can be found under the
 Component Versions in VOLTHA 2.9 release
 ----------------------------------------
 
-.. note::
-  ONOS and the voltha related apps have not yet been released due to an issue with
-  `Sonatype <https://twitter.com/sonatype_ops/status/1471099908300189705>`_. Following are the versions to which ONOS
-  and the apps will be released when the issue is resolved. For now we suggest you either build your voltha-onos image
-  yourself using ``onosproject/onos:2.5-latest`` and the top of the apps master branch or use
-  `voltha/voltha-onos:5.0.4-rc1 <https://hub.docker.com/layers/voltha/voltha-onos/5.0.4-rc1/images/sha256-da570cd6462b0d74ee763b7350e9ecb617d1f68c0002e97917390dd563cb78f8?context=explore>`_
-  , which is a custom built image by ONF including ONOS and the apps at the right commit.
-  A new image will be pushed when the issues is resolved.
-
-
 ONOS and Atomix:
 ++++++++++++++++
 
@@ -233,14 +223,14 @@ ONOS Apps:
 VOLTHA Components:
 ++++++++++++++++++
 
-- `Helm Charts (voltha-helm-charts) <https://gerrit.opencord.org/gitweb?p=voltha-helm-charts.git;a=tree;h=refs/heads/voltha-2.9>`_ - ``2.9.0``
+- `Helm Charts (voltha-helm-charts) <https://gerrit.opencord.org/gitweb?p=voltha-helm-charts.git;a=tree;h=refs/heads/voltha-2.9>`_ - ``3.0.1``
 - `bbsim <https://gerrit.opencord.org/gitweb?p=bbsim.git;a=tree>`_- ``1.9.1`` with `chart <https://gerrit.opencord.org/gitweb?p=helm-charts.git;a=tree;f=bbsim>`_ ``4.5.2``
 - `voltha-go <https://gerrit.opencord.org/gitweb?p=voltha-go.git;a=tree;h=refs/heads/voltha-2.9>`_ - ``3.0.2`` with chart ``2.10.9``
 - `ofagent-go <https://gerrit.opencord.org/gitweb?p=ofagent-go.git;a=tree;h=refs/heads/voltha-2.9>`_ - ``2.0.1``  with chart ``2.10.9``
 - `voltctl <https://gerrit.opencord.org/gitweb?p=voltctl.git;a=tree>`_ - ``1.7.4``
 - `voltha-openolt-adapter <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree;h=refs/heads/voltha-2.9>`_ - ``4.1.5`` with chart ``2.10.8``
 - `voltha-openonu-adapter-go <https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter-go.git;a=tree;h=refs/heads/voltha-2.9>`_ - ``2.1.2`` with chart ``2.9.11``
-- `voltha-onos <https://gerrit.opencord.org/gitweb?p=voltha-onos.git;a=tree;h=refs/heads/voltha-2.9>`_ -  ``5.0.4-rc1`` with chart ``0.1.26``
+- `voltha-onos <https://gerrit.opencord.org/gitweb?p=voltha-onos.git;a=tree;h=refs/heads/voltha-2.9>`_ -  ``5.0.4`` with chart ``0.1.27``
 - `openolt agent <https://gerrit.opencord.org/gitweb?p=openolt.git;a=tree;h=refs/heads/voltha-2.9>`_ - ``3.6.2``
 - `voltha-protos <https://github.com/opencord/voltha-protos/releases/tag/v5.1.2>`_ - ``5.1.2``
 - `voltha-lib-go <https://github.com/opencord/voltha-lib-go/releases/tag/v7.1.3>`_ - ``7.1.3``
@@ -251,7 +241,7 @@ VOLTHA Components:
 Helm Chart Versions:
 ++++++++++++++++++++
 This section refers to the macro charts to deploy the required infrastructure and a (or many) VOLTHA stacks:
-- Voltha-infra: ``2.9.11``
+- Voltha-infra: ``2.9.12``
 - Voltha-stack: ``2.9.15``
 
 BAL Version:
