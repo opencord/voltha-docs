@@ -11,15 +11,15 @@
 
 _REPO NAME_             _DIR_    _REF_
 
-bbsim                        /        master
-cord-tester                  /        master
-ofagent-go                   /        master
-openolt                      /        master
-voltctl                      /        master
-voltha-go                    /        master
-voltha-openolt-adapter       /        master
-voltha-openonu-adapter-go    /        master
-voltha-protos                /        master
-voltha-system-tests          /        master
-device-management-interface  /        master
-voltha-helm-charts           /        master
+bbsim                        /        1f9f4b259a3b5c5ac7c2b825b87c2e373f5d4006
+cord-tester                  /        50fa73610e32ecdca6609178c0d76b49fee44537
+ofagent-go                   /        6f62dcf54a43e77ad979426bde91f799dae06e56
+openolt                      /        cdd5e5f29842b7b51a277958031de720d0dc9407
+voltctl                      /        b3b702901d7be47ae14b158dec7caffebb180411
+voltha-go                    /        24ba08010800ed35c066ed46d09a0d8c223db562
+voltha-openolt-adapter       /        84db3995cb4a84e7c65422e68a40c387916f8576
+voltha-openonu-adapter-go    /        b0e8840c716dadceca48a30d14f6997d85983766
+voltha-protos                /        5cb0d404b91a6aa8786f731e54a6a5de3cbf6ab4
+voltha-system-tests          /        ec6c85b48f7fd64b4bae39b78f89da39dc35f903
+device-management-interface  /        fcd2229f62ec0c3d0b50805713f38bcad910ab92
+voltha-helm-charts           /        f0b086f15a408308b9079e773d897a13ea329a28

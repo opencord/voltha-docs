@@ -54,7 +54,7 @@ OMCI Packet Dump
 ----------------
 
 In order to see OMCI packets in Wireshark you'll need to install ``omci.lua`` and ``BinDecHex.lua`` dissectors
-`wiki.wireshark.org/Contrib <https://wiki.wireshark.org/Contrib#Protocol_Dissectors>`_.
+`wiki.wireshark.org/Contrib <https://wiki.wireshark.org/Contrib#protocol-dissectors>`_.
 
 To install them on Ubuntu:
 
