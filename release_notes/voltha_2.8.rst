@@ -151,7 +151,7 @@ Known Issues
 
    </s>
 
-- EAPOL flow meter mismatch at scale for ATT job. `[VOL-4235] <https://jira.opencord.org/browse/VOL-4235>`_
+- [FIXED] EAPOL flow meter mismatch at scale for ATT job. `[VOL-4235] <https://jira.opencord.org/browse/VOL-4235>`_
 
 
 Certification Program
@@ -204,7 +204,7 @@ ONOS Apps:
 VOLTHA Components:
 ++++++++++++++++++
 
-- `Helm Charts (voltha-helm-charts) <https://gerrit.opencord.org/gitweb?p=voltha-helm-charts.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``2.8.17``
+- `Helm Charts (voltha-helm-charts) <https://gerrit.opencord.org/gitweb?p=voltha-helm-charts.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``2.8.19``
 - `bbsim <https://gerrit.opencord.org/gitweb?p=bbsim.git;a=tree>`_- ``1.8.1`` with `chart <https://gerrit.opencord.org/gitweb?p=helm-charts.git;a=tree;f=bbsim>`_ ``4.4.3``
 - `voltha-go <https://gerrit.opencord.org/gitweb?p=voltha-go.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``2.9.6`` with chart ``2.9.10``
 - `ofagent-go <https://gerrit.opencord.org/gitweb?p=ofagent-go.git;a=tree;h=refs/heads/voltha-2.8>`_ - ``1.6.5``  with chart ``2.9.10``
@@ -223,7 +223,7 @@ Helm Chart Versions:
 ++++++++++++++++++++
 This section refers to the macro charts to deploy the required infrastructure and a (or many) VOLTHA stacks:
 - Voltha-infra: ``2.8.2``
-- Voltha-stack: ``2.8.14``
+- Voltha-stack: ``2.8.15``
 
 BAL Version:
 ++++++++++++

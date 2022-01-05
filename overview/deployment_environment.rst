@@ -49,7 +49,7 @@ Note that the ``Infrastructure`` components can be deployed outside of the
 You can read more about VOLTHA deployments in:
 
 - :doc:`lab_setup`
-- `Deployment with HELM <./../voltha-helm-charts/README.md>`_
+- `Deployment with HELM <../voltha-helm-charts/README.md>`_
 
 .. toctree::
    :maxdepth: 1
@@ -57,4 +57,4 @@ You can read more about VOLTHA deployments in:
    :glob:
 
    ./lab_setup.rst
-   Deploy VOLTHA <./../voltha-helm-charts/README.md>
+   Deploy VOLTHA <../voltha-helm-charts/README.md>
