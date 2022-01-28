@@ -84,6 +84,31 @@ the directory where the command is executed from/
     # install and activate the new version of the app
     curl --fail -sSL -H Content-Type:application/octet-stream -X POST http://karaf:karaf@127.0.0.1:8181/onos/v1/applications?activate=true --data-binary @org.opencord.olt-4.5.0.SNAPSHOT.oar 2>&1
 
+Minor Software Version Rollback Due To Failure
+----------------------------------------------
+
+A `Minor` software upgrade can incur in failures and broken functionality. There are two possible cases, 1. container
+does not start, 2. broken functionality during operations
+
+VOLTHA Component updated container does not start
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This is automatically handled by Kubernetes. An old version of the pod does not get
+terminated unless the new one is running and ready according to its readiness probe. The operator will need to go in,
+manually delete the failing pod, fix the issue and re-deploy.
+
+VOLTHA Component Broken functionality during operations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In this case the container started and became ready but functionality of the system is broken,
+e.g. a subscriber can't be provisioned. In this case the operator needs to perform a manual intervention,
+rolling back to the previous minor version of the container. The rollback operation is the same as a `Minor` software
+update via `helm` but instead of augmenting the version it's a downgrade of it.
+
+ONOS app not starting or broken functionality
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+For ONOS apps a manual intervention if a bug is discovered is always necessary, following the same procedure as the
+updatebut using the previous version of the `.oar` file.
 
 Major Software Version Update
 =============================
