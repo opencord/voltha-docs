@@ -84,6 +84,37 @@ the directory where the command is executed from/
     # install and activate the new version of the app
     curl --fail -sSL -H Content-Type:application/octet-stream -X POST http://karaf:karaf@127.0.0.1:8181/onos/v1/applications?activate=true --data-binary @org.opencord.olt-4.5.0.SNAPSHOT.oar 2>&1
 
+Minor Software Version Rollback Due To Failure
+----------------------------------------------
+
+A `Minor` software upgrade can incur in failures and broken functionality. There are two possible cases, 1. container
+does not start, 2. broken functionality during operations
+
+VOLTHA Component updated container does not start
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This is automatically handled by Kubernetes. An old version of the pod does not get
+terminated unless the new one is running and ready according to its readiness probe.
+No system or data-plane functionality is impacted.
+
+The operator will need to go in, manually delete the failing pod, fix the issue and re-deploy after
+fixing the new `minor` version.
+
+VOLTHA Component Broken functionality during operations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In this case the container started and became `ready` in Kubernetes but functionality of the system or data-plane
+is broken, e.g. a subscriber can't be provisioned or no traffic is flowing.
+
+In this case the operator needs to perform a manual intervention,
+rolling back to the previous minor version of the container. The rollback operation is the same as a `minor` software
+update via `helm` but instead of increasing the version number it's a decrement of it to the last known running one.
+
+ONOS app not starting or broken functionality
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+For ONOS apps a manual intervention is always necessary, both if the app does not start or if functionality is broken.
+The rollback of an ONOS application is done by following the same procedure as the
+update using the previous, or last known working, version of the `.oar` file.
 
 Major Software Version Update
 =============================
