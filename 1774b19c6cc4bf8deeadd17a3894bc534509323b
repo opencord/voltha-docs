@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "630c18ff_d0ff9bc3",
+        "filename": "operations/software-upgrade.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1000894
+      },
+      "writtenOn": "2022-01-31T08:38:10Z",
+      "side": 1,
+      "message": "known",
+      "range": {
+        "startLine": 117,
+        "startChar": 35,
+        "endLine": 117,
+        "endChar": 39
+      },
+      "revId": "1774b19c6cc4bf8deeadd17a3894bc534509323b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
