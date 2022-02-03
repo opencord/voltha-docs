@@ -167,6 +167,7 @@ in the `VOLTHA wiki page <https://wiki.opennetworking.org/display/COM/VOLTHA>`_
 
    VOLTHA system tests <voltha-system-tests/README.md>
    testing/index.rst
+   testing/memory_usage_pprof.rst
 
 .. toctree::
    :maxdepth: 1
