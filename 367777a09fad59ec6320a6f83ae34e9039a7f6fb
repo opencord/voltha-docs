@@ -45,6 +45,54 @@
       },
       "revId": "367777a09fad59ec6320a6f83ae34e9039a7f6fb",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0b41f0c5_57565122",
+        "filename": "testing/memory_usage_pprof.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2022-02-03T15:30:41Z",
+      "side": 1,
+      "message": "maybe it\u0027s because it\u0027s a multi-dependency circle, not just a-b but a-b-c with a deepening on b that depends on c that circularly goes back to a ?",
+      "parentUuid": "7abf6814_d10781f1",
+      "range": {
+        "startLine": 13,
+        "startChar": 34,
+        "endLine": 13,
+        "endChar": 51
+      },
+      "revId": "367777a09fad59ec6320a6f83ae34e9039a7f6fb",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f3c9d4ea_ba1993b9",
+        "filename": "testing/memory_usage_pprof.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2022-02-03T15:30:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "05863424_3e115dfd",
+      "range": {
+        "startLine": 13,
+        "startChar": 60,
+        "endLine": 13,
+        "endChar": 62
+      },
+      "revId": "367777a09fad59ec6320a6f83ae34e9039a7f6fb",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
