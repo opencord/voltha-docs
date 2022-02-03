@@ -93,6 +93,30 @@
       },
       "revId": "367777a09fad59ec6320a6f83ae34e9039a7f6fb",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "05f7053d_54a3e763",
+        "filename": "testing/memory_usage_pprof.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2022-02-03T15:44:37Z",
+      "side": 1,
+      "message": "Maybe, but based on my brief reading the mark and sweep approach should get pick this up. It feels like this is something that should be tested in the small to fully understand what is happening.",
+      "parentUuid": "0b41f0c5_57565122",
+      "range": {
+        "startLine": 13,
+        "startChar": 34,
+        "endLine": 13,
+        "endChar": 51
+      },
+      "revId": "367777a09fad59ec6320a6f83ae34e9039a7f6fb",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
