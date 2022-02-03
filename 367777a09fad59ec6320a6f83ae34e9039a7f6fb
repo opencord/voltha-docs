@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7abf6814_d10781f1",
+        "filename": "testing/memory_usage_pprof.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2022-02-03T13:37:17Z",
+      "side": 1,
+      "message": "there is lots of information on the web indicating that the golang GC deals with cycles fine. ex: https://groups.google.com/g/golang-nuts/c/tzvgeBEW1WY, but there are many others. i think cycles in general are bad, but I think the GC should handle it. Is something else going on here?",
+      "range": {
+        "startLine": 13,
+        "startChar": 34,
+        "endLine": 13,
+        "endChar": 51
+      },
+      "revId": "367777a09fad59ec6320a6f83ae34e9039a7f6fb",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "05863424_3e115dfd",
+        "filename": "testing/memory_usage_pprof.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2022-02-03T13:37:17Z",
+      "side": 1,
+      "message": "the",
+      "range": {
+        "startLine": 13,
+        "startChar": 60,
+        "endLine": 13,
+        "endChar": 62
+      },
+      "revId": "367777a09fad59ec6320a6f83ae34e9039a7f6fb",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
