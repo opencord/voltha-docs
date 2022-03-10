@@ -24,6 +24,30 @@
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "86695ec8_fe9d22fa",
+        "filename": "testing/voltha_test_automation.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2022-03-10T11:48:17Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "9e55efd7_6bb84a53",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 118
+      },
+      "revId": "eb0dd154ad1f73a9c3247b1259e2d6bf4e48e1bc",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fe54df9f_498f01bf",
@@ -37,6 +61,24 @@
       "writtenOn": "2022-03-10T11:45:28Z",
       "side": 1,
       "message": "do we want a section for the hardware jobs as well ?",
+      "revId": "eb0dd154ad1f73a9c3247b1259e2d6bf4e48e1bc",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "08bb5a17_f68e1a81",
+        "filename": "testing/voltha_test_automation.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2022-03-10T11:48:17Z",
+      "side": 1,
+      "message": "Yes, will add section for hardware jobs as well. Also, planning to add example here on how different targets can be set for bbsim based jobs. For now, wanted to check if the documentation flow is correct?",
+      "parentUuid": "fe54df9f_498f01bf",
       "revId": "eb0dd154ad1f73a9c3247b1259e2d6bf4e48e1bc",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
