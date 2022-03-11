@@ -81,6 +81,24 @@
       "parentUuid": "fe54df9f_498f01bf",
       "revId": "eb0dd154ad1f73a9c3247b1259e2d6bf4e48e1bc",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "78005394_c21eb693",
+        "filename": "testing/voltha_test_automation.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2022-03-11T08:18:38Z",
+      "side": 1,
+      "message": "yes, flow seems correct",
+      "parentUuid": "08bb5a17_f68e1a81",
+      "revId": "eb0dd154ad1f73a9c3247b1259e2d6bf4e48e1bc",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
