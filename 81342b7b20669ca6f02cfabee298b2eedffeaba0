@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a3040f11_fa2f91ac",
+        "filename": "testing/voltha_test_automation.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2022-03-12T01:15:00Z",
+      "side": 1,
+      "message": "Is there a job template for patch verification jobs which could be neither bbsim nor hardware - for instance sca check, or unit test?\nDo we need talk about periodic jobs and jobs based on user trigger?",
+      "revId": "81342b7b20669ca6f02cfabee298b2eedffeaba0",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
