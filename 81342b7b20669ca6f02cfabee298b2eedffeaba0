@@ -3,6 +3,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "9a0a65b4_be7c8796",
+        "filename": "testing/voltha_test_automation.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1000064
+      },
+      "writtenOn": "2022-03-14T05:22:08Z",
+      "side": 1,
+      "message": "I have a general comment on the documentation. We should be including how the framework is organized, what type of tests are executed, give an example of a sample test case etc. I don\u0027t think we should be adding any job templates here but good to include a link to the Jenkins jobs.",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 111
+      },
+      "revId": "81342b7b20669ca6f02cfabee298b2eedffeaba0",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "a3040f11_fa2f91ac",
         "filename": "testing/voltha_test_automation.rst",
         "patchSetId": 2
