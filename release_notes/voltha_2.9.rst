@@ -223,7 +223,7 @@ ONOS Apps:
 VOLTHA Components:
 ++++++++++++++++++
 
-- `Helm Charts (voltha-helm-charts) <https://gerrit.opencord.org/gitweb?p=voltha-helm-charts.git;a=tree;h=refs/heads/voltha-2.9>`_ - ``3.0.1``
+- `Helm Charts (voltha-helm-charts) <https://gerrit.opencord.org/gitweb?p=voltha-helm-charts.git;a=tree;h=refs/heads/voltha-2.9>`_ - ``3.0.3``
 - `bbsim <https://gerrit.opencord.org/gitweb?p=bbsim.git;a=tree>`_- ``1.9.1`` with `chart <https://gerrit.opencord.org/gitweb?p=helm-charts.git;a=tree;f=bbsim>`_ ``4.5.2``
 - `voltha-go <https://gerrit.opencord.org/gitweb?p=voltha-go.git;a=tree;h=refs/heads/voltha-2.9>`_ - ``3.0.2`` with chart ``2.10.9``
 - `ofagent-go <https://gerrit.opencord.org/gitweb?p=ofagent-go.git;a=tree;h=refs/heads/voltha-2.9>`_ - ``2.0.1``  with chart ``2.10.9``
