@@ -24,6 +24,30 @@
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d685f976_cd2337dd",
+        "filename": "testing/voltha_test_automation.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1000064
+      },
+      "writtenOn": "2022-03-17T05:52:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9a0a65b4_be7c8796",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 111
+      },
+      "revId": "81342b7b20669ca6f02cfabee298b2eedffeaba0",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a3040f11_fa2f91ac",
