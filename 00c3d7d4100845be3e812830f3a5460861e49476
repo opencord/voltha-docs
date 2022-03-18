@@ -65,6 +65,30 @@
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a95616d9_0ca0bea5",
+        "filename": "overview/contributing.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2022-03-18T18:19:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "62509bdc_ead89994",
+      "range": {
+        "startLine": 39,
+        "startChar": 31,
+        "endLine": 39,
+        "endChar": 35
+      },
+      "revId": "00c3d7d4100845be3e812830f3a5460861e49476",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7f9a457d_fc84ac84",
