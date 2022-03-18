@@ -1,0 +1,182 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fdf8707e_0f2c9bc0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2022-03-18T17:50:43Z",
+      "side": 1,
+      "message": "Looks good to me, a few minor comments",
+      "revId": "00c3d7d4100845be3e812830f3a5460861e49476",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "114810b0_d52e99e0",
+        "filename": "overview/contributing.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2022-03-18T17:50:43Z",
+      "side": 1,
+      "message": "Jira board",
+      "range": {
+        "startLine": 39,
+        "startChar": 31,
+        "endLine": 39,
+        "endChar": 35
+      },
+      "revId": "00c3d7d4100845be3e812830f3a5460861e49476",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7f9a457d_fc84ac84",
+        "filename": "overview/contributing.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2022-03-18T17:50:43Z",
+      "side": 1,
+      "message": "patch",
+      "range": {
+        "startLine": 44,
+        "startChar": 39,
+        "endLine": 44,
+        "endChar": 44
+      },
+      "revId": "00c3d7d4100845be3e812830f3a5460861e49476",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0c6eca1a_b643dce4",
+        "filename": "overview/contributing.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2022-03-18T17:50:43Z",
+      "side": 1,
+      "message": "If",
+      "range": {
+        "startLine": 53,
+        "startChar": 4,
+        "endLine": 53,
+        "endChar": 6
+      },
+      "revId": "00c3d7d4100845be3e812830f3a5460861e49476",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cb34145f_4967fe7b",
+        "filename": "overview/contributing.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2022-03-18T17:50:43Z",
+      "side": 1,
+      "message": "commenting on",
+      "range": {
+        "startLine": 55,
+        "startChar": 40,
+        "endLine": 55,
+        "endChar": 48
+      },
+      "revId": "00c3d7d4100845be3e812830f3a5460861e49476",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "da7afe51_97aaab0d",
+        "filename": "overview/contributing.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2022-03-18T17:50:43Z",
+      "side": 1,
+      "message": "and upload the new version with `git review`",
+      "range": {
+        "startLine": 58,
+        "startChar": 27,
+        "endLine": 58,
+        "endChar": 47
+      },
+      "revId": "00c3d7d4100845be3e812830f3a5460861e49476",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "92ebc567_026ea1f1",
+        "filename": "overview/contributing.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2022-03-18T17:50:43Z",
+      "side": 1,
+      "message": "Core contributors",
+      "range": {
+        "startLine": 61,
+        "startChar": 8,
+        "endLine": 61,
+        "endChar": 13
+      },
+      "revId": "00c3d7d4100845be3e812830f3a5460861e49476",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "89f75d6a_fa6ffec0",
+        "filename": "overview/contributing.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2022-03-18T17:50:43Z",
+      "side": 1,
+      "message": "and/or Gerrit",
+      "range": {
+        "startLine": 93,
+        "startChar": 0,
+        "endLine": 93,
+        "endChar": 6
+      },
+      "revId": "00c3d7d4100845be3e812830f3a5460861e49476",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
