@@ -123,6 +123,7 @@ in the `VOLTHA wiki page <https://wiki.opennetworking.org/display/COM/VOLTHA>`_
    overview/lab_setup.rst
    overview/troubleshooting.rst
    overview/releases.rst
+   overview/contributing.rst
 
 .. toctree::
    :maxdepth: 1
