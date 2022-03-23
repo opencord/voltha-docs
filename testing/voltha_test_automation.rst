@@ -46,6 +46,7 @@ for different operator workflows. Such as,
 - `periodic-voltha-pm-data-test-bbsim <https://jenkins.opencord.org/job/periodic-voltha-pm-data-test-bbsim/>`_ & `periodic-voltha-multiple-olts-pm-data-test-bbsim <https://jenkins.opencord.org/job/periodic-voltha-multiple-olts-pm-data-test-bbsim/>`_ : tests Open ONU Go adapter PM data
 - `periodic-voltha-etcd-test <https://jenkins.opencord.org/job/periodic-voltha-etcd-test/>`_ : tests Voltha etcd functionality
 - `periodic-voltha-test-DMI <https://jenkins.opencord.org/job/periodic-voltha-test-DMI/>`_ : tests device management interface functionality
+- `periodic-voltha-memory-leak-test-bbsim <https://jenkins.opencord.org/job/periodic-voltha-memory-leak-test-bbsim/>`_ : tests and catches memory leak in Voltha components
 
 Similar to the above mentioned jobs which are based on **master**,
 Jenkins has regression jobs for other Voltha releases as well, like votlha-2.8 and voltha-2.9.
@@ -98,9 +99,17 @@ The verification jobs gets triggered automatically whenever a patch is pushed or
 Apart from system triggered jobs, there are some verification jobs which can be triggered by the user
 by providing apt comment in the Gerrit patch, e.g.
 
-- hardware test functional tests : This comment triggers the run on a dedicated physical pod
+- *hardware test functional tests* : This comment triggers the run on a dedicated physical pod
   and executes the entire functional test suite for ATT.
-- hardware test functional tests DT : This comment triggers the functional suite tests for DT.
+- *hardware test functional tests DT* : This comment triggers the functional suite tests for DT.
+- *voltha test openonu singleolt* : Triggers patchset-voltha-openonu-go-test-bbsim job.
+- *voltha 2.9 test openonu singleolt* : Triggers patchset-voltha-2.9-openonu-go-test-bbsim job.
+- *voltha 2.8 test openonu singleolt* : Triggers patchset-voltha-2.8-openonu-go-test-bbsim job.
+- *voltha test openonu multiolt* : Triggers patchset-voltha-multiple-olts-openonu-go-test-bbsim job.
+- *voltha 2.9 test openonu multiolt* : Triggers patchset-voltha-2.9-multiple-olts-openonu-go-test-bbsim job.
+- *voltha 2.8 test openonu multiolt* : Triggers patchset-voltha-2.8-multiple-olts-openonu-go-test-bbsim job.
+- *voltha test pm data singleolt* : Triggers patchset-voltha-pm-data-test-bbsim job.
+- *voltha test pm data multiolt* : Triggers patchset-voltha-multiple-olts-pm-data-test-bbsim job.
 
 The templates for the above mentioned and other similar jobs can be found in the
 `ci-management <https://github.com/opencord/ci-management>`__ repo.
