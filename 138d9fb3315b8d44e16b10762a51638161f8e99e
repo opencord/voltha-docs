@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2462a6f_4b5ddec1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2022-03-24T03:30:20Z",
+      "side": 1,
+      "message": "DO-NOT-MERGE (work around fttb functionality still in-progress)",
+      "revId": "138d9fb3315b8d44e16b10762a51638161f8e99e",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
