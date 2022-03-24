@@ -26,8 +26,9 @@ Test Files
 ----------
 - `tests/bbsim/Voltha_BBSimTests.robot <../_static/voltha-system-tests/tests/bbsim/Voltha_BBSimTests.html>`_
 - `tests/dmi-interface/dmi-hw-management.robot <../_static/voltha-system-tests/tests/dmi-interface/dmi-hw-management.html>`_
+- `tests/dt-workflow/Voltha_DT_FTTB_Tests.robot <../_static/voltha-system-tests/tests/dt-workflow/Voltha_DT_FTTB_Tests.html>`_
 - `tests/dt-workflow/Voltha_DT_FailureScenarios.robot <../_static/voltha-system-tests/tests/dt-workflow/Voltha_DT_FailureScenarios.html>`_
-- `tests/dt-workflow/Voltha_DT_MultiOLT_Tests.robot.robot <../_static/voltha-system-tests/tests/dt-workflow/Voltha_DT_MultiOLT_Tests.html>`_
+- `tests/dt-workflow/Voltha_DT_MultiOLT_Tests.robot <../_static/voltha-system-tests/tests/dt-workflow/Voltha_DT_MultiOLT_Tests.html>`_
 - `tests/dt-workflow/Voltha_DT_PODTests.robot <../_static/voltha-system-tests/tests/dt-workflow/Voltha_DT_PODTests.html>`_
 - `tests/functional/K8S_SystemTest.robot <../_static/voltha-system-tests/tests/functional/K8S_SystemTest.html>`_
 - `tests/functional/Redfish_Importer.robot <../_static/voltha-system-tests/tests/functional/Redfish_Importer.html>`_
