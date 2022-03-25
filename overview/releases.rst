@@ -93,5 +93,9 @@ Releases
      - July 11, 2021
      - December 30, 2022
      - Long Term Support Release
+   * - `VOLTHA 2.9 <../release_notes/voltha_2.9.rst>`_
+     - December 17, 2021
+     - June 30, 2022
+     -
 
 

@@ -62,6 +62,26 @@ Steps to successful PRs
     approval**. Join one of the `communication channels <https://wiki.opennetworking.org/display/COM/VOLTHA>`_
     to request a review or to bring additional attention to your patch.
 
+Versioning
+++++++++++
+
+All of the VOLTHA components and the charts include a VERSION file that specifies
+the version of the service, library, protobuf, test suite included in the repository.
+The VERSION is in the format and follows the `SemVer principles <https://semver.org>`_
+VOLTHA also follows the guidelines on how to increment versions as described in the
+`SemVer specification <https://semver.org/#semantic-versioning-specification-semver>`_.
+
+Each increment of the VERSION file in a patch automatically triggers publishing of the repository
+artifact, e.g. docker images, with that tag.
+In VOLTHA we also use a `x.y.z-dev` format which identifies a non-released component (what is `master`).
+When a patch is merged with the `-dev` suffix in the VERSION file no artifact is published except for `master`
+docker images. The `-dev` suffix should be removed when a feature being worked on and the component
+is ready for release.
+
+We expect contributions to the VOLTHA codebase to follow these rules when submitting a patch
+and the same rules to be enforced by reviewers during the core review process.
+
+
 Core Contributors
 -----------------
 
@@ -185,7 +205,6 @@ All of the codebase:
  - `Amit Ghosh <Amit.Ghosh@radisys.com>`_
  - `Khenaidoo Nursimulu <knursimu@ciena.com>`_
  - `David Bainbridge <dbainbri.ciena@gmail.com>`_
-
 
 Community Guidelines
 --------------------
