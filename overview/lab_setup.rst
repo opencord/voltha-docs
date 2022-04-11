@@ -87,6 +87,23 @@ Once inside:
 
    # activate the interface
    ip link set eth1 up
+
+..
+
+If you want to setup the container for the DT workflow please add a tagged interface to be used to send out traffic.
+
+.. code:: bash
+
+   # setup tagged client interface
+   ip link add link eth1 name eth1.7 type vlan id 7
+   ip link set eth1.7 up
+
+..
+
+The container also requires some tools for testing
+
+.. code:: bash
+
    # install the required tools for testing
    apt update
    apt install -y wpasupplicant jq netsniff-ng build-essential tcpdump
