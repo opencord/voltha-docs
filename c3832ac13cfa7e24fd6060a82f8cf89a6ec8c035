@@ -1,0 +1,188 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "39a67de8_c78bb5f9",
+        "filename": "overview/release_process.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2022-05-10T11:35:48Z",
+      "side": 1,
+      "message": "TST",
+      "range": {
+        "startLine": 14,
+        "startChar": 36,
+        "endLine": 14,
+        "endChar": 40
+      },
+      "revId": "c3832ac13cfa7e24fd6060a82f8cf89a6ec8c035",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6c2997ac_9af77446",
+        "filename": "overview/release_process.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2022-05-10T11:35:48Z",
+      "side": 1,
+      "message": "Code",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 14,
+        "endChar": 4
+      },
+      "revId": "c3832ac13cfa7e24fd6060a82f8cf89a6ec8c035",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "01919c8b_856da09b",
+        "filename": "overview/release_process.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2022-05-10T11:35:48Z",
+      "side": 1,
+      "message": "The",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 3
+      },
+      "revId": "c3832ac13cfa7e24fd6060a82f8cf89a6ec8c035",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1195e3e2_5f1bc949",
+        "filename": "overview/release_process.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2022-05-10T11:35:48Z",
+      "side": 1,
+      "message": "Can we re-frame this statement, not able to get it completely.",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 17,
+        "endChar": 117
+      },
+      "revId": "c3832ac13cfa7e24fd6060a82f8cf89a6ec8c035",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a9fd0a9c_ef605a49",
+        "filename": "overview/release_process.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2022-05-10T11:35:48Z",
+      "side": 1,
+      "message": "Jenkins",
+      "range": {
+        "startLine": 18,
+        "startChar": 50,
+        "endLine": 18,
+        "endChar": 56
+      },
+      "revId": "c3832ac13cfa7e24fd6060a82f8cf89a6ec8c035",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "279d184a_ab88e774",
+        "filename": "overview/release_process.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2022-05-10T11:35:48Z",
+      "side": 1,
+      "message": "Can we add voltha-system-tests as well to the below list of repositories under Testing heading.",
+      "range": {
+        "startLine": 36,
+        "startChar": 0,
+        "endLine": 36,
+        "endChar": 52
+      },
+      "revId": "c3832ac13cfa7e24fd6060a82f8cf89a6ec8c035",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6dee6329_5b5489c9",
+        "filename": "overview/release_process.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2022-05-10T11:35:48Z",
+      "side": 1,
+      "message": "the",
+      "range": {
+        "startLine": 71,
+        "startChar": 3,
+        "endLine": 71,
+        "endChar": 5
+      },
+      "revId": "c3832ac13cfa7e24fd6060a82f8cf89a6ec8c035",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9428fa32_4af8a40e",
+        "filename": "overview/release_process.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2022-05-10T11:35:48Z",
+      "side": 1,
+      "message": "We don\u0027t release ci-management",
+      "range": {
+        "startLine": 115,
+        "startChar": 2,
+        "endLine": 115,
+        "endChar": 62
+      },
+      "revId": "c3832ac13cfa7e24fd6060a82f8cf89a6ec8c035",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
