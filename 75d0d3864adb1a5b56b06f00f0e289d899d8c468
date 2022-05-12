@@ -1,0 +1,251 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8f6bc6bf_261c002a",
+        "filename": "overview/release_process.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2022-05-12T00:44:11Z",
+      "side": 1,
+      "message": "version",
+      "range": {
+        "startLine": 5,
+        "startChar": 95,
+        "endLine": 5,
+        "endChar": 101
+      },
+      "revId": "75d0d3864adb1a5b56b06f00f0e289d899d8c468",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "156bff1c_7ba53ff7",
+        "filename": "overview/release_process.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2022-05-12T00:44:11Z",
+      "side": 1,
+      "message": "This is good. But I think below options could be better.\nVOLTHA is released every 6 months OR VOLTHA releases are 6 months apart.",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 38
+      },
+      "revId": "75d0d3864adb1a5b56b06f00f0e289d899d8c468",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "de97eeae_e578c14a",
+        "filename": "overview/release_process.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2022-05-12T00:44:11Z",
+      "side": 1,
+      "message": "release",
+      "range": {
+        "startLine": 12,
+        "startChar": 83,
+        "endLine": 12,
+        "endChar": 89
+      },
+      "revId": "75d0d3864adb1a5b56b06f00f0e289d899d8c468",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ebf57a9a_9e886e8d",
+        "filename": "overview/release_process.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2022-05-12T00:44:11Z",
+      "side": 1,
+      "message": "It is better to give full form the first time, i.e, Release Candidate (RC) and then later just use abbreviation RC.",
+      "range": {
+        "startLine": 17,
+        "startChar": 110,
+        "endLine": 17,
+        "endChar": 112
+      },
+      "revId": "75d0d3864adb1a5b56b06f00f0e289d899d8c468",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f93f3fa8_7b816487",
+        "filename": "overview/release_process.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2022-05-12T00:44:11Z",
+      "side": 1,
+      "message": ".gitreview",
+      "range": {
+        "startLine": 35,
+        "startChar": 33,
+        "endLine": 35,
+        "endChar": 42
+      },
+      "revId": "75d0d3864adb1a5b56b06f00f0e289d899d8c468",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a141256a_1754d61b",
+        "filename": "overview/release_process.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2022-05-12T00:44:11Z",
+      "side": 1,
+      "message": "and",
+      "range": {
+        "startLine": 39,
+        "startChar": 61,
+        "endLine": 39,
+        "endChar": 64
+      },
+      "revId": "75d0d3864adb1a5b56b06f00f0e289d899d8c468",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "00f09f37_30efa801",
+        "filename": "overview/release_process.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2022-05-12T00:44:11Z",
+      "side": 1,
+      "message": "release",
+      "range": {
+        "startLine": 93,
+        "startChar": 11,
+        "endLine": 93,
+        "endChar": 17
+      },
+      "revId": "75d0d3864adb1a5b56b06f00f0e289d899d8c468",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b974576b_c167ab7b",
+        "filename": "overview/release_process.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2022-05-12T00:44:11Z",
+      "side": 1,
+      "message": "artifacts",
+      "range": {
+        "startLine": 94,
+        "startChar": 14,
+        "endLine": 94,
+        "endChar": 23
+      },
+      "revId": "75d0d3864adb1a5b56b06f00f0e289d899d8c468",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3fbf6dc8_5c043117",
+        "filename": "overview/release_process.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 198,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2022-05-12T00:44:11Z",
+      "side": 1,
+      "message": "made? or not needed at all",
+      "range": {
+        "startLine": 198,
+        "startChar": 85,
+        "endLine": 198,
+        "endChar": 87
+      },
+      "revId": "75d0d3864adb1a5b56b06f00f0e289d899d8c468",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "97879bb8_599ced7f",
+        "filename": "overview/release_process.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 201,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2022-05-12T00:44:11Z",
+      "side": 1,
+      "message": "You mean update voltha-docs with the updated version? Could use the right wordings here.",
+      "range": {
+        "startLine": 201,
+        "startChar": 54,
+        "endLine": 201,
+        "endChar": 114
+      },
+      "revId": "75d0d3864adb1a5b56b06f00f0e289d899d8c468",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "871ed6ad_5adc513a",
+        "filename": "overview/release_process.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 210,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2022-05-12T00:44:11Z",
+      "side": 1,
+      "message": "Update voltha-docs for the new version of the component.",
+      "revId": "75d0d3864adb1a5b56b06f00f0e289d899d8c468",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
