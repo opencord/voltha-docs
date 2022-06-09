@@ -16,6 +16,24 @@
       "message": "I think we need a change here as well",
       "revId": "be4afcd3cdc5a9f663914ed6d357ad9260dc4f70",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "493e15c0_46224751",
+        "filename": "release_notes/voltha_2.8.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 225,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2022-06-09T17:32:38Z",
+      "side": 1,
+      "message": "Good catch, updated",
+      "parentUuid": "f655add8_40afb849",
+      "revId": "be4afcd3cdc5a9f663914ed6d357ad9260dc4f70",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
