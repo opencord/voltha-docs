@@ -18,7 +18,7 @@ The Long Term Support process is as follows:
 - Two interim releases every 6 months between LTS versions.
 
 VOLTHA 2.8 first and foremost meets the scale requirements (1024 ONUS per stack, 10240 on 10 stack across the same
-infrastructure) of the operator’s with persistence enabled on ETCD 6.2.5 version, deployed with the BITNAMI helm
+infrastructure) of the operator’s with persistence enabled on ETCD 6.13.19 version, deployed with the BITNAMI helm
 charts. Such result was achieved thanks to the combination of several improvements across the whole stack.
 The Technology profile is now mostly templated, the openolt adapter makes heavier use of the read-through cache,
 the rw-core does not store the flows for each device. A ETCD connection pool has been introduced in voltha-lib-go
@@ -64,7 +64,7 @@ a heart beat check.
 Features & Improvements
 -----------------------
 
-- ETCD 6.2.5 with persistence enabled
+- ETCD 6.13.19 with persistence enabled
 
   - Templated technology profile
   - Removal of flows and meters storage in the rw-core.
@@ -222,7 +222,7 @@ VOLTHA Components:
 Helm Chart Versions:
 ++++++++++++++++++++
 This section refers to the macro charts to deploy the required infrastructure and a (or many) VOLTHA stacks:
-- Voltha-infra: ``2.8.3``
+- Voltha-infra: ``2.8.4``
 - Voltha-stack: ``2.8.18``
 
 BAL Version:
@@ -262,4 +262,3 @@ and navigate to File_Station -> EdgecoreNAS, and then the folder
 **Radisys**
 For 3200G 40G NNI .Deb Version: ``openolt_rlt-3200g-w-40g-3.5.1-dev-262b6293cdeda78317dda9d3a6cfab0e7ebfbf05.deb``
 To get the debian package for Radisys 3200G OLT please write to `Cameron Lundberg <cameron.lundberg@radisys.com>`_
-
