@@ -241,7 +241,7 @@ VOLTHA Components:
 Helm Chart Versions:
 ++++++++++++++++++++
 This section refers to the macro charts to deploy the required infrastructure and a (or many) VOLTHA stacks:
-- Voltha-infra: ``2.9.13``
+- Voltha-infra: ``2.9.14``
 - Voltha-stack: ``2.9.17``
 
 BAL Version:
@@ -263,4 +263,3 @@ for running ``BAL 3.10.2.2``.
 **Radisys**
 Please write to `Cameron Lundberg <cameron.lundberg@radisys.com>`_ with `Girish Gowdra <cameron.lundberg@radisys.com>`_
 to get the OLT debian package validated on 3200G, 1600x and 1600G platforms for VOLTHA-2.9 release
-
