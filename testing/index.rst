@@ -53,6 +53,7 @@ Test Files
 - `tests/software-upgrades/ONOS_AppsUpgrade.robot <../_static/voltha-system-tests/tests/software-upgrades/ONOS_AppsUpgrade.html>`_
 - `tests/software-upgrades/ONU_Upgrade.robot <../_static/voltha-system-tests/tests/software-upgrades/ONU_Upgrade.html>`_
 - `tests/software-upgrades/Voltha_ComponentsUpgrade.robot <../_static/voltha-system-tests/tests/software-upgrades/Voltha_ComponentsUpgrade.html>`_
+- `tests/tim-workflow/Voltha_TIM_PODTests.robot <../_static/voltha-system-tests/tests/tim-workflow/Voltha_TIM_PODTests.html>`_
 - `tests/tt-workflow/Voltha_TT_FailureScenarios.robot <../_static/voltha-system-tests/tests/tt-workflow/Voltha_TT_FailureScenarios.html>`_
 - `tests/tt-workflow/Voltha_TT_MultiTcontTests.robot <../_static/voltha-system-tests/tests/tt-workflow/Voltha_TT_MultiTcontTests.html>`_
 - `tests/tt-workflow/Voltha_TT_MulticastTests.robot <../_static/voltha-system-tests/tests/tt-workflow/Voltha_TT_MulticastTests.html>`_
