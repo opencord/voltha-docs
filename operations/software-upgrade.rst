@@ -112,9 +112,18 @@ update via `helm` but instead of increasing the version number it's a decrement 
 
 ONOS app not starting or broken functionality
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 For ONOS apps a manual intervention is always necessary, both if the app does not start or if functionality is broken.
 The rollback of an ONOS application is done by following the same procedure as the
 update using the previous, or last known working, version of the `.oar` file.
+
+Inter-dependency among changes submitted in different Components
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Even though it is expected that minor version upgrade should be seemless,
+still there are chances that the changes that went in for a component are related with other component changes.
+In this case the operator needs to perform a manual intervention,
+and upgrade the components manually in desired order.
 
 Major Software Version Update
 =============================
