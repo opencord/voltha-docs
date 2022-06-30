@@ -39,6 +39,30 @@
       },
       "revId": "b1d6e342aa20757e25294a3802cd41a10c916224",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "de144f02_4950767a",
+        "filename": "release_notes/voltha_2.10.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2022-06-30T20:18:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e0fd6f57_9f8b4d34",
+      "range": {
+        "startLine": 7,
+        "startChar": 95,
+        "endLine": 7,
+        "endChar": 99
+      },
+      "revId": "b1d6e342aa20757e25294a3802cd41a10c916224",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
