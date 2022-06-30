@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1c2d5754_93650c9f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2022-06-30T20:05:45Z",
+      "side": 1,
+      "message": "assuming the double comma gets fixed",
+      "revId": "b1d6e342aa20757e25294a3802cd41a10c916224",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e0fd6f57_9f8b4d34",
