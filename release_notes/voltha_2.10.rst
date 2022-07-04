@@ -99,7 +99,7 @@ Features & Improvements
   - Augmentation and use of existing BBF models
   - Get OLT and ONU information via NETCONF and BBF models
 
-- Move to ONOS 2.5.6 with bug fixes
+- Move to ONOS 2.5.8 with bug fixes
 
 Bug Fixes
 ---------
@@ -255,6 +255,6 @@ for running ``BAL 3.10.2.2``.
 Please write to `Cameron Lundberg <cameron.lundberg@radisys.com>`_
 to get the OLT debian package validated on 3200G, 1600x and 1600G platforms for VOLTHA-2.10 release
 
-**Radisys**
+**Zyxel**
 Please write to `Emanuel Villalobos <Emanuel.Villalobos@zyxel.com.tw>`_
 to get the OLT debian package validated on the SDA3016SS for VOLTHA-2.10 release.
