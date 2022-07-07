@@ -205,7 +205,7 @@ ONOS Apps:
 - `igmpproxy <https://gerrit.opencord.org/gitweb?p=igmpproxy.git;a=summary>`_: ``2.5.0``
 - `kafka <https://gerrit.opencord.org/gitweb?p=kafka-onos.git;a=summary>`_: ``2.9.0``
 - `mcast <https://gerrit.opencord.org/gitweb?p=mcast.git;a=summary>`_: ``2.6.0``
-- `olt <https://gerrit.opencord.org/gitweb?p=olt.git;a=summary>`_: ``5.0.1``
+- `olt <https://gerrit.opencord.org/gitweb?p=olt.git;a=summary>`_: ``5.1.2``
 - `sadis <https://gerrit.opencord.org/gitweb?p=sadis.git;a=summary>`_: ``5.6.0``
 - `bng <https://gerrit.opencord.org/gitweb?p=bng.git;a=summary>`_: ``2.2.0``
 - `pppoeagent <https://gerrit.opencord.org/plugins/gitiles/pppoeagent/>`_: ``1.2.0``
@@ -221,7 +221,7 @@ VOLTHA Components:
 - `voltctl <https://gerrit.opencord.org/gitweb?p=voltctl.git;a=tree>`_ - ``1.7.6``
 - `voltha-openolt-adapter <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree>`_ - ``4.2.6`` with chart ``2.11.3``
 - `voltha-openonu-adapter-go <https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter-go.git;a=tree>`_ - ``2.2.8`` with chart ``2.10.3``
-- `voltha-onos <https://gerrit.opencord.org/gitweb?p=voltha-onos.git;a=tree>`_ -  ``5.0.5`` with chart ``0.1.27``
+- `voltha-onos <https://gerrit.opencord.org/gitweb?p=voltha-onos.git;a=tree>`_ -  ``5.1.1`` with chart ``0.1.27``
 - `openolt agent <https://gerrit.opencord.org/gitweb?p=openolt.git;a=tree>`_ - ``3.7.5``
 - `voltha-protos <https://github.com/opencord/voltha-protos/releases/tag/v5.2.5>`_ - ``5.2.5``
 - `voltha-lib-go <https://github.com/opencord/voltha-lib-go/releases/tag/v7.1.7>`_ - ``7.1.7``
@@ -233,7 +233,7 @@ Helm Chart Versions:
 ++++++++++++++++++++
 This section refers to the macro charts to deploy the required infrastructure and a (or many) VOLTHA stacks:
 - Voltha-infra: ``2.10.7``
-- Voltha-stack: ``2.10.4``
+- Voltha-stack: ``2.10.5``
 
 BAL Version:
 ++++++++++++
