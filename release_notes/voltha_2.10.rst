@@ -232,8 +232,8 @@ VOLTHA Components:
 Helm Chart Versions:
 ++++++++++++++++++++
 This section refers to the macro charts to deploy the required infrastructure and a (or many) VOLTHA stacks:
-- Voltha-infra: ``2.10.7``
-- Voltha-stack: ``2.10.5``
+- Voltha-infra: ``2.10.5``
+- Voltha-stack: ``2.10.7``
 
 BAL Version:
 ++++++++++++
