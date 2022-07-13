@@ -226,7 +226,7 @@ VOLTHA Components:
 - `voltha-protos <https://github.com/opencord/voltha-protos/releases/tag/v5.2.5>`_ - ``5.2.5``
 - `voltha-lib-go <https://github.com/opencord/voltha-lib-go/releases/tag/v7.1.7>`_ - ``7.1.7``
 - `Bbsim-sadis-server <https://github.com/opencord/bbsim-sadis-server/releases/tag/v0.3.4>`_ - ``0.3.4`` with chart ``0.3.1``
-- `voltha-system-tests <https://github.com/opencord/voltha-system-tests/releases/tag/2.9.0>`_ - ``2.10.0``
+- `voltha-system-tests <https://github.com/opencord/voltha-system-tests/releases/tag/2.9.0>`_ - ``2.10.1``
 
 
 Helm Chart Versions:
