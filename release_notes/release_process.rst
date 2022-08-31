@@ -12,12 +12,13 @@ Minor `Semver <https://semver.org/>`_ version, such as ``voltha-2.2``,
 ``voltha-2.3``, etc.  The rest of this section will use the ``voltha-2.3``
 release as an example:
 
-A branch named ``voltha-2.3`` is created on the voltha-helm-charts repo.  Release
-candidates will be created of each chart for the ``2.3`` release. The action that
-indicates the creation of the ``2.3`` release is to changing the `voltha
+A branch named ``voltha-2.3`` is created on the voltha-helm-charts repo.
+Release candidates will be created of each chart for the ``2.3`` release.
+The action that indicates the creation of the ``2.3`` release is to changing
+the `voltha
 <https://gerrit.opencord.org/gitweb?p=voltha-helm-charts.git;a=tree;f=voltha>`_
-helm chart, and adapter charts with version: ``2.3.0`` specified in ``Chart.yaml``
-within the `voltha-helm-charts
+helm chart, and adapter charts with version: ``2.3.0`` specified in
+``Chart.yaml`` within the `voltha-helm-charts
 <https://gerrit.opencord.org/gitweb?p=voltha-helm-charts.git;a=summary>`_ repo.
 
 Accompanying tests for 2.3 are created by creating a branch created named
@@ -25,7 +26,7 @@ Accompanying tests for 2.3 are created by creating a branch created named
 <https://gerrit.opencord.org/gitweb?p=voltha-system-tests.git;a=summary>`_
 repo. At release we create a tag ``2.3.0`` on that branch.
 
-These two repos are the only ones that receive a ``2.3.0`` tag. Other repos that
+These two repos are the only ones receiving a ``2.3.0`` tag. Other repos that
 contain individual components have their own versioning/release cadence, driven
 by SemVer.
 
@@ -87,7 +88,8 @@ For a change to be suitable for a stable branch, it has to be either a:
 
 Process to create a change on a stable branch
 
-- Add a Jira item, with the ``Affects Version: ``VOLTHA vX.X`` set
+- Create a jira ticket for the problem and document the ``Affects Version/s:``
+  - field with affected version(s) ``VOLTHA vX.X``.
 - Discuss and get consensus on the issue via the Voltha mailing list, in the
   all-Voltha meeting, or on Slack about whether this fix should be brought to a
   stable branch
@@ -112,11 +114,10 @@ currently cover the particular bug. Examples:
 
 API Deprecation policy
 ----------------------
-
-VOLTHA has in place a 2 release deprecation policy. Starting from ``voltha-2.9`` the APIs that are marked as deprecated
-are automatically removed after 2 releases.
-As an example an API marked as deprecated in ``voltha-2.9`` will be removed after the ``voltha-2.10`` release
-and will not be present anymore in ``voltha-2.11``.
+VOLTHA supports 2 release deprecation policy. Starting from ``voltha-2.9``
+the APIs that are marked as deprecated are automatically removed.
+For example an API marked as deprecated in ``voltha-2.9`` will be removed after
+the ``voltha-2.10`` release and will not be present anymore in ``voltha-2.11``.
 
 The removal process is intended to happen automatically, meaning no further notice of removal needs to be sent out.
 The deprecated objects and APIs are marked in the `voltha-protos <https://github.com/opencord/voltha-protos>`_ using the
