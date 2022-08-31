@@ -303,10 +303,10 @@ Finally, check the ``iperf3`` service
 Configuration for in-band OLT control
 -------------------------------------
 
-If OLT is being used in in-band connectivity mode, the
+If OLT is being used in in-band connectivity mode, this
 `document <https://docs.google.com/document/d/1OKDJCPEFVTEythAFUS_I7Piew4jHmhk25llK6UF04Wg>`_
 details the configuration aspects in ONOS and the aggregation switch to
-trunk/switch in-band packets from the OLT to BNG or Voltha.
+trunk/switch in-band packets from the OLT to BNG or VOLTHA.
 
 In-band OLT software upgrade
 -------------------------------------
