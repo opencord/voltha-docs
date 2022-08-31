@@ -87,7 +87,7 @@ For a change to be suitable for a stable branch, it has to be either a:
 
 Process to create a change on a stable branch
 
-- Add a Jira item, with the ``Affects Version: ``VOLTHA vX.X`` set
+- Create a jira ticket for the problem and document the ``Affects Version/s:`` field with affected version(s) ``VOLTHA vX.X``.
 - Discuss and get consensus on the issue via the Voltha mailing list, in the
   all-Voltha meeting, or on Slack about whether this fix should be brought to a
   stable branch

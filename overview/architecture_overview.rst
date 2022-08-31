@@ -76,7 +76,7 @@ protobuf within the `voltha-protos <https://github.com/opencord/voltha-protos>`_
       of the system. An opensource implementation exists in the form of the `open-olt-adapter <https://github.com/opencord/voltha-openolt-adapter>`_) which uses
       gRPC and the `openolt.proto <https://github.com/opencord/voltha-protos/blob/master/protos/voltha_protos/openolt.proto>`_
       API as its means of communication to the ``open-olt-agent``. Closed source adapter
-      that use different SB protocols to the device, such as NETCONF, have been have been proven to work with VOLTHA
+      that use different SB protocols to the device, such as NETCONF, have been proven to work with VOLTHA
       with no changes required to the system.
     - ``ONU Adapter``. The ONU adapter is responsible for all the interactions and commands towards the ONU via OMCI,
       such as discovery, MIB upload, ME configuration, T-CONT and GEM port configuration and so on.
