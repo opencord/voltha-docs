@@ -202,3 +202,9 @@ in the `VOLTHA wiki page <https://wiki.opennetworking.org/display/COM/VOLTHA>`_
    :glob:
 
    release_notes/*
+
+.. toctree::
+   :maxdepth: 2
+   :caption: HOWTO Topics
+
+   howto/edit_voltha_docs
