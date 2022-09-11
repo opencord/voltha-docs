@@ -202,3 +202,10 @@ in the `VOLTHA wiki page <https://wiki.opennetworking.org/display/COM/VOLTHA>`_
    :glob:
 
    release_notes/*
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: HOWTO(s)
+
+   howto/index
