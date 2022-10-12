@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "feb4d625_f92a3ec5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000947
+      },
+      "writtenOn": "2022-10-12T17:27:28Z",
+      "side": 1,
+      "message": "Copyright can\u0027t be \u00272019-present\u0027.  Otherwise, no issues.   Really appreciate the enhanced documentation.   But we need a 2022 instead of \u0027present\u0027.   Declaring an ambiguous or future copyright can disqualify it completely.",
+      "revId": "432a531ff3cc19d0047238e1a7304580df5c0e5c",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
