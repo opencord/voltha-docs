@@ -11,10 +11,6 @@
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
 
 import os
 
@@ -25,12 +21,11 @@ def get_version():
 # -- Project information -----------------------------------------------------
 
 project = u'VOLTHA Docs'
-copyright = u'2019-2021, VOLTHA Contributors & Open Networking Foundation'
+copyright = u'2019-2022, VOLTHA Contributors & Open Networking Foundation'
 author = u'VOLTHA Contributors'
 
 # The short X.Y version
 version = get_version()
-
 # The full version, including alpha/beta/rc tags
 release = version
 
@@ -49,6 +44,7 @@ warning_is_error = True
 extensions = [
     'recommonmark',
     'sphinx.ext.coverage',
+    'sphinx.ext.extlinks',
     'sphinx.ext.graphviz',
     'sphinx.ext.ifconfig',
     'sphinx.ext.mathjax',
@@ -74,7 +70,7 @@ extensions = [
 # Text files with lists of words that shouldn't fail the spellchecker:
 spelling_word_list_filename=['dict.txt', ]
 
-# sphinx-multiversion prep, run in each versioned source directory
+#sphinx-multiversion prep, run in each versioned source directory
 prep_commands = [
     'ln -sf _root_/repos _target_/repos',
     'make prep',
@@ -266,6 +262,16 @@ nwdiag_fontpath = [
     "_static/fonts/Inconsolata-Regular.ttf",
     "_static/fonts/Inconsolata-Bold.ttf",
 ]
+
+# -- Options for extlinks extension ------------------------------------------
+# ..seealso: https://www.sphinx-doc.org/en/master/usage/extensions/todo.html
+#        'vhc' : 'https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts',
+extlinks=\
+    {
+        'vol-jira' : ('https://jira.opencord.org/projects/VOL/issues/%s', 'jira::%s'),
+        'vol-ger'  : ('https://gerrit.opencord.org/plugins/gitiles/%s', 'gerrit::%s'),
+        'vol-git'  : ('https://github.com/opencord/%s', 'git::%s'),
+    }
 
 # -- Options for todo extension ----------------------------------------------
 # If true, `todo` and `todoList` produce output, else they produce nothing.
