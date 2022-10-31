@@ -129,6 +129,7 @@ exclude_patterns = [
         'CODE_OF_CONDUCT.md',
         '*/CODE_OF_CONDUCT.md',
         'doc_venv/*'
+        'release_notes/template.rst',
 ]
 
 # The name of the Pygments (syntax highlighting) style to use.
