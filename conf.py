@@ -107,7 +107,8 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = [
+exclude_patterns=\
+    [
         '*/LICENSE.md',
         '*/RELEASE_NOTES.md',
         '*/vendor',
@@ -129,7 +130,17 @@ exclude_patterns = [
         'CODE_OF_CONDUCT.md',
         '*/CODE_OF_CONDUCT.md',
         'doc_venv/*'
-]
+        'release_notes/template.rst',
+        '../release_notes/voltha_2.2.html',
+        '../release_notes/voltha_2.3.html',
+        '../release_notes/voltha_2.4.html',
+        '../release_notes/voltha_2.5.html',
+        '../release_notes/voltha_2.6.html',
+        '../release_notes/voltha_2.7.html',
+        '../release_notes/voltha_2.8.html',
+        '../release_notes/voltha_2.9.html',
+        '../release_notes/voltha_2.10.html',
+    ]
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = None
