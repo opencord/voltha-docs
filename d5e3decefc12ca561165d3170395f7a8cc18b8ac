@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5e41bb64_d129a17a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000218
+      },
+      "writtenOn": "2022-11-01T04:37:47Z",
+      "side": 1,
+      "message": "Seems you need to change the version in VERSION file .",
+      "revId": "d5e3decefc12ca561165d3170395f7a8cc18b8ac",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
