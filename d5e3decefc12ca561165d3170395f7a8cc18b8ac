@@ -16,6 +16,23 @@
       "message": "Seems you need to change the version in VERSION file .",
       "revId": "d5e3decefc12ca561165d3170395f7a8cc18b8ac",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9caca719_5dcd42d1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000947
+      },
+      "writtenOn": "2022-11-22T23:08:37Z",
+      "side": 1,
+      "message": "Purely syntactic, but why the escaped newline in conf.py just to indent the opening bracket? Do you prefer that layout?",
+      "revId": "d5e3decefc12ca561165d3170395f7a8cc18b8ac",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
