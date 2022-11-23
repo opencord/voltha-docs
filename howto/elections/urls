@@ -1,0 +1,17 @@
+# Placeholder for a future HOWTO topic.
+# Edits required after TST elections.
+
+1) Update TSTmembers for VOLTHA, SEBA, etc:
+   * https://wiki.opennetworking.org/display/COM/VOLTHA
+   * https://opennetworking.org/voltha/
+   * Google mailing lists.
+   * Slack channel: voltha-tst
+   * Jenkins - job access.
+   * Gerrit - code review and merge approvals.
+
+2) Review
+   * Active community member list:
+      * https://docs.voltha.org/master/overview/contributing.html?highlight=commit%20message%20triggers
+
+# [EOF}
+

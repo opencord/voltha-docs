@@ -114,8 +114,6 @@ exclude_patterns = [
         '.DS_Store',
         'Thumbs.db',
         '_build',
-        'venv_docs',
-        'voltha-system-tests/vst_venv',
         'voltha-go/BUILD.md',
         'cord-tester/venv_cord',
         'cord-tester/docs',
@@ -128,7 +126,13 @@ exclude_patterns = [
         'bbsim/README.md',
         'CODE_OF_CONDUCT.md',
         '*/CODE_OF_CONDUCT.md',
-        'doc_venv/*'
+# Ignore all:
+        '**/__pycache__', # generated - faster traversal
+# Revisit: one directory pattern is sufficient.
+        '**/doc_venv',
+        '**/venv_docs',
+        '**/virtualenv',
+        '**/vst_venv',
 ]
 
 # The name of the Pygments (syntax highlighting) style to use.

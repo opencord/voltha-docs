@@ -34,7 +34,7 @@ Some additional points for developers:
  - Submit your changes early and often. Input and
    corrections early in the process prevent huge changes later.
 
- - Please open a ticket in the opencord jira describing the issue/feature. During the patch please
+ - Please open a `jira ticket <https://jira.opencord.org/projects/VOL>`_ describing the issue/feature. During the patch please
    preface the commit message with `[VOL-<jira_number]` e.g. `[VOL-4550]` so it gets
    automatically linked to the Jira ticket. This keeps code review and design discussions clean.
 

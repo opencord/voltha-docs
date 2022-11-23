@@ -1,0 +1,5 @@
+https://docs.voltha.org/master/overview/contributing.html
+
+  % make lint
+  % make test
+  % make sca
