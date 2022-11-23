@@ -17,8 +17,8 @@ Trace Packets across components
 -------------------------------
 
 Given that ``VOLTHA`` is a collection of microservices we strongly suggest the usage of a log aggregator like
-`stern <https://github.com/wercker/stern>`_. installed. You can then aggregate logs from multiple containers in a simple way,
-for example to track all the ``packet-ins`` and ``packet-outs``:
+`stern <https://github.com/stern/stern>`_ installed. You can then aggregate logs from multiple containers in
+a simple way, for example to track all the ``packet-ins`` and ``packet-outs``:
 
 .. code:: bash
 
