@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b19ec52f_33bd1224",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2022-11-28T14:36:06Z",
+      "side": 1,
+      "message": "Edits to support make lint (optional: with python 3.10+ !!) etc in voltha-docs.",
+      "revId": "7f7ba6f8e405ddec6561e75f69dc915070192d97",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
