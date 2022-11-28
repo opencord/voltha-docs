@@ -27,6 +27,7 @@ Checkout, modify and test
    $ make html           # doc generation
    $ make lint           # syntax checking
    $ make test           # syntax check *.rst files
+   $ make docs           # generate website pages
 
    $ "$BROWSER" _build/html/index.html  # BROWSER='firefox'
 
