@@ -283,12 +283,16 @@ todo_include_todos = True
 
 # -- Options for linkcheck ---------------------------------------------------
 # The link checker strips off .md from links and then complains
-linkcheck_ignore = [r'https://github.com/opencord/voltctl/blob/master/LICENSE',
-                    r'https://github.com/ciena/kind-voltha#voltha-up-configuration-options',
-                    r'https://www.sphinx-doc.org',
-                    r'https://github.com/opencord/bbsim/blob/master/docs/source/DMI_Server_README',
-                    r'https://github.com/opencord/voltha-helm-charts/blob/master/README'
-                    ]
+linkcheck_ignore=\
+    [
+        r'https://github.com/opencord/voltctl/blob/master/LICENSE',
+        r'https://github.com/ciena/kind-voltha#voltha-up-configuration-options',
+        r'https://www.sphinx-doc.org',
+        r'https://github.com/opencord/bbsim/blob/master/docs/source/DMI_Server_README',
+        r'https://github.com/opencord/voltha-helm-charts/blob/master/README',
+        r'https://github.com/atomix/atomix/releases/tag/atomix-3.1.9',
+        r'https://github.com/atomix/atomix/releases/tag/atomix-3.1.8',
+    ]
 
 # -- Configure recommonmark to use AutoStructify -----------------------------
 # Docs: https://recommonmark.readthedocs.io/en/latest/auto_structify.html

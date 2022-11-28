@@ -1,7 +1,35 @@
+# -*- makefile -*-
+# -----------------------------------------------------------------------
+# Copyright 2022 Open Networking Foundation
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# -----------------------------------------------------------------------
 # Makefile for Sphinx documentation
 
-# use bash for pushd/popd, and to fail quickly
-SHELL = bash -e -o pipefail
+.DEFAULT_GOAL := help
+
+TOP         ?= .
+MAKEDIR     ?= $(TOP)/makefiles
+
+$(if $(VERBOSE),$(eval export VERBOSE=$(VERBOSE))) # visible to include(s)
+
+##--------------------##
+##---]  INCLUDES  [---##
+##--------------------##
+include $(MAKEDIR)/consts.mk
+include $(MAKEDIR)/help/include.mk
+include $(MAKEDIR)/patches/include.mk
+include $(MAKEDIR)/help/variables.mk
 
 # You can set these variables from the command line.
 SPHINXOPTS   ?=
@@ -13,6 +41,12 @@ BUILDDIR     ?= _build
 # edit the `git_refs` file with the commit/tag/branch that you want to use
 OTHER_REPO_DOCS ?= bbsim cord-tester ofagent-go openolt voltctl voltha-openolt-adapter voltha-openonu-adapter-go voltha-protos voltha-system-tests device-management-interface voltha-helm-charts
 
+ifdef NO_OTHER_REPO_DOCS
+  # Inhibit pulling in external repos.
+  # python 3.10+ patching not supported by all repos yet.
+  OTHER_REPO_DOCS := $(null)
+endif
+
 # Static docs, built by other means (usually robot framework)
 STATIC_DOCS    := _static/voltha-system-tests _static/cord-tester
 
@@ -22,15 +56,29 @@ VENV_NAME      := venv_docs
 .PHONY: help test lint reload Makefile prep
 
 # Put it first so that "make" without argument is like "make help".
-help: $(VENV_NAME)
-	source $</bin/activate ; set -u ;\
+help :: $(VENV_NAME)
+	@ echo
+	@ source $</bin/activate ; set -u ;\
 	$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
+# -----------------------------------------------------------------------
 # Create the virtualenv with all the tools installed
+# -----------------------------------------------------------------------
 $(VENV_NAME):
-	virtualenv -p python3 $(VENV_NAME) ;\
-	source $@/bin/activate ;\
-	pip install -r requirements.txt
+	@echo
+	@echo "============================="
+	@echo "Installing python virtual env"
+	@echo "============================="
+	virtualenv -p python3 $@ ;\
+	source ./$@/bin/activate ;\
+	python -m pip install -r requirements.txt
+ifndef NO_PATCH
+	@echo
+	@echo "========================================"
+	@echo "Applying python 3.10.x migration patches"
+	@echo "========================================"
+	./patches/python_310_migration.sh '--venv' "$@" 'apply' 
+endif
 
 # automatically reload changes in browser as they're made
 reload: $(VENV_NAME)
@@ -39,7 +87,9 @@ reload: $(VENV_NAME)
 
 # lint and link verification. linkcheck is part of sphinx
 test: lint linkcheck
-
+# doctest
+# coverage
+# linkcheck
 lint: doc8
 
 doc8: $(VENV_NAME) | $(OTHER_REPO_DOCS)
@@ -60,10 +110,10 @@ md-lint: | $(OTHER_REPO_DOCS)
 
 # clean up
 clean:
-	rm -rf $(BUILDDIR) $(OTHER_REPO_DOCS) $(STATIC_DOCS)
+	$(RM) -r $(BUILDDIR) $(OTHER_REPO_DOCS) $(STATIC_DOCS)
 
-clean-all: clean
-	rm -rf $(VENV_NAME) repos
+clean-all sterile: clean
+	$(RM) -r $(VENV_NAME) repos
 
 # checkout the repos inside repos/ dir
 repos:
@@ -128,6 +178,14 @@ prep: | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
-%: $(VENV_NAME) Makefile | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
+# %: $(VENV_NAME) Makefile | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
+
+include $(MAKEDIR)/voltha/docs-catchall-targets.mk 
+$(voltha-docs-catchall): $(VENV_NAME) Makefile | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
+	@echo " ** CATCHALL: $@"
 	source $</bin/activate ; set -u ;\
 	$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
+include $(MAKEDIR)/help/trailer.mk
+
+# [EOF]
