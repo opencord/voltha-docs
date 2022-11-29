@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e6ff223f_4816b44d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000947
+      },
+      "writtenOn": "2022-11-29T20:08:44Z",
+      "side": 1,
+      "message": "Everything looks good -- Only comment is in the pull_request.rst file you mention going to the VOLTHA Jira site and filing a ticket.    This file is most likely to be read and monitored by relative newbies.   Would it be valuable to put in a direct link to the Jira site?   I\u0027m not sure how well the community is educated about the Jira site as an introduction.",
+      "revId": "19c9098e8f8ae7f759448a577404a38ffddc5299",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
