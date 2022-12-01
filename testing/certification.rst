@@ -46,7 +46,7 @@ Once the TST has given approval for device integration in VOLTHA nighly tests th
 any one of the ONF community lab, including a wiring diagram (if needed) Currently there are two locations:
 
 - DT Office in Berlin, Germany. Address: Winterfeldtstraße 21, 10781 Berlin, Germany. Point of contact `Bjoern Nagel @ DT <NagelB@telekom.de>`_
-- Radisys Laboratory in Hilssboro, Oregon
+- Radisys Laboratory in Hillsboro, Oregon
 
 Once the OLT arrives the technicians will rack it and wire it according to the diagram shared.
 For an OLT the NNI connection will be provided to the AGG switch and all the management will also be connected with
@@ -97,5 +97,6 @@ to make sure the OLT gets certified for each of the following VOLTHA releases.
 ONF Contacts
 ------------
 For any further information please contact:
-`Timon Sloane <timon@opennetworking.org>`_
-`Michelle Roth <michelle@opennetworking.org>`_
+
+- `Timon Sloane <timon@opennetworking.org>`_
+- `Michelle Roth <michelle@opennetworking.org>`_
