@@ -20,6 +20,10 @@
 help ::
 	@echo "Usage: $(MAKE) [options] [target] ..."
 	@echo
+	@echo '[Virtual Env]'
+	@echo '  venv           Create a python virtual environmen"
+	@echo "  $(VENV_NAME)"
+	@echo
 	@echo '[CLEAN]'
 	@echo '  clean          Remove generated targets'
 	@echo '  sterile        clean + remove virtual env interpreter install'

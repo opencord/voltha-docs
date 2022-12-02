@@ -21,18 +21,10 @@ dst="vst_venv"
 src="staging"
 pat="patches"
 
-## Update logic to: find . -name 'patch')
 declare -a fyls=()
-fyls+=('lib/python3.10/site-packages/robot/utils/normalizing.py')
-fyls+=('lib/python3.10/site-packages/robot/utils/robottypes3.py')
-fyls+=('lib/python3.10/site-packages/sphinx/util/typing.py')
-
-echo
-echo "==========================================================================="
-echo "CMD: $0"
-echo "PWD: $(/bin/pwd)"
-echo "ARGV: $*"
-echo "==========================================================================="
+pushd "$pat" >/dev/null
+fyls+=( $(find . -name 'patch' -print) )
+popd         >/dev/null
 
 if [ $# -eq 0 ]; then set -- apply; fi
 
@@ -54,14 +46,16 @@ EOH
 	    pushd "$dst" >/dev/null || { echo "pushd $dst failed"; exit 1; }
 	    for fyl in "${fyls[@]}";
 	    do
+		path="${fyl%/*}"
+
 		# Conditional install, jenkins may not support interpreter yet.
-		if [ ! -e "$fyl" ]; then
-		    echo "[SKIP] $fyl"
+		if [ ! -e "$path" ]; then
+		    echo "[SKIP] $path"
 		    continue
 		fi
 		
-		echo "[APPLY] $fyl"
-		patch -R -p1 < "../$pat/$fyl/patch"
+		echo "[APPLY] $path"
+		patch -R -p1 < "../$pat/${path}/patch"
 	    done
 	    popd >/dev/null || { echo "popd $dst failed"; exit 1; }
 	    ;;
@@ -88,6 +82,8 @@ EOH
 	    exit 1
 	    ;;
     esac
+
+    echo
 done
 
 # [EOF]

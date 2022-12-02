@@ -64,6 +64,9 @@ help :: $(VENV_NAME)
 # -----------------------------------------------------------------------
 # Create the virtualenv with all the tools installed
 # -----------------------------------------------------------------------
+.PHONY: venv
+venv: $(VENV_NAME)
+
 $(VENV_NAME):
 	@echo
 	@echo "============================="

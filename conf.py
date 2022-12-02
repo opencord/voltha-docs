@@ -292,6 +292,16 @@ linkcheck_ignore=\
         r'https://github.com/opencord/voltha-helm-charts/blob/master/README',
         r'https://github.com/atomix/atomix/releases/tag/atomix-3.1.9',
         r'https://github.com/atomix/atomix/releases/tag/atomix-3.1.8',
+        #
+        r'../release_notes/voltha_2.2.html',
+        r'../release_notes/voltha_2.3.html',
+        r'../release_notes/voltha_2.4.html',
+        r'../release_notes/voltha_2.5.html',
+        r'../release_notes/voltha_2.6.html',
+        r'../release_notes/voltha_2.7.html',
+        r'../release_notes/voltha_2.8.html',
+        r'../release_notes/voltha_2.9.html',
+        r'../release_notes/voltha_2.10.html',
     ]
 
 # -- Configure recommonmark to use AutoStructify -----------------------------
