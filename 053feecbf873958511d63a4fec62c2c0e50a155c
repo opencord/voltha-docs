@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3f703982_8da66bc8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2022-12-02T00:48:26Z",
+      "side": 1,
+      "message": "simple doc changes, daf\u003d\u003e+2 earlier.",
+      "revId": "053feecbf873958511d63a4fec62c2c0e50a155c",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
