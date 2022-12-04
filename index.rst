@@ -208,3 +208,8 @@ in the `VOLTHA wiki page <https://wiki.opennetworking.org/display/COM/VOLTHA>`_
    :caption: HOWTO Topics
 
    howto/index
+
+.. toctree::
+   :maxdepth: 0
+
+   howto/eof

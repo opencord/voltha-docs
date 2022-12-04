@@ -15,25 +15,19 @@
 # limitations under the License.
 # -----------------------------------------------------------------------
 
-# Parent makefile should include this early so help
-# message will be prefixed by a usage statement.
-help ::
-	@echo "Usage: $(MAKE) [options] [target] ..."
-	@echo
-	@echo '[Virtual Env]'
-	@echo '  venv           Create a python virtual environment'
-	@echo "  $(VENV_NAME)"
-	@echo
-	@echo '[CLEAN]'
-	@echo '  clean          Remove generated targets'
-	@echo '  sterile        clean + remove virtual env interpreter install'
-	@echo
-	@echo '[VIEW]'
-	@echo '  reload         Setup to auto-reload sphinx doc changes in browser'
-	@echo '  view-html      View generated documentation'
-	@echo
-	@echo '[HELP]'
-	@echo '  help           Display program help'
-	@echo '  help-verbose   Display additional targets and help'
+JSON_FILES ?= $(error JSON_FILES= is required)
+
+.PHONY: lint-shell
+
+lint : lint-shell
+
+lint-shell:
+	shellcheck --version
+	find . \( -name 'staging' -o -name 'vst_venv' \) -prune \
+	    -o -name '*.sh' ! -name 'activate.sh' -print0 \
+	| xargs -0 -n1 shellcheck
+
+help::
+	@echo "  lint-shell           Syntax check bash,bourne,etc sources"
 
 # [EOF]

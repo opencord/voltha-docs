@@ -78,7 +78,7 @@ $(VENV_NAME):
 ifndef NO_PATCH
 	@echo
 	@echo "========================================"
-	@echo "Applying python 3.10.x migration patches"
+	@echo "Applying python virtualenv patches as needed (v3.10+)"
 	@echo "========================================"
 	./patches/python_310_migration.sh '--venv' "$@" 'apply' 
 endif
@@ -90,10 +90,12 @@ reload: $(VENV_NAME)
 
 # lint and link verification. linkcheck is part of sphinx
 test: lint linkcheck
+
 # doctest
 # coverage
 # linkcheck
 lint: doc8
+# include $(MAKEDIR)/lint/shell.mk
 
 doc8: $(VENV_NAME) | $(OTHER_REPO_DOCS)
 	source $</bin/activate ; set -u ;\
@@ -189,6 +191,14 @@ $(voltha-docs-catchall): $(VENV_NAME) Makefile | $(OTHER_REPO_DOCS) $(STATIC_DOC
 	source $</bin/activate ; set -u ;\
 	$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
+## -----------------------------------------------------------------------
+## -----------------------------------------------------------------------
+BROWSER ?= $(error Usage: $(MAKE) $@ BROWSER=)
+view-html:
+	"$(BROWSER)" _build/html/index.html
+
+## -----------------------------------------------------------------------
+## -----------------------------------------------------------------------
 include $(MAKEDIR)/help/trailer.mk
 
 # [EOF]

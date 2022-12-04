@@ -15,15 +15,44 @@
 # limitations under the License.
 # -----------------------------------------------------------------------
 
+##-------------------##
+##---]  GLOBALS  [---##
+##-------------------##
 set -euo pipefail
 
-dst="vst_venv"
-src="staging"
-pat="patches"
+## -----------------------------------------------------------------------
+## Intent: Display script documentation.
+## -----------------------------------------------------------------------
+function show_help()
+{
+    cat <<EOH
+Usage: $0
+  apply    Patch virtualenv python modules by version (3.10+).
+  backup   Create a tarball for work-in-progress.
+  gather   Display a list of potential source files to patch.
 
-declare -a fyls=()
+  --venv   Installed venv directory to patch (override default)
+  --help   This message
+
+See Also
+  patches/README.md       Howto create a patch file.
+
+EOH
+    exit 0
+}
+
+##----------------##
+##---]  MAIN  [---##
+##----------------##
+declare dst="vst_venv"
+declare src="staging"
+declare pat="patches"
+
+## -----------------------
+## Slurp available patches
+## -----------------------
 pushd "$pat" >/dev/null
-fyls+=( $(find . -name 'patch' -print) )
+readarray -t fyls < <(find . -name 'patch' -print)
 popd         >/dev/null
 
 if [ $# -eq 0 ]; then set -- apply; fi
@@ -32,15 +61,8 @@ while [ $# -gt 0 ]; do
     opt="$1"; shift
     case "$opt" in
 
+	-*help) show_help ;;
 	-*venv) dst="$1"; shift ;;
-
-	help)
-	    cat <<EOH
-apply  - generate patches from vault source.
-backup - Archive patch directory
-gather - collect potential python files to edit.
-EOH
-	    ;;
 
 	apply)
 	    pushd "$dst" >/dev/null || { echo "pushd $dst failed"; exit 1; }
@@ -76,7 +98,9 @@ EOH
 	    done
 	    find "$pat" -print
 	    ;;
-	
+
+	help) show_help ;;
+
 	*)
 	    echo "ERROR: Unknown action [$opt]"
 	    exit 1
