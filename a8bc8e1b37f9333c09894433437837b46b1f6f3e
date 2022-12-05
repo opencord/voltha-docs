@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "14d94b4f_d64077ab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2022-12-05T15:40:53Z",
+      "side": 1,
+      "message": "Update docs and patches, \"make html\" now usable with python 3.10+",
+      "revId": "a8bc8e1b37f9333c09894433437837b46b1f6f3e",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
