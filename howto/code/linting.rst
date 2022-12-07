@@ -35,6 +35,22 @@ The generic lint target can be used to invoke all defined lint targets.
 
 |
 
+
+Makefile help
+~~~~~~~~~~~~~
+
+Individual Makefiles support a help targe that will display a list of
+targets and functionality supported.
+
+.. code:: bash
+
+    make help
+    make help-verbose
+    make help VERBOSE=1
+
+|
+
+
 Helm Charts
 +++++++++++
 
@@ -65,6 +81,7 @@ Sources:
 - `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/>`__
 
 |
+
 
 JSON
 ++++
@@ -186,18 +203,6 @@ Sources:
 
 |
 
-Makefile help
-~~~~~~~~~~~~~
-
-Individual Makefiles support a help targe that will display a list of
-targets and functionality supported.
-
-.. code:: bash
-
-    make help
-    make help-verbose
-    make help VERBOSE=1
-
 
 Bugs
 ~~~~
@@ -206,6 +211,8 @@ Bugs
 - Include repository URL
 - Include gerrit/github changeset if available.
 - A logfile snippet of the error and surrounding context.
+
+|
 
 
 Repositories
@@ -217,6 +224,8 @@ Repositories
 - [`master <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master>`__] `voltha-helm-charts <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts>`_
 - [`master <https://gerrit.opencord.org/plugins/gitiles/voltha-system-tests/+/refs/heads/master>`__] `voltha-system-tests <https://gerrit.opencord.org/plugins/gitiles/voltha-system-tests>`_
 
+|
+
 
 Notes
 ~~~~~
@@ -227,3 +236,5 @@ Notes
   it will be.  Submit patches as needed or open a jira ticket to request
   linting support in specific repositories.
 - Makefile refactoring: yes absolutely! Baby steps are needed in the interim...
+
+|
