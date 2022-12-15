@@ -17,6 +17,8 @@ voltha-helm-charts
 voltha-protos
 voltha-system-tests
 voltctl
+!howto/release/voltctl
+
 cord-tester
 device-management-interface
 
