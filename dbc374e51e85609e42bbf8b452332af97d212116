@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "15fd6340_d37ccacb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2022-12-15T01:36:28Z",
+      "side": 1,
+      "message": ".gitignore excluded one of the directories so filter and add it back in.",
+      "revId": "dbc374e51e85609e42bbf8b452332af97d212116",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
