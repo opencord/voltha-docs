@@ -6,5 +6,5 @@ HOWTO(s)
 
    code/index
    edit_voltha_docs
-   release/installVoltctl
+   release/index
    voltha_repositories

@@ -32,6 +32,23 @@ Checkout, modify and test
    $ "$BROWSER" _build/html/index.html  # BROWSER='firefox'
 
 
+Interactive editing: real time updates
+""""""""""""""""""""""""""""""""""""""
+
+Another useful convenience makefile target to try is the reload target.
+"make reload" will invoke the sphinx-reload program, spawn a web page for
+viewing html documentation pages followed by periodic regeneration of page
+content.
+
+.. sourcecode:: shell
+
+   $ git clone ssh://gerrit.opencord.org:29418/voltha-docs
+
+   $ cd voltha-docs
+   $ make reload
+   $ vi *.rst
+
+
 make lint (syntax checking)
 """""""""""""""""""""""""""
 - `make help (pending) <https://gerrit.opencord.org/c/voltha-system-tests/+/33306>`
