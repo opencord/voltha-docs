@@ -10,7 +10,7 @@ Bandwidth Profiles Representations in Sadis
 ===========================================
 The ONOS Sadis application supports configuration of the bandwidth profiles in two formats, `IETF` and `MEF`.
 The values contained are expressed in kilobits/second (kbps).
-THe expectation is that a `Default` meter is always present for workflows that have flow rules installed at port
+The expectation is a `Default` meter will always present for workflows that have flow rules installed at port
 startup, such as for EAPOL and DHCP. Meters referred by subscribers must also be present.
 
 The `MEF` Brandwidth Profile format is as follows:
@@ -39,14 +39,18 @@ and the `IETF` format:
    "gir": 0
  }
 
-Independently of the format the `olt` ONOS apps will generate a meter per bandwidth profile.
+Independent of format the `olt` ONOS apps will generate a meter-per-bandwidth profile.
 
 An example of a meter in ONOS is:
 
 .. code:: bash
 
  onos> meters
- DefaultMeter{device=of:00000a0a0a0a0a0a, cellId=1, appId=DefaultApplicationId{id=411, name=org.opencord.olt}, unit=KB_PER_SEC, isBurst=true, state=ADDED, bands=[DefaultBand{rate=600, burst-size=30, type=DROP, drop-precedence=null}, DefaultBand{rate=101000, burst-size=60, type=DROP, drop-precedence=null}, DefaultBand{rate=100000, burst-size=0, type=DROP, drop-precedence=null}], annotations={}}
+ DefaultMeter{device=of:00000a0a0a0a0a0a, cellId=1, appId=DefaultApplicationId{id=411, name=org.opencord.olt},
+     unit=KB_PER_SEC, isBurst=true, state=ADDED,
+     bands=[DefaultBand{rate=600, burst-size=30, type=DROP, drop-precedence=null},
+     DefaultBand{rate=101000, burst-size=60, type=DROP, drop-precedence=null},
+     DefaultBand{rate=100000, burst-size=0, type=DROP, drop-precedence=null}], annotations={}}
 
 note the different bands that map to the values of the `Default` bandwidth profile as well.
 The number of bands in the meter are based on the BW profile. If BW profile has only PIR value, then there is only
@@ -107,7 +111,9 @@ flow refers to meter `1`:
 
 .. code:: bash
 
- ADDED, bytes=0, packets=0, table=0, priority=10000, selector=[IN_PORT:256, ETH_TYPE:eapol], treatment=[immediate=[OUTPUT:CONTROLLER, VLAN_PUSH:vlan, VLAN_ID:4091], meter=METER:1, metadata=METADATA:ffb004000000001/0]
+ ADDED, bytes=0, packets=0, table=0, priority=10000, selector=[IN_PORT:256, ETH_TYPE:eapol],
+     treatment=[immediate=[OUTPUT:CONTROLLER, VLAN_PUSH:vlan, VLAN_ID:4091], meter=METER:1,
+     metadata=METADATA:ffb004000000001/0]
 
 
 TCONT Mapping
