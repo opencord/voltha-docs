@@ -1,6 +1,6 @@
 # -*- makefile -*-
 # -----------------------------------------------------------------------
-# Copyright 2022 Open Networking Foundation
+# Copyright 2022-2023 Open Networking Foundation
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -80,7 +80,7 @@ ifndef NO_PATCH
 	@echo "========================================"
 	@echo "Applying python virtualenv patches as needed (v3.10+)"
 	@echo "========================================"
-	./patches/python_310_migration.sh '--venv' "$@" 'apply' 
+	./patches/python_310_migration.sh '--venv' "$@" 'apply'
 endif
 
 # automatically reload changes in browser as they're made
@@ -185,7 +185,7 @@ prep: | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 # %: $(VENV_NAME) Makefile | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
 
-include $(MAKEDIR)/voltha/docs-catchall-targets.mk 
+include $(MAKEDIR)/voltha/docs-catchall-targets.mk
 $(voltha-docs-catchall): $(VENV_NAME) Makefile | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
 	@echo " ** CATCHALL: $@"
 	source $</bin/activate ; set -u ;\

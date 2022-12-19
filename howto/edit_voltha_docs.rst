@@ -14,6 +14,39 @@ Browse repository content
 - :vol-ger:`voltha-docs`
 - :vol-git:`voltha-docs`
 
+Documentation Guide
+===================
+
+Building the Docs
+"""""""""""""""""
+
+Building requires python, creates a virtualenv (``doc_venv``) which has all the
+necessary tools.
+
+Run ``make html`` to generate html documentation in ``_build/html``.
+
+Run ``make reload`` to get a live reload in your browser (refreshes on document
+save).
+
+Run ``make latexpdf`` to generate html documentation in ``_build/latex``.
+Requires that you have a recent LaTeX installation and ``latexmk`` installed
+
+Writing Docs
+""""""""""""
+
+Docs written using sphinx: http://www.sphinx-doc.org
+
+Documentation is done in reStructuredText or Markdown, but only ``.rst`` files
+can contain embedded diagrams.
+
+Guides for RST:
+
+- https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html
+- http://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html
+
+RST has multiple heading formats possible, the ones we're using are in the
+order for the HTML h1-h5: ``=``, ``-`` ``"``, ``'``, ``^``.
+
 
 Checkout, modify and test
 """""""""""""""""""""""""

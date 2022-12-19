@@ -17,12 +17,16 @@ Trace Packets across components
 -------------------------------
 
 Given that ``VOLTHA`` is a collection of microservices we strongly suggest the usage of a log aggregator like
-`stern <https://github.com/stern/stern>`_ installed. You can then aggregate logs from multiple containers in
+`stern <https://github.com/stern/stern>`_.  Stern is able to aggregate logs from multiple containers in
 a simple way, for example to track all the ``packet-ins`` and ``packet-outs``:
 
 .. code:: bash
 
+    # Capture to a file
     $ stern -n voltha "voltha|adapter" | grep -E "packet-out|packet-in" > packets.trace
+
+    # Live streaming packet capture using the tee command:
+    $ stern -n voltha "voltha|adapter" | grep -E "packet-out|packet-in" | tee packets.trace
 
 Once you have captured the packets you need, you can see them in wireshark by transforming the logs with:
 
@@ -34,9 +38,9 @@ And then in wireshark select ``File -> Import from Hex Dump``
 
 Or you can decode a single packet using this online tool: `https://hpd.gasmi.net <https://hpd.gasmi.net>`_
 
-To get all the EAPOL packets: ``cat packets.trace | grep 888e``
+To get all the EAPOL packets: ``grep -e '888e' packets.trace``
 
-or if you have `hl <https://github.com/mbornet-hl/hl>`__ installed you can highlight with:
+or if you have the colorization program `hl <https://github.com/mbornet-hl/hl>`__ installed you can highlight with:
 
 .. code:: bash
 
@@ -60,12 +64,15 @@ To install them on Ubuntu:
 
 .. code:: bash
 
-    mkdir -p $(HOME)/.local/lib/wireshark/plugins
-    cd $(HOME)/.local/lib/wireshark/plugins
+    mkdir -p "${HOME}/.local/lib/wireshark/plugins"
+    cd "${HOME}/.local/lib/wireshark/plugins"
     wget "https://wiki.wireshark.org/Contrib?action=AttachFile&do=get&target=omci.lua"
     wget "https://wiki.wireshark.org/Contrib?action=AttachFile&do=get&target=BinDecHex.lua"
 
-IMPORTANT - Apply `this <https://ask.wireshark.org/question/4557/bindechexlua-error-bad-argument-to-module-packageseeall/?answer=4573#post-id-4573>`_ fix to BinDecHex.lua.
+- IMPORTANT - Apply `this <https://ask.wireshark.org/question/4557/bindechexlua-error-bad-argument-to-module-packageseeall/?answer=4573#post-id-4573>`_ fix to BinDecHex.lua.
+
+- TODO NOTE - The BinDecHex.lua thread is 4 years old, is the patch still
+  required or has it been incorporated into the code base ?
 
 To capture the OMCI packets for all ONUs:
 
