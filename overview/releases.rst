@@ -121,5 +121,9 @@ Releases
      - December 30, 2022
      -
      -
-
+   * - `VOLTHA 2.11 <../release_notes/voltha_2.11.html>`_
+     - June 30, 2022
+     - December 30, 2022
+     -
+     -
 
