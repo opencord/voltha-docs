@@ -5,24 +5,40 @@ Release Builds howto:
 ---------------------
 - Increment the VERSION file to a major or minor point release.
 - Initiate a jenkins job to build components (WIP: searching).
-- Verify a `tag <https://github.com/opencord/voltctl/tags>`_ named for the version was created.
-- `Released version <https://api.github.com/repos/opencord/voltctl/releases/latest>`_ consumed by jenkins installer  vars/installVoltctl.groovy.
 
-|
+  - `repo::voltctl <https://gerrit.opencord.org/plugins/gitiles/voltctl/+/refs/heads/master>`__, Gerrit example: `33551 <https://gerrit.opencord.org/c/voltctl/+/33551>`_.
+  - At least two jenkins jobs need to run:
+
+    - version-tag_wildcard
+    - github-release_voltctl
+
+- Verify `git tags <https://github.com/opencord/voltctl/tags>`_
+
+  - A SemVer tag was created (vee prefix v{semver} signifies a golang package).
+  - Verify the `package(v1.8.0) <https://github.com/opencord/voltctl/releases/tag/v1.8.0>`_ contains more than just source archives (gz, zip):
+    - The `tags page <https://github.com/opencord/voltctl/tags>`_ index lacks ``Notes`` and ``Downloads`` links.
+
+  - A valid `package(v1.7.6) <https://github.com/opencord/voltctl/releases/tag/v1.7.6>`_ will include:
+
+    - The `tags page <https://github.com/opencord/voltctl/tags>`_ index contains ``Notes`` and ``Downloads`` links.
+    - A checksum file
+    - Versioned voltctl binaries for several platforms.
+    - Source code bundles (tar.gz and zip).
+
+- `Released version <https://api.github.com/repos/opencord/voltctl/releases/latest>`_ will be consumed by jenkins installer vars/installVoltctl.groovy.
+
 
 Create an official voltctl release
 ----------------------------------
 - `installVoltctl.groovy <https://gerrit.opencord.org/plugins/gitiles/ci-management/+/refs/heads/master/vars/installVoltctl.groovy#53>`_
-  depends on `releases/latest <https://api.github.com/repos/opencord/voltctl/releases/latest>`_ for versioned release information.
+  depends on `github/releases/latest <https://api.github.com/repos/opencord/voltctl/releases/latest>`_ for versioned release information.
 
-   - To generate a release visit `github <https://github.com/opencord/voltctl>`_.
-   - Click `Releases <https://github.com/opencord/voltctl/releases>`_ in the right margin.
+- To generate a release commit changes to `repo::voltctl <https://gerrit.opencord.org/plugins/gitiles/voltctl>`__:
 
-     - Click "Draft a new release"
-     - Select a tag name to base the release on.
-     - Title the relese and enter a description (release notes).
-     - Select the checkbox "Set as the latest release".
-     - Verify release information in the right margin upon return to the main repository screen.
+  - Modify VERSION file major/minor numbers for the upcoming release.
+  - Remove any -dev or patch modifiers.
+  - Create a pull request for review.
+  - Changes will be published when the jenkins job github-release-voltctl is run.
 
 - Verify the release version contains a checksum file:
 

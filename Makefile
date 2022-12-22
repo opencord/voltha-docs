@@ -1,6 +1,6 @@
 # -*- makefile -*-
 # -----------------------------------------------------------------------
-# Copyright 2022-2023 Open Networking Foundation
+# Copyright 2022-2023 Open Networking Foundation (ONF) and the ONF Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -88,8 +88,25 @@ reload: $(VENV_NAME)
 	source $</bin/activate ; set -u ;\
 	sphinx-reload $(SOURCEDIR)
 
-# lint and link verification. linkcheck is part of sphinx
+## -----------------------------------------------------------------------
+## Intent: lint and link verification. linkcheck is part of sphinx
+## -----------------------------------------------------------------------
 test: lint linkcheck
+
+## -----------------------------------------------------------------------
+## Intent: Exercise all generation targets
+## -----------------------------------------------------------------------
+test-all-targets += html
+test-all-targets += coverage
+# test-all-targets += changes
+# test-all-targets += info
+test-all-targets += man
+test-all-targe4ts += text
+# test-all-targets += latex
+
+
+test-all : test
+	$(MAKE) $(test-all-targets)
 
 # doctest
 # coverage

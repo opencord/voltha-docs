@@ -1,6 +1,6 @@
 # -*- makefile -*-
 # -----------------------------------------------------------------------
-# Copyright 2017-2022 Open Networking Foundation
+# Copyright 2017-2023 Open Networking Foundation (ONF) and the ONF Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -31,6 +31,10 @@ help ::
 	@echo '[VIEW]'
 	@echo '  reload         Setup to auto-reload sphinx doc changes in browser'
 	@echo '  view-html      View generated documentation'
+	@echo
+	@echo '[TEST]'
+	@echo '  test           make lint linkcheck'
+	@echo '  test-all       make all-generation-targets'
 	@echo
 	@echo '[HELP]'
 	@echo '  help           Display program help'

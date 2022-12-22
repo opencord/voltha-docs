@@ -16,11 +16,14 @@ VOLTHA deployment
 -----------------
 
 VOLTHA components on top of ``kubernetes`` are managed via ``helm`` charts.
-For more information about ``helm`` please refer to the `Official Documentation
-<https://helm.sh>`_.
-For the sake of this guide all you need to know is that an
-``helm`` chart describes all the information required to deploy a component on top of
-``kubernetes``, such as: containers, exposed ports and configuration parameters.
+For more information about ``helm`` please refer to the `Official Documentation <https://helm.sh>`_.
+
+For the sake of this guide, ``helm`` chart simply describe requirements to
+deploy a component on top of ``kubernetes``:
+
+- containers
+- exposed ports
+- configuration parameters.
 
 A VOLTHA deployment is composed, at its very minimum, by:
 
