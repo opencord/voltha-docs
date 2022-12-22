@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2d485024_54c01d33",
+        "filename": "VERSION",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2022-12-22T08:14:07Z",
+      "side": 1,
+      "message": "here you need to move to 2.11 and I would also suggest to go to 2.11-dev so you are not actually releasing until you are ready.",
+      "revId": "00da637b4385fc8ba8c61b095b0d376646d14fbd",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
