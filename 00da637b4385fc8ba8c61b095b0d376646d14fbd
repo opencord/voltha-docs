@@ -16,6 +16,24 @@
       "message": "here you need to move to 2.11 and I would also suggest to go to 2.11-dev so you are not actually releasing until you are ready.",
       "revId": "00da637b4385fc8ba8c61b095b0d376646d14fbd",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d6478735_234e722a",
+        "filename": "VERSION",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2022-12-22T18:48:24Z",
+      "side": 1,
+      "message": "Version string bumped:\n  2.11 edit was gated on addition of formal release notes but we are\n  close to holiday so bump now.\n\nSemVer fmt w/patch used (2.11.0-dev)",
+      "parentUuid": "2d485024_54c01d33",
+      "revId": "00da637b4385fc8ba8c61b095b0d376646d14fbd",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
