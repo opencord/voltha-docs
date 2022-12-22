@@ -91,7 +91,7 @@ It requires to be triggered with specific parameters, as an example you can chec
    * Click on "Staging repositories" (in the left side navigation)
    * In the top right search for last part of the app name (eg: olt)
    * Click release (top left bar, small button)
-5. Wait until artefacts are published https://search.maven.org/search?q=g:org.opencord
+5. Wait until the artifacts are published https://search.maven.org/search?q=g:org.opencord
 6. Go in other apps, update the dependency of released from x.y.z-SNAPSHOT to x.y.z
 7. Start over with new app
 
