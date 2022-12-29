@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d5f769ea_c8014ced",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2022-12-29T15:57:10Z",
+      "side": 1,
+      "message": "Job: SCUCCESS\nJenkins logs are clean.\nDeploying to refresh content on docs.voltha.org.\n\nLegacy release notes moved from the main page to the release_notes/ directory, accessed through an index URL.\n\nUpdated component, etc version strings to the master branch flavor.\nAdded URLs for accessing tagged version gerrit/github repos.",
+      "revId": "a4d2723f7d927c56179e004859d5181685b0b16a",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
