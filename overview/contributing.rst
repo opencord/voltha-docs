@@ -209,5 +209,6 @@ All of the codebase:
 Community Guidelines
 --------------------
 
-This project follows `Google's Open Source Community Guidelines <https://opensource.google.com/conduct/>`_
+This project follows `Google's Open Source Community Guidelines <https://opensource.google/conduct/>`_
+
 and ONF's [Code of Conduct](CODE_OF_CONDUCT.md).

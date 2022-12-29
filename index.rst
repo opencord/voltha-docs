@@ -201,7 +201,8 @@ in the `VOLTHA wiki page <https://wiki.opennetworking.org/display/COM/VOLTHA>`_
    :caption: Releases
    :glob:
 
-   release_notes/*
+   release_notes/release_process.rst
+   release_notes/index.rst
 
 .. toctree::
    :maxdepth: 2

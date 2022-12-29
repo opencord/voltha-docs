@@ -303,6 +303,8 @@ linkcheck_ignore=\
         r'../release_notes/voltha_2.9.html',
         r'../release_notes/voltha_2.10.html',
         r'../release_notes/voltha_2.11.html',
+        #
+        r'../voltha-helm-charts/README.html',
     ]
 
 # -- Configure recommonmark to use AutoStructify -----------------------------

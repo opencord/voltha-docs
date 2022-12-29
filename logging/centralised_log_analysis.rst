@@ -79,7 +79,7 @@ td-agent.Refer following link for Security features.
 To enable TLS/SSL encryption for elasticsearch pod refer the following
 link
 
-`*https://github.com/elastic/helm-charts/tree/master/elasticsearch/examples/security* <https://github.com/elastic/helm-charts/tree/master/elasticsearch/examples/security>`__
+`*helm-charts::elasticsearch/examples/security* <https://github.com/elastic/helm-charts/tree/main/elasticsearch/examples/security>`__
 
 To enable TLS/SSL encryption for kibana pod refer the following link
 
