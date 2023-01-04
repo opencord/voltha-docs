@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "36febf04_94b3d9b9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-01-04T14:36:28Z",
+      "side": 1,
+      "message": "Latest round of edits: \n   o s/v2.10/2.11/\n   o Insert text from Mahir(s) release notes wiki page.",
+      "revId": "d24a1124832fc7600e9f0c3f5ab90dfc1e7c9f59",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
