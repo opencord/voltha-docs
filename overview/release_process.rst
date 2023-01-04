@@ -28,7 +28,7 @@ To allow for future patches to go into the repo in a way that does not conflict 
 each component repo's VERSION file should have it's minor version increased in master. (ex: 1.1.X to 1.2.0-dev,
 so future 1.1.X+1 component release can easily be created for the released VOLTHA version).
 
-The same should be done on Helm charts in the chart repos post release,but the versions there shouldn't include a
+The same should be done on Helm charts in the chart repos post release, but the versions there shouldn't include a
 -dev suffix because chart publishing requires that every new chart version be unique and using un-suffixed SemVer is a
 better release numbering pattern.
 
@@ -204,7 +204,7 @@ If a fix is needed to the helm charts:
 If a fix is needed to the components/containers that are included by the helm charts:
 
 - Develop a fix to the issue on the master branch, get it approved after passing master tests.
-- Manually cherry-pick to the voltha-X.Y branch of the component (create one fi needed)
+- Manually cherry-pick to the voltha-X.Y branch of the component (create one if needed)
 - incrementing the patch version in the VERSION file,
 - test with the voltha-X.Y version of voltha-system-tests and helm charts.
 - Update helm charts and go through the helm chart update process above.
