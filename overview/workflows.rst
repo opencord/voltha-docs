@@ -44,7 +44,7 @@ Subscriber Services on an OpenFlow managed Logical Switch overlaid upon an OLT
 or other technology specific platform.
 
 More information on Technology profiles can be found here:
-`2018/03/22 VOLTHA TST on Technology profile <https://youtu.be/L0JBJ3R1Mag>`_
+`2018/03/22 VOLTHA TST on Technology profile <https://www.youtube.com/watch?v=L0JBJ3R1Mag&feature=youtu.be>`_
 `VOLTHA technical notes on Technology profile <https://wiki-archive.opencord.org/attachments/4981667/4981671.docx>`_
 `VOLTHA Implementation of Technology profiles <https://wiki-archive.opencord.org/attachments/4981667/4981670.docx>`_
 `Technology profile instance example <https://wiki-archive.opencord.org/Technology-Profile-Instance_4982088.html>`_
