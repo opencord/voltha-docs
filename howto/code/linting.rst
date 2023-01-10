@@ -39,7 +39,7 @@ The generic lint target can be used to invoke all defined lint targets.
 Makefile help
 ~~~~~~~~~~~~~
 
-Individual Makefiles support a help targe that will display a list of
+Individual Makefiles support a help target that will display a list of
 targets and functionality supported.
 
 .. code:: bash
@@ -140,9 +140,9 @@ Sources:
 
 Notes:
 
-- pylint --py3k options is no longer supported by v3.10+
+- pylint the --py3k option is no longer supported by v3.10+
 - lint-python target dependency will create a `python virtual env <https://wiki.opennetworking.org/display/JOEY/PythonVenv>`_
-- python 3.10+ requires `virtual env patching <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/patches/>`_
+- python 3.10+ requires `virtual env patching <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/patches/>`_ (dynamic, applied when needed).
 
 |
 

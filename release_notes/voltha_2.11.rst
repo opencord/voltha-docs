@@ -96,16 +96,9 @@ that the following ONF member products are compatible with the VOLTHA 2.11
 release:
 
 - Edgecore ASGVolt64 GPON OLT
-- Edgecore ASXVolt16 XGSGPON OLT
 - Radisys 3200G GPON OLT
 - Radisys 1600G GPON OLT
-- Radisys 1600X COMBO OLT
-- Adtran 6320X COMBO OLT
 - Zyxel SDA3016SS Combo OLT
-- Sercomm FG1000 GPON ONU
-- Sercomm Glasfaser GPON ONU
-- Edgecore 6712-32X Switch
-- Edgecore 7712-32X Switch
 
 
 Jira stories
@@ -182,22 +175,22 @@ ONOS Apps
      -
      -
    * - `aaa <https://gerrit.opencord.org/gitweb?p=aaa.git;a=summary>`_
+     - N/A
+     - ``2.8.0``
      -
-     - ``master: 2.7.0``
-     -
-     - `X <https://gerrit.opencord.org/plugins/gitiles/aaa/+/refs/tags/2.6.0>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/aaa/+/refs/tags/2.8.0>`__
      -
    * - `dhcpl2relay <https://gerrit.opencord.org/gitweb?p=dhcpl2relay.git;a=summary>`_
      -
-     - ``2.6.0``
+     - ``2.8.0``
      -
-     -
+     - `X <https://gerrit.opencord.org/plugins/gitiles/dhcpl2relay/+/refs/tags/2.8.0>`__
      -
    * - `igmpproxy <https://gerrit.opencord.org/gitweb?p=igmpproxy.git;a=summary>`_
      -
-     - ``2.5.0``
+     - ``2.6.0``
      -
-     -
+     - `X <https://gerrit.opencord.org/plugins/gitiles/igmpproxy/+/refs/tags/2.6.0>`__
      -
    * - `kafka <https://gerrit.opencord.org/gitweb?p=kafka-onos.git;a=summary>`_
      -
@@ -207,9 +200,9 @@ ONOS Apps
      -
    * - `mcast <https://gerrit.opencord.org/gitweb?p=mcast.git;a=summary>`_
      -
-     - ``2.6.0``
+     - ``2.7.0``
      -
-     -
+     - `X <https://gerrit.opencord.org/plugins/gitiles/mcast/+/refs/tags/2.7.0>`__
      -
    * - `olt <https://gerrit.opencord.org/gitweb?p=olt.git;a=summary>`_
      -
@@ -219,9 +212,9 @@ ONOS Apps
      -
    * - `sadis <https://gerrit.opencord.org/gitweb?p=sadis.git;a=summary>`_
      -
-     - ``5.6.0``
+     - ``5.9.0``
      -
-     -
+     - `X <https://gerrit.opencord.org/plugins/gitiles/sadis/+/refs/tags/5.9.0>`__
      -
    * - `bng <https://gerrit.opencord.org/gitweb?p=bng.git;a=summary>`_
      -
@@ -286,9 +279,9 @@ VOLTHA Components
      -
      - `X <https://github.com/opencord/bbsim-sadis-server/releases/tag/v0.3.4>`__
    * - `ofagent-go <https://gerrit.opencord.org/gitweb?p=ofagent-go.git;a=tree>`_
-     - ``2.11.3``
      - ``2.1.2``
-     -
+     - ``2.1.2``
+     - ``2.11.3``
      -
      - `X <https://github.com/opencord/ofagent-go>`__
    * - `openolt agent <https://gerrit.opencord.org/gitweb?p=openolt.git;a=tree>`_
