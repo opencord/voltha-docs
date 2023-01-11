@@ -39,11 +39,11 @@ Package version strings should contain the suffix -SNAPSHOT.
 .. code:: XML
 
    <artifactId>sadis</artifactId>
-   <version>5.9.0-SNAPSHOT</version>
+   <version>5.10.0-SNAPSHOT</version>
    <packaging>pom</packaging>
 
    <properties>
-      <sadis.api.version>5.9.0-SNAPSHOT</sadis.api.version>
+      <sadis.api.version>5.10.0-SNAPSHOT</sadis.api.version>
    </properties>
 
 
@@ -57,7 +57,7 @@ Dependent package version strings will be a released (non-SNAPSHOT) version.
 .. code:: XML
 
    <properties>
-      <sadis.api.version>5.9.0</sadis.api.version>
+      <sadis.api.version>5.10.0</sadis.api.version>
       <aaa.api.version>2.8.0-SNAPSHOT</aaa.api.version>
    </properties>
 
@@ -76,7 +76,7 @@ sadis
 
 .. code:: XML
 
-   <sadis.api.version>5.9.0-SNAPSHOT</sadis.api.version>
+   <sadis.api.version>5.10.0-SNAPSHOT</sadis.api.version>
 
 
 aaa
@@ -88,16 +88,66 @@ aaa
 
 .. code:: XML
 
-   <sadis.api.version>5.9.0</sadis.api.version>
+   <sadis.api.version>5.10.0</sadis.api.version>
 
+
+dhcpl2relay
+^^^^^^^^^^^
+
+- Verify -SNAPSHOT version string is present.
+- Dependent components: sadis
+- Modify pom.xml, update released version strings
+
+.. code:: XML
+
+   <sadis.api.version>5.10.0</sadis.api.version>
 
 igmpproxy
 ^^^^^^^^^
 
 - Verify -SNAPSHOT version string is present.
-- Dependent components: aaa, bng, dhcpl2relay igmp, mcast, olt, sadis
+- Dependent components: sadis
 - Modify pom.xml, update released version strings
 
 .. code:: XML
 
-   <sadis.api.version>5.9.0</sadis.api.version>
+   <sadis.api.version>5.10.0</sadis.api.version>
+
+kafka
+^^^^^
+
+- Verify -SNAPSHOT version string is present.
+- Dependent components: aaa, bng, dhcpl2relay, igmp, mcast, olt, sadis
+- Modify pom.xml, update released version strings
+
+.. code:: XML
+
+   <aaa.api.version>x.x.x</aaa.api.version>
+   <bng.api.version>x.x.x</bng.api.version>
+   <dhcpl2relay.api.version>x.x.x</dhcpl2relay.api.version>
+   <igmp.api.version>x.x.x</igmp.api.version>
+   <mcast.api.version>x.x.x</mcast.api.version>
+   <olt.api.version>x.x.x</olt.api.version>
+   <sadis.api.version>5.10.0</sadis.api.version>
+
+mcast
+^^^^^
+
+- Verify -SNAPSHOT version string is present.
+- Dependent components: sadis
+- Modify pom.xml, update released version strings
+
+.. code:: XML
+
+   <sadis.api.version>5.10.0</sadis.api.version>
+
+olt
+^^^
+
+- Verify -SNAPSHOT version string is present.
+- Dependent components: sadis
+- Modify pom.xml, update released version strings
+
+.. code:: XML
+
+   <sadis.api.version>5.10.0</sadis.api.version>

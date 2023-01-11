@@ -182,16 +182,16 @@ ONOS Apps
      -
    * - `dhcpl2relay <https://gerrit.opencord.org/gitweb?p=dhcpl2relay.git;a=summary>`_
      -
-     - ``2.8.0``
+     - ``2.9.0``
      -
-     - `X <https://gerrit.opencord.org/plugins/gitiles/dhcpl2relay/+/refs/tags/2.8.0>`__
-     -
+     - `X <https://gerrit.opencord.org/plugins/gitiles/dhcpl2relay/+/refs/tags/2.9.0>`__
+     - `X <https://github.com/opencord/dhcpl2relay/tree/2.9.0>`__
    * - `igmpproxy <https://gerrit.opencord.org/gitweb?p=igmpproxy.git;a=summary>`_
      -
-     - ``2.6.0``
+     - ``2.7.0``
      -
-     - `X <https://gerrit.opencord.org/plugins/gitiles/igmpproxy/+/refs/tags/2.6.0>`__
-     -
+     - `X <https://gerrit.opencord.org/plugins/gitiles/igmpproxy/+/refs/tags/2.7.0>`__
+     - `X <https://github.com/opencord/igmpproxy/tree/2.7.0>`__
    * - `kafka <https://gerrit.opencord.org/gitweb?p=kafka-onos.git;a=summary>`_
      -
      - ``2.9.0``
@@ -200,22 +200,22 @@ ONOS Apps
      -
    * - `mcast <https://gerrit.opencord.org/gitweb?p=mcast.git;a=summary>`_
      -
-     - ``2.7.0``
+     - ``2.8.0``
      -
-     - `X <https://gerrit.opencord.org/plugins/gitiles/mcast/+/refs/tags/2.7.0>`__
-     -
+     - `X <https://gerrit.opencord.org/plugins/gitiles/mcast/+/refs/tags/2.8.0>`__
+     - `X <https://github.com/opencord/mcast/tree/2.8.0>`__
    * - `olt <https://gerrit.opencord.org/gitweb?p=olt.git;a=summary>`_
      -
-     - ``5.1.2``
+     - ``5.2.3``
      -
-     -
-     -
+     - `X <https://gerrit.opencord.org/plugins/gitiles/olt/+/refs/tags/5.2.3>`__
+     - `X <https://github.com/opencord/olt/tree/5.2.3>`__
    * - `sadis <https://gerrit.opencord.org/gitweb?p=sadis.git;a=summary>`_
      -
-     - ``5.9.0``
+     - ``5.10.0``
      -
-     - `X <https://gerrit.opencord.org/plugins/gitiles/sadis/+/refs/tags/5.9.0>`__
-     -
+     - `X <https://gerrit.opencord.org/plugins/gitiles/sadis/+/refs/tags/5.10.0>`__
+     - `X <https://github.com/opencord/sadis/tree/5.10.0>`__
    * - `bng <https://gerrit.opencord.org/gitweb?p=bng.git;a=summary>`_
      -
      - ``2.2.0``
