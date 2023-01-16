@@ -194,10 +194,10 @@ ONOS Apps
      - `X <https://github.com/opencord/igmpproxy/tree/2.7.0>`__
    * - `kafka <https://gerrit.opencord.org/gitweb?p=kafka-onos.git;a=summary>`_
      -
-     - ``2.9.0``
+     - ``2.11.1``
      -
-     -
-     -
+     - `X <https://gerrit.opencord.org/plugins/gitiles/kafka-onos/+/refs/tags/2.11.1>`__
+     - `X <https://github.com/opencord/kafka-onos/tree/2.11.1>`__
    * - `mcast <https://gerrit.opencord.org/gitweb?p=mcast.git;a=summary>`_
      -
      - ``2.8.0``
@@ -218,22 +218,22 @@ ONOS Apps
      - `X <https://github.com/opencord/sadis/tree/5.10.0>`__
    * - `bng <https://gerrit.opencord.org/gitweb?p=bng.git;a=summary>`_
      -
-     - ``2.2.0``
+     - ``2.4.0``
      -
-     -
-     -
+     - `X <https://github.com/opencord/bng/tree/2.4.0>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/bng/+/refs/tags/2.4.0>`__
    * - `pppoeagent <https://gerrit.opencord.org/plugins/gitiles/pppoeagent/>`_
      -
      - ``1.2.0``
      -
-     -
-     -
+     - `X <https://gerrit.opencord.org/plugins/gitiles/pppoeagent/+/refs/tags/1.2.1>`__
+     - `X <https://github.com/opencord/pppoeagent/tree/1.2.1>`__
    * - `olttopology <https://gerrit.opencord.org/plugins/gitiles/olttopology/>`_
      -
-     - ``1.2.0``
+     - ``1.2.0`` ``latest: 1.2.1``
      -
-     -
-     -
+     - `X <https://gerrit.opencord.org/plugins/gitiles/olttopology/+/refs/tags/1.2.1>`__
+     - `X <https://github.com/opencord/olttopology/tree/1.2.1>`__
 
 VOLTHA Components
 +++++++++++++++++
@@ -327,17 +327,35 @@ VOLTHA Components
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-openolt-adapter/+/refs/tags/v4.2.10>`__
      - `X <https://github.com/opencord/voltha-openolt-adapter/tree/v4.2.11>`__
    * - `voltha-protos <https://github.com/opencord/voltha-protos/releases/tag/v5.2.5>`__
-     - ``master: 5.3.6``
-     - ``5.3.6``
+     - ``5.3.7``
+     - ``5.3.7``
      -
-     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/tags/v5.3.6>`__
-     - `X <https://github.com/opencord/voltha-protos/tree/v5.3.6>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/tags/v5.3.7>`__
+     - `X <https://github.com/opencord/voltha-protos/tree/v5.3.7>`__
    * - `voltha-system-tests <https://github.com/opencord/voltha-system-tests/releases/tag/2.9.0>`__
      - ``2.11.10``
      -
      -
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-system-tests/+/refs/tags/2.11.10>`__
      - `X <https://github.com/opencord/voltha-system-tests/tree/2.11.10>`__
+   * - maclearner
+     - ``1.2.1``
+     -
+     -
+     -
+     -
+   * - ppoeagent
+     - ``1.2.1``
+     -
+     -
+     -
+     -
+   * - segmentrouting
+     - ``3.0.0``
+     -
+     -
+     -
+     -
 
 
 Helm Chart Versions
