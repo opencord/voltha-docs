@@ -4,6 +4,7 @@ Release
    :maxdepth: 2
 
    components/index
+   hierarchy/index
 
    voltctl/index
    voltctl/install

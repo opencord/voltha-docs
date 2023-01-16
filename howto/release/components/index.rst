@@ -64,6 +64,7 @@ See Also
 .. toctree::
 
    onos_dependencies
+   voltha-protos
 
    voltctl/index
    voltctl/install

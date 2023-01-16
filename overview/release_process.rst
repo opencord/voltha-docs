@@ -83,16 +83,32 @@ It requires to be triggered with specific parameters, as an example you can chec
 1. Build with parameters: use the name of the repo (not of the app itself)
 2. Wait for build to complete
 3. Merge the patches on gerrit https://gerrit.opencord.org/q/owner:do-not-reply%2540opennetworking.org
-4. It will trigger a publish job (https://jenkins.opencord.org/job/maven-publish_sadis/) that publish the artifact in
-   the staging repo on `sonatype <https://oss.sonatype.org>`_, you need to release it:
-   * Login on sonatype (for username and password contact michelle@opennetworking.org)
-   * search for org.opencord
-   * Select the app you want to release and click "all versions"
-   * Click on "Staging repositories" (in the left side navigation)
-   * In the top right search for last part of the app name (eg: olt)
-   * Click release (top left bar, small button)
-5. Wait until the artifacts are published https://search.maven.org/search?q=g:org.opencord
-6. Go in other apps, update the dependency of released from x.y.z-SNAPSHOT to x.y.z
+
+   - Two pull requests are created modifying pom.xml.
+   - Approve patch one (-SNAPSHOT: no)  to initiate a release build.
+   - Approve patch two (-SNAPSHOT: yes) to revert pom.xml to a non-release version.
+
+4. Approval and merge will trigger a `jenkins job <https://jenkins.opencord.org/job/maven-publish_sadis/>`_ that publish
+   an artifact into the staging repo on `sonatype <https://oss.sonatype.org>`_.  From there the artifact will need
+   to be released into maven central.
+
+   - Login on sonatype (for username and password contact michelle@opennetworking.org)
+   - search for org.opencord
+   - Select the app you want to release and click "all versions"
+   - Click on "Staging repositories" (in the left side navigation)
+   - In the top right search for last part of the app name (eg: olt)
+   - Click release (top left bar, small button)
+
+5. Wait until the artifacts are published
+
+   - https://search.maven.org/search?q=g:org.opencord
+   - https://search.maven.org/artifact/org.opencord/dhcpl2relay/2.9.0/pom
+
+6. Iterate through apps:
+
+   - Modify pom.xml and dependencies.xml
+   - Update version string for all released dependencies.
+
 7. Start over with new app
 
 .. note::
@@ -217,3 +233,10 @@ If a fix is needed to the ONOS apps:
 - Then push a commit changing to `.1-SNAPSHOT` more (see e.g. https://gerrit.opencord.org/c/igmpproxy/+/19589)
 - Then push you changes (e.g. https://gerrit.opencord.org/c/igmpproxy/+/19590)
 - Then release as per the process above.
+
+See Also
+========
+- `VOLTHA Release Process <https://docs.voltha.org/master/overview/release_process.html?highlight=charts%20yaml>`_
+- `release_notes: Release Process <https://docs.voltha.org/master/release_notes/release_process.html>`_
+- `VOLTHA and ONOS Software Update Procedure <https://docs.voltha.org/master/operations/software-upgrade.html?highlight=set%20global%20image>`_
+- `Helm Chart Deployment <https://docs.voltha.org/master/voltha-helm-charts/README.html?highlight=voltctl>`_
