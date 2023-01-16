@@ -20,13 +20,13 @@
 
 vst_venv-2 : vst_venv/bin/activate requirements.txt
 
-vst_venv/bin/activate:
-	virtualenv -p python3 $@ ;\
-	source ./$@/bin/activate ;\
-	python -m pip install -r requirements.txt
+vst_venv/bin/activate: requirements.txt
+	virtualenv -p python3 $@
 
-zzz: xyz
-xyz: vst_venv/bin/activate
-	source vst_venv/bin/activate
+	@echo	
+	@[ -r requirements.txt ]\
+  && { echo "python -m pip install -r requirements.txt"; }\
+  && source ./$@/bin/activate\
+  && python -m pip install -r requirements.txt
 
 # [EOF]

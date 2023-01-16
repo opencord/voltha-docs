@@ -7,4 +7,5 @@ HOWTO(s)
    code/index
    edit_voltha_docs
    release/index
+   ssh_access
    voltha_repositories

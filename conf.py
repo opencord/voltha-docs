@@ -12,8 +12,19 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 
+##-------------------##
+##---]  IMPORTS  [---##
+##-------------------##
 import os
+import sys
+from pathlib import Path
 
+if True:
+    pwd = Path(__file__).parent.as_posix()
+    sys.path.append(pwd)
+
+# -----------------------------------------------------------------------
+# -----------------------------------------------------------------------
 def get_version():
     with open("VERSION") as f:
         return f.read().strip()
@@ -21,7 +32,7 @@ def get_version():
 # -- Project information -----------------------------------------------------
 
 project = u'VOLTHA Docs'
-copyright = u'2019-2022, VOLTHA Contributors & Open Networking Foundation'
+copyright = u'Copyright 2019-2023 Open Networking Foundation (ONF) and the ONF Contributors'
 author = u'VOLTHA Contributors'
 
 # The short X.Y version
@@ -270,9 +281,12 @@ nwdiag_fontpath = [
 # -- Options for extlinks extension ------------------------------------------
 # ..seealso: https://www.sphinx-doc.org/en/master/usage/extensions/todo.html
 #        'vhc' : 'https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts',
+
 extlinks=\
     {
         'vol-jira' : ('https://jira.opencord.org/projects/VOL/issues/%s', 'jira::%s'),
+        # macros for gerrit or github URL construction
+        'repo'     : ('https://github.com/opencord/%s', 'repo::%s'),
         'vol-ger'  : ('https://gerrit.opencord.org/plugins/gitiles/%s', 'gerrit::%s'),
         'vol-git'  : ('https://github.com/opencord/%s', 'git::%s'),
     }
