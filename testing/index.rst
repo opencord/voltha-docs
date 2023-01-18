@@ -8,9 +8,9 @@ Robot resources in :repo:`voltha-system-tests`.
 
 .. code:: bash
 
-| % **make gendocs**
-| % **make html**
-| % **make reload**
+   % **make gendocs**
+   % **make html**
+   % **make reload**
 
    - :repo:`voltha-system-tests` (gerrit)
    - :repo:`voltha-system-tests` (github)

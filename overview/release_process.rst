@@ -88,8 +88,7 @@ It requires to be triggered with specific parameters, as an example you can chec
    - Approve patch one (-SNAPSHOT: no)  to initiate a release build.
    - Approve patch two (-SNAPSHOT: yes) to revert pom.xml to a non-release version.
 
-###########################################################################
-4. Approval and merge will trigger a `jenkins job <https://jenkins.opencord.org/job/maven-publish_sadis/`_ that publish
+4. Approval and merge will trigger a `jenkins job <https://jenkins.opencord.org/job/maven-publish_sadis>`_ that publish
    an artifact into the staging repo on `sonatype <https://oss.sonatype.org>`_.  From there the artifact will need
    to be released into maven central.
 

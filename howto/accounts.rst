@@ -30,7 +30,7 @@ Next navigate to gerrit.opencord.org, login and configure your user account
    - Verify your email address is correct.
 
 - Generate and deploy an ssh key to interact with the repository:
-   - `Public SSH key <https://gerrit.opencord.org/settings/#SSHKeys>`_
+   - `Public SSH key <https://gerrit.opencord.org/settings>`_ (anchor: #SSHKeys)
 
 - Verify your ssh access
 
