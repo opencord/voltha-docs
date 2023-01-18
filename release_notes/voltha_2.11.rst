@@ -176,10 +176,10 @@ ONOS Apps
      -
    * - `aaa <https://gerrit.opencord.org/gitweb?p=aaa.git;a=summary>`_
      - N/A
-     - ``2.8.0``
+     - ``2.9.0``
      -
-     - `X <https://gerrit.opencord.org/plugins/gitiles/aaa/+/refs/tags/2.8.0>`__
-     -
+     - `X <https://gerrit.opencord.org/plugins/gitiles/aaa/+/refs/tags/2.9.0>`__
+     - `x <https://github.com/opencord/aaa/tree/2.9.0>`__
    * - `dhcpl2relay <https://gerrit.opencord.org/gitweb?p=dhcpl2relay.git;a=summary>`_
      -
      - ``2.9.0``
@@ -297,17 +297,17 @@ VOLTHA Components
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltctl/+/refs/tags/v1.8.3>`__
      - `X <https://github.com/opencord/voltctl/tree/v1.8.3>`__
    * - `voltha-go <https://gerrit.opencord.org/gitweb?p=voltha-go.git;a=tree>`_
-     - ``3.1.7``
-     -
+     - ``3.1.8``
+     - `docker <https://jenkins.opencord.org/job/docker-publish_voltha-go/464/console>`__
      - ``2.11.3``
-     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-go/+/refs/tags/v3.1.7>`__
-     - `X <https://github.com/opencord/voltha-go/tree/v3.1.7>`__
-   * - `voltha-lib-go <https://gerrit.opencord.org/gitweb?p=voltha-lib-go.git;a=tree>`_
-     - ``2.11.3``
-     - ``7.3.1``
+     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-go/+/refs/tags/v3.1.8>`__
+     - `X <https://github.com/opencord/voltha-go/tree/v3.1.8>`__
+   * - `voltha-lib-go <https://gerrit.opencord.org/plugins/gitiles/voltha-lib-go>`_       
+     - ``2.11.3 (?)``
+     - ``7.3.2``
      -
-     -
-     - `X <https://github.com/opencord/voltha-lib-go/releases/tag/v7.3.1>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-lib-go/+/refs/tags/v7.3.2>`__
+     - `X <https://github.com/opencord/voltha-lib-go/releases/tag/v7.3.2>`__
    * - `voltha-onos <https://gerrit.opencord.org/gitweb?p=voltha-onos.git;a=tree>`_
      -
      - ``5.1.2``
@@ -315,29 +315,29 @@ VOLTHA Components
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-onos/+/refs/tags/5.1.2>`__
      - `X <https://github.com/opencord/voltha-onos/tree/5.1.2>`__
    * - `voltha-openonu-adapter-go <https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter-go.git;a=tree>`_
-     - ``2.7.2``
-     - ``2.10.3``
      -
-     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-openonu-adapter-go/+/refs/tags/v2.7.2>`__
-     - `X <https://github.com/opencord/voltha-openonu-adapter-go/tree/v2.7.2>`__
+     - ``2.7.3``
+     -
+     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-openonu-adapter-go/+/refs/tags/v2.7.3>`__
+     - `X <https://github.com/opencord/voltha-openonu-adapter-go/tree/v2.7.3>`__
    * - `voltha-openolt-adapter <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree>`_
      - ``master: v4.2.11``
      - ``4.2.6``
      -
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-openolt-adapter/+/refs/tags/v4.2.10>`__
      - `X <https://github.com/opencord/voltha-openolt-adapter/tree/v4.2.11>`__
-   * - `voltha-protos <https://github.com/opencord/voltha-protos/releases/tag/v5.2.5>`__
-     - ``5.3.7``
-     - ``5.3.7``
+   * - `voltha-protos <https://gerrit.opencord.org/plugins/gitiles/voltha-protos>`_
      -
-     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/tags/v5.3.7>`__
-     - `X <https://github.com/opencord/voltha-protos/tree/v5.3.7>`__
+     - `5.3.8 <https://pypi.org/project/voltha-protos/5.3.8>`__
+     -
+     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/tags/v5.3.8>`__
+     - `X <https://github.com/opencord/voltha-protos/tree/v5.3.8>`__
    * - `voltha-system-tests <https://github.com/opencord/voltha-system-tests/releases/tag/2.9.0>`__
      - ``2.11.10``
      -
      -
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-system-tests/+/refs/tags/2.11.10>`__
-     - `X <https://github.com/opencord/voltha-system-tests/tree/2.11.10>`__
+     - `X <ht6tps://github.com/opencord/voltha-system-tests/tree/2.11.10>`__
    * - maclearner 
      - ``1.2.1``
      -
