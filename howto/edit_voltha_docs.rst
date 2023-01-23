@@ -42,7 +42,7 @@ can contain embedded diagrams.
 Guides for RST:
 
 - https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html
-- http://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html
+- https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html
 
 RST has multiple heading formats possible, the ones we're using are in the
 order for the HTML h1-h5: ``=``, ``-`` ``"``, ``'``, ``^``.

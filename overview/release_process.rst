@@ -1,4 +1,3 @@
-======================
 VOLTHA Release process
 ======================
 This document describes the technical steps of VOLTHA's release process.

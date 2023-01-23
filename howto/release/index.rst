@@ -3,6 +3,7 @@ Release
 .. toctree::
    :maxdepth: 2
 
+   ci-management/index
    components/index
    hierarchy/index
 
