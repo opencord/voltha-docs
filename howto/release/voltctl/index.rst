@@ -1,10 +1,10 @@
-HOWTO(s)
-========
+voltctl
+=======
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-   release/voltctl/install
-   release/voltctl/release
+   install
+   release
 
 :ref:`voltctl-see-also`

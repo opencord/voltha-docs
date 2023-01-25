@@ -1,5 +1,5 @@
-VOLTHA Components
-=================
+VOLTHA Components: hierarchy
+============================
 
 voltha-onos
 ^^^^^^^^^^^
