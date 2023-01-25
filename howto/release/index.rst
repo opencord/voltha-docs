@@ -1,11 +1,12 @@
 Release
 =======
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    ci-management/index
    components/index
    hierarchy/index
+   voltha-docs/index
 
    voltctl/index
    voltctl/install
