@@ -1,3 +1,5 @@
+.. |voltha-latest| replace:: voltha_2.11
+
 Release Process
 ===============
 
@@ -8,9 +10,9 @@ Creating the initial release
 
 A release branch name is decided on, where all tagged releases will be created
 in each repo. Historically this has been ``voltha`` followed by the Major and
-Minor `Semver <https://semver.org/>`_ version, such as ``voltha-2.2``,
-``voltha-2.3``, etc.  The rest of this section will use the ``voltha-2.3``
-release as an example:
+Minor `Semver <https://semver.org/>`_ version, such as ``voltha-2.3``,
+etc.  The rest of this section will use the ``voltha-2.3`` release as an
+example:
 
 A branch named ``voltha-2.3`` is created on the voltha-helm-charts repo.
 Release candidates will be created of each chart for the ``2.3`` release.

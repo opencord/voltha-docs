@@ -13,3 +13,5 @@ jjb/software-upgrades.yaml
 
   - `aaa-app/2.9.0-SNAPSHOT <https://oss.sonatype.org/content/groups/public/org/opencord/aaa-app/2.9.0-SNAPSHOT/>`_
 
+  - `aaa.index <https://oss.sonatype.org/content/groups/public/org/opencord/aaa-app>`_
+

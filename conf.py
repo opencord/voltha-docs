@@ -291,6 +291,14 @@ extlinks=\
         'vol-git'  : ('https://github.com/opencord/%s', 'git::%s'),
     }
 
+# -- Options for inlining a constant value -----------------------------------
+# NOTE: rst_prolog will affect every file in the repository.
+# Use per-file substitution to limit scope:
+#   https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
+# rst_prolog = """
+# .. |voltha-latest| replace:: voltha-2.11
+# """
+
 # -- Options for todo extension ----------------------------------------------
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True

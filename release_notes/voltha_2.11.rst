@@ -1,4 +1,4 @@
-.. figure:: images/voltha.svg
+. figure:: images/voltha.svg
    :alt: voltha- Release Notes
    :width: 40%
    :align: center
@@ -180,6 +180,12 @@ ONOS Apps
      -
      - `X <https://gerrit.opencord.org/plugins/gitiles/aaa/+/refs/tags/2.9.0>`__
      - `X <https://github.com/opencord/aaa/tree/2.9.0>`__
+   * - `bng <https://gerrit.opencord.org/gitweb?p=bng.git;a=summary>`_
+     -
+     - ``2.4.0``
+     -
+     - `X <https://github.com/opencord/bng/tree/2.4.0>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/bng/+/refs/tags/2.4.0>`__
    * - `dhcpl2relay <https://gerrit.opencord.org/gitweb?p=dhcpl2relay.git;a=summary>`_
      -
      - ``2.9.0``
@@ -216,12 +222,6 @@ ONOS Apps
      -
      - `X <https://gerrit.opencord.org/plugins/gitiles/sadis/+/refs/tags/5.10.0>`__
      - `X <https://github.com/opencord/sadis/tree/5.10.0>`__
-   * - `bng <https://gerrit.opencord.org/gitweb?p=bng.git;a=summary>`_
-     -
-     - ``2.4.0``
-     -
-     - `X <https://github.com/opencord/bng/tree/2.4.0>`__
-     - `X <https://gerrit.opencord.org/plugins/gitiles/bng/+/refs/tags/2.4.0>`__
    * - `pppoeagent <https://gerrit.opencord.org/plugins/gitiles/pppoeagent/>`_
      -
      - ``1.2.0``
@@ -230,7 +230,7 @@ ONOS Apps
      - `X <https://github.com/opencord/pppoeagent/tree/1.2.1>`__
    * - `olttopology <https://gerrit.opencord.org/plugins/gitiles/olttopology/>`_
      -
-     - ``1.2.0`` ``latest: 1.2.1``
+     - ``1.2.0``
      -
      - `X <https://gerrit.opencord.org/plugins/gitiles/olttopology/+/refs/tags/1.2.1>`__
      - `X <https://github.com/opencord/olttopology/tree/1.2.1>`__
@@ -253,7 +253,7 @@ VOLTHA Components
      - Version
      - Version
      - `with Chart <https://gerrit.opencord.org/gitweb?p=helm-charts.git;a=tree;f=bbsim>`_
-     - URL
+     - ULR
      - URL
      - URL
    * -
@@ -264,7 +264,7 @@ VOLTHA Components
      -
      -
    * - `Helm Charts (voltha-helm-charts) <https://gerrit.opencord.org/gitweb?p=voltha-helm-charts.git;a=tree>`_
-     - ``3.2.1-dev1``
+     - ``3.2.2-dev1``
      -
      -
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master>`__
@@ -274,26 +274,26 @@ VOLTHA Components
      - ``1.14.4``
      - ``4.8.6``
      - `chart <https://gerrit.opencord.org/gitweb?p=helm-charts.git;a=tree;f=bbsim>`_
-     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-openolt-adapter/+/refs/tags/v4.2.10>`__
+     -
      - `X <https://github.com/opencord/bbsim/tree/v1.14.4>`__
      - `X <https://hub.docker.com/layers/voltha/bbsim/1.14.4/images/sha256-c23de193c1d7cf8d32c48edfbec4bfa6c47dbeecd4b31d040da0255eeab2ec58?context=explore>`__
    * - `Bbsim-sadis-server <https://gerrit.opencord.org/gitweb?p=bbsim-sadis-server.git;a=tree>`_
      -
      - ``0.3.4``
-     -
+     - `0.3.2 <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/bbsim-sadis-server/Chart.yaml>`_
      - `X <https://gerrit.opencord.org/plugins/gitiles/bbsim-sadis-server/+/refs/tags/v0.3.4>`_
      - `X <https://github.com/opencord/bbsim-sadis-server/releases/tag/v0.3.4>`__
      -
    * - `ofagent-go <https://gerrit.opencord.org/gitweb?p=ofagent-go.git;a=tree>`_
-     - ``2.1.2``
-     - ``2.1.2``
+     - ``2.1.3``
+     - ``2.1.3``
      - ``2.11.3``
      -
      - `X <https://github.com/opencord/ofagent-go>`__
      - `1.1.4-? <https://hub.docker.com/layers/voltha/ofagent-go/1.1.4/images/sha256-8231111b69c8643c4981d64abff0a85d71f80763bb98632bb101e92b89882647?context=explore>`_
    * - `openolt agent <https://gerrit.opencord.org/gitweb?p=openolt.git;a=tree>`_
      -
-     - ``3.7.5``
+     - ``4.2.12``
      -
      -
      - `X <https://github.com/opencord/openolt>`__
