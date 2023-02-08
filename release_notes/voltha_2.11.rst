@@ -1,4 +1,4 @@
-. figure:: images/voltha.svg
+.. figure:: images/voltha.svg
    :alt: voltha- Release Notes
    :width: 40%
    :align: center
