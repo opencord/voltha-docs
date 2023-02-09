@@ -1,0 +1,12 @@
+voltha-helm-charts
+voltha-system-tests
+  branch[1]: voltha-2.11
+     tag[2]: 2.11.0
+  update[3]: .gitreview
+  
+
+voltha-openolt-adapter
+voltha-openonu-adapter
+  1) git tag -a "Release tagging" v2.11.0          # (golang format: v + {revision})
+  
+  branch[2]: voltha-2.11

@@ -20,68 +20,65 @@ $(if $(DEBUG),$(warning ENTER))
 ##-------------------##
 ##---]  GLOBALS  [---##
 ##-------------------##
-.PHONY: lint-shell lint-shell-all lint-shell-modified
+.PHONY: lint-flake8 lint-flake8-all lint-flake8-modified
 
-have-shell-sources := $(if $(strip $(SHELL_SOURCES)),true)
-SHELL_SOURCES      ?= $(error SHELL_SOURCES= required)
+PYTHON_FILES      ?= $(error PYTHON_FILES= required)
 
 ## -----------------------------------------------------------------------
-## Intent: Use the shell command to perform syntax checking.
+## Intent: Use the flake8 command to perform syntax checking.
+## Usage:
 ##   % make lint
-##   % make lint-shell-all
+##   % make lint-flake8-all
 ## -----------------------------------------------------------------------
-ifndef NO-LINT-SHELL
-  lint-shell-mode := $(if $(have-shell-sources),modified,all)
-  lint : lint-shell-$(lint-shell-mode)
-endif# NO-LINT-SHELL
+ifndef NO-LINT-FLAKE8
+  lint-flake8-mode := $(if $(have-python-files),modified,all)
+  lint : lint-flake8-$(lint-flake8-mode)
+endif# NO-LINT-FLAKE8
 
 ## -----------------------------------------------------------------------
-## Intent: exhaustive shell syntax checking
+## Intent: exhaustive flake8 syntax checking
 ## -----------------------------------------------------------------------
-shellcheck-find-args := $(null)
-shellcheck-find-args += -name '$(venv-name)'
-shellcheck-find-args += -o -name 'staging'
-lint-shell-all:
-	$(MAKE) --no-print-directory lint-shellcheck-install
+lint-flake8-all: $(venv-activate-script)
+	$(HIDE)$(MAKE) --no-print-directory lint-flake8-install
 
-	find . \( $(shellcheck-find-args) \) -prune -name '*.sh' -print0 \
-	    | $(xargs-n1-clean) shellcheck
+	$(activate)\
+ && find . \( -name '$(venv-name)' \) -prune -o -name '*.py' -print0 \
+	| $(xargs-n1) flake8 --max-line-length=99 --count
 
 ## -----------------------------------------------------------------------
 ## Intent: check deps for format and python3 cleanliness
 ## Note:
-##   shell --py3k option no longer supported
+##   pylint --py3k option no longer supported
 ## -----------------------------------------------------------------------
-lint-shell-modified:
-	$(MAKE) --no-print-directory lint-shell-install
+lint-flake8-modified: $(venv-activate-script)
+	$(HIDE)$(MAKE) --no-print-directory lint-flake8-install
 
 	$(activate)\
  && set -u\
- && shellcheck $(SHELL_SOURCES)
+ && flake8 --max-line-length=99 --count $(PYTHON_FILES)
 
 ## -----------------------------------------------------------------------
 ## Intent:
 ## -----------------------------------------------------------------------
-.PHONY: lint-shellcheck-install
-lint-shellcheck-install:
+.PHONY: lint-flake8-install
+lint-flake8-install: $(venv-activate-script)
 	@echo
 	@echo "** -----------------------------------------------------------------------"
-	@echo '** command shell syntax checking'
+	@echo "** python flake8 syntax checking"
 	@echo "** -----------------------------------------------------------------------"
-
-        # {apt-get,rpm,yum} install shellcheck
-	shellcheck --version
+	$(activate) && pip install --upgrade flake8
+	$(activate) && flake8 --version
 	@echo
 
 ## -----------------------------------------------------------------------
 ## Intent: Display command usage
 ## -----------------------------------------------------------------------
 help::
-	@echo '  lint-shell          Syntax check sources using shellcheck'
+	@echo '  lint-flake8          Syntax check python using the flake8 command'
   ifdef VERBOSE
-	@echo '  $(MAKE) lint-shell PYTHON_FILES=...'
-	@echo '  lint-shell-modified  shell checking: only modified'
-	@echo '  lint-shell-all       shell checking: exhaustive'
+	@echo '  $(MAKE) lint-pylint PYTHON_FILES=...'
+	@echo '  lint-flake8-modified  flake8 checking: only modified'
+	@echo '  lint-flake8-all       flake8 checking: exhaustive'
   endif
 
 $(if $(DEBUG),$(warning LEAVE))

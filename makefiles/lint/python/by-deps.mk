@@ -1,6 +1,6 @@
 # -*- makefile -*-
 # -----------------------------------------------------------------------
-# Copyright 2017-2023 Open Networking Foundation
+# Copyright 2017-2023 Open Networking Foundation (ONF) and the ONF Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,12 +22,26 @@ PYTHON_FILES ?= $(error PYTHON_FILES= is required)
 lint : lint-python
 
 # check deps for format and python3 cleanliness
-lint-python: vst_venv
-	source ./$</bin/activate \
-	    ; set -u \
-	    ; pylint --py3k $(PYTHON_FILES) \
-	    ; flake8 --max-line-length=99 --count $(PYTHON_FILES)
+lint-python : $(venv-activate-script)
+	@echo -n "** $@: ENTER"
 
+	$(HIDE)$(activate)\
+	source ./$</bin/activate\
+  && set -u\
+  && pylint --py3k $(PYTHON_FILES)\
+  && flake8 --max-line-length=99 --count $(PYTHON_FILES)
+	@echo -n "** $@: LEAVE"
+
+## -----------------------------------------------------------------------
+## Intent: Display targets supported by this makefile
+## -----------------------------------------------------------------------
+todo ::
+	@echo " o Update target to support dependency based checking."
+	@echo " o Only lint modified files"
+
+## -----------------------------------------------------------------------
+## Intent: Display targets supported by this makefile
+## -----------------------------------------------------------------------
 help::
 	@echo "  lint-python          Syntax check using pylint and flake8"
 

@@ -20,68 +20,70 @@ $(if $(DEBUG),$(warning ENTER))
 ##-------------------##
 ##---]  GLOBALS  [---##
 ##-------------------##
-.PHONY: lint-shell lint-shell-all lint-shell-modified
+.PHONY: lint-pylint lint-pylint-all lint-pylint-modified
 
-have-shell-sources := $(if $(strip $(SHELL_SOURCES)),true)
-SHELL_SOURCES      ?= $(error SHELL_SOURCES= required)
-
-## -----------------------------------------------------------------------
-## Intent: Use the shell command to perform syntax checking.
-##   % make lint
-##   % make lint-shell-all
-## -----------------------------------------------------------------------
-ifndef NO-LINT-SHELL
-  lint-shell-mode := $(if $(have-shell-sources),modified,all)
-  lint : lint-shell-$(lint-shell-mode)
-endif# NO-LINT-SHELL
+PYTHON_FILES      ?= $(error PYTHON_FILES= required)
 
 ## -----------------------------------------------------------------------
-## Intent: exhaustive shell syntax checking
+## Intent: Use the pylint command to perform syntax checking.
+##   o If UNSTABLE=1 syntax check all sources
+##   o else only check sources modified by the developer.
+## Usage:
+##   % make lint UNSTABLE=1
+##   % make lint-pylint-all
 ## -----------------------------------------------------------------------
-shellcheck-find-args := $(null)
-shellcheck-find-args += -name '$(venv-name)'
-shellcheck-find-args += -o -name 'staging'
-lint-shell-all:
-	$(MAKE) --no-print-directory lint-shellcheck-install
+ifndef NO-LINT-PYLINT
+  lint-pylint-mode := $(if $(have-python-files),modified,all)
+  lint : lint-pylint-$(lint-pylint-mode)
+endif# NO-LINT-PYLINT
 
-	find . \( $(shellcheck-find-args) \) -prune -name '*.sh' -print0 \
-	    | $(xargs-n1-clean) shellcheck
+## -----------------------------------------------------------------------
+## Intent: exhaustive pylint syntax checking
+## -----------------------------------------------------------------------
+pylint-find-args := $(null)
+pylint-find-args += -name '$(venv-name)'
+pylint-find-args += -o -name 'patches'
+lint-pylint-all: $(venv-activate-script)
+	$(MAKE) --no-print-directory lint-pylint-install
+
+	$(activate)\
+ && find . \( $(pylint-find-args) \) -prune -o -name '*.py' -print0 \
+	| $(xargs-n1) pylint
 
 ## -----------------------------------------------------------------------
 ## Intent: check deps for format and python3 cleanliness
 ## Note:
-##   shell --py3k option no longer supported
+##   pylint --py3k option no longer supported
 ## -----------------------------------------------------------------------
-lint-shell-modified:
-	$(MAKE) --no-print-directory lint-shell-install
+lint-pylint-modified: $(venv-activate-script)
+	$(MAKE) --no-print-directory lint-pylint-install
 
 	$(activate)\
  && set -u\
- && shellcheck $(SHELL_SOURCES)
+ && pylint $(PYTHON_FILES)
 
 ## -----------------------------------------------------------------------
 ## Intent:
 ## -----------------------------------------------------------------------
-.PHONY: lint-shellcheck-install
-lint-shellcheck-install:
+.PHONY: lint-pylint-install
+lint-pylint-install: $(venv-activate-script)
 	@echo
 	@echo "** -----------------------------------------------------------------------"
-	@echo '** command shell syntax checking'
+	@echo "** python pylint syntax checking"
 	@echo "** -----------------------------------------------------------------------"
-
-        # {apt-get,rpm,yum} install shellcheck
-	shellcheck --version
+	$(activate) && pip install --upgrade pylint
+	$(activate) && pylint --version
 	@echo
 
 ## -----------------------------------------------------------------------
 ## Intent: Display command usage
 ## -----------------------------------------------------------------------
 help::
-	@echo '  lint-shell          Syntax check sources using shellcheck'
+	@echo '  lint-pylint          Syntax check python using the pylint command'
   ifdef VERBOSE
-	@echo '  $(MAKE) lint-shell PYTHON_FILES=...'
-	@echo '  lint-shell-modified  shell checking: only modified'
-	@echo '  lint-shell-all       shell checking: exhaustive'
+	@echo '  $(MAKE) lint-pylint PYTHON_FILES=...'
+	@echo '  lint-pylint-modified  pylint checking: only modified'
+	@echo '  lint-pylint-all       pylint checking: exhaustive'
   endif
 
 $(if $(DEBUG),$(warning LEAVE))
