@@ -20,71 +20,64 @@ $(if $(DEBUG),$(warning ENTER))
 ##-------------------##
 ##---]  GLOBALS  [---##
 ##-------------------##
-.PHONY: lint-json lint-json-all lint-json-modified
+.PHONY: lint-flake8 lint-flake8-all lint-flake8-modified
 
-have-json-files := $(if $(strip $(JSON_FILES)),true)
-JSON_FILES      ?= $(error JSON_FILES= required)
+PYTHON_FILES      ?= $(error PYTHON_FILES= required)
 
 ## -----------------------------------------------------------------------
-## Intent: Use the json command to perform syntax checking.
-##   o If UNSTABLE=1 syntax check all sources
-##   o else only check sources modified by the developer.
+## Intent: Use the flake8 command to perform syntax checking.
 ## Usage:
-##   % make lint UNSTABLE=1
-##   % make lint-json-all
+##   % make lint
+##   % make lint-flake8-all
 ## -----------------------------------------------------------------------
-ifndef NO-LINT-JSON
-  lint-json-mode := $(if $(have-json-files),modified,all)
-  lint : lint-json-$(lint-json-mode)
-endif# NO-LINT-JSON
+ifndef NO-LINT-FLAKE8
+  lint-flake8-mode := $(if $(have-python-files),modified,all)
+  lint : lint-flake8-$(lint-flake8-mode)
+endif# NO-LINT-FLAKE8
 
 ## -----------------------------------------------------------------------
-## Intent: exhaustive json syntax checking
+## Intent: exhaustive flake8 syntax checking
 ## -----------------------------------------------------------------------
-json-find-args := $(null)
-json-find-args += -name '$(venv-name)'
-lint-json-all:	
-	$(HIDE)$(MAKE) --no-print-directory lint-json-install
+lint-flake8-all: $(venv-activate-script)
+	$(HIDE)$(MAKE) --no-print-directory lint-flake8-install
 
 	$(activate)\
- && find . \( $(json-find-args) \) -prune -o -name '*.json' -print0 \
-	| $(xargs-n1) python -m json.tool > /dev/null ;\
+ && find . \( -name '$(venv-name)' \) -prune -o -name '*.py' -print0 \
+	| $(xargs-n1) flake8 --max-line-length=99 --count
 
 ## -----------------------------------------------------------------------
 ## Intent: check deps for format and python3 cleanliness
 ## Note:
-##   json --py3k option no longer supported
+##   pylint --py3k option no longer supported
 ## -----------------------------------------------------------------------
-lint-json-modified: $(venv-activate-script)
-	$(HIDE)$(MAKE) --no-print-directory lint-json-install
+lint-flake8-modified: $(venv-activate-script)
+	$(HIDE)$(MAKE) --no-print-directory lint-flake8-install
 
 	$(activate)\
- && for jsonfile in $(JSON_FILES); do \
-        echo "Validating json file: $$jsonfile" ;\
-        python -m json.tool $$jsonfile > /dev/null ;\
-    done
+ && flake8 --max-line-length=99 --count $(PYTHON_FILES)
 
 ## -----------------------------------------------------------------------
 ## Intent:
 ## -----------------------------------------------------------------------
-.PHONY: lint-json-install
-lint-json-install: $(venv-activate-script)
+.PHONY: lint-flake8-install
+lint-flake8-install: $(venv-activate-script)
 	@echo
 	@echo "** -----------------------------------------------------------------------"
-	@echo "** json syntax checking"
+	@echo "** python flake8 syntax checking"
 	@echo "** -----------------------------------------------------------------------"
-#	$(activate) && pip install --upgrade json.tool
-#       $(activate) && python -m json.tool --version (?-howto-?)
+	$(activate) && pip install --upgrade flake8
+	$(activate) && flake8 --version
 	@echo
 
 ## -----------------------------------------------------------------------
 ## Intent: Display command usage
 ## -----------------------------------------------------------------------
 help::
-	@echo '  lint-json          Syntax check python using the json command'
+	@echo '  lint-flake8          Syntax check python using the flake8 command'
   ifdef VERBOSE
-	@echo '  lint-json-all       json checking: exhaustive'
-	@echo '  lint-json-modified  json checking: only modified'
+	@echo '  $(MAKE) lint-pylint PYTHON_FILES=...'
+	@echo '  lint-flake8-modified  flake8 checking: only modified'
+	@echo '  lint-flake8-all       flake8 checking: exhaustive'
   endif
 
 $(if $(DEBUG),$(warning LEAVE))

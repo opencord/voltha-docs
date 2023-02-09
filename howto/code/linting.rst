@@ -11,14 +11,18 @@ Getting Started
 
     make help | grep lint
     lint-chart                    chart_version_check.sh
+    lint-doc8                     Syntax check *.rst documentation files.
     lint-helm                     Syntax check helm configs
     lint-json                     Syntax check json sources
     lint-license                  Verify sources contain a license block.
-    lint-python                   Syntax check using pylint and flake8
     lint-robot                    Syntax check robot sources using rflint
     lint-shell                    Syntax check bash,bourne,etc sources
     lint-yaml                     Syntax check yaml source using yamllint
     UNSTABLE=                     Build targets prone to failure (lint-helm)
+
+    [PYTHON]
+    lint-flake8                   Syntax check using pylint and flake8
+    lint-pylint                   Syntax check using pylint and flake8
 
 |
 
@@ -50,6 +54,57 @@ targets and functionality supported.
 
 |
 
+
+doc8 / RST files
+++++++++++++++++
+
+Command: `doc8 <https://pypi.org/project/doc8/>`_
+
+.. code:: bash
+
+    make clean
+    make lint                2>&1 | tee log
+    make lint-doc8-all      2>&1 | tee log
+    make lint-doc8-modified 2>&1 | tee log
+
+Sources:
+
+- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/>`__
+- makefiles/lint/doc8.mk
+
+Notes:
+
+- lint-doc8-all target dependency will create a `python virtual env <https://wiki.opennetworking.org/display/JOEY/PythonVenv>`_
+- python 3.10+ requires `virtual env patching <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/patches/>`_ (dynamic, applied when needed).
+- `makefiles/patches/include.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/patches/>`_
+
+|
+
+
+python: flake8
+++++++++++++++
+
+Command: `flake8 <https://flake8.pycqa.org/en/latest>`_
+
+.. code:: bash
+
+    make clean
+    make lint                 2>&1 | tee log
+    make lint-flake8-all      2>&1 | tee log
+    make lint-flake8-modified 2>&1 | tee log
+
+Sources:
+
+- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/>`__
+- makefiles/lint/flake8.mk
+
+Notes:
+
+- lint-flake8-all target dependency will create a `python virtual env <https://wiki.opennetworking.org/display/JOEY/PythonVenv>`_
+- python 3.10+ requires `virtual env patching <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/patches/>`_ (dynamic, applied when needed).
+- `makefiles/patches/include.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/patches/>`_
+
+|
 
 Helm Charts
 +++++++++++
@@ -86,13 +141,14 @@ Sources:
 JSON
 ++++
 
-Command:
-- `json.tool <https://docs.python.org/3/library/json.html>`_
+Command: `json.tool <https://docs.python.org/3/library/json.html>`_
 
 .. code:: bash
 
     make clean
-    make lint-json 2>&1 | tee log
+    make lint               2>&1 | tee log
+    make lint-json-all      2>&1 | tee log
+    make lint-json-modified 2>&1 | tee log
 
 Sources:
 
@@ -120,28 +176,28 @@ Sources:
 |
 
 
-python
-++++++
+python: pylint
+++++++++++++++
 
-Command:
-- `flake8 <https://flake8.pycqa.org/en/latest>`_
-- `pylint <https://www.pylint.org/>`_
+Command: `pylint <https://www.pylint.org/>`_
 
 .. code:: bash
 
     make clean
-    make lint-python 2>&1 | tee log
+    make lint                 2>&1 | tee log
+    make lint-pylint-all      2>&1 | tee log
+    make lint-pylint-modified 2>&1 | tee log
 
 Sources:
 
 - `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/>`__
-- `makefiles/lint/python.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/python.mk>`_
+- makefiles/lint/pylint.mk
 - `makefiles/patches/include.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/patches/>`_
 
 Notes:
 
 - pylint the --py3k option is no longer supported by v3.10+
-- lint-python target dependency will create a `python virtual env <https://wiki.opennetworking.org/display/JOEY/PythonVenv>`_
+- lint-pylint-all target dependency will create a `python virtual env <https://wiki.opennetworking.org/display/JOEY/PythonVenv>`_
 - python 3.10+ requires `virtual env patching <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/patches/>`_ (dynamic, applied when needed).
 
 |
@@ -150,12 +206,19 @@ Notes:
 Robot
 +++++
 
-Command: rflint
+Command: rflint `robotframework-lint <https://pypi.org/project/robotframework-lint/>`_
+
+.. code:: bash
+
+    make clean
+    make lint                2>&1 | tee log
+    make lint-robot-all      2>&1 | tee log
+    make lint-robot-modified 2>&1 | tee log
 
 Sources:
 
 - `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/>`__
-- `makefiles/lint/robot.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-system-tests/+/refs/heads/master/makefiles/lint/robot.mk>`_
+- `makefiles/lint/robot.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/robot.mk>`_
 
 |
 
@@ -178,10 +241,17 @@ Shell
 
 Command: `shellcheck <https://github.com/koalaman/shellcheck>`_
 
+.. code:: bash
+
+    make clean
+    make lint                2>&1 | tee log
+    make lint-shell-all      2>&1 | tee log
+    make lint-shell-modified 2>&1 | tee log
+
 Sources:
 
 - `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/>`__
-- `makefiles/lint/shell.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-system-tests/+/refs/heads/master/makefiles/lint/shell.mk>`_
+- `makefiles/lint/shell.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/shell.mk>`_
 
 |
 
@@ -189,17 +259,19 @@ Sources:
 Yaml
 ++++
 
-Command: yamllint
+Command: `yamllint <https://yamllint.readthedocs.io/en/stable/>`_
 
 .. code:: bash
 
     make clean
-    make lint-yaml 2>&1 | tee log
+    make lint           2>&1 | tee log
+    make lint-yaml-all  2>&1 | tee log
+    make lint--modified 2>&1 | tee log
 
 Sources:
 
 - `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/>`__
-- `makefiles/lint/yaml.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-system-tests/+/refs/heads/master/makefiles/lint/yaml.mk>`_
+- `makefiles/lint/yaml.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/yaml.mk>`_
 
 |
 
@@ -222,7 +294,7 @@ Repositories
 - [`master <https://gerrit.opencord.org/plugins/gitiles/pod-configs/+/refs/heads/master>`__] `pod-configs <https://gerrit.opencord.org/plugins/gitiles/pod-configs>`_
 - [`master <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master>`__] `voltha-docs <https://gerrit.opencord.org/plugins/gitiles/voltha-docs>`_
 - [`master <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master>`__] `voltha-helm-charts <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts>`_
-- [`master <https://gerrit.opencord.org/plugins/gitiles/voltha-system-tests/+/refs/heads/master>`__] `voltha-system-tests <https://gerrit.opencord.org/plugins/gitiles/voltha-system-tests>`_
+- [`master <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master>`__] `voltha-docs <https://gerrit.opencord.org/plugins/gitiles/voltha-docs>`_
 
 |
 
@@ -230,8 +302,11 @@ Repositories
 Notes
 ~~~~~
 
-- Make lint complaints are not necessarily fatal.
 - Volume problem reports require cleanup before linting can become a default.
+
+  - After bulk linting problems for a language source have been cleaned up
+    default linting can be enabled by modifing {project-root}/config.mk.
+
 - Lint target support is globally available across repositories, given time
   it will be.  Submit patches as needed or open a jira ticket to request
   linting support in specific repositories.
