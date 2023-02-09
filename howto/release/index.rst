@@ -7,6 +7,7 @@ Release
    components/index
    hierarchy/index
    voltha-docs/index
+   post-release/index
 
    voltctl/index
    voltctl/install

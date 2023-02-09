@@ -26,10 +26,8 @@ $(if $(VERBOSE),$(eval export VERBOSE=$(VERBOSE))) # visible to include(s)
 ##--------------------##
 ##---]  INCLUDES  [---##
 ##--------------------##
-include $(MAKEDIR)/consts.mk
-include $(MAKEDIR)/help/include.mk
-include $(MAKEDIR)/patches/include.mk
-include $(MAKEDIR)/help/variables.mk
+-include config.mk
+include $(MAKEDIR)/include.mk
 
 # You can set these variables from the command line.
 SPHINXOPTS   ?=
@@ -50,43 +48,17 @@ endif
 # Static docs, built by other means (usually robot framework)
 STATIC_DOCS    := _static/voltha-system-tests _static/cord-tester
 
-# name of python virtualenv that is used to run commands
-VENV_NAME      := venv_docs
-
+# Why is existing source Makefile PHONY (?)
 .PHONY: help test lint reload Makefile prep
 
-# Put it first so that "make" without argument is like "make help".
-help :: $(VENV_NAME)
-	@ echo
-	@ source $</bin/activate ; set -u ;\
-	$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
-
-# -----------------------------------------------------------------------
-# Create the virtualenv with all the tools installed
-# -----------------------------------------------------------------------
-.PHONY: venv
-venv: $(VENV_NAME)
-
-$(VENV_NAME):
-	@echo
-	@echo "============================="
-	@echo "Installing python virtual env"
-	@echo "============================="
-	virtualenv -p python3 $@ ;\
-	source ./$@/bin/activate ;\
-	python -m pip install -r requirements.txt
-ifndef NO_PATCH
-	@echo
-	@echo "========================================"
-	@echo "Applying python virtualenv patches as needed (v3.10+)"
-	@echo "========================================"
-	./patches/python_310_migration.sh '--venv' "$@" 'apply'
-endif
-
-# automatically reload changes in browser as they're made
-reload: $(VENV_NAME)
-	source $</bin/activate ; set -u ;\
-	sphinx-reload $(SOURCEDIR)
+## -----------------------------------------------------------------------
+## Intent: Real time viewing, dynamically generate and reload document
+##         changes for web browser viewing.
+## Usage:
+##   make reload
+## -----------------------------------------------------------------------
+reload: $(venv-activate-script)
+	$(activate) && sphinx-reload $(SOURCEDIR)
 
 ## -----------------------------------------------------------------------
 ## Intent: lint and link verification. linkcheck is part of sphinx
@@ -95,6 +67,7 @@ test: lint linkcheck
 
 ## -----------------------------------------------------------------------
 ## Intent: Exercise all generation targets
+## Bridge: library workaround to support legacy targets
 ## -----------------------------------------------------------------------
 test-all-targets += html
 test-all-targets += coverage
@@ -104,22 +77,13 @@ test-all-targets += man
 test-all-targe4ts += text
 # test-all-targets += latex
 
-
 test-all : test
 	$(MAKE) $(test-all-targets)
 
 # doctest
 # coverage
 # linkcheck
-lint: doc8
-# include $(MAKEDIR)/lint/shell.mk
 
-doc8: $(VENV_NAME) | $(OTHER_REPO_DOCS)
-	source $</bin/activate ; set -u ;\
-	doc8 --max-line-length 119 \
-	     $$(find . -name \*.rst ! -path "*venv*" ! -path "*vendor*" ! -path "*repos*" )
-
-# markdown linting
 #  currently not enabled, should be added to lint target
 LINT_STYLE ?= mdl_strict.rb
 md-lint: | $(OTHER_REPO_DOCS)
@@ -128,14 +92,14 @@ md-lint: | $(OTHER_REPO_DOCS)
 	@echo "---"
 	@cat $(LINT_STYLE)
 	@echo "---"
-	mdl -s $(LINT_STYLE) `find -L $(SOURCEDIR) ! -path "./_$(VENV_NAME)/*" ! -path "./_build/*" ! -path "./repos/*" ! -path "*vendor*" -name "*.md"`
+	mdl -s $(LINT_STYLE) `find -L $(SOURCEDIR) ! -path "./_$(venv-activate-script)/*" ! -path "./_build/*" ! -path "./repos/*" ! -path "*vendor*" -name "*.md"`
 
 # clean up
 clean:
 	$(RM) -r $(BUILDDIR) $(OTHER_REPO_DOCS) $(STATIC_DOCS)
 
-clean-all sterile: clean
-	$(RM) -r $(VENV_NAME) repos
+clean-all sterile :: clean
+	$(RM) -r $(venv-activate-script) repos
 
 # checkout the repos inside repos/ dir
 repos:
@@ -157,8 +121,10 @@ $(CHECKOUT_REPOS): | repos
 	  then git clone $(REPO_HOST)/$(@F) $@ ;\
 	fi
 
-# checkout correct ref if not under test, then copy subdirectories into main
-# docs dir
+## -----------------------------------------------------------------------
+## Intent: checkout correct ref if not under test, then copy
+##         subdirectories into main docs dir
+## -----------------------------------------------------------------------
 $(OTHER_REPO_DOCS): | $(CHECKOUT_REPOS)
 	if [ "$(SKIP_CHECKOUT)" != "$@" ] ;\
 	  then GIT_REF=`grep '^$@ ' git_refs | awk '{print $$3}'` ;\
@@ -179,7 +145,9 @@ _static/cord-tester: | $(OTHER_REPO_DOCS)
 	mkdir -p $@
 	cp -r cord-tester/gendocs/* $@
 
-# generate a list of git checksums suitable for updating git_refs
+## -----------------------------------------------------------------------
+## Intent: generate a list of git checksums suitable for updating git_refs
+## -----------------------------------------------------------------------
 freeze: repos
 	@for repo in $(OTHER_REPO_DOCS) ; do \
 	  GIT_SUBDIR=`grep "^$$repo " git_refs | awk '{print $$2}'` ;\
@@ -189,24 +157,29 @@ freeze: repos
 	  cd ../.. ;\
 	done
 
-# build multiple versions
-multiversion: $(VENV_NAME) Makefile | prep $(OTHER_REPO_DOCS)
-	source $</bin/activate ; set -u ;\
-	sphinx-multiversion "$(SOURCEDIR)" "$(BUILDDIR)/multiversion" $(SPHINXOPTS)
+## -----------------------------------------------------------------------
+## Intent: build multiple versions
+## -----------------------------------------------------------------------
+multiversion: $(venv-activate-script) Makefile | prep $(OTHER_REPO_DOCS)
+	$(activate)\
+ && sphinx-multiversion "$(SOURCEDIR)" "$(BUILDDIR)/multiversion" $(SPHINXOPTS)
 	cp "$(SOURCEDIR)/_templates/meta_refresh.html" "$(BUILDDIR)/multiversion/index.html"
 
-# prep target - used in sphinx-multiversion to properly link
+## -----------------------------------------------------------------------
+## Intent: used in sphinx-multiversion to properly link
+## -----------------------------------------------------------------------
 prep: | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
 
-# Catch-all target: route all unknown targets to Sphinx using the new
-# "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
-# %: $(VENV_NAME) Makefile | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
-
+## -----------------------------------------------------------------------
+## Intent: Forward sphinx supported targets to sphinxbuild.
+## Bridge: legacy makefile wildcard rule forwarded unknown targets to sphinx.
+##         library makefiles do more so transfer control only when needed.
+## -----------------------------------------------------------------------
 include $(MAKEDIR)/voltha/docs-catchall-targets.mk
-$(voltha-docs-catchall): $(VENV_NAME) Makefile | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
+$(voltha-docs-catchall): $(venv-activate-script) Makefile | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
 	@echo " ** CATCHALL: $@"
-	source $</bin/activate ; set -u ;\
-	$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+	$(activate)\
+ && $(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
@@ -215,6 +188,15 @@ view-html:
 	"$(BROWSER)" _build/html/index.html
 
 ## -----------------------------------------------------------------------
+## Intent: Display makefile target help
+## -----------------------------------------------------------------------
+help :: $(venv-activate-script)
+	@ echo
+	$(HIDE)$(activate) \
+ && $(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
+## -----------------------------------------------------------------------
+## Intent: Display make hel footer
 ## -----------------------------------------------------------------------
 include $(MAKEDIR)/help/trailer.mk
 

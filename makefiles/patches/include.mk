@@ -27,7 +27,9 @@ patch-gather-args += --exclude-dir=patches
 patch-gather-args += '-e' 'from collections import Mapping'
 patch-gather-args += '-e' 'from collections import MutableMapping'
 
-VENV_NAME   ?= $(error $(MAKE) VENV_NAME= is required)
+# Defined by [Mm]akefile or makefiles/virtualenv.mk
+venv-name   ?= $(error $(MAKE) venv-name= is required)
+
 PATCH_PATH  ?= $(error $(MAKE) PATCH_PATH= is required)
 
 ## -----------------------------------------------------------------------
@@ -38,7 +40,7 @@ patch-gather:
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
 patch-diff:
-	$(HIDE)diff -qr staging $(VENV_NAME) \
+	$(HIDE)diff -qr staging $(venv-name) \
 	    | awk '{print "# diff -Naur "$$2" "$$4}' \
 	    | tee $@.log
 
@@ -46,16 +48,16 @@ patch-diff:
 ## -----------------------------------------------------------------------
 patch-create:
 	mkdir -p patches/$(PATCH_PATH)
-	diff -Naur staging/$(PATCH_PATH) $(VENV_NAME)/$(PATCH_PATH) | tee patches/$(PATCH_PATH)/patch
+	diff -Naur staging/$(PATCH_PATH) $(venv-name)/$(PATCH_PATH) | tee patches/$(PATCH_PATH)/patch
 	exit 1
 
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
 patch-init:
-	find "$(VENV_NAME)" -name '__pycache__' -type d -print0 \
+	find "$(venv-name)" -name '__pycache__' -type d -print0 \
 	    | xargs -I'{}' --null --no-run-if-empty $(RM) -r {}
 	mkdir -p staging
-	rsync -rv --checksum "$(VENV_NAME)/." "staging/."
+	rsync -rv --checksum "$(venv-name)/." "staging/."
 	@echo "Modify files beneath staging/ to create a patch source"
 
 # [SEE ALSO]

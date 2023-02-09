@@ -15,12 +15,29 @@
 # limitations under the License.
 # -----------------------------------------------------------------------
 
+# -----------------------------------------------------------------------
+# Intent: Display help banner early before library lint help targets.
+# -----------------------------------------------------------------------
 help::
 	@echo
 	@echo "[LINT]"
 
+## Disable python linting in bulk ?
+ifdef NO-LINT-PYTHON
+  NO-LINT-FLAKE8 := true
+  NO-LINT-PYLINT := true
+endif
+
+# Define early else {flake8,pylint}.mk will complain:
+#    PYTHON_FILES ?= $(error)
+have-python-files := $(if $(strip $(PYTHON_FILES)),true)
+
+##--------------------##
+##---]  INCLUDES  [---##
+##--------------------##
+include $(MAKEDIR)/lint/doc8.mk
 include $(MAKEDIR)/lint/json.mk
-include $(MAKEDIR)/lint/python.mk
+include $(MAKEDIR)/lint/python/include.mk
 include $(MAKEDIR)/lint/robot.mk
 include $(MAKEDIR)/lint/shell.mk
 include $(MAKEDIR)/lint/yaml.mk
