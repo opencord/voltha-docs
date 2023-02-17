@@ -205,6 +205,14 @@ in the `VOLTHA wiki page <https://wiki.opennetworking.org/display/COM/VOLTHA>`_
    release_notes/index.rst
 
 .. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: Resources
+   :glob:
+
+   resources/index
+
+.. toctree::
    :maxdepth: 2
    :caption: HOWTO Topics
 
