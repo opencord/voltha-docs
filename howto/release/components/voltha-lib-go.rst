@@ -20,16 +20,9 @@ Versioning
 Release
 -------
 
-<<<<<<< HEAD
 - Bump VERSION file to a non-dev semantic version.
 - See Validate above
 - Commit and approve to trigger a build
-=======
-<<<<<<< HEAD
-- Bump VERSION file to a non-dev semantic version.
-- See Validate above
-- Commit and approve to trigger a build
-=======
 - Bump /opencord/ component versions in go.mod
 - make distclean
 - make mod-update
@@ -41,6 +34,3 @@ Release
 
 - Commit changes and create a pull request.
 - Once approved a jenkins job will launch.
-
->>>>>>> cb4f2e0 (VOL-4840 - Tracking ticket for release documentation.)
->>>>>>> f854950 (VOL-4840 - Tracking ticket for release documentation.)

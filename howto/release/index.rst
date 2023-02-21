@@ -6,6 +6,7 @@ Release
    ci-management/index
    components/index
    hierarchy/index
+   jenkins/index
    voltha-docs/index
    post-release/index
 
