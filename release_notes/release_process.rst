@@ -172,4 +172,3 @@ Components (which build containers)
 - voltha-openolt-adapter
 - voltha-openonu-adapter-go
 - voltha-onos (includes ONOS Apps)
-

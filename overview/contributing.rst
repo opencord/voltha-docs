@@ -1,4 +1,3 @@
-======================
 Contributing to VOLTHA
 ======================
 
@@ -31,33 +30,57 @@ Submitting Code
 
 Some additional points for developers:
 
- - Submit your changes early and often. Input and
-   corrections early in the process prevent huge changes later.
-
- - Please open a `jira ticket <https://jira.opencord.org/projects/VOL>`_ describing the issue/feature. During the patch please
-   preface the commit message with `[VOL-<jira_number]` e.g. `[VOL-4550]` so it gets
-   automatically linked to the Jira ticket. This keeps code review and design discussions clean.
+ - Submit your changes early and often.  Code and design review input
+   with corrections early in the process prevent huge changes later.
+ - Please open a `jira ticket <https://jira.opencord.org/projects/VOL>`_ describing the issue/feature.
+ - While checking in changes please preface the commit message with
+   `[VOL-<jira_number]` e.g. `[VOL-4550]` to automatically link changesets,
+   jenkins jobs, etc making them self-documenting for discussions.
 
 Steps to successful PRs
 +++++++++++++++++++++++
 
- 1. Checkout the code and prepare your patch. The workflow to make changes to the VOLTHA code through gerrit is identical
-    to the one from `onos-classic` and is described in the
-    `Sample Gerrit Workflow page <https://wiki.onosproject.org/display/ONOS/Sample+Gerrit+Workflow>`_
+ 1. Checkout the code base and prepare your patch.
+ 2. Workflow to modify VOLTHA code through gerrit is identical to `onos-classic`
+    and is described in `Sample Gerrit Workflow page <https://wiki.onosproject.org/display/ONOS/Sample+Gerrit+Workflow>`_
+ 3. Before submitting your patch via `git review` please pre-screen your changes to ensure code quality.
 
- 2. Before submitting the patch via `git review` please execute VOLTHA specific tests:
-    `make test` and `make sca`. These commands run unit test, linting and other elements
-    to assure the quality of your patch.
+ .. list-table:: Patch Pre-Screening
+    :widths: 10, 40
 
- 3. Wait for sanity checks `jenkins <https://jenkins.opencord.org>`_ to pass.
-    If the tests fail please fix your patch with step 3 an then repeat 2 and 3, as necessary.
-    **Passing CI verification is mandatory.** If the CI check does not start or fails but you think the issue
-    is un-related you can re-trigger by commenting on to the patch with `recheck`.
+    * - Command
+      - Description
+    * - `make lint <https://docs.voltha.org/master/howto/code/linting.html>`_
+      - Syntax check source for problems
+    * - make sca
+      - Static Code Analysis
+    * - make test
+      - Invoke VOLTHA test suite(s)
+    * - make help
+      - Show available targets, bulk source cleanup needed for `make lint` to check everything by default.
 
- 4. When comments are made to your patch please make the appropriate fixes and then
+ 4. Submitting your patch will initiate a `jenkins job <https://jenkins.opencord.org>`_ to validate changes.
+    Wait for job completion status before proceeding.
+
+    - Job completion status will be sent to you asynchronously in email.
+    - For direct monitoring `review comment history for your patch <https://gerrit.opencord.org/q/status:open+-is:wip>`_.
+    - Search for `Jenkins Technical User <https://gerrit.opencord.org/c/voltha-docs/+/33952>`_ and click a job entry.
+    - In the top grey navigation bar, following "Dashboard", click the test suite name to view the active job dashboard history `verify_voltha-docs_unit-test <https://jenkins.opencord.org/job/verify_voltha-docs_unit-test/>`_.
+
+    If testing fails please fix your patch with step 3 an then repeat 2 and 3, as necessary.
+
+    **Passing CI verification is mandatory.**
+
+    If the CI check does not start or fails and you believe the issue is
+    un-related to a changeset you can re-trigger by commenting on the
+    patch with `recheck`.
+
+    If failures persist `ask for assistance <https://wiki.opennetworking.org/display/COM/VOLTHA>`_ in slack or a mailing list.
+
+ 5. When comments are made to your patch please make the appropriate fixes and then
     amend your commit with `git commit --amend` and re-upload to gerrit with `git review`.
 
- 5. Await review. Everyone can comment on code changes, but only Core contributors
+ 6. Await review. Everyone can comment on code changes, but only Core contributors
     can give final review approval. **All changes must get at least one
     approval**. Join one of the `communication channels <https://wiki.opennetworking.org/display/COM/VOLTHA>`_
     to request a review or to bring additional attention to your patch.
@@ -180,6 +203,7 @@ Openolt agent:
 
  - `Thiyagarajan Subramani <Thiyagarajan.Subramani@radisys.com>`_
  - `Burak Gurdag <burak.gurdag@netsia.com>`_
+ - `Girish Gowdra <girish.gowdra@intel.com>`_
 
 ONOS apps:
 
@@ -191,15 +215,20 @@ Olt adapter, rw-core:
 
  - `Abhilash Satish Laxmeshwar <abhilash.laxmeshwar@radisys.com>`_
  - `Gamze Abaka <gamze.abaka@netsia.com>`_
+ - `Girish Gowdra <girish.gowdra@intel.com>`_
+
+Build system, makefiles, reviews:
+
+ - `Joey Armstrong <joey@opennetworking.org>`_
+ - `David Ferguson <daf@opennetworking.org>`_
 
 All of the codebase:
 
- - `Andrea Campanella <andrea@opennetworking.org>`_
- - `Matteo Scandolo <teo@opennetworking.org>`_
- - `Girish Gowdra <girish@opennetworking.org>`_
- - `Hardik Windlass <hardik@opennetworking.org>`_
- - `Suchitra Vemuri <suchitra@opennetworking.org>`_
- - `Saurav Das <saurav.das@opennetworking.org>`_
+ - `Andrea Campanella`
+ - `Matteo Scandolo`
+ - `Hardik Windlass`
+ - `Suchitra Vemuri`
+ - `Saurav Das`
  - `Mahir Gunyel <mahir.gunyel@netsia.com>`_
  - `Serkant Uluderya <serkant.uluderya@netsia.com>`_
  - `Amit Ghosh <Amit.Ghosh@radisys.com>`_
@@ -211,4 +240,4 @@ Community Guidelines
 
 This project follows `Google's Open Source Community Guidelines <https://opensource.google/conduct/>`_
 
-and ONF's [Code of Conduct](CODE_OF_CONDUCT.md).
+and ONF's `Code of Conduct <https://opennetworking.org/wp-content/themes/onf/img/onf-code-of-conduct.pdf>`_.

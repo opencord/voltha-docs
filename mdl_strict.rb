@@ -34,4 +34,3 @@ rule 'MD026', :punctuation => '.,;:'
 
 # Numbered lists should have the correct order
 rule 'MD029', :style => "ordered"
-
