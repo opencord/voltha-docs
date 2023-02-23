@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "51645c2e_50bbd953",
+        "filename": "VERSION",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2023-02-23T11:23:18Z",
+      "side": 1,
+      "message": "If 2.11 was released we probably ought to move this to 2.12",
+      "revId": "f37e0695cc8c89c6eca21652e89179dfc99ad93f",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
