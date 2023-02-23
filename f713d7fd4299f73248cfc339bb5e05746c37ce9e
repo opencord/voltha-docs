@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dc3076fb_a5de0aaa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000947
+      },
+      "writtenOn": "2023-02-23T21:28:31Z",
+      "side": 1,
+      "message": "Not a blocker, but should I be seeing all the updated emails in the contributing.rst file yet?\n\nOtherwise, LGTM and I have no issues checking this in, with a follow-up expectation to add the emails later.",
+      "revId": "f713d7fd4299f73248cfc339bb5e05746c37ce9e",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
