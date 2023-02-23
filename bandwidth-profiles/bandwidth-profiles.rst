@@ -1,5 +1,5 @@
 Bandwidth Profiles in VOLTHA
-=============================================
+============================
 
 This document describes Bandwidth profiles format in Sadis, how they are configured to VOLTHA and
 how they are mapped to physical configuration for the OLT and the ONU with Traffic Descriptors
@@ -154,5 +154,3 @@ from the bandwidth profile.
 
 Please note that the values for the elements in the Traffic Descriptor ME are in Bytes/second so a conversion from the
 kilobits/second of the Sadis representation is done by multiplying the values by 125 (kbps --> bps --> Bps).
-
-

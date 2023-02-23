@@ -91,7 +91,7 @@ It requires to be triggered with specific parameters, as an example you can chec
    an artifact into the staging repo on `sonatype <https://oss.sonatype.org>`_.  From there the artifact will need
    to be released into maven central.
 
-   - Login on sonatype (for username and password contact michelle@opennetworking.org)
+   - Login into the sonatype server (for username and password contact michelle@opennetworking.org)
    - search for org.opencord
    - Select the app you want to release and click "all versions"
    - Click on "Staging repositories" (in the left side navigation)
@@ -108,10 +108,10 @@ It requires to be triggered with specific parameters, as an example you can chec
    - Modify pom.xml and dependencies.xml
    - Update version string for all released dependencies.
 
-7. Start over with new app
+7. Start over with the next app
 
 .. note::
-   Given their inter dependency the ONOS apps need to be released in order:
+   Given component inter dependencies,  ONOS apps need to be released in order:
 
     1. sadis
     2. olt, aaa, dhcpl2relay, mcast, igmpproxy, maclearning
@@ -131,8 +131,6 @@ ONOS APPs:
 - `OLT Topology <https://github.com/opencord/olttopology>`_
 - `PPPoE Agent <https://github.com/opencord/pppoeagent>`_
 - `Sadis <https://github.com/opencord/sadis>`_
-
-
 
 
 Creating the release
