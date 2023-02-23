@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "21856142_a4bdd0ea",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000947
+      },
+      "writtenOn": "2023-02-23T14:19:39Z",
+      "side": 1,
+      "message": "Rewording/formatting of the instructions much nicer.    In the contributing.rst -- Can we somehow validate their new email addresses rather than just deleting them?",
+      "revId": "f37e0695cc8c89c6eca21652e89179dfc99ad93f",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "51645c2e_50bbd953",
