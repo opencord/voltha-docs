@@ -18,7 +18,7 @@ Release Builds howto:
   - Verify the `package(v1.8.0) <https://github.com/opencord/voltctl/releases/tag/v1.8.0>`_ contains more than just source archives (gz, zip):
     - The `tags page <https://github.com/opencord/voltctl/tags>`_ index lacks ``Notes`` and ``Downloads`` links.
 
-  - A valid `package(v1.7.6) <https://github.com/opencord/voltctl/releases/tag/v1.7.6>`_ will include:
+  - A valid package(v1.7.6) _ will include:
 
     - The `tags page <https://github.com/opencord/voltctl/tags>`_ index contains ``Notes`` and ``Downloads`` links.
     - A checksum file

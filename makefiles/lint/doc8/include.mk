@@ -36,24 +36,8 @@ lint-doc8-modified : lint-doc8
 
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
-lint-doc8-excl += --ignore-path '$(venv-name)'
-lint-doc8-excl += --ignore-path '$(BUILDDIR)'
-
-# YUCK! -- overhead
-#   o Submodule(s) use individual/variant virtualenv install paths.
-#   o Exclude special snowflakes to enable library makefile use.
-#   o [TODO] Use makefiles/virtualenv.mk to avoid duplication.
-
-lint-doc8-excl += --ignore-path '*/venv_cord'
-lint-doc8-excl += --ignore-path '*/vst_venv'
-
-lint-doc8-excl += --ignore-path './cord-tester'
-lint-doc8-excl += --ignore-path './repos/cord-tester'
-
-lint-doc8-excl += --ignore-path './bbsim/internal/bbsim/responders/sadis/dp.txt'
-lint-doc8-excl += --ignore-path './repos/bbsim/internal/bbsim/responders/sadis/dp.txt'
-lint-doc8-excl += --ignore-path './repos/voltha-helm-charts/voltha-infra/templates/NOTES.txt'
-lint-doc8-excl += --ignore-path './voltha-helm-charts/voltha-infra/templates/NOTES.txt'
+include $(MAKEDIR)/lint/doc8/excl.mk
+lint-doc8-excl := $(addprefix --ignore-path$(space),$(lint-doc8-excl-raw))
 
 lint-doc8-args += --max-line-length 120
 

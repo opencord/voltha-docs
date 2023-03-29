@@ -203,7 +203,6 @@ Openolt agent:
 
  - `Thiyagarajan Subramani <Thiyagarajan.Subramani@radisys.com>`_
  - `Burak Gurdag <burak.gurdag@netsia.com>`_
- - `Girish Gowdra <girish.gowdra@intel.com>`_
 
 ONOS apps:
 
@@ -215,7 +214,6 @@ Olt adapter, rw-core:
 
  - `Abhilash Satish Laxmeshwar <abhilash.laxmeshwar@radisys.com>`_
  - `Gamze Abaka <gamze.abaka@netsia.com>`_
- - `Girish Gowdra <girish.gowdra@intel.com>`_
 
 Build system, makefiles, reviews:
 
@@ -224,16 +222,11 @@ Build system, makefiles, reviews:
 
 All of the codebase:
 
- - `Andrea Campanella`
- - `Matteo Scandolo`
- - `Hardik Windlass`
- - `Suchitra Vemuri`
- - `Saurav Das`
  - `Mahir Gunyel <mahir.gunyel@netsia.com>`_
  - `Serkant Uluderya <serkant.uluderya@netsia.com>`_
  - `Amit Ghosh <Amit.Ghosh@radisys.com>`_
- - `Khenaidoo Nursimulu <knursimu@ciena.com>`_
- - `David Bainbridge <dbainbri.ciena@gmail.com>`_
+ - `Holger Hildebrandt <holger.hildebrandt@adtran.com>`_
+ - `Suhas Gururaj Rao <suhas.gururaj@radisys.com>`_
 
 Community Guidelines
 --------------------

@@ -15,6 +15,8 @@
 # limitations under the License.
 # -----------------------------------------------------------------------
 
+$(if $(DEBUG),$(warning ENTER))
+
 # -----------------------------------------------------------------------
 # Intent: Display help banner early before library lint help targets.
 # -----------------------------------------------------------------------
@@ -35,11 +37,13 @@ have-python-files := $(if $(strip $(PYTHON_FILES)),true)
 ##--------------------##
 ##---]  INCLUDES  [---##
 ##--------------------##
-include $(MAKEDIR)/lint/doc8.mk
+include $(MAKEDIR)/lint/doc8/include.mk
 include $(MAKEDIR)/lint/json.mk
 include $(MAKEDIR)/lint/python/include.mk
 include $(MAKEDIR)/lint/robot.mk
 include $(MAKEDIR)/lint/shell.mk
 include $(MAKEDIR)/lint/yaml.mk
+
+$(if $(DEBUG),$(warning LEAVE))
 
 # [EOF]
