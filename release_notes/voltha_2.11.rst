@@ -307,7 +307,7 @@ VOLTHA Components
      -
    * - `voltha-go <https://gerrit.opencord.org/gitweb?p=voltha-go.git;a=tree>`_
      - ``3.1.8``
-     - `docker <https://jenkins.opencord.org/job/docker-publish_voltha-go/464/console>`__
+     - docker
      - ``2.11.3``
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-go/+/refs/tags/v3.1.8>`__
      - `X <https://github.com/opencord/voltha-go/tree/v3.1.8>`__
