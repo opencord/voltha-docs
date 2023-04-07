@@ -37,8 +37,7 @@ Setting up a client
 -------------------
 
 The first thing you need to do is to install ``lxd`` on your server. To do that
-you can follow `this guide
-<http://tutorials.ubuntu.com/tutorial/tutorial-setting-up-lxd-1604>`_
+you can follow `this guide <https://ubuntu.com/tutorials/setting-up-lxd-1604>`_
 
 Once ``lxd`` is successfully installed you need to initialize it with:
 

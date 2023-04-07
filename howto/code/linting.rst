@@ -21,8 +21,9 @@ Getting Started
     UNSTABLE=                     Build targets prone to failure (lint-helm)
 
     [PYTHON]
-    lint-flake8                   Syntax check using pylint and flake8
-    lint-pylint                   Syntax check using pylint and flake8
+    lint-python                   Syntax check using available python tools
+    lint-flake8                   Syntax check using tool flake8
+    lint-pylint                   Syntax check using tool pylint
 
 |
 

@@ -34,7 +34,7 @@ Requires that you have a recent LaTeX installation and ``latexmk`` installed
 Writing Docs
 """"""""""""
 
-Docs written using sphinx: http://www.sphinx-doc.org
+Docs written using sphinx: https://www.sphinx-doc.org/en/master/
 
 Documentation is done in reStructuredText or Markdown, but only ``.rst`` files
 can contain embedded diagrams.

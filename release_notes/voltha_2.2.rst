@@ -36,7 +36,7 @@ Documentation
 -------------
 
 - Operator Workflows Defined: https://docs.google.com/presentation/d/1FP42UviD9Ln-Pjrho5cEOT4mxD1SjszjJUD1MA3jdKY/edit
-- Several Design docs published: https://drive.google.com/drive/u/1/folders/1sNbD1oMA1twG4Kqn2e77ExzXR81qC6LK
+- Several Design docs published: https://drive.google.com/drive/folders/1sNbD1oMA1twG4Kqn2e77ExzXR81qC6LK
 
 Known Issues
 ------------
