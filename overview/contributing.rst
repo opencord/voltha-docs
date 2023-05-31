@@ -190,14 +190,12 @@ This is a list of core contributors divided by area of expertise:
 
 Adapter openonu and omci-lib-go:
 
- - `Holger Hildebrandt <holger.hildebrandt@adtran.com>`_
  - `Chip Boling <chip.boling@tibitcom.com>`_
- - `Michael Pagenkopf <michael.pagenkopf@adtran.com>`_
  - `Ozge Ayaz <ozge.ayaz@netsia.com>`_
 
 Voltha-system-tests:
 
- - `Torsten Thieme <torsten.thieme@adtran.com>`_
+ - to be assigned
 
 Openolt agent:
 
@@ -225,7 +223,6 @@ All of the codebase:
  - `Mahir Gunyel <mahir.gunyel@netsia.com>`_
  - `Serkant Uluderya <serkant.uluderya@netsia.com>`_
  - `Amit Ghosh <Amit.Ghosh@radisys.com>`_
- - `Holger Hildebrandt <holger.hildebrandt@adtran.com>`_
  - `Suhas Gururaj Rao <suhas.gururaj@radisys.com>`_
 
 Community Guidelines
