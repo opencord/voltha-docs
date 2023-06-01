@@ -30,7 +30,6 @@ help ::
 	@echo
 	@echo '[VIEW]'
 	@echo '  reload         Setup to auto-reload sphinx doc changes in browser'
-	@echo '  view-html      View generated documentation'
 	@echo
 	@echo '[TEST]'
 	@echo '  test           make lint linkcheck'

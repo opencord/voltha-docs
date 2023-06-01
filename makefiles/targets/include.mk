@@ -20,24 +20,8 @@
 
 $(if $(DEBUG),$(warning ENTER))
 
-# OPT_ROOT    ?= /opt/trainlab/current
-# OPT_MAKEDIR := $(OPT_ROOT)/makefiles
-# MAKEDIR     ?= $(OPT_MAKEDIR)
-
-ONF_MAKE ?= $(MAKEDIR)# [TODO] -- local and library makefiles/ needed.
-ONF_MAKE ?= $(error ONF_MAKE= is required)
-
-include $(ONF_MAKE)/consts.mk
-include $(ONF_MAKE)/help/include.mk
-
-include $(ONF_MAKE)/virtualenv.mk#        # lint-{jjb,python} depends on venv
-include $(ONF_MAKE)/lint/include.mk
-include $(ONF_MAKE)/todo.mk
-include $(MAKEDIR)/patches/include.mk#    # Patch when python 3.10+ in use
-include $(ONF_MAKE)/help/variables.mk
-
-include $(ONF_MAKE)/targets/include.mk
-
+include $(ONF_MAKE)/targets/test-errors.mk
+# include $(ONF_MAKE)/targets/tox.mk
 
 $(if $(DEBUG),$(warning LEAVE))
 

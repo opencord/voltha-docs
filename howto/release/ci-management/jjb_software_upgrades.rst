@@ -11,7 +11,7 @@ jjb/software-upgrades.yaml
 
 - Instead obtain snapshot version from pom.xml and type in the explicit URL path:
 
-  - `aaa-app/2.9.0-SNAPSHOT <https://oss.sonatype.org/content/groups/public/org/opencord/aaa-app/2.9.0-SNAPSHOT/>`_
+  - `aaa-app/2.9.0-SNAPSHOT <https://oss.sonatype.org/content/groups/public/org/opencord/aaa-app/>`_
 
   - `aaa.index <https://oss.sonatype.org/content/groups/public/org/opencord/aaa-app>`_
 

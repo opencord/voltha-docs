@@ -14,26 +14,51 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# SPDX-FileCopyrightText: 2022-2023 Open Networking Foundation (ONF) and the ONF Contributors
+# SPDX-FileCopyrightText: 2022 Open Networking Foundation (ONF) and the ONF Contributors
 # SPDX-License-Identifier: Apache-2.0
 # -----------------------------------------------------------------------
 
 $(if $(DEBUG),$(warning ENTER))
 
 ## -----------------------------------------------------------------------
+## Intent: Summary 'make test' to hilight errors
 ## -----------------------------------------------------------------------
-todo ::
-	@echo '[TODO]'
-	@echo '  CLEANUP: make test'
-	@echo '    WARNING: document isnt included in any toctree'
+test-errors-lint := test-errors.lint.log
+test-errors-link := test-errors.linkcheck.log
+test-errors:
+	@echo "** Running $(MAKE) sterile"
+	$(HIDE)( $(MAKE) sterile 3>&1 2>&1 ) >/dev/null
+
 	@echo
-	@echo '  CLEANUP: make linkcheck'
-	@echo '    replace redirect URLs with resolved urls'
+	@echo "** Running $(MAKE) lint"
+	-$(HIDE) ( $(MAKE) lint 3>&1 2>&1 ) > $(test-errors-lint)
+
+	@echo '** Screen log for errors: $(test-errors-lint)'
+	$(HIDE)! grep \
+	  -e 'make: ***' \
+	  $(test-errors-lint)
+
+	@echo
+	@echo "** Running $(MAKE) linkcheck"
+	-$(HIDE) ( $(MAKE) linkcheck 3>&1 2>&1 ) > $(test-errors-link)
+
+	@echo '** Screen log for errors: $(test-errors-link)'
+	$(HIDE)! grep \
+	  -e 'make: ***' \
+	  -e 'broken'    \
+	 $(test-errors-link)
 
 ## -----------------------------------------------------------------------
+## Intent: Remove generated logfiles
+## -----------------------------------------------------------------------
+clean ::
+	$(RM) $(test-errors-lint) $(test-errors-link)
+
+## -----------------------------------------------------------------------
+## Intent: Display target help
 ## -----------------------------------------------------------------------
 help ::
-	@echo '  todo                Display future enhancement list.'
+	@echo '  test-errors    Run make test and display an error summary'
 
 $(if $(DEBUG),$(warning LEAVE))
 

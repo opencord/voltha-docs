@@ -62,6 +62,7 @@ reload: $(venv-activate-script)
 
 ## -----------------------------------------------------------------------
 ## Intent: lint and link verification. linkcheck is part of sphinx
+## See Also: make test-errors
 ## -----------------------------------------------------------------------
 test: lint linkcheck
 
@@ -95,7 +96,7 @@ md-lint: | $(OTHER_REPO_DOCS)
 	mdl -s $(LINT_STYLE) `find -L $(SOURCEDIR) ! -path "./_$(venv-activate-script)/*" ! -path "./_build/*" ! -path "./repos/*" ! -path "*vendor*" -name "*.md"`
 
 # clean up
-clean:
+clean ::
 	$(RM) -r $(BUILDDIR) $(OTHER_REPO_DOCS) $(STATIC_DOCS)
 
 clean-all sterile :: clean
@@ -180,12 +181,6 @@ $(voltha-docs-catchall): $(venv-activate-script) Makefile | $(OTHER_REPO_DOCS) $
 	@echo " ** CATCHALL: $@"
 	$(activate)\
  && $(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
-
-## -----------------------------------------------------------------------
-## -----------------------------------------------------------------------
-BROWSER ?= $(error Usage: $(MAKE) $@ BROWSER=)
-view-html:
-	"$(BROWSER)" _build/html/index.html
 
 ## -----------------------------------------------------------------------
 ## Intent: Display makefile target help

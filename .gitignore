@@ -1,4 +1,7 @@
+# -*- makefile -*-
+
 # build related
+.venv/
 venv_docs
 doc_venv
 _build
@@ -27,3 +30,10 @@ device-management-interface
 
 # OS
 .DS_Store
+
+# Logfiles
+log
+test-errors.*.log
+*.log
+
+# [EOF]
