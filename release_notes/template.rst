@@ -4,7 +4,7 @@
    :align: center
 
 
-VOLTHA 2.12 Release Notes
+VOLTHA 2.XX Release Notes
 =========================
 
 Highlights
@@ -40,7 +40,7 @@ Certification Program
 ---------------------
 
 Thanks to the Continuous Certification program at ONF we can also ensure
-that the following ONF member products are compatible with the VOLTHA 2.11
+that the following ONF member products are compatible with the VOLTHA 2.xx
 release:
 
 - Edgecore ASGVolt64 GPON OLT
@@ -52,7 +52,7 @@ release:
 Jira stories
 ------------
 A full list of stories and bugs completed can be found under the
-`VOLTHA 2.12 <https://jira.opencord.org/projects/VOL/versions/12600>`_ (`formatted <https://jira.opencord.org/secure/ReleaseNote.jspa?projectId=10106&version=12600>`_) release page in Jira.
+`VOLTHA 2.xx <https://jira.opencord.org/projects/VOL/versions/12600>`_ (`formatted <https://jira.opencord.org/secure/ReleaseNote.jspa?projectId=10106&version=12600>`_) release page in Jira.
 
 |
 
@@ -117,7 +117,6 @@ Weekly TST Meetings
 - `Rolling Agenda <https://www.google.com/url?q=https://docs.google.com/document/d/1mNqronCip_-tDjFI-ZoudNteC3AnOcVONPHz7HuW8Eg/edit?usp%3Dsharing&sa=D&source=calendar&ust=1686087684256971&usg=AOvVaw3km2VVU2j1qa6JCGI0iSBx>`_.
 
 Website
-+++++++
 - `onf/VOLTHA <https://opennetworking.org/voltha/>`_
 - `docs.voltha.org <https://docs.voltha.org>`_
 

@@ -1,7 +1,10 @@
 Release
 =======
+
 .. toctree::
    :maxdepth: 1
+
+   release-notes
 
    ci-management/index
    components/index

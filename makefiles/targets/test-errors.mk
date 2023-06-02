@@ -33,7 +33,7 @@ test-errors:
 	@echo "** Running $(MAKE) lint"
 	-$(HIDE) ( $(MAKE) lint 3>&1 2>&1 ) > $(test-errors-lint)
 
-	@echo '** Screen log for errors: $(test-errors-lint)'
+	@echo '** Examining log for errors: $(test-errors-lint)'
 	$(HIDE)! grep \
 	  -e 'make: ***' \
 	  $(test-errors-lint)
@@ -42,10 +42,10 @@ test-errors:
 	@echo "** Running $(MAKE) linkcheck"
 	-$(HIDE) ( $(MAKE) linkcheck 3>&1 2>&1 ) > $(test-errors-link)
 
-	@echo '** Screen log for errors: $(test-errors-link)'
+	@echo '** Examining log for errors: $(test-errors-link)'
 	$(HIDE)! grep \
 	  -e 'make: ***' \
-	  -e 'broken'    \
+	  -e ') broken'    \
 	 $(test-errors-link)
 
 ## -----------------------------------------------------------------------

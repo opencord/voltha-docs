@@ -126,7 +126,7 @@ Releases
      - December 30, 2022
      -
      -
-   * - `VOLTHA 2.12-FIXME <../release_notes/voltha_2.11.html>`_
+   * - `VOLTHA 2.12 <../release_notes/voltha_2.12.html>`_
      - December 30, 2022
      - June 30, 2023
      -
