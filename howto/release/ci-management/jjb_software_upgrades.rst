@@ -1,7 +1,7 @@
 jjb/software-upgrades.yaml
 --------------------------
 
-- Create a new software-upgrades-test-voltha-2.11 branch from master or existing
+- Create a new software-upgrades-test-voltha-x.yy branch from master or existing
   jjb definitions in the yaml config file.
 - Update released component version strings mentioned in the configs.
 - Update master branch released versions as well.

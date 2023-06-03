@@ -4,6 +4,7 @@ Release
 .. toctree::
    :maxdepth: 1
 
+   preparation
    release-notes
 
    ci-management/index
