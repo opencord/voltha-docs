@@ -28,8 +28,8 @@ Packages
 
   - Versions
 
-    - New
-    - Old
+    - New 2.10.3
+    - Old 2.9.0
 
   - DEPS: sadis
 
@@ -37,21 +37,22 @@ Packages
 
   - Versions
 
-    - `New: 5.11.0-SNAPSHOT <https://gerrit.opencord.org/plugins/gitiles/sadis/+/refs/heads/master/pom.xml#30>`_
+    - `New: 5.11.1-SNAPSHOT <https://gerrit.opencord.org/plugins/gitiles/sadis/+/refs/heads/master/pom.xml#30>`_
     - `Old: (5.10.0) <https://central.sonatype.com/artifact/org.opencord/sadis/5.10.0?smo=true>`_
 
+  - VCS
+
+    - `gerrit <https://gerrit.opencord.org/plugins/gitiles/sadis/+/refs/tags/5.11.0>`_
+    - `github <https://github.com/opencord/sadis/tree/5.10.0>`_
+
   - DEPS:
-
-TST(s)
-------
-
-- Verify the list of TST members are correct on
-
-  - `ONF Website <https://opennetworking.org/voltha/>`_
-  - `Wiki <https://wiki.opennetworking.org/display/COM/VOLTHA>`_
-  - `Release Notes <https://docs.voltha.org/master/release_notes/index.html>`_
 
 Release Notes
 -------------
 
 - Capture version information and packages for all builds.
+
+Helm Charts
+-----------
+
+Once dependent packages are built update helm charts:  charts/index

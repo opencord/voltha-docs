@@ -59,6 +59,79 @@ A full list of stories and bugs completed can be found under the
 Component Versions in VOLTHA 2.12 release
 -----------------------------------------
 
+Component Versions in VOLTHA 2.11 release
+-----------------------------------------
+
+ONOS and Atomix
++++++++++++++++
+
+.. list-table:: ONOS and Atomix
+   :widths: 30, 5, 5, 5, 5, 5
+   :header-rows: 2
+
+   * - Component
+     - VOLTHA
+     - Component
+     - with
+     - Gerrit
+     - Github
+   * - Name
+     - Version
+     - Version
+     - Chart
+     - URL
+     - URL
+   * -
+     -
+     -
+     -
+     -
+     -
+   * - `ONOS 2.5 LTS <https://github.com/opennetworkinglab/onos/releases/tag/2.5.8>`_
+     -
+     - ``-?-``
+     -
+     -
+     -
+   * - `ATOMIX <https://github.com/atomix/atomix/releases/tag/atomix-3.1.9>`_
+     -
+     - ``-?-``
+     -
+     -
+     -
+
+ONOS Apps
++++++++++
+
+.. list-table:: ONOS Apps
+   :widths: 30, 5, 5, 5, 5, 5
+   :header-rows: 2
+
+   * - Component
+     - VOLTHA
+     - Component
+     - with
+     - Gerrit
+     - Github
+   * - Name
+     - Version
+     - Version
+     - Chart
+     - URL
+     - URL
+   * -
+     -
+     -
+     -
+     -
+     -
+   * - `sadis <https://gerrit.opencord.org/gitweb?p=sadis.git;a=summary>`_
+     -
+     - ``5.11.0``
+     -
+     - `X <https://gerrit.opencord.org/plugins/gitiles/sadis/+/refs/tags/5.11.0>`__
+     - `5.10.0 <https://github.com/opencord/sadis/tree/5.10.0>`__
+
 Helm Chart Versions
 +++++++++++++++++++
 This section refers to the macro charts to deploy the required infrastructure and a (or many) VOLTHA stacks:

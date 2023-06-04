@@ -1,4 +1,4 @@
-VOLTHA Components: votlha-onos
+VOLTHA Components: voltha-onos
 ==============================
 
 voltha-onos is the last onos dependency to be released.
