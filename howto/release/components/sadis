@@ -1,0 +1,13 @@
+package: aaa
+  dep: sadis
+
+package: sadis
+
+
+Inventory pom.xml
+Update MVN Plugin versions in use.
+For Relase remove -SNAPSHOT and build.
+
+# Document component dependency page
+
+https://wiki.opennetworking.org/display/VOLTHA/component-sadis

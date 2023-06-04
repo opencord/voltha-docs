@@ -12,14 +12,51 @@ A jenkins job exists for releasing ONOS app
 
 - `Jenkins Release Job <https://jenkins.opencord.org/job/onos-app-release/>`_
 
+  - `MVN Plugin Upgrade <https://gerrit.opencord.org/c/sadis/+/34230>`_
+  - `5.11.0 (deploy) <https://gerrit.opencord.org/c/sadis/+/34231>`_
+  - `5.12.0-SNAPSHOT (dev) <https://gerrit.opencord.org/c/sadis/+/34232>`_
+
   - Initiate a build with parameters for the target component.
 
     - Use repository name not name of the app itself.
     - Specify appVersion and apiVersion stored in the pom.xml file.
 
-  - Job will modify pom.xml and create pull requests based on version strings.
+      - Files modified by jenkins: pom.xml, app/pom.xml, api/pom.xml
+
+.. list-table:: Job paramters
+   :widths: 10, 40
+   :header-rows: 1
+
+   * - Field
+     - Value
+   * - appRepo
+     - sadis
+   * - appName
+     - sadis
+   * - apiVersion
+     - 5.11.0 (pom.xml: 5.11.0-SNAPSHOT)
+   * - nextApiVersion
+     - 5.12.0
+   * - version
+     - 5.11.0
+   * - nextVersion
+     - 5.12.0
+   * - branch
+     - master (?)
+
+
+  - Jenkins jobs from `release matrix: v2.12 <https://wiki.opennetworking.org/display/VOLTHA/v2.12+-+Jenkins+jobs+and+failures>`_
+    - `changeset approval for job merge<https://gerrit.opencord.org/q/owner:do-not-reply%2540opennetworking.org>`_
+    - pom.xml non-SNAPSHOT (first approved changeset)
+      - `licensed <https://jenkins.opencord.org/job/verify_sadis_licensed/>`_
+      - `verify <https://jenkins.opencord.org/job/verify_sadis_maven-test/>`_
+    - pom.xml non-SNAPSHOT (second approved changeset)
+      - `publish <https://jenkins.opencord.org/job/maven-publish_sadis/>`_
+
+   - Job will modify pom.xml and create pull requests based on version strings.
 
     - NOTE: Two pull requests are created to modify pom.xml
+
       - One for release (x.y.z)
       - The second to revert to non-release version (x.(y+1).z-SNAPSHOT)
       - Approve and merge the release version while performing the release.
@@ -34,14 +71,21 @@ A jenkins job exists for releasing ONOS app
   - Wait for build to complete
   - Merge the patches here https://gerrit.opencord.org/q/owner:do-not-reply%2540opennetworking.org
 
-- Publish sonatype staging to maven central:
+- Artifact staging on sonatype, published to maven central:
 
   - Visit `https://oss.sonatype.org <https://oss.sonatype.org>`_
   - Login with ONF credentials
 
-    - Search for org.opencord
+    - In the Artifact Search box
+
+      - Search for org.opencord
+      - Find the package of interest (pkg, app, api)
+      - Click 'Show All Versions'
+      - Verify the released version exists
+
     - Click on "Staging repositories" (in the left side navigation)
     - In the top right search for last part of the app name (eg: olt)
+    - Enable checkbox for the versioned package (status: closed).
     - Click release (top left bar, small button)
     - `Wait until artifacts are published <https://search.maven.org/search?q=g:org.opencord>`_
 

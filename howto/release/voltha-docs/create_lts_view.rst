@@ -35,7 +35,7 @@ Global job view creation
 - Name view for the current release VOLTHA-XXX
 - Select type "List View"
 - Accept basic values to begin configuring
-- Add an appropraite job Description.
+- Add an appropriate job Description.
 - Scroll down to "Job Filters"
 
   - Selelect individual jobs
@@ -54,10 +54,20 @@ Add job view in the LTS folder
 - Add view name: VOLTHA-2.11
 - Select "Include a global view"
 - Click the "create" button
-- Type in an appropraite Description.
+- Type in an appropriate Description.
 - View name should contain the global view name VOLTHA-2.11
 - Click "Apply"
 - Click "OK"
+
+Create job folder voltha-2.12 on the dashboard (not a view)
+-----------------------------------------------------------
+
+- Visit `jenkins::Dashboard <https://jenkins.opencord.org>`_
+- Click "New View" in the left margin.
+- Copy entry 'voltha-master'
+- New name: voltha-2.12
+- Click the "create" button
+- Dashboard Folder `voltha-2.12 <https://jenkins.opencord.org/job/voltha-2.12/>`_
 
 Access LTS jobs
 ---------------
