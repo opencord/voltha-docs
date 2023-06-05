@@ -14,6 +14,8 @@ Release
    voltha-docs/index
    post-release/index
 
+   charts/index
+
    voltctl/index
    voltctl/install
    voltctl/release

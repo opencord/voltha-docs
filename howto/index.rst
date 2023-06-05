@@ -5,7 +5,11 @@ HOWTO
    :maxdepth: 2
 
    code/index
-   edit_voltha_docs
+   docs.voltha.org/index
    release/index
    ssh_access
    voltha_repositories
+
+   accounts
+   development
+   eof

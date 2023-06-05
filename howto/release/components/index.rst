@@ -7,8 +7,9 @@ VOLTHA Components
    onos_components
    onos_dependencies
    voltha-protos
-
-   voltctl/index
-   voltctl/install
-   voltctl/release
-   voltctl/see_also
+   
+   voltha-go.rst
+   voltha-lib-go
+   voltha-onos
+   voltha-openolt-adapter
+   voltha-openonu-adapter-go

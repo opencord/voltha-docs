@@ -20,7 +20,7 @@ Documentation Guide
 Building the Docs
 """""""""""""""""
 
-Building requires python, creates a virtualenv (``doc_venv``) which has all the
+Building requires python, creates a virtualenv (``.venv``) which has all the
 necessary tools.
 
 Run ``make html`` to generate html documentation in ``_build/html``.
@@ -111,3 +111,4 @@ See Also
 - `RST Markup Documentation <https://rstdoc.readthedocs.io/en/latest>`
 - `Sphinx Documentation <https://www.sphinx-doc.org/en/master>`
 - `RST Markup Specification <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html>`
+- howto/docs.voltha/org/quickstart

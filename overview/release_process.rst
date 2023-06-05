@@ -164,7 +164,7 @@ repo and creating a tag X.Y.Z on that branch.
 Documentation and Release Notes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Release notes for the voltha-X.Y release are created and added to the voltha-docs repo. Please follow the template of
-past releases, an :doc:`example </voltha_releases/voltha_2.9>`
+past releases, an :doc:`example <voltha_releases/voltha_2.9>`
 
 Also, if needed a voltha-X.Y branch is created on docs repo.  These release notes also contain all the
 versions of components that will be released, and may be updated during the final QA process.
