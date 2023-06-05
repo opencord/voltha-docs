@@ -15,3 +15,5 @@ Release Notes
    voltha_2.4.rst
    voltha_2.3.rst
    voltha_2.2.rst
+
+   template

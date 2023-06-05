@@ -2,7 +2,7 @@ VOLTHA Post Release Tasks
 =========================
 
 .. toctree::
-   :maxddepth 1
+   :maxdepth: 1
 
    gitreview
 

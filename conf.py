@@ -88,7 +88,9 @@ prep_commands = [
 ]
 
 # don't include tags
-smv_tag_whitelist = None
+# smv_tag_whitelist = None
+# smv_tag_whitelist = disabled^ # Was = None
+smv_tag_whitelist = 'disabled_a^' # Was = None
 
 # inlcude only the branches matching master and voltha-*
 smv_branch_whitelist = r'^(master|voltha-.*)$'
@@ -138,9 +140,12 @@ exclude_patterns = [
         'CODE_OF_CONDUCT.md',
         '*/CODE_OF_CONDUCT.md',
 # Ignore all:
+        '__pycache__',
         '**/__pycache__', # generated - faster traversal
+        '.venv',
+        '**/.venv',       # external virtual env
 # Revisit: one directory pattern is sufficient.
-        '**/doc_venv',
+        '**/doc_venv', 
         '**/venv_docs',
         '**/virtualenv',
         '**/vst_venv',

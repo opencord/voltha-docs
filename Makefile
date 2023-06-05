@@ -191,6 +191,22 @@ help :: $(venv-activate-script)
  && $(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 ## -----------------------------------------------------------------------
+## Intent: Display WARNINGS buried in sphinx output
+## -----------------------------------------------------------------------
+warnings-log := warnings.log
+warnings:
+	$(MAKE) html 2>&1 \
+	    | sed -e 's@\([Ww][Aa][Rr][Nn][Ii][Nn][Gg]\)@\n\1@g' \
+	    > "$(warnings-log)"
+	less --ignore-case --hilite-search --pattern='/warning' $(warnings-log)
+
+clean::
+	$(RM) $(warnings-log)
+
+help ::
+	@echo "  warnings              Display WARNING strings buried in sphinx output"
+
+## -----------------------------------------------------------------------
 ## Intent: Display make hel footer
 ## -----------------------------------------------------------------------
 include $(MAKEDIR)/help/trailer.mk
