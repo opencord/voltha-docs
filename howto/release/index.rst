@@ -20,3 +20,7 @@ Release
    voltctl/install
    voltctl/release
    voltctl/see_also
+
+   checklist
+   scripts/preparation
+   scripts/repository-voltha-release

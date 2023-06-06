@@ -45,12 +45,19 @@ A jenkins job exists for releasing ONOS app
      - master (?)
 
 
-  - Jenkins jobs from `release matrix: v2.12 <https://wiki.opennetworking.org/display/VOLTHA/v2.12+-+Jenkins+jobs+and+failures>`_
-    - `changeset approval for job merge<https://gerrit.opencord.org/q/owner:do-not-reply%2540opennetworking.org>`_
+Jenkins Jobs
+^^^^^^^^^^^^
+
+- Jenkins jobs from `release matrix: v2.12 <https://wiki.opennetworking.org/display/VOLTHA/v2.12+-+Jenkins+jobs+and+failures>`_
+
+    - `changeset approval for job merge <https://gerrit.opencord.org/q/owner:do-not-reply%2540opennetworking.org>`_
     - pom.xml non-SNAPSHOT (first approved changeset)
+
       - `licensed <https://jenkins.opencord.org/job/verify_sadis_licensed/>`_
       - `verify <https://jenkins.opencord.org/job/verify_sadis_maven-test/>`_
+
     - pom.xml non-SNAPSHOT (second approved changeset)
+
       - `publish <https://jenkins.opencord.org/job/maven-publish_sadis/>`_
 
    - Job will modify pom.xml and create pull requests based on version strings.
