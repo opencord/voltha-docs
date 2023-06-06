@@ -194,7 +194,7 @@ help :: $(venv-activate-script)
 ## Intent: Display WARNINGS buried in sphinx output
 ## -----------------------------------------------------------------------
 warnings-log := warnings.log
-warnings:
+warnings: sterile
 	$(MAKE) html 2>&1 \
 	    | sed -e 's@\([Ww][Aa][Rr][Nn][Ii][Nn][Gg]\)@\n\1@g' \
 	    > "$(warnings-log)"
