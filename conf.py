@@ -140,6 +140,7 @@ exclude_patterns = [
         'CODE_OF_CONDUCT.md',
         '*/CODE_OF_CONDUCT.md',
 # Ignore all:
+        'makefiles',
         '__pycache__',
         '**/__pycache__', # generated - faster traversal
         '.venv',

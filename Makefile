@@ -194,15 +194,32 @@ help :: $(venv-activate-script)
 ## Intent: Display WARNINGS buried in sphinx output
 ## -----------------------------------------------------------------------
 warnings-log := warnings.log
-warnings:
+warnings: sterile
 	$(MAKE) html 2>&1 \
 	    | sed -e 's@\([Ww][Aa][Rr][Nn][Ii][Nn][Gg]\)@\n\1@g' \
 	    > "$(warnings-log)"
-	less --ignore-case --hilite-search --pattern='/warning' $(warnings-log)
+	grep 'WARNING' $(warnings-log)
 
+## -----------------------------------------------------------------------
+## Intent: Summarize linkcheck failures
+## -----------------------------------------------------------------------
+.PHONY: broken-log
+broken-log := broken.log
+broken-log : sterile
+	$(MAKE) linkcheck 2>&1 | tee "$(broken-log)"
+	! grep broken "$(broken-log)"
+	grep -i error _build/linkcheck/output.txt
+
+## -----------------------------------------------------------------------
+## Intent:
+## -----------------------------------------------------------------------
 clean::
+	$(RM) $(broken-log)
 	$(RM) $(warnings-log)
 
+## -----------------------------------------------------------------------
+## Intent:
+## -----------------------------------------------------------------------
 help ::
 	@echo "  warnings              Display WARNING strings buried in sphinx output"
 

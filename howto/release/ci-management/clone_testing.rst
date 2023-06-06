@@ -12,11 +12,11 @@ JJB configs are maintained in a central repository and are not maintained
 on a seprate branch within revision control.  Instead versioning is
 implemented using naming conventions within the job configs.
 
-WIP: 
+WIP:
 ----
 - Clone the ci-management repository
 
-  - git clone ssh://gerrit.opencord.org:29418/ci-management.git 
+  - git clone ssh://gerrit.opencord.org:29418/ci-management.git
 
 
 TODO

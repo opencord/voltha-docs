@@ -23,19 +23,34 @@ Release Builds
 
 Packages
 --------
+
 - Package `aaa <https://gerrit.opencord.org/c/aaa/+/33599>`_
+
   - Versions
+
     - New
     - Old
+
   - DEPS: sadis
 
 - Package `sadis <https://gerrit.opencord.org/plugins/gitiles/sadis/>`_
+
   - Versions
+
     - `New: 5.11.0-SNAPSHOT <https://gerrit.opencord.org/plugins/gitiles/sadis/+/refs/heads/master/pom.xml#30>`_
     - `Old: (5.10.0) <https://central.sonatype.com/artifact/org.opencord/sadis/5.10.0?smo=true>`_
+
   - DEPS:
-  
-  
+
+TST(s)
+------
+
+- Verify the list of TST members are correct on
+
+  - `ONF Website <https://opennetworking.org/voltha/>`_
+  - `Wiki <https://wiki.opennetworking.org/display/COM/VOLTHA>`_
+  - `Release Notes <https://docs.voltha.org/master/release_notes/index.html>`_
+
 Release Notes
 -------------
 
