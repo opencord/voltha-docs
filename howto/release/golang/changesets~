@@ -1,0 +1,6 @@
+https://gerrit.opencord.org/c/voltha-lib-go/+/34326
+https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/34305
+
+# voltha-lib-go: v7.4.2
+# voltha-protos: 5.4.6
+https://gerrit.opencord.org/c/voltha-openonu-adapter-go/+/34305/1/go.mod

@@ -82,22 +82,15 @@ Dependent package version strings will be a released (non-SNAPSHOT) version.
       <aaa.api.version>2.8.0-SNAPSHOT</aaa.api.version>
    </properties>
 
-Update Maven plugin versions for security, bugs, logs, etc
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. code:: XML
+Update dependent components, apis, ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   <!-- SpotBugs Static Analysis -->
-   <plugin>
-       <groupId>com.github.spotbugs</groupId>
-       <artifactId>spotbugs-maven-plugin</artifactId>
-       <version>4.7.3.4</version>
-   </plugin>
+component: mcast
+dependency: sadis
 
-   <plugin>
-       <groupId>com.h3xstream.findsecbugs</groupId>
-       <artifactId>findsecbugs-plugin</artifactId>
-       <version>1.12.0</version>
-   </plugin>
+Update Maven Plugins
+^^^^^^^^^^^^^^^^^^^^
+:ref:`dependencies-update-maven-plugins`
 
 Update copyright notice to be inclusive of the year last modified
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

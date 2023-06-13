@@ -6,6 +6,7 @@ VOLTHA Components
 
    onos_components
    onos_dependencies
+   maven_plugins
    voltha-protos
 
    voltha-go.rst
@@ -13,3 +14,4 @@ VOLTHA Components
    voltha-onos
    voltha-openolt-adapter
    voltha-openonu-adapter-go
+

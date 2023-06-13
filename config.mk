@@ -38,8 +38,8 @@ NO-LINT-ROBOT      := true#        # NOTE[2]
 ##-----------------------------##
 ##---]  Custom exclusions  [---##
 ##-----------------------------##
-lint-doc8-excl += --ignore-path '_build'
-lint-doc8-excl += --ignore-path "vendor"
+lint-doc8-excl += '_build'
+lint-doc8-excl += 'vendor'
 
 config-mk-version    := 1.0
 

@@ -37,7 +37,11 @@ lint-doc8-modified : lint-doc8
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
 include $(MAKEDIR)/lint/doc8/excl.mk
-lint-doc8-excl := $(addprefix --ignore-path$(space),$(lint-doc8-excl-raw))
+
+ifdef lint-doc8-excl
+  lint-doc8-excl-args += $(addprefix --ignore-path$(space),$(lint-doc8-excl))
+endif
+lint-doc8-excl-args += $(addprefix --ignore-path$(space),$(lint-doc8-excl-raw))
 
 lint-doc8-args += --max-line-length 120
 
@@ -48,7 +52,7 @@ lint-doc8: $(venv-activate-script)
 	@echo '** -----------------------------------------------------------------------'
 	$(activate) && doc8 --version
 	@echo
-	$(activate) && doc8 $(lint-doc8-excl) $(lint-doc8-args) .
+	$(activate) && doc8 $(lint-doc8-excl-args) $(lint-doc8-args) .
 
 ## -----------------------------------------------------------------------
 ## Intent: Display command usage
