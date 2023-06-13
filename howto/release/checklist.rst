@@ -56,3 +56,60 @@ Helm Charts
 -----------
 
 Once dependent packages are built update helm charts:  charts/index
+
+Voltha with golang source
+-------------------------
+
+Review all repositories that contain golang sources.
+Version(s) of external packages in the vendor/ directory may need to be updated.
+
+.. code-block: shell-session
+   :linenos:
+   :hilight: 2, 4
+
+   # Clone repo:voltha-go
+   git clone ssh://gerrit.opencord.org:29418/voltha-go.git
+
+   cd voltha-go
+   make help
+
+.. list-table:: make targets
+   :header-rows: 1
+   :widths: 20,50
+
+   * - Command
+     - Description
+   * - make lint
+     - syntax check sources
+   * - make lint-dockerfile
+     - syntax check docker config
+   * - make lint-mod
+     - syntax check golang dependencies
+
+.. list-table:: build & test targets
+   :header-rows: 1
+   :widths: 20,50
+
+   * - Command
+     - Description
+   * - make build
+     - Build core docker image
+   * - make test
+     - Requires docker, test local build
+   * - make sca
+     - Generate a static code analysis report
+
+.. list-table:: Developer targets
+   :header-rows: 1
+   :widths: 20,50
+
+   * - Command
+     - Description
+   * - make local-lib-go
+     - Create a local version of voltha-lib-go beneath vendor/
+   * - make local-protos
+     - Create a local version of voltha-protos beneath vendor/
+   * - make fmt
+     - Run gofmt on sources
+   * - make mod-update
+     - Update go mod files
