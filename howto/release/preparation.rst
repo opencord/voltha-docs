@@ -20,3 +20,11 @@ Create a `release tracking page` <https://wiki.opennetworking.org/display/VOLTHA
 docs.voltha.org
 ---------------
 - Create a stub `release notes <https://docs.voltha.org/master/release_notes/voltha_2.12.html>`_ page beneath `docs.voltha.org/release_notes <https://docs.voltha.org/master/release_notes/index.html>`_ (`HOWTO <https://docs.voltha.org/master/howto/release/release-notes.html>`_
+
+golang repositories
+-------------------
+
+- Upgrade go.mod (voltha-proto version at a minimum) early.
+- Force a build to triage potential problems.
+- Another go.mod update will be needed after voltha-protos
+  is published but screen early for a set of known problems.

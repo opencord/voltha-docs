@@ -334,6 +334,10 @@ linkcheck_ignore=\
         r'../release_notes/voltha_2.12.html',
         #
         r'../voltha-helm-charts/README.html',
+        r'https://mvnrepository.com/artifact/org.slf4j/slf4j-api',
+        r'https://mvnrepository.com/artifact/org.mockito/mockito-all',
+        r'https://mvnrepository.com/artifact/com.h3xstream.findsecbugs/findsecbugs-plugin',
+        r'https://mvnrepository.com/artifact/com.github.spotbugs/spotbugs-maven-plugin',
     ]
 
 # -- Configure recommonmark to use AutoStructify -----------------------------
