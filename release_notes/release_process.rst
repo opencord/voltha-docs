@@ -23,24 +23,21 @@ helm chart, and adapter charts with version: ``2.3.0`` specified in
 ``Chart.yaml`` within the `voltha-helm-charts
 <https://gerrit.opencord.org/gitweb?p=voltha-helm-charts.git;a=summary>`_ repo.
 
-Accompanying tests for 2.3 are created by creating a branch created named
-``voltha-2.3`` on the `voltha-system-tests
-<https://gerrit.opencord.org/gitweb?p=voltha-system-tests.git;a=summary>`_
-repo. At release we create a tag ``2.3.0`` on that branch.
+A testing branch for ``2.3`` named ``voltha-2.3`` is created on repository `voltha-system-tests <https://gerrit.opencord.org/gitweb?p=voltha-system-tests.git;a=summary>`_.  At release we create a tag ``2.3.0`` on that branch.
 
 These two repos are the only ones receiving a ``2.3.0`` tag. Other repos that
 contain individual components have their own versioning/release cadence, driven
 by SemVer.
 
-For all other repos that create components that go into the release, tags will
-be created and ``voltha-2.3`` branches are created starting from the tag.
+For all other repos that create components that go into the release, a tag will
+be created and branch ``voltha-2.3`` will be created from the release tag.
 
 To allow for future patches to go into the repo in a way that does not conflict
-with the patch version, each component repo's ``VERSION`` file should have it's
-Minor version increased. (ex: ``1.1.x`` to ``1.2.0-dev``, so future ``1.1.x+1``
-component release can easily be created).
+with the patch version, each component repository ``VERSION`` file should
+have the Minor version increased. (ex: ``1.1.x`` to ``1.2.0-dev``, so future
+``1.1.x+1`` component release can easily be created).
 
-Testing CI jobs will be created that check out the voltha-2.3 branch of the
+Testing CI jobs will be created that check out the ``voltha-2.3`` branch of the
 `voltha-system-tests
 <https://gerrit.opencord.org/gitweb?p=voltha-system-tests.git;a=summary>`_
 repo, testing the charts as checked out with the ``voltha-2.3`` branch of

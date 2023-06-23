@@ -90,6 +90,10 @@ Versioning
 
 All of the VOLTHA components and the charts include a VERSION file that specifies
 the version of the service, library, protobuf, test suite included in the repository.
+
+- The `VERSION <https://gerrit.opencord.org/plugins/gitiles/voltha-go/+/refs/heads/master/VERSION>`_ file can be found in a repository root directory.
+- One exception: maven based builds using pom.xml files.
+
 The VERSION is in the format and follows the `SemVer principles <https://semver.org>`_
 VOLTHA also follows the guidelines on how to increment versions as described in the
 `SemVer specification <https://semver.org/#semantic-versioning-specification-semver>`_.

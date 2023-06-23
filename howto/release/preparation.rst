@@ -11,7 +11,7 @@ As release date approaches and development slows visit the `jira versions dashbo
 
 Confluence
 ----------
-Create a `release tracking page` <https://wiki.opennetworking.org/display/VOLTHA/v2.12>`_ in confluence, there are a lot of details
+Create a `release tracking page <https://wiki.opennetworking.org/display/VOLTHA/v2.12>`_ in confluence, there are a lot of details
 
 - Jira tickets related to release and VOLTHA builds.
 - Jenkins jobs: state, failures and tickets.
@@ -19,7 +19,7 @@ Create a `release tracking page` <https://wiki.opennetworking.org/display/VOLTHA
 
 docs.voltha.org
 ---------------
-- Create a stub `release notes <https://docs.voltha.org/master/release_notes/voltha_2.12.html>`_ page beneath `docs.voltha.org/release_notes <https://docs.voltha.org/master/release_notes/index.html>`_ (`HOWTO <https://docs.voltha.org/master/howto/release/release-notes.html>`_
+- Create a stub `release notes <https://docs.voltha.org/master/release_notes/voltha_2.12.html>`_ page beneath `docs.voltha.org/release_notes <https://docs.voltha.org/master/release_notes/index.html>`_ (`HOWTO <https://docs.voltha.org/master/howto/release/release-notes.html>`_)
 
 golang repositories
 -------------------

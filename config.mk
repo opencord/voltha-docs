@@ -21,16 +21,16 @@
 # NO-LINT-DOC8       := true
 NO-LINT-FLAKE8       := true#      # NOTE[1]
 # NO-LINT-JJB        := true
-NO-LINT-JSON       := true
+NO-LINT-JSON         := true
 #   python -m json.tool ./_build/linkcheck/output.json
 #   Extra data: line 2 column 1 (char 181)
 # NO-LINT-MAKE       := true
 NO-LINT-PYLINT       := true#      # NOTE[1]
 # NO-LINT-PYTHON     := true
-NO-LINT-ROBOT      := true#        # NOTE[2]
+NO-LINT-ROBOT        := true#        # NOTE[2]
 # NO-LINT-SHELL      := true
 # NO-LINT-TOX        := true#      # WIP
-# NO-LINT-YAML       := true
+NO-LINT-YAML         := true
 
 # NOTE[1] - Cleanup needed to enable as a default make lint target
 # NOTE[2] - Doc repo, no need to lint robot sources here.

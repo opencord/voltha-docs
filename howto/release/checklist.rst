@@ -113,3 +113,5 @@ Version(s) of external packages in the vendor/ directory may need to be updated.
      - Run gofmt on sources
    * - make mod-update
      - Update go mod files
+
+Review `voltha-helm-charts <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts>`_
