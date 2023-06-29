@@ -55,7 +55,46 @@ Release Notes
 Helm Charts
 -----------
 
+voltha-infra
+^^^^^^^^^^^^
+
 Once dependent packages are built update helm charts:  charts/index
+- Verify by `installation <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts>`_
+
+.. code:: bash
+
+   helm upgrade --install --create-namespace -n infra --version 2.8.0 voltha-infra onf/voltha-infra
+
+voltha-stack
+^^^^^^^^^^^^
+
+.. code:: bash
+
+   helm upgrade --install --create-namespace \
+       -n voltha voltha onf/voltha-stack \
+       --set global.stack_name=voltha \
+       --set global.voltha_infra_name=voltha-infra \
+       --set global.voltha_infra_namespace=infra
+
+Verify DT & TT
+^^^^^^^^^^^^^^
+
+`deploying-a-different-workflow <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts#deploying-a-different-workflow>`_
+
+Update
+https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-stack/Chart.yaml
+
+
+Misc
+^^^^
+
+.. code:: bash
+
+   helm upgrade --install -n voltha bbsim0 onf/bbsim --set olt_id=10
+
+   # https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts#deploying-a-different-workflow
+   kubectl get pods --all-namespaces
+
 
 Voltha with golang source
 -------------------------
@@ -115,3 +154,7 @@ Version(s) of external packages in the vendor/ directory may need to be updated.
      - Update go mod files
 
 Review `voltha-helm-charts <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts>`_
+
+Release voltha-protos & friends in order
+----------------------------------------
+https://docs.voltha.org/master/overview/release_process.html?highlight=charts%20yaml

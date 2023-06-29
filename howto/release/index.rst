@@ -7,6 +7,7 @@ Release
    preparation
    release-notes
 
+   branching/index
    ci-management/index
    components/index
    hierarchy/index
