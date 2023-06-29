@@ -117,17 +117,17 @@ Releases
      -
      -
    * - `VOLTHA 2.10 <../release_notes/voltha_2.10.html>`_
-     - June 30, 2022
-     - December 30, 2022
+     - July 1, 2022
+     - Dec 30, 2022
      -
      -
    * - `VOLTHA 2.11 <../release_notes/voltha_2.11.html>`_
-     - June 30, 2022
-     - December 30, 2022
+     - Feb 6, 2023
+     - July 1, 2023
      -
      -
    * - `VOLTHA 2.12 <../release_notes/voltha_2.12.html>`_
-     - December 30, 2022
-     - June 30, 2023
+     - July 1, 2023
+     - Dec 30, 2023
      -
      -
