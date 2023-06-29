@@ -1,6 +1,7 @@
 # -*- makefile -*-
 
 # build related
+__pycache__/
 .venv/
 venv_docs
 doc_venv

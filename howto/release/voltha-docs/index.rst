@@ -10,4 +10,5 @@ Intro
    :maxdepth: 1
 
    release_notes
+   release_history
    create_lts_view

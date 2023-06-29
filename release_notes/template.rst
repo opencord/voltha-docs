@@ -40,7 +40,7 @@ Certification Program
 ---------------------
 
 Thanks to the Continuous Certification program at ONF we can also ensure
-that the following ONF member products are compatible with the VOLTHA 2.xx
+that the following ONF member products are compatible with the VOLTHA 2.XX
 release:
 
 - Edgecore ASGVolt64 GPON OLT
@@ -52,11 +52,11 @@ release:
 Jira stories
 ------------
 A full list of stories and bugs completed can be found under the
-`VOLTHA 2.xx <https://jira.opencord.org/projects/VOL/versions/12600>`_ (`formatted <https://jira.opencord.org/secure/ReleaseNote.jspa?projectId=10106&version=12600>`_) release page in Jira.
+`VOLTHA 2.XX <https://jira.opencord.org/projects/VOL/versions/12600>`_ (`formatted <https://jira.opencord.org/secure/ReleaseNote.jspa?projectId=10106&version=12600>`_) release page in Jira.
 
 |
 
-Component Versions in VOLTHA 2.12 release
+Component Versions in VOLTHA 2.XX release
 -----------------------------------------
 
 Helm Chart Versions
@@ -109,15 +109,20 @@ Slack
 
 Mailing List
 ++++++++++++
+
   - `voltha-discuss@opennetworking.org <https://groups.google.com/a/opennetworking.org/g/voltha-discuss>`_.
 
 Weekly TST Meetings
 +++++++++++++++++++
-- `Zoom Meeting <https://www.google.com/url?q=https://onf.zoom.us/j/978447356?pwd%3DdS9WajNLam9ZeFExOHV3SXB2Nk1VZz09&sa=D&source=calendar&ust=1686087684256971&usg=AOvVaw3dMQpIMYLlyjTTmkvW_edp>`_.
-- `Rolling Agenda <https://www.google.com/url?q=https://docs.google.com/document/d/1mNqronCip_-tDjFI-ZoudNteC3AnOcVONPHz7HuW8Eg/edit?usp%3Dsharing&sa=D&source=calendar&ust=1686087684256971&usg=AOvVaw3km2VVU2j1qa6JCGI0iSBx>`_.
 
-Website
-- `onf/VOLTHA <https://opennetworking.org/voltha/>`_
-- `docs.voltha.org <https://docs.voltha.org>`_
+  - `Zoom Meeting <https://www.google.com/url?q=https://onf.zoom.us/j/978447356?pwd%3DdS9WajNLam9ZeFExOHV3SXB2Nk1VZz09&sa=D&source=calendar&ust=1686087684256971&usg=AOvVaw3dMQpIMYLlyjTTmkvW_edp>`_.
+  - `Rolling Agenda <https://www.google.com/url?q=https://docs.google.com/document/d/1mNqronCip_-tDjFI-ZoudNteC3AnOcVONPHz7HuW8Eg/edit?usp%3Dsharing&sa=D&source=calendar&ust=1686087684256971&usg=AOvVaw3km2VVU2j1qa6JCGI0iSBx>`_.
+
+Website(s)
+++++++++++
+
+  - `onf/VOLTHA <https://opennetworking.org/voltha/>`_
+  - `docs.voltha.org <https://docs.voltha.org>`_
+  - `Wiki <https://wiki.opennetworking.org/display/VOLTHA/Voltha>`_
 
 |

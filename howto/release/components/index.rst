@@ -4,6 +4,14 @@ VOLTHA Components
 .. toctree::
    :maxdepth: 1
 
+   igmpproxy/index
+   kafka/index
+   maclearner/index
+   mcast/index
+   olt/index
+   olttopology/index
+   pppoeagent/index
+
    onos_components
    onos_dependencies
    maven_plugins
@@ -18,13 +26,6 @@ VOLTHA Components
    apache-karaf/index
    atomix/index
    onos/index
-
-   maclearner/index
-   mcast/index
-   olt/index
-   olttopology/index
-   pppoeagent/index
-
 
 See Also
 --------

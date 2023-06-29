@@ -34,6 +34,16 @@ linkcheck_ignore.extend([
     r'https://mvnrepository.com/artifact/org.opencord/\S+',
 ])
 
+## [HACK] to get release notes edits in
+linkcheck_ignore.extend([
+
+    r'https://mvnrepository.com/artifact/org.apache.servicemix.bundles/org.apache.servicemix.bundles.kafka-clients',
+
+    # conf.py#308 - Anchor '308' not found
+    # Line numbers in source are valid, figure out why this was flagged
+#    r'https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/conf.py\#\d+',
+])
+
 ## -----------------------------------------------------------------------
 ## https://jira.opencord.org/browse/VOL-5079
 ## -----------------------------------------------------------------------

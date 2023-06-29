@@ -28,7 +28,7 @@ Cookbook: Patch #1
 
 - Add `release_notes/voltha_2.12.rst <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/release_notes/voltha_2.11.rst>`_ in the index file `release_notes/index.rst <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/release_notes/index.rst>`_
 
-- Modify `config.py <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/conf.py#308>`_ so ``make linkcheck`` will not fail on yet-to-be-generated html release notes file.
+- Modify `config.py <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/conf.py>`_ so ``make linkcheck`` will not fail on yet-to-be-generated html release notes file.
 
 - Release notes: content and hilights:
 
