@@ -15,6 +15,10 @@ VOLTHA Components
    voltha-openolt-adapter
    voltha-openonu-adapter-go
 
+   apache-karaf/index
+   atomix/index
+   onos/index
+
    maclearner/index
    mcast/index
    olt/index

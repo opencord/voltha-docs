@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#
+
 # Configuration file for the Sphinx documentation builder.
 #
 # This file does only contain a selection of the most common options. For a
@@ -19,9 +19,16 @@ import os
 import sys
 from pathlib import Path
 
-if True:
-    pwd = Path(__file__).parent.as_posix()
-    sys.path.append(pwd)
+# --------------------------------------------------------------
+# Large exclusion list(s) extracted from conf.py => .sphinx/*.py
+if True: # Set searchpath early
+    abs_path = Path('.').resolve().as_posix()
+    sys.path.insert(0, abs_path)
+
+# from sphinx_conf import *
+from sphinx_conf.exclude_patterns import exclude_patterns
+from sphinx_conf.linkcheck_ignore import linkcheck_ignore
+# --------------------------------------------------------------
 
 # -----------------------------------------------------------------------
 # -----------------------------------------------------------------------
@@ -116,41 +123,6 @@ master_doc = 'index'
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
 language = None
-
-# List of patterns, relative to source directory, that match files and
-# directories to ignore when looking for source files.
-# This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = [
-        '*/LICENSE.md',
-        '*/RELEASE_NOTES.md',
-        '*/vendor',
-        '.DS_Store',
-        'Thumbs.db',
-        '_build',
-        'voltha-go/BUILD.md',
-        'cord-tester/venv_cord',
-        'cord-tester/docs',
-        'cord-tester/src',
-        'cord-tester/README.md',
-        'cord-tester/cord-robot/README.rst',
-        'openolt/agent/*',
-        'repos',
-        'requirements.txt',
-        'bbsim/README.md',
-        'CODE_OF_CONDUCT.md',
-        '*/CODE_OF_CONDUCT.md',
-# Ignore all:
-        'makefiles',
-        '__pycache__',
-        '**/__pycache__', # generated - faster traversal
-        '.venv',
-        '**/.venv',       # external virtual env
-# Revisit: one directory pattern is sufficient.
-        '**/doc_venv', 
-        '**/venv_docs',
-        '**/virtualenv',
-        '**/vst_venv',
-]
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = None
@@ -311,34 +283,7 @@ todo_include_todos = True
 
 # -- Options for linkcheck ---------------------------------------------------
 # The link checker strips off .md from links and then complains
-linkcheck_ignore=\
-    [
-        r'https://github.com/opencord/voltctl/blob/master/LICENSE',
-        r'https://github.com/ciena/kind-voltha#voltha-up-configuration-options',
-        r'https://www.sphinx-doc.org',
-        r'https://github.com/opencord/bbsim/blob/master/docs/source/DMI_Server_README',
-        r'https://github.com/opencord/voltha-helm-charts/blob/master/README',
-        r'https://github.com/atomix/atomix/releases/tag/atomix-3.1.9',
-        r'https://github.com/atomix/atomix/releases/tag/atomix-3.1.8',
-        #
-        r'../release_notes/voltha_2.2.html',
-        r'../release_notes/voltha_2.3.html',
-        r'../release_notes/voltha_2.4.html',
-        r'../release_notes/voltha_2.5.html',
-        r'../release_notes/voltha_2.6.html',
-        r'../release_notes/voltha_2.7.html',
-        r'../release_notes/voltha_2.8.html',
-        r'../release_notes/voltha_2.9.html',
-        r'../release_notes/voltha_2.10.html',
-        r'../release_notes/voltha_2.11.html',
-        r'../release_notes/voltha_2.12.html',
-        #
-        r'../voltha-helm-charts/README.html',
-        r'https://mvnrepository.com/artifact/org.slf4j/slf4j-api',
-        r'https://mvnrepository.com/artifact/org.mockito/mockito-all',
-        r'https://mvnrepository.com/artifact/com.h3xstream.findsecbugs/findsecbugs-plugin',
-        r'https://mvnrepository.com/artifact/com.github.spotbugs/spotbugs-maven-plugin',
-    ]
+# linkcheck_ignore SEE .sphinx/linkcheck_ignore.py
 
 # -- Configure recommonmark to use AutoStructify -----------------------------
 # Docs: https://recommonmark.readthedocs.io/en/latest/auto_structify.html

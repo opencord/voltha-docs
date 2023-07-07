@@ -1,0 +1,8 @@
+ONOS Component: Atomix
+======================
+
+Dependency will be deprecated by the v2.13 release so no need to upgrade.
+
+See Also
+--------
+- `VOL-5065 <https://jira.opencord.org/browse/VOL-5065>`_

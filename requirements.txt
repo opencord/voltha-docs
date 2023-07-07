@@ -1,3 +1,5 @@
+# -*- makefile -*-
+
 Sphinx~=4.1.2
 doc8~=0.9.0
 docutils==0.16
@@ -6,3 +8,7 @@ sphinx-rtd-theme~=0.5.2
 sphinxcontrib-openapi~=0.6.0
 sphinxcontrib-spelling~=7.2.1
 git+https://github.com/zdw/sphinx-multiversion@ec7c01cdaf2f9241245e84483dfb9bc0d0dffc62
+
+sphinx-reload
+
+# [EOF]
