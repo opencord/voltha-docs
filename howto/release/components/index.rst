@@ -19,8 +19,8 @@ VOLTHA Components
    mcast/index
    olt/index
    olttopology/index
+   kafka-onos/indx
    pppoeagent/index
-
 
 See Also
 --------
