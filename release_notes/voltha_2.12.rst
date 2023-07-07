@@ -101,11 +101,12 @@ ONOS Apps
 +++++++++
 
 .. list-table:: ONOS Apps
-   :widths: 30, 5, 5, 5, 5, 5, 5
+   :widths: 10, 5, 2, 3, 5, 5, 5, 1
    :header-rows: 2
 
    * - Component
      - VOLTHA
+     - Maven
      - Component
      - with
      - Gerrit
@@ -113,7 +114,8 @@ ONOS Apps
      - Release
    * - Name
      - Version
-     - Version
+     - Version(s)
+     - Artifact
      - Chart
      - URL
      - URL
@@ -125,44 +127,61 @@ ONOS Apps
      -
      -
      -
+     -
    * - `aaa <https://gerrit.opencord.org/gitweb?p=aaa.git;a=summary>`_
-     - N/A
-     - `2.10.3 <https://central.sonatype.com/artifact/org.opencord/aaa/2.10.3>`_
+     -
+     - `2.10.3 <https://mvnrepository.com/artifact/org.opencord/aaa>`_
+     - `api <https://central.sonatype.com/artifact/org.opencord/aaa-api/2.10.3>`__
+       `app <https://central.sonatype.com/artifact/org.opencord/aaa-app/2.10.3>`__
+       `pkg <https://central.sonatype.com/artifact/org.opencord/aaa/2.10.3>`__
      -
      - `X <https://gerrit.opencord.org/plugins/gitiles/aaa/+/refs/tags/2.10.3>`__
      - `X <https://github.com/opencord/aaa/tree/2.10.3>`__
      -
    * - `bng <https://gerrit.opencord.org/gitweb?p=bng.git;a=summary>`_
      -
-     - `2.5.0 <https://central.sonatype.com/artifact/org.opencord/bng/2.5.0>`_
+     - `2.5.0 <https://central.sonatype.com/artifact/org.opencord/bng>`__
+     - `api <https://mvnrepository.com/artifact/org.opencord/bng-api/2.5.0>`__
+       `app <https://mvnrepository.com/artifact/org.opencord/bng-app/2.5.0>`__
+       `pkg <https://mvnrepository.com/artifact/org.opencord/bng/2.5.0>`__
      -
      - `X <https://github.com/opencord/bng/tree/2.5.0>`__
      - `X <https://gerrit.opencord.org/plugins/gitiles/bng/+/refs/tags/2.5.0>`__
      -
    * - `dhcpl2relay <https://gerrit.opencord.org/gitweb?p=dhcpl2relay.git;a=summary>`_
      -
-     - `2.10.0 <https://central.sonatype.com/artifact/org.opencord/dhcpl2relay/2.10.0>`_
+     - `2.10.0 <https://mvnrepository.com/artifact/org.opencord/dhcpl2relay>`_
+     - `api <https://mvnrepository.com/artifact/org.opencord/dhcpl2relay-api/2.10.0>`_
+       `app <https://mvnrepository.com/artifact/org.opencord/dhcpl2relay-app/2.10.0>`_
+       `pkg <https://mvnrepository.com/artifact/org.opencord/dhcpl2relay/2.10.0>`_
      -
      - `X <https://gerrit.opencord.org/plugins/gitiles/dhcpl2relay/+/refs/tags/2.10.0>`__
      - `X <https://github.com/opencord/dhcpl2relay/tree/2.10.0>`__
      -
    * - `igmpproxy <https://gerrit.opencord.org/gitweb?p=igmpproxy.git;a=summary>`_
      -
-     - ``2.7.0``
+     - `2.8.0 <https://mvnrepository.com/artifact/org.opencord/onos-app-igmpproxy>`__
+     - `app <https://mvnrepository.com/artifact/org.opencord/onos-app-igmpproxy-app/2.8.0>`__
+       `api <https://mvnrepository.com/artifact/org.opencord/onos-app-igmpproxy-api/2.8.0>`__
+       `pkg <https://mvnrepository.com/artifact/org.opencord/onos-app-igmpproxy/2.8.0>`__
      -
      - `X <https://gerrit.opencord.org/plugins/gitiles/igmpproxy/+/refs/tags/2.7.0>`__
      - `X <https://github.com/opencord/igmpproxy/tree/2.7.0>`__
      - !
    * - `kafka <https://gerrit.opencord.org/gitweb?p=kafka-onos.git;a=summary>`_
      -
-     - ``2.11.1``
+     - `2.12-unpublished <https://mvnrepository.com/artifact/org.opencord/kafka>`__
+     - `api <https://mvnrepository.com/artifact/org.opencord/kafka-api/2.10.0>`__
+       `app <https://mvnrepository.com/artifact/org.opencord/kafka-app/2.10.0>`__
+       `pkg <https://mvnrepository.com/artifact/org.opencord/kafka/2.10.0>`__
      -
-     - `X <https://gerrit.opencord.org/plugins/gitiles/kafka-onos/+/refs/tags/2.11.1>`__
-     - `X <https://github.com/opencord/kafka-onos/tree/2.11.1>`__
+     - ``X-unpublished`` ``https://gerrit.opencord.org/plugins/gitiles/kafka-onos/+/refs/tags/2.12.0``
+     - ``X-unpublished`` ``https://github.com/opencord/kafka-onos/tree/2.12.0``
      - !
    * - `mcast <https://gerrit.opencord.org/gitweb?p=mcast.git;a=summary>`_
      -
      - `2.9.0 <https://central.sonatype.com/artifact/org.opencord/mcast/2.9.0>`_
+     -
      -
      - `X <https://gerrit.opencord.org/plugins/gitiles/mcast/+/refs/tags/2.9.0>`__
      - `X <https://github.com/opencord/mcast/tree/2.9.0>`__
@@ -171,12 +190,14 @@ ONOS Apps
      -
      - `5.2.4 <https://central.sonatype.com/artifact/org.opencord/olt/5.2.4>`_
      -
+     -
      - `X <https://gerrit.opencord.org/plugins/gitiles/olt/+/refs/tags/5.2.4>`__
      - `X <https://github.com/opencord/olt/tree/5.2.4>`__
      -
    * - `sadis <https://gerrit.opencord.org/gitweb?p=sadis.git;a=summary>`_
      -
      - `5.11.1 <https://central.sonatype.com/artifact/org.opencord/sadis/5.11.1>`_
+     -
      -
      - `X <https://gerrit.opencord.org/plugins/gitiles/sadis/+/refs/tags/5.11.1>`__
      - `X <https://github.com/opencord/sadis/tree/5.11.1>`__
@@ -185,12 +206,14 @@ ONOS Apps
      -
      - ``1.2.0``
      -
+     -
      - `X <https://gerrit.opencord.org/plugins/gitiles/pppoeagent/+/refs/tags/1.2.1>`__
      - `X <https://github.com/opencord/pppoeagent/tree/1.2.1>`__
      - !
    * - `olttopology <https://gerrit.opencord.org/plugins/gitiles/olttopology/>`_
      -
      - ``1.2.0``
+     -
      -
      - `X <https://gerrit.opencord.org/plugins/gitiles/olttopology/+/refs/tags/1.2.1>`__
      - `X <https://github.com/opencord/olttopology/tree/1.2.1>`__
