@@ -16,6 +16,24 @@
       "message": "howto/release/components/pppoeagent/index.rst still has merge conflict markings,\nWhy did dates in overview/releases.rst for released versions change?   Were the timeframes wrong initially?\n",
       "revId": "80dfc7290d5d7f133ec7c1fae5038334ed9c76bb",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1335863b_6e39c790",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-07-08T17:11:22Z",
+      "side": 1,
+      "message": "releases.rst - yes content distributed into multiple pages and dates were incorrect/not updated.\n\nChecking on merge conflicts but that may have been corrected already.",
+      "parentUuid": "12641445_4a60b6b9",
+      "revId": "80dfc7290d5d7f133ec7c1fae5038334ed9c76bb",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
