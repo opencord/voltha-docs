@@ -23,5 +23,7 @@ Release
    voltctl/see_also
 
    checklist
+   repositories/index
    scripts/preparation
    scripts/repository-voltha-release
+   voltha-system-tests/index

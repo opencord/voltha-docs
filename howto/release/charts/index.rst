@@ -13,3 +13,10 @@ RELEASE: voltha-helm-charts
   - make test
     - make lint-chart
     - make lint-helm
+
+onos
+----
+
+- Update ONOS components `voltha-infra/values.yaml <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-infra/values.yaml>`_
+
+
