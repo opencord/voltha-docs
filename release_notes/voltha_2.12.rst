@@ -203,11 +203,13 @@ ONOS Components
      - `X <https://gerrit.opencord.org/plugins/gitiles/sadis/+/refs/tags/5.11.1>`__
      - `X <https://github.com/opencord/sadis/releases/tag/5.11.1>`__
 
+- `Docker Images: opencord <https://hub.docker.com/search?q=opencord>`_
+
 VOLTHA Components
 +++++++++++++++++
 
 .. list-table:: VOLTHA Components
-   :widths: 30, 5, 5, 5, 5, 5, 5
+   :widths: 30, 5, 5, 5, 5, 5, 5, 5, 5, 5
    :header-rows: 2
 
    * - Component
@@ -217,14 +219,23 @@ VOLTHA Components
      - Gerrit
      - Github
      - `Docker <https://hub.docker.com/search?q=voltha>`_
+     - go
+     - pypi
+     -
    * - Name
-     - Version
-     - Version
+     - Ver
+     - Ver
      - `with Chart <https://gerrit.opencord.org/gitweb?p=helm-charts.git;a=tree;f=bbsim>`_
      - ULR
      - URL
      - URL
+     -
+     -
+     - status
    * -
+     -
+     -
+     -
      -
      -
      -
@@ -238,6 +249,9 @@ VOLTHA Components
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master>`__
      - `X <https://github.com/opencord/voltha-helm-charts/tree/3.2.0>`__
      -
+     -
+     -
+     -
    * - `bbsim <https://gerrit.opencord.org/gitweb?p=bbsim.git;a=tree>`__
      - ``1.14.4``
      - ``4.8.6``
@@ -245,12 +259,18 @@ VOLTHA Components
      -
      - `X <https://github.com/opencord/bbsim/tree/v1.14.4>`__
      - `X <https://hub.docker.com/layers/voltha/bbsim/1.14.4/images/sha256-c23de193c1d7cf8d32c48edfbec4bfa6c47dbeecd4b31d040da0255eeab2ec58?context=explore>`__
+     -
+     -
+     -
    * - `Bbsim-sadis-server <https://gerrit.opencord.org/gitweb?p=bbsim-sadis-server.git;a=tree>`_
      -
      - ``0.3.4``
      - `0.3.2 <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/bbsim-sadis-server/Chart.yaml>`_
      - `X <https://gerrit.opencord.org/plugins/gitiles/bbsim-sadis-server/+/refs/tags/v0.3.4>`_
      - `X <https://github.com/opencord/bbsim-sadis-server/releases/tag/v0.3.4>`__
+     -
+     -
+     -
      -
    * - `ofagent-go <https://gerrit.opencord.org/gitweb?p=ofagent-go.git;a=tree>`_
      - ``2.1.3``
@@ -259,12 +279,18 @@ VOLTHA Components
      -
      - `X <https://github.com/opencord/ofagent-go>`__
      - `1.1.4-? <https://hub.docker.com/layers/voltha/ofagent-go/1.1.4/images/sha256-8231111b69c8643c4981d64abff0a85d71f80763bb98632bb101e92b89882647?context=explore>`_
+     -
+     -
+     -
    * - `openolt agent <https://gerrit.opencord.org/gitweb?p=openolt.git;a=tree>`_
      -
      - ``4.2.12``
      -
      -
      - `X <https://github.com/opencord/openolt>`__
+     -
+     -
+     -
      -
    * - `voltctl <https://gerrit.opencord.org/gitweb?p=voltctl.git;a=tree>`_
      - ``1.8.3``
@@ -273,6 +299,9 @@ VOLTHA Components
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltctl/+/refs/tags/v1.8.3>`__
      - `X <https://github.com/opencord/voltctl/tree/v1.8.3>`__
      -
+     -
+     -
+     -
    * - `voltha-go <https://gerrit.opencord.org/gitweb?p=voltha-go.git;a=tree>`_
      - ``3.1.8``
      - docker
@@ -280,13 +309,20 @@ VOLTHA Components
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-go/+/refs/tags/v3.1.8>`__
      - `X <https://github.com/opencord/voltha-go/tree/v3.1.8>`__
      -
+     - `v7 <https://pkg.go.dev/github.com/opencord/voltha-lib-go/v7>`_
+       `v5 <https://pkg.go.dev/github.com/opencord/voltha-lib-go/v5>`_
+     -
+     -
    * - `voltha-lib-go <https://gerrit.opencord.org/plugins/gitiles/voltha-lib-go>`_
-     - ``2.11.3 (?)``
-     - ``7.3.2``
+     - ``7.4.4``
      -
-     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-lib-go/+/refs/tags/v7.3.2>`__
-     - `X <https://github.com/opencord/voltha-lib-go/releases/tag/v7.3.2>`__
      -
+     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-lib-go/+/refs/tags/v7.4.4>`__
+     - `X <https://github.com/opencord/voltha-lib-go/releases/tag/v7.4.4>`__
+     -
+     -
+     -
+     - triage
    * - `voltha-onos <https://gerrit.opencord.org/gitweb?p=voltha-onos.git;a=tree>`_
      -
      - ``5.1.2``
@@ -294,6 +330,9 @@ VOLTHA Components
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-onos/+/refs/tags/5.1.3>`__
      - `X <https://github.com/opencord/voltha-onos/tree/5.1.3>`__
      - `X <https://hub.docker.com/layers/voltha/voltha-onos/5.1.3/images/sha256-d9c686acf177ed823ff359dc43ba59aab05ae067be27c92e48c08b72f94b9ca3?context=explore>`__
+     -
+     -
+     -
    * - `voltha-openonu-adapter-go <https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter-go.git;a=tree>`_
      -
      - ``2.7.3``
@@ -301,6 +340,9 @@ VOLTHA Components
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-openonu-adapter-go/+/refs/tags/v2.7.3>`__
      - `X <https://github.com/opencord/voltha-openonu-adapter-go/tree/v2.7.3>`__
      - `X <https://hub.docker.com/layers/voltha/voltha-openonu-adapter-go/2.7.3/images/sha256-e9484a8963d08748af5766a6a8ce7f7485efb384488bcf93840ecc1142d7ad74?context=explore>`__
+     -
+     -
+     -
    * - `voltha-openolt-adapter <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree>`_
      - ``v4.2.12``
      - ``4.2.6``
@@ -308,12 +350,19 @@ VOLTHA Components
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-openolt-adapter/+/refs/tags/v4.2.12>`__
      - `X <https://github.com/opencord/voltha-openolt-adapter/tree/v4.2.12>`__
      - `X <https://hub.docker.com/layers/voltha/voltha-openolt-adapter/4.2.12/images/sha256-844eac272323dc8bca10880a111957a95839578b3210dd777be5ac9370aaa52e?context=explore>`__
+     -
+     -
+     -
    * - `voltha-protos <https://gerrit.opencord.org/plugins/gitiles/voltha-protos>`_
      -
-     - `5.3.8 <https://pypi.org/project/voltha-protos/5.3.8>`__
+     - `5.4.7 <https://pypi.org/project/voltha-protos/>`__
+       `tgz <https://files.pythonhosted.org/packages/96/3d/c7ddb804cd8f47fb1fd1f7d11e11aa06fe22611e7363d3cf928852e2515d/voltha-protos-5.4.7.tar.gz>`_
      -
-     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/tags/v5.3.8>`__
-     - `X <https://github.com/opencord/voltha-protos/tree/v5.3.8>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/tags/v5.4.7>`__
+     - `X <https://github.com/opencord/voltha-protos/tree/v5.4.7>`__
+     - `stale <https://hub.docker.com/r/voltha/voltha-protos>`__
+     -
+     - `X <https://pypi.org/project/voltha-protos/>`__
      -
    * - `voltha-system-tests <https://github.com/opencord/voltha-system-tests/releases/tag/2.9.0>`__
      - ``2.11.10``
@@ -321,9 +370,15 @@ VOLTHA Components
      -
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-system-tests/+/refs/tags/2.11.10>`__
      - `X <https://github.com/opencord/voltha-system-tests/tree/2.11.10>`__
+     - `stale <https://hub.docker.com/r/voltha/voltha-protos>`_
+     -
+     -
      -
    * - ppoeagent
      - ``1.2.1``
+     -
+     -
+     -
      -
      -
      -
@@ -336,6 +391,11 @@ VOLTHA Components
      -
      -
      -
+     -
+     -
+     -
+
+- `Docker Images: Voltha <https://docs.voltha.org/master/resources/docker.html>`_
 
 
 Helm Chart Versions
@@ -422,7 +482,7 @@ BAL Version
 
 Get Involved
 ------------
-We'd love to accept your patches and contributions to the VOLTHA project, join the community!
+<We'd love to accept your patches and contributions to the VOLTHA project, join the community!
 
 | Here are a few resources to get you started:
 

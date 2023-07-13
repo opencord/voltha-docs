@@ -1,0 +1,23 @@
+Repository updates for release
+==============================
+
+- Create a jira ticket for tracking
+- Triage build for problems
+- Change VERSION string to be a *.1-dev developer release
+- Update content as needed.
+-
+
+repo:ci-management jjb/
+-----------------------
+
+- Create a branch or tag repository
+- Update .gitreview, set `defaultbranch= <https://gerrit.opencord.org/c/voltha-docs/+/33950/1/.gitreview>`_
+
+repo:voltha-lib-go
+------------------
+
+- make sterile distclean
+- find . ! -path './vendor/*' -name '*.go' -print0 | xargs -0 gofmt -s -w
+- make mod-update
+- make lint
+- make help
