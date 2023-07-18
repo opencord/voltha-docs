@@ -20,8 +20,7 @@
 
 $(if $(DEBUG),$(warning ENTER))
 
-include $(ONF_MAKE)/targets/test-errors.mk
-# include $(ONF_MAKE)/targets/tox.mk
+include $(ONF_MAKEDIR)/targets/test-errors.mk
 
 $(if $(DEBUG),$(warning LEAVE))
 

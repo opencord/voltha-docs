@@ -18,16 +18,20 @@
 
 .DEFAULT_GOAL := help
 
-TOP         ?= .
-MAKEDIR     ?= $(TOP)/makefiles
-
-$(if $(VERBOSE),$(eval export VERBOSE=$(VERBOSE))) # visible to include(s)
+##-------------------##
+##---]  GLOBALS  [---##
+##-------------------##
+TOP ?=$(strip \
+  $(dir \
+    $(abspath $(lastword $(MAKEFILE_LIST)))\
+   )\
+)
 
 ##--------------------##
 ##---]  INCLUDES  [---##
 ##--------------------##
--include config.mk
-include $(MAKEDIR)/include.mk
+include $(TOP)/config.mk#                # configure
+include $(TOP)/makefiles/include.mk      # top level include
 
 # You can set these variables from the command line.
 SPHINXOPTS   ?=
@@ -57,7 +61,7 @@ STATIC_DOCS    := _static/voltha-system-tests _static/cord-tester
 ## Usage:
 ##   make reload
 ## -----------------------------------------------------------------------
-reload: $(venv-activate-script)
+reload: $(venv-activate-patched)
 	$(activate) && sphinx-reload $(SOURCEDIR)
 
 ## -----------------------------------------------------------------------
@@ -176,7 +180,7 @@ prep: | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
 ## Bridge: legacy makefile wildcard rule forwarded unknown targets to sphinx.
 ##         library makefiles do more so transfer control only when needed.
 ## -----------------------------------------------------------------------
-include $(MAKEDIR)/voltha/docs-catchall-targets.mk
+include $(ONF_MAKEDIR)/voltha/docs-catchall-targets.mk
 $(voltha-docs-catchall): $(venv-activate-script) Makefile | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
 	@echo " ** CATCHALL: $@"
 	$(activate)\
@@ -226,6 +230,6 @@ help ::
 ## -----------------------------------------------------------------------
 ## Intent: Display make hel footer
 ## -----------------------------------------------------------------------
-include $(MAKEDIR)/help/trailer.mk
+include $(ONF_MAKEDIR)/help/trailer.mk
 
 # [EOF]

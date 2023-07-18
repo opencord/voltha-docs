@@ -27,6 +27,45 @@ exclude_patterns = [
     'CODE_OF_CONDUCT.md',
     '*/CODE_OF_CONDUCT.md',
 
+    # -----------------------------------------------------------------------
+    # WARNING: Roach squashing exercise ahead.
+    # External repos are sub-modules, sphinx will complain when new files added.
+    # -----------------------------------------------------------------------
+    # Why are repos pulled in:
+    #   - external linkage/direct viewing of the truth ?
+    #   - generated content, documentation links       ?
+    # -----------------------------------------------------------------------
+    # Roach squash: filter files individually as they are added or found (make lint)
+    # Simple answer: bulk exclude by subdir to catch all variants.
+    # Unknown: will the subdir exclusion break doc generation or navigation ?
+    # -----------------------------------------------------------------------
+    # 'device-management-interface/README.md',
+    #
+    'openolt/BUILDING.md',
+    'openolt/SECURITY.md',
+    'openolt/olt-sw-upgrade/README.md', 
+    'voltha-helm-charts/makefiles/',
+    # 'voltha-helm-charts/makefiles/README.md',
+    'voltha-helm-charts/makefiles/README.md',
+    #
+    'voltha-openonu-adapter-go/templates/README.md',
+    # 'device-management-interface/docs/RpcGuidelines.md',
+    'voltha-system-tests/patches/*',
+    'voltha-system-tests/scripts/flog/',
+    #
+    'voltha-system-tests/etc/README.md',
+    'voltha-system-tests/scripts/README.md',
+    #
+    'voltctl/MULTIPLE_STACKS.md',
+    'voltha-system-tests/tests/data/onos-files/README.md',
+    'voltha-openonu-adapter-go/docs/ONU_Upgrade_Notes.md',
+    
+    # WARNING: toctree contains reference to excluded document    
+    # i'openolt/README.md',
+    # 'voltha-openonu-adapter-go/README.md',
+    'repos/openolt/BUILDING.md',
+    'repos/openolt/SECURITY.md',
+
     # Ignore all:
     'makefiles',
     '__pycache__',
