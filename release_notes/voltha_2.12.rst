@@ -310,10 +310,10 @@ VOLTHA Components
      - `X <https://hub.docker.com/layers/voltha/voltha-openolt-adapter/4.2.12/images/sha256-844eac272323dc8bca10880a111957a95839578b3210dd777be5ac9370aaa52e?context=explore>`__
    * - `voltha-protos <https://gerrit.opencord.org/plugins/gitiles/voltha-protos>`_
      -
-     - `5.3.8 <https://pypi.org/project/voltha-protos/5.3.8>`__
+     - `5.4.9 <https://pypi.org/project/voltha-protos/5.4.9/>`_
      -
-     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/tags/v5.3.8>`__
-     - `X <https://github.com/opencord/voltha-protos/tree/v5.3.8>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/tags/v5.4.9>`__
+     - `X <https://github.com/opencord/voltha-protos/tree/v5.4.9>`__
      -
    * - `voltha-system-tests <https://github.com/opencord/voltha-system-tests/releases/tag/2.9.0>`__
      - ``2.11.10``
