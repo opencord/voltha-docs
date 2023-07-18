@@ -38,7 +38,7 @@ help-patches:
 help-trailer ::
 	@echo "[SEE ALSO] patches-help"
 
-help-verbose:
+help-verbose ::
 	$(HIDE)$(MAKE) --no-print-directory help VERBOSE=1
 
 # [EOF]

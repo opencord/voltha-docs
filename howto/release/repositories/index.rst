@@ -10,3 +10,7 @@ Release
    ofagent-go/index
    voltha-lib-go/index
    voltha-onos/index
+   voltha-lib-go/index
+   voltha-go/index
+
+   voltha-northbound-bbf-adapter/index
