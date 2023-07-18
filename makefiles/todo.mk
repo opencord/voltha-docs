@@ -20,15 +20,10 @@
 
 $(if $(DEBUG),$(warning ENTER))
 
-## -----------------------------------------------------------------------
-## -----------------------------------------------------------------------
 todo ::
 	@echo '[TODO]'
-	@echo '  CLEANUP: make test'
-	@echo '    WARNING: document isnt included in any toctree'
-	@echo
-	@echo '  CLEANUP: make linkcheck'
-	@echo '    replace redirect URLs with resolved urls'
+	@echo '  o item 1'
+	@echo '  o item 2'
 
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------

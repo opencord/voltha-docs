@@ -44,7 +44,7 @@ EOH
 ##----------------##
 ##---]  MAIN  [---##
 ##----------------##
-declare dst="vst_venv"
+declare dst='.venv'  # "vst_venv"
 declare src="staging"
 declare pat="patches"
 

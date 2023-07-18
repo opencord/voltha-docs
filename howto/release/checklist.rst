@@ -7,6 +7,20 @@ docs.voltha.org (repo: voltha-docs)
 - Create release notes
 - Review core contributors
 
+VOLTHA Repositories (special snowflakes)
+----------------------------------------
+
+- voltha-helm-charts
+- voltha-system-tests
+
+  - Create branch voltha-2.12
+  - Update Chart.yaml in v-h-c to version 2.12
+  - Create tag 2.12.0 on branch voltha-2.12
+
+    - v-h-c and v-s-t are the only repositories to receive this tag.
+    - `creating-initial-release <https://docs.voltha.org/master/release_notes/release_process.html#creating-the-initial-release>`_
+
+
 VOLTHA Repositories
 -------------------
 

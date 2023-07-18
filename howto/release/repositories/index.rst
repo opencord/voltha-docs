@@ -9,7 +9,9 @@ Release: Repositories
    ci-management/index
    ofagent-go/index
    voltha-lib-go/index
+   voltha-go/index
    voltha-onos/index
+
    voltha-protos/index
    voltha-openolt-adapter/index
    voltha-helm-charts/index
@@ -17,4 +19,3 @@ Release: Repositories
    bbsim/index
    openolt/index
    pod-configs/index
-   pod-cofnigs/index
