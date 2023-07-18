@@ -5,7 +5,7 @@ Intent
 ------
 
 This quickstart guide decribes how to modify and commit changes that will
-be visible on http://docs.voltha.org.
+be visible on https://docs.voltha.org.
 
 Clone repo:voltha-docs
 ----------------------

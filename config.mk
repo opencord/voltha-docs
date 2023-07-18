@@ -14,33 +14,127 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # -----------------------------------------------------------------------
+# https://gerrit.opencord.org/plugins/gitiles/onf-make
+# ONF.makefiles.include.version = 1.1
+# ONF.confg.mk                  = 1.5
+# -----------------------------------------------------------------------
 
-##---------------------------------------##
-##---]  Disable lint targets by name [---##
-##---------------------------------------##
-# NO-LINT-DOC8       := true
-NO-LINT-FLAKE8       := true#      # NOTE[1]
-# NO-LINT-JJB        := true
-NO-LINT-JSON         := true
-#   python -m json.tool ./_build/linkcheck/output.json
-#   Extra data: line 2 column 1 (char 181)
-# NO-LINT-MAKE       := true
-NO-LINT-PYLINT       := true#      # NOTE[1]
-# NO-LINT-PYTHON     := true
-NO-LINT-ROBOT        := true#        # NOTE[2]
-# NO-LINT-SHELL      := true
-# NO-LINT-TOX        := true#      # WIP
-NO-LINT-YAML         := true
+--repo-name-- := voltha-docs
+--repo-name-- ?= $(error --repo-name--= is required)
 
-# NOTE[1] - Cleanup needed to enable as a default make lint target
-# NOTE[2] - Doc repo, no need to lint robot sources here.
+##--------------------------------##
+##---]  Disable lint targets  [---##
+##--------------------------------##
+# NO-LINT-DOC8      := true
+# NO-LINT-GOLANG    := true
+NO-LINT-GROOVY      := true#               # Note[1]
+# NO-LINT-JJB       := true#               # Note[2]
+# NO-LINT-JSON      := true#               # Note[1]
+NO-LINT-MAKEFILE    := true#               # Note[1]
+NO-LINT-REUSE       := true                # License check
+# NO-LINT-ROBOT     := true
+NO-LINT-SHELL       := true#               # Note[1]
+# NO-LINT-TOX       := true#               # Note[1]
+NO-LINT-YAML        := true#               # Note[1]
+
+NO-LINT-FLAKE8      := true#               # Note[1]
+# NO-LINT-PYTHON    := true#               # Note[1]
+NO-LINT-PYLINT      := true#               # Note[1]
+
+# Note[1] - A boatload of source to cleanup prior to enable.
+# Note[2] - No sources available
+
+##---------------------------------##
+##---] Conditional make logic  [---##
+##---------------------------------##
+# USE-ONF-DOCKER-MK      := true
+# USE-ONF-GERRIT-MK      := true
+# USE-ONF-GIT-MK         := true
+# USE-ONF-JJB-MK         := true
+# USE-VOLTHA-RELEASE-MK  := true
+
+##----------------------##
+##---]  Debug Mode  [---##
+##----------------------##
+# export DEBUG           := 1      # makefile debug
+# export DISTUTILS_DEBUG := 1      # verbose: pip
+# export DOCKER_DEBUG    := 1      # verbose: docker
+# export VERBOSE         := 1      # makefile debug
+
+##-----------------------------------##
+##---]  JJB/Jenkins Job Builder  [---##
+##-----------------------------------##
+JJB_VERSION   ?= 2.8.0
+JOBCONFIG_DIR ?= job-configs
+
+##---------------------------------##
+##---]  Filesystem exclusions  [---##
+##---------------------------------##
+onf-excl-dirs := $(null)        # make clean: dirs=
+onf-excl-dirs += .venv#         # $(venv-name)
+onf-excl-dirs += vendor#        # golang / voltha*-go
+onf-excl-dirs += patches#       # voltha docs - python upgrade
+onf-excl-dirs += .tox           # also a python dependency
+
+ifeq ($(--repo-name--),voltha-docs)
+  lint-doc8-excl   += '_build'  # generated
+#  lint-groovy-excl += 'bbsim'   # external repo
+endif
+
+onf-excl-dirs ?= $(error onf-excl-dirs= is required)
 
 ##-----------------------------##
-##---]  Custom exclusions  [---##
+##---]  Feature Detection  [---##
 ##-----------------------------##
-lint-doc8-excl += '_build'
-lint-doc8-excl += 'vendor'
+# [TODO] include makefiles/features/include.mk
+# [TODO] All logic below can migrate there.
 
-config-mk-version    := 1.0
+$(if $(filter %ci-management,$(--repo-name--)),\
+  $(eval --REPO-IS-CI-MANAGEMENT-- := true)\
+)
+$(if $(filter %voltha-docs,$(--repo-name--)),\
+  $(eval --REPO-IS-VOLTHA-DOCS-- := true)\
+)
+
+# create makefiles/config/byrepo/{--repo-name--}.mk for one-off snowflakes ?
+# $(if $(wildcard docker),$(eval USE-ONF-DOCKER-MK := true))
+
+##-------------------------##
+##---]  Derived Flags  [---##
+##-------------------------##
+ifdef --REPO-IS-CI-MANAGEMENT--
+  USE-ONF-JJB := true
+
+  onf-excl-dirs += global-jjb
+  onf-excl-dirs += lf-ansible
+  onf-excl-dirs += packer
+endif
+
+ifdef --REPO-IS-VOLTHA-DOCS--
+  onf-excl-dirs += _build
+  onf-excl-dirs += repos
+endif
+
+ifdef NO-LINT-PYTHON
+  NO-LINT-FLAKE8 := true
+  NO-LINT-PYLINT := true
+endif
+
+ifndef USE-ONF-JJB
+  NO-LINT-JJB := true
+endif
+
+onf-excl-dirs := $(sort $(strip $(onf-excl-dirs)))
+
+# [TODO]#
+#  --------------------------------------------------------------------
+#   o two distinct makefiles directories are needed, one for onf-make
+#   o second for repository specific configs and logic.
+#   o Two independent vars specify path:
+#       ONF_MAKEDIR = library makefiles
+#       MAKEDIR     = repository specific content
+#   o Conditional repository testing above can crush down into
+#     include $(MAKEDIR)/config.mk   # repo:$(--repo-name--)
+#  --------------------------------------------------------------------
 
 # [EOF]

@@ -13,9 +13,9 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-## -----------------------------------------------------------------------
+# -----------------------------------------------------------------------
 # https://gerrit.opencord.org/plugins/gitiles/onf-make
-# ONF.makefile.version = 1.0
+# ONF.makefile.version = 1.2
 # -----------------------------------------------------------------------
 
 $(if $(DEBUG),$(warning ENTER))
@@ -28,10 +28,10 @@ $(if $(DEBUG),$(warning ENTER))
 ##------------------##
 ##---]  LOCALS  [---##
 ##------------------##
-venv-name            ?= .venv#                            # default install directory
-venv-abs-path        := $(PWD)/$(venv-name)
-
-venv-activate-script := $(venv-name)/bin/activate#        # dependency
+venv-name             ?= .venv#                            # default install directory
+venv-abs-path         := $(PWD)/$(venv-name)
+venv-activate-bin     := $(venv-name)/bin
+venv-activate-script  := $(venv-activate-bin)/activate#    # dependency
 
 # Intent: activate= is a macro for accessing the virtualenv activation script#
 #  Usage: $(activate) && python
@@ -42,7 +42,7 @@ activate             ?= set +u && source $(venv-activate-script) && set -u
 ## Usage:
 ##    o place on the right side of colon as a target dependency
 ##    o When the script does not exist install the virtual env and display.
-## -----------------------------------------------------------------------
+## ----------------------------------------------------------------------
 $(venv-activate-script):
 	@echo
 	@echo "============================="
@@ -51,16 +51,23 @@ $(venv-activate-script):
 	virtualenv -p python3 $(venv-name)
 	$(activate) && python -m pip install --upgrade pip
 	$(activate) && pip install --upgrade setuptools
-	$(activate) && { [[ -r requirements.txt ]] && python -m pip install -r requirements.txt; }
+	$(activate) && [[ -r requirements.txt ]] \
+	    && { python -m pip install -r requirements.txt; } \
+	    || { /bin/true; }
+
 	$(activate) && python --version
 
-ifndef NO_PYTHON_UPGRADE_PATCHING
-	@echo
-	@echo '** -----------------------------------------------------------------------'
-	@echo '** Applying python virtualenv patches as needed (v3.10+)'
-	@echo '** -----------------------------------------------------------------------'
-	./patches/python_310_migration.sh '--venv' '$(venv-name)' 'apply'
-endif
+## -----------------------------------------------------------------------
+## Intent: Explicit named installer target w/o dependencies.
+##         Makefile targets should depend on venv-activate-script.
+## -----------------------------------------------------------------------
+venv-activate-patched := $(venv-activate-script).patched
+venv-activate-patched : $(venv-activate-patched)
+$(venv-activate-patched) : $(venv-activate-script)
+	$(call banner-enter,Target $@)
+	$(onf-mk-top)/../patches/python_310_migration.sh
+	touch $@
+	$(call banner-leave,Target $@)
 
 ## -----------------------------------------------------------------------
 ## Intent: Explicit named installer target w/o dependencies.

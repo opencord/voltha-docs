@@ -34,21 +34,26 @@ PYTHON_FILES      ?= $(error PYTHON_FILES= required)
 ## -----------------------------------------------------------------------
 ifndef NO-LINT-PYLINT
   lint-pylint-mode := $(if $(have-python-files),modified,all)
-  lint : lint-pylint-$(lint-pylint-mode)
+  lint        : lint-pylint
+  lint-pylint : lint-pylint-$(lint-pylint-mode)
 endif# NO-LINT-PYLINT
 
 ## -----------------------------------------------------------------------
 ## Intent: exhaustive pylint syntax checking
 ## -----------------------------------------------------------------------
-pylint-find-args := $(null)
-pylint-find-args += -name '$(venv-name)'
-pylint-find-args += -o -name 'patches'
+
+# Construct: find . \( -name '__ignored__' -o -name dir -o name dir \)
+# pylint-find-filter := $(null)
+# pylint-find-filter += -name '__ignored__'#   # for alignment
+# pylint-find-filter += $(foreach dir,$(onf-excl-dirs),-o -name $(dir)))
+
+# pylint-find-filter := $(call gen-python-find-excl,onf-excl-dirs)
+# $(error pylint-find-filter := $(pylint-find-filter))
 lint-pylint-all: $(venv-activate-script)
 	$(MAKE) --no-print-directory lint-pylint-install
 
-	$(activate)\
- && find . \( $(pylint-find-args) \) -prune -o -name '*.py' -print0 \
-	| $(xargs-n1) pylint
+	$(activate) && $(call gen-python-find-cmd) | $(xargs-n1) pylint
+#	    | $(xargs-n1-clean) yamllint --strict
 
 ## -----------------------------------------------------------------------
 ## Intent: check deps for format and python3 cleanliness
@@ -82,6 +87,7 @@ help::
 	@echo '  $(MAKE) lint-pylint PYTHON_FILES=...'
 	@echo '  lint-pylint-modified  pylint checking: only modified'
 	@echo '  lint-pylint-all       pylint checking: exhaustive'
+	@echo '  lint-pylint-install   Install the pylint command'
   endif
 
 $(if $(DEBUG),$(warning LEAVE))

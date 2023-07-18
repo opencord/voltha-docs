@@ -8,6 +8,12 @@ doc_venv
 _build
 repos
 
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+
 # subrepos
 bbsim
 ofagent-go

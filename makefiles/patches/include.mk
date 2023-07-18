@@ -15,7 +15,7 @@
 # limitations under the License.
 # -----------------------------------------------------------------------
 
-include $(MAKEDIR)/patches/help.mk
+include $(ONF_MAKEDIR)/patches/help.mk
 
 patch-gather-args += --exclude=Makefile
 patch-gather-args += --exclude-dir=vault

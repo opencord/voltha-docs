@@ -1,8 +1,8 @@
 # -*- makefile -*-
 # -----------------------------------------------------------------------
-# Copyright 2017-2023 Open Networking Foundation (ONF) and the ONF Contributors
+# Copyright 2022-2023 Open Networking Foundation (ONF) and the ONF Contributors
 #
-# Licensed under the Apache License, Version 2.0 (the "License")
+# Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
@@ -14,74 +14,52 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # -----------------------------------------------------------------------
-
-$(if $(DEBUG),$(warning ENTER))
+# https://gerrit.opencord.org/plugins/gitiles/onf-make
+# ONF.makefile.version = 1.0
+# -----------------------------------------------------------------------
 
 ##-------------------##
 ##---]  GLOBALS  [---##
 ##-------------------##
-.PHONY: lint-shell lint-shell-all lint-shell-modified
 
-have-shell-sources := $(if $(strip $(SHELL_SOURCES)),true)
-SHELL_SOURCES      ?= $(error SHELL_SOURCES= required)
+# Gather sources to check
+# TODO: implement deps, only check modified files
+shell-check-find := find .
+# vendor scripts but they really should be lintable
+shell-check-find += -name 'vendor' -prune
+shell-check-find += -o \( -name '*.sh' \)
+shell-check-find += -type f -print0
 
-## -----------------------------------------------------------------------
-## Intent: Use the shell command to perform syntax checking.
-##   % make lint
-##   % make lint-shell-all
-## -----------------------------------------------------------------------
+shell-check    := $(env-clean) shellcheck
+# shell-check      := shellcheck
+
+shell-check-args += --check-sourced
+shell-check-args += --external-sources
+
+##-------------------##
+##---]  TARGETS  [---##
+##-------------------##
 ifndef NO-LINT-SHELL
-  lint-shell-mode := $(if $(have-shell-sources),modified,all)
-  lint : lint-shell-$(lint-shell-mode)
-endif# NO-LINT-SHELL
+  lint : lint-shell
+endif
 
 ## -----------------------------------------------------------------------
-## Intent: exhaustive shell syntax checking
+## Intent: Perform a lint check on command line script sources
 ## -----------------------------------------------------------------------
-shellcheck-find-args := $(null)
-shellcheck-find-args += -name '$(venv-name)'
-shellcheck-find-args += -o -name 'staging'
-lint-shell-all:
-	$(MAKE) --no-print-directory lint-shellcheck-install
-
-	find . \( $(shellcheck-find-args) \) -prune -name '*.sh' -print0 \
-	    | $(xargs-n1-clean) shellcheck
-
-## -----------------------------------------------------------------------
-## Intent: check deps for format and python3 cleanliness
-## Note:
-##   shell --py3k option no longer supported
-## -----------------------------------------------------------------------
-lint-shell-modified:
-	$(MAKE) --no-print-directory lint-shell-install
-
-	shellcheck $(SHELL_SOURCES)
-
-## -----------------------------------------------------------------------
-## Intent:
-## -----------------------------------------------------------------------
-.PHONY: lint-shellcheck-install
-lint-shellcheck-install:
+lint-shell:
+	$(shell-check) -V
 	@echo
-	@echo "** -----------------------------------------------------------------------"
-	@echo '** command shell syntax checking'
-	@echo "** -----------------------------------------------------------------------"
-
-        # {apt-get,rpm,yum} install shellcheck
-	shellcheck --version
-	@echo
+	$(HIDE)$(env-clean) $(shell-check-find) \
+	    | $(xargs-n1) $(shell-check) $(shell-check-args)
 
 ## -----------------------------------------------------------------------
-## Intent: Display command usage
+## Intent: Display command help
 ## -----------------------------------------------------------------------
-help::
-	@echo '  lint-shell          Syntax check sources using shellcheck'
-  ifdef VERBOSE
-	@echo '  $(MAKE) lint-shell SHELL_SOURCES=...'
-	@echo '  lint-shell-modified  shell checking: only modified'
-	@echo '  lint-shell-all       shell checking: exhaustive'
-  endif
+help-summary ::
+	@echo '  lint-shell          Syntax check shell sources'
 
-$(if $(DEBUG),$(warning LEAVE))
+# [SEE ALSO]
+# -----------------------------------------------------------------------
+#   o https://www.shellcheck.net/wiki/Directive
 
 # [EOF]

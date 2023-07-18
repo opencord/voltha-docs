@@ -15,13 +15,17 @@
 # limitations under the License.
 # -----------------------------------------------------------------------
 
+$(if $(DEBUG),$(warning ENTER))
+
 ##-------------------##
 ##---]  GLOBALS  [---##
 ##-------------------##
 $(if $(UNSTABLE),$(eval lint-python-all := true))
 
-include $(MAKEDIR)/lint/python/flake8.mk
-include $(MAKEDIR)/lint/python/pylint.mk
-# include $(MAKEDIR)/lint/python/tox.mk
+include $(ONF_MAKEDIR)/lint/python/find_utils.mk
+include $(ONF_MAKEDIR)/lint/python/flake8.mk
+include $(ONF_MAKEDIR)/lint/python/pylint.mk
+
+$(if $(DEBUG),$(warning LEAVE))
 
 # [EOF]

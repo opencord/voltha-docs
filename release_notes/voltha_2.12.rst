@@ -411,14 +411,13 @@ VOLTHA Components
      -
    * - `voltha-protos <https://gerrit.opencord.org/plugins/gitiles/voltha-protos>`_
      -
-     - `5.4.7 <https://pypi.org/project/voltha-protos/>`__
-       `tgz <https://files.pythonhosted.org/packages/96/3d/c7ddb804cd8f47fb1fd1f7d11e11aa06fe22611e7363d3cf928852e2515d/voltha-protos-5.4.7.tar.gz>`_
+     - `5.4.9 <https://pypi.org/project/voltha-protos/5.4.9/>`_
      -
-     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/tags/v5.4.7>`__
-     - `X <https://github.com/opencord/voltha-protos/tree/v5.4.7>`__
-     - `stale <https://hub.docker.com/r/voltha/voltha-protos>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/tags/v5.4.9>`__
+     - `X <https://github.com/opencord/voltha-protos/tree/v5.4.9>`__
      -
-     - `X <https://pypi.org/project/voltha-protos/>`__
+     -
+     -
      -
    * - `voltha-system-tests <https://github.com/opencord/voltha-system-tests/releases/tag/2.9.0>`__
      - ``2.11.10``
