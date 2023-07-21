@@ -5,8 +5,15 @@ Jira Tickets
 ------------
 As release date approaches and development slows visit the `jira versions dashboard <https://jira.opencord.org/projects/VOL?selectedItem=com.atlassian.jira.jira-projects-plugin%3Arelease-page&status=unreleased>`_.
 
-- Create a new dashboard for the future release candidate.
+- Create a new/empty dashboard for the future release candidate.
+
+  - Click in the ``Version name`` box and type in VOLTHA-(X.Y)++ for the next release.
+  - Enter start/end dates if known, they should overlap with the last release.
+
 - Visit the current released candidate version and move all unresolved tickets into the future desktop.
+
+  - TSTs may want to review unresolved tickets for release notes content for partially completed work.
+
 - On release day click the [Release] button to close out the desktop.
 
 Confluence

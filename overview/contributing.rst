@@ -51,15 +51,20 @@ Steps to successful PRs
     * - Command
       - Description
     * - `make lint <https://docs.voltha.org/master/howto/code/linting.html>`_
-      - Syntax check source for problems
+      - Syntax check source for problems (lint, lint-shelcheck, lint-doc8)
     * - make sca
       - Static Code Analysis
+    * - make build
+      - Assemble, compile, generate, link, ...
     * - make test
       - Invoke VOLTHA test suite(s)
     * - make help
-      - Show available targets, bulk source cleanup needed for `make lint` to check everything by default.
+      - Show available targets: make help | grep lint
 
- 4. Submitting your patch will initiate a `jenkins job <https://jenkins.opencord.org>`_ to validate changes.
+ 4. :ref:`Commit message syntax and testing directives <pull-request--commit-message>`
+
+ 5. Submitting your patch will initiate a validation
+    `jenkins job <https://jenkins.opencord.org>`_.
     Wait for job completion status before proceeding.
 
     - Job completion status will be sent to you asynchronously in email.
@@ -77,10 +82,10 @@ Steps to successful PRs
 
     If failures persist `ask for assistance <https://wiki.opennetworking.org/display/COM/VOLTHA>`_ in slack or a mailing list.
 
- 5. When comments are made to your patch please make the appropriate fixes and then
+ 6. When comments are made to your patch please make the appropriate fixes and then
     amend your commit with `git commit --amend` and re-upload to gerrit with `git review`.
 
- 6. Await review. Everyone can comment on code changes, but only Core contributors
+ 7. Await review. Everyone can comment on code changes, but only Core contributors
     can give final review approval. **All changes must get at least one
     approval**. Join one of the `communication channels <https://wiki.opennetworking.org/display/COM/VOLTHA>`_
     to request a review or to bring additional attention to your patch.

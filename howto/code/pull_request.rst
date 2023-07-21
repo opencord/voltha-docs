@@ -1,23 +1,24 @@
+.. _pull-request-see-also:
+
 VOLTHA project repositories
 ===========================
 
 Development and code reviews:
 -----------------------------
 
-Commit decorations:
-+++++++++++++++++++
+:ref:`Commit message syntax <pull-request--commit-message>`
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-`Tokens
-<https://docs.voltha.org/master/testing/voltha_test_automation.html#per-patchset-verification-jobs>`_ can be embedded within a commit message to enable running additional test suites as part of jenkins validation.
+Job directives: recheck
+-----------------------
 
-NOTE:
-+++++
-There have been a few reports of testing not being triggered by a commit.
-If you encounter this behavior visit the VOLTHA jira site and open a ticket.
-Commit hooks can be repository specific and may need to be deployed/enabled to support functionality.
+If the CI check did not launch or failed and you believe the issue is
+unrelated to your patch/changeset you can re-trigger the job by commenting
+on the patch with *recheck*.
 
-- :vol-jira:``
-- Include gerrit URL for your changeset.
-- Target repository name/url.
-- What tests or suites were expected that were not exercised.
+- Visit gerrit:  https://gerrit.opencord.org/c/bbsim/+/34384
+- Click the pencil icon in the top left by reviewers.
+- Comment/description text: recheck
 
+It may take a little while to run dependent on queue size but this token will
+initiate re-running job phases for a patch.
