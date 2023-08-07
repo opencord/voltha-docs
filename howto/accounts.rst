@@ -41,10 +41,10 @@ Next navigate to gerrit.opencord.org, login and configure your user account
    $ ssh-keygen -t ed25519 -f id_gerrit -C 'tux@opennetworking.org'
 
    # Connect passing -T, -p(ort), -i(dentity)
-   $ ssh -T -p 29419 -i ~/.ssh/id_gerrit 'tux@opennetworking.org@gerrit.opencord.org'
+   $ ssh -T -p 29418 -i ~/.ssh/id_gerrit 'tux@opennetworking.org@gerrit.opencord.org'
 
    $ ssh-add ~/.ssh/id_gerrit
-   $ ssh -T -p 29419 'tux@opennetworking.org@gerrit.opencord.org'
+   $ ssh -T -p 29418 'tux@opennetworking.org@gerrit.opencord.org'
 
 
 

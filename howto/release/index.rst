@@ -17,6 +17,8 @@ Release
 
    charts/index
 
+   bbsim/index
+
    voltctl/index
    voltctl/install
    voltctl/release

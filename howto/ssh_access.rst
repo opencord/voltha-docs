@@ -13,7 +13,7 @@ Generate an :ref:`SSH Key <gerrit-user-account>` for access
 - Login and configure gerrit
 
 - Verify your ssh connection (manual/explicit args)
-   - ssh -T -p 29419 -i ~/.ssh/id_gerrit tux@gerrit.opencord.org
+   - ssh -T -p 29418 -i ~/.ssh/id_gerrit tux@gerrit.opencord.org
       - -T # disable pseudo terminal access, simple verify
       - -p(port)
       - -i(dentity) # ssh key
@@ -40,11 +40,15 @@ Create ~/.ssh/config to simplify your connections
 .. sourcecode:: shell
 
    FILE: ~/.ssh/config
+   # -----------------------------------------------------------------------
+   # AddKeysToAgent yes      auto ssh-add key for reuse this login session.
    # IdentitiesOnly yes      only use identity provided, no fallback
+   # -----------------------------------------------------------------------
 
    Host github.com
       IdentityFile ~/.ssh/github.com/id_ed25519
       IdentitiesOnly yes
+      AddKeysToAgent yes
       # (default) Port 22
       User tux
 
@@ -52,6 +56,7 @@ Create ~/.ssh/config to simplify your connections
       Hostname gerrit.opencord.org
       IdentityFile ~/.ssh/gerrit.opencord.org/id_ed25519
       IdentitiesOnly yes
+      AddKeysToAgent yes
       Port 29418
       User tux@opennetworking.org
 
