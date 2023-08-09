@@ -1,5 +1,5 @@
-Release
-=======
+Release Topics
+==============
 
 .. toctree::
    :maxdepth: 1
