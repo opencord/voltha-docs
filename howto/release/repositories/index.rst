@@ -1,5 +1,5 @@
-Release
-=======
+Release: Repositories
+=====================
 
 .. toctree::
    :maxdepth: 1
