@@ -10,3 +10,4 @@ Release: Repositories
    ofagent-go/index
    voltha-lib-go/index
    voltha-onos/index
+   voltha-protos/index
