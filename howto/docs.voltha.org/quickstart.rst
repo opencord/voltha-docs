@@ -19,7 +19,8 @@ Clone repo:voltha-docs
    git checkout -b dev-joey
 
 .. code-block:: shell-session
-   :linenos: 2
+   :linenos:
+   :emphasize-lines: 2
 
    # Clone repo:voltha-docs
    git clone ssh://gerrit.opencord.org:29418/voltha-docs.git
@@ -32,7 +33,8 @@ Repositories:
 [`github <https://github.com/opencord/voltha-docs>`_]
 
 .. code-block:: shell-session
-   :linenos: 2,5
+   :linenos:
+   :emphasize-lines: 2,5
 
    # Clone repo:voltha-docs
    git clone ssh://gerrit.opencord.org:29418/voltha-docs.git
@@ -45,7 +47,8 @@ Interactive development
 
 .. code-block:: shell-session
    :caption: Launch a browser for viewing local edits
-   :linenos: 4
+   :linenos:
+   :emphasize-lines: 4
 
    cd voltha-docs
    make reload
@@ -57,7 +60,8 @@ Invoke checkin tests locally
 ----------------------------
 
 .. code-block:: shell-session
-   :linenos: 3
+   :linenos:
+   :emphasize-lines: 3
 
    cd voltha-docs
    make sterile
