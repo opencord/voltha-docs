@@ -75,9 +75,30 @@ with the patch branch.
   - Update VERSION to contain 1.2.4 or 1.3.0
   - commit and merge
 
-- tag=2.12.0-beta, branch=voltha-2.12-beta
-
   - Update VERSION file/patch branch to contain 1.2.3.1
-  - Update defaultbranch= in .gitreview
   - commit and merge
 
+
+Patch creation on release branch
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Note: Devs should create a dev branch for merging rather than manipulating
+the release branch directly as these instructions will.
+
+- git checkout -b voltha-2.12 tags/v2.12.0
+- git pull --ff-only origin voltha-2.12
+- git rebase -i voltha-2.12
+- git diff --name-only votlha-2.12 2>&1 | less
+- git review --reviewers foo@foo bar@bar
+
+Patch creation on release branch
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+`docs.voltha.org - create the initial release <https://docs.voltha.org/master/release_notes/release_process.html#creating-the-initial-release>`_
+
+- git clone ssh://gerrit.opencord.org:29418/voltha-protos.git
+- git checkout -b dev_tux
+- Edit VERSION file, increment and suffix a -dev modifier
+
+  - VERSION file contains 5.4.3
+  - Increment and commit 5.4.4-dev
