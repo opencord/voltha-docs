@@ -65,6 +65,7 @@ extensions = [
     'sphinx.ext.extlinks',
     'sphinx.ext.graphviz',
     'sphinx.ext.ifconfig',
+#    'sphinx.ext.intersphinx',    # :doc:`my document <../my_doc{.rst}>`
     'sphinx.ext.mathjax',
     'sphinx.ext.todo',
     'sphinxcontrib.spelling',

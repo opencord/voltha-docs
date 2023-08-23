@@ -30,12 +30,19 @@ Submitting Code
 
 Some additional points for developers:
 
- - Submit your changes early and often.  Code and design review input
-   with corrections early in the process prevent huge changes later.
- - Please open a `jira ticket <https://jira.opencord.org/projects/VOL>`_ describing the issue/feature.
- - While checking in changes please preface the commit message with
-   `[VOL-<jira_number]` e.g. `[VOL-4550]` to automatically link changesets,
-   jenkins jobs, etc making them self-documenting for discussions.
+- Submit your changes early and often.  Code and design review input
+  with corrections early in the process prevent huge changes later.
+- :doc:`Create a Jira ticket for code changes <contributing/jira_tickets>` (required)
+- :doc:`Update copyright notices <contributing/copyright>`
+- `Commit message <https://docs.voltha.org/master/howto/code/commit-message.html#pull-request-commit-message>`_ and jenkins automation.
+
+  - To enable automation, prefix your commit message with a jira ticket
+
+     - ``[VOL-4550]`` - Spiffy enhancement/feature/problem summary
+
+  - This addition will allow jenkins to magically update tickets
+    with processed job status.
+- :doc:`Request a code review <contributing/code_review>`
 
 Steps to successful PRs
 +++++++++++++++++++++++

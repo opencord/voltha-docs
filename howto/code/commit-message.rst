@@ -6,10 +6,14 @@ Repository commit message
 - First line in a commit message is special.
 - 50 cpl max to avoid complaints about length.
 - Mention a jira ticket (VOL-xxxx) and the ticket will receive status updates from jenkins.
+- Additional jira ticket dependencies can be listed on line 3+
 
 .. code:: bash
 
    [VOL-5048] - Build and deploy for VOLTHA v2.12 release.
+
+   [VOL-5049]
+   [VOL-5050]
 
    api/pom.xml
    app/pom.xml
