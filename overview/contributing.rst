@@ -33,9 +33,16 @@ Some additional points for developers:
  - Submit your changes early and often.  Code and design review input
    with corrections early in the process prevent huge changes later.
  - Please open a `jira ticket <https://jira.opencord.org/projects/VOL>`_ describing the issue/feature.
- - While checking in changes please preface the commit message with
-   `[VOL-<jira_number]` e.g. `[VOL-4550]` to automatically link changesets,
-   jenkins jobs, etc making them self-documenting for discussions.
+
+   - Assign Fix Version/s: VOLTHA-X.Y
+
+     - Enables searching for feature by release.
+     - Leveraged during release to document fixes and enhancements in release notes.
+
+ - While checking in changes please preface the
+   `commit message <https://docs.voltha.org/master/howto/code/commit-message.html#pull-request-commit-message>`_
+   with `[VOL-<jira_number]` e.g. `[VOL-4550]` - Problem/enhancement summary.
+ - This will enable jenkins automation, ticket(s) will be updated with processed job status.
 
 Steps to successful PRs
 +++++++++++++++++++++++
