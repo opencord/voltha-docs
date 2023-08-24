@@ -74,28 +74,43 @@ Steps to successful PRs
     `jenkins job <https://jenkins.opencord.org>`_.
     Wait for job completion status before proceeding.
 
-    - Job completion status will be sent to you asynchronously in email.
-    - For direct monitoring `review comment history for your patch <https://gerrit.opencord.org/q/status:open+-is:wip>`_.
-    - Search for `Jenkins Technical User <https://gerrit.opencord.org/c/voltha-docs/+/33952>`_ and click a job entry.
-    - In the top grey navigation bar, following "Dashboard", click the test suite name to view the active job dashboard history `verify_voltha-docs_unit-test <https://jenkins.opencord.org/job/verify_voltha-docs_unit-test/>`_.
+    - Job status will be sent to you asynchronously in email at job completion.
+    - For direct monitoring :doc:`review gerrit Change Log<contributing/patch_followup>` for your patch.
 
-    If testing fails please fix your patch with step 3 an then repeat 2 and 3, as necessary.
+    - If testing fails please fix your patch with step 3 then repeat 2 and 3 as needed.
 
     **Passing CI verification is mandatory.**
 
+    To view accumulated job status:
+
+      - `navigate to a patch <https://gerrit.opencord.org/c/ci-management/+/34599>`_
+      - View "Submit requirements" in the top left.
+      - Verified ``+1 Jenkins Technical User`` will indicate SUCCESS.
+      - Verified ``-1 Jenkins Technical User`` will indicate FAILURE.
+
     If the CI check does not start or fails and you believe the issue is
     un-related to a changeset you can re-trigger by commenting on the
-    patch with `recheck`.
+    patch with `recheck <https://docs.voltha.org/master/howto/code/pull_request.html#development-and-code-reviews>`_
 
     If failures persist `ask for assistance <https://wiki.opennetworking.org/display/COM/VOLTHA>`_ in slack or a mailing list.
 
- 6. When comments are made to your patch please make the appropriate fixes and then
+ 6. When patch comments are offered please make the appropriate fixes and then
     amend your commit with `git commit --amend` and re-upload to gerrit with `git review`.
 
  7. Await review. Everyone can comment on code changes, but only Core contributors
-    can give final review approval. **All changes must get at least one
-    approval**. Join one of the `communication channels <https://wiki.opennetworking.org/display/COM/VOLTHA>`_
+    can give final review approval.
+
+    **All changes must acquire +2 Approval**.
+
+    Join one of the `communication channels <https://wiki.opennetworking.org/display/COM/VOLTHA>`_
     to request a review or to bring additional attention to your patch.
+
+  8. A patch will be ready to submit a merge request when
+
+     - "Submit requirements" in the top left is showing:
+
+       - Code-Review: +2 approval (or 2 x +1 approval)
+       - Verified ``+1 Jenkins Technical User``
 
 Versioning
 ++++++++++
