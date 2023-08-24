@@ -13,11 +13,75 @@ Highlights
 Features & Improvements
 -----------------------
 
+.. list-table:: Features & Improvements
+   :widths: 10, 60
+   :header-rows: 1
+
+   * - Jira
+     - Description
+   * - | `VOL-4444 <https://jira.opencord.org/browse/VOL-4444>`_
+       | `VOL-4340 <https://jira.opencord.org/browse/VOL-4340>`_
+     - Create API for profile in voltha rw-core for profile operations
+   * - `VOL-4782 <https://jira.opencord.org/browse/VOL-4782>`_
+     - Enchance DMI to include DataValueType in Events and also clarification for Transceiver Events
+   * - `VOL-4783 <https://jira.opencord.org/browse/VOL-4783>`_
+     - Introduce UploadDebugInformation RPC in DMI
+   * - `VOL-4788 <https://jira.opencord.org/browse/VOL-4788>`_
+     - Create package in voltha-libs-go for support of prometheus counters in voltha
+   * - `VOL-4877 <https://jira.opencord.org/browse/VOL-4877>`_
+     - Enhance DMI interface to be able to retrieve the Tx Power on the Transceivers
+   * - `VOL-4878 <https://jira.opencord.org/browse/VOL-4878>`_
+     - Improve the voltha-protos extensions interface to get the Rx Power levels from an OLT
+   * - `VOL-4949 <https://jira.opencord.org/browse/VOL-4949>`_
+     - Introduce DEVICE_BUSY reason in the UploadDebugInfoStatus DMI message
+   * - `VOL-4952 <https://jira.opencord.org/browse/VOL-4952>`_
+     - Add retry client options to the grpc library in voltha-lib-go
+   * - `VOL-4958 <https://jira.opencord.org/browse/VOL-4958>`_
+     - Introduce protobuf dependencies in DMI for the python testing framework
+   * - `VOL-4983 <https://jira.opencord.org/browse/VOL-4983>`_
+     - voltctl list device meters with traffic shaping info
+   * - `VOL-5043 <https://jira.opencord.org/browse/VOL-5043>`_
+     - Enhance DMI interface to have CPU/Mem/Disk usage alarms and also NTP synch alarms
+
 Bug Fixes
 ---------
 
+.. list-table:: Bug Fixes
+   :widths: 10, 10, 40
+   :header-rows: 1
+
+   * - Jira
+     - Resource
+     - Description
+   * - `VOL-4934 <https://jira.opencord.org/browse/VOL-4934>`_
+     - omci-lib-go
+     - MIC (AES-128) calculation does not properly support the Ex
+   * - `VOL-4931 <https://jira.opencord.org/browse/VOL-4931>`_
+     - openoltAdapter
+     - memory leak seen in long term tests
+   * - `VOL-4929 <https://jira.opencord.org/browse/VOL-4929>`_
+     - openonuAdapterGo
+     - memory leak seen in long term tests
+   * - `VOL-4927 <https://jira.opencord.org/browse/VOL-4927>`_
+     - omci-lib-go
+     - ONT-G ME alarms are not supposed by auto-generated code of omci-lib-go
+   * - `VOL-4984 <https://jira.opencord.org/browse/VOL-4984>`_
+     - voltctl
+     - log level list does not display the component open-flow-agent
+
 Test
 ----
+
+.. list-table:: Test
+   :widths: 10, 10, 40
+   :header-rows: 1
+
+   * - Jira
+     - Resource
+     - Description
+   * - `VOL-4829 <https://jira.opencord.org/browse/VOL-4829>`_
+     - openonuAdapterGo
+     - Robustness - Test of reconciling openonu-adapter with continuous traffic at real HW
 
 Documentation
 -------------
@@ -27,14 +91,6 @@ As usual documentation is published on https://docs.voltha.org
 
 Known Issues
 ------------
-.. list-table:: Known Issues
-   :widths: 10, 40
-   :header-rows: 1
-
-   * - Jira
-     - Description
-   * - Placeholder
-     - Placeholder
 
 Certification Program
 ---------------------
