@@ -6,17 +6,35 @@ Please open a `jira ticket <https://jira.opencord.org/projects/VOL>`_ describing
 - For large or multi-part features create a containing ticket with several
   sub-tickets tracking individual features or problems.
 
-  - Primary tracking ticket.
-  - VOL-5125 - Tracking ticket for bbsim failures in jenkins vip job view.
+.. list-table:: Multi-part ticket with subtask
+   :widths: 10, 10, 40
+   :header-rows: 1
 
-    - Sub-ticket(s)
-    - VOL-5024 - bbsim unit test job reporting status=UNSTABLE
-    - VOL-5157 - verify_bbsim_unit-test failures in history
-    - VOL-5154 - Triage test failure in periodic-voltha-unitag-subscriber-tt-test-bbsim
+   * - Jira
+     - Type
+     - Problem
+   * - `VOL-5125 <https://jira.opencord.org/browse/VOL-5125>`_
+     - Epic
+     - Tracking ticket for bbsim failures in jenkins vip job view.
+   * - `VOL-5024 <https://jira.opencord.org/browse/VOL-5024>`_
+     - sub-task
+     - bbsim unit test job reporting status=UNSTABLE
+   * - `VOL-5157 <https://jira.opencord.org/browse/VOL-5157>`_
+     - sub-task
+     - verify_bbsim_unit-test failures in history
+   * - `VOL-5154 <https://jira.opencord.org/browse/VOL-5154>`_
+     - sub-task
+     - Triage test failure in periodic-voltha-unitag-subscriber-tt-test-bbsim
 
 - Description - include relevant information
 
   - Error messages
+
+    - Use preformatting to improve readability (else message becomes a run-on sentence).
+    - In ticket description click plus icon on the right side.
+    - Select preformatted
+    - Copy and patest text into the preformatted box to retain structure.
+
   - Reproduction step(s) for problems
   - Web URLs, links to jenkins job logs are very helpful.
 
