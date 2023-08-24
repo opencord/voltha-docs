@@ -159,3 +159,10 @@ Extra credit
 
    make sterile
    make html 2>&1 | sed -e 's/WARNING/\nWARNING/g' | less --ignore-case --hilite-search '/WARNING'
+
+Caveat(s)
+---------
+
+- An overnight process is responsible for publishing repo:voltha-docs
+  edits on https://docs.voltha.org.  Due to this delay it can take
+  up to 24 hours before changes become visible on the website.
