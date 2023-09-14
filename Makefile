@@ -21,11 +21,7 @@
 ##-------------------##
 ##---]  GLOBALS  [---##
 ##-------------------##
-TOP ?=$(strip \
-  $(dir \
-    $(abspath $(lastword $(MAKEFILE_LIST)))\
-   )\
-)
+TOP ?=$(strip $(dir $(abspath $(lastword $(MAKEFILE_LIST))) ) )
 
 ##--------------------##
 ##---]  INCLUDES  [---##
@@ -69,6 +65,10 @@ reload: $(venv-activate-patched)
 ## See Also: make test-errors
 ## -----------------------------------------------------------------------
 test: lint linkcheck
+
+# [TODO] relocate into repo:onf-make/
+lint      : $(venv-activate-patched)
+linkcheck : $(venv-activate-patched)
 
 ## -----------------------------------------------------------------------
 ## Intent: Exercise all generation targets
