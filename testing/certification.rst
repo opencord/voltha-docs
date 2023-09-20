@@ -69,7 +69,7 @@ The job can be created according to the desired workflow to be tested. Informati
 `system tests information <https://docs.voltha.org/master/testing/voltha_test_automation.html#hardware-or-physical-pod-jobs>`_
 The required patches are:
 
-- ci-management. Creates the job that will run in jenkins. `Job Example <https://github.com/opencord/ci-management/blob/master/jjb/voltha-test/voltha-certification.yaml>`_
+- ci-management. Creates the job that will run in jenkins. Job Example ``https://github.com/opencord/ci-management/blob/master/jjb/voltha-test/voltha-certification.yaml``
 - pod configs. Inserts information about the OLT and target ONUs data. `Data example <https://github.com/opencord/pod-configs/blob/master/deployment-configs/menlo-certification-pod-radisys-1600g-DT.yaml>`_
   and `kubernetes example <https://github.com/opencord/pod-configs/blob/master/kubernetes-configs/menlo-certification-pod-radisys-1600g.conf>`_
 - voltha-system-tests. Adds the sadis configuration for the OLT and the ONU. `Sadis Example <https://github.com/opencord/voltha-system-tests/blob/master/tests/data/menlo-certification-pod-radisys-1600g-sadis-DT.json>`_
