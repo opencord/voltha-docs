@@ -27,7 +27,7 @@ TOP ?=$(strip $(dir $(abspath $(lastword $(MAKEFILE_LIST))) ) )
 ##---]  INCLUDES  [---##
 ##--------------------##
 include $(TOP)/config.mk#                # configure
-include $(TOP)/makefiles/include.mk      # top level include
+include $(TOP)/makefiles-orig/include.mk      # top level include
 
 # You can set these variables from the command line.
 SPHINXOPTS   ?=
