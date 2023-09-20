@@ -27,13 +27,13 @@ $(if $(DEBUG),$(warning ENTER))
 
 ## -----------------------------------------------------------------------
 ## Define vars based on relative import (normalize symlinks)
-## Usage: include makefiles/onf/include.mk
+## Usage: include makefiles-orig/onf/include.mk
 ## -----------------------------------------------------------------------
 onf-mk-abs    ?= $(abspath $(lastword $(MAKEFILE_LIST)))
 onf-mk-top    := $(subst /include.mk,$(null),$(onf-mk-abs))
 ONF_MAKEDIR   := $(onf-mk-top)
 
-TOP ?= $(patsubst %/makefiles/include.mk,%,$(onf-mk-abs))
+TOP ?= $(patsubst %/makefiles-orig/include.mk,%,$(onf-mk-abs))
 
 include $(ONF_MAKEDIR)/consts.mk
 include $(ONF_MAKEDIR)/help/include.mk       # render target help

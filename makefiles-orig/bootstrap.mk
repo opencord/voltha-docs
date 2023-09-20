@@ -48,10 +48,10 @@ mk-library-include=$(strip \
     $(foreach makedir,$(subst _ROOT,_MKDIR,$(var)),\
 $(warning makedir=$(makedir))\
       $(if $($(makedir)),$(null),\
-        $(eval $(makedir)=$$$$($(var))/makefiles)\
+        $(eval $(makedir)=$$$$($(var))/makefiles-orig)\
 $(warning $(makedir) = $($($(makedir))))\
-$(info $$(wildcard $(val)/makefiles/include.mk) = $(wildcard $(val)/makefiles/include.mk))\
-        $(foreach mf,$(wildcard $(wildcard $(val)/makefiles/include.mk)),\
+$(info $$(wildcard $(val)/makefiles-orig/include.mk) = $(wildcard $(val)/makefiles-orig/include.mk))\
+        $(foreach mf,$(wildcard $(wildcard $(val)/makefiles-orig/include.mk)),\
 $(warning $$(eval include $(mf)))\
           $(eval include $(mf)))\
 )
