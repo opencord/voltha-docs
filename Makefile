@@ -167,7 +167,7 @@ freeze: repos
 ## -----------------------------------------------------------------------
 ## Intent: build multiple versions
 ## -----------------------------------------------------------------------
-multiversion: $(venv-activate-script) Makefile | prep $(OTHER_REPO_DOCS)
+multiversion: $(venv-activate-patched) Makefile | prep $(OTHER_REPO_DOCS)
 	$(activate)\
  && sphinx-multiversion "$(SOURCEDIR)" "$(BUILDDIR)/multiversion" $(SPHINXOPTS)
 	cp "$(SOURCEDIR)/_templates/meta_refresh.html" "$(BUILDDIR)/multiversion/index.html"
@@ -183,7 +183,8 @@ prep: | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
 ##         library makefiles do more so transfer control only when needed.
 ## -----------------------------------------------------------------------
 include $(ONF_MAKEDIR)/voltha/docs-catchall-targets.mk
-$(voltha-docs-catchall): $(venv-activate-script) Makefile | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
+voltha-docs-catchall : $(voltha-docs-catchall)
+$(voltha-docs-catchall): $(venv-activate-patched) Makefile | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
 	@echo " ** CATCHALL: $@"
 	$(activate)\
  && $(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
@@ -191,7 +192,7 @@ $(voltha-docs-catchall): $(venv-activate-script) Makefile | $(OTHER_REPO_DOCS) $
 ## -----------------------------------------------------------------------
 ## Intent: Display makefile target help
 ## -----------------------------------------------------------------------
-help :: $(venv-activate-script)
+help :: $(venv-activate-patched)
 	@ echo
 	$(HIDE)$(activate) \
  && $(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
