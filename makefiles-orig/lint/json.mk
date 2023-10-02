@@ -42,7 +42,20 @@ endif# NO-LINT-JSON
 ## Intent: exhaustive json syntax checking
 ## -----------------------------------------------------------------------
 json-find-args := $(null)
+
+## -----------------------------------------------------------------------
+## [TODO] makefile migration enhancement
+## Move switches into makefiles/onf-make/makefiles/lint/json/excl.mk
+## -----------------------------------------------------------------------
+## makefiles/virtualenv/index.mk could also append $(venv-name) to a
+## global directory exclusion list for central maintenance.
+## -----------------------------------------------------------------------
 json-find-args += -name '$(venv-name)'
+
+## Migrate into makefiles/local/lint/json/excl.mk
+json-find-args += -o -name '*venv*'
+json-find-args += -o -name '_build'
+
 lint-json-all:	
 	$(HIDE)$(MAKE) --no-print-directory lint-json-install
 

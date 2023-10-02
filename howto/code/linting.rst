@@ -70,14 +70,14 @@ Command: `doc8 <https://pypi.org/project/doc8/>`_
 
 Sources:
 
-- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
 - makefiles/lint/doc8.mk
 
 Notes:
 
 - lint-doc8-all target dependency will create a `python virtual env <https://wiki.opennetworking.org/display/JOEY/PythonVenv>`_
 - python 3.10+ requires `virtual env patching <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/patches/>`_ (dynamic, applied when needed).
-- `makefiles/patches/include.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/patches/>`_
+- `makefiles/patches/include.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles-orig/patches/>`__
 
 |
 
@@ -96,14 +96,14 @@ Command: `flake8 <https://flake8.pycqa.org/en/latest>`_
 
 Sources:
 
-- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
 - makefiles/lint/flake8.mk
 
 Notes:
 
 - lint-flake8-all target dependency will create a `python virtual env <https://wiki.opennetworking.org/display/JOEY/PythonVenv>`_
 - python 3.10+ requires `virtual env patching <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/patches/>`_ (dynamic, applied when needed).
-- `makefiles/patches/include.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/patches/>`_
+- `makefiles/patches/include.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles-orig/patches/>`__
 
 |
 
@@ -134,7 +134,7 @@ Command:
 
 Sources:
 
-- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
 
 |
 
@@ -153,8 +153,8 @@ Command: `json.tool <https://docs.python.org/3/library/json.html>`_
 
 Sources:
 
-- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/>`__
-- `makefiles/lint/json.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/json.mk>`_
+- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint/json.mk <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/json.mk>`_
 
 |
 
@@ -191,9 +191,9 @@ Command: `pylint <https://www.pylint.org/>`_
 
 Sources:
 
-- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
 - makefiles/lint/pylint.mk
-- `makefiles/patches/include.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/patches/>`_
+- `makefiles/patches/include.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles-orig/patches/>`__
 
 Notes:
 
@@ -218,8 +218,8 @@ Command: rflint `robotframework-lint <https://pypi.org/project/robotframework-li
 
 Sources:
 
-- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/>`__
-- `makefiles/lint/robot.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/robot.mk>`_
+- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint/robot.mk <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/robot.mk>`_
 
 |
 
@@ -231,7 +231,7 @@ Command: `doc8 <https://pypi.org/project/doc8/>`_
 
 Sources:
 
-- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
 - `Makefiles::doc8 <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/Makefile#98>`_
 
 |
@@ -251,8 +251,8 @@ Command: `shellcheck <https://github.com/koalaman/shellcheck>`_
 
 Sources:
 
-- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/>`__
-- `makefiles/lint/shell.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/shell.mk>`_
+- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint/shell.mk <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/shell.mk>`_
 
 |
 
@@ -271,8 +271,8 @@ Command: `yamllint <https://yamllint.readthedocs.io/en/stable/>`_
 
 Sources:
 
-- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/>`__
-- `makefiles/lint/yaml.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles/lint/yaml.mk>`_
+- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint/yaml.mk <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/yaml.mk>`_
 
 |
 
