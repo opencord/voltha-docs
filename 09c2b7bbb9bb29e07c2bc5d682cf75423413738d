@@ -192,6 +192,24 @@
       "parentUuid": "da2fa0f3_2d353acf",
       "revId": "09c2b7bbb9bb29e07c2bc5d682cf75423413738d",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "62d54ade_c4a1cf94",
+        "filename": "overview/troubleshooting.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-10-04T18:49:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "656f114e_5fe9aa55",
+      "revId": "09c2b7bbb9bb29e07c2bc5d682cf75423413738d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
