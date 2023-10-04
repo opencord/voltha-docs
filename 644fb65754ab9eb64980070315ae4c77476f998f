@@ -16,6 +16,23 @@
       "message": "I was certainly educational to learn the rationale behind some of the changes. Thanks.",
       "revId": "644fb65754ab9eb64980070315ae4c77476f998f",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cd0f38ee_524f3e78",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-10-04T18:48:37Z",
+      "side": 1,
+      "message": "Two +1(s) with no merge button appearing in gerrit.\nHelping the patch along.",
+      "revId": "644fb65754ab9eb64980070315ae4c77476f998f",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
