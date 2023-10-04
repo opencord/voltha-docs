@@ -36,6 +36,23 @@
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d818f389_67f7bcbf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-10-04T13:07:51Z",
+      "side": 1,
+      "message": "Oh just thought of something, one side note about submitting atomic patches for multiple files:\n\nMost of the VOLTHA repos contains a VERSION file/string that must be updated for every checkin.\nSubmitting several patches for atomic documentation edits (VS submitting a patch with a set of logic) will indirectly rev large version string changes for release.",
+      "revId": "09c2b7bbb9bb29e07c2bc5d682cf75423413738d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5ace3446_ef3e226c",
