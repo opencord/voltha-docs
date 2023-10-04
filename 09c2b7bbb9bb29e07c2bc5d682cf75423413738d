@@ -88,6 +88,24 @@
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9475278e_c33652d1",
+        "filename": "howto/code/linting.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-10-04T13:18:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fc833b40_523b3ed4",
+      "revId": "09c2b7bbb9bb29e07c2bc5d682cf75423413738d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c1c48520_4ddad1ce",
@@ -119,6 +137,24 @@
       "side": 1,
       "message": "Yes, probably should have decorated that as [TODO] ....\nOr listed the item in todo.mk or a todo target with more context (refactoring note for the makefile migration).",
       "parentUuid": "c1c48520_4ddad1ce",
+      "revId": "09c2b7bbb9bb29e07c2bc5d682cf75423413738d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9ce9e5af_308f9bc0",
+        "filename": "makefiles-orig/lint/json.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-10-04T13:18:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "af860230_3cfa777c",
       "revId": "09c2b7bbb9bb29e07c2bc5d682cf75423413738d",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     },
