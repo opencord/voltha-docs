@@ -18,6 +18,24 @@
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c62d215e_024b6c09",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-10-04T12:58:31Z",
+      "side": 1,
+      "message": "One patch per file cannot be submitted in this case.\n\nmake lint/test is failing on a few different doc and content problems.  Attempting to submit one fix individually will result in jenkins failing a fix patch on the other outstanding problems.\n\nAlso urls periodically go stale over time which is another failure mode (\u0027broken\u0027 will appear in the logs).  Sometimes edits need to be submitted to repair unrelated breakage.",
+      "parentUuid": "cc270f72_2f7cddb2",
+      "revId": "09c2b7bbb9bb29e07c2bc5d682cf75423413738d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5ace3446_ef3e226c",
@@ -31,6 +49,24 @@
       "writtenOn": "2023-10-04T06:18:20Z",
       "side": 1,
       "message": "What is the purpose of the second underscore added here?",
+      "revId": "09c2b7bbb9bb29e07c2bc5d682cf75423413738d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fc833b40_523b3ed4",
+        "filename": "howto/code/linting.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-10-04T12:58:31Z",
+      "side": 1,
+      "message": "This is a sphinx documentation modifier for URLs (anonymous hyperlinks)\n\nNormally the declaration contains a single underscore.\nWhen a `x \u003curl\u003e`_ string is duplicated within a single file sphinx will normally error out.\n\nOne workaround for the duplication is to decorate the string with double-underscore signaling the instance is OK.",
+      "parentUuid": "5ace3446_ef3e226c",
       "revId": "09c2b7bbb9bb29e07c2bc5d682cf75423413738d",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     },
@@ -54,6 +90,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "af860230_3cfa777c",
+        "filename": "makefiles-orig/lint/json.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-10-04T12:58:31Z",
+      "side": 1,
+      "message": "Yes, probably should have decorated that as [TODO] ....\nOr listed the item in todo.mk or a todo target with more context (refactoring note for the makefile migration).",
+      "parentUuid": "c1c48520_4ddad1ce",
+      "revId": "09c2b7bbb9bb29e07c2bc5d682cf75423413738d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "da2fa0f3_2d353acf",
         "filename": "overview/troubleshooting.rst",
         "patchSetId": 2
@@ -65,6 +119,24 @@
       "writtenOn": "2023-10-04T06:18:20Z",
       "side": 1,
       "message": "I don\u0027t see a reason for replacing https with http.",
+      "revId": "09c2b7bbb9bb29e07c2bc5d682cf75423413738d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "656f114e_5fe9aa55",
+        "filename": "overview/troubleshooting.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-10-04T12:58:31Z",
+      "side": 1,
+      "message": "repo:voltha-docs contains a makefile target linkcheck (ie: make test) that will sanity check document URLs.  \n\nIntermittent failures have been reported at times while trying to resolve/verify each url.  Unfortunately these have also manifested in jenkins.\n\nhttps will add a mild bit of overhead by adding encryption.\n\nFor URLs that do not require a secure connection, using simple http VS https out of the box helps reduce webserver load.\n\nFor document checking, it will also help shrink potential for intermittent linkcheck failure points.",
+      "parentUuid": "da2fa0f3_2d353acf",
       "revId": "09c2b7bbb9bb29e07c2bc5d682cf75423413738d",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
