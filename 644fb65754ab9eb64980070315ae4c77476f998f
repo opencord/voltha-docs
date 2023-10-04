@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "85a8a90c_06dc30cd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000983
+      },
+      "writtenOn": "2023-10-04T14:03:06Z",
+      "side": 1,
+      "message": "I was certainly educational to learn the rationale behind some of the changes. Thanks.",
+      "revId": "644fb65754ab9eb64980070315ae4c77476f998f",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
