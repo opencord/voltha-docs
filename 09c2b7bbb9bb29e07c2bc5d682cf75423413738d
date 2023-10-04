@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cc270f72_2f7cddb2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000983
+      },
+      "writtenOn": "2023-10-04T06:18:20Z",
+      "side": 1,
+      "message": "This commit looks like a number of fixes interspersed with temporary changes that are meant to be reverted later. That would be one more reason to split this commit.",
+      "revId": "09c2b7bbb9bb29e07c2bc5d682cf75423413738d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5ace3446_ef3e226c",
+        "filename": "howto/code/linting.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1000983
+      },
+      "writtenOn": "2023-10-04T06:18:20Z",
+      "side": 1,
+      "message": "What is the purpose of the second underscore added here?",
+      "revId": "09c2b7bbb9bb29e07c2bc5d682cf75423413738d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c1c48520_4ddad1ce",
+        "filename": "makefiles-orig/lint/json.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1000983
+      },
+      "writtenOn": "2023-10-04T06:18:20Z",
+      "side": 1,
+      "message": "Is this comment a TODO?",
+      "revId": "09c2b7bbb9bb29e07c2bc5d682cf75423413738d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "da2fa0f3_2d353acf",
+        "filename": "overview/troubleshooting.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1000983
+      },
+      "writtenOn": "2023-10-04T06:18:20Z",
+      "side": 1,
+      "message": "I don\u0027t see a reason for replacing https with http.",
+      "revId": "09c2b7bbb9bb29e07c2bc5d682cf75423413738d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
