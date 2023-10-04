@@ -33,6 +33,23 @@
       "message": "Two +1(s) with no merge button appearing in gerrit.\nHelping the patch along.",
       "revId": "644fb65754ab9eb64980070315ae4c77476f998f",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6922084c_6eef01ab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-10-04T18:49:11Z",
+      "side": 1,
+      "message": "Neat, clear the added +2 approval and merge button disappears again.",
+      "revId": "644fb65754ab9eb64980070315ae4c77476f998f",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
