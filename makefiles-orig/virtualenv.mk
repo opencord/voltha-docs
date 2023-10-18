@@ -84,13 +84,16 @@ sterile :: clean
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
 help ::
-	@echo
-	@echo '[VIRTUAL ENV]'
-	@echo '  venv                Create a python virtual environment'
+	@printf '\n[VIRTUAL ENV]\n'
+	@printf '  %-25.25s %s\n' 'venv' \
+  'Create a python virtual environment'
 	@echo '    venv-name=        Subdir name for virtualenv install'
-	@echo '  venv-activate-script         make macro name'
+	@printf '  %-25.25s %s\n' 'venv-activate-script' \
+  'venv make-once target dependency'
 	@echo '      $$(target) dependency    install python virtualenv'
 	@echo '      source $$(macro) && cmd  configure env and run cmd'
+	@printf '  %-25.25s %s\n' 'venv-activate-patched' \
+  'venv-activate-script patched for python v3.10+'
 
 $(if $(DEBUG),$(warning LEAVE))
 
