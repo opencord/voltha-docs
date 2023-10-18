@@ -1,0 +1,3 @@
+[submodule "makefiles/onf-lib"]
+	path = makefiles/onf-lib
+	url = https://github.com/opencord/onf-make.git
