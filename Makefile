@@ -26,8 +26,7 @@ TOP ?=$(strip $(dir $(abspath $(lastword $(MAKEFILE_LIST))) ) )
 ##--------------------##
 ##---]  INCLUDES  [---##
 ##--------------------##
-include $(TOP)/config.mk#                # configure
-include $(TOP)/makefiles-orig/include.mk      # top level include
+include $(TOP)/makefiles/include.mk      # top level include
 
 # You can set these variables from the command line.
 SPHINXOPTS   ?=
@@ -89,7 +88,10 @@ test-all : test
 # coverage
 # linkcheck
 
+# -----------------------------------------------------------------------
 #  currently not enabled, should be added to lint target
+# [TODO] Create repo:onf-make/makefiles/lint/mdl
+# -----------------------------------------------------------------------
 LINT_STYLE ?= mdl_strict.rb
 md-lint: | $(OTHER_REPO_DOCS)
 	@echo "markdownlint(mdl) version: `mdl --version`"
