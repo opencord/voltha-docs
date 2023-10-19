@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8c1dc90b_5bde0e79",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-10-19T13:28:48Z",
+      "side": 1,
+      "message": "Attach a cosmetic *.rst document to force a build / license check.\n\nVariant behavior between patch #1 and recheck.\nAttempt #1 failed on a license problem from an external repository pulled in.\nRecheck attempt reported:  jenkins \"No Builds Executed\" job to run\n\nRecheck should have performed all stages run during the intial attempt.\nManually adding howto/nop.rst to force the issue.\n",
+      "revId": "af196a398b7022bc458fe0bd20c5e2938736d728",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
