@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "40ab3589_9a06330e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-10-19T13:05:01Z",
+      "side": 1,
+      "message": "recheck\n\nLicense header fixed for repo:onf-make/bin/setup.sh\nNeed to update repo:voltha-docs to exclude makefiles/ from license checking.\nrepo:onf-make checkins will be able to handle that.",
+      "revId": "867811ad033f801c8106a30f1ad9ca922623216c",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
