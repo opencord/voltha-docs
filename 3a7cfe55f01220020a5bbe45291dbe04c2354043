@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1221a274_8dd22622",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-10-24T17:14:11Z",
+      "side": 1,
+      "message": "recheck\n\nHuh(?) license header added in repo:onf-make/bin/setup.sh added/merged on 10/18.\nLast attempt failed license check on 10/19.\n\nonf-make git-submodule is checked out from HEAD not a frozen/release branch (it should but currently not setup that way) so last attempt should have succeded.\n\nRecheck again on the off chance timing or caching may have been the underlying culprit for the patched bin/setup.sh file.",
+      "revId": "3a7cfe55f01220020a5bbe45291dbe04c2354043",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
