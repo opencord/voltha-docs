@@ -68,6 +68,30 @@
       },
       "revId": "51c57e1232adcc6009f9f131d81cfe7569d347e5",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b2a70ce8_5181942a",
+        "filename": "howto/code/voltha-protos.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-10-25T18:43:19Z",
+      "side": 1,
+      "message": "Need to change the verbage for this one, the dependency exists in python/requirements.txt which is used to setup the virtual env for testing.\n\n[crucible:voltha-system-tests] git blame requirements.txt | grep protos\n7c397d79 (TorstenThieme     2021-07-14 11:51:09 +0000 18) voltha-protos\u003e\u003d4.2.0",
+      "parentUuid": "2466904b_2594f4ce",
+      "range": {
+        "startLine": 61,
+        "startChar": 0,
+        "endLine": 61,
+        "endChar": 21
+      },
+      "revId": "51c57e1232adcc6009f9f131d81cfe7569d347e5",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
