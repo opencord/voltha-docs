@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "62b82ae8_507e0e1d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-10-25T14:41:37Z",
+      "side": 1,
+      "message": "git-submodule commit hash is stored within the subdirectory where it will be checked out.\nJan bumped the commit hash to pull in latest version with bin/setup.sh fixed.\n\nList of modified files in gerrit only showing makefiles/onf-lib/ so will need to see if the update augments the makefile patch or replaces it.",
+      "revId": "0cbee5187c2a28f56659378013178048260cb3f8",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
