@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e58b7dc1_b6723ddb",
+        "filename": "howto/code/voltha-protos.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1000218
+      },
+      "writtenOn": "2023-10-25T18:18:58Z",
+      "side": 1,
+      "message": "I don\u0027t think we need this anymore.",
+      "range": {
+        "startLine": 55,
+        "startChar": 2,
+        "endLine": 55,
+        "endChar": 19
+      },
+      "revId": "51c57e1232adcc6009f9f131d81cfe7569d347e5",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ae34baf5_3f403b53",
+        "filename": "howto/code/voltha-protos.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1000218
+      },
+      "writtenOn": "2023-10-25T18:18:58Z",
+      "side": 1,
+      "message": "There shouldn\u0027t be any dependency to voltha-protos here. And no go.mod file as well.",
+      "range": {
+        "startLine": 57,
+        "startChar": 0,
+        "endLine": 57,
+        "endChar": 20
+      },
+      "revId": "51c57e1232adcc6009f9f131d81cfe7569d347e5",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2466904b_2594f4ce",
+        "filename": "howto/code/voltha-protos.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1000218
+      },
+      "writtenOn": "2023-10-25T18:18:58Z",
+      "side": 1,
+      "message": "Same as my comment for voltha-helm-charts.",
+      "range": {
+        "startLine": 61,
+        "startChar": 0,
+        "endLine": 61,
+        "endChar": 21
+      },
+      "revId": "51c57e1232adcc6009f9f131d81cfe7569d347e5",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
