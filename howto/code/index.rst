@@ -8,3 +8,4 @@ Development & Source Code
    job-failures
    linting
    pull_request
+   voltha-protos
