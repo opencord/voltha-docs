@@ -12,4 +12,4 @@ HOWTO
 
    accounts
    development
-   eof
+   nop
