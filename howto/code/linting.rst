@@ -1,8 +1,9 @@
-Source code syntax checking
-===========================
+======================================
+Makefile Lint Targets: Syntax Checking
+======================================
 
-Getting Started
----------------
+Targets
+=======
 
 .. code:: bash
 
@@ -29,7 +30,7 @@ Getting Started
 
 
 All Sources
-+++++++++++
+===========
 
 The generic lint target can be used to invoke all defined lint targets.
 
@@ -42,10 +43,31 @@ The generic lint target can be used to invoke all defined lint targets.
 
 
 Makefile help
-~~~~~~~~~~~~~
+=============
 
 Individual Makefiles support a help target that will display a list of
 targets and functionality supported.
+
+.. code:: bash
+
+    make help
+    make help | grep {topic}
+
+.. list-table:: help
+   :widths: 20, 60
+   :header-rows: 1
+
+   * - Make Target
+     - Description
+   * - help
+     - Display available help for targets and flags
+   * - make help | lint-{topic}
+     - Display summary usage for lint-doc8, lint-license, lint-make
+   * - lint-{topic}-help
+     - Display extended help for a topic, supported makefile targets, etc
+
+Legacy Help Usage
+-----------------
 
 .. code:: bash
 
@@ -56,24 +78,58 @@ targets and functionality supported.
 |
 
 
-doc8 / RST files
-++++++++++++++++
+doc8 / restructuredText (rst)
+=============================
 
 Command: `doc8 <https://pypi.org/project/doc8/>`_
+
+.. list-table:: Makefile Targets
+   :widths: 20, 60
+   :header-rows: 1
+
+   * - Target
+     - Description
+   * - help
+     - Display item ``lint-doc8`` as a summary help topic item.
+   * - lint-doc8-help
+     - Display extended help for ``lint-doc8`` targets
+   * -
+     -
+   * - lint-doc8
+     - Build system lint target used to syntax check restructuredText sources.
+   * - lint-doc8-all
+     - Filesystem traversal, check all ``*.rst`` sources.
+   * - lint-doc8-mod
+     - Syntax check locally modified files (~git status)
+   * - lint-doc8-src
+     - Syntax check a list of files passed in as an argument.
+   * -
+     -
+   * - lint-doc8-install
+     - Dependency driven installation of the doc8 tool.
 
 .. code:: bash
 
     make clean
-    make lint                2>&1 | tee log
-    make lint-doc8-all      2>&1 | tee log
-    make lint-doc8-modified 2>&1 | tee log
+    make lint-doc8 2>&1 | tee log
 
-Sources:
+    make lint   # supported by repositories that define lint-doc8 as a default target.
 
-- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
-- makefiles/lint/doc8.mk
+.. list-table:: Sources
+   :widths: 20, 60
+   :header-rows: 1
 
-Notes:
+   * - Source
+     - Description
+   * - `makefiles/lint/doc8/include.mk <http://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/doc8/include.mk>`_
+     - Main makefile logic for syntax checking RST sources.
+   * - `makefiles/lint/doc8/install.mk <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/doc8/install.mk>`_
+     - Dependency logic to install the doc8 tool when needed.
+   * - `makefiles/lint/doc8/excl.mk <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/doc8/install.mk>`_
+     - Common doc8 exclusion patterns for all repositories.
+
+See Also
+--------
 
 - lint-doc8-all target dependency will create a `python virtual env <https://wiki.opennetworking.org/display/JOEY/PythonVenv>`_
 - python 3.10+ requires `virtual env patching <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/patches/>`_ (dynamic, applied when needed).
@@ -83,7 +139,7 @@ Notes:
 
 
 python: flake8
-++++++++++++++
+==============
 
 Command: `flake8 <https://flake8.pycqa.org/en/latest>`_
 
@@ -108,7 +164,7 @@ Notes:
 |
 
 Helm Charts
-+++++++++++
+===========
 
 Command(s):
 - `helmlint.sh <https://gerrit.opencord.org/plugins/gitiles/helm-repo-tools/+/refs/heads/master/helmlint.sh>`_
@@ -128,7 +184,7 @@ Sources:
 
 
 Golang
-++++++
+======
 
 Command:
 
@@ -140,7 +196,7 @@ Sources:
 
 
 JSON
-++++
+====
 
 Command: `json.tool <https://docs.python.org/3/library/json.html>`_
 
@@ -160,7 +216,7 @@ Sources:
 
 
 License / Copyright notice
-++++++++++++++++++++++++++
+==========================
 
 Command:
 
@@ -178,7 +234,7 @@ Sources:
 
 
 python: pylint
-++++++++++++++
+==============
 
 Command: `pylint <https://www.pylint.org/>`_
 
@@ -205,7 +261,7 @@ Notes:
 
 
 Robot
-+++++
+=====
 
 Command: rflint `robotframework-lint <https://pypi.org/project/robotframework-lint/>`_
 
@@ -224,21 +280,8 @@ Sources:
 |
 
 
-reStructedTextFile (rst)
-++++++++++++++++++++++++
-
-Command: `doc8 <https://pypi.org/project/doc8/>`_
-
-Sources:
-
-- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
-- `Makefiles::doc8 <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/Makefile#98>`_
-
-|
-
-
-Shell
-+++++
+Shell / Command Line Scripts
+============================
 
 Command: `shellcheck <https://github.com/koalaman/shellcheck>`_
 
@@ -258,7 +301,7 @@ Sources:
 
 
 Yaml
-++++
+====
 
 Command: `yamllint <https://yamllint.readthedocs.io/en/stable/>`_
 
@@ -278,7 +321,7 @@ Sources:
 
 
 Bugs
-~~~~
+====
 
 - `jira::VOLTHA <https://jira.opencord.org/projects/VOL>`-
 - Include repository URL
@@ -289,7 +332,7 @@ Bugs
 
 
 Repositories
-++++++++++++
+============
 
 - [`master <https://gerrit.opencord.org/plugins/gitiles/bbsim/+/refs/heads/master>`__] `bbsim <https://gerrit.opencord.org/plugins/gitiles/bbsim>`_
 - [`master <https://gerrit.opencord.org/plugins/gitiles/pod-configs/+/refs/heads/master>`__] `pod-configs <https://gerrit.opencord.org/plugins/gitiles/pod-configs>`_
@@ -301,7 +344,7 @@ Repositories
 
 
 Notes
-~~~~~
+=====
 
 - Volume problem reports require cleanup before linting can become a default.
 
