@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "c9f146bf_e5ad6f80",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1000983
+      },
+      "writtenOn": "2023-11-03T09:48:33Z",
+      "side": 1,
+      "message": "s/votlha-docs-catchall/voltha-docs-catchall/",
+      "revId": "cd931b6f7fba62c16b18030f8e62996d1fed11c7",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "77b72c20_63b8733d",
@@ -14,6 +31,23 @@
       "writtenOn": "2023-11-02T23:23:14Z",
       "side": 1,
       "message": "LGTM",
+      "revId": "cd931b6f7fba62c16b18030f8e62996d1fed11c7",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "35261f7f_3f2ef314",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000983
+      },
+      "writtenOn": "2023-11-03T09:48:33Z",
+      "side": 1,
+      "message": "When running \"make voltha-docs-catchall\", I get Sphinx error: \"Builder name docs not registered or available through entry point\". Could be something with my setup.",
       "revId": "cd931b6f7fba62c16b18030f8e62996d1fed11c7",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
