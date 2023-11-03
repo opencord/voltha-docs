@@ -20,6 +20,24 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "09435bfe_656dd196",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-11-03T14:08:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c9f146bf_e5ad6f80",
+      "revId": "cd931b6f7fba62c16b18030f8e62996d1fed11c7",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "77b72c20_63b8733d",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 4
@@ -48,6 +66,24 @@
       "writtenOn": "2023-11-03T09:48:33Z",
       "side": 1,
       "message": "When running \"make voltha-docs-catchall\", I get Sphinx error: \"Builder name docs not registered or available through entry point\". Could be something with my setup.",
+      "revId": "cd931b6f7fba62c16b18030f8e62996d1fed11c7",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6ef96d0c_6fedf9f2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-11-03T14:08:05Z",
+      "side": 1,
+      "message": "Hmmm I have not seen that message before on a linux host.\nHave an OSX laptop now, will finish setting that up and see if the problem can be reproduced.",
+      "parentUuid": "35261f7f_3f2ef314",
       "revId": "cd931b6f7fba62c16b18030f8e62996d1fed11c7",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }

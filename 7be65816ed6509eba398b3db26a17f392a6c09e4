@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "416ace8c_708a094f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-11-03T14:08:05Z",
+      "side": 1,
+      "message": "Commit message updated which cleared Submit Requirements:\n  - Changes made per Roger(s) input\n  - Re-add +1 accept from Mahir\n  - Re-add +1 accept from Daf\n  - Re-add +1 verify from Jenkins",
+      "revId": "7be65816ed6509eba398b3db26a17f392a6c09e4",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
