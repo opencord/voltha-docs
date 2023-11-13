@@ -51,6 +51,12 @@ STATIC_DOCS    := _static/voltha-system-tests _static/cord-tester
 .PHONY: help test lint reload Makefile prep
 
 ## -----------------------------------------------------------------------
+## Intent: Display makefile target help
+## -----------------------------------------------------------------------
+help :: help-targets-main
+help-verbose :: help-targets-sphinx
+
+## -----------------------------------------------------------------------
 ## Intent: Real time viewing, dynamically generate and reload document
 ##         changes for web browser viewing.
 ## Usage:
@@ -192,8 +198,9 @@ $(voltha-docs-catchall): $(venv-activate-patched) Makefile | $(OTHER_REPO_DOCS) 
 ## -----------------------------------------------------------------------
 ## Intent: Display makefile target help
 ## -----------------------------------------------------------------------
-help :: $(venv-activate-patched)
+help-targets-sphinx : $(venv-activate-patched)
 	@ echo
+	@echo '[HELP: Sphinx]'
 	$(HIDE)$(activate) \
  && $(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
@@ -227,8 +234,37 @@ clean::
 ## -----------------------------------------------------------------------
 ## Intent:
 ## -----------------------------------------------------------------------
-help ::
-	@echo "  warnings              Display WARNING strings buried in sphinx output"
+help :: help-targets-main
+help-targets-main :
+
+	@echo
+	@echo '[HELP]'
+	@printf '  %-30.30s %s\n' 'help' \
+	  'Summary makefile target help'
+	@printf '  %-30.30s %s\n' 'help-verbose' \
+	  'Extended makefile target help'
+
+	@echo
+	@echo '[INIT]'	
+	@printf '  %-30.30s %s\n' 'init' \
+	    'Alias for git-submodules'
+	@printf '  %-30.30s %s\n' 'git-submodules' \
+	    'Checkout external dependent repositories'
+
+	@echo
+	@echo '[TEST: Failures]'
+	@printf '  %-30.30s %s\n' 'broken' \
+	    'Display broken URLs detected in linkcheck output'
+	@printf '  %-30.30s %s\n' 'warnings' \
+	    'Display WARNING strings buried in sphinx output'
+
+## -----------------------------------------------------------------------
+## Intent: Checkout external repository dependencies
+## -----------------------------------------------------------------------
+init :: git-submodules
+
+git-submodules:
+	git submodule update --init --recursive
 
 ## -----------------------------------------------------------------------
 ## Intent: Display make hel footer
