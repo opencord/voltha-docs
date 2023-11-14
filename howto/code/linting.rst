@@ -228,7 +228,7 @@ Command:
 Sources:
 
 - `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/voltha-system-tests/+/refs/heads/master/makefiles/lint>`__
-- `makefiles/lint/license.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-system-tests/+/refs/heads/master/makefiles/lint/license/include.mk>`_
+- `makefiles/lint/license.mk <http://gerrit.opencord.org/plugins/gitiles/voltha-system-tests/+/refs/heads/master/makefiles/lint/license/include.mk>`_
 
 |
 
@@ -236,7 +236,7 @@ Sources:
 python: pylint
 ==============
 
-Command: `pylint <https://www.pylint.org/>`_
+Command: `pylint <http://github.com/pylint-dev/pylint>`_, `pypi.org <https://pypi.org/project/pylint/>`_
 
 .. code:: bash
 
@@ -295,7 +295,7 @@ Command: `shellcheck <https://github.com/koalaman/shellcheck>`_
 Sources:
 
 - `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
-- `makefiles/lint/shell.mk <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/shell.mk>`_
+- `makefiles/lint/shell.mk <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/shell/include.mk>`_
 
 |
 
