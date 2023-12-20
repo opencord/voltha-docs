@@ -56,6 +56,45 @@ Please open a `jira ticket <https://jira.opencord.org/projects/VOL>`_ describing
 - While viewing a jira ticket, the 'More' navigation pulldown menu at the top
   is useful for creating sub tickets or creating links to external resources.
 
+
+Suggestions: Additional ticket documentation
+--------------------------------------------
+
+.. list-table:: Persistent resources for reproduction
+   :widths: 20,80
+   :header-rows: 1
+
+   * - Resource
+     - Notes
+   * - `VOL-5214 <https://jira.opencord.org/browse/VOL-5214>`__
+     - Jira ticket
+   * - `jenkins <https://jenkins.opencord.org/view/VOLTHA-2.X-Tests/job/periodic-voltha-etcd-test/>`_
+     - Capture job URLs to document errors and log messages.
+   * - `gerrit:34854 <https://gerrit.opencord.org/c/ci-management/+/34854>`_
+     - Capture gerrit patch URLs for state and job reconstruction.
+
+- NOTE: Jenkins logs become unavailable due to aging
+
+  - Jenkins job logs become inaccessible over time after growing old or
+    due to volume job runs.  To avoid lost problem reproduction steps always
+    include a gerrit patch link which can be used to reproduce state or job
+    results when original job logs disappear.
+
+- Document as links VS textual comments.
+
+  - Visit jira `VOL-5214 <https://jira.opencord.org/browse/VOL-5214>`__
+  - Select [M]ore from the menu above Description and Details.
+  - Select [L]ink
+  - Select Web Link in the left margin
+  - Paste a gerrit or jenkins URL into the URL text box.
+  - Enter a summry in the link text box -- job number or gerrit ID.
+  - Click the [Link] butotn.
+
+- Example `VOL-5009 <https://jira.opencord.org/browse/VOL-5009>`_
+
+  - Items added as linked URLs will appear in the "Issue Links" section
+    beneath the description where they are easily found.
+
 See Also
 --------
 
