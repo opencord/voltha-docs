@@ -48,7 +48,7 @@ A jenkins job exists for releasing ONOS app
 Jenkins Jobs
 ^^^^^^^^^^^^
 
-- Jenkins jobs from `release matrix: v2.12 <https://wiki.opennetworking.org/display/VOLTHA/v2.12+-+Jenkins+jobs+and+failures>`_
+- Jenkins jobs from `release matrix: v2.12 <https://wiki.opencord.org>`_
 
     - `changeset approval for job merge <https://gerrit.opencord.org/q/owner:do-not-reply%2540opennetworking.org>`_
     - pom.xml non-SNAPSHOT (first approved changeset)
