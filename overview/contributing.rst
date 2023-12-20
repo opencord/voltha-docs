@@ -92,7 +92,7 @@ Steps to successful PRs
     un-related to a changeset you can re-trigger by commenting on the
     patch with `recheck <https://docs.voltha.org/master/howto/code/pull_request.html#development-and-code-reviews>`_
 
-    If failures persist `ask for assistance <https://wiki.opennetworking.org/display/COM/VOLTHA>`_ in slack or a mailing list.
+    If failures persist `ask for assistance <https://wiki.opencord.org>`_ in slack or a mailing list.
 
  6. When patch comments are offered please make the appropriate fixes and then
     amend your commit with `git commit --amend` and re-upload to gerrit with `git review`.
@@ -102,7 +102,7 @@ Steps to successful PRs
 
     **All changes must acquire +2 Approval**.
 
-    Join one of the `communication channels <https://wiki.opennetworking.org/display/COM/VOLTHA>`_
+    Join one of the `communication channels <https://wiki.opencord.org>`_
     to request a review or to bring additional attention to your patch.
 
   8. A patch will be ready to submit a merge request when

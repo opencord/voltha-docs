@@ -34,9 +34,9 @@ See Also
 - Release tracking
 
   - `jira tickets <https://jira.opencord.org/browse/VOL-5019>`_
-  - `Wiki(s) <https://wiki.opennetworking.org/display/VOLTHA/v2.12>`_
+  - `Wiki(s) <https://wiki.opencord.org>`_
 
-    - `Published artifact and versions <https://wiki.opennetworking.org/display/VOLTHA/v2.12+Deployments>`_
+    - `Published artifact and versions <https://wiki.opencord.org>`_
 
 - Release notes template
 

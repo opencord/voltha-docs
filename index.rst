@@ -106,7 +106,7 @@ Community
 
 VOLTHA is an open source project led by a technical steering team that holds weekly meetings.
 You can find more information about the TST, community, meetings, mailing lists and slack channels
-in the `VOLTHA wiki page <https://wiki.opennetworking.org/display/COM/VOLTHA>`_
+in the `VOLTHA wiki page <https://wiki.opencord.org>`_
 
 
 .. toctree::
