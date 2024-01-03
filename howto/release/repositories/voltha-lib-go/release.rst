@@ -2,8 +2,8 @@ Repository: voltha-lib-go
 =========================
 
 - Tag and branch repositories (order is important)
-- Update .gitreview, set defaultbranch=voltha-2.12-beta for commits
-- Update VERSION file to prevent future conflicts.
+- Update .gitreview, set defaultbranch=voltha-2.12 for commits
+- Update VERSION file to prevent future conflicts: {major}.{minor+1}.0
 
 
 Release branching and tagging
