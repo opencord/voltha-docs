@@ -1,4 +1,4 @@
-VOLTHA Components: voltha-protos
+VOLTHA Components: voltha-lib-go
 ================================
 
 Dependencies
