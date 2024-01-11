@@ -66,3 +66,7 @@ Jira Tickets
   - Release branch created
   - VERSION file edit on master has bumped version to {major}.{minor+1}.0.``-dev``
   - All jenkins jobs for repo:voltha-protos reports PASS.
+
+See Also
+========
+- :ref:`howto_code_voltha-protos`

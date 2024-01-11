@@ -1,3 +1,5 @@
+.. _howto_release_components_onos_components
+
 VOLTHA Components: ONOS
 =======================
 
@@ -44,7 +46,7 @@ A jenkins job exists for releasing ONOS app
    * - branch
      - master (?)
 
-
+       
 Jenkins Jobs
 ^^^^^^^^^^^^
 
