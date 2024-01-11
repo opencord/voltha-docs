@@ -16,6 +16,19 @@ As release date approaches and development slows visit the `jira versions dashbo
 
 - On release day click the [Release] button to close out the desktop.
 
+Release-less tickets
+^^^^^^^^^^^^^^^^^^^^
+
+- `docs.voltha.org::Fix Version/s <https://docs.voltha.org/master/overview/contributing/jira_tickets.html>`_
+
+  - VOLTHA enhancements, features, etc are considered for release notes based
+    on the "Fix Version/s" field of a jira ticket.  Ticket owner and target
+    release will need to be specified for each.
+  - Use the query below to identify problems and fix or ask people to review
+    during the weekly TST meeting.
+  - Query for `release-less v2.12 <https://jira.opencord.org/browse/VOL-5105?jql=(%20project%20IN%20(SEBA%2CVOL)%20)%20AND%20(Resolved%20%3E%3D%202022-12-31)%20AND%20(Resolved%20%3C%3D%202024-02-01)%20AND%20(resolution%20NOT%20IN%20(%22Duplicate%22%2C%22Won%27t%20Do%22%2C%22Won%27t%20Fix%22))%20AND%20(resolved%20IS%20NOT%20EMPTY)%20AND%20(fixversion%20IS%20EMPTY)>_ tickets.  These are tickets opened between 2022-12-01 and 2024-02-01.
+    - Adjust query release dates and insert url ``ctrl-K`` into the `Weekly TST Meeting Agenda Page <https://www.google.com/url?q=https://docs.google.com/document/d/1mNqronCip_-tDjFI-ZoudNteC3AnOcVONPHz7HuW8Eg/edit?usp%3Dsharing&sa=D&source=calendar&ust=1704724031747005&usg=AOvVaw1fRxjG_mEhovC-cPGZ4F_c>`_
+
 Confluence
 ----------
 Create a `release tracking page <https://wiki.opencord.org>`_ in confluence, there are a lot of details

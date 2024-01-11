@@ -1,6 +1,16 @@
 VOLTHA Components: hierarchy
 ============================
 
+Release: bbsim
+^^^^^^^^^^^^^^
+   - update: repo:ci-management:vars/installVoltctl.groovy
+
+voltha-go
+^^^^^^^^^
+
+voltha-lib-go
+^^^^^^^^^^^^^
+
 voltha-onos
 ^^^^^^^^^^^
 
@@ -20,10 +30,6 @@ ofagent-go
   - voltha-lib-go
   - voltha-protos
 
-Relase: voltctl
-
-   - update: repo:ci-management:vars/installVoltctl.groovy
-
 voltha-protos
 ^^^^^^^^^^^^^
 - `deps: go.mod <https://gerrit.opencord.org/plugins/gitiles/ofagent-go/+/refs/heads/master/go.mod>`_
@@ -31,8 +37,8 @@ voltha-protos
   - voltha-lib-go
   - voltha-protos
 
-Relase: voltctl
-
+Release: voltctl
+^^^^^^^^^^^^^^^^
    - update: repo:ci-management:vars/installVoltctl.groovy
 
 See Also

@@ -12,8 +12,7 @@ Release: Repositories
    voltha-go/index
    voltha-onos/index
 
-   voltha-protos/index
-   voltha-openolt-adapter/index
+   voltha-openolt-adapter-go/index
    voltha-helm-charts/index
    voltctl/index
    bbsim/index

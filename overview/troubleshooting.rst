@@ -69,7 +69,7 @@ To install them on Ubuntu:
     wget "https://wiki.wireshark.org/Contrib?action=AttachFile&do=get&target=omci.lua"
     wget "https://wiki.wireshark.org/Contrib?action=AttachFile&do=get&target=BinDecHex.lua"
 
-- IMPORTANT - Apply `this <https://ask.wireshark.org/question/4557/bindechexlua-error-bad-argument-to-module-packageseeall/?answer=4573#post-id-4573>`_ fix to BinDecHex.lua.
+- IMPORTANT - Apply `this <http://ask.wireshark.org/question/4557/bindechexlua-error-bad-argument-to-module-packageseeall/?answer=4573#post-id-4573>`_ fix to BinDecHex.lua.
 
 - TODO NOTE - The BinDecHex.lua thread is 4 years old, is the patch still
   required or has it been incorporated into the code base ?

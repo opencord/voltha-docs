@@ -1,3 +1,5 @@
+.. howto_code_voltha-protos:
+
 Modifying repository voltha-protos
 ==================================
 
@@ -16,9 +18,9 @@ Clone, edit, build & test
     cd voltha-protos
     vi ...
 
-    make build
-    make test
-    make lint
+    % make lint
+    % make build
+    % make test
 
 .. list-table:: Build & Test locally
    :widths: 30, 80

@@ -1,10 +1,12 @@
 Misc Todo Items
 ===============
 
-- Update copyright notices
-- find . ! -path './vendor/\*' -print | xargs -n1 gofmt -s -e -w
-- go.mod
+- Baseline build
 
+  - Update copyright notices :ref:`Release Task Copyright`
+  - Golang syntax formatting :ref:`Release Task Golang Syntax`
+
+- Pre-branch build
   - Update module versions for voltha/onos components
   - make mod-update
 
