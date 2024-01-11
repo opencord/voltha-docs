@@ -1,3 +1,5 @@
+.. _howto_release_components_onos_components:
+
 VOLTHA Components: ONOS
 =======================
 

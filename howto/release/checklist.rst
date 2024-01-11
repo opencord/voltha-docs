@@ -172,3 +172,6 @@ Review `voltha-helm-charts <https://gerrit.opencord.org/plugins/gitiles/voltha-h
 Release voltha-protos & friends in order
 ----------------------------------------
 https://docs.voltha.org/master/overview/release_process.html?highlight=charts%20yaml
+
+EOF
+---

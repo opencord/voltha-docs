@@ -2,7 +2,7 @@ Repository: voltha-onos
 =======================
 
 - make sterile distclean
-- find . ! -path './vendor/*' -name '*.go' -print0 | xargs -0 gofmt -s -w
+- Golang syntax formatting :ref:`Release Task Golang Syntax`
 - make mod-update
 - make lint
 - make help

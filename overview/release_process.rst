@@ -74,22 +74,34 @@ Configuration:
 ONOS Apps
 ^^^^^^^^^
 
+:ref:`_howto_release_components_onos_components`
+
 The ONOS Apps need to be released in a different manner.
 
-There is a Jenkins job to release ONOS app: https://jenkins.opencord.org/job/onos-app-release.
-It requires to be triggered with specific parameters, as an example you can check the latest job in that pipeline.
+A dedicated Jenkins job is used to release ONOS app: https://jenkins.opencord.org/job/onos-app-release.
 
-1. Build with parameters: use the name of the repo (not of the app itself)
+The job will need to be initiated using specific parameters, for an example view the lateset pipeline job.
+
+1. `Build with parameters <https://jenkins.opencord.org/job/onos-app-release>`_: use the name of the repo (not of the app itself)
+   - appRepo: sadis
+   - appName: sadis
+   - apiVersion: `sadis:5.12.0-SNAPSHOT <https://gerrit.opencord.org/plugins/gitiles/sadis/+/refs/heads/master/api/pom.xml#22>`__
+   - nextApiVersion: version+1
+   - version: `sadis:5.12.0-SNAPSHOT <https://gerrit.opencord.org/plugins/gitiles/sadis/+/refs/heads/master/app/pom.xml#20>`__
+   - nextVersion: version+1
+   - branch: master
+   - jdkDistro: java-11-amazon-corretto
+
 2. Wait for build to complete
-3. Merge the patches on gerrit https://gerrit.opencord.org/q/owner:do-not-reply%2540opennetworking.org
-
+3. Merge the component patches on gerrit
+   - `View <https://gerrit.opencord.org/q/owner:do-not-reply%2540opennetworking.org>`_
    - Two pull requests are created modifying pom.xml.
    - Approve patch one (-SNAPSHOT: no)  to initiate a release build.
    - Approve patch two (-SNAPSHOT: yes) to revert pom.xml to a non-release version.
 
-4. Approval and merge will trigger a `jenkins job <https://jenkins.opencord.org/job/maven-publish_sadis/>`_ that publish
-   an artifact into the staging repo on `sonatype <https://oss.sonatype.org>`_.  From there the artifact will need
-   to be released into maven central.
+4. Approval and merge will trigger `jenkins::maven-publish_sadis <https://jenkins.opencord.org/job/maven-publish_sadis/>`_
+   that will publish an artifact into the staging repo on `sonatype <https://oss.sonatype.org>`_.
+   Once published to the staging server the artifact will need to be released to maven central.
 
    - Login into the sonatype server (for username and password contact michelle@opennetworking.org)
    - search for org.opencord
