@@ -6,7 +6,7 @@ package: sadis
 
 Inventory pom.xml
 Update MVN Plugin versions in use.
-For Relase remove -SNAPSHOT and build.
+For Release remove -SNAPSHOT and build.
 
 # Document component dependency page
 
