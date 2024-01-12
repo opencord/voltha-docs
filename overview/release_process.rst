@@ -1,5 +1,6 @@
 VOLTHA Release process
 ======================
+
 This document describes the technical steps of VOLTHA's release process.
 The document assumes you are creating a release named voltha-X.Y, where X is the major release versio
 and the y is the minor.
@@ -85,10 +86,9 @@ The job will need to be initiated using specific parameters, for an example view
 1. `Build with parameters <https://jenkins.opencord.org/job/onos-app-release>`_: use the name of the repo (not of the app itself)
    - appRepo: sadis
    - appName: sadis
-   - apiVersion: `sadis:5.12.0-SNAPSHOT <https://gerrit.opencord.org/plugins/gitiles/sadis/+/refs/heads/master/api/pom.xml#22>`_
-     <sadis.api.v
+   - apiVersion: `sadis:5.12.0-SNAPSHOT <https://gerrit.opencord.org/plugins/gitiles/sadis/+/refs/heads/master/api/pom.xml#22>`__
    - nextApiVersion: version+1
-   - version: `sadis:5.12.0-SNAPSHOT <https://gerrit.opencord.org/plugins/gitiles/sadis/+/refs/heads/master/app/pom.xml#20>`_
+   - version: `sadis:5.12.0-SNAPSHOT <https://gerrit.opencord.org/plugins/gitiles/sadis/+/refs/heads/master/app/pom.xml#20>`__
    - nextVersion: version+1
    - branch: master
    - jdkDistro: java-11-amazon-corretto

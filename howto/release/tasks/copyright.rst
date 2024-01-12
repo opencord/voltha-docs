@@ -1,7 +1,7 @@
 .. _Release Task Copyright:
 
-Copyright Notice
-================
+Copyright Notice Updates
+========================
 
 Update copyright notice ending date on sources.
 
@@ -13,3 +13,6 @@ Update copyright notice ending date on sources.
 
    % cd myrepo
    % /tmp/copyright/gather.sh
+   % git status
+   % git add --all
+   % git commit

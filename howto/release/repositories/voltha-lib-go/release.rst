@@ -2,22 +2,42 @@ Repository: voltha-lib-go
 =========================
 
 - Tag and branch repositories (order is important)
-- Update .gitreview, set defaultbranch=voltha-2.12 for commits
-- Update VERSION file to prevent future conflicts: {major}.{minor+1}.0
+- release branch
+
+  - git checkout -b voltha-2.12 tags/2.12.0
+  - Update .gitreview
+  - set defaultbranch=voltha-2.12 for commits
+
+- master branch
+
+  - Increment version file to prevent collision with release branch.
+  - Append a ``*-dev`` suffix to the version string
+  - {max}.{1+min}.0-dev
 
 
 Release branching and tagging
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Releasing repository voltha-lib-go requires tag-then-release branching,
-first create a versioned tag 2.12.0-beta then create branch voltha-2.12-beta
+first create a versioned tag 2.12.0 then create branch voltha-2.12
 from the release tag.
 
 Repository tag names differ based on repository, golang repositories
 use tags with the prefix vee v1.2.3, v2.45.0
 
 .. code-block:: shell-session
-   :caption: First create a release tag
+  :caption: AUTOMATED: Release script bttb.sh
+
+  ## -----------------------------------------------------------
+  ## Use the bttb.sh (branch-tag_OR_tag-branch) script to branch/tag.
+  ## Script is aware of how to tag/branch VOLTHA repositories by name.
+  ## -----------------------------------------------------------
+  % git clone ssh://gerrit.opencord.org:29418/voltha-release.git
+  % cd voltha-release
+  % ./bttb.sh --sandbox sandbox --repo voltha-lib-go --version 2.12
+
+.. code-block:: shell-session
+   :caption: MANUAL: First create a release tag
 
    # Determine repository tagname convention (with/with-out vee)
    git clone "ssh://gerrit.opencord.org:29418/${repo_name}.git"
@@ -26,20 +46,20 @@ use tags with the prefix vee v1.2.3, v2.45.0
    # ---------------------------
    # Step 1 create a release tag
    # ---------------------------
-   local branch_name='voltha-2.12-beta'
-   local tag_name='v2.12.0-beta'
+   local branch_name='voltha-2.12'
+   local tag_name='v2.12.0'
 
    git tag -a "$tag_name" -m "${branch_name} release"
    git push origin "$tag_name"
 
 .. code-block:: shell-session
-   :caption: Create a release branch attached to the release tag
+   :caption: MANUAL: Create a release branch ancored to the tag.
 
    # ------------------------------------------------------------
    # Step 2 - create a release branch attached to the release tag
    # ------------------------------------------------------------
-   local branch_name='voltha-2.12-beta'
-   local tag_name='v2.12.0-beta'
+   local branch_name='voltha-2.12'
+   local tag_name='v2.12.0'
    local repo_name='voltha-lib-go'
 
    git clone "ssh://gerrit.opencord.org:29418/${repo_name}.git"
@@ -60,7 +80,7 @@ https://docs.voltha.org/master/release_notes/release_process.html
    :caption: Create a release branch attached to the release tag
 
    grep -v 'defaultbranch' .gitreview > .gitreview.tmp
-   echo "defaultbranch=voltha-2.12-beta" >> .gitreview.tmp
+   echo "defaultbranch=voltha-2.12" >> .gitreview.tmp
    mv -f .gitreview.tmp .gitreview
 
 

@@ -2,7 +2,7 @@ Release Tasks
 =============
 
 BUILD[baseline]: detect pre-existing corruption
-----------------------------------------------
+-----------------------------------------------
 
 - Apply cosmetic edits to sorce: comments, formatting, nothing that changes logic flow.
 - Update copyright notice ending date (if December release).
@@ -14,27 +14,13 @@ BUILD[baseline]: detect pre-existing corruption
 BUILD[pre-release]: dependency and module updates
 -------------------------------------------------
 
-- make go mod-update
-
-
-- Update copyright notices :ref:`Release Task Copyright`
-  
-Copyright Notice
-----------------
-
-.. code-block:: shell-session
-   :caption: Update copyrigth notice ending date.
-
-   # Clone copyright repository
-   % git clone git@github.com:joey-onf/copyright.git /tmp/copyright
-
-   % cd myrepo
-   % /tmp/copyright/gather.sh
+- :ref:`Release Task Golang Mod Update`
+- :ref:`Release Task Copyright`
 
 Standard syntax & formatting
 ----------------------------
 
-- Golang syntax fomatting :ref:`Release Task Golang Syntax`6
+- Golang syntax fomatting :ref:`Release Task Golang Syntax`
 
 golang
 ^^^^^^
@@ -42,7 +28,7 @@ golang
 Use the gofmt command to reformat golang sources gathered outside the vendor/ directory.
 
 .. code-block:: shell-session
-   :caption: 
+   :caption:
 
    % make golang-fmt
 

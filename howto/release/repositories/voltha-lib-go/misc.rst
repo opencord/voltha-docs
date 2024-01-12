@@ -3,8 +3,12 @@ Misc Todo Items
 
 - Baseline build
 
-  - Update copyright notice.
-  - find . ! -path './vendor/\*' -name '*.go' -print0 | xargs -0 -n1 gofmt -s -e -w
+  - :ref:`Release Task Copyright`
+
+.. code-block:: shell-session
+   :caption: Repair golang syntax errors
+
+   % find . ! -path './vendor/\*' -name '*.go' -print0 | xargs -0 -n1 gofmt -s -e -w
 
 - Pre-branch build
   - Update module versions for voltha/onos components
