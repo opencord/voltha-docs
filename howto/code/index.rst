@@ -8,4 +8,5 @@ Development & Source Code
    job-failures
    linting
    pull_request
+   release-bugfix
    voltha-protos
