@@ -157,7 +157,7 @@ ONOS Components
 +++++++++++++++
 
 .. list-table:: ONOS Components
-   :widths: 10, 2, 2, 2, 2, 2, 2
+   :widths: 10, 2, 2, 2, 2, 2, 2, 2
    :header-rows: 2
 
    * - Component
@@ -167,6 +167,7 @@ ONOS Components
      - All
      - Gerrit
      - Github
+     - Released
    * - Name
      - Ver
      - Ver
@@ -174,6 +175,7 @@ ONOS Components
      - Ver
      - URL
      - URL
+     -
    * -
      -
      -
@@ -181,83 +183,95 @@ ONOS Components
      -
      -
      -
+     -
    * - `aaa <https://gerrit.opencord.org/gitweb?p=aaa.git;a=summary>`_
-     - `2.10.3 <https://mvnrepository.com/artifact/org.opencord/aaa/2.10.3>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/aaa-api/2.10.3>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/aaa-app/2.10.3>`__
+     - `2.11.1 <https://mvnrepository.com/artifact/org.opencord/aaa/2.11.1>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/aaa-api/2.11.1>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/aaa-app/2.11.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/aaa>`__
-     - `X <https://gerrit.opencord.org/plugins/gitiles/aaa/+/refs/tags/2.10.3>`__
-     - `X <https://github.com/opencord/aaa/tree/2.10.3>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/aaa/+/refs/tags/2.11.1>`__
+     - `X <https://github.com/opencord/aaa/tree/2.11.1>`__
+     - ``N``
    * - `bng <https://gerrit.opencord.org/gitweb?p=bng.git;a=summary>`__
-     - `2.5.0 <https://mvnrepository.com/artifact/org.opencord/bng/2.5.0>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/bng-api/2.5.0>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/bng-app/2.5.0>`__
+     - `2.5.1 <https://mvnrepository.com/artifact/org.opencord/bng/2.5.1>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/bng-api/2.5.1>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/bng-app/2.5.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/bng/>`__
-     - `X <https://gerrit.opencord.org/plugins/gitiles/bng/+/refs/tags/2.5.0>`__
-     - `X <https://github.com/opencord/bng/tree/2.5.0>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/bng/+/refs/tags/2.5.1>`__
+     - `X <https://github.com/opencord/bng/tree/2.5.1>`__
+     - ``N``
    * - `dhcpl2relay <https://gerrit.opencord.org/gitweb?p=dhcpl2relay.git;a=summary>`__
-     - `2.10.0 <https://mvnrepository.com/artifact/org.opencord/dhcpl2relay/2.10.0>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/dhcpl2relay-api/2.10.0>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/dhcpl2relay-app/2.10.0>`__
+     - `2.11.0 <https://mvnrepository.com/artifact/org.opencord/dhcpl2relay/2.11.0>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/dhcpl2relay-api/2.11.0>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/dhcpl2relay-app/2.11.0>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/dhcpl2relay>`__
-     - `X <https://gerrit.opencord.org/plugins/gitiles/dhcpl2relay/+/refs/tags/2.10.0>`__
-     - `X <https://github.com/opencord/dhcpl2relay/tree/2.10.0>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/dhcpl2relay/+/refs/tags/2.11.0>`__
+     - `X <https://github.com/opencord/dhcpl2relay/tree/2.11.0>`__
+     - ``N``
    * - `igmpproxy <https://gerrit.opencord.org/gitweb?p=igmpproxy.git;a=summary>`__
-     - `2.8.0 <https://mvnrepository.com/artifact/org.opencord/onos-app-igmpproxy/2.8.0>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/onos-app-igmpproxy-app/2.8.0>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/onos-app-igmpproxy-api/2.8.0>`__
+     - `2.9.0 <https://mvnrepository.com/artifact/org.opencord/onos-app-igmpproxy/2.9.0>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/onos-app-igmpproxy-app/2.9.0>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/onos-app-igmpproxy-api/2.9.0>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/onos-app-igmpproxy>`__
-     - `X <https://gerrit.opencord.org/plugins/gitiles/igmpproxy/+/refs/tags/2.8.0>`__
-     - `X <https://github.com/opencord/igmpproxy/tree/2.8.0>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/igmpproxy/+/refs/tags/2.9.0>`__
+     - `X <https://github.com/opencord/igmpproxy/tree/2.9.0>`__
+     - ``N``
    * - `kafka <https://gerrit.opencord.org/gitweb?p=kafka-onos.git;a=summary>`__
-     - `2.12.0 <https://mvnrepository.com/artifact/org.opencord/kafka/1.2.0>`__
+     - `2.13.0 <https://mvnrepository.com/artifact/org.opencord/kafka/1.2.0>`__
      - X
      - X
      - `X <https://mvnrepository.com/artifact/org.opencord/kafka>`__
-     - `X <https://gerrit.opencord.org/plugins/gitiles/kafka-onos/+/refs/tags/2.12.0>`__
-     - `X <https://github.com/opencord/kafka-onos/tree/2.12.0>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/kafka-onos/+/refs/tags/2.13.0>`__
+     - `X <https://github.com/opencord/kafka-onos/tree/2.13.0>`__
+     - ``N``
    * - `maclearner <https://gerrit.opencord.org/plugins/gitiles/mac-learning>`__
-     - `1.2.2 <https://mvnrepository.com/artifact/org.opencord/maclearner/1.2.2>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/maclearner-api/1.2.2>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/maclearner-app/1.2.2>`__
+     - `1.2.3 <https://mvnrepository.com/artifact/org.opencord/maclearner/1.2.3>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/maclearner-api/1.2.3>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/maclearner-app/1.2.3>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/maclearner>`__
-     - `X <https://gerrit.opencord.org/plugins/gitiles/mac-learning/+/refs/tags/1.2.2>`__
-     - `X <https://github.com/opencord/mac-learning/tree/1.2.2>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/mac-learning/+/refs/tags/1.2.3>`__
+     - `X <https://github.com/opencord/mac-learning/tree/1.2.3>`__
+     - ``N``
    * - `mcast <https://gerrit.opencord.org/gitweb?p=mcast.git;a=summary>`__
-     - `2.9.0 <https://mvnrepository.com/artifact/org.opencord/mcast/2.9.0>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/mcast-api/2.9.0>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/mcast-app/2.9.0>`__
+     - `2.9.1 <https://mvnrepository.com/artifact/org.opencord/mcast/2.9.1>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/mcast-api/2.9.1>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/mcast-app/2.9.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/mcast>`__
-     - `X <https://gerrit.opencord.org/plugins/gitiles/mcast/+/refs/tags/2.9.0>`__
-     - `X <https://github.com/opencord/mcast/tree/2.9.0>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/mcast/+/refs/tags/2.9.1>`__
+     - `X <https://github.com/opencord/mcast/tree/2.9.1>`__
+     - ``N``
    * - `olt <https://gerrit.opencord.org/gitweb?p=olt.git;a=summary>`__
-     - `5.2.4 <https://mvnrepository.com/artifact/org.opencord/olt/5.2.4>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/olt-api/5.2.4>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/olt-app/5.2.4>`__
+     - `5.2.5 <https://mvnrepository.com/artifact/org.opencord/olt/5.2.5>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/olt-api/5.2.5>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/olt-app/5.2.5>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/olt>`__
-     - `X <https://gerrit.opencord.org/plugins/gitiles/olt/+/refs/tags/5.2.4>`__
-     - `X <https://github.com/opencord/olt/tree/5.2.4>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/olt/+/refs/tags/5.2.5>`__
+     - `X <https://github.com/opencord/olt/tree/5.2.5>`__
+     - ``N``
    * - `olttopology <https://gerrit.opencord.org/plugins/gitiles/olttopology/>`__
-     - `1.3.0 <https://mvnrepository.com/artifact/org.opencord/olttopology/1.3.0>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/olttopology-api/1.3.0>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/olttopology-app/1.3.0>`__
+     - `1.3.1 <https://mvnrepository.com/artifact/org.opencord/olttopology/1.3.1>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/olttopology-api/1.3.1>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/olttopology-app/1.3.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/olttopology>`__
-     - `X <https://gerrit.opencord.org/plugins/gitiles/olttopology/+/refs/tags/1.3.0>`__
-     - `X <https://github.com/opencord/olttopology/releases/tag/1.3.0>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/olttopology/+/refs/tags/1.3.1>`__
+     - `X <https://github.com/opencord/olttopology/releases/tag/1.3.1>`__
+     - ``N``
    * - `pppoeagent <https://gerrit.opencord.org/plugins/gitiles/pppoeagent/>`__
-     - `1.2.3 <https://mvnrepository.com/artifact/org.opencord/pppoeagent/1.2.3>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/pppoeagent-api/1.2.3>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/pppoeagent-app/1.2.3>`__
+     - `1.3.0 <https://mvnrepository.com/artifact/org.opencord/pppoeagent/1.3.0>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/pppoeagent-api/1.3.0>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/pppoeagent-app/1.3.0>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/pppoeagent>`__
-     - `X <https://gerrit.opencord.org/plugins/gitiles/pppoeagent/+/refs/tags/1.2.3>`__
-     - `X <https://github.com/opencord/pppoeagent/releases/tag/1.2.3>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/pppoeagent/+/refs/tags/1.3.0>`__
+     - `X <https://github.com/opencord/pppoeagent/releases/tag/1.3.0>`__
+     - ``N``
    * - `sadis <https://gerrit.opencord.org/gitweb?p=sadis.git;a=summary>`__
-     - `5.11.1 <https://mvnrepository.com/artifact/org.opencord/sadis/5.11.1>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/sadis-api/5.11.1>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/sadis-app/5.11.1>`__
+     - `5.12.2 <https://mvnrepository.com/artifact/org.opencord/sadis/5.12.2>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/sadis-api/5.12.2>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/sadis-app/5.12.2>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/sadis>`__
-     - `X <https://gerrit.opencord.org/plugins/gitiles/sadis/+/refs/tags/5.11.1>`__
-     - `X <https://github.com/opencord/sadis/releases/tag/5.11.1>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/sadis/+/refs/tags/5.12.2>`__
+     - `X <https://github.com/opencord/sadis/releases/tag/5.12.2>`__
+     - Y
 
 - `Docker Images: opencord <https://hub.docker.com/search?q=opencord>`_
 
