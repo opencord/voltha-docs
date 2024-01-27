@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3625ca61_b696ddbc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2024-01-27T16:39:49Z",
+      "side": 1,
+      "message": "Release docs actively being updated.\nGerrit tag URLs reported as broken are due to as-yet published artifacts.\nPushing to the webserver for convenient access to the versioned maven artifact URLs.\nURLs will be used to check if artifacts have been published yet.",
+      "revId": "bda89deafb620c25c1623ac18f5d76602365f393",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
