@@ -140,9 +140,9 @@ ONOS and Atomix
      -
      -
      -
-   * - `ONOS 2.5 LTS <https://github.com/opennetworkinglab/onos/releases/tag/2.5.8>`_
-     -
-     - ``2.5.8``
+   * - ONOS 2.5 LTS: `2.5.9<https://github.com/opennetworkinglab/onos/releases/tag/2.5.9>`_, `2.5.8 <https://github.com/opennetworkinglab/onos/releases/tag/2.5.8>`_
+     - ``2.5.5``
+     - ``2.5.9``, ``2.5.8``
      -
      -
      -
@@ -164,7 +164,7 @@ ONOS Components
      - Artifact
      - Api
      - App
-     - All
+     - Pkg
      - Gerrit
      - Github
      - Released
@@ -206,23 +206,23 @@ ONOS Components
      - `X <https://mvnrepository.com/artifact/org.opencord/dhcpl2relay-app/2.11.0>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/dhcpl2relay>`__
      - `X <https://gerrit.opencord.org/plugins/gitiles/dhcpl2relay/+/refs/tags/2.11.0>`__
-     - `X <https://github.com/opencord/dhcpl2relay/tree/2.11.0>`__
-     - ``N``
+     - `X <https://github.com/opencord/dhcpl2relay/releases/tag/2.11.0>`__
+     - Y
    * - `igmpproxy <https://gerrit.opencord.org/gitweb?p=igmpproxy.git;a=summary>`__
      - `2.9.0 <https://mvnrepository.com/artifact/org.opencord/onos-app-igmpproxy/2.9.0>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/onos-app-igmpproxy-app/2.9.0>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/onos-app-igmpproxy-api/2.9.0>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/onos-app-igmpproxy>`__
      - `X <https://gerrit.opencord.org/plugins/gitiles/igmpproxy/+/refs/tags/2.9.0>`__
-     - `X <https://github.com/opencord/igmpproxy/tree/2.9.0>`__
-     - ``N``
+     - `X <https://github.com/opencord/igmpproxy/releases/tag/2.9.0>`__, `X <https://github.com/opencord/igmpproxy/tree/2.9.0>`__
+     - Y
    * - `kafka <https://gerrit.opencord.org/gitweb?p=kafka-onos.git;a=summary>`__
-     - `2.13.0 <https://mvnrepository.com/artifact/org.opencord/kafka/1.2.0>`__
+     - `2.13.0 <https://mvnrepository.com/artifact/org.opencord/kafka/2.13.0>`__, `2.12.0 <https://mvnrepository.com/artifact/org.opencord/kafka/2.12.0>`__
      - X
      - X
      - `X <https://mvnrepository.com/artifact/org.opencord/kafka>`__
      - `X <https://gerrit.opencord.org/plugins/gitiles/kafka-onos/+/refs/tags/2.13.0>`__
-     - `X <https://github.com/opencord/kafka-onos/tree/2.13.0>`__
+     - `X <https://github.com/opencord/kafka-onos/releases/tag/2.13.0>`__, `T <https://github.com/opencord/kafka-onos/tree/2.13.0>`__
      - ``N``
    * - `maclearner <https://gerrit.opencord.org/plugins/gitiles/mac-learning>`__
      - `1.2.3 <https://mvnrepository.com/artifact/org.opencord/maclearner/1.2.3>`__
@@ -230,31 +230,31 @@ ONOS Components
      - `X <https://mvnrepository.com/artifact/org.opencord/maclearner-app/1.2.3>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/maclearner>`__
      - `X <https://gerrit.opencord.org/plugins/gitiles/mac-learning/+/refs/tags/1.2.3>`__
-     - `X <https://github.com/opencord/mac-learning/tree/1.2.3>`__
-     - ``N``
+     - `X <https://github.com/opencord/mac-learning/releases/tag/1.2.3>`__, `T <https://github.com/opencord/mac-learning/tree/1.2.3>`__
+     - Y
    * - `mcast <https://gerrit.opencord.org/gitweb?p=mcast.git;a=summary>`__
      - `2.9.1 <https://mvnrepository.com/artifact/org.opencord/mcast/2.9.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/mcast-api/2.9.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/mcast-app/2.9.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/mcast>`__
      - `X <https://gerrit.opencord.org/plugins/gitiles/mcast/+/refs/tags/2.9.1>`__
-     - `X <https://github.com/opencord/mcast/tree/2.9.1>`__
-     - ``N``
+     - `X <https://github.com/opencord/mcast/releases/tag/2.9.1>`__, `T <https://github.com/opencord/mcast/tree/2.9.1>`__
+     - Y
    * - `olt <https://gerrit.opencord.org/gitweb?p=olt.git;a=summary>`__
      - `5.2.5 <https://mvnrepository.com/artifact/org.opencord/olt/5.2.5>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/olt-api/5.2.5>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/olt-app/5.2.5>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/olt>`__
      - `X <https://gerrit.opencord.org/plugins/gitiles/olt/+/refs/tags/5.2.5>`__
-     - `X <https://github.com/opencord/olt/tree/5.2.5>`__
-     - ``N``
+     - `X <https://github.com/opencord/olt/releases/tag/5.2.5>`__
+     - Y
    * - `olttopology <https://gerrit.opencord.org/plugins/gitiles/olttopology/>`__
      - `1.3.1 <https://mvnrepository.com/artifact/org.opencord/olttopology/1.3.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/olttopology-api/1.3.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/olttopology-app/1.3.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/olttopology>`__
      - `X <https://gerrit.opencord.org/plugins/gitiles/olttopology/+/refs/tags/1.3.1>`__
-     - `X <https://github.com/opencord/olttopology/releases/tag/1.3.1>`__
+     - `X <https://github.com/opencord/olttopology/releases/tag/1.3.1>`__, `tags <https://github.com/opencord/olttopology/tags>`__, `1.3.0 <https://github.com/opencord/olttopology/releases/tag/1.3.0>`_
      - ``N``
    * - `pppoeagent <https://gerrit.opencord.org/plugins/gitiles/pppoeagent/>`__
      - `1.3.0 <https://mvnrepository.com/artifact/org.opencord/pppoeagent/1.3.0>`__
@@ -384,12 +384,12 @@ VOLTHA Components
      -
      -
    * - `voltha-lib-go <https://gerrit.opencord.org/plugins/gitiles/voltha-lib-go>`_
-     - ``7.4.4``
+     - ``7.5.3``
      -
      -
-     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-lib-go/+/refs/tags/v7.4.4>`__
-     - `X <https://github.com/opencord/voltha-lib-go/releases/tag/v7.4.4>`__
-     -
+     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-lib-go/+/refs/tags/v7.5.3>`__
+     - `X <https://github.com/opencord/voltha-lib-go/releases/tag/v7.5.3>`__
+     - `stale <https://hub.docker.com/r/voltha/voltha-protos>`__
      -
      -
      - triage
@@ -425,10 +425,10 @@ VOLTHA Components
      -
    * - `voltha-protos <https://gerrit.opencord.org/plugins/gitiles/voltha-protos>`_
      -
-     - `5.4.9 <https://pypi.org/project/voltha-protos/5.4.9/>`_
+     - `5.4.11 <https://pypi.org/project/voltha-protos/5.4.11>`__
      -
-     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/tags/v5.4.9>`__
-     - `X <https://github.com/opencord/voltha-protos/tree/v5.4.9>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/tags/v5.4.11>`__
+     - `X <https://github.com/opencord/voltha-protos/releases/tag/v5.4.11>`__, `T <https://github.com/opencord/voltha-protos/tree/v5.4.11>`__
      -
      -
      -
