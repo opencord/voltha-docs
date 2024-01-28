@@ -140,7 +140,7 @@ ONOS and Atomix
      -
      -
      -
-   * - ONOS 2.5 LTS: `2.5.9<https://github.com/opennetworkinglab/onos/releases/tag/2.5.9>`_, `2.5.8 <https://github.com/opennetworkinglab/onos/releases/tag/2.5.8>`_
+   * - ONOS 2.5 LTS: `2.5.9 <https://github.com/opennetworkinglab/onos/releases/tag/2.5.9>`_, `2.5.8 <https://github.com/opennetworkinglab/onos/releases/tag/2.5.8>`_
      - ``2.5.5``
      - ``2.5.9``, ``2.5.8``
      -
@@ -210,12 +210,12 @@ ONOS Components
      - Y
    * - `igmpproxy <https://gerrit.opencord.org/gitweb?p=igmpproxy.git;a=summary>`__
      - `2.9.0 <https://mvnrepository.com/artifact/org.opencord/onos-app-igmpproxy/2.9.0>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/onos-app-igmpproxy-app/2.9.0>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/onos-app-igmpproxy-api/2.9.0>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/onos-app-igmpproxy>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/onos-app-igmpproxy-app/2.9.0>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/onos-app-igmpproxy/2.9.0>`__
      - `X <https://gerrit.opencord.org/plugins/gitiles/igmpproxy/+/refs/tags/2.9.0>`__
-     - `X <https://github.com/opencord/igmpproxy/releases/tag/2.9.0>`__, `X <https://github.com/opencord/igmpproxy/tree/2.9.0>`__
-     - Y
+     - `X <https://github.com/opencord/igmpproxy/releases/tag/2.9.0>`__
+     -
    * - `kafka <https://gerrit.opencord.org/gitweb?p=kafka-onos.git;a=summary>`__
      - `2.13.0 <https://mvnrepository.com/artifact/org.opencord/kafka/2.13.0>`__, `2.12.0 <https://mvnrepository.com/artifact/org.opencord/kafka/2.12.0>`__
      - X
@@ -244,10 +244,10 @@ ONOS Components
      - `5.2.5 <https://mvnrepository.com/artifact/org.opencord/olt/5.2.5>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/olt-api/5.2.5>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/olt-app/5.2.5>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/olt>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/olt/5.2.5>`__
      - `X <https://gerrit.opencord.org/plugins/gitiles/olt/+/refs/tags/5.2.5>`__
      - `X <https://github.com/opencord/olt/releases/tag/5.2.5>`__
-     - Y
+     -
    * - `olttopology <https://gerrit.opencord.org/plugins/gitiles/olttopology/>`__
      - `1.3.1 <https://mvnrepository.com/artifact/org.opencord/olttopology/1.3.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/olttopology-api/1.3.1>`__
@@ -336,7 +336,7 @@ VOLTHA Components
      -
      - ``0.3.4``
      - `0.3.2 <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/bbsim-sadis-server/Chart.yaml>`_
-     - `X <https://gerrit.opencord.org/plugins/gitiles/bbsim-sadis-server/+/refs/tags/v0.3.4>`_
+     - `X <https://gerrit.opencord.org/plugins/gitiles/bbsim-sadis-server/+/refs/tags/v0.3.4>`__
      - `X <https://github.com/opencord/bbsim-sadis-server/releases/tag/v0.3.4>`__
      -
      -
@@ -347,9 +347,10 @@ VOLTHA Components
      - ``2.2.1``
      - ``?``
      - `X <https://gerrit.opencord.org/plugins/gitiles/ofagent-go/+/refs/tags/v2.2.1>`__
-     - `X <https://github.com/opencord/ofagent-go/releases/tag/v2.2.1>`_
+     - `X <https://github.com/opencord/ofagent-go/releases/tag/v2.2.1>`__
      - `1.1.4(stale) <https://hub.docker.com/layers/voltha/ofagent-go/1.1.4/images/sha256-8231111b69c8643c4981d64abff0a85d71f80763bb98632bb101e92b89882647?context=explore>`_
      - `1.6.5(stale) <https://pkg.go.dev/github.com/opencord/ofagent-go/cmd/ofagent>`_
+     -
      - Y
    * - `openolt agent <https://gerrit.opencord.org/gitweb?p=openolt.git;a=tree>`_
      -
