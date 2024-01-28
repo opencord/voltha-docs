@@ -185,13 +185,13 @@ ONOS Components
      -
      -
    * - `aaa <https://gerrit.opencord.org/gitweb?p=aaa.git;a=summary>`_
-     - `2.11.1 <https://mvnrepository.com/artifact/org.opencord/aaa/2.11.1>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/aaa-api/2.11.1>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/aaa-app/2.11.1>`__
+     - `2.11.0 <https://mvnrepository.com/artifact/org.opencord/aaa/2.11.0>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/aaa-api/2.11.0>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/aaa-app/2.11.0>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/aaa>`__
-     - `X <https://gerrit.opencord.org/plugins/gitiles/aaa/+/refs/tags/2.11.1>`__
-     - `X <https://github.com/opencord/aaa/tree/2.11.1>`__
-     - ``N``
+     - `X <https://gerrit.opencord.org/plugins/gitiles/aaa/+/refs/tags/2.11.0>`__
+     - `X <https://github.com/opencord/aaa/releases/tag/2.11.0>`__
+     - ``Y-``
    * - `bng <https://gerrit.opencord.org/gitweb?p=bng.git;a=summary>`__
      - `2.5.1 <https://mvnrepository.com/artifact/org.opencord/bng/2.5.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/bng-api/2.5.1>`__
@@ -236,10 +236,10 @@ ONOS Components
      - `2.9.1 <https://mvnrepository.com/artifact/org.opencord/mcast/2.9.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/mcast-api/2.9.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/mcast-app/2.9.1>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/mcast>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/mcast/2.9.1>`__
      - `X <https://gerrit.opencord.org/plugins/gitiles/mcast/+/refs/tags/2.9.1>`__
      - `X <https://github.com/opencord/mcast/releases/tag/2.9.1>`__, `T <https://github.com/opencord/mcast/tree/2.9.1>`__
-     - Y
+     -
    * - `olt <https://gerrit.opencord.org/gitweb?p=olt.git;a=summary>`__
      - `5.2.5 <https://mvnrepository.com/artifact/org.opencord/olt/5.2.5>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/olt-api/5.2.5>`__
