@@ -3,11 +3,8 @@
 Create a patch on a release branch
 ==================================
 
-Clone & Checkout Release Branch
--------------------------------
-
 .. code-block:: shell-session
-   :caption: Release patch: checkout
+   :caption: Clone repository
 
    # ------------------------------------------------
    # Clone a repostiory of interest (ex: votlha-lib-go)
@@ -15,7 +12,71 @@ Clone & Checkout Release Branch
    # ------------------------------------------------
    % git clone "ssh://gerrit.opencord.org:29418/voltha-lib-go.git"
    % cd voltha-lib-go
-   % git checkout voltha-2.12
+
+   # Pull in all remote tags/branches
+   % git fetch --all
+
+.. code-block:: shell-session
+   :caption: Create a dev branch for the patch
+
+   # ----------------------------------
+   # Display available release branches
+   # ----------------------------------
+   % git branch -a
+
+     master
+     remotes/origin/HEAD -> origin/master
+     remotes/origin/master
+     remotes/origin/voltha-2.11
+     remotes/origin/voltha-2.12
+
+   # ---------------------------------------
+   # Create a dev branch anchored to release
+   # ---------------------------------------
+   % git checkout -b dev-joey voltha-2.12
+
+.. code-block:: shell-session
+   :caption: Sanity check branch parent
+
+   # ----------------------------------------------------------------------
+   # git --graph: Verify tag and branch values make sense:
+   #   (HEAD -> dev-joey, tag: v2.12.0, origin/voltha-2.12)
+   # ----------------------------------------------------------------------
+   # Finding 'origin/master' as the ancestor for a release patch checkout
+   # is a red flag something is amiss.
+   # ----------------------------------------------------------------------
+
+   % git log --graph --decorate --oneline $@
+   * 653504fa (HEAD -> dev-joey, tag: v2.12.0, origin/voltha-2.12*) [VOL-5247] repo:voltha-go release patching prep
+
+   % git branch -vv
+   * dev-joey 253fa01b [origin/voltha-2.12: ahead 1] repo:voltha-go Post tag & branch activity
+     help     253fa01b repo:voltha-go Post tag & branch activity
+     master   4e0e0347 [origin/master] [VOL-5247] repo:voltha-go release patching prep
+
+HEAD will be attached to origin/voltha-2.12 and the latest release tag v7.5.3
+
+::
+
+   git log --graph --decorate --oneline $@
+
+   * aeb3c4f (HEAD -> voltha-2.12, tag: v7.5.3, origin/voltha-2.12) [VOL-5245] -- release patch
+   * ad265dd (tag: v7.5.2) [VOL-5245] - branch and release repo:voltha-lib-go
+   * 9cdee9f (tag: v7.5.1, tag: v2.12.0) [VOL-5245] branch and release repo:voltha-lib-go
+
+.. code-block:: shell-session
+   :caption: Sanity check dev sandbox attributes
+
+   # ------------------------------------------------------
+   # Sanity check your sanbox
+   # ------------------------------------------------------
+   #  1) VERSION file: no conflicts (master > release)
+   #    master=x.y.0 > release=x.{y-1}.z
+   % cat VERSION
+
+   #  .gitreview - commit, rebase, merge will be applied to the release branch
+   % grep -i branch .gitreview
+   defaultbranch=master
 
    # ------------------------------------------------------
    # Or if something is amiss checkout by tag for diagnosis
@@ -29,46 +90,6 @@ Command output
    % git checkout voltha-2.12
    Branch 'voltha-2.12' set up to track remote branch 'voltha-2.12' from 'origin'.
    Switched to a new branch 'voltha-2.12'
-
-
-.. code-block:: shell-session
-   :caption: Create a dev branch from release
-
-   % git checkout -b dev-joey
-   % git branch -a
-
-     master
-   * voltha-2.12                          <<---** Commits land here
-     remotes/origin/HEAD -> origin/master
-     remotes/origin/master
-     remotes/origin/voltha-2.11
-     remotes/origin/voltha-2.12
-
-
-Verify sandbox tag and branch are release
------------------------------------------
-
-.. code-block:: shell-session
-   :caption: Release patch: Verify checkout
-
-   # ----------------------------------------------------------------
-   # Verify tags and branch for your release patch are correct.
-   # HEAD will be attached to the branch (and most recent release tag)
-   # ----------------------------------------------------------------
-   % git fetch --tags
-   % cat VERSION
-     7.5.3
-   % git log --graph --decorate --oneline $@
-
-HEAD will be attached to origin/voltha-2.12 and the latest release tag v7.5.3
-
-::
-
-   git log --graph --decorate --oneline $@
-
-   * aeb3c4f (HEAD -> voltha-2.12, tag: v7.5.3, origin/voltha-2.12) [VOL-5245] -- release patch
-   * ad265dd (tag: v7.5.2) [VOL-5245] - branch and release repo:voltha-lib-go
-   * 9cdee9f (tag: v7.5.1, tag: v2.12.0) [VOL-5245] branch and release repo:voltha-lib-go
 
 
 Edit and commit
@@ -93,8 +114,10 @@ Rebase against the release branch
    :caption: Rebase against release branch ``NOT branch=master``
 
    # Run one of
-   % rebase -i HEAD
-   % rebase -i voltha-2.12
+   % git checkout voltha-2.12
+   % git pull --ff-only origin voltha-2.12
+   % git checkout dev-joey
+   % git rebase -i "origin/voltha-2.12"
 
 
 Code Review
@@ -103,7 +126,7 @@ Code Review
 .. code-block:: shell-session
    :caption: Push to gerrit, code review
 
-   % git review --reviewers foo@bar.tans
+   % git review --reviewers "foo@bar.org"
 
 
 Verify Patch
@@ -112,4 +135,4 @@ Verify Patch
 Now visit gerrit and verify your release bugfix is correctly decorated.
 In gerrit, review the 'Repo|Branch' item in the top left corner.
 'votlha-2.12' or the release tag will be visible.  If branch 'master' is
-listed abandon the patch beucase it will not be applied to the proper branch.
+listed abandon the patch, it will not be applied to the proper branch.
