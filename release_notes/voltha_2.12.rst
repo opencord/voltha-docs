@@ -191,7 +191,7 @@ ONOS Components
      - `X <https://mvnrepository.com/artifact/org.opencord/aaa>`__
      - `X <https://gerrit.opencord.org/plugins/gitiles/aaa/+/refs/tags/2.11.0>`__
      - `X <https://github.com/opencord/aaa/releases/tag/2.11.0>`__
-     - ``Y-``
+     -
    * - `bng <https://gerrit.opencord.org/gitweb?p=bng.git;a=summary>`__
      - `2.5.1 <https://mvnrepository.com/artifact/org.opencord/bng/2.5.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/bng-api/2.5.1>`__
@@ -207,7 +207,7 @@ ONOS Components
      - `X <https://mvnrepository.com/artifact/org.opencord/dhcpl2relay>`__
      - `X <https://gerrit.opencord.org/plugins/gitiles/dhcpl2relay/+/refs/tags/2.11.0>`__
      - `X <https://github.com/opencord/dhcpl2relay/releases/tag/2.11.0>`__
-     - Y
+     -
    * - `igmpproxy <https://gerrit.opencord.org/gitweb?p=igmpproxy.git;a=summary>`__
      - `2.9.0 <https://mvnrepository.com/artifact/org.opencord/onos-app-igmpproxy/2.9.0>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/onos-app-igmpproxy-api/2.9.0>`__
@@ -231,7 +231,7 @@ ONOS Components
      - `X <https://mvnrepository.com/artifact/org.opencord/maclearner>`__
      - `X <https://gerrit.opencord.org/plugins/gitiles/mac-learning/+/refs/tags/1.2.3>`__
      - `X <https://github.com/opencord/mac-learning/releases/tag/1.2.3>`__, `T <https://github.com/opencord/mac-learning/tree/1.2.3>`__
-     - Y
+     -
    * - `mcast <https://gerrit.opencord.org/gitweb?p=mcast.git;a=summary>`__
      - `2.9.1 <https://mvnrepository.com/artifact/org.opencord/mcast/2.9.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/mcast-api/2.9.1>`__
@@ -263,7 +263,7 @@ ONOS Components
      - `X <https://mvnrepository.com/artifact/org.opencord/pppoeagent>`__
      - `X <https://gerrit.opencord.org/plugins/gitiles/pppoeagent/+/refs/tags/1.3.0>`__
      - `X <https://github.com/opencord/pppoeagent/releases/tag/1.3.0>`__
-     - Y
+     -
    * - `sadis <https://gerrit.opencord.org/gitweb?p=sadis.git;a=summary>`__
      - `5.12.2 <https://mvnrepository.com/artifact/org.opencord/sadis/5.12.2>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/sadis-api/5.12.2>`__
@@ -271,7 +271,7 @@ ONOS Components
      - `X <https://mvnrepository.com/artifact/org.opencord/sadis>`__
      - `X <https://gerrit.opencord.org/plugins/gitiles/sadis/+/refs/tags/5.12.2>`__
      - `X <https://github.com/opencord/sadis/releases/tag/5.12.2>`__
-     - Y
+     -
 
 - `Docker Images: opencord <https://hub.docker.com/search?q=opencord>`_
 
@@ -386,13 +386,13 @@ VOLTHA Components
    * - `voltha-lib-go <https://gerrit.opencord.org/plugins/gitiles/voltha-lib-go>`_
      - ``7.5.3``
      -
-     -
+     - ``?``
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-lib-go/+/refs/tags/v7.5.3>`__
      - `X <https://github.com/opencord/voltha-lib-go/releases/tag/v7.5.3>`__
      - `stale <https://hub.docker.com/r/voltha/voltha-protos>`__
      - `v7 <https://pkg.go.dev/github.com/opencord/voltha-lib-go/v7@v7.5.3>`__
-     - `5.5.0(stale) <https://pypi.org/project/voltha-protos>`__
-     - ``N``
+     - `stale <https://pypi.org/project/voltha-protos>`__
+     -
    * - `voltha-onos <https://gerrit.opencord.org/gitweb?p=voltha-onos.git;a=tree>`_
      -
      - ``5.1.2``
@@ -424,15 +424,15 @@ VOLTHA Components
      -
      - ``N``
    * - `voltha-protos <https://gerrit.opencord.org/plugins/gitiles/voltha-protos>`_
-     -
-     - `5.4.11 <https://pypi.org/project/voltha-protos/5.4.11>`__
-     -
+     - ``5.4.11``
+     - `5.4.11 <https://gerrit.opencord.org/plugins/gitiles/voltha-protos>`__
+     - ``?``
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/tags/v5.4.11>`__
-     - `X <https://github.com/opencord/voltha-protos/releases/tag/v5.4.11>`__, `T <https://github.com/opencord/voltha-protos/tree/v5.4.11>`__
-     - `1.7.0.1+(stale) <https://hub.docker.com/r/voltha/voltha-protos/tags>`_
-     - `1.0.3(stale) <https://pkg.go.dev/github.com/opencord/voltha-protos>`_
+     - `X <https://github.com/opencord/voltha-protos/releases/tag/v5.4.11>`__
+     - `stale <https://hub.docker.com/r/voltha/voltha-protos/tags>`_
+     - `stale <https://pkg.go.dev/github.com/opencord/voltha-protos>`_
      - `5.4.11 <https://pypi.org/project/voltha-protos/5.4.11>`__
-     - ``N``
+     -
    * - `voltha-system-tests <https://github.com/opencord/voltha-system-tests/releases/tag/2.9.0>`__
      - ``2.11.10``
      -

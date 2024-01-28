@@ -19,9 +19,9 @@ Create a patch on a release branch
 .. code-block:: shell-session
    :caption: Create a dev branch for the patch
 
-   # ----------------------------------
-   # Display available release branches
-   # ----------------------------------
+   # -------------------------
+   # Display available options
+   # -------------------------
    % git branch -a
 
      master
@@ -30,24 +30,31 @@ Create a patch on a release branch
      remotes/origin/voltha-2.11
      remotes/origin/voltha-2.12
 
-   # ---------------------------------------
-   # Create a dev branch anchored to release
-   # ---------------------------------------
+   # ----------------------------------------------------------
+   # Create a dev branch anchored to release branch voltha-2.12
+   # ----------------------------------------------------------
    % git checkout -b dev-joey voltha-2.12
 
+
 .. code-block:: shell-session
-   :caption: Sanity check branch parent
+   :caption: Sanity check tag & branch
 
    # ----------------------------------------------------------------------
-   # git --graph: Verify tag and branch values make sense:
-   #   (HEAD -> dev-joey, tag: v2.12.0, origin/voltha-2.12)
+   # Verify tag & branch for your checkout are correct:
+   #   Your developer branch will be attached to branch=voltha-2.12
+   #   initial branch checkouts will also mention the 'v2.12.x' tag.
+   #     (HEAD -> dev-joey, tag: v2.12.0, origin/voltha-2.12)
    # ----------------------------------------------------------------------
-   # Finding 'origin/master' as the ancestor for a release patch checkout
-   # is a red flag something is amiss.
+   # When --graph shows your dev branch is attached to 'origin/master' as
+   # the ancestor, consider this to be a red flag that something is amiss.
    # ----------------------------------------------------------------------
+
+::
 
    % git log --graph --decorate --oneline $@
    * 653504fa (HEAD -> dev-joey, tag: v2.12.0, origin/voltha-2.12*) [VOL-5247] repo:voltha-go release patching prep
+
+::
 
    % git branch -vv
    * dev-joey 253fa01b [origin/voltha-2.12: ahead 1] repo:voltha-go Post tag & branch activity
@@ -58,7 +65,7 @@ HEAD will be attached to origin/voltha-2.12 and the latest release tag v7.5.3
 
 ::
 
-   git log --graph --decorate --oneline $@
+   git log --graph --decorate --oneline {relpath}
 
    * aeb3c4f (HEAD -> voltha-2.12, tag: v7.5.3, origin/voltha-2.12) [VOL-5245] -- release patch
    * ad265dd (tag: v7.5.2) [VOL-5245] - branch and release repo:voltha-lib-go
@@ -72,15 +79,23 @@ HEAD will be attached to origin/voltha-2.12 and the latest release tag v7.5.3
    # ------------------------------------------------------
    #  1) VERSION file: no conflicts (master > release)
    #    master=x.y.0 > release=x.{y-1}.z
+   # ------------------------------------------------------
+
    % cat VERSION
 
+   # ------------------------------------------------------
    #  .gitreview - commit, rebase, merge will be applied to the release branch
+   # ------------------------------------------------------
+
    % grep -i branch .gitreview
    defaultbranch=master
 
-   # ------------------------------------------------------
-   # Or if something is amiss checkout by tag for diagnosis
-   # ------------------------------------------------------
+.. code-block:: shell-session
+   :caption: Tag debugging
+
+   # ---------------------------------------------------------
+   # If something is amiss checkout by named tag for diagnosis
+   # ---------------------------------------------------------
    % cat VERSION
    % git checkout tags/v{VERSION-FILE-STRING}
 
@@ -107,15 +122,15 @@ Edit and commit
    % git commit -F ./commit-message
 
 
-Rebase against the release branch
----------------------------------
+[Rebase|merge] against the release branch
+-----------------------------------------
 
 .. code-block:: shell-session
    :caption: Rebase against release branch ``NOT branch=master``
 
    # Run one of
-   % git checkout voltha-2.12
-   % git pull --ff-only origin voltha-2.12
+   % git checkout "voltha-2.12"
+   % git pull --ff-only origin "voltha-2.12"
    % git checkout dev-joey
    % git rebase -i "origin/voltha-2.12"
 
@@ -129,8 +144,15 @@ Code Review
    % git review --reviewers "foo@bar.org"
 
 
-Verify Patch
-------------
+Verify Patch Creation
+---------------------
+
+.. code-block:: shell-session
+   :caption: Verify patch creation
+
+   % git review --reviewers "foo@bar.org"
+
+::
 
 Now visit gerrit and verify your release bugfix is correctly decorated.
 In gerrit, review the 'Repo|Branch' item in the top left corner.
