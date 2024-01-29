@@ -88,7 +88,16 @@ HEAD will be attached to origin/voltha-2.12 and the latest release tag v7.5.3
    # ------------------------------------------------------
 
    % grep -i branch .gitreview
+   defaultbranch=voltha-2.12
+
+   # -------------------------------------------------------
+   # On branch=master, defaultbranch=master or will be unset
+   # -------------------------------------------------------
+   % git checkout master
+   % grep -i branch .gitreview
    defaultbranch=master
+   % git checkout dev-joey
+
 
 .. code-block:: shell-session
    :caption: Tag debugging
@@ -110,6 +119,9 @@ Command output
 Edit and commit
 ---------------
 
+- :ref:`pull-request--commit-message`
+- :ref:`code--makefile-lint-targets`
+
 .. code-block:: shell-session
    :caption: Edit, commit, rebase and review
 
@@ -118,7 +130,17 @@ Edit and commit
    # ----------------------------------------------------------------
    {emacs,vi,$EDITOR} ...
 
-   # :ref:`pull-request--commit-message`
+   # ----------------------------------------------------------------
+   # Sanity check for problems
+   # ----------------------------------------------------------------
+   % make help | grep lint
+   % make lint   LOCAL_FIX_PERMS=1
+   % make build
+   % make test
+
+   # ----------------------------------------------------------------
+   # Create a patch for upload
+   # ----------------------------------------------------------------
    % git commit -F ./commit-message
 
 
@@ -128,7 +150,6 @@ Edit and commit
 .. code-block:: shell-session
    :caption: Rebase against release branch ``NOT branch=master``
 
-   # Run one of
    % git checkout "voltha-2.12"
    % git pull --ff-only origin "voltha-2.12"
    % git checkout dev-joey
@@ -150,11 +171,11 @@ Verify Patch Creation
 .. code-block:: shell-session
    :caption: Verify patch creation
 
-   % git review --reviewers "foo@bar.org"
+   % git review --reviewers "foo@bar.org" "bar@tans.org"
 
 ::
 
-Now visit gerrit and verify your release bugfix is correctly decorated.
-In gerrit, review the 'Repo|Branch' item in the top left corner.
-'votlha-2.12' or the release tag will be visible.  If branch 'master' is
-listed abandon the patch, it will not be applied to the proper branch.
+   As a cross check visit gerrit and verify your release bugfix is correctly
+   decorated.  In gerrit, review the 'Repo|Branch' item in the top left corner.
+   'votlha-2.12' or the release tag will be visible.  If branch 'master' is
+   listed abandon the patch, it will not be applied to the proper branch.

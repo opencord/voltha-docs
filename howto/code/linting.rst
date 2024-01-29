@@ -1,3 +1,5 @@
+.. _code--makefile-lint-targets
+
 ======================================
 Makefile Lint Targets: Syntax Checking
 ======================================

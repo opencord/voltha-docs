@@ -196,10 +196,10 @@ ONOS Components
      - `2.5.1 <https://mvnrepository.com/artifact/org.opencord/bng/2.5.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/bng-api/2.5.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/bng-app/2.5.1>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/bng/>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/bng/2.5.1`__
      - `X <https://gerrit.opencord.org/plugins/gitiles/bng/+/refs/tags/2.5.1>`__
-     - `X <https://github.com/opencord/bng/tree/2.5.1>`__
-     - ``N``
+     - `X <https://github.com/opencord/bng/releases/tag/2.5.1>`__
+     -+
    * - `dhcpl2relay <https://gerrit.opencord.org/gitweb?p=dhcpl2relay.git;a=summary>`__
      - `2.11.0 <https://mvnrepository.com/artifact/org.opencord/dhcpl2relay/2.11.0>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/dhcpl2relay-api/2.11.0>`__
@@ -241,21 +241,21 @@ ONOS Components
      - `X <https://github.com/opencord/mcast/releases/tag/2.9.1>`__, `T <https://github.com/opencord/mcast/tree/2.9.1>`__
      -
    * - `olt <https://gerrit.opencord.org/gitweb?p=olt.git;a=summary>`__
-     - `5.2.5 <https://mvnrepository.com/artifact/org.opencord/olt/5.2.5>`__
+     - `5.2.6 <https://mvnrepository.com/artifact/org.opencord/olt/5.2.6>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/olt-api/5.2.5>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/olt-app/5.2.5>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/olt/5.2.5>`__
      - `X <https://gerrit.opencord.org/plugins/gitiles/olt/+/refs/tags/5.2.5>`__
      - `X <https://github.com/opencord/olt/releases/tag/5.2.5>`__
-     -
+     - ``N``
    * - `olttopology <https://gerrit.opencord.org/plugins/gitiles/olttopology/>`__
      - `1.3.1 <https://mvnrepository.com/artifact/org.opencord/olttopology/1.3.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/olttopology-api/1.3.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/olttopology-app/1.3.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/olttopology>`__
      - `X <https://gerrit.opencord.org/plugins/gitiles/olttopology/+/refs/tags/1.3.1>`__
-     - `X <https://github.com/opencord/olttopology/releases/tag/1.3.1>`__, `tags <https://github.com/opencord/olttopology/tags>`__, `1.3.0 <https://github.com/opencord/olttopology/releases/tag/1.3.0>`_
-     - ``N``
+     - `X <https://github.com/opencord/olttopology/releases/tag/1.3.1>`__
+     -
    * - `pppoeagent <https://gerrit.opencord.org/plugins/gitiles/pppoeagent/>`__
      - `1.3.0 <https://mvnrepository.com/artifact/org.opencord/pppoeagent/1.3.0>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/pppoeagent-api/1.3.0>`__
@@ -321,7 +321,7 @@ VOLTHA Components
      -
      -
      -
-     -
+     - ``N``
    * - `bbsim <https://gerrit.opencord.org/gitweb?p=bbsim.git;a=tree>`__
      - ``1.14.4``
      - ``4.8.6``
@@ -351,17 +351,7 @@ VOLTHA Components
      - `1.1.4(stale) <https://hub.docker.com/layers/voltha/ofagent-go/1.1.4/images/sha256-8231111b69c8643c4981d64abff0a85d71f80763bb98632bb101e92b89882647?context=explore>`_
      - `1.6.5(stale) <https://pkg.go.dev/github.com/opencord/ofagent-go/cmd/ofagent>`_
      -
-     - Y
-   * - `openolt agent <https://gerrit.opencord.org/gitweb?p=openolt.git;a=tree>`_
      -
-     - ``4.2.12``
-     -
-     -
-     - `X <https://github.com/opencord/openolt>`__
-     -
-     -
-     -
-     - ``N``
    * - `voltctl <https://gerrit.opencord.org/gitweb?p=voltctl.git;a=tree>`_
      - ``1.8.3``
      -
@@ -382,7 +372,7 @@ VOLTHA Components
      - `v7 <https://pkg.go.dev/github.com/opencord/voltha-lib-go/v7>`_
        `v5 <https://pkg.go.dev/github.com/opencord/voltha-lib-go/v5>`_
      -
-     - ``N``
+     - `VOL-526 <https://jira.opencord.org/browse/VOL-526>`_
    * - `voltha-lib-go <https://gerrit.opencord.org/plugins/gitiles/voltha-lib-go>`_
      - ``7.5.3``
      -
@@ -440,16 +430,6 @@ VOLTHA Components
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-system-tests/+/refs/tags/2.11.10>`__
      - `X <https://github.com/opencord/voltha-system-tests/tree/2.11.10>`__
      - `stale <https://hub.docker.com/r/voltha/voltha-protos>`_
-     -
-     -
-     - ``N``
-   * - ppoeagent
-     - ``1.2.1``
-     -
-     -
-     -
-     -
-     -
      -
      -
      - ``N``
