@@ -196,10 +196,10 @@ ONOS Components
      - `2.5.1 <https://mvnrepository.com/artifact/org.opencord/bng/2.5.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/bng-api/2.5.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/bng-app/2.5.1>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/bng/2.5.1`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/bng/2.5.1>`__
      - `X <https://gerrit.opencord.org/plugins/gitiles/bng/+/refs/tags/2.5.1>`__
-     - `X <https://github.com/opencord/bng/releases/tag/2.5.1>`__
-     -+
+     - `X <https://github.com/opencord/bng/releases/tag/2.5.1>`_
+     -
    * - `dhcpl2relay <https://gerrit.opencord.org/gitweb?p=dhcpl2relay.git;a=summary>`__
      - `2.11.0 <https://mvnrepository.com/artifact/org.opencord/dhcpl2relay/2.11.0>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/dhcpl2relay-api/2.11.0>`__
@@ -217,12 +217,12 @@ ONOS Components
      - `X <https://github.com/opencord/igmpproxy/releases/tag/2.9.0>`__
      -
    * - `kafka <https://gerrit.opencord.org/gitweb?p=kafka-onos.git;a=summary>`__
-     - `2.13.0 <https://mvnrepository.com/artifact/org.opencord/kafka/2.13.0>`__, `2.12.0 <https://mvnrepository.com/artifact/org.opencord/kafka/2.12.0>`__
-     - X
-     - X
-     - `X <https://mvnrepository.com/artifact/org.opencord/kafka>`__
-     - `X <https://gerrit.opencord.org/plugins/gitiles/kafka-onos/+/refs/tags/2.13.0>`__
-     - `X <https://github.com/opencord/kafka-onos/releases/tag/2.13.0>`__, `T <https://github.com/opencord/kafka-onos/tree/2.13.0>`__
+     - `2.13.1 <https://mvnrepository.com/artifact/org.opencord/kafka/2.13.1>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/kafka-api/2.13.1>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/kafka-app/2.13.1>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/kafka/2.13.1>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/kafka-onos/+/refs/tags/2.13.1>`__
+     - `X <https://github.com/opencord/kafka-onos/releases/tag/2.13.1>`__
      - ``N``
    * - `maclearner <https://gerrit.opencord.org/plugins/gitiles/mac-learning>`__
      - `1.2.3 <https://mvnrepository.com/artifact/org.opencord/maclearner/1.2.3>`__
@@ -419,8 +419,8 @@ VOLTHA Components
      - ``?``
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-protos/+/refs/tags/v5.4.11>`__
      - `X <https://github.com/opencord/voltha-protos/releases/tag/v5.4.11>`__
-     - `stale <https://hub.docker.com/r/voltha/voltha-protos/tags>`_
-     - `stale <https://pkg.go.dev/github.com/opencord/voltha-protos>`_
+     - `stale <https://hub.docker.com/r/voltha/voltha-protos/tags>`__
+     - `stale <https://pkg.go.dev/github.com/opencord/voltha-protos>`__
      - `5.4.11 <https://pypi.org/project/voltha-protos/5.4.11>`__
      -
    * - `voltha-system-tests <https://github.com/opencord/voltha-system-tests/releases/tag/2.9.0>`__
@@ -429,7 +429,7 @@ VOLTHA Components
      -
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-system-tests/+/refs/tags/2.11.10>`__
      - `X <https://github.com/opencord/voltha-system-tests/tree/2.11.10>`__
-     - `stale <https://hub.docker.com/r/voltha/voltha-protos>`_
+     - `stale <https://hub.docker.com/r/voltha/voltha-protos>`__
      -
      -
      - ``N``
