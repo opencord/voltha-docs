@@ -217,12 +217,12 @@ ONOS Components
      - `X <https://github.com/opencord/igmpproxy/releases/tag/2.9.0>`__
      -
    * - `kafka <https://gerrit.opencord.org/gitweb?p=kafka-onos.git;a=summary>`__
-     - `2.13.1 <https://mvnrepository.com/artifact/org.opencord/kafka/2.13.1>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/kafka-api/2.13.1>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/kafka-app/2.13.1>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/kafka/2.13.1>`__
-     - `X <https://gerrit.opencord.org/plugins/gitiles/kafka-onos/+/refs/tags/2.13.1>`__
-     - `X <https://github.com/opencord/kafka-onos/releases/tag/2.13.1>`__
+     - `2.13.2 <https://mvnrepository.com/artifact/org.opencord/kafka/2.13.2>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/kafka-api/2.13.2>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/kafka-app/2.13.2>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/kafka/2.13.2>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/kafka-onos/+/refs/tags/2.13.2>`__
+     - `X <https://github.com/opencord/kafka-onos/releases/tag/2.13.2>`__
      - ``N``
    * - `maclearner <https://gerrit.opencord.org/plugins/gitiles/mac-learning>`__
      - `1.2.3 <https://mvnrepository.com/artifact/org.opencord/maclearner/1.2.3>`__
@@ -242,12 +242,12 @@ ONOS Components
      -
    * - `olt <https://gerrit.opencord.org/gitweb?p=olt.git;a=summary>`__
      - `5.2.6 <https://mvnrepository.com/artifact/org.opencord/olt/5.2.6>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/olt-api/5.2.5>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/olt-app/5.2.5>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/olt/5.2.5>`__
-     - `X <https://gerrit.opencord.org/plugins/gitiles/olt/+/refs/tags/5.2.5>`__
-     - `X <https://github.com/opencord/olt/releases/tag/5.2.5>`__
-     - ``N``
+     - `X <https://mvnrepository.com/artifact/org.opencord/olt-api/5.2.6>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/olt-app/5.2.6>`__
+     - `X <https://mvnrepository.com/artifact/org.opencord/olt/5.2.6>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/olt/+/refs/tags/5.2.6>`__
+     - `X <https://github.com/opencord/olt/releases/tag/5.2.6>`__
+     -
    * - `olttopology <https://gerrit.opencord.org/plugins/gitiles/olttopology/>`__
      - `1.3.1 <https://mvnrepository.com/artifact/org.opencord/olttopology/1.3.1>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/olttopology-api/1.3.1>`__

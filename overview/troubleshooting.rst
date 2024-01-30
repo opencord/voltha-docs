@@ -36,7 +36,7 @@ Once you have captured the packets you need, you can see them in wireshark by tr
 
 And then in wireshark select ``File -> Import from Hex Dump``
 
-Or you can decode a single packet using this online tool: `https://hpd.gasmi.net <https://hpd.gasmi.net>`_
+Or you can decode a single packet using this online tool: ``http://hpd.gasmi.net``.
 
 To get all the EAPOL packets: ``grep -e '888e' packets.trace``
 
