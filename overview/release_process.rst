@@ -1,5 +1,6 @@
 VOLTHA Release process
 ======================
+
 This document describes the technical steps of VOLTHA's release process.
 The document assumes you are creating a release named voltha-X.Y, where X is the major release versio
 and the y is the minor.

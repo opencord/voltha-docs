@@ -14,13 +14,27 @@ BUILD[baseline]: detect pre-existing corruption
 BUILD[pre-release]: dependency and module updates
 -------------------------------------------------
 
-- make go mod-update
-- Update copyright notices :ref:`Release Task Copyright`
+- :ref:`Release Task Golang Mod Update`
+- :ref:`Release Task Copyright`
 
 Standard syntax & formatting
 ----------------------------
 
 - Golang syntax fomatting :ref:`Release Task Golang Syntax`
+
+golang
+^^^^^^
+
+Use the gofmt command to reformat golang sources gathered outside the vendor/ directory.
+
+.. code-block:: shell-session
+   :caption:
+
+   % make golang-fmt
+
+   % cd mysandbox
+   % find . ! -path './vendor/\*' -name '*.go' -print | xargs -n1 gofmt -s -e -w
+
 
 Chart.yaml
 ----------
