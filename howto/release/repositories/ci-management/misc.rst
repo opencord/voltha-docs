@@ -1,6 +1,15 @@
 Misc Todo Items
 ===============
 
+NOTE
+====
+
+When modifying repo:ci-management be sure to modify ``*.yaml`` sources or JJB
+will not regenerate configs.  Ugly faiure mode, release pipelines can
+behave like scripts are running from branch=master.
+
+----
+
 - Baseline build
 
   - Update copyright notices :ref:`Release Task Copyright`
@@ -45,6 +54,17 @@ Misc Todo Items
        }
        return (br)
    }
+
+## jb/software-upgrades.yaml
+
+- `jjb/software-upgrades.yaml <https://gerrit.opencord.org/plugins/gitiles/ci-management/+/refs/heads/master/jjb/software-upgrades.yaml>`_
+
+  - Update onos packages to released versions.
+  - Post release edits are needed in both branches:
+
+    - branch=master is updated with ``*-SNAPSHOT`` versions
+    - branch=voltha-2.12 receives the non-SNAPSHOT release versions.
+
 
 ## TODO
 
