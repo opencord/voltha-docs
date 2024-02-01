@@ -1,5 +1,4 @@
-Repository: voltha-lib-go
-=========================
+Repository: voltha-docs
 
 .. toctree::
    :maxdepth: 1

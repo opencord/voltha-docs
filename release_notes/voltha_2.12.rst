@@ -313,11 +313,11 @@ VOLTHA Components
      -
      -
    * - `Helm Charts (voltha-helm-charts) <https://gerrit.opencord.org/gitweb?p=voltha-helm-charts.git;a=tree>`_
-     - ``3.2.2-dev1``
+     - ``3.3.0``
      -
      -
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master>`__
-     - `X <https://github.com/opencord/voltha-helm-charts/tree/3.2.0>`__
+     - `X <https://github.com/opencord/voltha-helm-charts/releases/tag/3.3.0>`__
      -
      -
      -
@@ -331,7 +331,7 @@ VOLTHA Components
      - `X <https://hub.docker.com/layers/voltha/bbsim/1.14.4/images/sha256-c23de193c1d7cf8d32c48edfbec4bfa6c47dbeecd4b31d040da0255eeab2ec58?context=explore>`__
      -
      -
-     - ``N``
+     - ``N`` `VOL-5246 <https://jira.opencord.org/browse/VOL-5246>`_
    * - `Bbsim-sadis-server <https://gerrit.opencord.org/gitweb?p=bbsim-sadis-server.git;a=tree>`__
      -
      - ``0.3.4``
@@ -363,25 +363,24 @@ VOLTHA Components
      -
      - ``N``
    * - `voltha-go <https://gerrit.opencord.org/gitweb?p=voltha-go.git;a=tree>`_
-     - ``3.1.8``
+     - ``3.5.4``
      - docker
-     - ``2.11.3``
-     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-go/+/refs/tags/v3.1.8>`__
-     - `X <https://github.com/opencord/voltha-go/tree/v3.1.8>`__
+     - ``stale:2.11.3``
+     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-go/+/refs/tags/v3.5.4>`__
+     - `X <https://github.com/opencord/voltha-go/releases/tag/v3.5.4>`__
      -
-     - `v7 <https://pkg.go.dev/github.com/opencord/voltha-lib-go/v7>`_
-       `v5 <https://pkg.go.dev/github.com/opencord/voltha-lib-go/v5>`_
+     - ``v7:?`` <br> ``v5:?``
      -
-     - `VOL-526 <https://jira.opencord.org/browse/VOL-526>`_
+     - ``verify`` `VOL-526 <https://jira.opencord.org/browse/VOL-526>`_
    * - `voltha-lib-go <https://gerrit.opencord.org/plugins/gitiles/voltha-lib-go>`_
      - ``7.5.3``
      -
      - ``?``
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-lib-go/+/refs/tags/v7.5.3>`__
      - `X <https://github.com/opencord/voltha-lib-go/releases/tag/v7.5.3>`__
-     - `stale <https://hub.docker.com/r/voltha/voltha-protos>`__
+     - ``?``
      - `v7 <https://pkg.go.dev/github.com/opencord/voltha-lib-go/v7@v7.5.3>`__
-     - `stale <https://pypi.org/project/voltha-protos>`__
+     - ``?``
      -
    * - `voltha-onos <https://gerrit.opencord.org/gitweb?p=voltha-onos.git;a=tree>`_
      -
@@ -422,17 +421,17 @@ VOLTHA Components
      - `stale <https://hub.docker.com/r/voltha/voltha-protos/tags>`__
      - `stale <https://pkg.go.dev/github.com/opencord/voltha-protos>`__
      - `5.4.11 <https://pypi.org/project/voltha-protos/5.4.11>`__
-     -
+     - ``Y`` `VOL-5244 <https://jira.opencord.org/browse/VOL-5244>`_
    * - `voltha-system-tests <https://github.com/opencord/voltha-system-tests/releases/tag/2.9.0>`__
-     - ``2.11.10``
+     - ``2.12.13``
      -
      -
-     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-system-tests/+/refs/tags/2.11.10>`__
-     - `X <https://github.com/opencord/voltha-system-tests/tree/2.11.10>`__
-     - `stale <https://hub.docker.com/r/voltha/voltha-protos>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-system-tests/+/refs/tags/2.12.13>`__
+     - `X <https://github.com/opencord/voltha-system-tests/tree/2.12.13>`__
      -
      -
-     - ``N``
+     -
+     - ``verify`` `VOL-5064 <https://jira.opencord.org/browse/VOL-5064>`_
    * - segmentrouting
      - ``3.0.0``
      -
