@@ -2,9 +2,9 @@ VOLTHA Release process
 ======================
 
 This document describes the technical steps of VOLTHA's release process.
-The document assumes you are creating a release named voltha-X.Y, where X is the major release versio
-and the y is the minor.
-See versioning in the :doc:`releases documentation </overview/releases>`
+The document assumes you are creating a release named voltha-X.Y, where X
+is the major release version and Y is the minor.  See versioning in the
+:doc:`releases documentation </overview/releases>`
 
 Code Freeze and pre-release testing
 -----------------------------------
@@ -123,7 +123,7 @@ The job will need to be initiated using specific parameters, for an example view
 
 7. Start over with the next app
 
-.. note::
+ss.. note::
    Given component inter dependencies,  ONOS apps need to be released in order:
 
     1. sadis
@@ -149,15 +149,27 @@ ONOS APPs:
 Creating the release
 --------------------
 
-Once the components have been tested and the release is considered ready there are 3 more elements that need to be
-tagged:
+Once the components have been tested and the release is considered ready
+there are 4 more elements that need to be tagged:
 
 - `VOLTHA Helm Charts <https://github.com/opencord/voltha-helm-charts>`_
 - `VOLTHA System Tests <https://github.com/opencord/voltha-system-tests>`_
 - `VOLTHA docs <https://github.com/opencord/voltha-docs>`_
+- `repo:ci-management <https://gerrit.opencord.org/plugins/gitiles/ci-management>`_
 
-These 3 repos are the only ones that receive a X.Y.Z tag. Other repos that contain individual
-components have their own versioning/release cadence, driven by SemVer.
+These 4 repos are the only ones that receive a X.Y.Z tag.
+Other repos that contain individual components have their own
+versioning/release cadence, driven by SemVer.
+
+repo:ci-management
+^^^^^^^^^^^^^^^^^^
+
+Jenkins pipelines for building & testing release jobs are retrieved from
+repository branch=voltha-X.Y.  This repository is a dependency for all
+other VOLTHA repositories that invoke test suites.
+
+See Also: :ref:`_Release Repository ci-management`
+
 
 Helm Charts
 ^^^^^^^^^^^

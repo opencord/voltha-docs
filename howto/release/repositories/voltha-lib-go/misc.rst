@@ -7,6 +7,7 @@ Misc Todo Items
   - Golang syntax formatting :ref:`Release Task Golang Syntax`
 
 - Pre-branch build
+
   - Update module versions for voltha/onos components
   - make mod-update
 
