@@ -19,69 +19,124 @@ Features & Improvements
 
    * - Jira
      - Description
-   * - | `VOL-4444 <https://jira.opencord.org/browse/VOL-4444>`_
-       | `VOL-4340 <https://jira.opencord.org/browse/VOL-4340>`_
-     - Create API for profile in voltha rw-core for profile operations
-   * - `VOL-4782 <https://jira.opencord.org/browse/VOL-4782>`_
-     - Enchance DMI to include DataValueType in Events and also clarification for Transceiver Events
-   * - `VOL-4783 <https://jira.opencord.org/browse/VOL-4783>`_
-     - Introduce UploadDebugInformation RPC in DMI
-   * - `VOL-4788 <https://jira.opencord.org/browse/VOL-4788>`_
-     - Create package in voltha-libs-go for support of prometheus counters in voltha
-   * - `VOL-4877 <https://jira.opencord.org/browse/VOL-4877>`_
-     - Enhance DMI interface to be able to retrieve the Tx Power on the Transceivers
-   * - `VOL-4878 <https://jira.opencord.org/browse/VOL-4878>`_
-     - Improve the voltha-protos extensions interface to get the Rx Power levels from an OLT
-   * - `VOL-4949 <https://jira.opencord.org/browse/VOL-4949>`_
+   * - `VOL-4949 <|jira-opencord|/VOL-4949>`_
      - Introduce DEVICE_BUSY reason in the UploadDebugInfoStatus DMI message
-   * - `VOL-4952 <https://jira.opencord.org/browse/VOL-4952>`_
-     - Add retry client options to the grpc library in voltha-lib-go
-   * - `VOL-4958 <https://jira.opencord.org/browse/VOL-4958>`_
+   * - `VOL-4783 <|jira-opencord|/VOL-4783>`_
+     - Introduce UploadDebugInformation RPC in DMI
+   * - `VOL-4788 <|jira-opencord|/VOL-4788>`_
+     - Create package in voltha-libs-go for support of prometheus counters in voltha
+   * - `VOL-4782 <|jira-opencord|/VOL-4782>`_
+     - Enchance DMI to include DataValueType in Events and also clarification for Transceiver Events
+   * - `VOL-4878 <|jira-opencord|/VOL-4878>`_
+     - Improve the voltha-protos extensions interface to get the Rx Power levels from an OLT
+   * - `VOL-4877 <|jira-opencord|/VOL-4877>`_
+     - Enhance DMI interface to be able to retrieve the Tx Power on the Transceivers
+   * - `VOL-4958 <|jira-opencord|/VOL-4958>`_
      - Introduce protobuf dependencies in DMI for the python testing framework
-   * - `VOL-4983 <https://jira.opencord.org/browse/VOL-4983>`_
+   * - `VOL-4952 <|jira-opencord|/VOL-4952>`_
+     - Add retry client options to the grpc library in voltha-lib-go
+   * - `VOL-4983 <|jira-opencord|/VOL-4983>`_
      - voltctl list device meters with traffic shaping info
-   * - `VOL-5043 <https://jira.opencord.org/browse/VOL-5043>`_
+   * - `VOL-5043 <|jira-opencord|/VOL-5043>`_
      - Enhance DMI interface to have CPU/Mem/Disk usage alarms and also NTP synch alarms
+   * - `VOL-4444 <|jira-opencord|/VOL-4444>`_
+     - VOL-4340 Create API for profile in voltha rw-core for profile operations
+   * - `VOL-4436 <|jira-opencord|/VOL-4436>`_
+     - VOL-4340 Create proto files for sip profile and voip service
+   * - `VOL-5046 <|jira-opencord|/VOL-5046>`_
+     - Reuse grpc clinet connection in grpc clinet lib
+   * - `VOL-4972 <|jira-opencord|/VOL-4972>`_
+     - Changes in openolt adapter to reconcile onu device and pon states
+   * - `VOL-4953 <|jira-opencord|/VOL-4953>`_
+     - Retry for grpc towards core in openolt adapter
+   * - `VOL-5216 <|jira-opencord|/VOL-5216>`_
+     - Handle transition in core during device reboot
+   * - `VOL-5197 <|jira-opencord|/VOL-5197>`_
+     - In DMI add QSFP-DD as a form factor for the TransceiverAttributes
+   * - `VOL-4950 <|jira-opencord|/VOL-4950>`_
+     - Move the component_uuid from EventsConfigurationRequest to EventCfg of DMI interface
+   * - `VOL-5241 <|jira-opencord|/VOL-5241>`_
+     - Add Zyxel to ONU Vendor list
+   * - `VOL-5233 <|jira-opencord|/VOL-5233>`_
+     - VOL-5206 Change "ONU_DYING_GASP_EVENT" check to "ONU_DYING_GASP_RAISE_EVENT" in Alarm tests
 
 Bug Fixes
 ---------
 
 .. list-table:: Bug Fixes
-   :widths: 10, 10, 40
+   :widths: 10, 60
    :header-rows: 1
 
    * - Jira
-     - Resource
      - Description
-   * - `VOL-4934 <https://jira.opencord.org/browse/VOL-4934>`_
-     - omci-lib-go
-     - MIC (AES-128) calculation does not properly support the Ex
-   * - `VOL-4931 <https://jira.opencord.org/browse/VOL-4931>`_
-     - openoltAdapter
-     - memory leak seen in long term tests
-   * - `VOL-4929 <https://jira.opencord.org/browse/VOL-4929>`_
-     - openonuAdapterGo
-     - memory leak seen in long term tests
-   * - `VOL-4927 <https://jira.opencord.org/browse/VOL-4927>`_
-     - omci-lib-go
-     - ONT-G ME alarms are not supposed by auto-generated code of omci-lib-go
-   * - `VOL-4984 <https://jira.opencord.org/browse/VOL-4984>`_
-     - voltctl
-     - log level list does not display the component open-flow-agent
+   * -
+     -
+   * - `VOL-4926 <|jira-opencord|/VOL-4926>`_
+     - VOL-4836 kail - godownloader.sh no longer available: alternative needed
+   * - `VOL-4934 <|jira-opencord|/VOL-4934>`_
+     - omci-lib-go: MIC (AES-128) calculation does not properly support the Extended Message Set
+   * - `VOL-4927 <|jira-opencord|/VOL-4927>`_
+     - omci-lib-go: ONT-G ME alarms are not supposed
+   * - `VOL-4929 <|jira-opencord|/VOL-4929>`_
+     - openonuAdapterGo - memory leak seen in long term tests
+   * - `VOL-4931 <|jira-opencord|/VOL-4931>`_
+     - openoltAdapter: memory leak seen in long term tests
+   * - `VOL-4984 <|jira-opencord|/VOL-4984>`_
+     - voltctl log level list does not display the component open-flow-agent
+   * - `VOL-5105 <|jira-opencord|/VOL-5105>`_
+     - cli label missing for pon ports in BBSIM
+   * - `VOL-5193 <|jira-opencord|/VOL-5193>`_
+     - OpenOnuAdapterGo: MIB sync handling fails , when the MIB template has NULL terminated strings.
+   * - `VOL-5187 <|jira-opencord|/VOL-5187>`_
+     - openolt adaptor should not set discovery in progress for a given onu in case the particular discovery request fails
+   * - `VOL-5165 <|jira-opencord|/VOL-5165>`_
+     - Openoltagent getting crashed when ONT is rebooted
+   * - `VOL-5172 <|jira-opencord|/VOL-5172>`_
+     - Olt adaptor trying to add flows to the devices even when the parent olt is not up
+   * - `VOL-5104 <|jira-opencord|/VOL-5104>`_
+     - BBSIM crashed when adding flows
+   * - `VOL-4993 <|jira-opencord|/VOL-4993>`_
+     - Upon OLT reboot, OLT's OPERSTATUS is observed as "rebooted" and no ONTs are discovered
+   * - `VOL-4798 <|jira-opencord|/VOL-4798>`_
+     - voltctl - log configuration for multiple stacks doesn't work
+   * - `VOL-5212 <|jira-opencord|/VOL-5212>`_
+     - Unable to fetch PON RX power for all the ONTs on a PON port.
+   * - `VOL-5215 <|jira-opencord|/VOL-5215>`_
+     - After rebooting ONUs the BBSIM OLT is crashing
+   * - `VOL-5208 <|jira-opencord|/VOL-5208>`_
+     - onu adapter will go into race and crash if delete-device and delete gemport from olt adapter happens at once
+   * - `VOL-5210 <|jira-opencord|/VOL-5210>`_
+     - Open onu adapter crashes when processing requests and device is deleted
+   * - `VOL-5107 <|jira-opencord|/VOL-5107>`_
+     - forced crash during child device detected may result in duplicate device
+   * - `VOL-5219 <|jira-opencord|/VOL-5219>`_
+     - in case voltha core goes down before it gets a chance to fire reconcile to the adaptors it should retrigger the reconcile process once it comes back up
+   * - `VOL-5175 <|jira-opencord|/VOL-5175>`_
+     - OLT device ports list in ONOS is empty after rebooting the OLT
+   * - `VOL-5195 <|jira-opencord|/VOL-5195>`_
+     - Missing ANI-G Signal Fail and Signal Degrade alarm notification
+   * - `VOL-5209 <|jira-opencord|/VOL-5209>`_
+     - Open onu adapter crashes during delete device
+   * - `VOL-5249 <|jira-opencord|/VOL-5249>`_
+     - error loading onos image in voltha-onos-sanity_test
+   * - `VOL-5236 <|jira-opencord|/VOL-5236>`_
+     - onu adapter should gracefully reset vlan config fsm on onu down
+   * - `VOL-5223 <|jira-opencord|/VOL-5223>`_
+     - OpenOnuAdapterGo: Alarm Mgr has to handle unconfigured MEs responses from ONT during Alarm Audit.
+
 
 Test
 ----
 
 .. list-table:: Test
-   :widths: 10, 10, 40
+   :widths: 10, 60
    :header-rows: 1
 
    * - Jira
-     - Resource
      - Description
-   * - `VOL-4829 <https://jira.opencord.org/browse/VOL-4829>`_
-     - openonuAdapterGo
-     - Robustness - Test of reconciling openonu-adapter with continuous traffic at real HW
+   * - `VOL-4829 <|jira-opencord|/VOL-4829>`_
+     - openonuAdapterGo: Robustness - Test of reconciling openonu-adapter with continuous traffic at real HW
+
 
 Documentation
 -------------
@@ -186,9 +241,9 @@ ONOS Components
      -
    * - `aaa <https://gerrit.opencord.org/gitweb?p=aaa.git;a=summary>`_
      - `2.11.0 <https://mvnrepository.com/artifact/org.opencord/aaa/2.11.0>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/aaa-api/2.11.0>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/aaa-app/2.11.0>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/aaa>`__
+     - `X <|mvn-aaa|-api/2.11.0>`__
+     - `X <|mvn-api|-api/2.11.0>`__
+     - `X <|mvn-api|/2.11.0>`__
      - `X <https://gerrit.opencord.org/plugins/gitiles/aaa/+/refs/tags/2.11.0>`__
      - `X <https://github.com/opencord/aaa/releases/tag/2.11.0>`__
      -
@@ -242,7 +297,7 @@ ONOS Components
      -
    * - `olt <https://gerrit.opencord.org/gitweb?p=olt.git;a=summary>`__
      - `5.2.6 <https://mvnrepository.com/artifact/org.opencord/olt/5.2.6>`__
-     - `X <https://mvnrepository.com/artifact/org.opencord/olt-api/5.2.6>`__
+     - `X <|mvn-olt|-api/5.2.6>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/olt-app/5.2.6>`__
      - `X <https://mvnrepository.com/artifact/org.opencord/olt/5.2.6>`__
      - `X <https://gerrit.opencord.org/plugins/gitiles/olt/+/refs/tags/5.2.6>`__
@@ -363,13 +418,13 @@ VOLTHA Components
      -
      - ``N``
    * - `voltha-openonu-adapter-go <https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter-go.git;a=tree>`_
-     -
      - ``2.11.12``
+     - ``2.7.3`` ``?``
+     -
      -
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-openonu-adapter-go/+/refs/tags/v2.11.12>`__
      - `X <https://github.com/opencord/voltha-openonu-adapter-go/tree/v2.11.12>`__
      - `X <https://hub.docker.com/layers/voltha/voltha-openonu-adapter-go/2.11.12/images/sha256-e9484a8963d08748af5766a6a8ce7f7485efb384488bcf93840ecc1142d7ad74?context=explore>`__
-     -
      -
      - ``N`` `VOL-5252 <https://jira.opencord.org/browse/VOL-5252>`_
    * - `voltha-openolt-adapter <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree>`_
@@ -419,7 +474,7 @@ VOLTHA Components
 VOLTHA Tools
 ++++++++++++
 
-.. list-table:: VOLTHA Components
+.. list-table:: VOLTHA Tools
    :widths: 30, 5, 5, 5, 5, 5, 5, 5, 5, 5
    :header-rows: 2
 
@@ -636,3 +691,8 @@ Website(s)
   - `Wiki <https://wiki.opencord.org>`_
 
 |
+
+.. |jira-opencord|  replace:: replacement https://jira.opencord.org/browse
+.. |mvn-artifact|   replace:: replacement https://mvnrepository.com/artifact/org.opencord
+.. |mvn-aaa|        replace:: replacement https://mvnrepository.com/artifact/org.opencord/aaa
+.. |mvn-olt|        replace:: replacement |mvn-artifact|/olt
