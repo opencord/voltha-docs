@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ba18510f_961a48b1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000947
+      },
+      "writtenOn": "2024-02-02T22:33:03Z",
+      "side": 1,
+      "message": "Confused by the numbering -- these look like version strings, but I don\u0027t understand replacing\n2.11.12 with 2.11.1???   At least that\u0027s what it looks like.\n\t\n     - ``2.11.2``\n422\n     - ``2.7.3`` ``?``\n366\n423\n     -\n367\n     - ``2.11.12``",
+      "revId": "038a7018becb68ba5f707711d0e3eea1c9c882e4",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
