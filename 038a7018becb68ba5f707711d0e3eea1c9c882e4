@@ -16,6 +16,24 @@
       "message": "Confused by the numbering -- these look like version strings, but I don\u0027t understand replacing\n2.11.12 with 2.11.1???   At least that\u0027s what it looks like.\n\t\n     - ``2.11.2``\n422\n     - ``2.7.3`` ``?``\n366\n423\n     -\n367\n     - ``2.11.12``",
       "revId": "038a7018becb68ba5f707711d0e3eea1c9c882e4",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1ebd254a_cecafdec",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2024-02-04T20:49:01Z",
+      "side": 1,
+      "message": "It is a little easier to follow the rendered table:\nhttps://docs.voltha.org/master/release_notes/voltha_2.12.html#voltha-components\n\nThere have been several ongoing version and URL updates, some fixing typos or stale versions.  Manually verifying content after rendering for correctness (grumble: that rogue Sphinx v5.0 upgrade broke interactive viewing).\n\nThe 2.11.12 \u003d\u003e 2.11.2 transition is a typo.  A merge conflict landed in this block earlier and must have inadvertently truncated 12 \u003d\u003e 2.",
+      "parentUuid": "ba18510f_961a48b1",
+      "revId": "038a7018becb68ba5f707711d0e3eea1c9c882e4",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
