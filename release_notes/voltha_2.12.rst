@@ -389,14 +389,14 @@ VOLTHA Components
      -
    * - `voltha-go <https://gerrit.opencord.org/gitweb?p=voltha-go.git;a=tree>`_
      - ``3.5.4``
-     - docker
+     -
      - ``stale:2.11.3``
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-go/+/refs/tags/v3.5.4>`__
      - `X <https://github.com/opencord/voltha-go/releases/tag/v3.5.4>`__
+     - ``N/A``
+     - ``v7:?``
      -
-     - ``v7:?`` <br> ``v5:?``
      -
-     - ``verify`` `VOL-526 <https://jira.opencord.org/browse/VOL-526>`_
    * - `voltha-lib-go <https://gerrit.opencord.org/plugins/gitiles/voltha-lib-go>`_
      - ``7.5.3``
      -
@@ -409,11 +409,11 @@ VOLTHA Components
      -
    * - `voltha-onos <https://gerrit.opencord.org/gitweb?p=voltha-onos.git;a=tree>`_
      -
-     - ``5.1.2``
+     - ``5.1.10``
      - ``0.1.27``
-     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-onos/+/refs/tags/5.1.3>`__
-     - `X <https://github.com/opencord/voltha-onos/tree/5.1.3>`__
-     - `X <https://hub.docker.com/layers/voltha/voltha-onos/5.1.3/images/sha256-d9c686acf177ed823ff359dc43ba59aab05ae067be27c92e48c08b72f94b9ca3?context=explore>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-onos/+/refs/tags/5.1.10>`__
+     - `X <https://github.com/opencord/voltha-onos/releases/tag/5.1.10>`__
+     - `X <https://hub.docker.com/layers/voltha/voltha-onos/5.1.10/images/sha256-d2498af38194a1cd01a1b9072a58af8647ed50fea2dbc9bd3ac4d4e4b583d72a?context=explore>`__
      -
      -
      - ``N``
@@ -428,12 +428,12 @@ VOLTHA Components
      -
      - ``N`` `VOL-5252 <https://jira.opencord.org/browse/VOL-5252>`_
    * - `voltha-openolt-adapter <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree>`_
-     - ``v4.4.11`` from ``4.4.9``
+     - ``v4.4.11``
      - ``4.2.6``
      -
-     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-openolt-adapter/+/refs/tags/v4.4.9>`__
-     - `X <https://github.com/opencord/voltha-openolt-adapter/tree/v4.4.9>`__
-     - `X <https://hub.docker.com/layers/voltha/voltha-openolt-adapter/4.4.9/images/sha256-844eac272323dc8bca10880a111957a95839578b3210dd777be5ac9370aaa52e?context=explore>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-openolt-adapter/+/refs/tags/v4.4.11>`__
+     - `X <https://github.com/opencord/voltha-openolt-adapter/releases/tag/v4.4.11>`__
+     - `X <https://hub.docker.com/layers/voltha/voltha-openolt-adapter/4.4.11/images/sha256-eed64f687f6029f4cbf531162a10d5e496ea454878987ec0212cd5dbf4c6d9cf?context=explore>`__
      -
      -
      - ``N`` `VOL-5055 <https://jira.opencord.org/browse/VOL-5055>`_
@@ -446,7 +446,7 @@ VOLTHA Components
      - `stale <https://hub.docker.com/r/voltha/voltha-protos/tags>`__
      - `stale <https://pkg.go.dev/github.com/opencord/voltha-protos>`__
      - `5.4.11 <https://pypi.org/project/voltha-protos/5.4.11>`__
-     - ``Y`` `VOL-5244 <https://jira.opencord.org/browse/VOL-5244>`_
+     -
    * - `voltha-system-tests <https://github.com/opencord/voltha-system-tests/releases/tag/2.9.0>`__
      - ``2.12.13``
      -
