@@ -225,6 +225,14 @@ broken-log : sterile
 	grep -i error _build/linkcheck/output.txt
 
 ## -----------------------------------------------------------------------
+## Intent: Summarize linkcheck failures
+## -----------------------------------------------------------------------
+.PHONY: lint-doc8-debug
+lint-doc8-debug : sterile
+	$(HIDE) @echo "Searching for cryptic failures"
+	-grep -i 'X <' release_notes/voltha_2.12.rst | grep -v '`__'
+
+## -----------------------------------------------------------------------
 ## Intent:
 ## -----------------------------------------------------------------------
 clean::
