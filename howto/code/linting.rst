@@ -11,7 +11,6 @@ Targets
 
     git clone ssh://gerrit.opencord.org:29418/voltha-helm-charts.git
     cd voltha-helm-charts
-
     make help | grep lint
     lint-chart                    chart_version_check.sh
     lint-doc8                     Syntax check *.rst documentation files.
@@ -29,6 +28,11 @@ Targets
     lint-pylint                   Syntax check using tool pylint
 
 |
+
+.. seealso::
+
+- :ref:`Makefile Target lint-chart`
+- :ref:`Makefile Target lint-helm`
 
 
 All Sources
