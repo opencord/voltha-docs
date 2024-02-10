@@ -28,4 +28,5 @@ Release Topics
    repositories/index
    scripts/preparation
    scripts/repository-voltha-release
+   voltha-helm-charts
    voltha-system-tests/index

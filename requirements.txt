@@ -17,4 +17,6 @@ sphinx-reload
 ## Implicit unused dependency -- requires Sphinx v5.0.2
 # sphinxcontrib-applehelp==1.0.8
 
+# emacs .venv/lib/python3.10/site-packages/Sphinx-4.1.2.dist-info/METADATA
+
 # [EOF]
