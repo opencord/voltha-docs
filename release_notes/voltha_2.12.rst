@@ -518,19 +518,19 @@ VOLTHA Tools
      - ``?``
      - ``N``
    * - `Bbsim-sadis-server <https://gerrit.opencord.org/gitweb?p=bbsim-sadis-server.git;a=tree>`__
-     - ``0.3.6``
+     - `0.3.6 <https://gerrit.opencord.org/plugins/gitiles/bbsim-sadis-server/+/refs/heads/voltha-2.12/VERSION>`_
      - `0.3.3 <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/voltha-2.12/voltha-infra/Chart.yaml#45>`_
-     - `X <https://gerrit.opencord.org/plugins/gitiles/bbsim-sadis-server/+/refs/tags/v0.3.4>`__
+     - `X <https://gerrit.opencord.org/plugins/gitiles/bbsim-sadis-server/+/refs/tags/v0.3.6/VERSION>`_
      - `X <https://github.com/opencord/bbsim-sadis-server/releases/tag/v0.3.4>`__
      - `X <https://hub.docker.com/layers/voltha/bbsim-sadis-server/0.3.6/images/sha256-0ea9df1be13f8b1d0a8314cbf0e0800e4a4b7e2920ae3ce5e119abddb9359350?context=explore>`__
      -
      -
      - ``N``
    * - `voltctl <https://gerrit.opencord.org/gitweb?p=voltctl.git;a=tree>`_
-     - ``1.10.2``
-     - ``?``
-     - `X <https://gerrit.opencord.org/plugins/gitiles/voltctl/+/refs/tags/v1.10.2>`__
-     - `v1.9.1 <https://github.com/opencord/voltctl/releases/tag/untagged-cd611c39178f25b95a87> `X <https://github.com/opencord/voltctl/tree/v1.10.2>`__
+     - `1.10.2 <https://gerrit.opencord.org/plugins/gitiles/voltctl/+/refs/heads/voltha-2.12/VERSION>`_
+     - ``N/A``
+     - `X <https://gerrit.opencord.org/plugins/gitiles/voltctl/+/refs/tags/v1.10.2>`_
+     - `? <https://github.com/opencord/voltctl/releases/tag/v1.10.2>`_
      - ``N/A``
      - `X <https://pkg.go.dev/github.com/opencord/voltctl@v1.10.2>`__
      - ``N/A``
@@ -564,13 +564,13 @@ This section refers to the macro charts to deploy the required infrastructure an
      -
      -
    * - Voltha-infra
-     - ``2.10.10``
+     - `2.12.2 <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-infra/Chart.yaml#37>`_
      -
      -
      -
      -
    * - Voltha-stack
-     - ``2.10.10``
+     - `2.12.7 <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-stack/Chart.yaml#37>`_
      -
      -
      -
