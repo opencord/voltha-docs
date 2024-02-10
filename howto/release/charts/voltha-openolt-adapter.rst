@@ -2,15 +2,8 @@
 
 ## HOWTO: Helm Chart Update
 
-.. code-block:: shell-session
-   :caption: Cookbook of edits
-
-   % git clone "ssh://gerrit.opencord.org:29418/voltha-helm-charts.git"
-   % cd voltha-helm-charts
-   % vi $(grep -r 'adapter' . | cut -d: -f1 | sort -u)
-
-   % make lint-chart
-   % make lint-helm
+- Update copyright notices :ref:`Release Task Copyright`
+- Update VOLTHA artifact and chart versions :ref:`Release Task Helm Charts`
 
 - Increment repository `VERSION file <https://gerrit.opencord.org/plugins/gitiles/voltha-openolt-adapter/+/refs/heads/master/VERSION>`_.  Build, test and deploy.
 - Modify repo:voltha-helm-charts
@@ -42,9 +35,12 @@
    * - `voltha-adapter-openolt/Chart.yaml <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-adapter-openolt/Chart.yaml>`_
      - Chart.yaml : appVersion
      - Assign `repo:voltha-openolt-adapter::VERSION <https://gerrit.opencord.org/plugins/gitiles/voltha-openolt-adapter/+/refs/heads/master/VERSION>`_ to `Chart.yaml::appVersion <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-adapter-openolt/Chart.yaml#35>`_
+   * - `voltha-adapter-openolt/Chart.yaml <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-adapter-openolt/Chart.yaml>`_
+     - Chart.yaml : version
+     - Increment `OLT chart version <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-adapter-openolt/Chart.yaml#20>`_
    * - voltha-infra/Chart.yaml
      -
-     -
+     - N/A
    * - voltha-stack/Chart.yaml
      - dependencies : name=voltha-adapter-openolt :  version
      - Component openolt-adapter modified so update `dependencies : name='voltha-adapter-olt' : version="2.12.6" <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-stack/Chart.yaml#38>`_
@@ -63,8 +59,7 @@
 
 ### Extra Credit
 
-- Update copyright notices :ref:`Release Task Copyright`
-- make lint # lint everything
+- make lint
 
 .. seealso::
 

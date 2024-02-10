@@ -414,22 +414,22 @@ VOLTHA Components
      -
      - ``N``
    * - `voltha-openolt-adapter <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree>`_
-     - ``v4.4.11`` from ``4.4.9``
-     - ``2.12.6``
+     - `4.4.11 <https://gerrit.opencord.org/plugins/gitiles/voltha-openolt-adapter/+/7a14e562d5a1d392230069a644f904fa0a676863/VERSION>`_
+     - `2.12.6 <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-adapter-openolt/Chart.yaml#20>`_
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-openolt-adapter/+/refs/tags/v4.4.11>`__
      - `X <https://github.com/opencord/voltha-openolt-adapter/releases/tag/v4.4.11>`__
      - `X <https://hub.docker.com/layers/voltha/voltha-openolt-adapter/4.4.11/images/sha256-eed64f687f6029f4cbf531162a10d5e496ea454878987ec0212cd5dbf4c6d9cf?context=explore>`__
      - ``N/A``
      - ``N/A``
-     - ``N`` `VOL-5055 <https://jira.opencord.org/browse/VOL-5055>`_
+     - ``N``
    * - `voltha-openonu-adapter-go <https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter-go.git;a=tree>`_
-     - ``2.7.3`` ``?``
-     -
-     -
+     - `2.11.12 <https://gerrit.opencord.org/plugins/gitiles/voltha-openonu-adapter-go/+/refs/heads/voltha-2.12/VERSION>`_
+     - `2.12.2 <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-adapter-openonu/Chart.yaml#17>`_
      - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-openonu-adapter-go/+/refs/tags/v2.11.12>`__
-     - `X <https://github.com/opencord/voltha-openonu-adapter-go/tree/v2.11.12>`__
+     - `X <https://github.com/opencord/voltha-openonu-adapter-go/releases/tag/v2.11.12>`_
      - `X <https://hub.docker.com/layers/voltha/voltha-openonu-adapter-go/2.11.12/images/sha256-e9484a8963d08748af5766a6a8ce7f7485efb384488bcf93840ecc1142d7ad74?context=explore>`__
-     -
+     - `stale <https://pkg.go.dev/github.com/opencord/voltha-openonu-adapter-go>`_
+     - ``N/A``
      - ``N`` `VOL-5252 <https://jira.opencord.org/browse/VOL-5252>`_
    * - `voltha-protos <https://gerrit.opencord.org/plugins/gitiles/voltha-protos>`_
      - ``5.4.11``
