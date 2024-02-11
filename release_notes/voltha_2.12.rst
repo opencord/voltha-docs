@@ -1,4 +1,4 @@
-.. figure:: images/voltha.svg
+l.. figure:: images/voltha.svg
    :alt: voltha- Release Notes
    :width: 40%
    :align: center
@@ -534,6 +534,7 @@ This section refers to the macro charts to deploy the required infrastructure an
 
 .. list-table:: Helm Chart Versions
    :widths: 30, 30
+ntation page)
    :header-rows: 2
 
    * - Component

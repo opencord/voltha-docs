@@ -4,14 +4,15 @@
 Makefile Lint Targets: Syntax Checking
 ======================================
 
-Targets
-=======
+Makefile Linting: By language
+-----------------------------
 
 .. code:: bash
 
-    git clone ssh://gerrit.opencord.org:29418/voltha-helm-charts.git
-    cd voltha-helm-charts
-    make help | grep lint
+    % git clone ssh://gerrit.opencord.org:29418/onf-make.git
+    % cd onf-make
+
+    % make help | grep lint
     lint-chart                    chart_version_check.sh
     lint-doc8                     Syntax check *.rst documentation files.
     lint-helm                     Syntax check helm configs
@@ -20,7 +21,6 @@ Targets
     lint-robot                    Syntax check robot sources using rflint
     lint-shell                    Syntax check bash,bourne,etc sources
     lint-yaml                     Syntax check yaml source using yamllint
-    UNSTABLE=                     Build targets prone to failure (lint-helm)
 
     [PYTHON]
     lint-python                   Syntax check using available python tools
@@ -29,11 +29,40 @@ Targets
 
 |
 
+Makefile Linting: By language target
+------------------------------------
+
+.. list-table:: Bulk sandbox linting
+   :widths: 20, 60
+   :header-rows: 1
+
+   * - Make Target
+     - Description
+   * - help | grpe lint
+     - Display available help for lint targets and flags.
+   * - make lint
+     - Invoke all source linters, linting is conditional by language.
+
+.. list-table:: Language and tool specific linting targets
+   :widths: 20, 60
+   :header-rows: 1
+
+   * - lint-{topic}-help
+     - Display extended help for a topic, supported targets and flags, etc.
+   * - lint-{topic}-all
+     - Lint everything available by file extension.
+   * - lint-{topic}-mod
+     - Lint locally modified files (git ls-files -m | lint)
+   * - lint-{topic}-src
+     - Lint a list of files passed in  (make lint-{topic}-src VAR=list-of-files)
+
 .. seealso::
 
 - :ref:`Makefile Target lint-chart`
 - :ref:`Makefile Target lint-helm`
+- :ref:`Makefile Target lint-robot`
 
+|
 
 All Sources
 ===========
@@ -46,7 +75,6 @@ The generic lint target can be used to invoke all defined lint targets.
     make lint 2>&1 | tee log
 
 |
-
 
 Makefile help
 =============
@@ -169,26 +197,6 @@ Notes:
 
 |
 
-Helm Charts
-===========
-
-Command(s):
-- `helmlint.sh <https://gerrit.opencord.org/plugins/gitiles/helm-repo-tools/+/refs/heads/master/helmlint.sh>`_
-
-.. code:: bash
-
-    make clean
-    make lint-chart lint-helm 2>&1 | tee log
-
-Sources:
-
-- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/makefiles/lint/>`__
-- `makefiles/lint/helm/include.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/makefiles/lint/helm/include.mk>`_
-- [`master <https://gerrit.opencord.org/plugins/gitiles/helm-repo-tools/+/refs/heads/master>`__] `helm-repo-tools <https://gerrit.opencord.org/plugins/gitiles/helm-repo-tools>`_
-
-|
-
-
 Golang
 ======
 
@@ -262,26 +270,6 @@ Notes:
 - pylint the --py3k option is no longer supported by v3.10+
 - lint-pylint-all target dependency will create a `python virtual env <https://wiki.opencord.org>`_
 - python 3.10+ requires `virtual env patching <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/patches/>`_ (dynamic, applied when needed).
-
-|
-
-
-Robot
-=====
-
-Command: rflint `robotframework-lint <https://pypi.org/project/robotframework-lint/>`_
-
-.. code:: bash
-
-    make clean
-    make lint                2>&1 | tee log
-    make lint-robot-all      2>&1 | tee log
-    make lint-robot-modified 2>&1 | tee log
-
-Sources:
-
-- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
-- `makefiles/lint/robot/*.mk <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/robot>`_
 
 |
 
