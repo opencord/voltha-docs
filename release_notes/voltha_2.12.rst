@@ -368,15 +368,6 @@ VOLTHA Components
      -
      -
      -
-   * - `Helm Charts (voltha-helm-charts) <https://gerrit.opencord.org/gitweb?p=voltha-helm-charts.git;a=tree>`_
-     - ``3.3.0``
-     -
-     - `X <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master>`__
-     - `X <https://github.com/opencord/voltha-helm-charts/releases/tag/3.3.0>`__
-     -
-     -
-     -
-     - ``N``
    * - `ofagent-go <https://gerrit.opencord.org/gitweb?p=ofagent-go.git;a=tree>`_
      - `2.2.1 <https://gerrit.opencord.org/plugins/gitiles/ofagent-go/+/refs/heads/voltha-2.12/VERSION>`_
      - ``N/A``
@@ -542,39 +533,23 @@ Helm Chart Versions
 This section refers to the macro charts to deploy the required infrastructure and a (or many) VOLTHA stacks:
 
 .. list-table:: Helm Chart Versions
-   :widths: 30, 5, 5, 5, 5, 5
+   :widths: 30, 30
    :header-rows: 2
 
    * - Component
      - VOLTHA
-     - Component
-     -
-     - Gerrit
-     - Github
    * - Name
      - Version
-     - Version
-     - with Chart
-     - URL
-     - URL
    * -
      -
-     -
-     -
-     -
-     -
+   * - Helm Charts (voltha-helm-charts)
+     - `3.3.0 <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/voltha-2.12/VERSION>`_
+   * - Voltha
+     - `2.12.17 <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha/Chart.yaml#20>`_
    * - Voltha-infra
-     - `2.12.2 <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-infra/Chart.yaml#37>`__
-     -
-     -
-     -
-     -
+     - `2.12.6 <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-infra/Chart.yaml#37>`__
    * - Voltha-stack
-     - `2.12.7 <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-stack/Chart.yaml#37>`_
-     -
-     -
-     -
-     -
+     - `2.12.9 <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-stack/Chart.yaml#37>`_
 
 BAL Version
 +++++++++++
