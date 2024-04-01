@@ -1,28 +1,82 @@
 VOLTHA Release: voltctl
 =======================
 
+Source
+------
+
+.. list-table:: Release resources
+   :widths: 10, 60
+   :header-rows: 1
+
+   * - Source
+     - Description
+   * - `VERSION file <https://gerrit.opencord.org/plugins/gitiles/voltctl/+/refs/heads/master/VERSION>`__
+     - Contains the tool version to build and/or release.
+   * - `jjb/shell/github-release.sh <https://gerrit.opencord.org/plugins/gitiles/ci-management/+/refs/heads/master/jjb/shell/github-release.sh>`__
+     - Shell script used to publish release candidates to github.
+
+Development
+-----------
+
+.. code-block:: shell-session
+   :caption: Build and test volctl locally
+
+   % git clone ssh://gerrit.opencord.org:29418/voltctl.git
+   % cd voltctl
+
+   % make help
+   % make lint      # [optional] lint-sanity lint-style lint-mod sca
+   % make build
+   % make check     # [optional] test
+
+   % make release   # compile release binaries
+   % make install
+
+
 Release Builds howto:
 ---------------------
-- Increment the VERSION file to a major or minor point release.
-- Initiate a jenkins job to build components (WIP: searching).
+
+- Increment the `VERSION file <https://gerrit.opencord.org/plugins/gitiles/voltctl/+/refs/heads/master/VERSION>`__ to a major or minor point release.
+
+.. list-table:: VERSION file, Symantec version strings
+   :widths: 10, 10, 60
+   :header-rows: 1
+
+   * - Version
+     - Artifact
+     - Description
+   * - 1.2.3
+     - docker
+     - Publish artifacts
+   * - 1.2.3-dev
+     -
+     - Dev patch, build and test w/o external publishing.
+
+- Merging the patch will initiate a jenkins job to build components
 
   - `repo::voltctl <https://gerrit.opencord.org/plugins/gitiles/voltctl/+/refs/heads/master>`__, Gerrit example: `33551 <https://gerrit.opencord.org/c/voltctl/+/33551>`_.
   - At least two jenkins jobs need to run:
 
-    - version-tag_wildcard
-    - github-release_voltctl
+    - `version-tag_wildcard <https://jenkins.opencord.org/job/version-tag_wildcard/>`__
+
+      - Verify VERSION file string is sane.
+
+    - `github-release_voltctl <https://jenkins.opencord.org/job/github-release_voltctl/>`__
+
+      - Publish tool to github.
+
 
 - Verify `git tags <https://github.com/opencord/voltctl/tags>`_
 
   - A SemVer tag was created (vee prefix v{semver} signifies a golang package).
-  - Verify the `package(v1.8.0) <https://github.com/opencord/voltctl/releases/tag/v1.8.0>`_ contains more than just source archives (gz, zip):
+  - Verify the latest `package(v1.8.45) <https://github.com/opencord/voltctl/releases>`_ contains more than just source archives (gz, zip):
     - The `tags page <https://github.com/opencord/voltctl/tags>`_ index lacks ``Notes`` and ``Downloads`` links.
 
   - A valid package(v1.7.6) _ will include:
 
     - The `tags page <https://github.com/opencord/voltctl/tags>`_ index contains ``Notes`` and ``Downloads`` links.
     - A checksum file
-    - Versioned voltctl binaries for several platforms.
+    - Versioned voltctl binaries for several platforms (darwin, linux, windows)
     - Source code bundles (tar.gz and zip).
 
 - `Released version <https://api.github.com/repos/opencord/voltctl/releases/latest>`_ will be consumed by jenkins installer vars/installVoltctl.groovy.
@@ -49,5 +103,21 @@ Create an official voltctl release
    - voltctl-1.7.6-windows-amd64
    - Source code (zip)
    - Source code (tar.gz)
+
+Manual release
+--------------
+
+Avoid this answer whenever possible but when peripheral breakage or volume
+prevents publishing a new version of voltctl, a the tool can be published
+manually.  The user will need repository publishing permissions on github
+and creation of a github api key for their account.
+
+Under the hood the `github gh command <https://cli.github.com/>`__ will handle all the heavy lifting.
+
+TODO
+^^^^
+
+- Document key creation.
+- Document github-release.sh command line and use.
 
 :ref:`voltctl-see-also`
