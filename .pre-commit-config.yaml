@@ -1,0 +1,76 @@
+---
+
+# -----------------------------------------------------------------------
+# Copyright 2024 Open Networking Foundation Contributors
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http:#www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# -----------------------------------------------------------------------
+# SPDX-FileCopyrightText: 2024 Open Networking Foundation Contributors
+# SPDX-License-Identifier: Apache-2.0
+# -----------------------------------------------------------------------
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+# -----------------------------------------------------------------------
+# .pre-commiit-config-yaml v0.1
+# -----------------------------------------------------------------------
+
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+-   repo: https://github.com/koalaman/shellcheck-precommit
+    rev: v0.10.0
+    hooks:
+      - id: shellcheck
+-   repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.35.1
+    hooks:
+      - id: yamllint
+
+## -----------------------------------------------------------------------
+## [SOURCE] Python
+## -----------------------------------------------------------------------
+# -   repo: https://github.com/psf/black
+#    rev: 22.10.0
+#    hooks:
+#      - id: black
+
+# -   repo: https://github.com/PyCQA/doc8
+#    rev: v1.1.1
+#    hooks:
+#    - id: doc8
+        
+# -------------------------------------------------------------------
+# https://docs.python.org/3/library/re.html#regular-expression-syntax
+# -------------------------------------------------------------------
+exclude: |
+    (?x)^(
+        ^jjb/.*             |
+        ^makefiles/.*       |
+        ^lf/.*              |
+        ^.venv/.*           |
+    )$
+
+# [SEE ALSO]
+# -----------------------------------------------------------------------
+# https://github.com/memfault/interrupt/blob/master/example/pre-commit/.pre-commit-config.yaml
+# https://pre-commit.com/hooks.html
+# https://github.com/floatingpurr/sync_with_poetry/blob/main/.pre-commit-config.yaml
+# https://github.com/the-common/pre-commit-config-template/blob/master/.pre-commit-config.yaml
+# -----------------------------------------------------------------------
+
+# [EOF]
