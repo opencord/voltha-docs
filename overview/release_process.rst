@@ -104,7 +104,7 @@ The job will need to be initiated using specific parameters, for an example view
    that will publish an artifact into the staging repo on `sonatype <https://oss.sonatype.org>`_.
    Once published to the staging server the artifact will need to be released to maven central.
 
-   - Login into the sonatype server (for username and password contact michelle@opennetworking.org)
+   - Login into the sonatype server (for username and password contact mroth@linuxfoundation.org)
    - search for org.opencord
    - Select the app you want to release and click "all versions"
    - Click on "Staging repositories" (in the left side navigation)

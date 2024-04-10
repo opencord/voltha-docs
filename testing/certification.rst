@@ -5,21 +5,24 @@ Product Certification with VOLTHA
 VOLTHA is part fo the `continuous certification program at ONF <https://opennetworking.org/continuous-certification-program/>`_.
 You can see the currently certified products in the `ONF marketplace <https://opennetworking.org/marketplace/?_product_project=voltha>`_.
 
-The following document describes the procedure to include and certify an OLT or an ONU with VOLTHA.
-The process of getting a product certified consists of several phases:
+The following document describes the procedure to include and certify an
+OLT or an ONU with VOLTHA.  The process of getting a product certified
+consists of several phases:
 
 - testing and validation with VOLTHA at the vendor premises
 - showcase of successful integration with VOLTHA to the TST
-- shipment and integration of the product (OLT/ONU) at a community lab (e.g. Berlin with DT)
+- shipment and integration of the product (OLT/ONU) at a community lab
+  (e.g. Berlin with DT)
 - Creation of automated CI jobs in Jenkins that start nightly automation tests.
-- Test maintenance. It's the Vendors and the VOLTHA community responsibility to maintain the created tests.
+- Test maintenance. It's the Vendors and the VOLTHA community responsibility
+  to maintain the created tests.
 
-Finally a brief Description of the device and a point of contact need to be sent to
-`Michelle Roth @ ONF <michelle@opennetworking.org>`_
-to be showcased in the `marketplace <https://opennetworking.org/marketplace/?_product_project=voltha>`_ after successful verification.
+Finally a brief Description of the device and a point of contact need to
+be sent to `Michelle Roth @ ONF <mroth@linuxfoundation.org>`_ to be
+showcased in the `marketplace <https://opennetworking.org/marketplace/?_product_project=voltha>`_ after successful verification.
 
-Once all these steps are completed the product will be certified for the next release of VOLTHA.
-Let's describe each phase in detail.
+Once all these steps are completed the product will be certified for
+the next release of VOLTHA.  Let's describe each phase in detail.
 
 Vendor's premises Testing
 -------------------------
@@ -46,14 +49,16 @@ Once the TST has given approval for device integration in VOLTHA nighly tests th
 any one of the ONF community lab, including a wiring diagram (if needed) Currently there are two locations:
 
 - DT Office in Berlin, Germany. Address: Winterfeldtstraße 21, 10781 Berlin, Germany. Point of contact `Bjoern Nagel @ DT <NagelB@telekom.de>`_
-- Radisys Laboratory in Hillsboro, Oregon
 
-Once the OLT arrives the technicians will rack it and wire it according to the diagram shared.
-For an OLT the NNI connection will be provided to the AGG switch and all the management will also be connected with
-management IP assigned according to the network of the pod.
-For an ONU it will be connected to one of the existing OLTs in the pod, according to space,
-technology and topology requirements.
-Once all the racking and wiring is complete the device will appear under the ONF network, accessible via VPN.
+Once the OLT arrives the technicians will rack it and wire it according to
+the diagram shared.  For an OLT the NNI connection will be provided to the
+AGG switch and all the management will also be connected with management IP
+assigned according to the network of the pod.
+
+For an ONU it will be connected to one of the existing OLTs in the pod,
+according to space, technology and topology requirements.  Once all the
+racking and wiring is complete the device will appear under the ONF network,
+accessible via VPN.
 
 Automated CI Jobs
 -----------------
@@ -74,12 +79,14 @@ The required patches are:
   and `kubernetes example <https://github.com/opencord/pod-configs/blob/master/kubernetes-configs/menlo-certification-pod-radisys-1600g.conf>`_
 - voltha-system-tests. Adds the sadis configuration for the OLT and the ONU. `Sadis Example <https://github.com/opencord/voltha-system-tests/blob/master/tests/data/menlo-certification-pod-radisys-1600g-sadis-DT.json>`_
 
-Once these are created and merged the job will appear on jenkins and run accordingly.
+Once these are created and merged the job will appear on jenkins and
+run accordingly.
 
 ONU
 +++
-A new ONU it's attached to an existing OLT, so just the information for that ONU needs to be added to the proper
-OLT files.
+
+A new ONU it's attached to an existing OLT, so just the information for
+that ONU needs to be added to the proper OLT files.
 
 The required patches are:
 
@@ -89,8 +96,9 @@ The required patches are:
 Job maintenance
 ---------------
 
-It's the responsibility of the Vendor, the VOLTHA TST and the community at large to mantain, manage and update the job
-to make sure the OLT gets certified for each of the following VOLTHA releases.
+It's the responsibility of the Vendor, the VOLTHA TST and the community at
+large to mantain, manage and update the job to make sure the OLT gets
+certified for each of the following VOLTHA releases.
 
 
 
@@ -98,5 +106,4 @@ ONF Contacts
 ------------
 For any further information please contact:
 
-- `Timon Sloane <timon@opennetworking.org>`_
-- `Michelle Roth <michelle@opennetworking.org>`_
+- `Michelle Roth <mroth@opennetworking.org>`_

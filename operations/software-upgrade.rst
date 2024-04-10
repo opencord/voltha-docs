@@ -2,33 +2,39 @@
 VOLTHA and ONOS software update procedures
 =============================================
 
-This document describes the software upgrade procedure for VOLTHA and ONOS in a deployed system.
-Distinction is made between a `minor` software upgrade, which can be done in service,
-meaning with no dataplane service interruption to existing customers, and a `major` software upgrade,
-which in turns requires a full maintenance window during which service is impacted.
+This document describes the software upgrade procedure for VOLTHA and ONOS
+in a deployed system.  Distinction is made between a `minor` software upgrade,
+which can be done in service, meaning with no dataplane service interruption
+to existing customers, and a `major` software upgrade, which in turns requires
+a full maintenance window during which service is impacted.
 
-Changes to data-structures in storage (ETCD for VOLTHA and Atomix for ONOS) are out of scope for in-service upgrades.
-Such changes qualify as “major” software upgrades that require a maintenance windows.
-The KAFKA bus update has its own section given that the procedure is different from the rest of the components.
-The following elements expect a fully working provisioned VOLTHA and ONOS deployment on top of a Kubernetes cluster,
-with exposed ONOS REST API ports.
-It is also expected that new versions of the different components are available to the operator that performs
-the upgrade.
+Changes to data-structures in storage (ETCD for VOLTHA and Atomix for ONOS)
+are out of scope for in-service upgrades.  Such changes qualify as “major”
+software upgrades that require a maintenance windows.  The KAFKA bus update
+has its own section given that the procedure is different from the rest of
+the components.  The following elements expect a fully working provisioned
+VOLTHA and ONOS deployment on top of a Kubernetes cluster, with exposed ONOS
+REST API ports.  It is also expected that new versions of the different
+components are available to the operator that performs the upgrade.
 
 Minor Software Version Update
 =============================
-The `minor` software upgrade qualifier refers to an upgrade that does not involve API
-changes, which in VOLTHA, refers to either a change to the protos or to voltha-lib-go,
-and in ONOS to a change in the Java interfaces, CLI commands or REST APIs of either the Apps or the platform.
-A `minor` software update is intended for bug fixes and not for new features.
-`Minor` software update is supported only for ONOS apps and VOLTHA components. No in service software update
-is supported for ETCD or Kafka.
+
+The `minor` software upgrade qualifier refers to an upgrade that does not
+involve API changes, which in VOLTHA, refers to either a change to the protos
+or to voltha-lib-go, and in ONOS to a change in the Java interfaces, CLI
+commands or REST APIs of either the Apps or the platform.  A `minor` software
+update is intended for bug fixes and not for new features.  `Minor` software
+update is supported only for ONOS apps and VOLTHA components. No in service
+software update is supported for ETCD or Kafka.
 
 VOLTHA services
 ---------------
+
 VOLTHA components `minor` software upgrade leverages `helm` and `k8s`.
-During this process is expected that no provision subscriber call is executed from the northbound.
-In process calls will be executed thanks to the stored data and/or the persistence of messages over KAFKA.
+During this process is expected that no provision subscriber call is
+executed from the northbound.  In process calls will be executed thanks to
+the stored data and/or the persistence of messages over KAFKA.
 
 After changes in the code are made and verified the following steps are needed:
 
@@ -59,10 +65,12 @@ ONOS apps
 `mac-learning`, `igmpproxy`, and `mcast`. These apps can be thus updated with no impact on the dataplane of provisioned
 subscribers. The `minor` software update for the ONOS apps leverage existing ONOS REST APIs.
 
-During this process is expected that no provision subscriber call is executed from the REST APIs.
-In process calls will be executed thanks to the Atomix stored flows.
-Some metrics and/or packet processing might be lost during this procedure, the system relies on retry mechanisms
-present in the services and the dataplane protocols for converging to a stable stated (e.g. DHCP retry)
+During this process is expected that no provision subscriber call is
+executed from the REST APIs.  In process calls will be executed thanks to
+the Atomix stored flows.  Some metrics and/or packet processing might be
+lost during this procedure, the system relies on retry mechanisms present in
+the services and the dataplane protocols for converging to a stable stated
+(e.g. DHCP retry).
 
 
 After changes in the code of ONOS apps are made and verified the following steps are needed:

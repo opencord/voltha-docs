@@ -6,7 +6,7 @@
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-# http:#www.apache.org/licenses/LICENSE-2.0
+# http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -18,6 +18,7 @@
 # SPDX-License-Identifier: Apache-2.0
 # -----------------------------------------------------------------------
 
+
 Sphinx~=4.1.2         # 2021-07-26
 doc8~=0.9.0
 docutils==0.16
@@ -27,18 +28,14 @@ sphinxcontrib-openapi~=0.6.0
 sphinxcontrib-spelling~=7.2.1
 git+https://github.com/zdw/sphinx-multiversion@ec7c01cdaf2f9241245e84483dfb9bc0d0dffc62
 
+#
 sphinx-reload
 
 ##----------------##
 ##---]  LINT  [---##
 ##----------------##
 pre-commit
-
-## ----------------------------------------------------
-## Bogus imports
-## ----------------------------------------------------
-## Implicit unused dependency -- requires Sphinx v5.0.2
-# sphinxcontrib-applehelp==1.0.8
+yamllint
 
 # emacs .venv/lib/python3.10/site-packages/Sphinx-4.1.2.dist-info/METADATA
 
