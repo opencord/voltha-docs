@@ -4,8 +4,8 @@ Development & Source Code
 .. toctree::
    :maxdepth: 1
 
-   index.rst
    lint-helm.rst
+   fix-errors
 
 
 ======================================
