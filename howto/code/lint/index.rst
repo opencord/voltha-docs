@@ -6,6 +6,7 @@ Development & Source Code
 
    lint-helm.rst
    fix-errors
+   pre-commit
 
 
 ======================================
@@ -41,4 +42,5 @@ Targets
 
 - :ref:`Makefile Target lint-chart`
 - :ref:`Makefile Target lint-helm`
-
+- :ref:`Makefile Target lint-robot`
+- :ref:`Makefile Target lint-pre-commit`
