@@ -92,7 +92,7 @@ Create an official voltctl release
   - Modify VERSION file major/minor numbers for the upcoming release.
   - Remove any -dev or patch modifiers.
   - Create a pull request for review.
-  - Changes will be published when the jenkins job github-release-voltctl is run.
+  - Changes are published by pipeline job github-release-voltctl.
 
 - Verify the release version contains a checksum file:
 
@@ -119,5 +119,6 @@ TODO
 
 - Document key creation.
 - Document github-release.sh command line and use.
+- Ignore this, cosmetic edit to force a job to run.
 
 :ref:`voltctl-see-also`

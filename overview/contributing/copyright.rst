@@ -3,7 +3,7 @@ Copyright Notice
 
 Include a copyright notice with all submissions to ONF repositoreis.
 
-- ``Copyright 2017-2023 Open Networking Foundation (ONF) and the ONF Contributors``
+- ``Copyright 2017-2023 Open Networking Foundation Contributors``
 - NOTE: Range values such as -present are not legally binding
 
   - Copyright notice should be dated to the last year sources were modified.

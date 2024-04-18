@@ -9,6 +9,9 @@
 #    - Exclusions and bulk cleanup necessitate per-repo custom configs.
 #    - Dynamically generate this config file from common and custom
 # -----------------------------------------------------------------------
+# [HOOKS: disabled]
+#    - reuse
+# -----------------------------------------------------------------------
 
 # -----------------------------------------------------------------------
 # Copyright 2024 Open Networking Foundation Contributors
@@ -60,9 +63,10 @@ repos:
 ## -----------------------------------------------------------------------
 ## [SOURCE] REUSE License Checking
 ## -----------------------------------------------------------------------
-# - repo: https://github.com/ansys/pre-commit-hooks
-#   rev: v0.2.9
-#   hooks:
+#  - repo: https://github.com/fsfe/reuse-tool
+#    rev: v3.0.2
+#    hooks:
+#      - id: reuse
 #     - id: add-license-headers
 #   args:
 # - --custom_copyright=custom copyright phrase
@@ -74,15 +78,23 @@ repos:
 ## -----------------------------------------------------------------------
 ## [SOURCE] Python
 ## -----------------------------------------------------------------------
+
 # - repo: https://github.com/psf/black
 #   rev: 22.10.0
 #   hooks:
 #     - id: black
 
-# - repo: https://github.com/PyCQA/doc8
-#   rev: v1.1.1
-#   hooks:
-#     - id: doc8
+  - repo: https://github.com/PyCQA/doc8
+    rev: v1.1.1
+    hooks:
+      - id: doc8
+
+  - repo: https://github.com/pre-commit/pygrep-hooks
+    rev: v1.10.0
+    hooks:
+      - id: rst-backticks
+      - id: rst-directive-colons
+      - id: rst-inline-touching-normal
 
 # -------------------------------------------------------------------
 # https://docs.python.org/3/library/re.html#regular-expression-syntax
