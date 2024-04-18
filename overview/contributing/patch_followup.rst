@@ -124,7 +124,8 @@ Brute force patch lookup
 
   - View all open/unmerged patches
   - Scroll down through the list until something of interest is found.
-  - Under the # column (2nd column on left hand side) right click and open to view the patch.
+  - Under the # column (2nd column on left hand side) right click and open
+    to view the patch.
   - For example: `repo:voltha-system-tests <https://gerrit.opencord.org/c/voltha-system-tests/+/33380>`_
 
 Patch history and jenkins jobs
