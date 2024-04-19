@@ -11,7 +11,7 @@ Repository: ci-management
 
 Release: {Tag,Branch}ing script
 -------------------------------
-`repo:voltha-release <https://gerrit.opencord.org/plugins/gitiles/voltha-release>`_ :: `bttb.sh <https://gerrit.opencord.org/plugins/gitiles/voltha-release/+/refs/heads/master/bttb.sh>`_ (branch-tag/or/tag-branch)
+`repo:voltha-release <https://github.com/joey-onf/voltha-release>`_ :: `bttb.sh <https://github.com/joey-onf/voltha-release/blob/origin/master/bttb.sh>`_ (branch-tag/or/tag-branch)
 
 The bttb.sh script will perform several tasks to release a repository.
 

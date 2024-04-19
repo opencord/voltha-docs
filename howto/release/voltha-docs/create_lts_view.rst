@@ -67,7 +67,7 @@ Create job folder voltha-2.12 on the dashboard (not a view)
 - Copy entry 'voltha-master'
 - New name: voltha-2.12
 - Click the "create" button
-- Dashboard Folder `voltha-2.12 <https://jenkins.opencord.org/job/voltha-2.12/>`_
+- Dashboard Folder ``jenkins::voltha-2.12``
 
 Access LTS jobs
 ---------------

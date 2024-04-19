@@ -501,7 +501,7 @@ VOLTHA Tools
      - ``N``
    * - `bbsim <https://gerrit.opencord.org/gitweb?p=bbsim.git;a=tree>`__
      - ``1.16.3+``
-     - ``4.8.6`` `chart <https://gerrit.opencord.org/gitwe44b?p=helm-charts.git;a=tree;f=bbsim>`_
+     - ``4.8.6`` `chart <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/voltha-2.12/bbsim/Chart.yaml>`__
      - `X <https://gerrit.opencord.org/plugins/gitiles/bbsim>`__
      - `X <https://github.com/opencord/bbsim/tree/v1.14.4>`__
      - `X <https://hub.docker.com/layers/voltha/bbsim/1.14.4/images/sha256-c23de193c1d7cf8d32c48edfbec4bfa6c47dbeecd4b31d040da0255eeab2ec58?context=explore>`__

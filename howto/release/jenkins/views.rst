@@ -15,14 +15,14 @@ need to be created.
   - Click "Use a regular expression to include jobs into the view"
   - Regular expression: .*voltha.*[_-]2\.11.*
 
-    - Match branch name voltha-2.11
+    - Match branch name voltha-2.11 (job view)
 
-      - `verify_bbsim-sadis-server_sanity-test-voltha-2.11 <https://jenkins.opencord.org/view/VOLTHA-2.11/job/verify_bbsim-sadis-server_sanity-test-voltha-2.11>`_
+      - ``verify_bbsim-sadis-server_sanity-test-voltha-2.11``
 
     - Match derived job name voltha_2.11
 
-      - `verify_berlin-community-pod-1-gpon-adtran_Default_DT_voltha_2.11_dmi <https://jenkins.opencord.org/view/VOLTHA-2.11/job/verify_berlin-community-pod-1-gpon-adtran_Default_DT_voltha_2.11_dmi>`_
+      - ``verify_berlin-community-pod-1-gpon-adtran_Default_DT_voltha_2.11_dmi``
 
-    - Match derived job name: voltha.*2.11
+    - Match derived job name: voltha.*2.11 (job view)
 
-      - `periodic-voltha-test-bbsim-2.11 <https://jenkins.opencord.org/view/VOLTHA-2.11/job/periodic-voltha-test-bbsim-2.11>`_
+      - ``periodic-voltha-test-bbsim-2.11``
