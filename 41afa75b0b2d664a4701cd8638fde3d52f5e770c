@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8af57446_6a352a72",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2024-04-19T14:59:03Z",
+      "side": 1,
+      "message": "recheck\n\nJenkins job queue is in a better state now, re-triggering jobs for current results.",
+      "revId": "41afa75b0b2d664a4701cd8638fde3d52f5e770c",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
