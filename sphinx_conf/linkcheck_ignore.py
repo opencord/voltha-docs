@@ -66,6 +66,14 @@ linkcheck_ignore.extend([
 
     # (voltha-openonu-adapter-go/docs/ONU_Upgrade_Notes: line   71) broken    https://github.com/opencord/voltha-protos/blob/v4.0.11/protos/voltha_protos/device.proto#L116 - Anchor 'L116' not found
     r'https://github.com/opencord/voltha-protos/blob/v4.0.11/protos/voltha_protos/device.proto#L116',
+
+    # (testing/voltha_test_automation: line   20) broken
+    r'https://jenkins.opencord.org/view/voltha-soak/',
+
+    ## HMMMM: Why are sphinx template substitutions barfing for urls ?
+    # (release_notes/voltha_2.12: line 658) broken
+    r'https://mvnrepository.com/artifact/org.opencord',
+    
     ])
 
 # [SEE ALSO]
