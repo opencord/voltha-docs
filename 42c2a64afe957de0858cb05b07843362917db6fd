@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d69b2bc1_28af66a2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2024-04-22T15:36:32Z",
+      "side": 1,
+      "message": "Stepping stone, more clenaups to get cluster jobs running cleanly.\nTable in release/voltha_2.12.rst using template substitution is still a problem.",
+      "revId": "42c2a64afe957de0858cb05b07843362917db6fd",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
