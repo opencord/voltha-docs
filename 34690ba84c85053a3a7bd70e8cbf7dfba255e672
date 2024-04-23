@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "63ea4f77_acdea6bd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2024-04-23T14:44:36Z",
+      "side": 1,
+      "message": "Mahir added +1 on 04/16.\n\nPatch failing \u0027make linkcheck\u0027 for unrelated edits in release_notes/voltha_2.12.rst.\nFailure makes no sense, change in behavior.  Release notes are configured to generate URLs within a table using builtin sphinx templates/stringsubstitutions.\n\nNo logic around release notes has not changed:\n  * Sphinx has not been upgraded\n  * Templates are appended at EOF and usage/syntax has not changed.\n  * Yet linkcheck fails on parameterized, unexpanded template strings ( a *LOT* of them, not due to a typo from stray keypress ).\n",
+      "revId": "34690ba84c85053a3a7bd70e8cbf7dfba255e672",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
