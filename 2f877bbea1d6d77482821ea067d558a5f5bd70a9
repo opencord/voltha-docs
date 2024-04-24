@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9fd5ea65_c03d550c",
+        "filename": "resources/docker.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2024-04-24T20:17:18Z",
+      "side": 1,
+      "message": "If the header morphed into 2 fields (width: 20, 110) all of the table lines will need to have Date removed as well.  doc8 will complain if any table data does not match the number of :width: fields.",
+      "revId": "2f877bbea1d6d77482821ea067d558a5f5bd70a9",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b8869290_5f6c3e0d",
+        "filename": "resources/docker.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2024-04-24T20:17:18Z",
+      "side": 1,
+      "message": "trim leading whitespace",
+      "revId": "2f877bbea1d6d77482821ea067d558a5f5bd70a9",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0c95eb88_9575492c",
+        "filename": "resources/repositories.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2024-04-24T20:17:18Z",
+      "side": 1,
+      "message": "Suggestion, not required:\n\n## Sphinx supports parameterized string substitution(~templates) and external links for shortening URLs to ease maintenance.  Some are per-page, other syntax can be used across multiple documents:\n\nhttps://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#substitutions\nhttps://www.sphinx-doc.org/en/master/usage/extensions/extlinks.html\n\n## See volta release notes for an example.  Templates are declared at the bottom and substitutions are written into the version grid.  Caveat emptor -- rendering was working at release time but \u0027make linkcheck\u0027 reports broken links for some reason.\n\nhttps://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/release_notes/voltha_2.12.rst#657",
+      "revId": "2f877bbea1d6d77482821ea067d558a5f5bd70a9",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "250fa3a2_a45e1847",
+        "filename": "resources/repositories.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2024-04-24T20:17:18Z",
+      "side": 1,
+      "message": "Another example using extlinks\u003d\nhttps://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/conf.py#264\n\nDefinitions in conf.py are global for use in docs.voltha.org.\nWe have enough of these repository links around would probably make sense to start declaring aliases for them.  Pre-emptive work, that will also be very helpful when the repositories transition from gerrit.opencord to gerrit.voltha.",
+      "revId": "2f877bbea1d6d77482821ea067d558a5f5bd70a9",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
