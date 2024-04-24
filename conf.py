@@ -268,6 +268,7 @@ extlinks=\
         'repo'     : ('https://github.com/opencord/%s', 'repo::%s'),
         'vol-ger'  : ('https://gerrit.opencord.org/plugins/gitiles/%s', 'gerrit::%s'),
         'vol-git'  : ('https://github.com/opencord/%s', 'git::%s'),
+        'vol-docker'  : ('https://hub.docker.com/r/voltha/%s', 'docker::%s'),
     }
 
 # -- Options for inlining a constant value -----------------------------------
