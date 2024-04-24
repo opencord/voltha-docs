@@ -5,85 +5,29 @@ Docker Images
 - Images are built by jenkins then consumed as dogfood by testing.
 
 .. list-table:: VOLTHA Docker Images
-   :widths: 20, 5, 40
+   :widths: 20, 110
    :header-rows: 1
 
    * - Image
-     - Date
      - Description
    * - `Search=voltha* <https://hub.docker.com/search?q=voltha>`_
-     -
      - All Docker images with prefix='voltha'
-                      https://hub.docker.com/r/voltha/bbsim
-   * - `voltha/bbsim <https://hub.docker.com/r/voltha/bbsim>`_
-     -
-     -
-   * - `voltha/bbsim-sadis-server <https://hub.docker.com/r/voltha/bbsim-sadis-server>`_
-     -
-     -
-   * - `volthacore/voltha-rw-core <https://hub.docker.com/r/volthacore/voltha-rw-core>`_
-     -
-     -
-   * - `voltha/voltha-adapter-simulated-olt <https://hub.docker.com/r/voltha/voltha-adapter-simulated-olt>`_
-     -
-     -
-   * - `voltha/voltha-adapter-simulated-onu <https://hub.docker.com/r/voltha/voltha-adapter-simulated-onu>`_
-     -
-     -
-   * - `voltha/voltha-afrouter <https://hub.docker.com/r/voltha/voltha-afrouter>`_
-     -
-     -
-   * - `voltha/voltha-afrouterd <https://hub.docker.com/r/voltha/voltha-afrouterd>`_
-     -
-     -
-   * - `voltha/voltha-bbsim <https://hub.docker.com/r/voltha/voltha-bbsim>`_
-     -
-     -
-   * - `voltha/voltha-ci-tools <https://hub.docker.com/r/voltha/voltha-ci-tools>`_
-     -
-     -
-   * - `voltha/voltha-cli <https://hub.docker.com/r/voltha/voltha-cli>`_
-     -
-     -
-   * - `voltha/voltha-dashd <https://hub.docker.com/r/voltha/voltha-dashd>`_
-     -
-     -
-   * - `voltha/voltha-envoy <https://hub.docker.com/r/voltha/voltha-envoy>`_
-     -
-     -
-   * - `voltha/voltha-netconf <https://hub.docker.com/r/voltha/voltha-netconf>`_
-     -
-     -
-   * - `voltha/voltha-ofagent-go <https://hub.docker.com/r/voltha/voltha-ofagent-go>`_
-     -
-     -
-   * - `voltha/voltha-ofagent <https://hub.docker.com/r/voltha/voltha-ofagent>`_
-     -
-     -
-   * - `voltha/voltha-onos <https://hub.docker.com/r/voltha/voltha-onos>`_
-     -
-     -
-   * - `voltha/voltha-openolt-adapter <https://hub.docker.com/r/voltha/voltha-openolt-adapter>`_
-     -
-     -
-   * - `voltha/voltha-openonu-adapter-go <https://hub.docker.com/r/voltha/voltha-openonu-adapter-go>`_
-     -
-     -
-   * - `voltha/voltha-ponsim <https://hub.docker.com/r/voltha/voltha-ponsim>`_
-     -
-     -
-   * - `voltha/voltha-ro-core <https://hub.docker.com/r/voltha/voltha-ro-core>`_
-     -
-     -
-   * - `voltha/voltha-rw-core <https://hub.docker.com/r/voltha/voltha-rw-core>`_
-     -
-     -
-   * - `voltha/voltha-shovel <https://hub.docker.com/r/voltha/voltha-shovel>`_
-     -
-     -
-   * - `voltha/voltha-tester <https://hub.docker.com/r/voltha/voltha-tester>`_
-     -
-     -
-   * - `voltha/voltha-voltha <https://hub.docker.com/r/voltha/voltha-voltha>`_
-     -
-     -
+   * - `bbsim <:vol-docker:'bbsim'>`_
+     - BroadBand Simulator (BBSim) is a tool to simulate a PON network with OLTs, ONUs and RGs.
+   * - `bbsim-sadis-server <:vol-docker:'bbsim-sadis-server'>`_
+     - BBSim Sadis Server.
+       Designed to aggregate Sadis entries from multiple BBSim instances running on the same kubernetes cluster.
+   * - `voltha-rw-core <:vol-docker:'voltha-rw-core'>`_
+     - Voltha Core
+   * - `voltha-openolt-adapter <:vol-docker:'voltha-openolt-adapter'>`_
+     - Open OLT adapter
+   * - `voltha-openonu-adapter-go <:vol-docker:'voltha-openonu-adapter-go'>`_
+     - Open ONU adapter
+   * - `voltha-ci-tools <:vol-docker:'voltha-ci-tools'>`_
+     - Versioned containers for running CI process on VOLTHA codebase
+   * - `voltha-cli <:vol-docker:'voltha-cli'>`_
+     - Provides SSH access to the VOLTHA CLI
+   * - `voltha-ofagent-go <:vol-docker:'voltha-ofagent-go'>`_
+     - OpenFlow management interface for Voltha
+   * - `voltha-onos <:vol-docker:'voltha-onos'>`_
+     - Provides a version of ONOS with the required VOLTHA control plane applications installed
