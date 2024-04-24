@@ -1,72 +1,66 @@
 Source Code Repositories
 ========================
 
-- VOLTHA images released to and hosted on Docker.
-- Images are built by jenkins then consumed as dogfood by testing.
+- VOLTHA source code is hosted on Gerrit and Github.
 
 .. list-table:: Gerrit
-   :widths: 40, 70
+   :widths: 20, 20, 105
    :header-rows: 1
 
-   * - Repository
+   * - GERRIT Repository
+     - GIT Repository
      - Description
-   * - `voltha/bbsim <https://gerrit.opencord.org/plugins/gitiles/voltha/bbsim>`_
-     -
-   * - `voltha/bbsim-sadis-server <https://gerrit.opencord.org/plugins/gitiles/voltha/bbsim-sadis-server>`_
-     -
-   * - `volthacore/voltha-rw-core <https://gerrit.opencord.org/plugins/gitiles/volthacore/voltha-rw-core>`_
-     -
-   * - `voltha/voltha-adapter-simulated-olt <https://gerrit.opencord.org/plugins/gitiles/voltha/voltha-adapter-simulated-olt>`_
-     -
-   * - `voltha/voltha-adapter-simulated-onu <https://gerrit.opencord.org/plugins/gitiles/voltha/voltha-adapter-simulated-onu>`_
-     -
-   * - `voltha/voltha-afrouter <https://gerrit.opencord.org/plugins/gitiles/voltha/voltha-afrouter>`_
-     -
-   * - `voltha/voltha-afrouterd <https://gerrit.opencord.org/plugins/gitiles/voltha/voltha-afrouterd>`_
-     -
-   * - `voltha/voltha-bbsim <https://gerrit.opencord.org/plugins/gitiles/voltha/voltha-bbsim>`_
-     -
-   * - `voltha/voltha-ci-tools <https://gerrit.opencord.org/plugins/gitiles/voltha/voltha-ci-tools>`_
-     -
-   * - `voltha/voltha-cli <https://gerrit.opencord.org/plugins/gitiles/voltha/voltha-cli>`_
-     -
-   * - `voltha/voltha-dashd <https://gerrit.opencord.org/plugins/gitiles/voltha/voltha-dashd>`_
-     -
-   * - `voltha/voltha-envoy <https://gerrit.opencord.org/plugins/gitiles/voltha/voltha-envoy>`_
-     -
-   * - `voltha/voltha-netconf <https://gerrit.opencord.org/plugins/gitiles/voltha/voltha-netconf>`_
-     -
-   * - `voltha/voltha-ofagent-go <https://gerrit.opencord.org/plugins/gitiles/voltha/voltha-ofagent-go>`_
-     -
-   * - `voltha/voltha-ofagent <https://gerrit.opencord.org/plugins/gitiles/voltha/voltha-ofagent>`_
-     -
-   * - `voltha/voltha-onos <https://gerrit.opencord.org/plugins/gitiles/voltha/voltha-onos>`_
-     -
-   * - `voltha/voltha-openolt-adapter <https://gerrit.opencord.org/plugins/gitiles/voltha/voltha-openolt-adapter>`_
-     -
-   * - `voltha/voltha-openonu-adapter <https://gerrit.opencord.org/plugins/gitiles/voltha/voltha-openonu-adapter>`_
-     -
-   * - `voltha/voltha-openonu-adapter-go <https://gerrit.opencord.org/plugins/gitiles/voltha/voltha-openonu-adapter-go>`_
-     -
-   * - `voltha/voltha-ponsim <https://gerrit.opencord.org/plugins/gitiles/voltha/voltha-ponsim>`_
-     -
-   * - `voltha/voltha-ro-core <https://gerrit.opencord.org/plugins/gitiles/voltha/voltha-ro-core>`_
-     -
-   * - `voltha/voltha-rw-core <https://gerrit.opencord.org/plugins/gitiles/voltha/voltha-rw-core>`_
-     -
-   * - `voltha/voltha-shovel <https://gerrit.opencord.org/plugins/gitiles/voltha/voltha-shovel>`_
-     -
-   * - `voltha/voltha-tester <https://gerrit.opencord.org/plugins/gitiles/voltha/voltha-tester>`_
-     -
-   * - `voltha/voltha-voltha <https://gerrit.opencord.org/plugins/gitiles/voltha/voltha-voltha>`_
-     -
+   * - `bbsim <:vol-ger:'bbsim'>`_
+     - `bbsim <:vol-git:'bbsim'>`_
+     - BroadBand Simulator (BBSim) is a tool to simulate a PON network with OLTs, ONUs and RGs.
+   * - `bbsim-sadis-server <:vol-ger:'bbsim-sadis-server'>`_
+     - `bbsim-sadis-server <:vol-git:'bbsim-sadis-server'>`_   
+     - BBSim Sadis Server. 
+       Designed to aggregate Sadis entries from multiple BBSim instances running on the same kubernetes cluster.
+   * - `voltha-core <:vol-ger:'voltha-go'>`_
+     - `voltha-core <:vol-git:'voltha-go'>`_
+     - Voltha Core
+   * - `voltha-openolt-adapter <:vol-ger:'voltha-openolt-adapter'>`_
+     - `voltha-openolt-adapter <:vol-git:'voltha-openolt-adapter'>`_
+     - Open OLT adapter
+   * - `voltha-openonu-adapter <:vol-ger:'voltha-openonu-adapter-go'>`_
+     - `voltha-openonu-adapter <:vol-git:'voltha-openonu-adapter-go'>`_
+     - Open ONU adapter
+   * - `omci-lib <:vol-ger:'omci-lib-go'>`_
+     - `omci-lib <:vol-git:'omci-lib-go'>`_
+     - OMCI Library
+   * - `voltha-cli <:vol-ger:'voltctl'>`_
+     - `voltha-cli <:vol-git:'voltctl'>`_
+     - A CLI tool for managing and operating VOLTHA components.
+   * - `voltha-ofagent <:vol-ger:'ofagent-go'>`_
+     - `voltha-ofagent <:vol-git:'ofagent-go'>`_
+     - OpenFlow management interface for Voltha
+   * - `voltha-onos <:vol-ger:'voltha-onos'>`_
+     - `voltha-onos <:vol-git:'voltha-onos'>`_
+     - VOLTHA ONOS Development Build Environment. 
+   * - `voltha-lib <:vol-ger:'voltha-lib-go'>`_
+     - `voltha-lib <:vol-git:'voltha-lib-go'>`_
+     - Library for common VOLTHA functions
+   * - `voltha-protos <:vol-ger:'voltha-protos'>`_
+     - `voltha-protos <:vol-git:'voltha-protos'>`_
+     - Protobuf definitions for VOLTHA
+   * - `device-management-interface <:vol-ger:'device-management-interface'>`_
+     - `device-management-interface <:vol-git:'device-management-interface'>`_
+     - Device Management Interface
+   * - `voltha-helm-charts <:vol-ger:'voltha-helm-charts'>`_
+     - `voltha-helm-charts <:vol-git:'voltha-helm-charts'>`_
+     - Helm charts for deploying VOLTHA
+   * - `ci-management <:vol-ger:'ci-management'>`_
+     - `ci-management <:vol-git:'ci-management'>`_
+     - Configuration for the Jenkins testing infrastructure
+   * - `voltha-system-tests <:vol-ger:'voltha-system-tests'>`_
+     - `voltha-system-tests <:vol-git:'voltha-system-tests'>`_
+     - Automated test-suites to validate the stability/functionality of VOLTHA. 
+   * - `pod-configs <:vol-ger:'pod-configs'>`_
+     - `pod-configs <:vol-git:'pod-configs'>`_
+     - Configuration files for VOLTHA labs
+   * - `voltha-docs <:vol-ger:'voltha-docs'>`_
+     - `voltha-docs <:vol-git:'voltha-docs'>`_
+     - VOLTHA Documentation
 
 
-.. list-table:: Github
-   :widths: 40, 70
-   :header-rows: 1
-
-   * - Repository
-     - Description
-   * - filler
-     - filler
