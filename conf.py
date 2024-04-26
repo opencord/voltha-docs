@@ -263,11 +263,15 @@ nwdiag_fontpath = [
 
 extlinks=\
     {
-        'vol-jira' : ('https://jira.opencord.org/projects/VOL/issues/%s', 'jira::%s'),
+        'vol-jira'    : ('https://jira.opencord.org/projects/VOL/issues/%s', 'jira::%s'),
+        'jira-browse' : ('https://jira.opencord.org/browse/%s',              'jira::%s')
         # macros for gerrit or github URL construction
-        'repo'     : ('https://github.com/opencord/%s', 'repo::%s'),
-        'vol-ger'  : ('https://gerrit.opencord.org/plugins/gitiles/%s', 'gerrit::%s'),
-        'vol-git'  : ('https://github.com/opencord/%s', 'git::%s'),
+        'repo'        : ('https://github.com/opencord/%s',                   'repo::%s'),
+        'vol-ger'     : ('https://gerrit.opencord.org/plugins/gitiles/%s',   'gerrit::%s'),
+        'vol-git'     : ('https://github.com/opencord/%s',                   'git::%s'),
+
+        # https://mvnrepository
+        'mvn-cord'    : ('http://mvnrepository.com/artifact/org.opencord/%s', 'mvn::%s'),
     }
 
 # -- Options for inlining a constant value -----------------------------------
