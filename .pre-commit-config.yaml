@@ -3,14 +3,15 @@
 # -----------------------------------------------------------------------
 # [NOTE] - Propogate .pre-commit-config.yaml edits to all repositories!
 # -----------------------------------------------------------------------
+# [NOTE] - Common config file source lives in repo:onf-make
+#    - https://gerrit.opencord.org/plugins/gitiles/onf-make/
+#        +/refs/heads/master/.pre-commit-config.yaml
+# -----------------------------------------------------------------------
 # [TODO]
 #    - pre-commit yaml config exists individually within repositories.
 #    - Generally lint config and benavior is consistent for all repos.
 #    - Exclusions and bulk cleanup necessitate per-repo custom configs.
 #    - Dynamically generate this config file from common and custom
-# -----------------------------------------------------------------------
-# [HOOKS: disabled]
-#    - reuse
 # -----------------------------------------------------------------------
 
 # -----------------------------------------------------------------------
@@ -34,21 +35,42 @@
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
 # -----------------------------------------------------------------------
-# .pre-commit-config-yaml 2024-04-10 v0.3
+# .pre-commit-config-yaml 2024-04-19 v0.4
 # -----------------------------------------------------------------------
 
 # ci:
-#   skip: [sync]
+#  autofix_commit_msg: "Chore: pre-commit autoupdate"
+##  skip: [sync]
+#  skip:
+#    # pre-commit.ci does not have actionlint installed
+#    - actionlint
+#
+# exclude: '^docs/conf.py'
 
 repos:
-  # Sync from repo
   - repo: https://github.com/pre-commit/pre-commit-hooks
+#    rev: c4a0b883114b00d8d76b479c820ce7950211c99b  # frozen: v4.5.0
     rev: v4.5.0
     hooks:
       - id: trailing-whitespace
-      - id: end-of-file-fixer
-      - id: check-yaml
       - id: check-added-large-files
+      - id: check-ast
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-xml
+      - id: check-yaml
+#      - id: debug-statements
+      - id: end-of-file-fixer
+      - id: fix-encoding-pragma
+#     - id: double-quote-string-fixer
+      - id: requirements-txt-fixer
+      - id: mixed-line-ending
+        args: ['--fix=lf']
+
+  - repo: https://github.com/jorisroovers/gitlint
+    rev: acc9d9de6369b76d22cb4167029d2035e8730b98  # frozen: v0.19.1
+    hooks:
+      - id: gitlint
 
   - repo: https://github.com/koalaman/shellcheck-precommit
     rev: v0.10.0
@@ -61,12 +83,48 @@ repos:
       - id: yamllint
 
 ## -----------------------------------------------------------------------
+## [SOURCE] Documentation
+## -----------------------------------------------------------------------
+  - repo: https://github.com/rstcheck/rstcheck
+    rev: v6.2.1
+    hooks:
+      - id: rstcheck
+
+  - repo: https://github.com/markdownlint/markdownlint
+    rev: v0.13.0
+    hooks:
+      - id: markdownlint
+#      - id: markdownlint_docker
+
+## -----------------------------------------------------------------------
+## [SOURCE] Docker
+## -----------------------------------------------------------------------
+  - repo: https://github.com/hadolint/hadolint
+    rev: v2.12.0
+    hooks:
+      - id: hadolint
+#      - id: hadolint-docker
+
+## -----------------------------------------------------------------------
+## [SOURCE] Golang
+## -----------------------------------------------------------------------
+  - repo: https://github.com/golangci/golangci-lint
+    rev: v1.41.1
+    hooks:
+      - id: golangci-lint
+
+## -----------------------------------------------------------------------
 ## [SOURCE] REUSE License Checking
 ## -----------------------------------------------------------------------
 #  - repo: https://github.com/fsfe/reuse-tool
 #    rev: v3.0.2
 #    hooks:
 #      - id: reuse
+#     - id: add-license-headers
+#
+# - repo: https://github.com/ansys/pre-commit-hooks
+#   rev: v0.2.9
+#   hooks:
 #     - id: add-license-headers
 #   args:
 # - --custom_copyright=custom copyright phrase
@@ -78,41 +136,45 @@ repos:
 ## -----------------------------------------------------------------------
 ## [SOURCE] Python
 ## -----------------------------------------------------------------------
-
-# - repo: https://github.com/psf/black
-#   rev: 22.10.0
-#   hooks:
-#     - id: black
+  - repo: https://github.com/psf/black
+    rev: 22.10.0
+    hooks:
+      - id: black
 
   - repo: https://github.com/PyCQA/doc8
     rev: v1.1.1
     hooks:
       - id: doc8
 
-  - repo: https://github.com/pre-commit/pygrep-hooks
-    rev: v1.10.0
+## -----------------------------------------------------------------------
+## [SOURCE] Testing
+## -----------------------------------------------------------------------
+  - repo: https://github.com/MarketSquare/robotframework-tidy
+    rev: 4.11.0
     hooks:
-      - id: rst-backticks
-      - id: rst-directive-colons
-      - id: rst-inline-touching-normal
+      - id: robotidy
 
 # -------------------------------------------------------------------
 # https://docs.python.org/3/library/re.html#regular-expression-syntax
 # -------------------------------------------------------------------
 exclude: |
     (?x)^(
-        ^jjb/.*             |
         ^makefiles/.*       |
         ^lf/.*              |
         ^.venv/.*           |
-        ^jenkins-scripts/.* |
-        ^lf-ansible/.*      |
-        ^packer/.*          |
         ^test/.*            |
-        ^jjb/pipeline/voltha/voltha-physical-soak-dt-tests.groovy
+        ^\[END-OF-EXCLUDE\]
     )$
 
 # [SEE ALSO]
+# -----------------------------------------------------------------------
+# https://github.com/memfault/interrupt/blob/master/example/pre-commit/.pre-commit-config.yaml
+# https://pre-commit.com/hooks.html
+# https://github.com/floatingpurr/sync_with_poetry/blob/main/.pre-commit-config.yaml
+# https://github.com/the-common/pre-commit-config-template/blob/master/.pre-commit-config.yaml
+# https://github.com/memfault/interrupt/blob/master/example/pre-commit/.pre-commit-config.yaml
+# -----------------------------------------------------------------------
+# https://www.hatica.io/blog/pre-commit-git-hooks/
 # -----------------------------------------------------------------------
 
 # [EOF]
