@@ -1,9 +1,24 @@
 # -*- coding: utf-8 -*-
-#
-# Configuration file for the Sphinx documentation builder.
-#
 # -----------------------------------------------------------------------
-
+# Copyright 2017-2024 Open Networking Foundation Contributors
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# -----------------------------------------------------------------------
+# SPDX-FileCopyrightText: 2017-2024 Open Networking Foundation Contributors
+# SPDX-License-Identifier: Apache-2.0
+# -----------------------------------------------------------------------
+# Intent: Configuration file for the Sphinx documentation builder.
+# -----------------------------------------------------------------------
 
 # -- Options for linkcheck ---------------------------------------------------
 # The link checker strips off .md from links and then complains
@@ -23,6 +38,8 @@ linkcheck_ignore=\
         r'https://mvnrepository.com/artifact/org.mockito/mockito-all',
         r'https://mvnrepository.com/artifact/com.h3xstream.findsecbugs/findsecbugs-plugin',
         r'https://mvnrepository.com/artifact/com.github.spotbugs/spotbugs-maven-plugin',
+        r'\s+/release_notes/voltha-2.12\s+',
+        r'\s+/release_notes/voltha_2.12.rst',
     ]
 
 linkcheck_ignore.extend([
