@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d3ac1b72_e5454316",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2024-04-29T17:45:20Z",
+      "side": 1,
+      "message": "release index page (linkcheck -\u003e broken URLs) unrelated to these page edits.",
+      "revId": "08b75996fd9214dc3e763afe33df327fb1f9eb7c",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
