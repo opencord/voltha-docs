@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f75043cb_f22e1f93",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2024-04-30T13:57:30Z",
+      "side": 1,
+      "message": "Merge to post copyright patches.\n\nLinkcheck failures are known.  Template string and external link substitutions stopped working out of the blue for some reason.  No sphinx or python upgrades, very strange.",
+      "revId": "252f71211ec11a5b7f14ec6933a6026814eefcc7",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
