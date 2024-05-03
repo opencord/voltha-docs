@@ -27,7 +27,12 @@ help ::
 	@echo
 	@echo "[LINT]"
 
-include $(ONF_MAKEDIR)/lint/doc8/include.mk
+# -----------------------------------------------------------------------
+# disable temporarily, this repo was a staging area for makefile edits.
+# onf-mk-tmp= is in conflict between repo:onf-make and repo:voltha-docs.
+# -----------------------------------------------------------------------
+# include $(onf-mk-dir)/lint/doc8/include.mk
+# include $(ONF_MAKEDIR)/lint/doc8/include.mk
 include $(ONF_MAKEDIR)/lint/groovy/include.mk
 include $(ONF_MAKEDIR)/lint/jjb.mk
 include $(ONF_MAKEDIR)/lint/json.mk

@@ -60,7 +60,7 @@ MAKEDIR     ?= $(onf-mk-loc)
 ##   1) Library constants and logic loaded first
 ##   2) Parameterize and augment targets from local (repo specific)
 ## -----------------------------------------------------------------------
-include $(onf-mk-top)/makefiles/config.mk
+include $(lf-sbx-root)/lf/config.mk # include $(onf-mk-top)/makefiles/config.mk
 include $(onf-mk-lib)/include.mk
 include $(onf-mk-loc)/include.mk
 
