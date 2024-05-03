@@ -1,10 +1,4 @@
 # -*- makefile -*-
-
-## -----------------------------------------------------------------------
-## DEPRECATED
-## This file has been replaced by lf/config.mk
-## -----------------------------------------------------------------------
-
 # -----------------------------------------------------------------------
 # Copyright 2023-2024 Open Networking Foundation Contributors
 #
@@ -12,7 +6,7 @@
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-# http://www.apache.org/licenses/LICENSE-2.0
+# http:#www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -20,9 +14,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # -----------------------------------------------------------------------
-# https://gerrit.opencord.org/plugins/gitiles/onf-make
-# ONF.makefiles.include.version = 1.1
-# ONF.confg.mk                  = 1.5
+# SPDX-FileCopyrightText: 2023-2024 Open Networking Foundation Contributors
+# SPDX-License-Identifier: Apache-2.0
+# -----------------------------------------------------------------------
+# Intent:
 # -----------------------------------------------------------------------
 
 --repo-name-- := voltha-docs
@@ -89,7 +84,7 @@ onf-excl-dirs += .tox           # also a python dependency
 # [NOTE] Add exclusions: lint/doc8/doc8.incl
 
 ifeq ($(--repo-name--),voltha-docs)
-  lint-doc8-excl += '_build'  # generated
+  lint-doc8-excl += '_build' # TODO: deprecate
 endif
 
 onf-excl-dirs ?= $(error onf-excl-dirs= is required)
@@ -139,15 +134,8 @@ endif
 onf-excl-dirs := $(sort $(strip $(onf-excl-dirs)))
 
 # --------------------------------------------------------------------
-# [TODO]#
-#  --------------------------------------------------------------------
-#   o two distinct makefiles directories are needed, one for onf-make
-#   o second for repository specific configs and logic.
-#   o Two independent vars specify path:
-#       ONF_MAKEDIR = library makefiles
-#       MAKEDIR     = repository specific content
-#   o Conditional repository testing above can crush down into
-#     include $(MAKEDIR)/config.mk   # repo:$(--repo-name--)
-#  --------------------------------------------------------------------
+# Repository specific values
+# --------------------------------------------------------------------
+# sterile-dirs += archives
 
 # [EOF]

@@ -1,6 +1,6 @@
 # -*- makefile -*-
 # -----------------------------------------------------------------------
-# Copyright 2022-2023 Open Networking Foundation (ONF) and the ONF Contributors
+# Copyright 2022-2024 Open Networking Foundation Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,19 +14,28 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # -----------------------------------------------------------------------
-# Makefile for Sphinx documentation
+# SPDX-FileCopyrightText: 2022-2024 Open Networking Foundation Contributors
+# SPDX-License-Identifier: Apache-2.0
+# -----------------------------------------------------------------------
+# Intent: Makefile for Sphinx documentation
+# -----------------------------------------------------------------------
 
-.DEFAULT_GOAL := help
+ifndef .DEFAULT_GOAL
+  .DEFAULT_GOAL := help # ?= help evaluated late
+endif
+MAKECMDGOALS    ?= help
 
-##-------------------##
-##---]  GLOBALS  [---##
-##-------------------##
-TOP ?=$(strip $(dir $(abspath $(lastword $(MAKEFILE_LIST))) ) )
+$(if $(findstring disabled-joey,$(USER)),\
+   $(eval USE_LF_MK := 1)) # special snowflake
 
 ##--------------------##
 ##---]  INCLUDES  [---##
 ##--------------------##
-include $(TOP)/makefiles/include.mk      # top level include
+ifdef USE_LF_MK
+  include lf/include.mk
+else
+  include lf/transition.mk
+endif # ifdef USE_LF_MK
 
 # You can set these variables from the command line.
 SPHINXOPTS   ?=
@@ -253,7 +262,7 @@ help-targets-main :
 	  'Extended makefile target help'
 
 	@echo
-	@echo '[INIT]'	
+	@echo '[INIT]'
 	@printf '  %-30.30s %s\n' 'init' \
 	    'Alias for git-submodules'
 	@printf '  %-30.30s %s\n' 'git-submodules' \
@@ -275,7 +284,7 @@ git-submodules:
 	git submodule update --init --recursive
 
 ## -----------------------------------------------------------------------
-## Intent: Display make hel footer
+## Intent: Display make help footer
 ## -----------------------------------------------------------------------
 include $(ONF_MAKEDIR)/help/trailer.mk
 
