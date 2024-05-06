@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a64f7c7a_46a73368",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2024-05-06T16:28:33Z",
+      "side": 1,
+      "message": "https://jenkins.opencord.org/job/verify_voltha-docs_unit-test/548/console\n\n% make linkcheck failure unrelated to patch:\n\n12:04:11 (openolt/SECURITY: line   24) ok        ./agent/scripts/init.d/openolt\n12:04:11 (release_notes/voltha_2.12: line   44) broken    :jira-browse:/VOL-4436 - \n12:04:11 (release_notes/voltha_2.12: line   42) broken    :jira-browse:/VOL-4444 - \n12:04:11 (release_notes/voltha_2.12: line   28) broken    :jira-browse:/VOL-4782 - \n\nNeed to figure out why extlink and template string substitution stopped working out of the blue.",
+      "revId": "9f7c57c9fb8e01e1527fcb3470a0795bea054e17",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
