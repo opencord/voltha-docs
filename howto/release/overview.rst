@@ -1,5 +1,5 @@
-Release overview (WIP)
-======================
+Release overview
+================
 
 For a VOLTHA release several actions and patches are applied to each repository.
 Release also happens in a hierarchial manner due to dependencies.
@@ -12,10 +12,13 @@ Release also happens in a hierarchial manner due to dependencies.
 
 - For release create an initial baseline build to verify no pre-existing corruption or test failures are present.
 
-  - Baseline builds contain bulk cosmetic changes which may include:
+  - Baseline builds contain no logic changes, only bulk cosmetic changes which may include:
 
     - Copyright notice ending date change.
-    - Cosmetic comemnt changes in source.
+
+      - Bulk edit scripts: `gather-and-update.sh <https://github.com/joey-onf/copyright/blob/origin/master/gather-and-update.sh>`_, `morph.pl <https://github.com/joey-onf/copyright/blob/origin/master/morph.pl>`_.
+
+    - Cosmetic comment changes in source.
     - Syntax formatting (gofmt -s -e -w)
 
   - Baseline builds may also remove suffixes like -dev from the VERSION file.
@@ -37,6 +40,10 @@ Release also happens in a hierarchial manner due to dependencies.
 
   - Update go.mod version strings to be appropriate for branch={voltha-2.12, master}
 
+- Extra credit
+
+  - Run the `pre-commit hook script <https://pre-commit.com/>`_ and cleanup any linting problems reported.
+
 NOTE
 
 ::
@@ -57,3 +64,9 @@ Todo
 
 - Add document references to existing release pages.
 - Link to repo dependencies in howto/release/repositories
+
+See Also
+--------
+
+- https://docs.voltha.org/master/release_notes/template.html?highlight=howto
+- `Release Notes <https://docs.voltha.org/master/release_notes/index.html>`_: `template <https://docs.voltha.org/master/release_notes/template.html>`
