@@ -13,7 +13,6 @@ Clone, edit, build & test
 -------------------------
 
 .. code:: bash
-
     git clone ssh://gerrit.opencord.org:29418/voltha-protos.git
     cd voltha-protos
     vi ...
@@ -96,3 +95,38 @@ Update all external repositories to consume the new repo:voltha-protos version
    * - make lint LOCAL_FIX_PERMS=1
      - | Syntax check sources for problems prior to checkin.
        | LOCAL_FIX_PERMS=1 (optional) can workaround docker related permission problems.
+
+Problems with pip install
+-------------------------
+
+- grpcio `VOL-5348 <https://jira.opencord.org/browse/VOL-5348>`__
+
+  - Clone repo.
+  - Create a skeleton pytyon virtualenv.
+  - From requirements.txt file entries, pip install failing versioned package.
+
+.. code:: bash
+   :caption: Pip install debugging
+
+   # Debug using virtualenv
+   % virtualenv -p python3 .venv
+   % source .venv/bin/activate
+   % pip install grpcio==1.39.0
+
+   # Debug using makefile target 'venv'
+   % echo > requirements.txt
+   % make venv
+   % git checkout requirements.txt
+   % pip install -r requirements.txt
+
+longintrepr.h
+^^^^^^^^^^^^^
+
+.. code:: bash
+   :caption: Include missing header
+
+   mkdir -p include
+   pusdh include
+   find /usr/include -name 'longintrepr.h' -print0 | xargs -0 -I'{}' ln -s {} .
+   popd include
+   export CFLAGS='-I./include'
