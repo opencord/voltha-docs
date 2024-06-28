@@ -89,11 +89,18 @@ repos:
     hooks:
       - id: rstcheck
 
-  - repo: https://github.com/markdownlint/markdownlint
-    rev: v0.13.0
-    hooks:
-      - id: markdownlint
-      # - id: markdownlint_docker
+  ## -----------------------------------------------------------------------
+  ## [SOURCE] Documentation
+  ## -----------------------------------------------------------------------
+  ## Dependencies: 2024-06-08
+  ##   - Fails on installation of gem command (pkg:ruby-dev)
+  ##   - Fails on ruby version >= x.y
+  ## -----------------------------------------------------------------------
+#  - repo: https://github.com/markdownlint/markdownlint
+#    rev: v0.13.0
+#    hooks:
+#      - id: markdownlint
+#      # - id: markdownlint_docker
 
   ## -----------------------------------------------------------------------
   ## [SOURCE] Docker
