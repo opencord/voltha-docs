@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cfbfdd64_0ae981b5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2024-06-28T19:38:10Z",
+      "side": 1,
+      "message": "Hotfix for chicken-n-egg problem while recursive cloning git submodules.",
+      "revId": "e16037a1fc62a2078538547ce3e42cc8eece03c1",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
