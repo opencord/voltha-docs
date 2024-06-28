@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "01f6edd8_d2011d55",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2024-06-28T12:38:12Z",
+      "side": 1,
+      "message": "Patch still looks good.\nPattern substitutions greatly shortens line length.",
+      "revId": "3b3fc8dc25e3f0cfbb163a01f4ce0e046cb31720",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
