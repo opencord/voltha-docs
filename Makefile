@@ -21,7 +21,7 @@
 # -----------------------------------------------------------------------
 
 ifndef .DEFAULT_GOAL
-  .DEFAULT_GOAL := help # ?= help evaluated late
+  export .DEFAULT_GOAL := help # no->(?=), help target evaluated late
 endif
 MAKECMDGOALS    ?= help
 
@@ -34,6 +34,7 @@ $(if $(findstring disabled-joey,$(USER)),\
 ifdef USE_LF_MK
   include lf/include.mk
 else
+  venv-name ?= .venv
   include lf/transition.mk
 endif # ifdef USE_LF_MK
 
