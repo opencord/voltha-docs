@@ -18,8 +18,9 @@ During code freeze the jenkins jobs test the latest code in master which, given 
 release candidate (RC) for the release.
 A release can be considered ready if the tests on Jenkins pass with no issue, both on hardware and bbsim jobs.
 
-Component releasing and Lazy Branching
---------------------------------------
+Component releasing and Lazy Branching (legacy)
+-----------------------------------------------
+
 In VOLTHA for a release we release components (services) and lazy branch when/if needed.
 Once a component (service) is ready to be released we increase the version in the VERSION file,
 going from the -dev or released version x.y.z to either a higher number in minor version (y) or in bug version (z).
@@ -32,8 +33,9 @@ The same should be done on Helm charts in the chart repos post release, but the 
 -dev suffix because chart publishing requires that every new chart version be unique and using un-suffixed SemVer is a
 better release numbering pattern.
 
-If a repository is branched the `.gitreview` file needs to be changed, adding `defaultorigin=voltha-X.Y` at the end.
-
+If a repository is branched the :doc:`.gitreview <howto/release/post-release/gitreview.html>`
+file needs to be changed, adding `defaultorigin=voltha-X.Y` at the end.
+     
 .. note::
     Given the dependency of the containers on the protos and the library, if the voltha-protos and/or voltha-lib-go or
     omci-lib-go need to be released, it should be done first and then updated in the components:
@@ -55,7 +57,6 @@ Services:
 - `Openolt Adapter <https://github.com/opencord/voltha-openolt-adapter>`_
 - `Openolt Agent <https://github.com/opencord/openolt>`_
 - `ONOS controller <https://github.com/opencord/voltha-onos>`_ (Note, only do it after releasing all the apps below)
-- `BBSIM <https://github.com/opencord/bbsim>`_
 - `BBSIM Sadis Server <https://github.com/opencord/bbsim-sadis-server>`_
 
 Libraries and APIs:
@@ -66,6 +67,7 @@ Libraries and APIs:
 
 Tools:
 
+- `BBSIM <https://github.com/opencord/bbsim>`_
 - `voltctl <https://github.com/opencord/voltctl>`_
 
 Configuration:
@@ -94,6 +96,7 @@ The job will need to be initiated using specific parameters, for an example view
    - jdkDistro: java-11-amazon-corretto
 
 2. Wait for build to complete
+
 3. Merge the component patches on gerrit
    - `View <https://gerrit.opencord.org/q/owner:do-not-reply%2540opennetworking.org>`_
    - Two pull requests are created modifying pom.xml.
@@ -144,6 +147,47 @@ ONOS APPs:
 - `OLT Topology <https://github.com/opencord/olttopology>`_
 - `PPPoE Agent <https://github.com/opencord/pppoeagent>`_
 - `Sadis <https://github.com/opencord/sadis>`_
+
+
+Component releasing and Branching (variations)
+----------------------------------------------
+
+- Tagnames
+
+ .. list-table:: Tagnames
+    :widths: 10, 40
+
+    * - Format
+      - Description
+    * - 1.2.3.4
+      - Default tagname syntax is a semver
+    * - v1.2.3.4
+      - Repos that contain golang code use tagname {vee}{semver}
+
+- branch-then-tag
+
+  - Only for "primary" repositories: ci, docs, helm & test
+  - Step[1] - create a branch named voltha-X.Y
+  - Step[2] - tag repository attached to branch voltha-X.Y
+
+- tag-then-branch
+
+  - Default/non-primary VOLTHA repos and ONOS components.
+  - Step[1] - tag repository attached to master branch.
+  - Step[2] - create a branch named attached to the release tag.
+
+
+Lazy Branching
+--------------
+
+Since the v2.11 release all VOLTHA repositories have been branched/tags
+during release.  Explicitly branching all repositoreis provides two benefits,
+first explict release branching helps avoid blocking on branch creation
+while creating hotfix branches.  Second benefit is all branch/tagged
+repositories are dated to a release timeframe rather than posted dated
+when hotfix patch creation is needed.
+
+- Primary repos (ci, docs, helm, test)
 
 
 Creating the release
