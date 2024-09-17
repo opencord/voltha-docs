@@ -76,7 +76,7 @@ the services and the dataplane protocols for converging to a stable stated
 After changes in the code of ONOS apps are made and verified the following steps are needed:
 
 #. | obtain the .oar of the app, either via a local build with `mvn clean install` or, if the code has been upstreamed
-   | by downloading it from `maven central <https://search.maven.org/search?q=g:org.opencord>`_ or sonatype.
+   | by downloading it from `maven central <https://central.sonatype.com/search?q=g:org.opencord&smo=true>`_ or sonatype.
 #. Delete the old version of the ONOS app.
 #. Upload install and activate the new `oar` file.
 
