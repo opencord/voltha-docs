@@ -19,9 +19,9 @@ Features & Improvements
 
    * - Jira
      - Description
-   * - `VOL-4949 <:jira-browse:/VOL-4949>`_
+   * - :jira-browse:`VOL-4949 <VOL-4949>`_
      - Introduce DEVICE_BUSY reason in the UploadDebugInfoStatus DMI message
-   * - `VOL-4783 <:jira-browse:/VOL-4783>`_
+   * - :jira-browse:`VOL-4783 <VOL-4783>`_
      - Introduce UploadDebugInformation RPC in DMI
    * - `VOL-4788 <:jira-browse:/VOL-4788>`_
      - Create package in voltha-libs-go for support of prometheus counters in voltha
