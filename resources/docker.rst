@@ -12,22 +12,22 @@ Docker Images
      - Description
    * - `Search=voltha* <https://hub.docker.com/search?q=voltha>`_
      - All Docker images with prefix='voltha'
-   * - `bbsim <:vol-docker:'bbsim'>`_
+   * - :vol-docker:`bbsim`
      - BroadBand Simulator (BBSim) is a tool to simulate a PON network with OLTs, ONUs and RGs.
-   * - `bbsim-sadis-server <:vol-docker:'bbsim-sadis-server'>`_
+   * - :vol-docker:`bbsim-sadis-server`
      - BBSim Sadis Server.
        Designed to aggregate Sadis entries from multiple BBSim instances running on the same kubernetes cluster.
-   * - `voltha-rw-core <:vol-docker:'voltha-rw-core'>`_
+   * - :vol-docker:`voltha-rw-core`
      - Voltha Core
-   * - `voltha-openolt-adapter <:vol-docker:'voltha-openolt-adapter'>`_
+   * - :vol-docker:`voltha-openolt-adapter`
      - Open OLT adapter
-   * - `voltha-openonu-adapter-go <:vol-docker:'voltha-openonu-adapter-go'>`_
+   * - :vol-docker:`voltha-openonu-adapter-go`
      - Open ONU adapter
-   * - `voltha-ci-tools <:vol-docker:'voltha-ci-tools'>`_
+   * - :vol-docker:`voltha-ci-tools`
      - Versioned containers for running CI process on VOLTHA codebase
-   * - `voltha-cli <:vol-docker:'voltha-cli'>`_
+   * - :vol-docker:`voltha-cli`
      - Provides SSH access to the VOLTHA CLI
-   * - `voltha-ofagent-go <:vol-docker:'voltha-ofagent-go'>`_
+   * - :vol-docker:`voltha-ofagent-go`
      - OpenFlow management interface for Voltha
-   * - `voltha-onos <:vol-docker:'voltha-onos'>`_
+   * - :vol-docker:`voltha-onos`
      - Provides a version of ONOS with the required VOLTHA control plane applications installed

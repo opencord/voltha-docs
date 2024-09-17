@@ -70,7 +70,7 @@ linkcheck_ignore.extend([
     r'https://github.com/opencord/voltha-protos/blob/master/protos/voltha_protos/extensions.proto#L259',
 
     # (voltha-openonu-adapter-go/docs/PM_Notes: line  311) broken    https://github.com/opencord/voltha-protos/blob/master/protos/voltha_protos/extensions.proto#L157 - Anchor 'L157' not found
-    r'https://github.com/opencord/voltha-protos/blob/master/protos/voltha_protos/extensions.proto#L157',    
+    r'https://github.com/opencord/voltha-protos/blob/master/protos/voltha_protos/extensions.proto#L157',
 
     # (voltha-openonu-adapter-go/docs/ONU_Upgrade_Notes: line   69) broken    https://github.com/opencord/voltha-protos/blob/v4.0.11/protos/voltha_protos/device.proto#L106 - Anchor 'L106' not found
     r'https://github.com/opencord/voltha-protos/blob/v4.0.11/protos/voltha_protos/device.proto#L106',
@@ -87,10 +87,15 @@ linkcheck_ignore.extend([
     # (testing/voltha_test_automation: line   20) broken
     r'https://jenkins.opencord.org/view/voltha-soak/',
 
-    ## HMMMM: Why are sphinx template substitutions barfing for urls ?
-    # (release_notes/voltha_2.12: line 658) broken
-    r'https://mvnrepository.com/artifact/org.opencord',
-    
+    # (testing/certification: line    5) broken
+    # This page no longer exists. A note has been added to the page.
+    r'https://opennetworking.org/marketplace/.*',
+
+    # (overview/contributing: line   51) broken
+    # Page exists, but certificate is no longer good. This wiki is deprecated,
+    # and doesn't seem to be in regular use anymore. References should be removed.
+    r'https://wiki.onosproject.org/.*',
+
     ])
 
 # [SEE ALSO]

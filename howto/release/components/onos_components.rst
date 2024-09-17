@@ -96,7 +96,7 @@ Jenkins Jobs
     - In the top right search for last part of the app name (eg: olt)
     - Enable checkbox for the versioned package (status: closed).
     - Click release (top left bar, small button)
-    - `Wait until artifacts are published <https://search.maven.org/search?q=g:org.opencord>`_
+    - `Wait until artifacts are published <https://central.sonatype.com/search?q=g:org.opencord&smo=true>`_
 
 - Release all other apps/components (dependency hierarch):
 
@@ -109,4 +109,3 @@ Jenkins Jobs
   - Verify expected dependent version has been released.
   - Modify pom.xml, update dep version(s) from x.z.y-SNAPSHOT to x.y.z
   - Commit and submit.
-

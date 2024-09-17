@@ -13,6 +13,7 @@ Clone, edit, build & test
 -------------------------
 
 .. code:: bash
+
     git clone ssh://gerrit.opencord.org:29418/voltha-protos.git
     cd voltha-protos
     vi ...
@@ -106,6 +107,7 @@ Problems with pip install
   - From requirements.txt file entries, pip install failing versioned package.
 
 .. code:: bash
+
    :caption: Pip install debugging
 
    # Debug using virtualenv
@@ -123,6 +125,7 @@ longintrepr.h
 ^^^^^^^^^^^^^
 
 .. code:: bash
+
    :caption: Include missing header
 
    mkdir -p include
