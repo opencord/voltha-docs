@@ -35,7 +35,7 @@ better release numbering pattern.
 
 If a repository is branched the :doc:`.gitreview <howto/release/post-release/gitreview.html>`
 file needs to be changed, adding `defaultorigin=voltha-X.Y` at the end.
-     
+
 .. note::
     Given the dependency of the containers on the protos and the library, if the voltha-protos and/or voltha-lib-go or
     omci-lib-go need to be released, it should be done first and then updated in the components:
@@ -117,7 +117,7 @@ The job will need to be initiated using specific parameters, for an example view
 5. Wait until the artifacts are published
 
    - https://search.maven.org/search?q=g:org.opencord
-   - https://search.maven.org/artifact/org.opencord/dhcpl2relay/2.9.0/pom
+   - https://central.sonatype.com/artifact/org.opencord/dhcpl2relay/2.9.0?smo=true
 
 6. Iterate through apps:
 

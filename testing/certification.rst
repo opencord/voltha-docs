@@ -2,7 +2,12 @@
 Product Certification with VOLTHA
 =================================
 
-VOLTHA is part fo the `continuous certification program at ONF <https://opennetworking.org/continuous-certification-program/>`_.
+.. attention::
+
+    This page contains outdated information, as the ONF marketplace is no longer
+    available.
+
+VOLTHA is part of the `continuous certification program at ONF <https://opennetworking.org/continuous-certification-program/>`_.
 You can see the currently certified products in the `ONF marketplace <https://opennetworking.org/marketplace/?_product_project=voltha>`_.
 
 The following document describes the procedure to include and certify an

@@ -9,6 +9,7 @@ Include a copyright notice with all submissions to ONF repositoreis.
   - Copyright notice should be dated to the last year sources were modified.
 
 .. code-block:: BASH
+
    :caption: Project Copyright Notice
 
    # -----------------------------------------------------------------------
@@ -39,4 +40,4 @@ See Also
 - `ONF CLA Information <https://wiki.opencord.org>`_
 - `Contributing License Agreement Manager <https://cla.opennetworking.org/>`_
 
-`Copyrights <copyright/copyright>`_
+:doc:`Copyrights <copyright/copyright>`
