@@ -118,6 +118,23 @@
       "message": "remerge",
       "revId": "3e4d6d63f6adba95df408b8cceb204a15f1e14dc",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fc36e48e_99362210",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1001013
+      },
+      "writtenOn": "2025-02-04T01:54:26Z",
+      "side": 1,
+      "message": "Apologies for the spam here, the job was not properly set up to be retriggered (it had no comment trigger registered, and is not properly parameterized to be manually built).",
+      "revId": "3e4d6d63f6adba95df408b8cceb204a15f1e14dc",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
