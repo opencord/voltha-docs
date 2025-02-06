@@ -62,7 +62,7 @@ linkcheck_ignore.extend([
 ])
 
 ## -----------------------------------------------------------------------
-## https://jira.opencord.org/browse/VOL-5079
+## https://lf-broadband.atlassian.net/browse/VOL-5079
 ## -----------------------------------------------------------------------
 linkcheck_ignore.extend([
 

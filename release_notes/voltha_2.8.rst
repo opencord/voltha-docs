@@ -145,13 +145,13 @@ Known Issues
 
    <s>
 
-- [FIXED] Same TCONT for two uni add/delete subscribers does not work. `[VOL-4215] <https://jira.opencord.org/browse/VOL-4215>`_
+- [FIXED] Same TCONT for two uni add/delete subscribers does not work. `[VOL-4215] <https://lf-broadband.atlassian.net/browse/VOL-4215>`_
 
 .. raw:: html
 
    </s>
 
-- [FIXED] EAPOL flow meter mismatch at scale for ATT job. `[VOL-4235] <https://jira.opencord.org/browse/VOL-4235>`_
+- [FIXED] EAPOL flow meter mismatch at scale for ATT job. `[VOL-4235] <https://lf-broadband.atlassian.net/browse/VOL-4235>`_
 
 
 Certification Program
@@ -176,7 +176,7 @@ In particular the 2.8 release added the Radisys 3200G GPON OLT.
 Jira stories
 ------------
 A full list of stories and bugs completed can be found under the
-`VOLTHA 2.8 <https://jira.opencord.org/projects/VOL/versions/12100>`_ release page in Jira.
+`VOLTHA 2.8 <https://lf-broadband.atlassian.net/projects/VOL/versions/12100>`_ release page in Jira.
 
 Component Versions in VOLTHA 2.8 release
 ----------------------------------------
@@ -262,4 +262,3 @@ and navigate to File_Station -> EdgecoreNAS, and then the folder
 **Radisys**
 For 3200G 40G NNI .Deb Version: ``openolt_rlt-3200g-w-40g-3.5.1-dev-262b6293cdeda78317dda9d3a6cfab0e7ebfbf05.deb``
 To get the debian package for Radisys 3200G OLT please write to `Cameron Lundberg <cameron.lundberg@radisys.com>`_
-
