@@ -155,12 +155,12 @@ As usual documentation is published on https://docs.voltha.org
 Known Issues
 ------------
 
-- FTTB Upstream flow stays in pending add on openolt based devices. `[VOL-4742] <https://jira.opencord.org/browse/VOL-4742>`_
-- ATT Workflow fails EAPOL flow installation at scale `[VOL-4745] <https://jira.opencord.org/browse/VOL-4745>`_
-- Olt app removes flows based on the latest Sadis entry, if sadis changes flows can’t be removed. `[VOL-4746] <https://jira.opencord.org/browse/VOL-4746>`_
-- Flows stuck in pending-add when subscriber is provisioned after open-olt-adapter pod restart `[VOL-4747] <https://jira.opencord.org/browse/VOL-4747>`_
-- Alpha ONUs on soak pod drop upstream ARP/ICMP packets `[VOL-4748] <https://jira.opencord.org/browse/VOL-4748>`_
-- Rolling update test failures `[VOL-4749] <https://jira.opencord.org/browse/VOL-4749>`_
+- FTTB Upstream flow stays in pending add on openolt based devices. `[VOL-4742] <https://lf-broadband.atlassian.net/browse/VOL-4742>`_
+- ATT Workflow fails EAPOL flow installation at scale `[VOL-4745] <https://lf-broadband.atlassian.net/browse/VOL-4745>`_
+- Olt app removes flows based on the latest Sadis entry, if sadis changes flows can’t be removed. `[VOL-4746] <https://lf-broadband.atlassian.net/browse/VOL-4746>`_
+- Flows stuck in pending-add when subscriber is provisioned after open-olt-adapter pod restart `[VOL-4747] <https://lf-broadband.atlassian.net/browse/VOL-4747>`_
+- Alpha ONUs on soak pod drop upstream ARP/ICMP packets `[VOL-4748] <https://lf-broadband.atlassian.net/browse/VOL-4748>`_
+- Rolling update test failures `[VOL-4749] <https://lf-broadband.atlassian.net/browse/VOL-4749>`_
 
 
 Certification Program
@@ -186,7 +186,7 @@ In particular the 2.10 release added the Zyxel SDA3016SS COMBO OLT.
 Jira stories
 ------------
 A full list of stories and bugs completed can be found under the
-`VOLTHA 2.10 <https://jira.opencord.org/secure/ReleaseNote.jspa?projectId=10106&version=12300>`_ release page in Jira.
+`VOLTHA 2.10 <https://lf-broadband.atlassian.net/secure/ReleaseNote.jspa?projectId=10106&version=12300>`_ release page in Jira.
 
 Component Versions in VOLTHA 2.10 release
 -----------------------------------------

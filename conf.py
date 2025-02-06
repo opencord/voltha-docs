@@ -282,8 +282,8 @@ nwdiag_fontpath = [
 #        'vhc' : 'https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts',
 
 extlinks = {
-    "vol-jira": ("https://jira.opencord.org/projects/VOL/issues/%s", "jira::%s"),
-    "jira-browse": ("https://jira.opencord.org/browse/%s", "jira::%s"),
+    "vol-jira": ("https://lf-broadband.atlassian.net/projects/VOL/issues/%s", "jira::%s"),
+    "jira-browse": ("https://lf-broadband.atlassian.net/browse/%s", "jira::%s"),
     # macros for gerrit or github URL construction
     "repo": ("https://github.com/opencord/%s", "repo::%s"),
     "vol-ger": ("https://gerrit.opencord.org/plugins/gitiles/%s", "gerrit::%s"),

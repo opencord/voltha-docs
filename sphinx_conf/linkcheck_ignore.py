@@ -62,7 +62,7 @@ linkcheck_ignore.extend([
 ])
 
 ## -----------------------------------------------------------------------
-## https://jira.opencord.org/browse/VOL-5079
+## https://lf-broadband.atlassian.net/browse/VOL-5079
 ## -----------------------------------------------------------------------
 linkcheck_ignore.extend([
 
@@ -95,6 +95,19 @@ linkcheck_ignore.extend([
     # Page exists, but certificate is no longer good. This wiki is deprecated,
     # and doesn't seem to be in regular use anymore. References should be removed.
     r'https://wiki.onosproject.org/.*',
+
+    # Ignore broken links to the old Jira until they can be fixed in other repos.
+    r'https://jira.opencord.org/.*',
+
+    # Ignore Github anchors, which seem to confuse Sphinx
+    r'https://github.com/.*#.*',
+
+    # Login page report unauthorized
+    r'https://gerrit.opencord.org/login',
+
+    # Temporarily removed builds
+    r'.*/_static/cord-tester/.*',
+    r'.*/_static/voltha-system-tests/.*',
 
     ])
 

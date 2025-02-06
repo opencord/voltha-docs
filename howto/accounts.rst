@@ -23,7 +23,7 @@ Gerrit user account
 Next navigate to gerrit.opencord.org, login and configure your user account
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- `Gerrit Login <https://gerrit.opencord.org/login/%2Fq%2Fstatus%3Aopen%2B-is%3Awip>`_
+- `Gerrit Login <https://gerrit.opencord.org/login>`_
 
 - `User Settings <https://gerrit.opencord.org/settings/>`_
    - Verify full name and display name fields are populated.
