@@ -1,7 +1,7 @@
 Jira tickets for code changes
 =============================
 
-Please open a `jira ticket <https://jira.opencord.org/projects/VOL>`_ describing the issue/feature.
+Please open a `jira ticket <https://lf-broadband.atlassian.net/projects/VOL>`_ describing the issue/feature.
 
 - For large or multi-part features create a containing ticket with several
   sub-tickets tracking individual features or problems.
@@ -13,16 +13,16 @@ Please open a `jira ticket <https://jira.opencord.org/projects/VOL>`_ describing
    * - Jira
      - Type
      - Problem
-   * - `VOL-5125 <https://jira.opencord.org/browse/VOL-5125>`_
+   * - `VOL-5125 <https://lf-broadband.atlassian.net/browse/VOL-5125>`_
      - Epic
      - Tracking ticket for bbsim failures in jenkins vip job view.
-   * - `VOL-5024 <https://jira.opencord.org/browse/VOL-5024>`_
+   * - `VOL-5024 <https://lf-broadband.atlassian.net/browse/VOL-5024>`_
      - sub-task
      - bbsim unit test job reporting status=UNSTABLE
-   * - `VOL-5157 <https://jira.opencord.org/browse/VOL-5157>`_
+   * - `VOL-5157 <https://lf-broadband.atlassian.net/browse/VOL-5157>`_
      - sub-task
      - verify_bbsim_unit-test failures in history
-   * - `VOL-5154 <https://jira.opencord.org/browse/VOL-5154>`_
+   * - `VOL-5154 <https://lf-broadband.atlassian.net/browse/VOL-5154>`_
      - sub-task
      - Triage test failure in periodic-voltha-unitag-subscriber-tt-test-bbsim
 
@@ -66,7 +66,7 @@ Suggestions: Additional ticket documentation
 
    * - Resource
      - Notes
-   * - `VOL-5214 <https://jira.opencord.org/browse/VOL-5214>`__
+   * - `VOL-5214 <https://lf-broadband.atlassian.net/browse/VOL-5214>`__
      - Jira ticket
    * - `jenkins <https://jenkins.opencord.org/view/VOLTHA-2.X-Tests/job/periodic-voltha-etcd-test/>`_
      - Capture job URLs to document errors and log messages.
@@ -82,7 +82,7 @@ Suggestions: Additional ticket documentation
 
 - Document as links VS textual comments.
 
-  - Visit jira `VOL-5214 <https://jira.opencord.org/browse/VOL-5214>`__
+  - Visit jira `VOL-5214 <https://lf-broadband.atlassian.net/browse/VOL-5214>`__
   - Select [M]ore from the menu above Description and Details.
   - Select [L]ink
   - Select Web Link in the left margin
@@ -90,7 +90,7 @@ Suggestions: Additional ticket documentation
   - Enter a summry in the link text box -- job number or gerrit ID.
   - Click the [Link] butotn.
 
-- Example `VOL-5009 <https://jira.opencord.org/browse/VOL-5009>`_
+- Example `VOL-5009 <https://lf-broadband.atlassian.net/browse/VOL-5009>`_
 
   - Items added as linked URLs will appear in the "Issue Links" section
     beneath the description where they are easily found.
@@ -98,5 +98,5 @@ Suggestions: Additional ticket documentation
 See Also
 --------
 
-- https://jira.opencord.org
-- `jira :: VOLTHA <https://jira.opencord.org/projects/VOL/issues/VOL-4470?filter=allopenissuse>`_
+- https://lf-broadband.atlassian.net
+- `jira :: VOLTHA <https://lf-broadband.atlassian.net/projects/VOL/issues/VOL-4470?filter=allopenissuse>`_

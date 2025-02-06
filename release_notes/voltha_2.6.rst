@@ -94,11 +94,11 @@ Documentation
 Known Issues
 ------------
 
-- `VOL-3542 <https://jira.opencord.org/browse/VOL-3542>`_: Missing Mib Audit from the new openonu go adapter.
-- `VOL-3709 <https://jira.opencord.org/browse/VOL-3709>`_: Scale tests were performed with the etcd incubator charts
-- `VOL-3708 <https://jira.opencord.org/browse/VOL-3708>`_: Scale test results do not include multicast in TT workflow
-- `VOL-3707 <https://jira.opencord.org/browse/VOL-3707>`_: Support for Multiple instances of the openonu go adapter
-- `VOL-3732 <https://jira.opencord.org/browse/VOL-3732>`_: Non-zero pbit traffic dropped in the downstream direction
+- `VOL-3542 <https://lf-broadband.atlassian.net/browse/VOL-3542>`_: Missing Mib Audit from the new openonu go adapter.
+- `VOL-3709 <https://lf-broadband.atlassian.net/browse/VOL-3709>`_: Scale tests were performed with the etcd incubator charts
+- `VOL-3708 <https://lf-broadband.atlassian.net/browse/VOL-3708>`_: Scale test results do not include multicast in TT workflow
+- `VOL-3707 <https://lf-broadband.atlassian.net/browse/VOL-3707>`_: Support for Multiple instances of the openonu go adapter
+- `VOL-3732 <https://lf-broadband.atlassian.net/browse/VOL-3732>`_: Non-zero pbit traffic dropped in the downstream direction
   in ATT workflow.
 
 Certification Program
@@ -117,7 +117,7 @@ ONF we can also ensure that the following devices are compatible with the VOLTHA
 Jira stories
 ------------
 A full list of stories and bugs completed can be found under the
-`VOLTHA 2.6 <https://jira.opencord.org/projects/VOL/versions/11500>`_ release page in Jira.
+`VOLTHA 2.6 <https://lf-broadband.atlassian.net/projects/VOL/versions/11500>`_ release page in Jira.
 
 Component Versions in VOLTHA 2.6 release
 ----------------------------------------

@@ -167,10 +167,10 @@ Documentation
 Known Issues
 ------------
 
-- Edgecore ASxVOLT16 platform issues requiring hard/soft reboot(s). `[VOL-4520] <https://jira.opencord.org/browse/VOL-4520>`_
-- Packets arrive on the wrong gem port in the upstream after XGSPON ONU disable/enable. `[VOL-4521] <https://jira.opencord.org/browse/VOL-4521>`_
-- Packets arrive on the wrong gem port with Radisys 1600X OLT with BAL 3.10.2.2 `[VOL-4527] <https://jira.opencord.org/browse/VOL-4527>`_
-- voltha-onos is based on snapshots due to sonatype issue `[VOL-4528] <https://jira.opencord.org/browse/VOL-4528>`_
+- Edgecore ASxVOLT16 platform issues requiring hard/soft reboot(s). `[VOL-4520] <https://lf-broadband.atlassian.net/browse/VOL-4520>`_
+- Packets arrive on the wrong gem port in the upstream after XGSPON ONU disable/enable. `[VOL-4521] <https://lf-broadband.atlassian.net/browse/VOL-4521>`_
+- Packets arrive on the wrong gem port with Radisys 1600X OLT with BAL 3.10.2.2 `[VOL-4527] <https://lf-broadband.atlassian.net/browse/VOL-4527>`_
+- voltha-onos is based on snapshots due to sonatype issue `[VOL-4528] <https://lf-broadband.atlassian.net/browse/VOL-4528>`_
 
 
 Certification Program
@@ -195,7 +195,7 @@ In particular the 2.8 release added the Radisys 3200G GPON OLT.
 Jira stories
 ------------
 A full list of stories and bugs completed can be found under the
-`VOLTHA 2.9 <https://jira.opencord.org/projects/VOL/versions/12200>`_ release page in Jira.
+`VOLTHA 2.9 <https://lf-broadband.atlassian.net/projects/VOL/versions/12200>`_ release page in Jira.
 
 Component Versions in VOLTHA 2.9 release
 ----------------------------------------
@@ -263,4 +263,3 @@ for running ``BAL 3.10.2.2``.
 **Radisys**
 Please write to `Cameron Lundberg <cameron.lundberg@radisys.com>`_ with `Girish Gowdra <cameron.lundberg@radisys.com>`_
 to get the OLT debian package validated on 3200G, 1600x and 1600G platforms for VOLTHA-2.9 release
-

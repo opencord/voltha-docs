@@ -75,7 +75,7 @@ Troubleshooting:
 
 There have been a few reports of additional testing not beeing initiated
 by a commit.  If you encounter this behavior visit the
-`VOLTHA jira site <https://jira.opencord.org/secure/Dashboard.jspa>`_
+`VOLTHA jira site <https://lf-broadband.atlassian.net>`_
 and open a trouble ticket detailing the changeset URL or a repository
 and commit message text.
 

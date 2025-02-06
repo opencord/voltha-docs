@@ -317,7 +317,7 @@ Sources:
 Bugs
 ====
 
-- `jira::VOLTHA <https://jira.opencord.org/projects/VOL>`-
+- `jira::VOLTHA <https://lf-broadband.atlassian.net/projects/VOL>`-
 - Include repository URL
 - Include gerrit/github changeset if available.
 - A logfile snippet of the error and surrounding context.

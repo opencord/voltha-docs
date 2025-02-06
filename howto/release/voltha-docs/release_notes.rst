@@ -33,7 +33,7 @@ See Also
 
 - Release tracking
 
-  - `jira tickets <https://jira.opencord.org/browse/VOL-5019>`_
+  - `jira tickets <https://lf-broadband.atlassian.net/browse/VOL-5019>`_
   - `Wiki(s) <https://wiki.opencord.org>`_
 
     - `Published artifact and versions <https://wiki.opencord.org>`_

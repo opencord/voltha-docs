@@ -130,7 +130,7 @@ ONF we can also ensure that the following ONF member products are compatible wit
 Jira stories
 ------------
 A full list of stories and bugs completed can be found under the
-`VOLTHA 2.7 <https://jira.opencord.org/projects/VOL/versions/11900>`_ release page in Jira.
+`VOLTHA 2.7 <https://lf-broadband.atlassian.net/projects/VOL/versions/11900>`_ release page in Jira.
 
 Component Versions in VOLTHA 2.7 release
 ----------------------------------------

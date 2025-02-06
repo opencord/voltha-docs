@@ -29,9 +29,9 @@ repo:ci-management jjb/
 
   - Clone ``*-master`` record into ``*-(release-branch)``
   - Update version strings and nexus oar paths with deployed artifact versions.
-  - Update lingering `base-tag versions <https://jira.opencord.org/browse/VOL-5082>`_
+  - Update lingering `base-tag versions <https://lf-broadband.atlassian.net/browse/VOL-5082>`_
 
-- See `VOL-5082 <https://jira.opencord.org/browse/VOL-5082>`_
+- See `VOL-5082 <https://lf-broadband.atlassian.net/browse/VOL-5082>`_
 - jjb/verify/bbsim-sadis-server.yaml
 - jjb/verify/bbsim.yaml
 -

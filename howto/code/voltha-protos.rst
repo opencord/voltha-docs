@@ -100,7 +100,7 @@ Update all external repositories to consume the new repo:voltha-protos version
 Problems with pip install
 -------------------------
 
-- grpcio `VOL-5348 <https://jira.opencord.org/browse/VOL-5348>`__
+- grpcio `VOL-5348 <https://lf-broadband.atlassian.net/browse/VOL-5348>`__
 
   - Clone repo.
   - Create a skeleton pytyon virtualenv.
