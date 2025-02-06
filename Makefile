@@ -46,7 +46,8 @@ BUILDDIR     ?= _build
 
 # Other repos with documentation to include.
 # edit the `git_refs` file with the commit/tag/branch that you want to use
-OTHER_REPO_DOCS ?= bbsim cord-tester ofagent-go openolt voltctl voltha-openolt-adapter voltha-openonu-adapter-go voltha-protos voltha-system-tests device-management-interface voltha-helm-charts
+OTHER_REPO_DOCS ?= bbsim  ofagent-go openolt voltctl voltha-openolt-adapter voltha-openonu-adapter-go voltha-protos device-management-interface voltha-helm-charts
+# Temporarily disabled: cord-tester voltha-system-tests
 
 ifdef NO_OTHER_REPO_DOCS
   # Inhibit pulling in external repos.
@@ -72,7 +73,7 @@ help-verbose :: help-targets-sphinx
 ## Usage:
 ##   make reload
 ## -----------------------------------------------------------------------
-reload: $(venv-activate-patched)
+reload: $(venv-activate-script)
 	$(activate) && sphinx-reload $(SOURCEDIR)
 
 ## -----------------------------------------------------------------------
@@ -82,8 +83,8 @@ reload: $(venv-activate-patched)
 test: lint linkcheck
 
 # [TODO] relocate into repo:onf-make/
-lint      : $(venv-activate-patched)
-linkcheck : $(venv-activate-patched)
+lint      : $(venv-activate-script)
+linkcheck : $(venv-activate-script)
 
 ## -----------------------------------------------------------------------
 ## Intent: Exercise all generation targets
@@ -183,7 +184,7 @@ freeze: repos
 ## -----------------------------------------------------------------------
 ## Intent: build multiple versions
 ## -----------------------------------------------------------------------
-multiversion: $(venv-activate-patched) Makefile | prep $(OTHER_REPO_DOCS)
+multiversion: $(venv-activate-script) Makefile | prep $(OTHER_REPO_DOCS)
 	$(activate)\
  && sphinx-multiversion "$(SOURCEDIR)" "$(BUILDDIR)/multiversion" $(SPHINXOPTS)
 	cp "$(SOURCEDIR)/_templates/meta_refresh.html" "$(BUILDDIR)/multiversion/index.html"
@@ -200,7 +201,7 @@ prep: | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
 ## -----------------------------------------------------------------------
 include $(ONF_MAKEDIR)/voltha/docs-catchall-targets.mk
 voltha-docs-catchall : $(voltha-docs-catchall)
-$(voltha-docs-catchall): $(venv-activate-patched) Makefile | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
+$(voltha-docs-catchall): $(venv-activate-script) Makefile | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
 	@echo " ** CATCHALL: $@"
 	$(activate)\
  && $(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
@@ -208,7 +209,7 @@ $(voltha-docs-catchall): $(venv-activate-patched) Makefile | $(OTHER_REPO_DOCS) 
 ## -----------------------------------------------------------------------
 ## Intent: Display makefile target help
 ## -----------------------------------------------------------------------
-help-targets-sphinx : $(venv-activate-patched)
+help-targets-sphinx : $(venv-activate-script)
 	@ echo
 	@echo '[HELP: Sphinx]'
 	$(HIDE)$(activate) \
