@@ -65,7 +65,6 @@ venv-activate-patched := $(venv-activate-script).patched
 venv-activate-patched : $(venv-activate-patched)
 $(venv-activate-patched) : $(venv-activate-script)
 	$(call banner-enter,Target $@)
-	$(onf-mk-top)/../patches/python_310_migration.sh
 	touch $@
 	$(call banner-leave,Target $@)
 
