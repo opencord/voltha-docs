@@ -8,7 +8,7 @@ This page details howto create a release notes page on the docs.voltha.org websi
 
 Cookbook: Patch #1
 ------------------
-- `VOL-5009 <https://jira.opencord.org/browse/VOL-5009>`_ - For tracking, create a jira ticket to create a release notes page.
+- `VOL-5009 <https://lf-broadband.atlassian.net/browse/VOL-5009>`_ - For tracking, create a jira ticket to create a release notes page.
 - Clone repository `repo:voltha-docs <https://gerrit.opencord.org/plugins/gitiles/voltha-docs>`_
 - Modify `VERSION <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/VERSION>`_ file to prevent publishing.
 
@@ -80,4 +80,3 @@ Release independent changes
   - VALID: Copyright 2017-2023 Open Networking Foundation (ONF) and the ONF Contributors
   - Copyright notice must be inclusive of the date sources were last modified.
   - Use of strings like 2017-present are not valid syntax and can have legal implications.
-
