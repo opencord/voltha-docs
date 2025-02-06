@@ -1,7 +1,7 @@
 Development
 ###########
 
-- `Gerrit Login <https://gerrit.opencord.org/login/%2Fq%2Fstatus%3Aopen%2B-is%3Awip>`_
+- `Gerrit Login <https://gerrit.opencord.org/login>`_
 
 Locate a VOLTHA :ref:`SSH Key <gerrit-user-account>` of interest
 ================================================================

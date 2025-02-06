@@ -73,13 +73,13 @@ Documentation
 Known Issues
 ------------
 
-- `VOL-3377 <https://jira.opencord.org/browse/VOL-3377>`_: The in-band interface on the OLT does not get IP sometimes.
+- `VOL-3377 <https://lf-broadband.atlassian.net/browse/VOL-3377>`_: The in-band interface on the OLT does not get IP sometimes.
   The workaround is to reboot the OLT through a watchdog script after a timeout waiting to get the IP.
-- `VOL-3521 <https://jira.opencord.org/browse/VOL-3521>`_: At scale: intermittent issue in AT&T workflow -
+- `VOL-3521 <https://lf-broadband.atlassian.net/browse/VOL-3521>`_: At scale: intermittent issue in AT&T workflow -
   VOLTHA complains that different meter is in use for subscriber
-- `VOL-3499 <https://jira.opencord.org/browse/VOL-3499>`_ and `VOL-3500 <https://jira.opencord.org/browse/VOL-3500>`_:
+- `VOL-3499 <https://lf-broadband.atlassian.net/browse/VOL-3499>`_ and `VOL-3500 <https://lf-broadband.atlassian.net/browse/VOL-3500>`_:
   At scale: intermittent failures in TT workflow for DHCP relay
-- `VOL-3419 <https://jira.opencord.org/browse/VOL-3419>`_:
+- `VOL-3419 <https://lf-broadband.atlassian.net/browse/VOL-3419>`_:
   At scale: OpenOLT adapter constantly takes more that 10 seconds to react to flows
 
 

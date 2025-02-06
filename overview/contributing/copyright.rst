@@ -38,6 +38,5 @@ See Also
 - `Copyright notices <https://github.com/joey-onf/copyright>`_
 - `Message syntax <https://github.com/joey-onf/copyright/blob/origin/master/notice>`_
 - `ONF CLA Information <https://wiki.opencord.org>`_
-- `Contributing License Agreement Manager <https://cla.opennetworking.org/>`_
 
 :doc:`Copyrights <copyright/copyright>`
