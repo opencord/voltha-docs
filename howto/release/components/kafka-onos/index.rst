@@ -54,5 +54,5 @@ Artifacts: Maven Central
 See Also
 --------
 
-- `VOL-5072 <https://jira.opencord.org/browse/VOL-5072>`_
-- `VOL-5073 <https://jira.opencord.org/browse/VOL-5073>`_
+- `VOL-5072 <https://lf-broadband.atlassian.net/browse/VOL-5072>`_
+- `VOL-5073 <https://lf-broadband.atlassian.net/browse/VOL-5073>`_
