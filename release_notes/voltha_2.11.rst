@@ -80,11 +80,11 @@ Known Issues
 
    * - Jira
      - Description
-   * - `VOL-4521 <https://jira.opencord.org/browse/VOL-4521>`_
+   * - `VOL-4521 <https://lf-broadband.atlassian.net/browse/VOL-4521>`_
      - Packets arrive on the wrong gem port in the upstream after XGSPON ONU disable/enable.
-   * - `VOL-4698 <https://jira.opencord.org/browse/VOL-4698>`_
+   * - `VOL-4698 <https://lf-broadband.atlassian.net/browse/VOL-4698>`_
      - Device actual state not visible during device deletion.
-   * - `VOL-4747 <https://jira.opencord.org/browse/VOL-4747>`_
+   * - `VOL-4747 <https://lf-broadband.atlassian.net/browse/VOL-4747>`_
      - Flows stuck in pending-add when subscriber is provisioned after open-olt-adapter pod restart.
 
 
@@ -104,7 +104,7 @@ release:
 Jira stories
 ------------
 A full list of stories and bugs completed can be found under the
-`VOLTHA 2.11 <https://jira.opencord.org/projects/VOL/versions/12500>`_ (`formatted <https://jira.opencord.org/secure/ReleaseNote.jspa?projectId=10106&version=12500>`_) release page in Jira.
+`VOLTHA 2.11 <https://lf-broadband.atlassian.net/projects/VOL/versions/12500>`_ (`formatted <https://lf-broadband.atlassian.net/secure/ReleaseNote.jspa?projectId=10106&version=12500>`_) release page in Jira.
 
 |
 

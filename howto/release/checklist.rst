@@ -32,7 +32,7 @@ Release Builds
 
 - components/onos_components
 - Build and record version for all external VOLTHA dependencies.
-- `VOL-4925 <https://jira.opencord.org/browse/VOL-4925>`_.
+- `VOL-4925 <https://lf-broadband.atlassian.net/browse/VOL-4925>`_.
 - Upgrade Maven Plugins listed in pom.xml
 
 Packages

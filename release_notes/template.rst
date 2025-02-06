@@ -52,7 +52,7 @@ release:
 Jira stories
 ------------
 A full list of stories and bugs completed can be found under the
-`VOLTHA 2.XX <https://jira.opencord.org/projects/VOL/versions/12600>`_ (`formatted <https://jira.opencord.org/secure/ReleaseNote.jspa?projectId=10106&version=12600>`_) release page in Jira.
+`VOLTHA 2.XX <https://lf-broadband.atlassian.net/projects/VOL/versions/12600>`_ (`formatted <https://lf-broadband.atlassian.net/secure/ReleaseNote.jspa?projectId=10106&version=12600>`_) release page in Jira.
 
 |
 
