@@ -20,6 +20,6 @@ voltha-go                    /        master
 voltha-openolt-adapter       /        master
 voltha-openonu-adapter-go    /        master
 voltha-protos                /        master
-voltha-system-tests          /        master
+voltha-system-tests          /        remove-robot-patching
 device-management-interface  /        master
 voltha-helm-charts           /        master
