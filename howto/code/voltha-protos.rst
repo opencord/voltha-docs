@@ -88,7 +88,7 @@ Update all external repositories to consume the new repo:voltha-protos version
      - Cleanup syntax issues in golang source that will fail your pending commit
    * - go mod vendor
      - | Update sources and dependencies beneath the vendor/ directory.
-       | See also `go-mod-vendor <https://go.dev/ref/mod#go-mod-vendor>`_, `Packages & Modules <https://golangbyexample.com/packages-modules-go-second/>`_
+       | See also `go-mod-vendor <https://go.dev/ref/mod#go-mod-vendor>`_, `Packages & Modules <https://golangbot.com/go-packages/>`_
    * - make build
      - Compile with updated module dependencies.
    * - make test

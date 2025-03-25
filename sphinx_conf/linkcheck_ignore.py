@@ -109,6 +109,11 @@ linkcheck_ignore.extend([
     r'.*/_static/cord-tester/.*',
     r'.*/_static/voltha-system-tests/.*',
 
+    # Some docs were not correctly deployed, creating a cycle where new docs
+    # can't be generated because of link failures. We therefore need to
+    # temporarily stop all linkchecks against docs.voltha.org.
+    r'https://docs.voltha.org/.*',
+
     ])
 
 # [SEE ALSO]

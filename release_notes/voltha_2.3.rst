@@ -66,8 +66,7 @@ Development process
 Testing
 -------
 
-- `Unit tests coverage
-  <https://jenkins.opencord.org/view/VOLTHA%202.x%20verify>`_ greatly improved
+- Unit tests coverage greatly improved
 
 - Integration Tests
 
@@ -79,7 +78,7 @@ Testing
     - Validation checks for Error Scenarios
     - Beginning of functional tests for DT WorkFlow
 
-- `Community pods <https://jenkins.opencord.org/view/Community-PODs/>`_ at DT
+- Community pods at DT
   (Berlin) with GPON and XGSPON OLTs, and Infosys with XGSPON OLT, were set up
 
 - Scale Tests
@@ -173,6 +172,3 @@ ONOS App versions:
 - Get access credentials for https://edgecore.quickconnect.to and then login
   and navigate to File_Station -> EdgecoreNAS, and then the folder
   /ASXvOLT16/OpenOLT_Agent/From_ONF_Distribution/ and pick the version above
-
-
-
