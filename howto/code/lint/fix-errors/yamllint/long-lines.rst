@@ -12,4 +12,4 @@ Folding
 
 .. seealso::
 
-- https://yaml-multiline.info/
+   - https://yaml-multiline.info/

@@ -4,6 +4,7 @@ Release Notes
 .. toctree::
    :maxdepth: 1
 
+   voltha_2.13.rst
    voltha_2.12.rst
    voltha_2.11.rst
    voltha_2.10.rst
@@ -15,5 +16,3 @@ Release Notes
    voltha_2.4.rst
    voltha_2.3.rst
    voltha_2.2.rst
-
-   template
