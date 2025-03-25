@@ -6,6 +6,7 @@ VOLTHA Components
 
    igmpproxy/index
    kafka/index
+   kafka-onos/index
    maclearner/index
    mcast/index
    olt/index

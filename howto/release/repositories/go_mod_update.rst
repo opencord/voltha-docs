@@ -1,1 +1,0 @@
-golang_gofmt_syntax.rst
