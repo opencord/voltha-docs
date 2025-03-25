@@ -290,6 +290,7 @@ extlinks = {
     "vol-git": ("https://github.com/opencord/%s", "git::%s"),
     # https://mvnrepository
     "mvn-cord": ("http://mvnrepository.com/artifact/org.opencord/%s", "mvn::%s"),
+    "vol-docker": ("https://hub.docker.com/r/voltha/%s", "%s"),
 }
 
 # -- Options for inlining a constant value -----------------------------------

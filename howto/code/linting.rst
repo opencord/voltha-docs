@@ -58,9 +58,9 @@ Makefile Linting: By language target
 
 .. seealso::
 
-- :ref:`Makefile Target lint-chart`
-- :ref:`Makefile Target lint-helm`
-- :ref:`Makefile Target lint-robot`
+   - :ref:`Makefile Target lint-chart`
+   - :ref:`Makefile Target lint-helm`
+   - :ref:`Makefile Target lint-robot`
 
 |
 
