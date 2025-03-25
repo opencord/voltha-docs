@@ -58,9 +58,9 @@ Makefile Linting: By language target
 
 .. seealso::
 
-- :ref:`Makefile Target lint-chart`
-- :ref:`Makefile Target lint-helm`
-- :ref:`Makefile Target lint-robot`
+   - :ref:`Makefile Target lint-chart`
+   - :ref:`Makefile Target lint-helm`
+   - :ref:`Makefile Target lint-robot`
 
 |
 
@@ -166,8 +166,6 @@ See Also
 --------
 
 - lint-doc8-all target dependency will create a `python virtual env <https://wiki.opencord.org>`_
-- python 3.10+ requires `virtual env patching <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/patches/>`_ (dynamic, applied when needed).
-- `makefiles/patches/include.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles-orig/patches/>`__
 
 |
 

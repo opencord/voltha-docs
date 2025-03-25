@@ -68,7 +68,7 @@ Suggestions: Additional ticket documentation
      - Notes
    * - `VOL-5214 <https://lf-broadband.atlassian.net/browse/VOL-5214>`__
      - Jira ticket
-   * - `jenkins <https://jenkins.opencord.org/view/VOLTHA-2.X-Tests/job/periodic-voltha-etcd-test/>`_
+   * - `jenkins <https://jenkins.opencord.org/>`_
      - Capture job URLs to document errors and log messages.
    * - `gerrit:34854 <https://gerrit.opencord.org/c/ci-management/+/34854>`_
      - Capture gerrit patch URLs for state and job reconstruction.

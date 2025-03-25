@@ -13,6 +13,7 @@ Release Topics
    components/index
    hierarchy/index
    jenkins/index
+   jjb/index
    voltha-docs/index
    post-release/index
 
