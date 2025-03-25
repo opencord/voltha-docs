@@ -15,15 +15,14 @@ on Jenkins periodically.
 
    Voltha OpenCord Jenkins
 
-Similar set of jobs are kept under similar tabs. Like,
-all the master build jobs are placed under
-`VOLTHA-2.X-Tests <https://jenkins.opencord.org/view/VOLTHA-2.X-Tests/>`_
-tab, jobs related to the voltha-2.12 LTS release are in VOLTHA-2.12 tab.
+Similar set of jobs are kept under similar tabs. For example, jobs related to
+the voltha-2.13 release are in VOLTHA-2.13 tab.
 
 Likewise, tests that collect measurements on Voltha performance at scale
 are placed under `voltha-scale-measurements <https://jenkins.opencord.org/view/voltha-scale-measurements/>`_.
 
-Jenkins also host `verification jobs <https://jenkins.opencord.org/view/VOLTHA%202.x%20verify/>`_ that trigger automatically whenever a patch is pushed or updated on Gerrit for the review.
+Jenkins also hosts verification jobs that trigger automatically whenever a patch
+is pushed or updated on Gerrit for the review.
 
 
 Job Templates

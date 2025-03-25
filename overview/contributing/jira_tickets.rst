@@ -41,7 +41,7 @@ Please open a `jira ticket <https://lf-broadband.atlassian.net/projects/VOL>`_ d
     - Note: Jenkins job logs will age out and disappear over time.
     - To prevent this view the job history panel in jenkins UI
 
-      - `View a jenkins job page <https://jenkins.opencord.org/view/vip/job/verify_bbsim_unit-test>`_
+      - `View a jenkins job page <https://jenkins.opencord.org/view/All%20Jobs/job/bbsim_scale_test/>`_
       - Two links are available in history (lower left corner), colored icon on the left and #job on the right.
       - Click the #job link to view job.
       - Top right corner will contain a clickable button "Keep this build forever".
@@ -68,7 +68,7 @@ Suggestions: Additional ticket documentation
      - Notes
    * - `VOL-5214 <https://lf-broadband.atlassian.net/browse/VOL-5214>`__
      - Jira ticket
-   * - `jenkins <https://jenkins.opencord.org/view/VOLTHA-2.X-Tests/job/periodic-voltha-etcd-test/>`_
+   * - `jenkins <https://jenkins.opencord.org/>`_
      - Capture job URLs to document errors and log messages.
    * - `gerrit:34854 <https://gerrit.opencord.org/c/ci-management/+/34854>`_
      - Capture gerrit patch URLs for state and job reconstruction.
