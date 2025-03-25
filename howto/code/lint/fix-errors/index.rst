@@ -4,5 +4,5 @@ LINT: Fixing errors
 .. toctree::
     :glob:
 
-   sphinx/spelling/*
-   yamllint/*
+   sphinx/spelling/spelling-exclusions.rst
+   yamllint/long-lines.rst

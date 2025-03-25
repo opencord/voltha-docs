@@ -65,4 +65,4 @@
 
 .. seealso::
 
-`voltha-docs::charts <../charts/index>`
+   `voltha-docs::charts <../charts/index>`

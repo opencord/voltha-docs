@@ -41,3 +41,11 @@ Chart.yaml
 ----------
 
 - Update version string(s) for voltha-lib-go.
+
+.. toctree::
+   :maxdepth: 1
+
+   charts
+   copyright
+   go_mod_update
+   golang_gofmt_syntax

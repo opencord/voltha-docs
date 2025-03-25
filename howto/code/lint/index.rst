@@ -4,8 +4,10 @@ Development & Source Code
 .. toctree::
    :maxdepth: 1
 
-   lint-helm.rst
-   fix-errors
+   lint-chart
+   lint-helm
+   lint-robot
+   fix-errors/index
    pre-commit
 
 
@@ -40,7 +42,7 @@ Targets
 
 .. seealso::
 
-- :ref:`Makefile Target lint-chart`
-- :ref:`Makefile Target lint-helm`
-- :ref:`Makefile Target lint-robot`
-- :ref:`Makefile Target lint-pre-commit`
+   - :ref:`Makefile Target lint-chart`
+   - :ref:`Makefile Target lint-helm`
+   - :ref:`Makefile Target lint-robot`
+   - :ref:`Makefile Target lint-pre-commit`

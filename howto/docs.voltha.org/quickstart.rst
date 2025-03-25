@@ -48,12 +48,12 @@ Interactive development
 .. code-block:: shell-session
    :caption: Launch a browser for viewing local edits
    :linenos:
-   :emphasize-lines: 4
+   :emphasize-lines: 2
 
    cd voltha-docs
    make reload
 
-- source edit: modify reStructuredText (RST) sources
+- Source edit: modify reStructuredText (RST) sources
 - Modify content to taste
 
 Invoke checkin tests locally
