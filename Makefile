@@ -1,6 +1,6 @@
 # -*- makefile -*-
 # -----------------------------------------------------------------------
-# Copyright 2022-2024 Open Networking Foundation Contributors
+# Copyright 2022-2025 Open Networking Foundation Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # -----------------------------------------------------------------------
-# SPDX-FileCopyrightText: 2022-2024 Open Networking Foundation Contributors
+# SPDX-FileCopyrightText: 2022-2025 Open Networking Foundation Contributors
 # SPDX-License-Identifier: Apache-2.0
 # -----------------------------------------------------------------------
 # Intent: Makefile for Sphinx documentation
@@ -24,9 +24,6 @@ ifndef .DEFAULT_GOAL
   export .DEFAULT_GOAL := help # no->(?=), help target evaluated late
 endif
 MAKECMDGOALS    ?= help
-
-$(if $(findstring disabled-joey,$(USER)),\
-   $(eval USE_LF_MK := 1)) # special snowflake
 
 ##--------------------##
 ##---]  INCLUDES  [---##
@@ -43,6 +40,7 @@ SPHINXOPTS   ?=
 SPHINXBUILD  ?= sphinx-build
 SOURCEDIR    ?= .
 BUILDDIR     ?= _build
+BRANCH       ?= $(shell git branch --show-current)
 
 # Other repos with documentation to include.
 # edit the `git_refs` file with the commit/tag/branch that you want to use
@@ -170,6 +168,15 @@ $(OTHER_REPO_DOCS): | $(CHECKOUT_REPOS)
 # 	cp -r cord-tester/gendocs/* $@
 
 ## -----------------------------------------------------------------------
+## Intent: Build docs for the current branch
+## -----------------------------------------------------------------------
+docs: $(venv-activate-script) Makefile | prep $(OTHER_REPO_DOCS)
+	$(activate) && sphinx-build "$(SOURCEDIR)" "$(BUILDDIR)/$(BRANCH)" $(SPHINXOPTS)
+ifeq ($(BRANCH),master)
+	cp "$(SOURCEDIR)/_templates/meta_refresh.html" "$(BUILDDIR)/index.html"
+endif
+
+## -----------------------------------------------------------------------
 ## Intent: generate a list of git checksums suitable for updating git_refs
 ## -----------------------------------------------------------------------
 freeze: repos
@@ -193,18 +200,6 @@ multiversion: $(venv-activate-script) Makefile | prep $(OTHER_REPO_DOCS)
 ## Intent: used in sphinx-multiversion to properly link
 ## -----------------------------------------------------------------------
 prep: | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
-
-## -----------------------------------------------------------------------
-## Intent: Forward sphinx supported targets to sphinxbuild.
-## Bridge: legacy makefile wildcard rule forwarded unknown targets to sphinx.
-##         library makefiles do more so transfer control only when needed.
-## -----------------------------------------------------------------------
-include $(ONF_MAKEDIR)/voltha/docs-catchall-targets.mk
-voltha-docs-catchall : $(voltha-docs-catchall)
-$(voltha-docs-catchall): $(venv-activate-script) Makefile | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
-	@echo " ** CATCHALL: $@"
-	$(activate)\
- && $(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 ## -----------------------------------------------------------------------
 ## Intent: Display makefile target help
