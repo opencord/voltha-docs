@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "48248fe7_c9cb9df8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1001013
+      },
+      "writtenOn": "2025-03-29T01:17:57Z",
+      "side": 1,
+      "message": "See also https://gerrit.opencord.org/c/ci-management/+/35715",
+      "revId": "0204538b75d1c7da1342c296d81c44900dfaa06a",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
