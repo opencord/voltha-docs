@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a7c9e861_7f3d64ce",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1001013
+      },
+      "writtenOn": "2025-03-31T23:41:11Z",
+      "side": 1,
+      "message": "This will update the voltha-2.13 branch so that changes are opened to the correct branch. Merging this change will build the voltha-2.13 docs.",
+      "revId": "b9c36f962358807c1a7f349e742c8b33fab6da01",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
