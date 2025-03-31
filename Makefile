@@ -40,7 +40,14 @@ SPHINXOPTS   ?=
 SPHINXBUILD  ?= sphinx-build
 SOURCEDIR    ?= .
 BUILDDIR     ?= _build
-BRANCH       ?= $(shell git branch --show-current)
+
+# If running on Jenkins, we need to pick up the GERRIT_BRANCH env var.
+# Otherwise, we can simply use the current branch.
+ifdef GERRIT_BRANCH
+  BRANCH := $(GERRIT_BRANCH)
+else
+  BRANCH := $(shell git branch --show-current)
+endif
 
 # Other repos with documentation to include.
 # edit the `git_refs` file with the commit/tag/branch that you want to use
