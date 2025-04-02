@@ -28,12 +28,7 @@ MAKECMDGOALS    ?= help
 ##--------------------##
 ##---]  INCLUDES  [---##
 ##--------------------##
-ifdef USE_LF_MK
-  include lf/include.mk
-else
-  venv-name ?= .venv
-  include lf/transition.mk
-endif # ifdef USE_LF_MK
+include makefiles/include.mk
 
 # You can set these variables from the command line.
 SPHINXOPTS   ?=
@@ -51,8 +46,7 @@ endif
 
 # Other repos with documentation to include.
 # edit the `git_refs` file with the commit/tag/branch that you want to use
-OTHER_REPO_DOCS ?= bbsim ofagent-go openolt voltctl voltha-openolt-adapter voltha-openonu-adapter-go voltha-protos device-management-interface voltha-helm-charts
-# Temporarily disabled: cord-tester voltha-system-tests
+OTHER_REPO_DOCS ?= bbsim ofagent-go openolt voltctl voltha-openolt-adapter voltha-openonu-adapter-go voltha-protos device-management-interface voltha-helm-charts voltha-system-tests cord-tester
 
 ifdef NO_OTHER_REPO_DOCS
   # Inhibit pulling in external repos.
@@ -61,7 +55,7 @@ ifdef NO_OTHER_REPO_DOCS
 endif
 
 # Static docs, built by other means (usually robot framework)
-# STATIC_DOCS    := _static/voltha-system-tests _static/cord-tester
+STATIC_DOCS    := _static/voltha-system-tests _static/cord-tester
 
 # Why is existing source Makefile PHONY (?)
 .PHONY: help test lint reload Makefile prep
@@ -162,17 +156,17 @@ $(OTHER_REPO_DOCS): | $(CHECKOUT_REPOS)
 	GIT_SUBDIR=`grep '^$@ ' git_refs | awk '{print $$2}'` ;\
 	cp -r repos/$(@)$$GIT_SUBDIR $@ ;\
 
-# # Build Robot documentation in voltha-system-tests and copy it into _static.
-# _static/voltha-system-tests: | $(OTHER_REPO_DOCS)
-# 	make -C voltha-system-tests gendocs
-# 	mkdir -p $@
-# 	cp -r voltha-system-tests/gendocs/* $@
-#
-# # Build Robot documentation in cord-tester and copy it into _static.
-# _static/cord-tester: | $(OTHER_REPO_DOCS)
-# 	make -C cord-tester gendocs
-# 	mkdir -p $@
-# 	cp -r cord-tester/gendocs/* $@
+# Build Robot documentation in voltha-system-tests and copy it into _static.
+_static/voltha-system-tests: | $(OTHER_REPO_DOCS)
+	make -C voltha-system-tests gendocs
+	mkdir -p $@
+	cp -r voltha-system-tests/gendocs/* $@
+
+# Build Robot documentation in cord-tester and copy it into _static.
+_static/cord-tester: | $(OTHER_REPO_DOCS)
+	make -C cord-tester gendocs
+	mkdir -p $@
+	cp -r cord-tester/gendocs/* $@
 
 ## -----------------------------------------------------------------------
 ## Intent: Build docs for the current branch
@@ -280,16 +274,8 @@ help-targets-main :
 	    'Display WARNING strings buried in sphinx output'
 
 ## -----------------------------------------------------------------------
-## Intent: Checkout external repository dependencies
-## -----------------------------------------------------------------------
-init :: git-submodules
-
-git-submodules:
-	git submodule update --init --recursive
-
-## -----------------------------------------------------------------------
 ## Intent: Display make help footer
 ## -----------------------------------------------------------------------
-include $(ONF_MAKEDIR)/help/trailer.mk
+include makefiles-orig/help/trailer.mk
 
 # [EOF]
