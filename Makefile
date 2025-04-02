@@ -28,12 +28,7 @@ MAKECMDGOALS    ?= help
 ##--------------------##
 ##---]  INCLUDES  [---##
 ##--------------------##
-ifdef USE_LF_MK
-  include lf/include.mk
-else
-  venv-name ?= .venv
-  include lf/transition.mk
-endif # ifdef USE_LF_MK
+include makefiles/include.mk
 
 # You can set these variables from the command line.
 SPHINXOPTS   ?=
@@ -280,16 +275,8 @@ help-targets-main :
 	    'Display WARNING strings buried in sphinx output'
 
 ## -----------------------------------------------------------------------
-## Intent: Checkout external repository dependencies
-## -----------------------------------------------------------------------
-init :: git-submodules
-
-git-submodules:
-	git submodule update --init --recursive
-
-## -----------------------------------------------------------------------
 ## Intent: Display make help footer
 ## -----------------------------------------------------------------------
-include $(ONF_MAKEDIR)/help/trailer.mk
+include makefiles-orig/help/trailer.mk
 
 # [EOF]
