@@ -12,7 +12,7 @@
 _REPO NAME_             _DIR_    _REF_
 
 bbsim                        /        a9875ddcbaf846e970826004db51f9a15a465911
-cord-tester                  /        44ef9be3bf8f18fd64ea8cf44b5171ca049b9ef9
+cord-tester                  /        master
 ofagent-go                   /        voltha-2.8
 openolt                      /        voltha-2.8
 voltctl                      /        voltha-2.8
@@ -20,6 +20,6 @@ voltha-go                    /        voltha-2.8
 voltha-openolt-adapter       /        voltha-2.8
 voltha-openonu-adapter-go    /        voltha-2.8
 voltha-protos                /        9c3e1c8dc6a867d0f552861d2b36d0b44ca68fb1
-voltha-system-tests          /        voltha-2.8
+voltha-system-tests          /        master
 device-management-interface  /        6bdb0f7eb9f3bca1842d01bb55625fafd70279fc
 voltha-helm-charts           /        voltha-2.8
