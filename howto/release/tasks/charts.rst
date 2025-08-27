@@ -7,7 +7,7 @@ Helm Chart Update
    :caption: Update helm charts for deployed VOLTHA and ONOS artifacts
 
    # clone repo:voltha-helm-charts
-   % git clone "ssh://gerrit.opencord.org:29418/voltha-helm-charts.git"
+   % git clone "ssh://gerrit.lfbroadband.org:29418/voltha-helm-charts.git"
    % cd voltha-helm-charts
 
    # Gather files to edit

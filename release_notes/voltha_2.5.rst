@@ -43,7 +43,7 @@ Development/Deployment process
 Test
 ----
 
-Voltha-2.5 tests are available on `Jenkins <https://jenkins.opencord.org/>`_.
+Voltha-2.5 tests are available on `Jenkins <https://jenkins.lfbroadband.org/>`_.
 
 - OLT Disable/enable test, ONOS HA test and some more
 - BBSim Turk Telekom workflow support
@@ -89,29 +89,29 @@ Component Versions in VOLTHA 2.5 release
 ONOS Apps:
 ++++++++++
 
-- `aaa <https://gerrit.opencord.org/gitweb?p=aaa.git;a=summary>`_: ``2.1.0``
-- `dhcpl2relay <https://gerrit.opencord.org/gitweb?p=dhcpl2relay.git;a=summary>`_: ``2.2.2``
-- `igmpproxy <https://gerrit.opencord.org/gitweb?p=igmpproxy.git;a=summary>`_: ``2.1.2``
-- `kafka <https://gerrit.opencord.org/gitweb?p=kafka-onos.git;a=summary>`_: ``2.4.0``
-- `mcast <https://gerrit.opencord.org/gitweb?p=mcast.git;a=summary>`_: ``2.1.0``
-- `olt <https://gerrit.opencord.org/gitweb?p=olt.git;a=summary>`_: ``4.2.1``
-- `sadis <https://gerrit.opencord.org/gitweb?p=sadis.git;a=summary>`_: ``5.1.0``
+- `aaa <https://gerrit.lfbroadband.org/gitweb?p=aaa.git;a=summary>`_: ``2.1.0``
+- `dhcpl2relay <https://gerrit.lfbroadband.org/gitweb?p=dhcpl2relay.git;a=summary>`_: ``2.2.2``
+- `igmpproxy <https://gerrit.lfbroadband.org/gitweb?p=igmpproxy.git;a=summary>`_: ``2.1.2``
+- `kafka <https://gerrit.lfbroadband.org/gitweb?p=kafka-onos.git;a=summary>`_: ``2.4.0``
+- `mcast <https://gerrit.lfbroadband.org/gitweb?p=mcast.git;a=summary>`_: ``2.1.0``
+- `olt <https://gerrit.lfbroadband.org/gitweb?p=olt.git;a=summary>`_: ``4.2.1``
+- `sadis <https://gerrit.lfbroadband.org/gitweb?p=sadis.git;a=summary>`_: ``5.1.0``
 
 VOLTHA Components:
 ++++++++++++++++++
 
-`kind-voltha <https://gerrit.opencord.org/gitweb?p=kind-voltha.git>`_ -  ``5.1.6``
+`kind-voltha <https://gerrit.lfbroadband.org/gitweb?p=kind-voltha.git>`_ -  ``5.1.6``
 
-`Helm Charts (voltha-helm-charts) <https://gerrit.opencord.org/gitweb?p=voltha-helm-charts.git;a=tree;h=refs/heads/voltha-2.5>`_ - ``2.5.2``
+`Helm Charts (voltha-helm-charts) <https://gerrit.lfbroadband.org/gitweb?p=voltha-helm-charts.git;a=tree;h=refs/heads/voltha-2.5>`_ - ``2.5.2``
 
-- `bbsim <https://gerrit.opencord.org/gitweb?p=bbsim.git;a=tree>`_- ``1.1.3`` with `chart <https://gerrit.opencord.org/gitweb?p=helm-charts.git;a=tree;f=bbsim>`_ ``4.0.3``
-- `voltha-go <https://gerrit.opencord.org/gitweb?p=voltha-go.git;a=tree;h=refs/heads/voltha-2.5>`_ - ``2.5.4`` with chart ``2.6.4``
-- `ofagent-go <https://gerrit.opencord.org/gitweb?p=ofagent-go.git;a=tree;h=refs/heads/voltha-2.5>`_ - ``1.3.2``  with chart ``2.6.4``
-- `voltctl <https://gerrit.opencord.org/gitweb?p=voltctl.git;a=tree>`_ - ``1.2.1``
-- `voltha-openolt-adapter <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree;h=refs/heads/voltha-2.5>`_ - ``2.5.6`` with chart ``2.6.4``
-- `voltha-openonu-adapter <https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter.git;a=tree;h=refs/heads/voltha-2.5>`_ - ``2.5.0`` with chart ``2.5.0``
-- `voltha-onos <https://gerrit.opencord.org/gitweb?p=voltha-onos.git;a=tree;h=refs/heads/voltha-2.5>`_ -  ``4.1.8`` with chart ``0.1.8``
-- `openolt agent <https://gerrit.opencord.org/gitweb?p=openolt.git;a=tree;h=refs/heads/voltha-2.5>`_ - ``2.5.1``
+- `bbsim <https://gerrit.lfbroadband.org/gitweb?p=bbsim.git;a=tree>`_- ``1.1.3`` with `chart <https://gerrit.lfbroadband.org/gitweb?p=helm-charts.git;a=tree;f=bbsim>`_ ``4.0.3``
+- `voltha-go <https://gerrit.lfbroadband.org/gitweb?p=voltha-go.git;a=tree;h=refs/heads/voltha-2.5>`_ - ``2.5.4`` with chart ``2.6.4``
+- `ofagent-go <https://gerrit.lfbroadband.org/gitweb?p=ofagent-go.git;a=tree;h=refs/heads/voltha-2.5>`_ - ``1.3.2``  with chart ``2.6.4``
+- `voltctl <https://gerrit.lfbroadband.org/gitweb?p=voltctl.git;a=tree>`_ - ``1.2.1``
+- `voltha-openolt-adapter <https://gerrit.lfbroadband.org/gitweb?p=voltha-openolt-adapter.git;a=tree;h=refs/heads/voltha-2.5>`_ - ``2.5.6`` with chart ``2.6.4``
+- `voltha-openonu-adapter <https://gerrit.lfbroadband.org/gitweb?p=voltha-openonu-adapter.git;a=tree;h=refs/heads/voltha-2.5>`_ - ``2.5.0`` with chart ``2.5.0``
+- `voltha-onos <https://gerrit.lfbroadband.org/gitweb?p=voltha-onos.git;a=tree;h=refs/heads/voltha-2.5>`_ -  ``4.1.8`` with chart ``0.1.8``
+- `openolt agent <https://gerrit.lfbroadband.org/gitweb?p=openolt.git;a=tree;h=refs/heads/voltha-2.5>`_ - ``2.5.1``
 
 **Available from EdgeCore site**
 

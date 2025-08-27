@@ -44,9 +44,9 @@ Gerrit commit hash and a URL are readily available in output.
    remote:
    remote: SUCCESS
    remote:
-   remote:   https://gerrit.opencord.org/c/ci-management/+/34600 Disable jobs dependent on offline menlo-3 node [NEW]
+   remote:   https://gerrit.lfbroadband.org/c/ci-management/+/34600 Disable jobs dependent on offline menlo-3 node [NEW]
    fremote:
-   To ssh://gerrit.opencord.org:29418/ci-management.git
+   To ssh://gerrit.lfbroadband.org:29418/ci-management.git
     * [new reference]     HEAD -> refs/for/master%topic=dev-joey
 
 .. list-table:: Git commit message
@@ -59,7 +59,7 @@ Gerrit commit hash and a URL are readily available in output.
    * -
      - 2
      - Git commit hash
-   * - `34598 <https://gerrit.opencord.org/c/ci-management/+/34598>`_
+   * - `34598 <https://gerrit.lfbroadband.org/c/ci-management/+/34598>`_
      - 10
      - Gerrit URL for direct patch access
    * -
@@ -113,25 +113,25 @@ When you have a Change-Id value (~43 chars)
 
 - Change-Id: Ic8ca17f5923496731f88ce8918c9852d904ea066
 
-  - Visit the `Gerrit dashboard <https://gerrit.opencord.org/dashboard/self>`_
+  - Visit the `Gerrit dashboard <https://gerrit.lfbroadband.org/dashboard/self>`_
   - Paste Change-Id into the search box at the top right
   - Gerrit UI will navigate to the patch.
 
 Brute force patch lookup
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Visit `Gerrit dashboard open+is:wip <https://gerrit.opencord.org/q/status:open+-is:wip>`_
+- Visit `Gerrit dashboard open+is:wip <https://gerrit.lfbroadband.org/q/status:open+-is:wip>`_
 
   - View all open/unmerged patches
   - Scroll down through the list until something of interest is found.
   - Under the # column (2nd column on left hand side) right click and open
     to view the patch.
-  - For example: `repo:voltha-system-tests <https://gerrit.opencord.org/c/voltha-system-tests/+/33380>`_
+  - For example: `repo:voltha-system-tests <https://gerrit.lfbroadband.org/c/voltha-system-tests/+/33380>`_
 
 Patch history and jenkins jobs
 ------------------------------
 
-While viewing a patch (`repo:voltha-system-tests <https://gerrit.opencord.org/c/voltha-system-tests/+/33380>`_)
+While viewing a patch (`repo:voltha-system-tests <https://gerrit.lfbroadband.org/c/voltha-system-tests/+/33380>`_)
 scroll down to the 'Change Log' section at the bottom.
 | Line items represent historical comments, code review messages and
 processed job status.
@@ -143,7 +143,7 @@ several atomic tasks each of which will generate a log with status.
 To view job logs click on an entry to expand (Verified +1, 4th entry from
 the bottom) to view a set of clickable jenkins URLs.
 
-- `Patch 33380 <https://gerrit.opencord.org/c/voltha-system-tests/+/33380>`_
-  - `verify_voltha-system-tests_unit-test <https://jenkins.opencord.org/job/verify_voltha-system-tests_unit-test>`_          : SUCCESS
-  - `verify_voltha-system-tests_licensed <https://jenkins.opencord.org/job/verify_voltha-system-tests_licensed>`_       : SUCCESS
-  - `verify_voltha-system-tests_sanity-test <https://jenkins.opencord.org/job/verify_voltha-system-tests_sanity-test>`_ : FAILED
+- `Patch 33380 <https://gerrit.lfbroadband.org/c/voltha-system-tests/+/33380>`_
+  - `verify_voltha-system-tests_unit-test <https://jenkins.lfbroadband.org/job/verify_voltha-system-tests_unit-test>`_          : SUCCESS
+  - `verify_voltha-system-tests_licensed <https://jenkins.lfbroadband.org/job/verify_voltha-system-tests_licensed>`_       : SUCCESS
+  - `verify_voltha-system-tests_sanity-test <https://jenkins.lfbroadband.org/job/verify_voltha-system-tests_sanity-test>`_ : FAILED

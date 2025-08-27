@@ -7,7 +7,7 @@ Helm Charts
 ===========
 
 Command(s):
-- `helmlint.sh <https://gerrit.opencord.org/plugins/gitiles/helm-repo-tools/+/refs/heads/master/helmlint.sh>`_
+- `helmlint.sh <https://gerrit.lfbroadband.org/plugins/gitiles/helm-repo-tools/+/refs/heads/master/helmlint.sh>`_
 
 .. code:: bash
 
@@ -16,8 +16,8 @@ Command(s):
 
 Sources:
 
-- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/makefiles/lint/>`__
-- `makefiles/lint/helm/include.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/makefiles/lint/helm/include.mk>`_
-- [`master <https://gerrit.opencord.org/plugins/gitiles/helm-repo-tools/+/refs/heads/master>`__] `helm-repo-tools <https://gerrit.opencord.org/plugins/gitiles/helm-repo-tools>`_
+- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint/helm/include.mk <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/makefiles/lint/helm/include.mk>`_
+- [`master <https://gerrit.lfbroadband.org/plugins/gitiles/helm-repo-tools/+/refs/heads/master>`__] `helm-repo-tools <https://gerrit.lfbroadband.org/plugins/gitiles/helm-repo-tools>`_
 
 |

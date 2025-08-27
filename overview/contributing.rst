@@ -58,7 +58,7 @@ Steps to successful PRs
  4. :ref:`Commit message syntax and testing directives <pull-request--commit-message>`
 
  5. Submitting your patch will initiate a validation
-    `jenkins job <https://jenkins.opencord.org>`_.
+    `jenkins job <https://jenkins.lfbroadband.org>`_.
     Wait for job completion status before proceeding.
 
     - Job status will be sent to you asynchronously in email at job completion.
@@ -70,7 +70,7 @@ Steps to successful PRs
 
     To view accumulated job status:
 
-      - `navigate to a patch <https://gerrit.opencord.org/c/ci-management/+/34599>`_
+      - `navigate to a patch <https://gerrit.lfbroadband.org/c/ci-management/+/34599>`_
       - View "Submit requirements" in the top left.
       - Verified ``+1 Jenkins Technical User`` will indicate SUCCESS.
       - Verified ``-1 Jenkins Technical User`` will indicate FAILURE.
@@ -79,7 +79,7 @@ Steps to successful PRs
     un-related to a changeset you can re-trigger by commenting on the
     patch with `recheck <https://docs.voltha.org/master/howto/code/pull_request.html#development-and-code-reviews>`_
 
-    If failures persist `ask for assistance <https://wiki.opencord.org>`_ in slack or a mailing list.
+    If failures persist `ask for assistance <https://lf-broadband.atlassian.net/wiki>`_ in slack or a mailing list.
 
  6. When patch comments are offered please make the appropriate fixes and then
     amend your commit with `git commit --amend` and re-upload to gerrit with `git review`.
@@ -89,7 +89,7 @@ Steps to successful PRs
 
     **All changes must acquire +2 Approval**.
 
-    Join one of the `communication channels <https://wiki.opencord.org>`_
+    Join one of the `communication channels <https://lf-broadband.atlassian.net/wiki>`_
     to request a review or to bring additional attention to your patch.
 
   8. A patch will be ready to submit a merge request when
@@ -105,7 +105,7 @@ Versioning
 All of the VOLTHA components and the charts include a VERSION file that specifies
 the version of the service, library, protobuf, test suite included in the repository.
 
-- The `VERSION <https://gerrit.opencord.org/plugins/gitiles/voltha-go/+/refs/heads/master/VERSION>`_ file can be found in a repository root directory.
+- The `VERSION <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-go/+/refs/heads/master/VERSION>`_ file can be found in a repository root directory.
 - One exception: maven based builds using pom.xml files.
 
 The VERSION is in the format and follows the `SemVer principles <https://semver.org>`_

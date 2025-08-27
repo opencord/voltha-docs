@@ -45,7 +45,7 @@ Testing
 
 - Integration Tests
 
-  - Automated tests run on both hardware and BBSim platforms, please use the VOLTHA-2.4 view under https://jenkins.opencord.org/
+  - Automated tests run on both hardware and BBSim platforms, please use the VOLTHA-2.4 view under https://jenkins.lfbroadband.org/
   - Sanity test on hardware for TT workflow
   - In Band Management of OLT on one of the ONF Menlo testing pods
   - GPON OLT test job in Berlin pod
@@ -71,23 +71,23 @@ Known Issues
 Component Versions
 ------------------
 
-`Helm Charts (voltha-helm-charts) <https://gerrit.opencord.org/gitweb?p=voltha-helm-charts.git;a=tree;h=refs/heads/voltha-2.4>`_
+`Helm Charts (voltha-helm-charts) <https://gerrit.lfbroadband.org/gitweb?p=voltha-helm-charts.git;a=tree;h=refs/heads/voltha-2.4>`_
 
 voltha ``2.5.7`` with container images:
 
-- `voltha-rw-core <https://gerrit.opencord.org/gitweb?p=voltha-go.git;a=tree;h=refs/heads/voltha-2.4>`_: ``2.4.5``
-- `ofagent-go <https://gerrit.opencord.org/gitweb?p=ofagent-go.git;a=tree;h=refs/heads/voltha-2.4>`_: ``1.2.6``
+- `voltha-rw-core <https://gerrit.lfbroadband.org/gitweb?p=voltha-go.git;a=tree;h=refs/heads/voltha-2.4>`_: ``2.4.5``
+- `ofagent-go <https://gerrit.lfbroadband.org/gitweb?p=ofagent-go.git;a=tree;h=refs/heads/voltha-2.4>`_: ``1.2.6``
 
 voltha-adapter-openolt: ``2.5.10`` with container image `voltha-openolt-adapter
-<https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree;h=refs/heads/voltha-2.4>`_:
+<https://gerrit.lfbroadband.org/gitweb?p=voltha-openolt-adapter.git;a=tree;h=refs/heads/voltha-2.4>`_:
 ``2.4.14``
 
 voltha-adapter-openonu ``2.4.6`` with container image `voltha-openonu-adapter
-<https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter.git;a=tree;h=refs/heads/voltha-2.4>`_:
+<https://gerrit.lfbroadband.org/gitweb?p=voltha-openonu-adapter.git;a=tree;h=refs/heads/voltha-2.4>`_:
 ``2.4.8``
 
 `voltha-onos
-<https://gerrit.opencord.org/gitweb?p=voltha-onos.git;a=tree;h=refs/heads/voltha-2.4>`_:
+<https://gerrit.lfbroadband.org/gitweb?p=voltha-onos.git;a=tree;h=refs/heads/voltha-2.4>`_:
 `onos chart
 <https://github.com/onosproject/onos-helm-charts/tree/master/onos-classic>`_
 ``0.1.1`` using container image ``4.1.4``
@@ -96,22 +96,22 @@ voltha-adapter-openonu ``2.4.6`` with container image `voltha-openonu-adapter
 
 ONOS App versions:
 
-- `aaa <https://gerrit.opencord.org/gitweb?p=aaa.git;a=summary>`_: ``2.1.0``
-- `dhcpl2relay <https://gerrit.opencord.org/gitweb?p=dhcpl2relay.git;a=summary>`_: ``2.1.0``
-- `igmpproxy <https://gerrit.opencord.org/gitweb?p=igmpproxy.git;a=summary>`_: ``2.1.2``
-- `kafka <https://gerrit.opencord.org/gitweb?p=kafka-onos.git;a=summary>`_: ``2.3.1``
-- `mcast <https://gerrit.opencord.org/gitweb?p=mcast.git;a=summary>`_: ``2.1.0``
-- `olt <https://gerrit.opencord.org/gitweb?p=olt.git;a=summary>`_: ``4.1.3``
-- `sadis <https://gerrit.opencord.org/gitweb?p=sadis.git;a=summary>`_: ``5.1.0``
+- `aaa <https://gerrit.lfbroadband.org/gitweb?p=aaa.git;a=summary>`_: ``2.1.0``
+- `dhcpl2relay <https://gerrit.lfbroadband.org/gitweb?p=dhcpl2relay.git;a=summary>`_: ``2.1.0``
+- `igmpproxy <https://gerrit.lfbroadband.org/gitweb?p=igmpproxy.git;a=summary>`_: ``2.1.2``
+- `kafka <https://gerrit.lfbroadband.org/gitweb?p=kafka-onos.git;a=summary>`_: ``2.3.1``
+- `mcast <https://gerrit.lfbroadband.org/gitweb?p=mcast.git;a=summary>`_: ``2.1.0``
+- `olt <https://gerrit.lfbroadband.org/gitweb?p=olt.git;a=summary>`_: ``4.1.3``
+- `sadis <https://gerrit.lfbroadband.org/gitweb?p=sadis.git;a=summary>`_: ``5.1.0``
 
 `bbsim
-<https://gerrit.opencord.org/gitweb?p=bbsim.git;a=tree;h=refs/heads/voltha-2.4>`_:
+<https://gerrit.lfbroadband.org/gitweb?p=bbsim.git;a=tree;h=refs/heads/voltha-2.4>`_:
 `bbsim chart
-<https://gerrit.opencord.org/gitweb?p=helm-charts.git;a=tree;f=bbsim>`_
+<https://gerrit.lfbroadband.org/gitweb?p=helm-charts.git;a=tree;f=bbsim>`_
 ``3.1.0`` using container image: ``0.2.6``
 
 `OpenOLT Agent
-<https://gerrit.opencord.org/gitweb?p=openolt.git;a=tree;h=refs/heads/voltha-2.4>`_
+<https://gerrit.lfbroadband.org/gitweb?p=openolt.git;a=tree;h=refs/heads/voltha-2.4>`_
 ``2.4.9`` using ``BAL 3.4.3.3`` SDK
 
 **Available from EdgeCore site**

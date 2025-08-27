@@ -15,8 +15,8 @@ Dependencies (pom.xml)
 
 - Repository
 
-  `pppoeagent <https://gerrit.opencord.org/plugins/gitiles/pppoeagent>`_
-  `gerrit:122 <https://gerrit.opencord.org/plugins/gitiles/pppoeagent/+/refs/tags/1.2.2>`_
+  `pppoeagent <https://gerrit.lfbroadband.org/plugins/gitiles/pppoeagent>`_
+  `gerrit:122 <https://gerrit.lfbroadband.org/plugins/gitiles/pppoeagent/+/refs/tags/1.2.2>`_
   `github:122 <https://github.com/opencord/pppoeagent/tree/1.2.2>`_
 
 - `Maven Central <https://central.sonatype.com/search?q=pppoeagent>`_

@@ -1,18 +1,18 @@
 Development
 ###########
 
-- `Gerrit Login <https://gerrit.opencord.org/login>`_
+- `Gerrit Login <https://gerrit.lfbroadband.org/login>`_
 
 Locate a VOLTHA :ref:`SSH Key <gerrit-user-account>` of interest
 ================================================================
 
-- Clone repository `repo:voltha-docs <https://gerrit.opencord.org/plugins/gitiles/voltha-docs>`_
+- Clone repository `repo:voltha-docs <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs>`_
 
 .. sourcecode:: shell
 
    $ mkdir -p ~/sandbox
    $ cd ~/sandbox
-   $ git clone ssh://gerrit.opencord.org:29418/voltha-docs
+   $ git clone ssh://gerrit.lfbroadband.org:29418/voltha-docs
    $ cd voltha-docs
 
 - TODO

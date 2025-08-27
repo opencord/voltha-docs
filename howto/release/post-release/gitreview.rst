@@ -13,7 +13,7 @@ directed to branch=voltha-x.y rather than the default voltha=master
    :emphasize-lines: 6
 
    [gerrit]
-   host=gerrit.opencord.org
+   host=gerrit.lfbroadband.org
    port=29418
    project=voltha-helm-charts.git
    defaultremote=origin
@@ -23,7 +23,7 @@ directed to branch=voltha-x.y rather than the default voltha=master
    :emphasize-lines: 6
 
    [gerrit]
-   host=gerrit.opencord.org
+   host=gerrit.lfbroadband.org
    port=29418
    project=voltha-helm-charts.git
    defaultremote=origin

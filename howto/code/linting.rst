@@ -9,7 +9,7 @@ Makefile Linting: By language
 
 .. code:: bash
 
-    % git clone ssh://gerrit.opencord.org:29418/onf-make.git
+    % git clone ssh://gerrit.lfbroadband.org:29418/onf-make.git
     % cd onf-make
 
     % make help | grep lint
@@ -155,17 +155,17 @@ Command: `doc8 <https://pypi.org/project/doc8/>`_
 
    * - Source
      - Description
-   * - `makefiles/lint/doc8/include.mk <http://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/doc8/include.mk>`_
+   * - `makefiles/lint/doc8/include.mk <http://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/doc8/include.mk>`_
      - Main makefile logic for syntax checking RST sources.
-   * - `makefiles/lint/doc8/install.mk <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/doc8/install.mk>`_
+   * - `makefiles/lint/doc8/install.mk <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/doc8/install.mk>`_
      - Dependency logic to install the doc8 tool when needed.
-   * - `makefiles/lint/doc8/excl.mk <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/doc8/install.mk>`_
+   * - `makefiles/lint/doc8/excl.mk <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/doc8/install.mk>`_
      - Common doc8 exclusion patterns for all repositories.
 
 See Also
 --------
 
-- lint-doc8-all target dependency will create a `python virtual env <https://wiki.opencord.org>`_
+- lint-doc8-all target dependency will create a `python virtual env <https://lf-broadband.atlassian.net/wiki>`_
 
 |
 
@@ -184,12 +184,12 @@ Command: `flake8 <https://flake8.pycqa.org/en/latest>`_
 
 Sources:
 
-- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
 - makefiles/lint/flake8.mk
 
 Notes:
 
-- lint-flake8-all target dependency will create a `python virtual env <https://wiki.opencord.org>`_
+- lint-flake8-all target dependency will create a `python virtual env <https://lf-broadband.atlassian.net/wiki>`_
 
 |
 
@@ -200,7 +200,7 @@ Command:
 
 Sources:
 
-- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
 
 |
 
@@ -219,8 +219,8 @@ Command: `json.tool <https://docs.python.org/3/library/json.html>`_
 
 Sources:
 
-- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
-- `makefiles/lint/json.mk <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/json.mk>`_
+- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint/json.mk <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/json.mk>`_
 
 |
 
@@ -237,8 +237,8 @@ Command:
 
 Sources:
 
-- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/voltha-system-tests/+/refs/heads/master/makefiles/lint>`__
-- `makefiles/lint/license.mk <http://gerrit.opencord.org/plugins/gitiles/voltha-system-tests/+/refs/heads/master/makefiles/lint/license/include.mk>`_
+- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-system-tests/+/refs/heads/master/makefiles/lint>`__
+- `makefiles/lint/license.mk <http://gerrit.lfbroadband.org/plugins/gitiles/voltha-system-tests/+/refs/heads/master/makefiles/lint/license/include.mk>`_
 
 |
 
@@ -257,14 +257,14 @@ Command: `pylint <http://github.com/pylint-dev/pylint>`_, `pypi.org <https://pyp
 
 Sources:
 
-- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
 - makefiles/lint/pylint.mk
-- `makefiles/patches/include.mk <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles-orig/patches/>`__
+- `makefiles/patches/include.mk <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles-orig/patches/>`__
 
 Notes:
 
 - pylint the --py3k option is no longer supported by v3.10+
-- lint-pylint-all target dependency will create a `python virtual env <https://wiki.opencord.org>`_
+- lint-pylint-all target dependency will create a `python virtual env <https://lf-broadband.atlassian.net/wiki>`_
 
 |
 
@@ -283,8 +283,8 @@ Command: `shellcheck <https://github.com/koalaman/shellcheck>`_
 
 Sources:
 
-- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
-- `makefiles/lint/shell.mk <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/shell/include.mk>`_
+- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint/shell.mk <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/shell/include.mk>`_
 
 |
 
@@ -303,8 +303,8 @@ Command: `yamllint <https://yamllint.readthedocs.io/en/stable/>`_
 
 Sources:
 
-- `makefiles/lint <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
-- `makefiles/lint/yaml.mk <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/yaml.mk>`_
+- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint/yaml.mk <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/yaml.mk>`_
 
 |
 
@@ -323,11 +323,11 @@ Bugs
 Repositories
 ============
 
-- [`master <https://gerrit.opencord.org/plugins/gitiles/bbsim/+/refs/heads/master>`__] `bbsim <https://gerrit.opencord.org/plugins/gitiles/bbsim>`_
-- [`master <https://gerrit.opencord.org/plugins/gitiles/pod-configs/+/refs/heads/master>`__] `pod-configs <https://gerrit.opencord.org/plugins/gitiles/pod-configs>`_
-- [`master <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master>`__] `voltha-docs <https://gerrit.opencord.org/plugins/gitiles/voltha-docs>`_
-- [`master <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master>`__] `voltha-helm-charts <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts>`_
-- [`master <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master>`__] `voltha-docs <https://gerrit.opencord.org/plugins/gitiles/voltha-docs>`_
+- [`master <https://gerrit.lfbroadband.org/plugins/gitiles/bbsim/+/refs/heads/master>`__] `bbsim <https://gerrit.lfbroadband.org/plugins/gitiles/bbsim>`_
+- [`master <https://gerrit.lfbroadband.org/plugins/gitiles/pod-configs/+/refs/heads/master>`__] `pod-configs <https://gerrit.lfbroadband.org/plugins/gitiles/pod-configs>`_
+- [`master <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs/+/refs/heads/master>`__] `voltha-docs <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs>`_
+- [`master <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master>`__] `voltha-helm-charts <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts>`_
+- [`master <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs/+/refs/heads/master>`__] `voltha-docs <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs>`_
 
 |
 

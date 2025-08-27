@@ -11,5 +11,5 @@ Source
 ------
 
 - `overview/releases.html <https://docs.voltha.org/master/overview/releases.html>`_
-- `overview/releases.rst <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/overview/releases.rst>`_
+- `overview/releases.rst <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs/+/refs/heads/master/overview/releases.rst>`_
 

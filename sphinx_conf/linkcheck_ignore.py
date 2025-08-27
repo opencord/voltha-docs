@@ -58,7 +58,7 @@ linkcheck_ignore.extend([
 
     # conf.py#308 - Anchor '308' not found
     # Line numbers in source are valid, figure out why this was flagged
-#    r'https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/conf.py\#\d+',
+#    r'https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs/+/refs/heads/master/conf.py\#\d+',
 ])
 
 ## -----------------------------------------------------------------------
@@ -85,7 +85,7 @@ linkcheck_ignore.extend([
     r'https://github.com/opencord/voltha-protos/blob/v4.0.11/protos/voltha_protos/device.proto#L116',
 
     # (testing/voltha_test_automation: line   20) broken
-    r'https://jenkins.opencord.org/view/voltha-soak/',
+    r'https://jenkins.lfbroadband.org/view/voltha-soak/',
 
     # (testing/certification: line    5) broken
     # This page no longer exists. A note has been added to the page.
@@ -96,14 +96,11 @@ linkcheck_ignore.extend([
     # and doesn't seem to be in regular use anymore. References should be removed.
     r'https://wiki.onosproject.org/.*',
 
-    # Ignore broken links to the old Jira until they can be fixed in other repos.
-    r'https://jira.opencord.org/.*',
-
     # Ignore Github anchors, which seem to confuse Sphinx
     r'https://github.com/.*#.*',
 
     # Login page report unauthorized
-    r'https://gerrit.opencord.org/login',
+    r'https://gerrit.lfbroadband.org/login',
 
     # Temporarily removed builds
     r'.*/_static/cord-tester/.*',

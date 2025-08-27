@@ -20,7 +20,7 @@ Targets
 
 .. code:: bash
 
-    git clone ssh://gerrit.opencord.org:29418/voltha-helm-charts.git
+    git clone ssh://gerrit.lfbroadband.org:29418/voltha-helm-charts.git
     cd voltha-helm-charts
     make help | grep lint
     lint-chart                    chart_version_check.sh

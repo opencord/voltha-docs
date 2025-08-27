@@ -53,7 +53,7 @@ Checkout, modify and test
 
 .. sourcecode:: shell
 
-   $ git clone ssh://gerrit.opencord.org:29418/voltha-docs
+   $ git clone ssh://gerrit.lfbroadband.org:29418/voltha-docs
 
    $ cd voltha-docs
    $ vi *.rst
@@ -75,7 +75,7 @@ content.
 
 .. sourcecode:: shell
 
-   $ git clone ssh://gerrit.opencord.org:29418/voltha-docs
+   $ git clone ssh://gerrit.lfbroadband.org:29418/voltha-docs
 
    $ cd voltha-docs
    $ make reload
@@ -84,7 +84,7 @@ content.
 
 make lint (syntax checking)
 """""""""""""""""""""""""""
-- `make help (pending) <https://gerrit.opencord.org/c/voltha-system-tests/+/33306>`
+- `make help (pending) <https://gerrit.lfbroadband.org/c/voltha-system-tests/+/33306>`
 
 .. sourcecode:: shell
 

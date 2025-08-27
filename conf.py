@@ -279,14 +279,14 @@ nwdiag_fontpath = [
 
 # -- Options for extlinks extension ------------------------------------------
 # ..seealso: https://www.sphinx-doc.org/en/master/usage/extensions/todo.html
-#        'vhc' : 'https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts',
+#        'vhc' : 'https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts',
 
 extlinks = {
     "vol-jira": ("https://lf-broadband.atlassian.net/projects/VOL/issues/%s", "jira::%s"),
     "jira-browse": ("https://lf-broadband.atlassian.net/browse/%s", "jira::%s"),
     # macros for gerrit or github URL construction
     "repo": ("https://github.com/opencord/%s", "repo::%s"),
-    "vol-ger": ("https://gerrit.opencord.org/plugins/gitiles/%s", "gerrit::%s"),
+    "vol-ger": ("https://gerrit.lfbroadband.org/plugins/gitiles/%s", "gerrit::%s"),
     "vol-git": ("https://github.com/opencord/%s", "git::%s"),
     # https://mvnrepository
     "mvn-cord": ("https://mvnrepository.com/artifact/org.opencord/%s", "mvn::%s"),

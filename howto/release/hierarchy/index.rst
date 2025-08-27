@@ -25,14 +25,14 @@ Use dependencies.xml to populate the release notes version grid for ONOS.
 
 ofagent-go
 ^^^^^^^^^^
-- `deps: go.mod <https://gerrit.opencord.org/plugins/gitiles/ofagent-go/+/refs/heads/master/go.mod>`_
+- `deps: go.mod <https://gerrit.lfbroadband.org/plugins/gitiles/ofagent-go/+/refs/heads/master/go.mod>`_
 
   - voltha-lib-go
   - voltha-protos
 
 voltha-protos
 ^^^^^^^^^^^^^
-- `deps: go.mod <https://gerrit.opencord.org/plugins/gitiles/ofagent-go/+/refs/heads/master/go.mod>`_
+- `deps: go.mod <https://gerrit.lfbroadband.org/plugins/gitiles/ofagent-go/+/refs/heads/master/go.mod>`_
 
   - voltha-lib-go
   - voltha-protos

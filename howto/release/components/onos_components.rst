@@ -12,11 +12,11 @@ A jenkins job exists for releasing ONOS app
 - Maven central based release
 - Release process requires some manual steps.
 
-- `Jenkins Release Job <https://jenkins.opencord.org/job/onos-app-release/>`_
+- `Jenkins Release Job <https://jenkins.lfbroadband.org/job/onos-app-release/>`_
 
-  - `MVN Plugin Upgrade <https://gerrit.opencord.org/c/sadis/+/34230>`_
-  - `5.11.0 (deploy) <https://gerrit.opencord.org/c/sadis/+/34231>`_
-  - `5.12.0-SNAPSHOT (dev) <https://gerrit.opencord.org/c/sadis/+/34232>`_
+  - `MVN Plugin Upgrade <https://gerrit.lfbroadband.org/c/sadis/+/34230>`_
+  - `5.11.0 (deploy) <https://gerrit.lfbroadband.org/c/sadis/+/34231>`_
+  - `5.12.0-SNAPSHOT (dev) <https://gerrit.lfbroadband.org/c/sadis/+/34232>`_
 
   - Initiate a build with parameters for the target component.
 
@@ -50,17 +50,17 @@ A jenkins job exists for releasing ONOS app
 Jenkins Jobs
 ^^^^^^^^^^^^
 
-- Jenkins jobs from `release matrix: v2.12 <https://wiki.opencord.org>`_
+- Jenkins jobs from `release matrix: v2.12 <https://lf-broadband.atlassian.net/wiki>`_
 
-    - `changeset approval for job merge <https://gerrit.opencord.org/q/owner:do-not-reply%2540opennetworking.org>`_
+    - `changeset approval for job merge <https://gerrit.lfbroadband.org/q/owner:do-not-reply%2540opennetworking.org>`_
     - pom.xml non-SNAPSHOT (first approved changeset)
 
-      - `licensed <https://jenkins.opencord.org/job/verify_sadis_licensed/>`_
-      - `verify <https://jenkins.opencord.org/job/verify_sadis_maven-test/>`_
+      - `licensed <https://jenkins.lfbroadband.org/job/verify_sadis_licensed/>`_
+      - `verify <https://jenkins.lfbroadband.org/job/verify_sadis_maven-test/>`_
 
     - pom.xml non-SNAPSHOT (second approved changeset)
 
-      - `publish <https://jenkins.opencord.org/job/maven-publish_sadis/>`_
+      - `publish <https://jenkins.lfbroadband.org/job/maven-publish_sadis/>`_
 
    - Job will modify pom.xml and create pull requests based on version strings.
 
@@ -76,9 +76,9 @@ Jenkins Jobs
     - A gerrit pull request will be created under the release requestor(s) name.
 
   - Approve the pom.xml pull request and merge.
-  - Merge will trigger (https://jenkins.opencord.org/job/maven-publish_sadis/ for sadis app, similar link for olt and other apps) that publish the artifact in the staging repo on oss.sonatype.org, you need to release it.
+  - Merge will trigger (https://jenkins.lfbroadband.org/job/maven-publish_sadis/ for sadis app, similar link for olt and other apps) that publish the artifact in the staging repo on oss.sonatype.org, you need to release it.
   - Wait for build to complete
-  - Merge the patches here https://gerrit.opencord.org/q/owner:do-not-reply%2540opennetworking.org
+  - Merge the patches here https://gerrit.lfbroadband.org/q/owner:do-not-reply%2540opennetworking.org
 
 - Artifact staging on sonatype, published to maven central:
 

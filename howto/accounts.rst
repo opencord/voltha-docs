@@ -20,17 +20,17 @@ user account for you to access resources: gerrit, jenkins, wiki, etc.
 Gerrit user account
 ===================
 
-Next navigate to gerrit.opencord.org, login and configure your user account
+Next navigate to gerrit.lfbroadband.org, login and configure your user account
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- `Gerrit Login <https://gerrit.opencord.org/login>`_
+- `Gerrit Login <https://gerrit.lfbroadband.org/login>`_
 
-- `User Settings <https://gerrit.opencord.org/settings/>`_
+- `User Settings <https://gerrit.lfbroadband.org/settings/>`_
    - Verify full name and display name fields are populated.
    - Verify your email address is correct.
 
 - Generate and deploy an ssh key to interact with the repository:
-   - `Public SSH key <https://gerrit.opencord.org/settings>`_ (#SSHKeys)
+   - `Public SSH key <https://gerrit.lfbroadband.org/settings>`_ (#SSHKeys)
 
 - Verify your ssh access
 
@@ -41,10 +41,10 @@ Next navigate to gerrit.opencord.org, login and configure your user account
    $ ssh-keygen -t ed25519 -f id_gerrit -C 'tux@opennetworking.org'
 
    # Connect passing -T, -p(ort), -i(dentity)
-   $ ssh -T -p 29418 -i ~/.ssh/id_gerrit 'tux@opennetworking.org@gerrit.opencord.org'
+   $ ssh -T -p 29418 -i ~/.ssh/id_gerrit 'tux@opennetworking.org@gerrit.lfbroadband.org'
 
    $ ssh-add ~/.ssh/id_gerrit
-   $ ssh -T -p 29418 'tux@opennetworking.org@gerrit.opencord.org'
+   $ ssh -T -p 29418 'tux@opennetworking.org@gerrit.lfbroadband.org'
 
 
 

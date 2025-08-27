@@ -18,12 +18,12 @@ A branch named ``voltha-2.3`` is created on the voltha-helm-charts repo.
 Release candidates will be created of each chart for the ``2.3`` release.
 The action that indicates the creation of the ``2.3`` release is to changing
 the `voltha
-<https://gerrit.opencord.org/gitweb?p=voltha-helm-charts.git;a=tree;f=voltha>`_
+<https://gerrit.lfbroadband.org/gitweb?p=voltha-helm-charts.git;a=tree;f=voltha>`_
 helm chart, and adapter charts with version: ``2.3.0`` specified in
 ``Chart.yaml`` within the `voltha-helm-charts
-<https://gerrit.opencord.org/gitweb?p=voltha-helm-charts.git;a=summary>`_ repo.
+<https://gerrit.lfbroadband.org/gitweb?p=voltha-helm-charts.git;a=summary>`_ repo.
 
-A testing branch for ``2.3`` named ``voltha-2.3`` is created on repository `voltha-system-tests <https://gerrit.opencord.org/gitweb?p=voltha-system-tests.git;a=summary>`_.  At release we create a tag ``2.3.0`` on that branch.
+A testing branch for ``2.3`` named ``voltha-2.3`` is created on repository `voltha-system-tests <https://gerrit.lfbroadband.org/gitweb?p=voltha-system-tests.git;a=summary>`_.  At release we create a tag ``2.3.0`` on that branch.
 
 These two repos are the only ones receiving a ``2.3.0`` tag. Other repos that
 contain individual components have their own versioning/release cadence, driven
@@ -39,7 +39,7 @@ have the Minor version increased. (ex: ``1.1.x`` to ``1.2.0-dev``, so future
 
 Testing CI jobs will be created that check out the ``voltha-2.3`` branch of the
 `voltha-system-tests
-<https://gerrit.opencord.org/gitweb?p=voltha-system-tests.git;a=summary>`_
+<https://gerrit.lfbroadband.org/gitweb?p=voltha-system-tests.git;a=summary>`_
 repo, testing the charts as checked out with the ``voltha-2.3`` branch of
 ``voltha-helm-charts``.  Patches on the ``voltha-2.3`` branch of components
 that build containers will need to be changed to rebuild those containers and

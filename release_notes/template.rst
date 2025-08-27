@@ -123,6 +123,6 @@ Website(s)
 
   - `onf/VOLTHA <https://opennetworking.org/voltha/>`_
   - `docs.voltha.org <https://docs.voltha.org>`_
-  - `Wiki <https://wiki.opencord.org>`_
+  - `Wiki <https://lf-broadband.atlassian.net/wiki>`_
 
 |

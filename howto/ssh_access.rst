@@ -1,7 +1,7 @@
 Gerrit SSH Access
 #################
 
-- `Gerrit Login <https://gerrit.opencord.org/login/%2Fq%2Fstatus%3Aopen%2B-is%3Awip>`_
+- `Gerrit Login <https://gerrit.lfbroadband.org/login/%2Fq%2Fstatus%3Aopen%2B-is%3Awip>`_
 
 Generate an :ref:`SSH Key <gerrit-user-account>` for access
 ============================================================
@@ -13,7 +13,7 @@ Generate an :ref:`SSH Key <gerrit-user-account>` for access
 - Login and configure gerrit
 
 - Verify your ssh connection (manual/explicit args)
-   - ssh -T -p 29418 -i ~/.ssh/id_gerrit tux@gerrit.opencord.org
+   - ssh -T -p 29418 -i ~/.ssh/id_gerrit tux@gerrit.lfbroadband.org
       - -T # disable pseudo terminal access, simple verify
       - -p(port)
       - -i(dentity) # ssh key
@@ -52,9 +52,9 @@ Create ~/.ssh/config to simplify your connections
       # (default) Port 22
       User tux
 
-   Host gerrit.opencord.org
-      Hostname gerrit.opencord.org
-      IdentityFile ~/.ssh/gerrit.opencord.org/id_ed25519
+   Host gerrit.lfbroadband.org
+      Hostname gerrit.lfbroadband.org
+      IdentityFile ~/.ssh/gerrit.lfbroadband.org/id_ed25519
       IdentitiesOnly yes
       AddKeysToAgent yes
       Port 29418
@@ -62,7 +62,7 @@ Create ~/.ssh/config to simplify your connections
 
 With ~/.ssh/config setup simply connect to the target machine:
 ==============================================================
-   - ssh gerrit.opencord.org
+   - ssh gerrit.lfbroadband.org
 
 
 Secure permissions on ~/.ssh

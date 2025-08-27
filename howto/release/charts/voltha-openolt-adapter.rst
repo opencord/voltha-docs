@@ -5,7 +5,7 @@
 - Update copyright notices :ref:`Release Task Copyright`
 - Update VOLTHA artifact and chart versions :ref:`Release Task Helm Charts`
 
-- Increment repository `VERSION file <https://gerrit.opencord.org/plugins/gitiles/voltha-openolt-adapter/+/refs/heads/master/VERSION>`_.  Build, test and deploy.
+- Increment repository `VERSION file <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-openolt-adapter/+/refs/heads/master/VERSION>`_.  Build, test and deploy.
 - Modify repo:voltha-helm-charts
 
   - Update component version in the component chart file.
@@ -32,30 +32,30 @@
    * - Repository Path
      - Key
      - Description
-   * - `voltha-adapter-openolt/Chart.yaml <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-adapter-openolt/Chart.yaml>`_
+   * - `voltha-adapter-openolt/Chart.yaml <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-adapter-openolt/Chart.yaml>`_
      - Chart.yaml : appVersion
-     - Assign `repo:voltha-openolt-adapter::VERSION <https://gerrit.opencord.org/plugins/gitiles/voltha-openolt-adapter/+/refs/heads/master/VERSION>`_ to `Chart.yaml::appVersion <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-adapter-openolt/Chart.yaml#35>`_
-   * - `voltha-adapter-openolt/Chart.yaml <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-adapter-openolt/Chart.yaml>`_
+     - Assign `repo:voltha-openolt-adapter::VERSION <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-openolt-adapter/+/refs/heads/master/VERSION>`_ to `Chart.yaml::appVersion <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-adapter-openolt/Chart.yaml#35>`_
+   * - `voltha-adapter-openolt/Chart.yaml <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-adapter-openolt/Chart.yaml>`_
      - Chart.yaml : version
-     - Increment `OLT chart version <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-adapter-openolt/Chart.yaml#20>`_
+     - Increment `OLT chart version <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-adapter-openolt/Chart.yaml#20>`_
    * - voltha-infra/Chart.yaml
      -
      - N/A
    * - voltha-stack/Chart.yaml
      - dependencies : name=voltha-adapter-openolt :  version
-     - Component openolt-adapter modified so update `dependencies : name='voltha-adapter-olt' : version="2.12.6" <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-stack/Chart.yaml#38>`_
+     - Component openolt-adapter modified so update `dependencies : name='voltha-adapter-olt' : version="2.12.6" <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-stack/Chart.yaml#38>`_
    * - voltha-stack/Chart.yaml
      - Chart.yaml : version
-     - voltha-adapter-openolt/Chart.yaml modified so notify voltha-stack. Update `version="2.12.6" <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-stack/Chart.yaml#30>`_.
+     - voltha-adapter-openolt/Chart.yaml modified so notify voltha-stack. Update `version="2.12.6" <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-stack/Chart.yaml#30>`_.
    * - voltha-stack/Chart.yaml
      - dependency : name=voltha : version
-     - voltha-stack/Chart.yaml modified so notify chart voltha.  Update `dependencies : name=voltha : version="2.12.2" <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-stack/Chart.yaml#34>`_
+     - voltha-stack/Chart.yaml modified so notify chart voltha.  Update `dependencies : name=voltha : version="2.12.2" <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-stack/Chart.yaml#34>`_
    * - voltha/Chart.yaml
      - Chart.yaml : version
-     - voltha/Chart.yaml updated so modify chart `Chart.yaml : version='"2.12.11"' <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha/Chart.yaml#17>`_
+     - voltha/Chart.yaml updated so modify chart `Chart.yaml : version='"2.12.11"' <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha/Chart.yaml#17>`_
    * - voltha/Chart.yaml
      - Chart.yaml : version
-     - Update `voltha/Chart.yaml : version='"2.12.11"' <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha/Chart.yaml#17>`_ to match `voltha-stack:dependencies : name=voltha : version='"2.12.11"' <https://gerrit.opencord.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha/Chart.yaml#17>`_.
+     - Update `voltha/Chart.yaml : version='"2.12.11"' <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha/Chart.yaml#17>`_ to match `voltha-stack:dependencies : name=voltha : version='"2.12.11"' <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha/Chart.yaml#17>`_.
 
 ### Extra Credit
 

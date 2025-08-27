@@ -140,7 +140,7 @@ ONOS Components
      -
      -
      -
-   * - `aaa <https://gerrit.opencord.org/gitweb?p=aaa.git;a=summary>`_
+   * - `aaa <https://gerrit.lfbroadband.org/gitweb?p=aaa.git;a=summary>`_
      - :mvn-cord:`2.11.2 <aaai/2.11.2>`
      - :mvn-cord:`X <aaa-api/2.11.2>`
      - :mvn-cord:`X <aaa-app/2.11.2>`
@@ -148,7 +148,7 @@ ONOS Components
      - :vol-ger:`X <aaa/+/refs/tags/2.11.2>`
      - :vol-git:`X <aaa/releases/tag/2.11.2>`
      -
-   * - `bng <https://gerrit.opencord.org/gitweb?p=bng.git;a=summary>`__
+   * - `bng <https://gerrit.lfbroadband.org/gitweb?p=bng.git;a=summary>`__
      - :mvn-cord:`2.5.3 <bng/2.5.3>`
      - :mvn-cord:`X <bng-api/2.5.3>`
      - :mvn-cord:`X <bng-app/2.5.3>`
@@ -156,7 +156,7 @@ ONOS Components
      - :vol-ger:`X <bng/+/refs/tags/2.5.3>`
      - :vol-git:`X <bng/releases/tag/2.5.3>`
      -
-   * - `dhcpl2relay <https://gerrit.opencord.org/gitweb?p=dhcpl2relay.git;a=summary>`__
+   * - `dhcpl2relay <https://gerrit.lfbroadband.org/gitweb?p=dhcpl2relay.git;a=summary>`__
      - :mvn-cord:`2.11.2 <dhcpl2relay/2.11.2>`
      - :mvn-cord:`X <dhcpl2relay-api/2.11.2>`
      - :mvn-cord:`X <dhcpl2relay-app/2.11.2>`
@@ -164,7 +164,7 @@ ONOS Components
      - :vol-ger:`X <dhcpl2relay/+/refs/tags/2.11.2>`
      - :vol-git:`X <dhcpl2relay/releases/tag/2.11.2>`
      -
-   * - `igmpproxy <https://gerrit.opencord.org/gitweb?p=igmpproxy.git;a=summary>`__
+   * - `igmpproxy <https://gerrit.lfbroadband.org/gitweb?p=igmpproxy.git;a=summary>`__
      - :mvn-cord:`2.9.1 <onos-app-igmpproxy/2.9.1>`
      - :mvn-cord:`X <onos-app-igmpproxy-api/2.9.1>`
      - :mvn-cord:`X <onos-app-igmpproxy-app/2.9.1>`
@@ -172,7 +172,7 @@ ONOS Components
      - :vol-ger:`X <igmpproxy/+/refs/tags/2.9.1>`
      - :vol-git:`X <igmpproxy/releases/tag/2.9.1>`
      -
-   * - `kafka <https://gerrit.opencord.org/gitweb?p=kafka-onos.git;a=summary>`__
+   * - `kafka <https://gerrit.lfbroadband.org/gitweb?p=kafka-onos.git;a=summary>`__
      - :mvn-cord:`2.13.3 <kafka/2.13.3>`
      - :mvn-cord:`X <kafka-api/2.13.3>`
      - :mvn-cord:`X <kafka-app/2.13.3>`
@@ -188,7 +188,7 @@ ONOS Components
      - :vol-ger:`X <mac-learning/+/refs/tags/1.2.4>`
      - :vol-git:`X </mac-learning/releases/tag/1.2.4>`, :vol-git:`T <mac-learning/tree/1.2.4>`
      -
-   * - `mcast <https://gerrit.opencord.org/gitweb?p=mcast.git;a=summary>`__
+   * - `mcast <https://gerrit.lfbroadband.org/gitweb?p=mcast.git;a=summary>`__
      - :mvn-cord:`2.9.3 <mcast/2.9.3>`
      - :mvn-cord:`X <mcast-api/2.9.3>`
      - :mvn-cord:`X <mcast-app/2.9.3>`
@@ -196,7 +196,7 @@ ONOS Components
      - :vol-ger:`X <mcast/+/refs/tags/2.9.3>`
      - :vol-git:`X </mcast/releases/tag/2.9.3>`, :vol-git:`T <mcast/tree/2.9.3>`
      -
-   * - `olt <https://gerrit.opencord.org/gitweb?p=olt.git;a=summary>`__
+   * - `olt <https://gerrit.lfbroadband.org/gitweb?p=olt.git;a=summary>`__
      - :mvn-cord:`5.2.8 <olt/5.2.8>`
      - :mvn-cord:`X <olt-api/5.2.8>`
      - :mvn-cord:`X <olt-app/5.2.8>`
@@ -220,7 +220,7 @@ ONOS Components
      - :vol-ger:`X <pppoeagent/+/refs/tags/1.3.2>`
      - :vol-git:`X <pppoeagent/releases/tag/1.3.2>`
      -
-   * - `sadis <https://gerrit.opencord.org/gitweb?p=sadis.git;a=summary>`__
+   * - `sadis <https://gerrit.lfbroadband.org/gitweb?p=sadis.git;a=summary>`__
      - :mvn-cord:`5.12.3 <sadis/5.12.3>`
      - :mvn-cord:`X <sadis-api/5.12.3>`
      - :mvn-cord:`X <sadis-app/5.12.3>`
@@ -245,7 +245,7 @@ VOLTHA Components
    * - Component
      - VOLTHA
      - :vol-ger:`Chart.yaml <voltha-helm-charts/+/refs/heads/master>`
-     - `Gerrit <https://gerrit.opencord.org/admin/repos>`_
+     - `Gerrit <https://gerrit.lfbroadband.org/admin/repos>`_
      - :vol-git:`Github<>`
      - `Docker <https://hub.docker.com/search?q=voltha>`_
      - `Golang <https://pkg.go.dev>`_
@@ -269,7 +269,7 @@ VOLTHA Components
      -
      -
      -
-   * - `ofagent-go <https://gerrit.opencord.org/gitweb?p=ofagent-go.git;a=tree>`_
+   * - `ofagent-go <https://gerrit.lfbroadband.org/gitweb?p=ofagent-go.git;a=tree>`_
      - :vol-ger:`2.3.2 <ofagent-go/+/refs/heads/voltha-2.13/VERSION>`
      - ``N/A``
      - :vol-ger:`X <ofagent-go/+/refs/tags/v2.3.2>`
@@ -278,7 +278,7 @@ VOLTHA Components
      - `1.6.5(stale) <https://pkg.go.dev/github.com/opencord/ofagent-go/cmd/ofagent>`_
      -
      -
-   * - `voltha-go <https://gerrit.opencord.org/gitweb?p=voltha-go.git;a=tree>`_
+   * - `voltha-go <https://gerrit.lfbroadband.org/gitweb?p=voltha-go.git;a=tree>`_
      - :vol-ger:`3.6.6 <voltha-go/+/refs/heads/voltha-2.13/VERSION>`
      - ``N/A``
      - :vol-ger:`X <voltha-go/+/refs/tags/v3.6.6>`
@@ -296,7 +296,7 @@ VOLTHA Components
      - `v7 <https://pkg.go.dev/github.com/opencord/voltha-lib-go/v7@v7.6.6>`__
      - ``?``
      -
-   * - `voltha-onos <https://gerrit.opencord.org/gitweb?p=voltha-onos.git;a=tree>`_
+   * - `voltha-onos <https://gerrit.lfbroadband.org/gitweb?p=voltha-onos.git;a=tree>`_
      - ``5.1.10``
      - ``0.1.27``
      - :vol-ger:`X <voltha-onos/+/refs/tags/5.1.10>`
@@ -305,7 +305,7 @@ VOLTHA Components
      -
      -
      - ``N``
-   * - `voltha-openolt-adapter <https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree>`_
+   * - `voltha-openolt-adapter <https://gerrit.lfbroadband.org/gitweb?p=voltha-openolt-adapter.git;a=tree>`_
      - :vol-ger:`4.5.6 <voltha-openolt-adapter/+/refs/heads/voltha-2.13/VERSION>`
      - :vol-ger:`2.13.0 <voltha-helm-charts/+/refs/heads/master/voltha-adapter-openolt/Chart.yaml#20>`
      - :vol-ger:`X <voltha-openolt-adapter/+/refs/tags/v4.5.6>`
@@ -314,7 +314,7 @@ VOLTHA Components
      - ``N/A``
      - ``N/A``
      -
-   * - `voltha-openonu-adapter-go <https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter-go.git;a=tree>`_
+   * - `voltha-openonu-adapter-go <https://gerrit.lfbroadband.org/gitweb?p=voltha-openonu-adapter-go.git;a=tree>`_
      - :vol-ger:`2.12.14 <voltha-openonu-adapter-go/+/refs/heads/voltha-2.13/VERSION>`
      - :vol-ger:`2.13.0 <voltha-helm-charts/+/refs/heads/master/voltha-adapter-openonu/Chart.yaml#17>`
      - :vol-ger:`X <voltha-openonu-adapter-go/+/refs/tags/v2.12.14>`
@@ -367,7 +367,7 @@ VOLTHA Tools
    * - Component
      - VOLTHA
      - :vol-ger:`Chart.yaml <voltha-helm-charts/+/refs/heads/master>`
-     - `Gerrit <https://gerrit.opencord.org/admin/repos>`_
+     - `Gerrit <https://gerrit.lfbroadband.org/admin/repos>`_
      - :vol-git:`Github<>`
      - `Docker <https://hub.docker.com/search?q=voltha>`_
      - `Golang <https://pkg.go.dev>`_
@@ -400,7 +400,7 @@ VOLTHA Tools
      -
      -
      - ``N``
-   * - `bbsim <https://gerrit.opencord.org/gitweb?p=bbsim.git;a=tree>`__
+   * - `bbsim <https://gerrit.lfbroadband.org/gitweb?p=bbsim.git;a=tree>`__
      - ``1.16.7``
      - ``4.8.11`` :vol-ger:`chart <voltha-helm-charts/+/refs/heads/voltha-2.13/bbsim/Chart.yaml>`
      - :vol-ger:`X <bbsim>`
@@ -409,7 +409,7 @@ VOLTHA Tools
      - ``?``
      - ``?``
      - ``N``
-   * - `Bbsim-sadis-server <https://gerrit.opencord.org/gitweb?p=bbsim-sadis-server.git;a=tree>`__
+   * - `Bbsim-sadis-server <https://gerrit.lfbroadband.org/gitweb?p=bbsim-sadis-server.git;a=tree>`__
      - :vol-ger:`0.4.0 <bbsim-sadis-server/+/refs/heads/voltha-2.13/VERSION>`
      - :vol-ger:`0.3.5 <voltha-helm-charts/+/refs/heads/voltha-2.13/voltha-infra/Chart.yaml#45>`
      - :vol-ger:`X <bbsim-sadis-server/+/refs/tags/v0.4.0/VERSION>`
@@ -418,7 +418,7 @@ VOLTHA Tools
      -
      -
      - ``N``
-   * - `voltctl <https://gerrit.opencord.org/gitweb?p=voltctl.git;a=tree>`_
+   * - `voltctl <https://gerrit.lfbroadband.org/gitweb?p=voltctl.git;a=tree>`_
      - :vol-ger:`1.11.8 <voltctl/+/refs/heads/voltha-2.13/VERSION>`
      - ``N/A``
      - :vol-ger:`X <voltctl/+/refs/tags/v1.11.8>`
@@ -542,6 +542,6 @@ Website(s)
 
   - `onf/VOLTHA <https://opennetworking.org/voltha/>`_
   - `docs.voltha.org <https://docs.voltha.org>`_
-  - `Wiki <https://wiki.opencord.org>`_
+  - `Wiki <https://lf-broadband.atlassian.net/wiki>`_
 
 |

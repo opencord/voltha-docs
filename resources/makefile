@@ -54,7 +54,7 @@ docker-gen:
 ## Intent: Generate an rst table for VOLTHA gerrit repositories
 ## -----------------------------------------------------------------------
 gerrit-src := sources/voltha.gerrit
-gerrit-url := https://gerrit.opencord.org/plugins/gitiles/{}
+gerrit-url := https://gerrit.lfbroadband.org/plugins/gitiles/{}
 gerrit-gen:
 	$(HIDE)$(call format-list,$(gerrit-src))                          \
 	    | xargs -I'{}' echo -e '   * - `{} <$(gerrit-url)>`_\n     -' \

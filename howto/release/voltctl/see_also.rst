@@ -14,7 +14,7 @@ voltctl
 
    * `VOLTHA Releases <https://docs.voltha.org/master/overview/releases.html>`_
    * `VOLTHA Release Process <https://docs.voltha.org/master/release_notes/release_process.html?highlight=release>`_
-   * `vars/installVolthactl.groovy <https://gerrit.opencord.org/plugins/gitiles/ci-management/+/refs/heads/master/vars/installVoltctl.groovy>`_
+   * `vars/installVolthactl.groovy <https://gerrit.lfbroadband.org/plugins/gitiles/ci-management/+/refs/heads/master/vars/installVoltctl.groovy>`_
    * `helm charts <https://docs.voltha.org/master/voltha-helm-charts/README.html?highlight=voltctl>`_
    * `Install votlctl <https://docs.voltha.org/master/voltha-helm-charts/README.html?highlight=voltctl#installing-and-configuring-voltctl>`_
 

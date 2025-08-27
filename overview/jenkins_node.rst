@@ -8,7 +8,7 @@ set of tools would be required for different CI systems as well.*
 
 This page is intended to provide pointers to useful instructions
 that you need to setup your ``Jenkins`` executor and a list of tools install on it in order to
-run the automated tests using the ``ci-management`` pipelines that are used on the `OpenCORD Jenkins <https://jenkins.opencord.org/>`_
+run the automated tests using the ``ci-management`` pipelines that are used on the `OpenCORD Jenkins <https://jenkins.lfbroadband.org/>`_
 
 .. _jenkins_node:
 

@@ -3,7 +3,7 @@
 Repository: ci-management
 =========================
 
-- `repo:ci-management <https://gerrit.opencord.org/plugins/gitiles/ci-management>`_
+- `repo:ci-management <https://gerrit.lfbroadband.org/plugins/gitiles/ci-management>`_
 - First repsitory to release.
 - One of only three repositories to branch-then-tag.
 - Dependency for releasing all other repositories, test suites are
@@ -52,7 +52,7 @@ The bttb.sh script will perform several tasks to release a repository.
 .. code-block:: shell-session
    :caption: Release tagging and branching
 
-   % git clone ssh://gerrit.opencord.org:29418/voltha-release
+   % git clone ssh://gerrit.lfbroadband.org:29418/voltha-release
    % cd voltha-release
 
    % ./bttb.sh --help

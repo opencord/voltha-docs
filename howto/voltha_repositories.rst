@@ -15,7 +15,7 @@ Navigate to the VOLTHA repositories on gerrit or github:
 
 |
 
-Visit gerrit.opencord.org/dashboard
+Visit gerrit.lfbroadband.org/dashboard
 """""""""""""""""""""""""""""""""""
 
 .. figure:: images/gerrit_dashboard.png

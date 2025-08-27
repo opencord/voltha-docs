@@ -7,7 +7,7 @@ LTS
 With each major LTS voltha release (v2.11, v2.8) a new jenkins view will
 need to be created.
 
-- Navigate to `jenkins.opencord.org <https://jenkins.opencord.org>`_.
+- Navigate to `jenkins.lfbroadband.org <https://jenkins.lfbroadband.org>`_.
 - Click "New View" from the jenkins UI.
 - Name: VOLTHA-X.Y
 - Job filters

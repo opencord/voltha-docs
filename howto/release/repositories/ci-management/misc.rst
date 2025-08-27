@@ -31,7 +31,7 @@ behave like scripts are running from branch=master.
 - Update VERSION file to contain X.Y.{1+Z}
 - Update .gitreview, defaultbranch=votlha-X.Y
 
-- `bbsim-tests.groovy <https://gerrit.opencord.org/plugins/gitiles/ci-management/+/refs/heads/master/jjb/pipeline/voltha/bbsim-tests.groovy#35>`_
+- `bbsim-tests.groovy <https://gerrit.lfbroadband.org/plugins/gitiles/ci-management/+/refs/heads/master/jjb/pipeline/voltha/bbsim-tests.groovy#35>`_
 
 .. code:: groovy
 
@@ -57,7 +57,7 @@ behave like scripts are running from branch=master.
 
 ## jb/software-upgrades.yaml
 
-- `jjb/software-upgrades.yaml <https://gerrit.opencord.org/plugins/gitiles/ci-management/+/refs/heads/master/jjb/software-upgrades.yaml>`_
+- `jjb/software-upgrades.yaml <https://gerrit.lfbroadband.org/plugins/gitiles/ci-management/+/refs/heads/master/jjb/software-upgrades.yaml>`_
 
   - Update onos packages to released versions.
   - Post release edits are needed in both branches:

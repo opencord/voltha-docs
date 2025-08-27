@@ -18,7 +18,7 @@ If the CI check did not launch or failed and you believe the issue is
 unrelated to your patch/changeset you can re-trigger the job by commenting
 on the patch with *recheck*.
 
-- Visit gerrit:  https://gerrit.opencord.org/c/bbsim/+/34384
+- Visit gerrit:  https://gerrit.lfbroadband.org/c/bbsim/+/34384
 - Click the pencil icon in the top left by reviewers.
 - Comment/description text: ``recheck``
 
@@ -46,7 +46,7 @@ Interactively using git
 Manually add reviewers at a later date
 --------------------------------------
 
-- `Naviagate to your patch in gerrit <https://gerrit.opencord.org/c/bbsim/+/34384>`_
+- `Naviagate to your patch in gerrit <https://gerrit.lfbroadband.org/c/bbsim/+/34384>`_
 - Click the pencil icon in the top left by reviewers.
 - Add community members to request a review.
 

@@ -17,7 +17,7 @@ Install
 
 .. code:: bash
 
-    % git clone ssh://gerrit.opencord.org:29418/bbsim.git
+    % git clone ssh://gerrit.lfbroadband.org:29418/bbsim.git
     % cd bbsim
 
     % make help
@@ -35,7 +35,7 @@ repo:onf-make convenience target
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 VOLTHA repositories that have
-`repo:onf-make <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master>`_
+`repo:onf-make <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master>`_
 installed as a git submodule can use the makefile target `pre-commit` to
 create a virtualenv and invoke pre-commit with a single command.
 
@@ -58,7 +58,7 @@ Configuration
 
 - Each repository contains a yaml config file that controls hooks and linting behavior:
 
-  - repo:bbsim/`.pre-commit-config.yaml <https://gerrit.opencord.org/plugins/gitiles/bbsim/+/refs/heads/master/.pre-commit-config.yaml>`__
+  - repo:bbsim/`.pre-commit-config.yaml <https://gerrit.lfbroadband.org/plugins/gitiles/bbsim/+/refs/heads/master/.pre-commit-config.yaml>`__
 
 - A skeleton config is currently being used.
 
@@ -78,9 +78,9 @@ Source & Dependencies
 
 | Source | Description |
 | ------ | ----------- |
-| `repo:onf-make <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master>`_ | Repository containing makefile targets and common pre-commit config. |
-| `pre-commit <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/commands/pre-commit/>`_ | Makfile targets used to install the pre-commit tool. |
-| `virtualenv <https://gerrit.opencord.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/virtualenv/>`_ | These makefiles will install a python virtulenv into sandbox/.venv/. |
+| `repo:onf-make <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master>`_ | Repository containing makefile targets and common pre-commit config. |
+| `pre-commit <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/commands/pre-commit/>`_ | Makfile targets used to install the pre-commit tool. |
+| `virtualenv <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/virtualenv/>`_ | These makefiles will install a python virtulenv into sandbox/.venv/. |
 
 .. todo:
 

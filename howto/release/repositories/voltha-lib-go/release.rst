@@ -35,7 +35,7 @@ use tags with the prefix vee v1.2.3, v2.45.0
   ## Use the bttb.sh (branch-tag_OR_tag-branch) script to branch/tag.
   ## Script is aware of how to tag/branch VOLTHA repositories by name.
   ## -----------------------------------------------------------
-  % git clone ssh://gerrit.opencord.org:29418/voltha-release.git
+  % git clone ssh://gerrit.lfbroadband.org:29418/voltha-release.git
   % cd voltha-release
   % ./bttb.sh --sandbox sandbox --repo voltha-lib-go --version 2.12
 
@@ -87,7 +87,7 @@ Patch creation on release branch
 
 `docs.voltha.org - create the initial release <https://docs.voltha.org/master/release_notes/release_process.html#creating-the-initial-release>`_
 
-- git clone ssh://gerrit.opencord.org:29418/voltha-protos.git
+- git clone ssh://gerrit.lfbroadband.org:29418/voltha-protos.git
 - git checkout -b dev_tux
 - Edit VERSION file, increment and suffix a -dev modifier
 

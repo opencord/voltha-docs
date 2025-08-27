@@ -81,16 +81,16 @@ ONOS Apps
 
 The ONOS Apps need to be released in a different manner.
 
-A dedicated Jenkins job is used to release ONOS app: https://jenkins.opencord.org/job/onos-app-release.
+A dedicated Jenkins job is used to release ONOS app: https://jenkins.lfbroadband.org/job/onos-app-release.
 
 The job will need to be initiated using specific parameters, for an example view the lateset pipeline job.
 
-1. `Build with parameters <https://jenkins.opencord.org/job/onos-app-release>`_: use the name of the repo (not of the app itself)
+1. `Build with parameters <https://jenkins.lfbroadband.org/job/onos-app-release>`_: use the name of the repo (not of the app itself)
    - appRepo: sadis
    - appName: sadis
-   - apiVersion: `sadis:5.12.0-SNAPSHOT <https://gerrit.opencord.org/plugins/gitiles/sadis/+/refs/heads/master/api/pom.xml#22>`__
+   - apiVersion: `sadis:5.12.0-SNAPSHOT <https://gerrit.lfbroadband.org/plugins/gitiles/sadis/+/refs/heads/master/api/pom.xml#22>`__
    - nextApiVersion: version+1
-   - version: `sadis:5.12.0-SNAPSHOT <https://gerrit.opencord.org/plugins/gitiles/sadis/+/refs/heads/master/app/pom.xml#20>`__
+   - version: `sadis:5.12.0-SNAPSHOT <https://gerrit.lfbroadband.org/plugins/gitiles/sadis/+/refs/heads/master/app/pom.xml#20>`__
    - nextVersion: version+1
    - branch: master
    - jdkDistro: java-11-amazon-corretto
@@ -98,12 +98,12 @@ The job will need to be initiated using specific parameters, for an example view
 2. Wait for build to complete
 
 3. Merge the component patches on gerrit
-   - `View <https://gerrit.opencord.org/q/owner:do-not-reply%2540opennetworking.org>`_
+   - `View <https://gerrit.lfbroadband.org/q/owner:do-not-reply%2540opennetworking.org>`_
    - Two pull requests are created modifying pom.xml.
    - Approve patch one (-SNAPSHOT: no)  to initiate a release build.
    - Approve patch two (-SNAPSHOT: yes) to revert pom.xml to a non-release version.
 
-4. Approval and merge will trigger `jenkins::maven-publish_sadis <https://jenkins.opencord.org/job/maven-publish_sadis/>`_
+4. Approval and merge will trigger `jenkins::maven-publish_sadis <https://jenkins.lfbroadband.org/job/maven-publish_sadis/>`_
    that will publish an artifact into the staging repo on `sonatype <https://oss.sonatype.org>`_.
    Once published to the staging server the artifact will need to be released to maven central.
 
@@ -199,7 +199,7 @@ there are 4 more elements that need to be tagged:
 - `VOLTHA Helm Charts <https://github.com/opencord/voltha-helm-charts>`_
 - `VOLTHA System Tests <https://github.com/opencord/voltha-system-tests>`_
 - `VOLTHA docs <https://github.com/opencord/voltha-docs>`_
-- `repo:ci-management <https://gerrit.opencord.org/plugins/gitiles/ci-management>`_
+- `repo:ci-management <https://gerrit.lfbroadband.org/plugins/gitiles/ci-management>`_
 
 These 4 repos are the only ones that receive a X.Y.Z tag.
 Other repos that contain individual components have their own
@@ -294,10 +294,10 @@ If a fix is needed to the components/containers that are included by the helm ch
 
 If a fix is needed to the ONOS apps:
 
-- Create a branch here https://gerrit.opencord.org/plugins/gitiles/olt/+/refs/heads/olt-4.1
+- Create a branch here https://gerrit.lfbroadband.org/plugins/gitiles/olt/+/refs/heads/olt-4.1
 - then `Git checkout -b <branch-name> opencord/<version>`
-- Then push a commit changing to `.1-SNAPSHOT` more (see e.g. https://gerrit.opencord.org/c/igmpproxy/+/19589)
-- Then push you changes (e.g. https://gerrit.opencord.org/c/igmpproxy/+/19590)
+- Then push a commit changing to `.1-SNAPSHOT` more (see e.g. https://gerrit.lfbroadband.org/c/igmpproxy/+/19589)
+- Then push you changes (e.g. https://gerrit.lfbroadband.org/c/igmpproxy/+/19590)
 - Then release as per the process above.
 
 See Also

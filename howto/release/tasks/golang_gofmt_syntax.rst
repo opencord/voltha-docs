@@ -8,7 +8,7 @@ Use the gofmt command to reformat golang sources gathered outside the vendor/ di
 .. code-block:: shell-session
    :caption: Golang source formatting
 
-   % git clone ssh://gerrit.opencord.org:29418/voltha-lib-go.git
+   % git clone ssh://gerrit.lfbroadband.org:29418/voltha-lib-go.git
    % cd voltha-lib-go
 
    % make sterile

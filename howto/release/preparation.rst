@@ -31,7 +31,7 @@ Release-less tickets
 
 Confluence
 ----------
-Create a `release tracking page <https://wiki.opencord.org>`_ in confluence, there are a lot of details
+Create a `release tracking page <https://lf-broadband.atlassian.net/wiki>`_ in confluence, there are a lot of details
 
 - Jira tickets related to release and VOLTHA builds.
 - Jenkins jobs: state, failures and tickets.

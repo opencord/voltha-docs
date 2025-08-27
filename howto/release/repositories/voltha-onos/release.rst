@@ -20,7 +20,7 @@ use tags with the prefix vee v1.2.3, v2.45.0
    :caption: First create a release tag
 
    # Determine repository tagname convention (with/with-out vee)
-   git clone "ssh://gerrit.opencord.org:29418/${repo_name}.git"
+   git clone "ssh://gerrit.lfbroadband.org:29418/${repo_name}.git"
    git tag --list-tags
 
    # ---------------------------
@@ -42,7 +42,7 @@ use tags with the prefix vee v1.2.3, v2.45.0
    local tag_name='v2.12.0-beta'
    local repo_name='voltha-lib-go'
 
-   git clone "ssh://gerrit.opencord.org:29418/${repo_name}.git"
+   git clone "ssh://gerrit.lfbroadband.org:29418/${repo_name}.git"
    git fetch --all --tags
 
    git checkout -b "$branch_name" "tags/tag_name"

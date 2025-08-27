@@ -71,7 +71,7 @@ Testing
 - Integration Tests
 
   - `Automated tests run on both hardware and BBSim platforms
-    <https://jenkins.opencord.org/>`_
+    <https://jenkins.lfbroadband.org/>`_
 
     - Functional Tests (ATT)
     - All Container Restart/Failure scenarios (ATT)
@@ -84,7 +84,7 @@ Testing
 - Scale Tests
 
   - `Automated scale tests implemented with BBSim
-    <https://jenkins.opencord.org/view/voltha-scale-measurements/>`_
+    <https://jenkins.lfbroadband.org/view/voltha-scale-measurements/>`_
   - Scale test procedure standardized and documented.
 
 Documentation
@@ -127,45 +127,45 @@ release.**
 Component Versions
 ------------------
 
-`Helm Charts (voltha-helm-charts) <https://gerrit.opencord.org/gitweb?p=voltha-helm-charts.git;a=tree;h=refs/heads/voltha-2.3>`_
+`Helm Charts (voltha-helm-charts) <https://gerrit.lfbroadband.org/gitweb?p=voltha-helm-charts.git;a=tree;h=refs/heads/voltha-2.3>`_
 
 voltha ``2.3.2`` with container images:
 
-- `voltha-rw-core <https://gerrit.opencord.org/gitweb?p=voltha-go.git;a=tree;h=refs/heads/voltha-2.3>`_: ``2.3.6``
-- `ofagent-go <https://gerrit.opencord.org/gitweb?p=ofagent-go.git;a=tree;h=refs/heads/voltha-2.3>`_: ``1.1.7``
+- `voltha-rw-core <https://gerrit.lfbroadband.org/gitweb?p=voltha-go.git;a=tree;h=refs/heads/voltha-2.3>`_: ``2.3.6``
+- `ofagent-go <https://gerrit.lfbroadband.org/gitweb?p=ofagent-go.git;a=tree;h=refs/heads/voltha-2.3>`_: ``1.1.7``
 
 voltha-adapter-openolt: ``2.3.2`` with container image `voltha-openolt-adapter
-<https://gerrit.opencord.org/gitweb?p=voltha-openolt-adapter.git;a=tree;h=refs/heads/voltha-2.3>`_:
+<https://gerrit.lfbroadband.org/gitweb?p=voltha-openolt-adapter.git;a=tree;h=refs/heads/voltha-2.3>`_:
 ``2.3.23``
 
 voltha-adapter-openonu ``2.3.0`` with container image `voltha-openonu-adapter
-<https://gerrit.opencord.org/gitweb?p=voltha-openonu-adapter.git;a=tree;h=refs/heads/voltha-2.3>`_:
+<https://gerrit.lfbroadband.org/gitweb?p=voltha-openonu-adapter.git;a=tree;h=refs/heads/voltha-2.3>`_:
 ``2.3.6``
 
 `voltha-onos
-<https://gerrit.opencord.org/gitweb?p=voltha-onos.git;a=tree;h=refs/heads/voltha-2.3>`_:
+<https://gerrit.lfbroadband.org/gitweb?p=voltha-onos.git;a=tree;h=refs/heads/voltha-2.3>`_:
 `onos chart
-<https://gerrit.opencord.org/gitweb?p=helm-charts.git;a=tree;f=onos>`_
+<https://gerrit.lfbroadband.org/gitweb?p=helm-charts.git;a=tree;f=onos>`_
 ``3.0.1`` using container image ``4.0.2``
 
 ONOS App versions:
 
-- `aaa <https://gerrit.opencord.org/gitweb?p=aaa.git;a=summary>`_: ``2.0.2``
-- `dhcpl2relay <https://gerrit.opencord.org/gitweb?p=dhcpl2relay.git;a=summary>`_: ``2.0.2``
-- `igmpproxy <https://gerrit.opencord.org/gitweb?p=igmpproxy.git;a=summary>`_: ``2.0.0``
-- `kafka <https://gerrit.opencord.org/gitweb?p=kafka-onos.git;a=summary>`_: ``2.2.0``
-- `mcast <https://gerrit.opencord.org/gitweb?p=mcast.git;a=summary>`_: ``2.0.0``
-- `olt <https://gerrit.opencord.org/gitweb?p=olt.git;a=summary>`_: ``4.0.2``
-- `sadis <https://gerrit.opencord.org/gitweb?p=sadis.git;a=summary>`_: ``5.0.1``
+- `aaa <https://gerrit.lfbroadband.org/gitweb?p=aaa.git;a=summary>`_: ``2.0.2``
+- `dhcpl2relay <https://gerrit.lfbroadband.org/gitweb?p=dhcpl2relay.git;a=summary>`_: ``2.0.2``
+- `igmpproxy <https://gerrit.lfbroadband.org/gitweb?p=igmpproxy.git;a=summary>`_: ``2.0.0``
+- `kafka <https://gerrit.lfbroadband.org/gitweb?p=kafka-onos.git;a=summary>`_: ``2.2.0``
+- `mcast <https://gerrit.lfbroadband.org/gitweb?p=mcast.git;a=summary>`_: ``2.0.0``
+- `olt <https://gerrit.lfbroadband.org/gitweb?p=olt.git;a=summary>`_: ``4.0.2``
+- `sadis <https://gerrit.lfbroadband.org/gitweb?p=sadis.git;a=summary>`_: ``5.0.1``
 
 `bbsim
-<https://gerrit.opencord.org/gitweb?p=bbsim.git;a=tree;h=refs/heads/voltha-2.3>`_:
+<https://gerrit.lfbroadband.org/gitweb?p=bbsim.git;a=tree;h=refs/heads/voltha-2.3>`_:
 `bbsim chart
-<https://gerrit.opencord.org/gitweb?p=helm-charts.git;a=tree;f=bbsim>`_
+<https://gerrit.lfbroadband.org/gitweb?p=helm-charts.git;a=tree;f=bbsim>`_
 ``3.0.18`` using container image: ``0.1.0``
 
 `OpenOLT Agent
-<https://gerrit.opencord.org/gitweb?p=openolt.git;a=tree;h=refs/heads/voltha-2.3>`_
+<https://gerrit.lfbroadband.org/gitweb?p=openolt.git;a=tree;h=refs/heads/voltha-2.3>`_
 ``2.3.0`` using ``BAL 3.2.3.2`` SDK
 
 - ``openolt_2_3_0_asfvolt16.deb`` (available from EdgeCore site)

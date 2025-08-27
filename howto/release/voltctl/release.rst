@@ -10,9 +10,9 @@ Source
 
    * - Source
      - Description
-   * - `VERSION file <https://gerrit.opencord.org/plugins/gitiles/voltctl/+/refs/heads/master/VERSION>`__
+   * - `VERSION file <https://gerrit.lfbroadband.org/plugins/gitiles/voltctl/+/refs/heads/master/VERSION>`__
      - Contains the tool version to build and/or release.
-   * - `jjb/shell/github-release.sh <https://gerrit.opencord.org/plugins/gitiles/ci-management/+/refs/heads/master/jjb/shell/github-release.sh>`__
+   * - `jjb/shell/github-release.sh <https://gerrit.lfbroadband.org/plugins/gitiles/ci-management/+/refs/heads/master/jjb/shell/github-release.sh>`__
      - Shell script used to publish release candidates to github.
 
 Development
@@ -21,7 +21,7 @@ Development
 .. code-block:: shell-session
    :caption: Build and test volctl locally
 
-   % git clone ssh://gerrit.opencord.org:29418/voltctl.git
+   % git clone ssh://gerrit.lfbroadband.org:29418/voltctl.git
    % cd voltctl
 
    % make help
@@ -36,7 +36,7 @@ Development
 Release Builds howto:
 ---------------------
 
-- Increment the `VERSION file <https://gerrit.opencord.org/plugins/gitiles/voltctl/+/refs/heads/master/VERSION>`__ to a major or minor point release.
+- Increment the `VERSION file <https://gerrit.lfbroadband.org/plugins/gitiles/voltctl/+/refs/heads/master/VERSION>`__ to a major or minor point release.
 
 .. list-table:: VERSION file, Symantec version strings
    :widths: 10, 10, 60
@@ -54,14 +54,14 @@ Release Builds howto:
 
 - Merging the patch will initiate a jenkins job to build components
 
-  - `repo::voltctl <https://gerrit.opencord.org/plugins/gitiles/voltctl/+/refs/heads/master>`__, Gerrit example: `33551 <https://gerrit.opencord.org/c/voltctl/+/33551>`_.
+  - `repo::voltctl <https://gerrit.lfbroadband.org/plugins/gitiles/voltctl/+/refs/heads/master>`__, Gerrit example: `33551 <https://gerrit.lfbroadband.org/c/voltctl/+/33551>`_.
   - At least two jenkins jobs need to run:
 
-    - `version-tag_wildcard <https://jenkins.opencord.org/job/version-tag_wildcard/>`__
+    - `version-tag_wildcard <https://jenkins.lfbroadband.org/job/version-tag_wildcard/>`__
 
       - Verify VERSION file string is sane.
 
-    - `github-release_voltctl <https://jenkins.opencord.org/job/github-release_voltctl/>`__
+    - `github-release_voltctl <https://jenkins.lfbroadband.org/job/github-release_voltctl/>`__
 
       - Publish tool to github.
 
@@ -84,10 +84,10 @@ Release Builds howto:
 
 Create an official voltctl release
 ----------------------------------
-- `installVoltctl.groovy <https://gerrit.opencord.org/plugins/gitiles/ci-management/+/refs/heads/master/vars/installVoltctl.groovy#53>`_
+- `installVoltctl.groovy <https://gerrit.lfbroadband.org/plugins/gitiles/ci-management/+/refs/heads/master/vars/installVoltctl.groovy#53>`_
   depends on `github/releases/latest <https://api.github.com/repos/opencord/voltctl/releases/latest>`_ for versioned release information.
 
-- To generate a release commit changes to `repo::voltctl <https://gerrit.opencord.org/plugins/gitiles/voltctl>`__:
+- To generate a release commit changes to `repo::voltctl <https://gerrit.lfbroadband.org/plugins/gitiles/voltctl>`__:
 
   - Modify VERSION file major/minor numbers for the upcoming release.
   - Remove any -dev or patch modifiers.

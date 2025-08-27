@@ -13,7 +13,7 @@ Clone repo:voltha-docs
 .. code:: bash
 
    # Clone repo:voltha-docs
-   git clone ssh://gerrit.opencord.org:29418/voltha-docs.git
+   git clone ssh://gerrit.lfbroadband.org:29418/voltha-docs.git
 
    # Create a developer branch
    git checkout -b dev-joey
@@ -23,13 +23,13 @@ Clone repo:voltha-docs
    :emphasize-lines: 2
 
    # Clone repo:voltha-docs
-   git clone ssh://gerrit.opencord.org:29418/voltha-docs.git
+   git clone ssh://gerrit.lfbroadband.org:29418/voltha-docs.git
 
    # Create a developer branch
    git checkout -b dev-joey
 
 Repositories:
-[`gerrit <https://gerrit.opencord.org/plugins/gitiles/voltha-docs>`_],
+[`gerrit <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs>`_],
 [`github <https://github.com/opencord/voltha-docs>`_]
 
 .. code-block:: shell-session
@@ -37,7 +37,7 @@ Repositories:
    :emphasize-lines: 2,5
 
    # Clone repo:voltha-docs
-   git clone ssh://gerrit.opencord.org:29418/voltha-docs.git
+   git clone ssh://gerrit.lfbroadband.org:29418/voltha-docs.git
 
    # Create a developer branch
    git checkout -b dev-joey

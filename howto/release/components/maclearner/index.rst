@@ -11,7 +11,7 @@ Dependencies (pom.xml)
 
 - Components
 
-`gerrit:mac-learning <https://gerrit.opencord.org/plugins/gitiles/mac-learning/+/refs/tags/1.2.1>`_
+`gerrit:mac-learning <https://gerrit.lfbroadband.org/plugins/gitiles/mac-learning/+/refs/tags/1.2.1>`_
 `maven central:maclearner <https://central.sonatype.com/artifact/org.opencord/maclearner/1.2.1>`_
 
 pom.xml:maclearner

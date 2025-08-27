@@ -10,7 +10,7 @@ Create a patch on a release branch
    # Clone a repostiory of interest (ex: votlha-lib-go)
    # Checkout release branch voltha-2.12 for patching
    # ------------------------------------------------
-   % git clone "ssh://gerrit.opencord.org:29418/voltha-lib-go.git"
+   % git clone "ssh://gerrit.lfbroadband.org:29418/voltha-lib-go.git"
    % cd voltha-lib-go
 
    # Pull in all remote tags/branches

@@ -16,7 +16,7 @@ WIP:
 ----
 - Clone the ci-management repository
 
-  - git clone ssh://gerrit.opencord.org:29418/ci-management.git
+  - git clone ssh://gerrit.lfbroadband.org:29418/ci-management.git
 
 
 TODO

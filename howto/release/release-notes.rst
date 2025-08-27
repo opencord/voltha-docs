@@ -9,8 +9,8 @@ This page details howto create a release notes page on the docs.voltha.org websi
 Cookbook: Patch #1
 ------------------
 - `VOL-5009 <https://lf-broadband.atlassian.net/browse/VOL-5009>`_ - For tracking, create a jira ticket to create a release notes page.
-- Clone repository `repo:voltha-docs <https://gerrit.opencord.org/plugins/gitiles/voltha-docs>`_
-- Modify `VERSION <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/VERSION>`_ file to prevent publishing.
+- Clone repository `repo:voltha-docs <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs>`_
+- Modify `VERSION <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs/+/refs/heads/master/VERSION>`_ file to prevent publishing.
 
   - Specify a version string with a -dev suffix (2.11.55-dev)
   - The ``*-dev`` suffix will inhibit publishing release notes to https://docs.voltha.org.
@@ -22,13 +22,13 @@ Cookbook: Patch #1
 
 - Copy the release notes template to create an empty release notes file:
 
-  - Source: `release_notes/template.rst <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/release_notes>`__.
+  - Source: `release_notes/template.rst <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs/+/refs/heads/master/release_notes>`__.
   - Examine the last release notes file and transfer any relevant generic text into template.rst.
-  - % cp `release_notes/template.rst <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/release_notes>`__ `release_notes/voltha_2.12.rst <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/release_notes/voltha_2.11.rst>`_
+  - % cp `release_notes/template.rst <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs/+/refs/heads/master/release_notes>`__ `release_notes/voltha_2.12.rst <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs/+/refs/heads/master/release_notes/voltha_2.11.rst>`_
 
-- Add `release_notes/voltha_2.12.rst <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/release_notes/voltha_2.11.rst>`_ in the index file `release_notes/index.rst <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/release_notes/index.rst>`_
+- Add `release_notes/voltha_2.12.rst <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs/+/refs/heads/master/release_notes/voltha_2.11.rst>`_ in the index file `release_notes/index.rst <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs/+/refs/heads/master/release_notes/index.rst>`_
 
-- Modify `config.py <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/conf.py>`_ so ``make linkcheck`` will not fail on yet-to-be-generated html release notes file.
+- Modify `config.py <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs/+/refs/heads/master/conf.py>`_ so ``make linkcheck`` will not fail on yet-to-be-generated html release notes file.
 
 - Release notes: content and hilights:
 
@@ -57,7 +57,7 @@ Cookbook: Patch #1
 Cookbook: Patch #2
 ------------------
 - Once release notes are ready to publish update the version string.
-- Modify `VERSION <https://gerrit.opencord.org/plugins/gitiles/voltha-docs/+/refs/heads/master/VERSION>`_ file.
+- Modify `VERSION <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs/+/refs/heads/master/VERSION>`_ file.
 - Remove any vresion suffix decorations such as -dev.
 - Increment version string for the upcomign release:
 

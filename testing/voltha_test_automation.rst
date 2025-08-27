@@ -2,7 +2,7 @@ Voltha Test Automation
 ======================
 
 This page shows how the Voltha tests are automated to run on
-`OpenCORD Jenkins <https://jenkins.opencord.org/>`_.
+`OpenCORD Jenkins <https://jenkins.lfbroadband.org/>`_.
 
 Tests of different workflows, i.e. ATT, DT and TT, with various
 configurations based on either BBSim deployment or actual Physical POD run
@@ -19,7 +19,7 @@ Similar set of jobs are kept under similar tabs. For example, jobs related to
 the voltha-2.13 release are in VOLTHA-2.13 tab.
 
 Likewise, tests that collect measurements on Voltha performance at scale
-are placed under `voltha-scale-measurements <https://jenkins.opencord.org/view/voltha-scale-measurements/>`_.
+are placed under `voltha-scale-measurements <https://jenkins.lfbroadband.org/view/voltha-scale-measurements/>`_.
 
 Jenkins also hosts verification jobs that trigger automatically whenever a patch
 is pushed or updated on Gerrit for the review.
@@ -39,18 +39,18 @@ OpenCORD Jenkins host a large number of BBSim based regression jobs that
 run periodically with different deployment configurations to verify Voltha
 control plane functionality for different operator workflows. Such as,
 
-- `periodic-voltha-test-bbsim <https://jenkins.opencord.org/job/periodic-voltha-test-bbsim/>`_ & `periodic-voltha-multiple-olts-test-bbsim <https://jenkins.opencord.org/job/periodic-voltha-multiple-olts-test-bbsim/>`_ : tests Voltha functional scenarios, recovery and error scenarios, ONOS HA scenarios etc. for ATT
-- `periodic-voltha-multi-uni-test-bbsim <https://jenkins.opencord.org/job/periodic-voltha-multi-uni-test-bbsim/>`_ & `periodic-voltha-multi-uni-multiple-olts-test-bbsim <https://jenkins.opencord.org/job/periodic-voltha-multi-uni-multiple-olts-test-bbsim/>`_ : tests Voltha functionality with multiple UNIs enabled, and with single & multiple OLT (BBSim) deployments
-- `periodic-voltha-dt-test-bbsim <https://jenkins.opencord.org/job/periodic-voltha-dt-test-bbsim-master>`_ : tests functional and failure scenarios for DT workflow
-- `periodic-voltha-dt-fttb-test-bbsim <https://jenkins.opencord.org/job/periodic-voltha-dt-fttb-test-bbsim-master/>`_ : tests functional scenarios for DT FTTB workflow
-- `periodic-voltha-unitag-subscriber-tt-test-bbsim <https://jenkins.opencord.org/job/periodic-voltha-unitag-subscriber-tt-test-bbsim/>`_ : tests Voltha functionality with UNI-Tag Subscriber provisioning enabled for TT workflow
-- `periodic-voltha-tt-maclearner-sanity-test-bbsim <https://jenkins.opencord.org/job/periodic-voltha-tt-maclearner-sanity-test-bbsim/>`_ : tests Voltha functionality with MAC Learner enabled for TT workflow
-- `periodic-software-upgrade-test-bbsim <https://jenkins.opencord.org/job/periodic-software-upgrade-test-bbsim/>`_ : tests ONOS Applications, Voltha Components and ONU Software Upgrades
-- `periodic-voltha-openonu-go-test-bbsim <https://jenkins.opencord.org/job/periodic-voltha-openonu-go-test-bbsim/>`_ & `periodic-voltha-multiple-olts-openonu-go-test-bbsim <https://jenkins.opencord.org/job/periodic-voltha-multiple-olts-openonu-go-test-bbsim/>`_ : tests state for ONU Go adapter with different operator workflows, different constellations and tech profiles
-- `periodic-voltha-pm-data-test-bbsim <https://jenkins.opencord.org/job/periodic-voltha-pm-data-test-bbsim/>`_ & `periodic-voltha-multiple-olts-pm-data-test-bbsim <https://jenkins.opencord.org/job/periodic-voltha-multiple-olts-pm-data-test-bbsim/>`_ : tests Open ONU Go adapter PM data
-- `periodic-voltha-etcd-test <https://jenkins.opencord.org/job/periodic-voltha-etcd-test/>`_ : tests Voltha etcd functionality
-- `periodic-voltha-test-DMI <https://jenkins.opencord.org/job/periodic-voltha-test-DMI/>`_ : tests device management interface functionality
-- `periodic-voltha-memory-leak-test-bbsim <https://jenkins.opencord.org/job/periodic-voltha-memory-leak-test-bbsim/>`_ : tests and catches memory leak in Voltha components
+- `periodic-voltha-test-bbsim <https://jenkins.lfbroadband.org/job/periodic-voltha-test-bbsim/>`_ & `periodic-voltha-multiple-olts-test-bbsim <https://jenkins.lfbroadband.org/job/periodic-voltha-multiple-olts-test-bbsim/>`_ : tests Voltha functional scenarios, recovery and error scenarios, ONOS HA scenarios etc. for ATT
+- `periodic-voltha-multi-uni-test-bbsim <https://jenkins.lfbroadband.org/job/periodic-voltha-multi-uni-test-bbsim/>`_ & `periodic-voltha-multi-uni-multiple-olts-test-bbsim <https://jenkins.lfbroadband.org/job/periodic-voltha-multi-uni-multiple-olts-test-bbsim/>`_ : tests Voltha functionality with multiple UNIs enabled, and with single & multiple OLT (BBSim) deployments
+- `periodic-voltha-dt-test-bbsim <https://jenkins.lfbroadband.org/job/periodic-voltha-dt-test-bbsim-master>`_ : tests functional and failure scenarios for DT workflow
+- `periodic-voltha-dt-fttb-test-bbsim <https://jenkins.lfbroadband.org/job/periodic-voltha-dt-fttb-test-bbsim-master/>`_ : tests functional scenarios for DT FTTB workflow
+- `periodic-voltha-unitag-subscriber-tt-test-bbsim <https://jenkins.lfbroadband.org/job/periodic-voltha-unitag-subscriber-tt-test-bbsim/>`_ : tests Voltha functionality with UNI-Tag Subscriber provisioning enabled for TT workflow
+- `periodic-voltha-tt-maclearner-sanity-test-bbsim <https://jenkins.lfbroadband.org/job/periodic-voltha-tt-maclearner-sanity-test-bbsim/>`_ : tests Voltha functionality with MAC Learner enabled for TT workflow
+- `periodic-software-upgrade-test-bbsim <https://jenkins.lfbroadband.org/job/periodic-software-upgrade-test-bbsim/>`_ : tests ONOS Applications, Voltha Components and ONU Software Upgrades
+- `periodic-voltha-openonu-go-test-bbsim <https://jenkins.lfbroadband.org/job/periodic-voltha-openonu-go-test-bbsim/>`_ & `periodic-voltha-multiple-olts-openonu-go-test-bbsim <https://jenkins.lfbroadband.org/job/periodic-voltha-multiple-olts-openonu-go-test-bbsim/>`_ : tests state for ONU Go adapter with different operator workflows, different constellations and tech profiles
+- `periodic-voltha-pm-data-test-bbsim <https://jenkins.lfbroadband.org/job/periodic-voltha-pm-data-test-bbsim/>`_ & `periodic-voltha-multiple-olts-pm-data-test-bbsim <https://jenkins.lfbroadband.org/job/periodic-voltha-multiple-olts-pm-data-test-bbsim/>`_ : tests Open ONU Go adapter PM data
+- `periodic-voltha-etcd-test <https://jenkins.lfbroadband.org/job/periodic-voltha-etcd-test/>`_ : tests Voltha etcd functionality
+- `periodic-voltha-test-DMI <https://jenkins.lfbroadband.org/job/periodic-voltha-test-DMI/>`_ : tests device management interface functionality
+- `periodic-voltha-memory-leak-test-bbsim <https://jenkins.lfbroadband.org/job/periodic-voltha-memory-leak-test-bbsim/>`_ : tests and catches memory leak in Voltha components
 
 Similar to the above mentioned jobs which are based on **master**,
 Jenkins has regression jobs for other Voltha releases as well, like
@@ -65,7 +65,7 @@ The scale jobs run the tests that collect measurements on Voltha performance.
 Scale jobs do the deployment with various combinations
 like single or multiple voltha stacks with one or more BBSim based OLTs,
 multiple PONs and ONUs thus testing 4000+ subscribers for different workflows.
-More details about scale jobs can be found `here <https://jenkins.opencord.org/view/voltha-scale-measurements/>`__.
+More details about scale jobs can be found `here <https://jenkins.lfbroadband.org/view/voltha-scale-measurements/>`__.
 
 
 Hardware (or Physical POD) Jobs
