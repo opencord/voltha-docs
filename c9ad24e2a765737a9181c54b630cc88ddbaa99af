@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b2b7b86f_7046bdac",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1001013
+      },
+      "writtenOn": "2025-08-28T23:19:15Z",
+      "side": 1,
+      "message": "Overriding CI failure. This build is not expected to work, but it will build correctly via multiversion.",
+      "revId": "c9ad24e2a765737a9181c54b630cc88ddbaa99af",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
