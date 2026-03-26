@@ -150,8 +150,8 @@ Known Issues
 Certification Program
 ---------------------
 
-Thanks to the Continuous Certification program at ONF we can also ensure
-that the following ONF member products are compatible with the VOLTHA 2.11
+Thanks to the Continuous Certification program at LF BB we can also ensure
+that the following LF BB member products are compatible with the VOLTHA 2.11
 release:
 
 - Edgecore ASGVolt64 GPON OLT
@@ -163,7 +163,7 @@ release:
 Jira stories
 ------------
 A full list of stories and bugs completed can be found under the
-`VOLTHA 2.12 <https://lf-broadband.atlassian.net/projects/VOL/versions/12600>`_ (`formatted <https://lf-broadband.atlassian.net/secure/ReleaseNote.jspa?projectId=10106&version=12600>`_) release page in Jira.
+`VOLTHA 2.12 <https://lf-broadband.atlassian.net/projects/VOL/versions/10016/tab/release-report-all-issues>`_ release page in Jira.
 
 |
 
@@ -637,7 +637,7 @@ Slack
 Mailing List
 ++++++++++++
 
-  - `voltha-discuss@opennetworking.org <https://groups.google.com/a/opennetworking.org/g/voltha-discuss>`_.
+  - `discuss@lists.voltha.org <https://lists.voltha.org/g/discuss>`_.
 
 Weekly TST Meetings
 +++++++++++++++++++
@@ -648,7 +648,7 @@ Weekly TST Meetings
 Website(s)
 ++++++++++
 
-  - `onf/VOLTHA <https://opennetworking.org/voltha/>`_
+  - `LF BB/VOLTHA <https://lfbroadband.org/projects/voltha/>`_
   - `docs.voltha.org <https://docs.voltha.org>`_
   - `Wiki <https://lf-broadband.atlassian.net/wiki>`_
 

@@ -1,6 +1,6 @@
 # -*- makefile -*-
 # -----------------------------------------------------------------------
-# Copyright 2017-2023 Open Networking Foundation (ONF) and the ONF Contributors
+# Copyright 2017-2023 Linux Foundation Broadband Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -45,7 +45,7 @@ json-find-args := $(null)
 
 ## -----------------------------------------------------------------------
 ## [TODO] makefile migration enhancement
-## Move switches into makefiles/onf-make/makefiles/lint/json/excl.mk
+## Move switches into makefiles/lf-bb-make/makefiles/lint/json/excl.mk
 ## -----------------------------------------------------------------------
 ## makefiles/virtualenv/index.mk could also append $(venv-name) to a
 ## global directory exclusion list for central maintenance.

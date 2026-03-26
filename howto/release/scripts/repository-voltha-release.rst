@@ -9,7 +9,7 @@ Known Issues
 
    * - Resource
      - Description
-   * - `repo:voltha-release <https://github.com/joey-onf/voltha-release>`_
+   * - `repo:voltha-release <https://github.com/joey-LF BB/voltha-release>`_
      - Repository containing release related tools.
-   * - `repo:onf-release <https://github.com/joey-onf/onf-release>`_
+   * - `repo:onf-release <https://github.com/joey-LF BB/onf-release>`_
      - Validate code base dependencies and versiosn for a VOLTHA release.

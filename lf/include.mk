@@ -1,6 +1,6 @@
 # -*- makefile -*-
 # -----------------------------------------------------------------------
-# Copyright 2023-2024 Open Networking Foundation Contributors
+# Copyright 2023-2024 Linux Foundation Broadband Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # -----------------------------------------------------------------------
-# SPDX-FileCopyrightText: 2023-2024 Open Networking Foundation Contributors
+# SPDX-FileCopyrightText: 2023-2024 Linux Foundation Broadband Contributors
 # SPDX-License-Identifier: Apache-2.0
 # -----------------------------------------------------------------------
 
@@ -29,14 +29,14 @@ lf-sbx-root   := $(subst /lf/include.mk,$(null),$(lf-sbx-root))
 
 ## -----------------------------------------------------------------------
 ## Define vars based on relative import (normalize symlinks)
-## Usage: include makefiles/onf/include.mk
+## Usage: include makefiles/LF BB/include.mk
 ## -----------------------------------------------------------------------
-onf-mk-abs    := $(abspath $(lastword $(MAKEFILE_LIST)))
-onf-mk-top    := $(subst /include.mk,$(null),$(onf-mk-abs))
-onf-mk-lib    := $(onf-mk-top)/onf-make/makefiles
-onf-mk-loc    := $(onf-mk-top)/local
+lf-bb-mk-abs    := $(abspath $(lastword $(MAKEFILE_LIST)))
+lf-bb-mk-top    := $(subst /include.mk,$(null),$(lf-bb-mk-abs))
+lf-bb-mk-lib    := $(lf-bb-mk-top)/lf-bb-make/makefiles
+lf-bb-mk-loc    := $(lf-bb-mk-top)/local
 
-TOP           ?= $(patsubst %/makefiles/include.mk,%,$(onf-mk-abs))
+TOP           ?= $(patsubst %/makefiles/include.mk,%,$(lf-bb-mk-abs))
 
 ## -----------------------------------------------------------------------
 ## This variable is a bridge to help transition away from legacy makefiles.
@@ -46,8 +46,8 @@ legacy-mk     := $(lf-sbx-root)/makefiles
 ## ------------------------------------------------------
 ## Two distinct vars needed to access library or project
 ## ------------------------------------------------------
-ONF_MAKEDIR ?= $(onf-mk-lib)
-MAKEDIR     ?= $(onf-mk-loc)
+LF_BB_MAKEDIR ?= $(lf-bb-mk-lib)
+MAKEDIR     ?= $(lf-bb-mk-loc)
 
 # -----------------------------------------------------------------------
 # Load per-repository conditionals
@@ -62,8 +62,8 @@ include $(wildcard $(lf-sbx-root)/config.mk $(lf-sbx-root)/lf/config.mk)
 ##   1) Library constants and logic loaded first
 ##   2) Parameterize and augment targets from local (repo specific)
 ## -----------------------------------------------------------------------
-include $(onf-mk-lib)/include.mk
-include $(onf-mk-loc)/include.mk
+include $(lf-bb-mk-lib)/include.mk
+include $(lf-bb-mk-loc)/include.mk
 
 ## Define late so caller (?- env --ignore-environment -?)
 GIT ?= /usr/bin/env git
@@ -80,15 +80,15 @@ update-git-submodules:
 ## -----------------------------------------------------------------------
 ## Intent: On-demand cloning of git submodule(s).
 ## -----------------------------------------------------------------------
-## Trigger: include $(onf-mk-lib)/include.mk
+## Trigger: include $(lf-bb-mk-lib)/include.mk
 ##   - When the make command attempts to include a makefile from the
-##     repo:onf-make submodule, this target/dependency will initialize
+##     repo:lf-bb-make submodule, this target/dependency will initialize
 ##     and checkout all submodules the current repository depends on.
 ## -----------------------------------------------------------------------
 .PHONY: git-submodules
-git-submodules : $(onf-mk-lib)/include.mk
+git-submodules : $(lf-bb-mk-lib)/include.mk
 
-$(onf-mk-lib)/include.mk:
+$(lf-bb-mk-lib)/include.mk:
 
 	$(call banner-enter,(Checkout git submodules))
 

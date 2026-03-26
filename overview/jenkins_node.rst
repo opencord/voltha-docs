@@ -16,7 +16,7 @@ Connect an executor to Jenkins
 ------------------------------
 
 A good guide to do this can be found at `<https://devopscube.com/setup-slaves-on-jenkins-2/>`_.
-At ONF we setup one of the node in the Kubernetes cluster as Jenkins Agent, but that is not mandatory
+At LF BB we setup one of the node in the Kubernetes cluster as Jenkins Agent, but that is not mandatory
 as long as ``kubectl`` installed on the Jenkins Agent can interact with the cluster.
 
 Prerequisites for this step are listed in the page, but reported here for your convenience:

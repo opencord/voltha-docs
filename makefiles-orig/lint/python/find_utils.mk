@@ -24,7 +24,7 @@ gen-python-find-excl = \
 gen-python-find-cmd = \
   $(strip \
     find . \
-      \( $(call gen-python-find-excl,onf-excl-dirs) \) -prune \
+      \( $(call gen-python-find-excl,lf-bb-excl-dirs) \) -prune \
       -o -name '*.py' \
       -print0 \
   )
