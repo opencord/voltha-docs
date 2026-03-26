@@ -186,7 +186,7 @@ In particular the 2.10 release added the Zyxel SDA3016SS COMBO OLT.
 Jira stories
 ------------
 A full list of stories and bugs completed can be found under the
-`VOLTHA 2.10 <https://lf-broadband.atlassian.net/secure/ReleaseNote.jspa?projectId=10106&version=12300>`_ release page in Jira.
+`VOLTHA 2.10 <https://lf-broadband.atlassian.net/projects/VOL/versions/10005/tab/release-report-all-issues>`_ release page in Jira.
 
 Component Versions in VOLTHA 2.10 release
 -----------------------------------------
