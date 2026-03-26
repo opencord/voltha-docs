@@ -117,7 +117,7 @@ ONF we can also ensure that the following devices are compatible with the VOLTHA
 Jira stories
 ------------
 A full list of stories and bugs completed can be found under the
-`VOLTHA 2.6 <https://lf-broadband.atlassian.net/projects/VOL/versions/11500>`_ release page in Jira.
+`VOLTHA 2.6 <https://lf-broadband.atlassian.net/projects/VOL/versions/10004/tab/release-report-all-issues>`_ release page in Jira.
 
 Component Versions in VOLTHA 2.6 release
 ----------------------------------------

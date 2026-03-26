@@ -195,7 +195,7 @@ In particular the 2.8 release added the Radisys 3200G GPON OLT.
 Jira stories
 ------------
 A full list of stories and bugs completed can be found under the
-`VOLTHA 2.9 <https://lf-broadband.atlassian.net/projects/VOL/versions/12200>`_ release page in Jira.
+`VOLTHA 2.9 <https://lf-broadband.atlassian.net/projects/VOL/versions/10011/tab/release-report-all-issues>`_ release page in Jira.
 
 Component Versions in VOLTHA 2.9 release
 ----------------------------------------

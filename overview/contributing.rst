@@ -201,48 +201,6 @@ that outlines your concerns. If a resolution is difficult to reach in the
 comments section, the TST meetings are a good place to raise your concerns and
 have a discussion.
 
-Current Core Contributors
-+++++++++++++++++++++++++++
-
-This is a list of core contributors divided by area of expertise:
-
-Adapter openonu and omci-lib-go:
-
- - `Chip Boling <chip.boling@tibitcom.com>`_
- - `Ozge Ayaz <ozge.ayaz@netsia.com>`_
-
-Voltha-system-tests:
-
- - to be assigned
-
-Openolt agent:
-
- - `Thiyagarajan Subramani <Thiyagarajan.Subramani@radisys.com>`_
- - `Burak Gurdag <burak.gurdag@netsia.com>`_
-
-ONOS apps:
-
- - `Gamze Abaka <gamze.abaka@netsia.com>`_
- - `Yasin Sapli <yasin.sapli@netsia.com>`_
- - `Tunahan Sezen <tunahan.sezen@netsia.com>`_
-
-Olt adapter, rw-core:
-
- - `Abhilash Satish Laxmeshwar <abhilash.laxmeshwar@radisys.com>`_
- - `Gamze Abaka <gamze.abaka@netsia.com>`_
-
-Build system, makefiles, reviews:
-
- - `Joey Armstrong <joey@opennetworking.org>`_
- - `David Ferguson <daf@opennetworking.org>`_
-
-All of the codebase:
-
- - `Mahir Gunyel <mahir.gunyel@netsia.com>`_
- - `Serkant Uluderya <serkant.uluderya@netsia.com>`_
- - `Amit Ghosh <Amit.Ghosh@radisys.com>`_
- - `Suhas Gururaj Rao <suhas.gururaj@radisys.com>`_
-
 Community Guidelines
 --------------------
 

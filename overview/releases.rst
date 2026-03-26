@@ -2,17 +2,9 @@ VOLTHA Releases
 ===============
 
 VOLTHA, up until the 2.8 release had a tight development and release schedule of 3 months.
-Starting June 2021 operates on a 6 months release schedule, with a Long Term Support release every 18 months.
-Long Term Support means that throughout the lifetime of a release there is a commitment to update,
-patch and maintain the software.
-
+Starting June 2021 operates on a 6 months release schedule.
 VOLTHA process for releases is as follows:
 
-- each LTS release has an 18 months support period with bug fixes and testing.
-- LTS releases are 18 months apart.
-- VOLTHA has 6 month release cycles.
-- Two interim releases between LTS versions.
-- Bugfixes will be back ported to LTS (if applicable) from master and interim release.
 
 Releases
 --------
@@ -131,3 +123,18 @@ Releases
      - Dec 30, 2023
      -
      -
+    * - `VOLTHA 2.13 <../release_notes/voltha_2.13.html>`_
+     - Jan 1, 2024
+     - June 30, 2024
+     -
+     -   * - `VOLTHA 2.14 <../release_notes/voltha_2.14.html>`_
+     - July 1, 2024
+     - Dec 30, 2024
+     -
+     -
+     * - `VOLTHA 2.15 <../release_notes/voltha_2.15.html>`_
+     - Jan 1, 2025
+     - June 30, 2025
+     -
+     -
+
