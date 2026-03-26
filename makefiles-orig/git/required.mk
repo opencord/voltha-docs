@@ -1,6 +1,6 @@
 # -*- makefile -*-
 # -----------------------------------------------------------------------
-# Copyright 2022-2023 Open Networking Foundation (ONF) and the ONF Contributors
+# Copyright 2022-2023 Linux Foundation Broadband Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@ git-mk-targets := show-submodules
 # Makefile can also explicitly define the flag to force always loading.
 # -----------------------------------------------------------------------
 $(foreach tgt,$(git-mk-targets),\
-  $(if $(findstring $(tgt),$(MAKECMDGOALS)),$(eval USE-ONF-GIT-MK := true))\
+  $(if $(findstring $(tgt),$(MAKECMDGOALS)),$(eval USE-LF-BB-GIT-MK := true))\
 )
 
 # [EOF]

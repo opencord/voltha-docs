@@ -31,11 +31,11 @@ Install
 
     % make clean
 
-repo:onf-make convenience target
+repo:lf-bb-make convenience target
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 VOLTHA repositories that have
-`repo:onf-make <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master>`_
+`repo:lf-bb-make <https://gerrit.lfbroadband.org/plugins/gitiles/lf-bb-make/+/refs/heads/master>`_
 installed as a git submodule can use the makefile target `pre-commit` to
 create a virtualenv and invoke pre-commit with a single command.
 
@@ -45,11 +45,11 @@ create a virtualenv and invoke pre-commit with a single command.
    % git clone bbsim
    % cd bbsim
 
-   % Is the repo:onf-make submodule available ?
+   % Is the repo:lf-bb-make submodule available ?
    % git config --file .gitmodules --name-only --get-regexp path
 
    # yes
-   submodule.lf/onf-make.path
+   submodule.lf/lf-bb-make.path
 
    % make pre-commit
 
@@ -67,7 +67,7 @@ Configuration
   - Open tickets to track repository cleanup needed.
 
 - Config changes can be made as needed but if new hooks are added or configs
-  change be sure to update the common config file in repo:onf-make and
+  change be sure to update the common config file in repo:lf-bb-make and
   propogate hook edits out to all VOLTHA repositories for consistency.
 - Make changes as needed but be sure to propogate them out to all voltha repositories.
 - Long term a central repository can be maintained for pre-commit hooks that can be
@@ -78,9 +78,9 @@ Source & Dependencies
 
 | Source | Description |
 | ------ | ----------- |
-| `repo:onf-make <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master>`_ | Repository containing makefile targets and common pre-commit config. |
-| `pre-commit <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/commands/pre-commit/>`_ | Makfile targets used to install the pre-commit tool. |
-| `virtualenv <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/virtualenv/>`_ | These makefiles will install a python virtulenv into sandbox/.venv/. |
+| `repo:lf-bb-make <https://gerrit.lfbroadband.org/plugins/gitiles/lf-bb-make/+/refs/heads/master>`_ | Repository containing makefile targets and common pre-commit config. |
+| `pre-commit <https://gerrit.lfbroadband.org/plugins/gitiles/lf-bb-make/+/refs/heads/master/makefiles/commands/pre-commit/>`_ | Makfile targets used to install the pre-commit tool. |
+| `virtualenv <https://gerrit.lfbroadband.org/plugins/gitiles/lf-bb-make/+/refs/heads/master/makefiles/virtualenv/>`_ | These makefiles will install a python virtulenv into sandbox/.venv/. |
 
 .. todo:
 

@@ -52,7 +52,7 @@ Jenkins Jobs
 
 - Jenkins jobs from `release matrix: v2.12 <https://lf-broadband.atlassian.net/wiki>`_
 
-    - `changeset approval for job merge <https://gerrit.lfbroadband.org/q/owner:do-not-reply%2540opennetworking.org>`_
+    - `changeset approval for job merge <https://gerrit.lfbroadband.org/q/owner:do-not-reply%2540lfbroadband.org>`_
     - pom.xml non-SNAPSHOT (first approved changeset)
 
       - `licensed <https://jenkins.lfbroadband.org/job/verify_sadis_licensed/>`_
@@ -78,12 +78,12 @@ Jenkins Jobs
   - Approve the pom.xml pull request and merge.
   - Merge will trigger (https://jenkins.lfbroadband.org/job/maven-publish_sadis/ for sadis app, similar link for olt and other apps) that publish the artifact in the staging repo on oss.sonatype.org, you need to release it.
   - Wait for build to complete
-  - Merge the patches here https://gerrit.lfbroadband.org/q/owner:do-not-reply%2540opennetworking.org
+  - Merge the patches here https://gerrit.lfbroadband.org/q/owner:do-not-reply%2540lfbroadband.org
 
 - Artifact staging on sonatype, published to maven central:
 
   - Visit `https://oss.sonatype.org <https://oss.sonatype.org>`_
-  - Login with ONF credentials
+  - Login with LF BB credentials
 
     - In the Artifact Search box
 
