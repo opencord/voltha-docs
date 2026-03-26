@@ -6,7 +6,7 @@ Copyright Notice: markdown syntax
 
    <!--
    # -----------------------------------------------------------------------
-   # Copyright 2017-2024 Open Networking Foundation Contributors
+   # Copyright 2017-2024 Linux Foundation Broadband Contributors
    #
    # Licensed under the Apache License, Version 2.0 (the "License");
    # you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ Copyright Notice: markdown syntax
    # See the License for the specific language governing permissions and
    # limitations under the License.
    # -----------------------------------------------------------------------
-   # SPDX-FileCopyrightText: 2017-2024 Open Networking Foundation Contributors
+   # SPDX-FileCopyrightText: 2017-2024 Linux Foundation Broadband Contributors
    # SPDX-License-Identifier: Apache-2.0
    # -----------------------------------------------------------------------
    # Intent:

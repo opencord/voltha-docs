@@ -9,8 +9,8 @@ Makefile Linting: By language
 
 .. code:: bash
 
-    % git clone ssh://gerrit.lfbroadband.org:29418/onf-make.git
-    % cd onf-make
+    % git clone ssh://gerrit.lfbroadband.org:29418/lf-bb-make.git
+    % cd lf-bb-make
 
     % make help | grep lint
     lint-chart                    chart_version_check.sh
@@ -155,11 +155,11 @@ Command: `doc8 <https://pypi.org/project/doc8/>`_
 
    * - Source
      - Description
-   * - `makefiles/lint/doc8/include.mk <http://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/doc8/include.mk>`_
+   * - `makefiles/lint/doc8/include.mk <http://gerrit.lfbroadband.org/plugins/gitiles/lf-bb-make/+/refs/heads/master/makefiles/lint/doc8/include.mk>`_
      - Main makefile logic for syntax checking RST sources.
-   * - `makefiles/lint/doc8/install.mk <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/doc8/install.mk>`_
+   * - `makefiles/lint/doc8/install.mk <https://gerrit.lfbroadband.org/plugins/gitiles/lf-bb-make/+/refs/heads/master/makefiles/lint/doc8/install.mk>`_
      - Dependency logic to install the doc8 tool when needed.
-   * - `makefiles/lint/doc8/excl.mk <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/doc8/install.mk>`_
+   * - `makefiles/lint/doc8/excl.mk <https://gerrit.lfbroadband.org/plugins/gitiles/lf-bb-make/+/refs/heads/master/makefiles/lint/doc8/install.mk>`_
      - Common doc8 exclusion patterns for all repositories.
 
 See Also
@@ -184,7 +184,7 @@ Command: `flake8 <https://flake8.pycqa.org/en/latest>`_
 
 Sources:
 
-- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/lf-bb-make/+/refs/heads/master/makefiles/lint/>`__
 - makefiles/lint/flake8.mk
 
 Notes:
@@ -200,7 +200,7 @@ Command:
 
 Sources:
 
-- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/lf-bb-make/+/refs/heads/master/makefiles/lint/>`__
 
 |
 
@@ -219,8 +219,8 @@ Command: `json.tool <https://docs.python.org/3/library/json.html>`_
 
 Sources:
 
-- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
-- `makefiles/lint/json.mk <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/json.mk>`_
+- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/lf-bb-make/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint/json.mk <https://gerrit.lfbroadband.org/plugins/gitiles/lf-bb-make/+/refs/heads/master/makefiles/lint/json.mk>`_
 
 |
 
@@ -257,7 +257,7 @@ Command: `pylint <http://github.com/pylint-dev/pylint>`_, `pypi.org <https://pyp
 
 Sources:
 
-- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/lf-bb-make/+/refs/heads/master/makefiles/lint/>`__
 - makefiles/lint/pylint.mk
 - `makefiles/patches/include.mk <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles-orig/patches/>`__
 
@@ -283,8 +283,8 @@ Command: `shellcheck <https://github.com/koalaman/shellcheck>`_
 
 Sources:
 
-- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
-- `makefiles/lint/shell.mk <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/shell/include.mk>`_
+- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/lf-bb-make/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint/shell.mk <https://gerrit.lfbroadband.org/plugins/gitiles/lf-bb-make/+/refs/heads/master/makefiles/lint/shell/include.mk>`_
 
 |
 
@@ -303,8 +303,8 @@ Command: `yamllint <https://yamllint.readthedocs.io/en/stable/>`_
 
 Sources:
 
-- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
-- `makefiles/lint/yaml.mk <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/yaml.mk>`_
+- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/lf-bb-make/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint/yaml.mk <https://gerrit.lfbroadband.org/plugins/gitiles/lf-bb-make/+/refs/heads/master/makefiles/lint/yaml.mk>`_
 
 |
 

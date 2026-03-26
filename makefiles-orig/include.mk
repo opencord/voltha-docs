@@ -1,6 +1,6 @@
 # -*- makefile -*-
 # -----------------------------------------------------------------------
-# Copyright 2017-2023 Open Networking Foundation (ONF) and the ONF Contributors
+# Copyright 2017-2023 Linux Foundation Broadband Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,62 +14,62 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # -----------------------------------------------------------------------
-# SPDX-FileCopyrightText: 2017-2023 Open Networking Foundation (ONF) and the ONF Contributors
+# SPDX-FileCopyrightText: 2017-2023 Linux Foundation Broadband Contributors
 # SPDX-License-Identifier: Apache-2.0
 # -----------------------------------------------------------------------
-# https://gerrit.lfbroadband.org/plugins/gitiles/onf-make
-# ONF.makefiles.include.version = 1.1
+# https://gerrit.lfbroadband.org/plugins/gitiles/lf-bb-make
+# LF BB.makefiles.include.version = 1.1
 # -----------------------------------------------------------------------
 
-ifndef mk-include--onf-make # single-include guard macro
+ifndef mk-include--lf-bb-make # single-include guard macro
 
 $(if $(DEBUG),$(warning ENTER))
 
 ## -----------------------------------------------------------------------
 ## Define vars based on relative import (normalize symlinks)
-## Usage: include makefiles-orig/onf/include.mk
+## Usage: include makefiles-orig/LF BB/include.mk
 ## -----------------------------------------------------------------------
-onf-mk-abs    ?= $(abspath $(lastword $(MAKEFILE_LIST)))
-onf-mk-top    := $(subst /include.mk,$(null),$(onf-mk-abs))
-ONF_MAKEDIR   := $(onf-mk-top)
+lf-bb-mk-abs    ?= $(abspath $(lastword $(MAKEFILE_LIST)))
+lf-bb-mk-top    := $(subst /include.mk,$(null),$(lf-bb-mk-abs))
+LF_BB_MAKEDIR   := $(lf-bb-mk-top)
 
-TOP ?= $(patsubst %/makefiles-orig/include.mk,%,$(onf-mk-abs))
+TOP ?= $(patsubst %/makefiles-orig/include.mk,%,$(lf-bb-mk-abs))
 
-include $(ONF_MAKEDIR)/consts.mk
-include $(ONF_MAKEDIR)/help/include.mk       # render target help
-include $(ONF_MAKEDIR)/utils/include.mk      # dependency-less helper macros
-include $(ONF_MAKEDIR)/etc/include.mk        # banner macros
-include $(ONF_MAKEDIR)/commands/include.mk   # Tools and local installers
+include $(LF_BB_MAKEDIR)/consts.mk
+include $(LF_BB_MAKEDIR)/help/include.mk       # render target help
+include $(LF_BB_MAKEDIR)/utils/include.mk      # dependency-less helper macros
+include $(LF_BB_MAKEDIR)/etc/include.mk        # banner macros
+include $(LF_BB_MAKEDIR)/commands/include.mk   # Tools and local installers
 
-include $(ONF_MAKEDIR)/virtualenv.mk#        # lint-{jjb,python} depends on venv
-include $(ONF_MAKEDIR)/patches/include.mk#   # Patch when python 3.10+ in use
-include $(ONF_MAKEDIR)/lint/include.mk
+include $(LF_BB_MAKEDIR)/virtualenv.mk#        # lint-{jjb,python} depends on venv
+include $(LF_BB_MAKEDIR)/patches/include.mk#   # Patch when python 3.10+ in use
+include $(LF_BB_MAKEDIR)/lint/include.mk
 
-include $(ONF_MAKEDIR)/gerrit/include.mk
-include $(ONF_MAKEDIR)/git/include.mk
-include $(ONF_MAKEDIR)/jjb/include.mk
+include $(LF_BB_MAKEDIR)/gerrit/include.mk
+include $(LF_BB_MAKEDIR)/git/include.mk
+include $(LF_BB_MAKEDIR)/jjb/include.mk
 
 $(if $(USE-VOLTHA-RELEASE-MK),\
-  $(eval include $(ONF_MAKEDIR)/release/include.mk))
+  $(eval include $(LF_BB_MAKEDIR)/release/include.mk))
 
-include $(ONF_MAKEDIR)/todo.mk
-include $(ONF_MAKEDIR)/help/variables.mk
+include $(LF_BB_MAKEDIR)/todo.mk
+include $(LF_BB_MAKEDIR)/help/variables.mk
 
 ##---------------------##
 ##---]  ON_DEMAND  [---##
 ##---------------------##
-$(if $(USE-ONF-GERRIT-MK),$(eval include $(ONF_MAKEDIR)/gerrit/include.mk))
-$(if $(USE-ONF-DOCKER-MK),$(eval include $(ONF_MAKEDIR)/docker/include.mk))
+$(if $(USE-LF-BB-GERRIT-MK),$(eval include $(LF_BB_MAKEDIR)/gerrit/include.mk))
+$(if $(USE-LF-BB-DOCKER-MK),$(eval include $(LF_BB_MAKEDIR)/docker/include.mk))
 
 ##-------------------##
 ##---]  TARGETS  [---##
 ##-------------------##
-include $(ONF_MAKEDIR)/targets/include.mk # clean, sterile
+include $(LF_BB_MAKEDIR)/targets/include.mk # clean, sterile
 
 $(if $(DEBUG),$(warning LEAVE))
 
-mk-include--onf-make := true
+mk-include--lf-bb-make := true
 
-endif # mk-include--onf-make
+endif # mk-include--lf-bb-make
 
 # [EOF]

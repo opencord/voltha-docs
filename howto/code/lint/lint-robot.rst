@@ -18,8 +18,8 @@ Command: rflint `robotframework-lint <https://pypi.org/project/robotframework-li
 
 Sources:
 
-- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
-- `makefiles/lint/robot/*.mk <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/robot>`_
+- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/lf-bb-make/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint/robot/*.mk <https://gerrit.lfbroadband.org/plugins/gitiles/lf-bb-make/+/refs/heads/master/makefiles/lint/robot>`_
 
 .. seealso:
 

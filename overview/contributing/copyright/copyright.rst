@@ -1,9 +1,9 @@
 Copyright Notice
 ================
 
-Include a copyright notice with all submissions to ONF repositoreis.
+Include a copyright notice with all submissions to LF BB repositoreis.
 
-- ``Copyright 2017-2023 Open Networking Foundation Contributors``
+- ``Copyright 2017-2023 Linux Foundation Broadband Contributors``
 - NOTE: Range values such as -present are not legally binding
 
   - Copyright notice should be dated to the last year sources were modified.
@@ -30,9 +30,9 @@ License Validation: linting
 See Also
 --------
 
-- `Copyright notices <https://github.com/joey-onf/copyright>`_
-- `Message syntax <https://github.com/joey-onf/copyright/blob/origin/master/notice>`_
-- `ONF CLA Information <https://lf-broadband.atlassian.net/wiki>`_
+- `Copyright notices <https://github.com/joey-LF BB/copyright>`_
+- `Message syntax <https://github.com/joey-LF BB/copyright/blob/origin/master/notice>`_
+- `LF BB CLA Information <https://lf-broadband.atlassian.net/wiki>`_
 
 SPDX
 ^^^^

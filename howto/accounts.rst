@@ -4,17 +4,17 @@
 Getting Started
 ###############
 
-- Register with ONF
+- Register with LF BB
 - gerrit user account
 - github user account
 
-Register with ONF
+Register with LF BB
 =================
 
 Begin by registering with OpenNetworkingFoundation, this will create a
 user account for you to access resources: gerrit, jenkins, wiki, etc.
 
-- https://opennetworking.org/register/
+- https://lfbroadband.org/register/
 
 
 Gerrit user account
@@ -38,13 +38,13 @@ Next navigate to gerrit.lfbroadband.org, login and configure your user account
 
    # Generate a new ssh key
    $ cd .ssh
-   $ ssh-keygen -t ed25519 -f id_gerrit -C 'tux@opennetworking.org'
+   $ ssh-keygen -t ed25519 -f id_gerrit -C 'tux@lfbroadband.org'
 
    # Connect passing -T, -p(ort), -i(dentity)
-   $ ssh -T -p 29418 -i ~/.ssh/id_gerrit 'tux@opennetworking.org@gerrit.lfbroadband.org'
+   $ ssh -T -p 29418 -i ~/.ssh/id_gerrit 'tux@lfbroadband.org@gerrit.lfbroadband.org'
 
    $ ssh-add ~/.ssh/id_gerrit
-   $ ssh -T -p 29418 'tux@opennetworking.org@gerrit.lfbroadband.org'
+   $ ssh -T -p 29418 'tux@lfbroadband.org@gerrit.lfbroadband.org'
 
 
 
@@ -68,10 +68,10 @@ Git config settings
 
    ## Config required by git:
    $ git config --global user.name  'Tux Penguin'
-   $ git config --global user.email 'tux@opennetworking.org'
+   $ git config --global user.email 'tux@lfbroadband.org'
 
    ## Config required by gerrit:
-   $ git config --global gitreview.username 'tux@opennetworking.org'
+   $ git config --global gitreview.username 'tux@lfbroadband.org'
 
    ## Convenience:
    $ git config --global alias.br    branch
