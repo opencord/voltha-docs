@@ -8,7 +8,7 @@ Generate an :ref:`SSH Key <gerrit-user-account>` for access
 
 .. sourcecode:: shell
 
-   $ ssh-keygen -t ed25519 -f id_gerrit -C 'tux@opennetworking.org'
+   $ ssh-keygen -t ed25519 -f id_gerrit -C 'tux@lfbroadband.org'
 
 - Login and configure gerrit
 
@@ -58,7 +58,7 @@ Create ~/.ssh/config to simplify your connections
       IdentitiesOnly yes
       AddKeysToAgent yes
       Port 29418
-      User tux@opennetworking.org
+      User tux@lfbroadband.org
 
 With ~/.ssh/config setup simply connect to the target machine:
 ==============================================================

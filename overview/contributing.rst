@@ -149,7 +149,7 @@ Core contributor candidates need to have a demonstrated proficiency with the
 VOLTHA codebase and a track record of code reviews.  Members of the Technical
 Steering Team (TST) and existing core contributors will regularly invite people
 to become new core contributors. Nominations can also be made (including
-self-nominations) to the VOLTHA TST (`voltha-tst@opennetworking.org`) at any time.
+self-nominations) to the VOLTHA TST (`voltha-tst@lists.voltha.org`) at any time.
 
 A good nomination will include details about who the person is (including their email
 and Github and/or Gerrit username) and outline their experience with the VOLTHA codebase
@@ -201,51 +201,9 @@ that outlines your concerns. If a resolution is difficult to reach in the
 comments section, the TST meetings are a good place to raise your concerns and
 have a discussion.
 
-Current Core Contributors
-+++++++++++++++++++++++++++
-
-This is a list of core contributors divided by area of expertise:
-
-Adapter openonu and omci-lib-go:
-
- - `Chip Boling <chip.boling@tibitcom.com>`_
- - `Ozge Ayaz <ozge.ayaz@netsia.com>`_
-
-Voltha-system-tests:
-
- - to be assigned
-
-Openolt agent:
-
- - `Thiyagarajan Subramani <Thiyagarajan.Subramani@radisys.com>`_
- - `Burak Gurdag <burak.gurdag@netsia.com>`_
-
-ONOS apps:
-
- - `Gamze Abaka <gamze.abaka@netsia.com>`_
- - `Yasin Sapli <yasin.sapli@netsia.com>`_
- - `Tunahan Sezen <tunahan.sezen@netsia.com>`_
-
-Olt adapter, rw-core:
-
- - `Abhilash Satish Laxmeshwar <abhilash.laxmeshwar@radisys.com>`_
- - `Gamze Abaka <gamze.abaka@netsia.com>`_
-
-Build system, makefiles, reviews:
-
- - `Joey Armstrong <joey@opennetworking.org>`_
- - `David Ferguson <daf@opennetworking.org>`_
-
-All of the codebase:
-
- - `Mahir Gunyel <mahir.gunyel@netsia.com>`_
- - `Serkant Uluderya <serkant.uluderya@netsia.com>`_
- - `Amit Ghosh <Amit.Ghosh@radisys.com>`_
- - `Suhas Gururaj Rao <suhas.gururaj@radisys.com>`_
-
 Community Guidelines
 --------------------
 
 This project follows `Google's Open Source Community Guidelines <https://opensource.google/conduct/>`_
 
-and ONF's `Code of Conduct <https://opennetworking.org/wp-content/themes/onf/img/onf-code-of-conduct.pdf>`_.
+and LF BB's `Code of Conduct <https://www.linuxfoundation.org/code-of-conduct>`_.

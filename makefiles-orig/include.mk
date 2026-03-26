@@ -1,6 +1,6 @@
 # -*- makefile -*-
 # -----------------------------------------------------------------------
-# Copyright 2017-2023 Open Networking Foundation (ONF) and the ONF Contributors
+# Copyright 2017-2023 Linux Foundation Broadband Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # -----------------------------------------------------------------------
-# SPDX-FileCopyrightText: 2017-2023 Open Networking Foundation (ONF) and the ONF Contributors
+# SPDX-FileCopyrightText: 2017-2023 Linux Foundation Broadband Contributors
 # SPDX-License-Identifier: Apache-2.0
 # -----------------------------------------------------------------------
 # https://gerrit.lfbroadband.org/plugins/gitiles/onf-make
@@ -27,44 +27,44 @@ $(if $(DEBUG),$(warning ENTER))
 
 ## -----------------------------------------------------------------------
 ## Define vars based on relative import (normalize symlinks)
-## Usage: include makefiles-orig/onf/include.mk
+## Usage: include makefiles-orig/LF BB/include.mk
 ## -----------------------------------------------------------------------
 onf-mk-abs    ?= $(abspath $(lastword $(MAKEFILE_LIST)))
 onf-mk-top    := $(subst /include.mk,$(null),$(onf-mk-abs))
-ONF_MAKEDIR   := $(onf-mk-top)
+ONF-MAKEDIR   := $(onf-mk-top)
 
 TOP ?= $(patsubst %/makefiles-orig/include.mk,%,$(onf-mk-abs))
 
-include $(ONF_MAKEDIR)/consts.mk
-include $(ONF_MAKEDIR)/help/include.mk       # render target help
-include $(ONF_MAKEDIR)/utils/include.mk      # dependency-less helper macros
-include $(ONF_MAKEDIR)/etc/include.mk        # banner macros
-include $(ONF_MAKEDIR)/commands/include.mk   # Tools and local installers
+include $(ONF-MAKEDIR)/consts.mk
+include $(ONF-MAKEDIR)/help/include.mk       # render target help
+include $(ONF-MAKEDIR)/utils/include.mk      # dependency-less helper macros
+include $(ONF-MAKEDIR)/etc/include.mk        # banner macros
+include $(ONF-MAKEDIR)/commands/include.mk   # Tools and local installers
 
-include $(ONF_MAKEDIR)/virtualenv.mk#        # lint-{jjb,python} depends on venv
-include $(ONF_MAKEDIR)/patches/include.mk#   # Patch when python 3.10+ in use
-include $(ONF_MAKEDIR)/lint/include.mk
+include $(ONF-MAKEDIR)/virtualenv.mk#        # lint-{jjb,python} depends on venv
+include $(ONF-MAKEDIR)/patches/include.mk#   # Patch when python 3.10+ in use
+include $(ONF-MAKEDIR)/lint/include.mk
 
-include $(ONF_MAKEDIR)/gerrit/include.mk
-include $(ONF_MAKEDIR)/git/include.mk
-include $(ONF_MAKEDIR)/jjb/include.mk
+include $(ONF-MAKEDIR)/gerrit/include.mk
+include $(ONF-MAKEDIR)/git/include.mk
+include $(ONF-MAKEDIR)/jjb/include.mk
 
 $(if $(USE-VOLTHA-RELEASE-MK),\
-  $(eval include $(ONF_MAKEDIR)/release/include.mk))
+  $(eval include $(ONF-MAKEDIR)/release/include.mk))
 
-include $(ONF_MAKEDIR)/todo.mk
-include $(ONF_MAKEDIR)/help/variables.mk
+include $(ONF-MAKEDIR)/todo.mk
+include $(ONF-MAKEDIR)/help/variables.mk
 
 ##---------------------##
 ##---]  ON_DEMAND  [---##
 ##---------------------##
-$(if $(USE-ONF-GERRIT-MK),$(eval include $(ONF_MAKEDIR)/gerrit/include.mk))
-$(if $(USE-ONF-DOCKER-MK),$(eval include $(ONF_MAKEDIR)/docker/include.mk))
+$(if $(USE-LF-BB-GERRIT-MK),$(eval include $(ONF-MAKEDIR)/gerrit/include.mk))
+$(if $(USE-LF-BB-DOCKER-MK),$(eval include $(ONF-MAKEDIR)/docker/include.mk))
 
 ##-------------------##
 ##---]  TARGETS  [---##
 ##-------------------##
-include $(ONF_MAKEDIR)/targets/include.mk # clean, sterile
+include $(ONF-MAKEDIR)/targets/include.mk # clean, sterile
 
 $(if $(DEBUG),$(warning LEAVE))
 

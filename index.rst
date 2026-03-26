@@ -2,7 +2,7 @@ VOLTHA Documentation
 ====================
 
 `VOLTHA (Virtual OLT Hardware Abstraction
-<https://www.opennetworking.org/voltha/>`_ is an open source project to create a
+<https://lfbroadband.org/projects/voltha/>`_ is an open source project to create a
 hardware abstraction for broadband access equipment. It supports the principle
 of multi-vendor, disaggregated, "any broadband access as a service" for the
 Telco Central Office.
@@ -23,9 +23,7 @@ Key concepts in VOLTHA:
 - **Cloud/DevOps bridge to modernization**: it does all above while using a
   microservices architecture running on top of Docker and/or Kubernetes.
 
-VOLTHA is a sub-project of the `Open Networking Foundation's
-<https://www.opennetworking.org>`_ `CORD project
-<https://www.opennetworking.org/cord/>`_.
+VOLTHA is a project under the `Linux Foundation Broadband <https://lfbroadband.org>`.
 
 .. figure:: ./_static/voltha_diagram.svg
    :alt: VOLTHA Component Diagram

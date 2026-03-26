@@ -1,6 +1,6 @@
 # -*- makefile -*-
 # -----------------------------------------------------------------------
-# Copyright 2017-2022 Open Networking Foundation
+# Copyright 2017-2022 Linux Foundation Broadband
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -36,7 +36,7 @@ lint-doc8-modified : lint-doc8
 
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
-include $(ONF_MAKEDIR)/lint/doc8/excl.mk
+include $(ONF-MAKEDIR)/lint/doc8/excl.mk
 
 ifdef lint-doc8-excl
   lint-doc8-excl-args += $(addprefix --ignore-path$(space),$(lint-doc8-excl))

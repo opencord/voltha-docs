@@ -34,7 +34,7 @@ introduced in the olt, igmpproxy and mcast applications to better support TT mul
 
 All the described features, with the exception of the PPPoE and olt-topology apps, come with both a BBSim
 implementation and integration tests on hardware and software pods. The robot based integration tests that run
-nightly on hardware pods in the ONF infrastructure have now reached over 180+ tests. Preliminary tests have also
+nightly on hardware pods in the LF BB infrastructure have now reached over 180+ tests. Preliminary tests have also
 been introduced at scale for multicast in the Turk Telekom workflow, and long-term soak tests have been operational
 for two weeks at the time of this release in a dedicated hardware soak-pod.
 
@@ -117,8 +117,8 @@ Known Issues
 Certification Program
 ---------------------
 
-Thanks to the `Continuous Certification <https://opennetworking.org/continuous-certification-program>`_ program at
-ONF we can also ensure that the following ONF member products are compatible with the VOLTHA 2.7 release:
+Thanks to the `Continuous Certification <https://lfbroadband.org/continuous-certification-program>`_ program at
+LF BB we can also ensure that the following LF BB member products are compatible with the VOLTHA 2.7 release:
 
 - Edgecore ASGVolt64 GPON OLT
 - Edgecore ASXVolt16 XGSGPON OLT
@@ -130,7 +130,7 @@ ONF we can also ensure that the following ONF member products are compatible wit
 Jira stories
 ------------
 A full list of stories and bugs completed can be found under the
-`VOLTHA 2.7 <https://lf-broadband.atlassian.net/projects/VOL/versions/11900>`_ release page in Jira.
+`VOLTHA 2.7 <https://lf-broadband.atlassian.net/projects/VOL/versions/10019/tab/release-report-all-issues>`_ release page in Jira.
 
 Component Versions in VOLTHA 2.7 release
 ----------------------------------------
@@ -184,13 +184,13 @@ This section refers to the macro charts to deploy the required infrastructure an
 - Out of band management
 
   - ONL version (both GPON and XGSPON) ONL-onl-4.14_ONL-OS8_2020-04-14.1946-72b95a7_AMD64_INSTALLED_INSTALLER available
-    at /ASXvOLT16/OpenOLT_Agent/From_ONF_Distribution
-  - for ASFVOLT16 available, from /ASFvOLT16/OpenOLT_Agent/From_ONF_Distribution/voltha-2.7/OUT-OF-BAND.:
+    at /ASXvOLT16/OpenOLT_Agent/From_LF_BB_Distribution
+  - for ASFVOLT16 available, from /ASFvOLT16/OpenOLT_Agent/From_LF_BB_Distribution/voltha-2.7/OUT-OF-BAND.:
 
     - ``openolt_asfvolt16-3.3.3-1a5d68b50d8bcc5ba6cb1630d3294c30c37cd2f5-100G-NNI.deb`` if 100G NNI port is used
     - ``openolt_asfvolt16-3.3.3-1a5d68b50d8bcc5ba6cb1630d3294c30c37cd2f5-40G-NNI.deb`` if 40G NNI port is used.
 
-  - for ASGVOLT64 available at /ASGvOLT64/OpenOLT_Agent/From_ONF_Distribution/voltha-2.7/OUT-OF-BAND:
+  - for ASGVOLT64 available at /ASGvOLT64/OpenOLT_Agent/From_LF_BB_Distribution/voltha-2.7/OUT-OF-BAND:
 
     - ``openolt_asgvolt64-3.3.3-1a5d68b50d8bcc5ba6cb1630d3294c30c37cd2f5-100G-NNI.deb`` if 100G NNI port is used
     - ``openolt_asgvolt64-3.3.3-1a5d68b50d8bcc5ba6cb1630d3294c30c37cd2f5-40G-NNI.deb`` if 40G NNI port is used.
@@ -199,10 +199,10 @@ This section refers to the macro charts to deploy the required infrastructure an
 
   - use ONL image, comprising of Bal and openolt (available from edgecore site) for ASFVOLT16
     ONL-onl-4.14_ONL-OS8_2021-03-19.0322-72b95a7_AMD64_INSTALLED_INSTALLER-40G-NNI,
-    available at /ASXvOLT16/OpenOLT_Agent/From_ONF_Distribution/voltha-2.7/IN-BAND.
+    available at /ASXvOLT16/OpenOLT_Agent/From_LF_BB_Distribution/voltha-2.7/IN-BAND.
     Note that debian package available as part of the ONL support 40G NNI by default.
 
 
 Get access credentials for https://edgecore.quickconnect.to and then login
 and navigate to File_Station -> EdgecoreNAS, and then the folder
-/ASXvOLT16/OpenOLT_Agent/From_ONF_Distribution/ and pick the version above
+/ASXvOLT16/OpenOLT_Agent/From_LF_BB_Distribution/ and pick the version above

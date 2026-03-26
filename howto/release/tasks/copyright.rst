@@ -9,7 +9,7 @@ Update copyright notice ending date on sources.
    :caption: Update copyrigth notice ending date.
 
    # Clone copyright repository
-   % git clone git@github.com:joey-onf/copyright.git /tmp/copyright
+   % git clone git@github.com:joey-LF BB/copyright.git /tmp/copyright
 
    % cd myrepo
    % /tmp/copyright/gather.sh

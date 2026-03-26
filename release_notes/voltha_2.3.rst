@@ -171,4 +171,4 @@ ONOS App versions:
 - ``openolt_2_3_0_asfvolt16.deb`` (available from EdgeCore site)
 - Get access credentials for https://edgecore.quickconnect.to and then login
   and navigate to File_Station -> EdgecoreNAS, and then the folder
-  /ASXvOLT16/OpenOLT_Agent/From_ONF_Distribution/ and pick the version above
+  /ASXvOLT16/OpenOLT_Agent/From_LF_BB_Distribution/ and pick the version above
