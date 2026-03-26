@@ -16,7 +16,7 @@ Release also happens in a hierarchial manner due to dependencies.
 
     - Copyright notice ending date change.
 
-      - Bulk edit scripts: `gather-and-update.sh <https://github.com/joey-onf/copyright/blob/origin/master/gather-and-update.sh>`_, `morph.pl <https://github.com/joey-onf/copyright/blob/origin/master/morph.pl>`_.
+      - Bulk edit scripts: `gather-and-update.sh <https://github.com/joey-LF BB/copyright/blob/origin/master/gather-and-update.sh>`_, `morph.pl <https://github.com/joey-LF BB/copyright/blob/origin/master/morph.pl>`_.
 
     - Cosmetic comment changes in source.
     - Syntax formatting (gofmt -s -e -w)

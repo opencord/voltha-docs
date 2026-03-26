@@ -71,7 +71,7 @@ More details about scale jobs can be found `here <https://jenkins.lfbroadband.or
 Hardware (or Physical POD) Jobs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-OpenCord Jenkins host various regression jobs that runs on the ONF physical
+OpenCord Jenkins host various regression jobs that runs on the LF BB physical
 pods situated at different geographical locations.  Hardware jobs test both
 control and dataplane functionality of Voltha.
 
@@ -79,7 +79,7 @@ These hardware jobs are mostly defined in a combination of a build job and
 a test job.  The template for the jobs that run on physical pod is defined
 `here <https://github.com/opencord/ci-management/blob/master/jjb/voltha-test/voltha-nightly-jobs.yaml>`__.
 
-Some of the configurations that are currently being tested on ONF's
+Some of the configurations that are currently being tested on LF BB's
 Physical Pods are:
 
 - Default Technology Profile with master or LTS release build for ATT

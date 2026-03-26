@@ -1,6 +1,6 @@
 # -*- makefile -*-
 # -----------------------------------------------------------------------
-# Copyright 2017-2023 Open Networking Foundation (ONF) and the ONF Contributors
+# Copyright 2017-2023 Linux Foundation Broadband Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -42,7 +42,7 @@ endif# NO-LINT-FLAKE8
 # Construct: find . \( -name '__ignored__' -o -name dir -o name dir \)
 # flake8-find-filter := $(null)
 # flake8-find-filter += -name '__ignored__'#    # for alignment
-# flake8-find-filter += $(foreach dir,$(onf-excl-dirs),-o -name $(dir)))
+# flake8-find-filter += $(foreach dir,$(lf-bb-excl-dirs),-o -name $(dir)))
 
 lint-flake8-all: $(venv-activate-script)
 	$(HIDE)$(MAKE) --no-print-directory lint-flake8-install

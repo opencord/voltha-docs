@@ -1,6 +1,6 @@
 # -*- makefile -*-
 ## -----------------------------------------------------------------------
-# Copyright 2017-2023 Open Networking Foundation (ONF) and the ONF Contributors
+# Copyright 2017-2023 Linux Foundation Broadband Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,8 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # -----------------------------------------------------------------------
-# https://gerrit.lfbroadband.org/plugins/gitiles/onf-make
-# ONF.makefile.version = 1.2
+# https://gerrit.lfbroadband.org/plugins/gitiles/lf-bb-make
+# LF BB.makefile.version = 1.2
 # -----------------------------------------------------------------------
 
 $(if $(DEBUG),$(warning ENTER))

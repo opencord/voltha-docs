@@ -75,5 +75,5 @@ Component Versions
 - OpenOLT Agent using BAL 3.1 (voltha-2.2)
     - openolt_2_2_0_asfvolt16.deb (available from EdgeCore site)
     - | Get access credentials for https://edgecore.quickconnect.to and then login and navigate to File_Station ->
-      | EdgecoreNAS, and then the folder /ASXvOLT16/OpenOLT_Agent/From_ONF_Distribution/ and pick the version above
+      | EdgecoreNAS, and then the folder /ASXvOLT16/OpenOLT_Agent/From_LF_BB_Distribution/ and pick the version above
 

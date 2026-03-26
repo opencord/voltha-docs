@@ -138,7 +138,7 @@ Sample commit message
 Extra credit
 ------------
 
-- Update `copyright notice <https://github.com/joey-onf/copyright/blob/origin/master/notice>`_ in the year files are modified (`repo:copyright <https://github.com/joey-onf/copyright>`_).
+- Update `copyright notice <https://github.com/joey-LF BB/copyright/blob/origin/master/notice>`_ in the year files are modified (`repo:copyright <https://github.com/joey-LF BB/copyright>`_).
 
 - Syntax checking source
 
