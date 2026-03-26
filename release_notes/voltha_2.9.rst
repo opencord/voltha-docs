@@ -176,8 +176,8 @@ Known Issues
 Certification Program
 ---------------------
 
-Thanks to the `Continuous Certification <https://opennetworking.org/continuous-certification-program>`_ program at
-ONF we can also ensure that the following ONF member products are compatible with the VOLTHA 2.9 release:
+Thanks to the `Continuous Certification <https://lfbroadband.org/continuous-certification-program>`_ program at
+LF BB we can also ensure that the following LF BB member products are compatible with the VOLTHA 2.9 release:
 
 - Edgecore ASGVolt64 GPON OLT
 - Edgecore ASXVolt16 XGSGPON OLT
@@ -195,7 +195,7 @@ In particular the 2.8 release added the Radisys 3200G GPON OLT.
 Jira stories
 ------------
 A full list of stories and bugs completed can be found under the
-`VOLTHA 2.9 <https://lf-broadband.atlassian.net/projects/VOL/versions/12200>`_ release page in Jira.
+`VOLTHA 2.9 <https://lf-broadband.atlassian.net/projects/VOL/versions/10011/tab/release-report-all-issues>`_ release page in Jira.
 
 Component Versions in VOLTHA 2.9 release
 ----------------------------------------
@@ -253,11 +253,11 @@ Openolt Agent packages:
 **EdgeCore**
 Get access credentials for https://edgecore.quickconnect.to from Edgecore.
 Then login and navigate to ``File_Station`` -> ``EdgecoreNAS``, and then the folder
-``/ASXvOLT16/OpenOLT_Agent/From_ONF_Distribution/voltha-2.9`` or
-``/ASGvOLT64/OpenOLT_Agent/From_ONF_Distribution/voltha-2.9`` based on ``ASXvOLT16`` or ``ASGvOLT64`` platform,
+``/ASXvOLT16/OpenOLT_Agent/From_LF_BB_Distribution/voltha-2.9`` or
+``/ASGvOLT64/OpenOLT_Agent/From_LF_BB_Distribution/voltha-2.9`` based on ``ASXvOLT16`` or ``ASGvOLT64`` platform,
 and pick the suitable OLT debian package based on ``BAL 3.10.2.2`` applicable for you.
 Please make sure to use the ONL
-``/ASXvOLT16/OpenOLT_Agent/From_ONF_Distribution/ONL-onl-4.14_ONL-OS8_2021-11-26.0058-0de1c30_AMD64_INSTALLED_INSTALLER``
+``/ASXvOLT16/OpenOLT_Agent/From_LF_BB_Distribution/ONL-onl-4.14_ONL-OS8_2021-11-26.0058-0de1c30_AMD64_INSTALLED_INSTALLER``
 for running ``BAL 3.10.2.2``.
 
 **Radisys**

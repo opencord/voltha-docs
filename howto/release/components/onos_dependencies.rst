@@ -101,7 +101,7 @@ Update copyright notice to be inclusive of the year last modified
 
    <?xml version="1.0" encoding="UTF-8"?>
    <!--
-     ~ Copyright 2017-2023 Open Networking Foundation (ONF) and the ONF Contributors
+     ~ Copyright 2017-2023 Linux Foundation Broadband Contributors
      ~
      ~ Licensed under the Apache License, Version 2.0 (the "License");
    -->

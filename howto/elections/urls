@@ -3,7 +3,7 @@
 
 1) Update TSTmembers for VOLTHA, SEBA, etc:
    * https://lf-broadband.atlassian.net/wiki
-   * https://opennetworking.org/voltha/
+   * https://lfbroadband.org/projects/voltha/
    * Google mailing lists.
    * Slack channel: voltha-tst
    * Jenkins - job access.

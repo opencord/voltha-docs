@@ -1,6 +1,6 @@
 # -*- makefile -*-
 # -----------------------------------------------------------------------
-# Copyright 2021-2023 Open Networking Foundation (ONF) and the ONF Contributors
+# Copyright 2021-2023 Linux Foundation Broadband Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -38,7 +38,7 @@ replication-status:
 #  IdentitiesOnly yes
 #  AddKeysToAgent yes
 #  Port 29418
-#  User tux@opennetworking.org
+#  User tux@lfbroadband.org
 # -----------------------------------------------------------------------
 
 # [EOF]

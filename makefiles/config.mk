@@ -6,7 +6,7 @@
 ## -----------------------------------------------------------------------
 
 # -----------------------------------------------------------------------
-# Copyright 2023-2024 Open Networking Foundation Contributors
+# Copyright 2023-2024 Linux Foundation Broadband Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@
 # -----------------------------------------------------------------------
 # https://gerrit.lfbroadband.org/plugins/gitiles/onf-make
 # ONF.makefiles.include.version = 1.1
-# ONF.confg.mk                  = 1.5
+# LF BB.confg.mk                  = 1.5
 # -----------------------------------------------------------------------
 
 --repo-name-- := voltha-docs

@@ -1,9 +1,9 @@
 Copyright Notice
 ================
 
-Include a copyright notice with all submissions to ONF repositoreis.
+Include a copyright notice with all submissions to LF BB repositoreis.
 
-- ``Copyright 2017-2023 Open Networking Foundation Contributors``
+- ``Copyright 2017-2023 LF BB Contributors``
 - NOTE: Range values such as -present are not legally binding
 
   - Copyright notice should be dated to the last year sources were modified.

@@ -136,7 +136,7 @@ Design Discussions
 
 - OLT Disconnect and Reconnect
 - ONOS replacement controller (lightweight VOLTHA controller)
-- ONF/BBF integration and models extension
+- LF BB/BBF integration and models extension
 - COMBO PON support
 
 
@@ -166,8 +166,8 @@ Known Issues
 Certification Program
 ---------------------
 
-Thanks to the `Continuous Certification <https://opennetworking.org/continuous-certification-program>`_ program at
-ONF we can also ensure that the following ONF member products are compatible with the VOLTHA 2.10 release:
+Thanks to the `Continuous Certification <https://lfbroadband.org/continuous-certification-program>`_ program at
+LF BB we can also ensure that the following LF BB member products are compatible with the VOLTHA 2.10 release:
 
 - Edgecore ASGVolt64 GPON OLT
 - Edgecore ASXVolt16 XGSGPON OLT
@@ -186,7 +186,7 @@ In particular the 2.10 release added the Zyxel SDA3016SS COMBO OLT.
 Jira stories
 ------------
 A full list of stories and bugs completed can be found under the
-`VOLTHA 2.10 <https://lf-broadband.atlassian.net/secure/ReleaseNote.jspa?projectId=10106&version=12300>`_ release page in Jira.
+`VOLTHA 2.10 <https://lf-broadband.atlassian.net/projects/VOL/versions/10005/tab/release-report-all-issues>`_ release page in Jira.
 
 Component Versions in VOLTHA 2.10 release
 -----------------------------------------
@@ -244,11 +244,11 @@ Openolt Agent packages:
 **EdgeCore**
 Get access credentials for https://edgecore.quickconnect.to from Edgecore.
 Then login and navigate to ``File_Station`` -> ``EdgecoreNAS``, and then the folder
-``/ASXvOLT16/OpenOLT_Agent/From_ONF_Distribution/voltha-2.10`` or
-``/ASGvOLT64/OpenOLT_Agent/From_ONF_Distribution/voltha-2.10`` based on ``ASXvOLT16`` or ``ASGvOLT64`` platform,
+``/ASXvOLT16/OpenOLT_Agent/From_LF_BB_Distribution/voltha-2.10`` or
+``/ASGvOLT64/OpenOLT_Agent/From_LF_BB_Distribution/voltha-2.10`` based on ``ASXvOLT16`` or ``ASGvOLT64`` platform,
 and pick the suitable OLT debian package based on ``BAL 3.10.2.2`` applicable for you.
 Please make sure to use the ONL
-``/ASXvOLT16/OpenOLT_Agent/From_ONF_Distribution/ONL-onl-4.14_ONL-OS8_2021-11-26.0058-0de1c30_AMD64_INSTALLED_INSTALLER``
+``/ASXvOLT16/OpenOLT_Agent/From_LF_BB_Distribution/ONL-onl-4.14_ONL-OS8_2021-11-26.0058-0de1c30_AMD64_INSTALLED_INSTALLER``
 for running ``BAL 3.10.2.2``.
 
 **Radisys**
