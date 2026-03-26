@@ -47,7 +47,7 @@ Testing
 
   - Automated tests run on both hardware and BBSim platforms, please use the VOLTHA-2.4 view under https://jenkins.lfbroadband.org/
   - Sanity test on hardware for TT workflow
-  - In Band Management of OLT on one of the ONF Menlo testing pods
+  - In Band Management of OLT on one of the LF BB Menlo testing pods
   - GPON OLT test job in Berlin pod
 
 - Scale Tests
@@ -129,7 +129,7 @@ ONOS App versions:
 
 Get access credentials for https://edgecore.quickconnect.to and then login
 and navigate to File_Station -> EdgecoreNAS, and then the folder
-/ASXvOLT16/OpenOLT_Agent/From_ONF_Distribution/ and pick the version above
+/ASXvOLT16/OpenOLT_Agent/From_LF_BB_Distribution/ and pick the version above
 
 A full list of Jira tickets releated to the VOLTHA 2.4 release is available
 `here <https://docs.google.com/document/d/1BolYA52uJ0LVJkYz5SYPWdWamkt4J3yP6CLhH7FNjBg/edit?usp=sharing>`_ .

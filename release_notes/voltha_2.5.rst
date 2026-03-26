@@ -118,18 +118,18 @@ VOLTHA Components:
 - Out of band management
 
   - ONL version (both GPON and XGSPON) ONL-onl-4.14_ONL-OS8_2020-04-14.1946-72b95a7_AMD64_INSTALLED_INSTALLER available
-    at /ASXvOLT16/OpenOLT_Agent/From_ONF_Distribution
+    at /ASXvOLT16/OpenOLT_Agent/From_LF_BB_Distribution
   - ``openolt_asfvolt16-2.5.1-cb175000207c7dc9b1468189290ee3df80fadb4a.deb`` for ASFVOLT16 available at
-    /ASXvOLT16/OpenOLT_Agent/From_ONF_Distribution/voltha-2.5/OUT-OF-BAND
+    /ASXvOLT16/OpenOLT_Agent/From_LF_BB_Distribution/voltha-2.5/OUT-OF-BAND
   - ``openolt_asgvolt64-2.5.1-cb175000207c7dc9b1468189290ee3df80fadb4a.deb`` for ASGVOLT64 available at
-    /ASGvOLT64/OpenOLT_Agent/From_ONF_Distribution/voltha-2.5
+    /ASGvOLT64/OpenOLT_Agent/From_LF_BB_Distribution/voltha-2.5
 
 - In band management
 
   - use ONL image, comprising of Bal and openolt (available from edgecore site) for ASFVOLT16
     ``ONL-onl-4.14_ONL-OS8_2020-09-27.2315-72b95a7_AMD64_INSTALLED_INSTALLER-asfvolt16-inband-BAL3.4.7.5`` available at
-    /ASXvOLT16/OpenOLT_Agent/From_ONF_Distribution/voltha-2.5/IN-BAND
+    /ASXvOLT16/OpenOLT_Agent/From_LF_BB_Distribution/voltha-2.5/IN-BAND
 
 Get access credentials for https://edgecore.quickconnect.to and then login
 and navigate to File_Station -> EdgecoreNAS, and then the folder
-/ASXvOLT16/OpenOLT_Agent/From_ONF_Distribution/ and pick the version above
+/ASXvOLT16/OpenOLT_Agent/From_LF_BB_Distribution/ and pick the version above

@@ -1,6 +1,6 @@
 # -*- makefile -*-
 # -----------------------------------------------------------------------
-# Copyright 2023 Open Networking Foundation (ONF) and the ONF Contributors
+# Copyright 2023 Linux Foundation Broadband Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,11 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# SPDX-FileCopyrightText: 2023 Open Networking Foundation (ONF) and the ONF Contributors
+# SPDX-FileCopyrightText: 2023 Linux Foundation Broadband Contributors
 # SPDX-License-Identifier: Apache-2.0
 # -----------------------------------------------------------------------
 # https://gerrit.lfbroadband.org/plugins/gitiles/onf-make
-# ONF.makefile.version = 1.0
+# LF BB.makefile.version = 1.0
 # -----------------------------------------------------------------------
 # Setup:
 #   1) Makefile
@@ -33,42 +33,42 @@ $(if $(DEBUG),$(warning ENTER))
 
 ## -----------------------------------------------------------------------
 ## Define vars based on relative import (normalize symlinks)
-## Usage: include makefiles/onf/include.mk
+## Usage: include makefiles/LF BB/include.mk
 ## -----------------------------------------------------------------------
-onf-mk-abs    ?= $(abspath $(lastword $(MAKEFILE_LIST)))
-onf-mk-top    := $(subst makefiles/include.mk,$(null),$(onf-mk-abs))
+lf-bb-mk-abs    ?= $(abspath $(lastword $(MAKEFILE_LIST)))
+lf-bb-mk-top    := $(subst makefiles/include.mk,$(null),$(lf-bb-mk-abs))
 
 LEGACY := 1
 ifdef LEGACY
   # Cleanup patch forthcoming
-  onf-mk-lib    := $(onf-mk-top)/makefiles-orig
+  lf-bb-mk-lib    := $(lf-bb-mk-top)/makefiles-orig
 else
-  onf-mk-lib    := $(onf-mk-top)/makefiles/onf-lib/makefiles
+  lf-bb-mk-lib    := $(lf-bb-mk-top)/makefiles/onf-lib/makefiles
 endif
 
-onf-mk-loc    := $(onf-mk-top)/makefiles/local
-TOP           ?= $(onf-mk-top)
+lf-bb-mk-loc    := $(lf-bb-mk-top)/makefiles/local
+TOP           ?= $(lf-bb-mk-top)
 
 ## ------------------------------------------------------
 ## Two distinct vars needed to access library or project
 ## ------------------------------------------------------
-ONF_MAKEDIR ?= $(onf-mk-lib)
-MAKEDIR     ?= $(onf-mk-loc)
+LF_BB_MAKEDIR ?= $(lf-bb-mk-lib)
+MAKEDIR     ?= $(lf-bb-mk-loc)
 
 ## -----------------------------------------------------------------------
 ## Load makefiles in order:
 ##   1) Library constants and logic loaded first
 ##   2) Parameterize and augment targets from local (repo specific)
 ## -----------------------------------------------------------------------
-include $(onf-mk-top)/makefiles/config.mk
-include $(onf-mk-lib)/include.mk
-include $(onf-mk-loc)/include.mk
+include $(lf-bb-mk-top)/makefiles/config.mk
+include $(lf-bb-mk-lib)/include.mk
+include $(lf-bb-mk-loc)/include.mk
 
 ## -----------------------------------------
 ## Submodue init target for new repositories
 ## -----------------------------------------
-create-onf-lib : $(onf-mk-lib)
-$(onf-mk-lib):
+create-onf-lib : $(lf-bb-mk-lib)
+$(lf-bb-mk-lib):
 	mkdir -p $(dir $@)# makefiles
 	cd $(dir $@) \
 	    && git submodule https://github.com/opencord/onf-make.git onf-lib

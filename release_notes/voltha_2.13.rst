@@ -529,7 +529,7 @@ Slack
 Mailing List
 ++++++++++++
 
-  - `voltha-discuss@opennetworking.org <https://groups.google.com/a/opennetworking.org/g/voltha-discuss>`_.
+  - `discuss@lists.voltha.org <https://lists.voltha.org/g/discuss>`_.
 
 Weekly TST Meetings
 +++++++++++++++++++
@@ -540,7 +540,7 @@ Weekly TST Meetings
 Website(s)
 ++++++++++
 
-  - `onf/VOLTHA <https://opennetworking.org/voltha/>`_
+  - `LF BB/VOLTHA <https://lfbroadband.org/projects/voltha/>`_
   - `docs.voltha.org <https://docs.voltha.org>`_
   - `Wiki <https://lf-broadband.atlassian.net/wiki>`_
 

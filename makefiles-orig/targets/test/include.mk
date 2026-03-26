@@ -1,6 +1,6 @@
 # -*- makefile -*-
 # -----------------------------------------------------------------------
-# Copyright 2022-2023 Open Networking Foundation (ONF) and the ONF Contributors
+# Copyright 2022-2023 Linux Foundation Broadband Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,17 +14,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# SPDX-FileCopyrightText: 2022-2023 Open Networking Foundation (ONF) and the ONF Contributors
+# SPDX-FileCopyrightText: 2022-2023 Linux Foundation Broadband Contributors
 # SPDX-License-Identifier: Apache-2.0
 # -----------------------------------------------------------------------
 # https://gerrit.lfbroadband.org/plugins/gitiles/onf-make
-# ONF.makefile.version = 1.0
+# LF BB.makefile.version = 1.0
 # -----------------------------------------------------------------------
 
 $(if $(DEBUG),$(warning ENTER))
 
 # Special snowflake: repository-dependent test target
--include $(ONF_MAKEDIR)/targets/test/$(--repo-name--).mk
+-include $(LF_BB_MAKEDIR)/targets/test/$(--repo-name--).mk
 
 $(if $(DEBUG),$(warning LEAVE))
 

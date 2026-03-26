@@ -1,6 +1,6 @@
 # -*- makefile -*-
 # -----------------------------------------------------------------------
-# Copyright 2024 Open Networking Foundation Contributors
+# Copyright 2024 Linux Foundation Broadband Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # -----------------------------------------------------------------------
-# SPDX-FileCopyrightText: 2024 Open Networking Foundation Contributors
+# SPDX-FileCopyrightText: 2024 Linux Foundation Broadband Contributors
 # SPDX-License-Identifier: Apache-2.0
 # -----------------------------------------------------------------------
 
@@ -27,7 +27,7 @@ lf-sbx-root   := $(abspath $(lastword $(MAKEFILE_LIST)))
 lf-sbx-root   := $(subst /lf/transition.mk,$(null),$(lf-sbx-root))
 
 legacy-mk   ?= $(lf-sbx-root)/makefiles
-onf-mk-dir  ?= $(lf-sbx-root)/lf/onf-make/makefiles
+lf-bb-mk-dir  ?= $(lf-sbx-root)/lf/onf-make/makefiles
 
 sandbox-root := $(lf-sbx-root)
 
@@ -36,10 +36,10 @@ sandbox-root := $(lf-sbx-root)
 ## -----------------------------------------------------------------------
 GIT ?= /usr/bin/env git
 
-git-submodule-deps += $(onf-mk-dir)/consts.mk
-git-submodule-deps += $(onf-mk-dir)/etc/features.mk         # $(call banner-enter)
-git-submodule-deps += $(onf-mk-dir)/virtualenv/include.mk   # make venv
-git-submodule-deps += $(onf-mk-dir)/commands/pre-commit/include.mk
+git-submodule-deps += $(lf-bb-mk-dir)/consts.mk
+git-submodule-deps += $(lf-bb-mk-dir)/etc/features.mk         # $(call banner-enter)
+git-submodule-deps += $(lf-bb-mk-dir)/virtualenv/include.mk   # make venv
+git-submodule-deps += $(lf-bb-mk-dir)/commands/pre-commit/include.mk
 
 # git-submodule-deps    : $(git-submodule-deps)
 
@@ -57,10 +57,10 @@ TOP ?= $(lf-sbx-root)
 ##--------------------##
 ##---]  INCLUDES  [---##
 ##--------------------##
-include $(onf-mk-dir)/consts.mk
-include $(onf-mk-dir)/etc/features.mk         # $(call banner-enter)
-include $(onf-mk-dir)/virtualenv/include.mk   # make venv
-include $(onf-mk-dir)/commands/pre-commit/include.mk
+include $(lf-bb-mk-dir)/consts.mk
+include $(lf-bb-mk-dir)/etc/features.mk         # $(call banner-enter)
+include $(lf-bb-mk-dir)/virtualenv/include.mk   # make venv
+include $(lf-bb-mk-dir)/commands/pre-commit/include.mk
 
 include $(TOP)/makefiles/include.mk      # top level include
 
