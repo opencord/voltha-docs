@@ -41,7 +41,7 @@ After changes in the code are made and verified the following steps are needed:
 #. Update Minor Version of the component
 #. Build a new version of the needed component to update
 #. update the component's minor version in the helm chart
-#. | issue the helm upgrade command. If the changes have been already upstreamed to ONF the upstream chart
+#. | issue the helm upgrade command. If the changes have been already upstreamed to LF BB the upstream chart
    | `onf/<component name>` can be used, otherwise a local copy of the chart is required.
 
 Following is an example of the `helm` command to upgrade the openonu adapter.
@@ -50,7 +50,7 @@ Topics, kv store paths and kafka endpoints need to be adapted to the specific de
 .. code:: bash
 
     helm upgrade --install --create-namespace \
-      -n voltha1 opeonu-adapter onf/voltha-adapter-openonu \
+      -n voltha1 opeonu-adapter LF BB/voltha-adapter-openonu \
       --set global.stack_name=voltha1 \
       --set adapter_open_onu.kv_store_data_prefix=service/voltha/voltha1_voltha1 \
       --set adapter_open_onu.topics.core_topic=voltha1_voltha1_rwcore \
@@ -211,7 +211,7 @@ pointing new controller endpoints. Only the `ofagent` pod will be restarted.
     --set 'voltha.services.controller[2].service=voltha-infra1-onos-classic-2.voltha-infra1-onos-classic-hs.infra1.svc' \
     --set 'voltha.services.controller[2].port=6653' \
     --set 'voltha.services.controller[2].address=voltha-infra1-onos-classic-2.voltha-infra1-onos-classic-hs.infra1.svc:6653' \
-    --set global.log_level=WARN --namespace voltha voltha onf/voltha-stack
+    --set global.log_level=WARN --namespace voltha voltha LF BB/voltha-stack
 
 ETCD
 ----
@@ -268,7 +268,7 @@ thus leveraging the data stored in ETCD.
     --set 'voltha.services.controller[2].service=voltha-infra-onos-classic-2.voltha-infra-onos-classic-hs.infra.svc' \
     --set 'voltha.services.controller[2].port=6653' \
     --set 'voltha.services.controller[2].address=voltha-infra-onos-classic-2.voltha-infra-onos-classic-hs.infra.svc:6653' \
-    --set global.log_level=WARN --namespace voltha voltha onf/voltha
+    --set global.log_level=WARN --namespace voltha voltha LF BB/voltha
 
 
 .. _openolt-update:

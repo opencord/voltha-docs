@@ -10,7 +10,7 @@ Copyright Notice: Json syntax
           "version": 1,
       },
       "copyright-notice" : {
-          "SPDX-FileCopyrightText" : "2024 Open Networking Foundation Contributors",
+          "SPDX-FileCopyrightText" : "2024 Linux Foundation Broadband Contributors",
           "SPDX-License-Identifier" : "Apache-2.0"
       }
    }

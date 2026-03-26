@@ -91,8 +91,8 @@ Known Issues
 Certification Program
 ---------------------
 
-Thanks to the Continuous Certification program at ONF we can also ensure
-that the following ONF member products are compatible with the VOLTHA 2.11
+Thanks to the Continuous Certification program at LF BB we can also ensure
+that the following LF BB member products are compatible with the VOLTHA 2.11
 release:
 
 - Edgecore ASGVolt64 GPON OLT
@@ -104,7 +104,7 @@ release:
 Jira stories
 ------------
 A full list of stories and bugs completed can be found under the
-`VOLTHA 2.11 <https://lf-broadband.atlassian.net/projects/VOL/versions/12500>`_ (`formatted <https://lf-broadband.atlassian.net/secure/ReleaseNote.jspa?projectId=10106&version=12500>`_) release page in Jira.
+`VOLTHA 2.11 <https://lf-broadband.atlassian.net/projects/VOL/versions/10013/tab/release-report-all-issues>`_ release page in Jira.
 
 |
 

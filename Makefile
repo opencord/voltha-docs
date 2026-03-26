@@ -1,6 +1,6 @@
 # -*- makefile -*-
 # -----------------------------------------------------------------------
-# Copyright 2022-2025 Open Networking Foundation Contributors
+# Copyright 2022-2025 Linux Foundation Broadband Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # -----------------------------------------------------------------------
-# SPDX-FileCopyrightText: 2022-2025 Open Networking Foundation Contributors
+# SPDX-FileCopyrightText: 2022-2025 Linux Foundation Broadband Contributors
 # SPDX-License-Identifier: Apache-2.0
 # -----------------------------------------------------------------------
 # Intent: Makefile for Sphinx documentation
@@ -81,7 +81,7 @@ reload: $(venv-activate-script)
 ## -----------------------------------------------------------------------
 test: lint linkcheck
 
-# [TODO] relocate into repo:onf-make/
+# [TODO] relocate into repo:lf-bb-make/
 lint      : $(venv-activate-script)
 linkcheck : $(venv-activate-script)
 
@@ -106,7 +106,7 @@ test-all : test
 
 # -----------------------------------------------------------------------
 #  currently not enabled, should be added to lint target
-# [TODO] Create repo:onf-make/makefiles/lint/mdl
+# [TODO] Create repo:lf-bb-make/makefiles/lint/mdl
 # -----------------------------------------------------------------------
 LINT_STYLE ?= mdl_strict.rb
 md-lint: | $(OTHER_REPO_DOCS)

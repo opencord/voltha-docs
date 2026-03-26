@@ -98,7 +98,7 @@ The job will need to be initiated using specific parameters, for an example view
 2. Wait for build to complete
 
 3. Merge the component patches on gerrit
-   - `View <https://gerrit.lfbroadband.org/q/owner:do-not-reply%2540opennetworking.org>`_
+   - `View <https://gerrit.lfbroadband.org/q/owner:do-not-reply%2540lfbroadband.org>`_
    - Two pull requests are created modifying pom.xml.
    - Approve patch one (-SNAPSHOT: no)  to initiate a release build.
    - Approve patch two (-SNAPSHOT: yes) to revert pom.xml to a non-release version.

@@ -32,8 +32,8 @@ Cookbook: Patch #1
 
 - Release notes: content and hilights:
 
-  - Ask `VOLTHA TST(s) <https://opennetworking.org/voltha/>`_ to write up the release notes documentation.
-  - ONF will work on filling in the grid of dependent components and apps
+  - Ask `VOLTHA TST(s) <https://lfbroadband.org/projects/voltha/>`_ to write up the release notes documentation.
+  - LF BB will work on filling in the grid of dependent components and apps
     at the bottom as they are built during a release cycle.
 
 - Pre-screen your patch for potential problems, ``make test`` failures will cause patch acceptance to fail.
@@ -75,8 +75,8 @@ Cookbook: Patch #2
 
 Release independent changes
 ---------------------------
-- Update `copyright notice dates <https://github.com/joey-onf/copyright/blob/origin/master/notice>`_
+- Update `copyright notice dates <https://github.com/joey-LF BB/copyright/blob/origin/master/notice>`_
 
-  - VALID: Copyright 2017-2023 Open Networking Foundation (ONF) and the ONF Contributors
+  - VALID: Copyright 2017-2023 Linux Foundation Broadband Contributors
   - Copyright notice must be inclusive of the date sources were last modified.
   - Use of strings like 2017-present are not valid syntax and can have legal implications.

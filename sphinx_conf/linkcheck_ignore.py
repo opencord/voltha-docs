@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # -----------------------------------------------------------------------
-# Copyright 2017-2024 Open Networking Foundation Contributors
+# Copyright 2017-2024 Linux Foundation Broadband Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # -----------------------------------------------------------------------
-# SPDX-FileCopyrightText: 2017-2024 Open Networking Foundation Contributors
+# SPDX-FileCopyrightText: 2017-2024 Linux Foundation Broadband Contributors
 # SPDX-License-Identifier: Apache-2.0
 # -----------------------------------------------------------------------
 # Intent: Configuration file for the Sphinx documentation builder.
@@ -89,7 +89,7 @@ linkcheck_ignore.extend([
 
     # (testing/certification: line    5) broken
     # This page no longer exists. A note has been added to the page.
-    r'https://opennetworking.org/marketplace/.*',
+    r'https://lfbroadband.org/marketplace/.*',
 
     # (overview/contributing: line   51) broken
     # Page exists, but certificate is no longer good. This wiki is deprecated,

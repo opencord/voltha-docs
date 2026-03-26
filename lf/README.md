@@ -4,9 +4,9 @@ Library makefiles
 $(sandbox-root)/include.mk
     Source this makefile to import all makefile logic.
 
-$(sandbox-root)/lf/onf-make/
-$(sandbox-root)/lf/onf-make/include.mk
-    repo:onf-make contains common library makefile logic.
+$(sandbox-root)/lf/lf-bb-make/
+$(sandbox-root)/lf/lf-bb-make/include.mk
+    repo:lf-bb-make contains common library makefile logic.
     tag based checkout (frozen) as a git submodule.
 
 $(sandbox-root)/lf/local/
@@ -16,7 +16,7 @@ $(sandbox-root)/lf/local/include.mk
 <!--
 
 # -----------------------------------------------------------------------
-# Copyright 2024 Open Networking Foundation Contributors
+# Copyright 2024 Linux Foundation Broadband Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@ $(sandbox-root)/lf/local/include.mk
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # -----------------------------------------------------------------------
-# SPDX-FileCopyrightText: 2024 Open Networking Foundation Contributors
+# SPDX-FileCopyrightText: 2024 Linux Foundation Broadband Contributors
 # SPDX-License-Identifier: Apache-2.0
 # -----------------------------------------------------------------------
 # Intent:

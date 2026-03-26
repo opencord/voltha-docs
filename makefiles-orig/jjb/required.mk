@@ -1,6 +1,6 @@
 # -*- makefile -*-
 # -----------------------------------------------------------------------
-# Copyright 2022-2023 Open Networking Foundation (ONF) and the ONF Contributors
+# Copyright 2022-2023 Linux Foundation Broadband Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,16 +18,16 @@
 #   var ?= $(error ...) definitions are fatal to "make help" and others
 # -----------------------------------------------------------------------
 
-onf-mk-jjb-targets := $(NULL)
-onf-mk-jjb-targets += jjb-gen
-onf-mk-jjb-targets += sterile
+lf-bb-mk-jjb-targets := $(NULL)
+lf-bb-mk-jjb-targets += jjb-gen
+lf-bb-mk-jjb-targets += sterile
 
 # -----------------------------------------------------------------------
 # Define a flag to only load release targets when mentioned by name
 # Makefile can also explicitly define the flag to force always loading.
 # -----------------------------------------------------------------------
-$(foreach tgt,$(onf-mk-jjb-targets),\
-  $(if $(findstring $(tgt),$(MAKECMDGOALS)),$(eval USE-ONF-JJB-MK := true))\
+$(foreach tgt,$(lf-bb-mk-jjb-targets),\
+  $(if $(findstring $(tgt),$(MAKECMDGOALS)),$(eval USE-LF-BB-JJB-MK := true))\
 )
 
 # [EOF]

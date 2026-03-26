@@ -16,7 +16,7 @@ where they are installed through ``helm`` charts.
 The location of the ``kubernetes`` cluster is not of a concern of the VOLTHA project per se, it can be deployed in a
 data center, on the cloud or on the OLT box itself if the hardware is powerful enough, e.g. multi-chassis OLTs.
 Proper considerations should be made by the operator around failure and resiliency of the system in any of these
-different deployments. ONF recommends to deploy the ``kubernetes`` cluster on a 3 node bare metal cluster located
+different deployments. LF BB recommends to deploy the ``kubernetes`` cluster on a 3 node bare metal cluster located
 close to the OLT(s) location, e.g. operator's Central Office.
 
 Alongside VOLTHA and ONOS, the Device Manager, a (optional) component which implements the

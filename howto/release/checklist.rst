@@ -77,7 +77,7 @@ Once dependent packages are built update helm charts:  charts/index
 
 .. code:: bash
 
-   helm upgrade --install --create-namespace -n infra --version 2.8.0 voltha-infra onf/voltha-infra
+   helm upgrade --install --create-namespace -n infra --version 2.8.0 voltha-infra LF BB/voltha-infra
 
 voltha-stack
 ^^^^^^^^^^^^
@@ -85,7 +85,7 @@ voltha-stack
 .. code:: bash
 
    helm upgrade --install --create-namespace \
-       -n voltha voltha onf/voltha-stack \
+       -n voltha voltha LF BB/voltha-stack \
        --set global.stack_name=voltha \
        --set global.voltha_infra_name=voltha-infra \
        --set global.voltha_infra_namespace=infra
@@ -104,7 +104,7 @@ Misc
 
 .. code:: bash
 
-   helm upgrade --install -n voltha bbsim0 onf/bbsim --set olt_id=10
+   helm upgrade --install -n voltha bbsim0 LF BB/bbsim --set olt_id=10
 
    # https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts#deploying-a-different-workflow
    kubectl get pods --all-namespaces
