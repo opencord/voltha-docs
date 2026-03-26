@@ -4,11 +4,11 @@ Product Certification with VOLTHA
 
 .. attention::
 
-    This page contains outdated information, as the ONF marketplace is no longer
+    This page contains outdated information, as the LF BB marketplace is no longer
     available.
 
-VOLTHA is part of the `continuous certification program at ONF <https://opennetworking.org/continuous-certification-program/>`_.
-You can see the currently certified products in the `ONF marketplace <https://opennetworking.org/marketplace/?_product_project=voltha>`_.
+VOLTHA is part of the `continuous certification program at LF BB <https://lfbroadband.org/continuous-certification-program/>`_.
+You can see the currently certified products in the `LF BB marketplace <https://lfbroadband.org/marketplace/?_product_project=voltha>`_.
 
 The following document describes the procedure to include and certify an
 OLT or an ONU with VOLTHA.  The process of getting a product certified
@@ -23,15 +23,15 @@ consists of several phases:
   to maintain the created tests.
 
 Finally a brief Description of the device and a point of contact need to
-be sent to `Michelle Roth @ ONF <mroth@linuxfoundation.org>`_ to be
-showcased in the `marketplace <https://opennetworking.org/marketplace/?_product_project=voltha>`_ after successful verification.
+be sent to `Michelle Roth @ LF BB <mroth@linuxfoundation.org>`_ to be
+showcased in the `marketplace <https://lfbroadband.org/marketplace/?_product_project=voltha>`_ after successful verification.
 
 Once all these steps are completed the product will be certified for
 the next release of VOLTHA.  Let's describe each phase in detail.
 
 Vendor's premises Testing
 -------------------------
-The first step is for the vendor to guarantee that the OLT or the ONU are VOLTHA compatible is complying got ONF's
+The first step is for the vendor to guarantee that the OLT or the ONU are VOLTHA compatible is complying got LF BB's
 automated sanity test.
 To do so we suggest setting up a HW test pod according as described in the `physical setup guide <https://docs.voltha.org/master/overview/lab_setup.html>`_.
 
@@ -41,17 +41,17 @@ If those pass the hardware is ready to be shown to the VOLTHA TST.
 Showcase to VOLTHA TST
 ----------------------
 Once the OLT has passed tests in the Vendor lab it's ready to be showcased to the VOLTHA Technical Steering Team.
-The request needs to be performed to the Technical TST leader or to `Timon Sloane <timon@opennetworking.org>`_ who will
+The request needs to be performed to the Technical TST leader or to `Timon Sloane <timon@lfbroadband.org>`_ who will
 forward the request appropriately.
 During a scheduled TST meeting (Tuesday 8 AM PST) the vendor will showcase the OLT/ONU to the TST by starting from a
 fresh VOLTHA instance, connecting the OLT and then performing the Sanity test.
-With the test passing the TST will give approval for shipment of the device (ONU/OLT) to an ONF community lab.
+With the test passing the TST will give approval for shipment of the device (ONU/OLT) to an LF BB community lab.
 
-ONF's community lab integration
+LF BB's community lab integration
 -------------------------------
 
 Once the TST has given approval for device integration in VOLTHA nighly tests the Vendor needs to ship the device to
-any one of the ONF community lab, including a wiring diagram (if needed) Currently there are two locations:
+any one of the LF BB community lab, including a wiring diagram (if needed) Currently there are two locations:
 
 - DT Office in Berlin, Germany. Address: Winterfeldtstraße 21, 10781 Berlin, Germany. Point of contact `Bjoern Nagel @ DT <NagelB@telekom.de>`_
 
@@ -62,7 +62,7 @@ assigned according to the network of the pod.
 
 For an ONU it will be connected to one of the existing OLTs in the pod,
 according to space, technology and topology requirements.  Once all the
-racking and wiring is complete the device will appear under the ONF network,
+racking and wiring is complete the device will appear under the LF BB network,
 accessible via VPN.
 
 Automated CI Jobs
@@ -107,8 +107,8 @@ certified for each of the following VOLTHA releases.
 
 
 
-ONF Contacts
+LF BB Contacts
 ------------
 For any further information please contact:
 
-- `Michelle Roth <mroth@opennetworking.org>`_
+- `Michelle Roth <mroth@lfbroadband.org>`_

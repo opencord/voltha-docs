@@ -1,6 +1,6 @@
 # -*- makefile -*-
 # -----------------------------------------------------------------------
-# Copyright 2017-2023 Open Networking Foundation (ONF) and the ONF Contributors
+# Copyright 2017-2023 Linux Foundation Broadband Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License")
 # you may not use this file except in compliance with the License.
@@ -45,9 +45,9 @@ endif# NO-LINT-PYLINT
 # Construct: find . \( -name '__ignored__' -o -name dir -o name dir \)
 # pylint-find-filter := $(null)
 # pylint-find-filter += -name '__ignored__'#   # for alignment
-# pylint-find-filter += $(foreach dir,$(onf-excl-dirs),-o -name $(dir)))
+# pylint-find-filter += $(foreach dir,$(lf-bb-excl-dirs),-o -name $(dir)))
 
-# pylint-find-filter := $(call gen-python-find-excl,onf-excl-dirs)
+# pylint-find-filter := $(call gen-python-find-excl,lf-bb-excl-dirs)
 # $(error pylint-find-filter := $(pylint-find-filter))
 lint-pylint-all: $(venv-activate-script)
 	$(MAKE) --no-print-directory lint-pylint-install

@@ -6,7 +6,7 @@
 ## -----------------------------------------------------------------------
 
 # -----------------------------------------------------------------------
-# Copyright 2023-2024 Open Networking Foundation Contributors
+# Copyright 2023-2024 Linux Foundation Broadband Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@
 # -----------------------------------------------------------------------
 # https://gerrit.lfbroadband.org/plugins/gitiles/onf-make
 # ONF.makefiles.include.version = 1.1
-# ONF.confg.mk                  = 1.5
+# LF BB.confg.mk                  = 1.5
 # -----------------------------------------------------------------------
 
 --repo-name-- := voltha-docs
@@ -54,8 +54,8 @@ NO-LINT-PYLINT      := true#               # Note[1]
 ##---------------------------------##
 ##---] Conditional make logic  [---##
 ##---------------------------------##
-# USE-ONF-DOCKER-MK      := true
-# USE-ONF-GERRIT-MK      := true
+# USE-LF-BB-DOCKER-MK      := true
+# USE-LF-BB-GERRIT-MK      := true
 # USE-ONF-GIT-MK         := true
 # USE-ONF-JJB-MK         := true
 # USE-VOLTHA-RELEASE-MK  := true
@@ -77,14 +77,14 @@ JOBCONFIG_DIR ?= job-configs
 ##---------------------------------##
 ##---]  Filesystem exclusions  [---##
 ##---------------------------------##
-onf-excl-dirs := $(null)        # make clean: dirs=
-onf-excl-dirs += lf/onf-make    # repo:onf-make git submodule
-onf-excl-dirs += .venv#         # $(venv-name)
-onf-excl-dirs += vendor#        # golang / voltha*-go
-onf-excl-dirs += patches#       # voltha docs - python upgrade
-onf-excl-dirs += .tmp           #
-onf-excl-dirs += .tox           # also a python dependency
-# onf-excl-dirs += vendor#        # golang / voltha*-go -- local exclude
+lf-bb-excl-dirs := $(null)        # make clean: dirs=
+lf-bb-excl-dirs += lf/onf-make    # repo:onf-make git submodule
+lf-bb-excl-dirs += .venv#         # $(venv-name)
+lf-bb-excl-dirs += vendor#        # golang / voltha*-go
+lf-bb-excl-dirs += patches#       # voltha docs - python upgrade
+lf-bb-excl-dirs += .tmp           #
+lf-bb-excl-dirs += .tox           # also a python dependency
+# lf-bb-excl-dirs += vendor#        # golang / voltha*-go -- local exclude
 
 # [NOTE] Add exclusions: lint/doc8/doc8.incl
 
@@ -92,7 +92,7 @@ ifeq ($(--repo-name--),voltha-docs)
   lint-doc8-excl += '_build'  # generated
 endif
 
-onf-excl-dirs ?= $(error onf-excl-dirs= is required)
+lf-bb-excl-dirs ?= $(error lf-bb-excl-dirs= is required)
 
 ##-----------------------------##
 ##---]  Feature Detection  [---##
@@ -109,22 +109,22 @@ $(if $(filter %voltha-docs,$(--repo-name--)),\
 )
 
 # create makefiles/config/byrepo/{--repo-name--}.mk for one-off snowflakes ?
-# $(if $(wildcard docker),$(eval USE-ONF-DOCKER-MK := true))
+# $(if $(wildcard docker),$(eval USE-LF-BB-DOCKER-MK := true))
 
 ##-------------------------##
 ##---]  Derived Flags  [---##
 ##-------------------------##
 ifdef --REPO-IS-CI-MANAGEMENT--
-  USE-ONF-JJB := true
+  USE-LF-BB-JJB := true
 
-  onf-excl-dirs += global-jjb
-  onf-excl-dirs += lf-ansible
-  onf-excl-dirs += packer
+  lf-bb-excl-dirs += global-jjb
+  lf-bb-excl-dirs += lf-ansible
+  lf-bb-excl-dirs += packer
 endif
 
 ifdef --REPO-IS-VOLTHA-DOCS--
-  onf-excl-dirs += _build
-  onf-excl-dirs += repos
+  lf-bb-excl-dirs += _build
+  lf-bb-excl-dirs += repos
 endif
 
 ifdef NO-LINT-PYTHON
@@ -132,11 +132,11 @@ ifdef NO-LINT-PYTHON
   NO-LINT-PYLINT := true
 endif
 
-ifndef USE-ONF-JJB
+ifndef USE-LF-BB-JJB
   NO-LINT-JJB := true
 endif
 
-onf-excl-dirs := $(sort $(strip $(onf-excl-dirs)))
+lf-bb-excl-dirs := $(sort $(strip $(lf-bb-excl-dirs)))
 
 # --------------------------------------------------------------------
 # [TODO]#
@@ -144,7 +144,7 @@ onf-excl-dirs := $(sort $(strip $(onf-excl-dirs)))
 #   o two distinct makefiles directories are needed, one for onf-make
 #   o second for repository specific configs and logic.
 #   o Two independent vars specify path:
-#       ONF_MAKEDIR = library makefiles
+#       ONF-MAKEDIR = library makefiles
 #       MAKEDIR     = repository specific content
 #   o Conditional repository testing above can crush down into
 #     include $(MAKEDIR)/config.mk   # repo:$(--repo-name--)

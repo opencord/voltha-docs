@@ -79,7 +79,7 @@ git log can be used to search for them.
    % git log --author="joey" | less
 
    commit 23ce887c4cb3f98506536e00c58ffc8c2af16afe
-   Author: Joey Armstrong <joey@opennetworking.org>
+   Author: Joey Armstrong <joey@lfbroadband.org>
    Date:   Thu Aug 24 09:46:22 2023 -0400
 
       [VOL-5009] - Update release notes

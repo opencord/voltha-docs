@@ -1,6 +1,6 @@
 # -*- makefile -*-
 # -----------------------------------------------------------------------
-# Copyright 2023-2024 Open Networking Foundation Contributors
+# Copyright 2023-2024 Linux Foundation Broadband Contributors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # -----------------------------------------------------------------------
-# SPDX-FileCopyrightText: 2023-2024 Open Networking Foundation Contributors
+# SPDX-FileCopyrightText: 2023-2024 Linux Foundation Broadband Contributors
 # SPDX-License-Identifier: Apache-2.0
 # -----------------------------------------------------------------------
 
@@ -46,7 +46,7 @@ legacy-mk     := $(lf-sbx-root)/makefiles
 ## ------------------------------------------------------
 ## Two distinct vars needed to access library or project
 ## ------------------------------------------------------
-ONF_MAKEDIR ?= $(onf-mk-lib)
+ONF-MAKEDIR ?= $(onf-mk-lib)
 MAKEDIR     ?= $(onf-mk-loc)
 
 # -----------------------------------------------------------------------
