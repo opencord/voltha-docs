@@ -123,16 +123,17 @@ Releases
      - Dec 30, 2023
      -
      -
-    * - `VOLTHA 2.13 <../release_notes/voltha_2.13.html>`_
+   * - `VOLTHA 2.13 <../release_notes/voltha_2.13.html>`_
      - Jan 1, 2024
      - June 30, 2024
      -
-     -   * - `VOLTHA 2.14 <../release_notes/voltha_2.14.html>`_
+     -
+   * - `VOLTHA 2.14 <../release_notes/voltha_2.14.html>`_
      - July 1, 2024
      - Dec 30, 2024
      -
      -
-     * - `VOLTHA 2.15 <../release_notes/voltha_2.15.html>`_
+   * - `VOLTHA 2.15 <../release_notes/voltha_2.15.html>`_
      - Jan 1, 2025
      - June 30, 2025
      -
