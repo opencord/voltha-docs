@@ -124,8 +124,10 @@ prep_commands = [
 # smv_tag_whitelist = disabled^ # Was = None
 smv_tag_whitelist = "disabled_a^"  # Was = None
 
-# inlcude only the branches matching master and voltha-*
-smv_branch_whitelist = r"^(master|voltha-.*)$"
+# Exclude voltha-2.4 and voltha-2.5: their Makefiles clone the kind-voltha
+# repository which no longer exists, causing multiversion builds to fail.
+# All other voltha-* branches do not reference kind-voltha and build cleanly.
+smv_branch_whitelist = r"^(master|voltha-2\.(?!4$|5$)\d.*)$"
 
 # include all remote branches
 smv_remote_whitelist = r"^.*$"
