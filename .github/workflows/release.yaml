@@ -1,0 +1,67 @@
+---
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 The Linux Foundation
+
+name: voltha-docsrelease
+
+# yamllint disable-line rule:truthy
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    # Mirrors the values previously defined for the 'sync-dir' job in
+    # ci-management/jjb/repos/voltha-docs.yaml
+    env:
+      BUILD_OUTPUT_PATH: "_build/multiversion/"
+      SYNC_TARGET_USER: "jenkins"
+      SYNC_TARGET_SERVER: "static.lfbroadband.org"
+      SYNC_TARGET_PATH: "/srv/sites/docs.voltha.org/"
+
+    steps:
+      - name: Checkout repository
+        # yamllint disable-line rule:line-length
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        with:
+          # Full history, branches and tags are required by
+          # sphinx-multiversion to build every documented version
+          fetch-depth: 0
+
+      - name: Configure Python
+        # yamllint disable-line rule:line-length
+        uses: actions/setup-python@83679a892e2d95755f2dac6acb0bfd1e9ac5d548 # v6.1.0
+        with:
+          python-version: "3.10"
+
+      - name: Build multiversion documentation
+        env:
+          # Makefile uses GERRIT_BRANCH to identify the current branch
+          GERRIT_BRANCH: ${{ github.ref_name }}
+        run: make multiversion
+
+      - name: Configure SSH access to docs server
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.STATIC_LFBB_JENKINS_SSH_KEY }}
+        run: |
+          set -eu
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H "$SYNC_TARGET_SERVER" >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Sync documentation to docs server
+        run: |
+          set -eu -o pipefail
+          rsync -rvzh --delete-after --exclude=.git \
+            "$BUILD_OUTPUT_PATH" \
+            "${SYNC_TARGET_USER}@${SYNC_TARGET_SERVER}:${SYNC_TARGET_PATH}"
