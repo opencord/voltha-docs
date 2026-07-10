@@ -8,9 +8,9 @@ name: voltha-docsrelease
 on:
   workflow_dispatch:
   push:
-    branches:
-      - master
-      - main
+    # Only invoked on release tag pushes
+    tags:
+      - v*.*.*
 
 permissions:
   contents: read
