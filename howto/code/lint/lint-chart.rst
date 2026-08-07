@@ -8,7 +8,7 @@ Helm Charts
 
 ### Command(s):
 
-- `chart_version_check.sh <https://gerrit.lfbroadband.org/plugins/gitiles/helm-repo-tools/+/refs/heads/master/chart_version_check.sh>`_
+- `chart_version_check.sh <https://github.com/opencord/helm-repo-tools/blob/master/chart_version_check.sh>`_
 
 .. code:: bash
 
@@ -17,8 +17,8 @@ Helm Charts
 
 Sources:
 
-- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/makefiles/lint/>`__
-- `makefiles/lint/helm/include.mk <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/makefiles/lint/helm/include.mk>`_
-- [`master <https://gerrit.lfbroadband.org/plugins/gitiles/helm-repo-tools/+/refs/heads/master>`__] `helm-repo-tools <https://gerrit.lfbroadband.org/plugins/gitiles/helm-repo-tools>`_
+- `makefiles/lint <https://github.com/opencord/voltha-helm-charts/tree/master/makefiles/lint>`__
+- `makefiles/lint/helm/include.mk <https://github.com/opencord/voltha-helm-charts/blob/master/makefiles/lint/helm/include.mk>`_
+- [`master <https://github.com/opencord/helm-repo-tools/tree/master>`__] `helm-repo-tools <https://github.com/opencord/helm-repo-tools>`_
 
 |

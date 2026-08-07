@@ -10,10 +10,10 @@ Update Instructions
 -------------------
 
 - This action should be performed after all build and component releases.
-- Clone `repo:voltha-docs <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs>`_
-- Naviagate to the `release_notes <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs/+/refs/heads/master/release_notes/>`_ folder.
+- Clone `repo:voltha-docs <https://github.com/opencord/voltha-docs>`_
+- Naviagate to the `release_notes <https://github.com/opencord/voltha-docs/tree/master/release_notes>`_ folder.
 - Copy the last voltha_X.Y.rst document name name it for the upcoming release.
-- Update `index.rst <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs/+/refs/heads/master/release_notes/index.rst>`_ so documents are displayed in order.
+- Update `index.rst <https://github.com/opencord/voltha-docs/blob/master/release_notes/index.rst>`_ so documents are displayed in order.
 
 Release Notes
 -------------
@@ -41,4 +41,4 @@ See Also
 - Release notes template
 
   - Rendered html `docs.voltha.org <https://docs.voltha.org/master/release_notes/template.html>`_
-  - Markup source `rst <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs/+/refs/heads/master/release_notes/template.rst>`_
+  - Markup source `rst <https://github.com/opencord/voltha-docs/blob/master/release_notes/template.rst>`_

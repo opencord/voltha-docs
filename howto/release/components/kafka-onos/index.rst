@@ -1,22 +1,22 @@
 ONOS Component: kafka-onos
 ==========================
 
-- `repository:kafka-onos <https://gerrit.lfbroadband.org/plugins/gitiles/kafka-onos>`_
+- `repository:kafka-onos <https://github.com/opencord/kafka-onos>`_
 
 Dependencies (pom.xml)
 ----------------------
 
-- `pom.xml <https://gerrit.lfbroadband.org/plugins/gitiles/kafka-onos/+/refs/heads/master/pom.xml>`_
+- `pom.xml <https://github.com/opencord/kafka-onos/blob/master/pom.xml>`_
 
-  - `onos-dependencies <https://gerrit.lfbroadband.org/plugins/gitiles/kafka-onos/+/refs/heads/master/pom.xml#24>`_
-  - `properties <https://gerrit.lfbroadband.org/plugins/gitiles/kafka-onos/+/refs/heads/master/pom.xml#35>`_
+  - `onos-dependencies <https://github.com/opencord/kafka-onos/blob/master/pom.xml#L24>`_
+  - `properties <https://github.com/opencord/kafka-onos/blob/master/pom.xml#L35>`_
 
-- `app.xml <https://gerrit.lfbroadband.org/plugins/gitiles/kafka-onos/+/refs/heads/master/app.xml#30>`_
+- `app.xml <https://github.com/opencord/kafka-onos/blob/master/app.xml#L30>`_
 
   - Contains packages and versions (onos versions detailed elsewhere)
   - artifact: kafka-clients
 
-- `features.xml <https://gerrit.lfbroadband.org/plugins/gitiles/kafka-onos/+/refs/heads/master/features.xml>`_
+- `features.xml <https://github.com/opencord/kafka-onos/blob/master/features.xml>`_
 
 Dependencies: Maven Plugins
 ---------------------------

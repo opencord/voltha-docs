@@ -178,61 +178,61 @@ ONOS Apps
      - N/A
      - ``2.9.0``
      -
-     - `X <https://gerrit.lfbroadband.org/plugins/gitiles/aaa/+/refs/tags/2.9.0>`__
+     - `X <https://github.com/opencord/aaa/tree/2.9.0>`__
      - `X <https://github.com/opencord/aaa/tree/2.9.0>`__
    * - `bng <https://gerrit.lfbroadband.org/gitweb?p=bng.git;a=summary>`_
      -
      - ``2.4.0``
      -
      - `X <https://github.com/opencord/bng/tree/2.4.0>`__
-     - `X <https://gerrit.lfbroadband.org/plugins/gitiles/bng/+/refs/tags/2.4.0>`__
+     - `X <https://github.com/opencord/bng/tree/2.4.0>`__
    * - `dhcpl2relay <https://gerrit.lfbroadband.org/gitweb?p=dhcpl2relay.git;a=summary>`_
      -
      - ``2.9.0``
      -
-     - `X <https://gerrit.lfbroadband.org/plugins/gitiles/dhcpl2relay/+/refs/tags/2.9.0>`__
+     - `X <https://github.com/opencord/dhcpl2relay/tree/2.9.0>`__
      - `X <https://github.com/opencord/dhcpl2relay/tree/2.9.0>`__
    * - `igmpproxy <https://gerrit.lfbroadband.org/gitweb?p=igmpproxy.git;a=summary>`_
      -
      - ``2.7.0``
      -
-     - `X <https://gerrit.lfbroadband.org/plugins/gitiles/igmpproxy/+/refs/tags/2.7.0>`__
+     - `X <https://github.com/opencord/igmpproxy/tree/2.7.0>`__
      - `X <https://github.com/opencord/igmpproxy/tree/2.7.0>`__
    * - `kafka <https://gerrit.lfbroadband.org/gitweb?p=kafka-onos.git;a=summary>`_
      -
      - ``2.11.1``
      -
-     - `X <https://gerrit.lfbroadband.org/plugins/gitiles/kafka-onos/+/refs/tags/2.11.1>`__
+     - `X <https://github.com/opencord/kafka-onos/tree/2.11.1>`__
      - `X <https://github.com/opencord/kafka-onos/tree/2.11.1>`__
    * - `mcast <https://gerrit.lfbroadband.org/gitweb?p=mcast.git;a=summary>`_
      -
      - ``2.8.0``
      -
-     - `X <https://gerrit.lfbroadband.org/plugins/gitiles/mcast/+/refs/tags/2.8.0>`__
+     - `X <https://github.com/opencord/mcast/tree/2.8.0>`__
      - `X <https://github.com/opencord/mcast/tree/2.8.0>`__
    * - `olt <https://gerrit.lfbroadband.org/gitweb?p=olt.git;a=summary>`_
      -
      - ``5.2.3``
      -
-     - `X <https://gerrit.lfbroadband.org/plugins/gitiles/olt/+/refs/tags/5.2.3>`__
+     - `X <https://github.com/opencord/olt/tree/5.2.3>`__
      - `X <https://github.com/opencord/olt/tree/5.2.3>`__
    * - `sadis <https://gerrit.lfbroadband.org/gitweb?p=sadis.git;a=summary>`_
      -
      - ``5.10.0``
      -
-     - `X <https://gerrit.lfbroadband.org/plugins/gitiles/sadis/+/refs/tags/5.10.0>`__
      - `X <https://github.com/opencord/sadis/tree/5.10.0>`__
-   * - `pppoeagent <https://gerrit.lfbroadband.org/plugins/gitiles/pppoeagent/>`_
+     - `X <https://github.com/opencord/sadis/tree/5.10.0>`__
+   * - `pppoeagent <https://github.com/opencord/pppoeagent>`_
      -
      - ``1.2.0``
      -
-     - `X <https://gerrit.lfbroadband.org/plugins/gitiles/pppoeagent/+/refs/tags/1.2.1>`__
      - `X <https://github.com/opencord/pppoeagent/tree/1.2.1>`__
-   * - `olttopology <https://gerrit.lfbroadband.org/plugins/gitiles/olttopology/>`_
+     - `X <https://github.com/opencord/pppoeagent/tree/1.2.1>`__
+   * - `olttopology <https://github.com/opencord/olttopology>`_
      -
      - ``1.2.0``
      -
-     - `X <https://gerrit.lfbroadband.org/plugins/gitiles/olttopology/+/refs/tags/1.2.1>`__
+     - `X <https://github.com/opencord/olttopology/tree/1.2.1>`__
      - `X <https://github.com/opencord/olttopology/tree/1.2.1>`__
 
 VOLTHA Components
@@ -267,7 +267,7 @@ VOLTHA Components
      - ``3.2.2-dev1``
      -
      -
-     - `X <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master>`__
+     - `X <https://github.com/opencord/voltha-helm-charts/tree/master>`__
      - `X <https://github.com/opencord/voltha-helm-charts/tree/3.2.0>`__
      -
    * - `bbsim <https://gerrit.lfbroadband.org/gitweb?p=bbsim.git;a=tree>`__
@@ -280,8 +280,8 @@ VOLTHA Components
    * - `Bbsim-sadis-server <https://gerrit.lfbroadband.org/gitweb?p=bbsim-sadis-server.git;a=tree>`_
      -
      - ``0.3.4``
-     - `0.3.2 <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/bbsim-sadis-server/Chart.yaml>`_
-     - `X <https://gerrit.lfbroadband.org/plugins/gitiles/bbsim-sadis-server/+/refs/tags/v0.3.4>`_
+     - `0.3.2 <https://github.com/opencord/voltha-helm-charts/blob/master/bbsim-sadis-server/Chart.yaml>`_
+     - `X <https://github.com/opencord/bbsim-sadis-server/tree/v0.3.4>`_
      - `X <https://github.com/opencord/bbsim-sadis-server/releases/tag/v0.3.4>`__
      -
    * - `ofagent-go <https://gerrit.lfbroadband.org/gitweb?p=ofagent-go.git;a=tree>`_
@@ -302,56 +302,56 @@ VOLTHA Components
      - ``1.8.3``
      -
      -
-     - `X <https://gerrit.lfbroadband.org/plugins/gitiles/voltctl/+/refs/tags/v1.8.3>`__
+     - `X <https://github.com/opencord/voltctl/tree/v1.8.3>`__
      - `X <https://github.com/opencord/voltctl/tree/v1.8.3>`__
      -
    * - `voltha-go <https://gerrit.lfbroadband.org/gitweb?p=voltha-go.git;a=tree>`_
      - ``3.1.8``
      - docker
      - ``2.11.3``
-     - `X <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-go/+/refs/tags/v3.1.8>`__
+     - `X <https://github.com/opencord/voltha-go/tree/v3.1.8>`__
      - `X <https://github.com/opencord/voltha-go/tree/v3.1.8>`__
      -
-   * - `voltha-lib-go <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-lib-go>`_
+   * - `voltha-lib-go <https://github.com/opencord/voltha-lib-go>`_
      - ``2.11.3 (?)``
      - ``7.3.2``
      -
-     - `X <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-lib-go/+/refs/tags/v7.3.2>`__
+     - `X <https://github.com/opencord/voltha-lib-go/tree/v7.3.2>`__
      - `X <https://github.com/opencord/voltha-lib-go/releases/tag/v7.3.2>`__
      -
    * - `voltha-onos <https://gerrit.lfbroadband.org/gitweb?p=voltha-onos.git;a=tree>`_
      -
      - ``5.1.2``
      - ``0.1.27``
-     - `X <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-onos/+/refs/tags/5.1.3>`__
+     - `X <https://github.com/opencord/voltha-onos/tree/5.1.3>`__
      - `X <https://github.com/opencord/voltha-onos/tree/5.1.3>`__
      - `X <https://hub.docker.com/layers/voltha/voltha-onos/5.1.3/images/sha256-d9c686acf177ed823ff359dc43ba59aab05ae067be27c92e48c08b72f94b9ca3?context=explore>`__
    * - `voltha-openonu-adapter-go <https://gerrit.lfbroadband.org/gitweb?p=voltha-openonu-adapter-go.git;a=tree>`_
      -
      - ``2.7.3``
      -
-     - `X <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-openonu-adapter-go/+/refs/tags/v2.7.3>`__
+     - `X <https://github.com/opencord/voltha-openonu-adapter-go/tree/v2.7.3>`__
      - `X <https://github.com/opencord/voltha-openonu-adapter-go/tree/v2.7.3>`__
      - `X <https://hub.docker.com/layers/voltha/voltha-openonu-adapter-go/2.7.3/images/sha256-e9484a8963d08748af5766a6a8ce7f7485efb384488bcf93840ecc1142d7ad74?context=explore>`__
    * - `voltha-openolt-adapter <https://gerrit.lfbroadband.org/gitweb?p=voltha-openolt-adapter.git;a=tree>`_
      - ``v4.2.12``
      - ``4.2.6``
      -
-     - `X <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-openolt-adapter/+/refs/tags/v4.2.12>`__
+     - `X <https://github.com/opencord/voltha-openolt-adapter/tree/v4.2.12>`__
      - `X <https://github.com/opencord/voltha-openolt-adapter/tree/v4.2.12>`__
      - `X <https://hub.docker.com/layers/voltha/voltha-openolt-adapter/4.2.12/images/sha256-844eac272323dc8bca10880a111957a95839578b3210dd777be5ac9370aaa52e?context=explore>`__
-   * - `voltha-protos <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-protos>`_
+   * - `voltha-protos <https://github.com/opencord/voltha-protos>`_
      -
      - `5.3.8 <https://pypi.org/project/voltha-protos/5.3.8>`__
      -
-     - `X <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-protos/+/refs/tags/v5.3.8>`__
+     - `X <https://github.com/opencord/voltha-protos/tree/v5.3.8>`__
      - `X <https://github.com/opencord/voltha-protos/tree/v5.3.8>`__
      -
    * - `voltha-system-tests <https://github.com/opencord/voltha-system-tests/releases/tag/2.9.0>`__
      - ``2.11.10``
      -
      -
-     - `X <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-system-tests/+/refs/tags/2.11.10>`__
+     - `X <https://github.com/opencord/voltha-system-tests/tree/2.11.10>`__
      - `X <https://github.com/opencord/voltha-system-tests/tree/2.11.10>`__
      -
    * - maclearner

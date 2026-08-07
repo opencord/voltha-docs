@@ -47,16 +47,16 @@ Packages
 
   - DEPS: sadis
 
-- Package `sadis <https://gerrit.lfbroadband.org/plugins/gitiles/sadis/>`_
+- Package `sadis <https://github.com/opencord/sadis>`_
 
   - Versions
 
-    - `New: 5.11.1-SNAPSHOT <https://gerrit.lfbroadband.org/plugins/gitiles/sadis/+/refs/heads/master/pom.xml#30>`_
+    - `New: 5.11.1-SNAPSHOT <https://github.com/opencord/sadis/blob/master/pom.xml#L30>`_
     - `Old: (5.10.0) <https://central.sonatype.com/artifact/org.opencord/sadis/5.10.0?smo=true>`_
 
   - VCS
 
-    - `gerrit <https://gerrit.lfbroadband.org/plugins/gitiles/sadis/+/refs/tags/5.11.0>`_
+    - `gerrit <https://github.com/opencord/sadis/tree/5.11.0>`_
     - `github <https://github.com/opencord/sadis/tree/5.10.0>`_
 
   - DEPS:
@@ -73,7 +73,7 @@ voltha-infra
 ^^^^^^^^^^^^
 
 Once dependent packages are built update helm charts:  charts/index
-- Verify by `installation <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts>`_
+- Verify by `installation <https://github.com/opencord/voltha-helm-charts>`_
 
 .. code:: bash
 
@@ -93,10 +93,10 @@ voltha-stack
 Verify DT & TT
 ^^^^^^^^^^^^^^
 
-`deploying-a-different-workflow <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts#deploying-a-different-workflow>`_
+`deploying-a-different-workflow <https://github.com/opencord/voltha-helm-charts#deploying-a-different-workflow>`_
 
 Update
-https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-stack/Chart.yaml
+https://github.com/opencord/voltha-helm-charts/blob/master/voltha-stack/Chart.yaml
 
 
 Misc
@@ -106,7 +106,7 @@ Misc
 
    helm upgrade --install -n voltha bbsim0 onf/bbsim --set olt_id=10
 
-   # https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts#deploying-a-different-workflow
+   # https://github.com/opencord/voltha-helm-charts#deploying-a-different-workflow
    kubectl get pods --all-namespaces
 
 
@@ -167,7 +167,7 @@ Version(s) of external packages in the vendor/ directory may need to be updated.
    * - make mod-update
      - Update go mod files
 
-Review `voltha-helm-charts <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts>`_
+Review `voltha-helm-charts <https://github.com/opencord/voltha-helm-charts>`_
 
 Release voltha-protos & friends in order
 ----------------------------------------

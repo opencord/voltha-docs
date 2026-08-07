@@ -88,9 +88,9 @@ The job will need to be initiated using specific parameters, for an example view
 1. `Build with parameters <https://jenkins.lfbroadband.org/job/onos-app-release>`_: use the name of the repo (not of the app itself)
    - appRepo: sadis
    - appName: sadis
-   - apiVersion: `sadis:5.12.0-SNAPSHOT <https://gerrit.lfbroadband.org/plugins/gitiles/sadis/+/refs/heads/master/api/pom.xml#22>`__
+   - apiVersion: `sadis:5.12.0-SNAPSHOT <https://github.com/opencord/sadis/blob/master/api/pom.xml#L22>`__
    - nextApiVersion: version+1
-   - version: `sadis:5.12.0-SNAPSHOT <https://gerrit.lfbroadband.org/plugins/gitiles/sadis/+/refs/heads/master/app/pom.xml#20>`__
+   - version: `sadis:5.12.0-SNAPSHOT <https://github.com/opencord/sadis/blob/master/app/pom.xml#L20>`__
    - nextVersion: version+1
    - branch: master
    - jdkDistro: java-11-amazon-corretto
@@ -199,7 +199,7 @@ there are 4 more elements that need to be tagged:
 - `VOLTHA Helm Charts <https://github.com/opencord/voltha-helm-charts>`_
 - `VOLTHA System Tests <https://github.com/opencord/voltha-system-tests>`_
 - `VOLTHA docs <https://github.com/opencord/voltha-docs>`_
-- `repo:ci-management <https://gerrit.lfbroadband.org/plugins/gitiles/ci-management>`_
+- `repo:ci-management <https://github.com/opencord/ci-management>`_
 
 These 4 repos are the only ones that receive a X.Y.Z tag.
 Other repos that contain individual components have their own
@@ -294,7 +294,7 @@ If a fix is needed to the components/containers that are included by the helm ch
 
 If a fix is needed to the ONOS apps:
 
-- Create a branch here https://gerrit.lfbroadband.org/plugins/gitiles/olt/+/refs/heads/olt-4.1
+- Create a branch here https://github.com/opencord/olt/tree/olt-4.1
 - then `Git checkout -b <branch-name> opencord/<version>`
 - Then push a commit changing to `.1-SNAPSHOT` more (see e.g. https://gerrit.lfbroadband.org/c/igmpproxy/+/19589)
 - Then push you changes (e.g. https://gerrit.lfbroadband.org/c/igmpproxy/+/19590)

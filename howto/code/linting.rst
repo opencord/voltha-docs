@@ -155,11 +155,11 @@ Command: `doc8 <https://pypi.org/project/doc8/>`_
 
    * - Source
      - Description
-   * - `makefiles/lint/doc8/include.mk <http://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/doc8/include.mk>`_
+   * - `makefiles/lint/doc8/include.mk <https://github.com/opencord/onf-make/blob/master/makefiles/lint/doc8/include.mk>`_
      - Main makefile logic for syntax checking RST sources.
-   * - `makefiles/lint/doc8/install.mk <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/doc8/install.mk>`_
+   * - `makefiles/lint/doc8/install.mk <https://github.com/opencord/onf-make/blob/master/makefiles/lint/doc8/install.mk>`_
      - Dependency logic to install the doc8 tool when needed.
-   * - `makefiles/lint/doc8/excl.mk <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/doc8/install.mk>`_
+   * - `makefiles/lint/doc8/excl.mk <https://github.com/opencord/onf-make/blob/master/makefiles/lint/doc8/install.mk>`_
      - Common doc8 exclusion patterns for all repositories.
 
 See Also
@@ -184,7 +184,7 @@ Command: `flake8 <https://flake8.pycqa.org/en/latest>`_
 
 Sources:
 
-- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint <https://github.com/opencord/onf-make/tree/master/makefiles/lint>`__
 - makefiles/lint/flake8.mk
 
 Notes:
@@ -200,7 +200,7 @@ Command:
 
 Sources:
 
-- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint <https://github.com/opencord/onf-make/tree/master/makefiles/lint>`__
 
 |
 
@@ -219,8 +219,8 @@ Command: `json.tool <https://docs.python.org/3/library/json.html>`_
 
 Sources:
 
-- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
-- `makefiles/lint/json.mk <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/json.mk>`_
+- `makefiles/lint <https://github.com/opencord/onf-make/tree/master/makefiles/lint>`__
+- `makefiles/lint/json.mk <https://github.com/opencord/onf-make/blob/master/makefiles/lint/json.mk>`_
 
 |
 
@@ -237,8 +237,8 @@ Command:
 
 Sources:
 
-- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-system-tests/+/refs/heads/master/makefiles/lint>`__
-- `makefiles/lint/license.mk <http://gerrit.lfbroadband.org/plugins/gitiles/voltha-system-tests/+/refs/heads/master/makefiles/lint/license/include.mk>`_
+- `makefiles/lint <https://github.com/opencord/voltha-system-tests/tree/master/makefiles/lint>`__
+- `makefiles/lint/license.mk <https://github.com/opencord/voltha-system-tests/blob/master/makefiles/lint/license/include.mk>`_
 
 |
 
@@ -257,9 +257,9 @@ Command: `pylint <http://github.com/pylint-dev/pylint>`_, `pypi.org <https://pyp
 
 Sources:
 
-- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
+- `makefiles/lint <https://github.com/opencord/onf-make/tree/master/makefiles/lint>`__
 - makefiles/lint/pylint.mk
-- `makefiles/patches/include.mk <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs/+/refs/heads/master/makefiles-orig/patches/>`__
+- `makefiles/patches/include.mk <https://github.com/opencord/voltha-docs/tree/master/makefiles-orig/patches>`__
 
 Notes:
 
@@ -283,8 +283,8 @@ Command: `shellcheck <https://github.com/koalaman/shellcheck>`_
 
 Sources:
 
-- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
-- `makefiles/lint/shell.mk <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/shell/include.mk>`_
+- `makefiles/lint <https://github.com/opencord/onf-make/tree/master/makefiles/lint>`__
+- `makefiles/lint/shell.mk <https://github.com/opencord/onf-make/blob/master/makefiles/lint/shell/include.mk>`_
 
 |
 
@@ -303,8 +303,8 @@ Command: `yamllint <https://yamllint.readthedocs.io/en/stable/>`_
 
 Sources:
 
-- `makefiles/lint <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/>`__
-- `makefiles/lint/yaml.mk <https://gerrit.lfbroadband.org/plugins/gitiles/onf-make/+/refs/heads/master/makefiles/lint/yaml.mk>`_
+- `makefiles/lint <https://github.com/opencord/onf-make/tree/master/makefiles/lint>`__
+- `makefiles/lint/yaml.mk <https://github.com/opencord/onf-make/blob/master/makefiles/lint/yaml.mk>`_
 
 |
 
@@ -323,11 +323,11 @@ Bugs
 Repositories
 ============
 
-- [`master <https://gerrit.lfbroadband.org/plugins/gitiles/bbsim/+/refs/heads/master>`__] `bbsim <https://gerrit.lfbroadband.org/plugins/gitiles/bbsim>`_
-- [`master <https://gerrit.lfbroadband.org/plugins/gitiles/pod-configs/+/refs/heads/master>`__] `pod-configs <https://gerrit.lfbroadband.org/plugins/gitiles/pod-configs>`_
-- [`master <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs/+/refs/heads/master>`__] `voltha-docs <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs>`_
-- [`master <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master>`__] `voltha-helm-charts <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts>`_
-- [`master <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs/+/refs/heads/master>`__] `voltha-docs <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs>`_
+- [`master <https://github.com/opencord/bbsim/tree/master>`__] `bbsim <https://github.com/opencord/bbsim>`_
+- [`master <https://github.com/opencord/pod-configs/tree/master>`__] `pod-configs <https://github.com/opencord/pod-configs>`_
+- [`master <https://github.com/opencord/voltha-docs/tree/master>`__] `voltha-docs <https://github.com/opencord/voltha-docs>`_
+- [`master <https://github.com/opencord/voltha-helm-charts/tree/master>`__] `voltha-helm-charts <https://github.com/opencord/voltha-helm-charts>`_
+- [`master <https://github.com/opencord/voltha-docs/tree/master>`__] `voltha-docs <https://github.com/opencord/voltha-docs>`_
 
 |
 

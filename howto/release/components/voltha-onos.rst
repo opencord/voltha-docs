@@ -8,7 +8,7 @@ Release Steps
 
 - After all ONOS component dependencies have been released.
 - Clone the :vol-ger:`voltha-onos` repository.
-- Modify `dependencies.xml <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-onos/+/refs/heads/master/dependencies.xml>`_
+- Modify `dependencies.xml <https://github.com/opencord/voltha-onos/blob/master/dependencies.xml>`_
 
   - Update copyright notice.
   - Update released version for each component.

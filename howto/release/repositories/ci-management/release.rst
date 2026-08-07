@@ -3,7 +3,7 @@
 Repository: ci-management
 =========================
 
-- `repo:ci-management <https://gerrit.lfbroadband.org/plugins/gitiles/ci-management>`_
+- `repo:ci-management <https://github.com/opencord/ci-management>`_
 - First repsitory to release.
 - One of only three repositories to branch-then-tag.
 - Dependency for releasing all other repositories, test suites are

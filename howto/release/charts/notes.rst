@@ -1,8 +1,8 @@
 RELEASE: voltha-helm-charts
 ===========================
 
-- Repository `voltha-helm-charts <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master>`_.
-- Modify `VERSION file <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/VERSION>`_.
+- Repository `voltha-helm-charts <https://github.com/opencord/voltha-helm-charts/tree/master>`_.
+- Modify `VERSION file <https://github.com/opencord/voltha-helm-charts/blob/master/VERSION>`_.
 
   - For release remove all version decorations: -dev, -SNAPSHOT
 
@@ -17,4 +17,4 @@ RELEASE: voltha-helm-charts
 onos
 ----
 
-- Update ONOS components `voltha-infra/values.yaml <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-helm-charts/+/refs/heads/master/voltha-infra/values.yaml>`_
+- Update ONOS components `voltha-infra/values.yaml <https://github.com/opencord/voltha-helm-charts/blob/master/voltha-infra/values.yaml>`_

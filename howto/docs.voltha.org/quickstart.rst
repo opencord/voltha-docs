@@ -29,7 +29,7 @@ Clone repo:voltha-docs
    git checkout -b dev-joey
 
 Repositories:
-[`gerrit <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs>`_],
+[`gerrit <https://github.com/opencord/voltha-docs>`_],
 [`github <https://github.com/opencord/voltha-docs>`_]
 
 .. code-block:: shell-session

@@ -3,7 +3,7 @@
 Modifying repository voltha-protos
 ==================================
 
-#. Clone repository `voltha-protos <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-protos/+/refs/heads/master>`_
+#. Clone repository `voltha-protos <https://github.com/opencord/voltha-protos/tree/master>`_
 #. Modify structures, sources & makefiles as needed.
 #. Build, test and lint locally to validate sources.
 #. Commit changes, code review, jenins build and deploy.
@@ -54,23 +54,23 @@ Update all external repositories to consume the new repo:voltha-protos version
    * - Repository
      - File(s) to edit
    * - bbsim
-     - `go.mod <https://gerrit.lfbroadband.org/plugins/gitiles/bbsim/+/refs/heads/master/go.mod>`_
+     - `go.mod <https://github.com/opencord/bbsim/blob/master/go.mod>`_
    * - ofagent-go
-     - `go.mod <https://gerrit.lfbroadband.org/plugins/gitiles/ofagent-go/+/refs/heads/master/go.mod>`__
+     - `go.mod <https://github.com/opencord/ofagent-go/blob/master/go.mod>`__
    * - voltctl
-     - `go.mod <https://gerrit.lfbroadband.org/plugins/gitiles/voltctl/+/refs/heads/master/go.mod>`__
+     - `go.mod <https://github.com/opencord/voltctl/blob/master/go.mod>`__
    * - voltha-go
-     - `go.mod <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-go/+/refs/heads/master/go.mod>`__
+     - `go.mod <https://github.com/opencord/voltha-go/blob/master/go.mod>`__
    * - voltha-go-controller
-     - `go.mod <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-go-controller/+/refs/heads/master/go.mod>`__
+     - `go.mod <https://github.com/opencord/voltha-go-controller/blob/master/go.mod>`__
    * - voltha-lib-go
-     - `go.mod <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-lib-go/+/refs/heads/master/go.mod>`__
+     - `go.mod <https://github.com/opencord/voltha-lib-go/blob/master/go.mod>`__
    * - voltha-openolt-adapter
-     - `go.mod <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-openolt-adapter/+/refs/heads/master/go.mod>`__
+     - `go.mod <https://github.com/opencord/voltha-openolt-adapter/blob/master/go.mod>`__
    * - voltha-openonu-adapter-go
-     - `go.mod <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-openonu-adapter-go/+/refs/heads/master/go.mod>`__
+     - `go.mod <https://github.com/opencord/voltha-openonu-adapter-go/blob/master/go.mod>`__
    * - voltha-system-tests
-     - `requirements.txt <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-system-tests/+/refs/heads/master/requirements.txt>`_ (virtualenv/testing)
+     - `requirements.txt <https://github.com/opencord/voltha-system-tests/blob/master/requirements.txt>`_ (virtualenv/testing)
 
 .. list-table:: Foreach external repository
    :widths: 30, 80

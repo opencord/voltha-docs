@@ -16,7 +16,7 @@ ERROR: Duplicate tag  (job: version-tag_wildcard)
 FIX:
 ^^^^
 
-Most VOLTHA repositories contain the file `VERISON <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-openolt-adapter/+/refs/heads/master/VERSION>`_ which contain a semantic version string for builds.
+Most VOLTHA repositories contain the file `VERISON <https://github.com/opencord/voltha-openolt-adapter/blob/master/VERSION>`_ which contain a semantic version string for builds.
 
 Content and use of the VERSION file is documented [`here <https://docs.voltha.org/master/overview/contributing.html#versioning>`_]
 

@@ -10,9 +10,9 @@ Source
 
    * - Source
      - Description
-   * - `VERSION file <https://gerrit.lfbroadband.org/plugins/gitiles/voltctl/+/refs/heads/master/VERSION>`__
+   * - `VERSION file <https://github.com/opencord/voltctl/blob/master/VERSION>`__
      - Contains the tool version to build and/or release.
-   * - `jjb/shell/github-release.sh <https://gerrit.lfbroadband.org/plugins/gitiles/ci-management/+/refs/heads/master/jjb/shell/github-release.sh>`__
+   * - `jjb/shell/github-release.sh <https://github.com/opencord/ci-management/blob/master/jjb/shell/github-release.sh>`__
      - Shell script used to publish release candidates to github.
 
 Development
@@ -36,7 +36,7 @@ Development
 Release Builds howto:
 ---------------------
 
-- Increment the `VERSION file <https://gerrit.lfbroadband.org/plugins/gitiles/voltctl/+/refs/heads/master/VERSION>`__ to a major or minor point release.
+- Increment the `VERSION file <https://github.com/opencord/voltctl/blob/master/VERSION>`__ to a major or minor point release.
 
 .. list-table:: VERSION file, Symantec version strings
    :widths: 10, 10, 60
@@ -54,7 +54,7 @@ Release Builds howto:
 
 - Merging the patch will initiate a jenkins job to build components
 
-  - `repo::voltctl <https://gerrit.lfbroadband.org/plugins/gitiles/voltctl/+/refs/heads/master>`__, Gerrit example: `33551 <https://gerrit.lfbroadband.org/c/voltctl/+/33551>`_.
+  - `repo::voltctl <https://github.com/opencord/voltctl/tree/master>`__, Gerrit example: `33551 <https://gerrit.lfbroadband.org/c/voltctl/+/33551>`_.
   - At least two jenkins jobs need to run:
 
     - `version-tag_wildcard <https://jenkins.lfbroadband.org/job/version-tag_wildcard/>`__
@@ -84,10 +84,10 @@ Release Builds howto:
 
 Create an official voltctl release
 ----------------------------------
-- `installVoltctl.groovy <https://gerrit.lfbroadband.org/plugins/gitiles/ci-management/+/refs/heads/master/vars/installVoltctl.groovy#53>`_
+- `installVoltctl.groovy <https://github.com/opencord/ci-management/blob/master/vars/installVoltctl.groovy#L53>`_
   depends on `github/releases/latest <https://api.github.com/repos/opencord/voltctl/releases/latest>`_ for versioned release information.
 
-- To generate a release commit changes to `repo::voltctl <https://gerrit.lfbroadband.org/plugins/gitiles/voltctl>`__:
+- To generate a release commit changes to `repo::voltctl <https://github.com/opencord/voltctl>`__:
 
   - Modify VERSION file major/minor numbers for the upcoming release.
   - Remove any -dev or patch modifiers.

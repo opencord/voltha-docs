@@ -6,7 +6,7 @@ Development
 Locate a VOLTHA :ref:`SSH Key <gerrit-user-account>` of interest
 ================================================================
 
-- Clone repository `repo:voltha-docs <https://gerrit.lfbroadband.org/plugins/gitiles/voltha-docs>`_
+- Clone repository `repo:voltha-docs <https://github.com/opencord/voltha-docs>`_
 
 .. sourcecode:: shell
 

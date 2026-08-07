@@ -217,8 +217,8 @@ ONOS Apps:
 - `olt <https://gerrit.lfbroadband.org/gitweb?p=olt.git;a=summary>`_: ``5.0.1``
 - `sadis <https://gerrit.lfbroadband.org/gitweb?p=sadis.git;a=summary>`_: ``5.5.0``
 - `bng <https://gerrit.lfbroadband.org/gitweb?p=bng.git;a=summary>`_: ``2.2.0``
-- `pppoeagent <https://gerrit.lfbroadband.org/plugins/gitiles/pppoeagent/>`_: ``1.2.0``
-- `olttopology <https://gerrit.lfbroadband.org/plugins/gitiles/olttopology/>`_: ``1.2.0``
+- `pppoeagent <https://github.com/opencord/pppoeagent>`_: ``1.2.0``
+- `olttopology <https://github.com/opencord/olttopology>`_: ``1.2.0``
 
 VOLTHA Components:
 ++++++++++++++++++
