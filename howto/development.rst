@@ -1,9 +1,9 @@
 Development
 ###########
 
-- `Gerrit Login <https://gerrit.lfbroadband.org/login>`_
+- `GitHub Login <https://github.com/login>`_
 
-Locate a VOLTHA :ref:`SSH Key <gerrit-user-account>` of interest
+Locate a VOLTHA :ref:`SSH Key <github-user-account>` of interest
 ================================================================
 
 - Clone repository `repo:voltha-docs <https://github.com/opencord/voltha-docs>`_
@@ -12,15 +12,15 @@ Locate a VOLTHA :ref:`SSH Key <gerrit-user-account>` of interest
 
    $ mkdir -p ~/sandbox
    $ cd ~/sandbox
-   $ git clone ssh://gerrit.lfbroadband.org:29418/voltha-docs
+   $ git clone git@github.com:opencord/voltha-docs.git
    $ cd voltha-docs
 
 - TODO
   - HOWTO: edit branch=main or create branch=dev-user
   - HOWTO: Commit changes
-  - HOWTO: gerrit review
-  - HOWTO: jenkins - check job status from review screen history.
-  - HOWTO: gerrit review screen, react to feedback, augment patch.
+  - HOWTO: open a GitHub pull request, see :doc:`contributing </overview/contributing>`
+  - HOWTO: GitHub Actions - check job status from the pull request "Checks" tab.
+  - HOWTO: pull request review screen, react to feedback, augment patch.
   - HOWTO: commit --amend
   - HOWTO: request merge
   - HOWTO: include reference to `System Test Development <https://wiki.onosproject.org/display/ONOS/Gerrit+Workflow+for+System+Test+Development>`

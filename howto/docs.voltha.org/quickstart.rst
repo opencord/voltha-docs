@@ -13,7 +13,7 @@ Clone repo:voltha-docs
 .. code:: bash
 
    # Clone repo:voltha-docs
-   git clone ssh://gerrit.lfbroadband.org:29418/voltha-docs.git
+   git clone git@github.com:opencord/voltha-docs.git
 
    # Create a developer branch
    git checkout -b dev-joey
@@ -23,13 +23,12 @@ Clone repo:voltha-docs
    :emphasize-lines: 2
 
    # Clone repo:voltha-docs
-   git clone ssh://gerrit.lfbroadband.org:29418/voltha-docs.git
+   git clone git@github.com:opencord/voltha-docs.git
 
    # Create a developer branch
    git checkout -b dev-joey
 
-Repositories:
-[`gerrit <https://github.com/opencord/voltha-docs>`_],
+Repository:
 [`github <https://github.com/opencord/voltha-docs>`_]
 
 .. code-block:: shell-session
@@ -37,7 +36,7 @@ Repositories:
    :emphasize-lines: 2,5
 
    # Clone repo:voltha-docs
-   git clone ssh://gerrit.lfbroadband.org:29418/voltha-docs.git
+   git clone git@github.com:opencord/voltha-docs.git
 
    # Create a developer branch
    git checkout -b dev-joey
@@ -109,8 +108,8 @@ Document and commit changes for git log
    # Rebase your sandbox, merge branch=master into branch=dev-joey
    ... git rebase documentation URL needed here ...
 
-   # Create a patch and request a code review
-   git review --reviewers email1 email2 email3
+   # Push your branch and open a pull request to request a code review
+   git push origin dev-joey
 
 
 Sample commit message

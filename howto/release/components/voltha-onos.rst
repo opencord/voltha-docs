@@ -7,7 +7,7 @@ Release Steps
 -------------
 
 - After all ONOS component dependencies have been released.
-- Clone the :vol-ger:`voltha-onos` repository.
+- Clone the `voltha-onos <https://github.com/opencord/voltha-onos>`_ repository.
 - Modify `dependencies.xml <https://github.com/opencord/voltha-onos/blob/master/dependencies.xml>`_
 
   - Update copyright notice.
@@ -15,7 +15,7 @@ Release Steps
 
 - Bump the VERSION file string
 
-  - :vol-ger:`voltha-onos/+/refs/heads/master/VERSION`
+  - `voltha-onos <https://github.com/opencord/voltha-onos/blob/master/VERSION>`_
   - This will release a new ONOS docker image.
 
 - `release_notes <https://docs.voltha.org/master/release_notes/index.html>`_

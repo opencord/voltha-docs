@@ -9,7 +9,7 @@ Makefile Linting: By language
 
 .. code:: bash
 
-    % git clone ssh://gerrit.lfbroadband.org:29418/onf-make.git
+    % git clone git@github.com:opencord/onf-make.git
     % cd onf-make
 
     % make help | grep lint

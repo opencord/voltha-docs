@@ -6,51 +6,35 @@ VOLTHA project repositories
 Finding a repository to work with
 ---------------------------------
 
-Navigate to the VOLTHA repositories on gerrit or github:
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-- :vol-ger:`voltha-docs`
+Navigate to the VOLTHA repositories on GitHub:
++++++++++++++++++++++++++++++++++++++++++++++
+
+- `voltha-docs <https://github.com/opencord/voltha-docs>`_
 - :vol-git:`voltha-docs`
 
-- https://github.com/opencord/voltha-docs
+|
+
+Browse the opencord organization
+"""""""""""""""""""""""""""""""
+
+- Visit `github.com/opencord <https://github.com/opencord>`_
+- Use the search box at the top of the org page and search for ``voltha-`` to
+  list VOLTHA repositories, e.g. ``org:opencord voltha-``.
+- Click a repository to view its README, browse the code, and switch branches
+  using the branch selector above the file listing.
 
 |
 
-Visit gerrit.lfbroadband.org/dashboard
-"""""""""""""""""""""""""""""""""""
+Cloning a repository
+"""""""""""""""""""""
 
-.. figure:: images/gerrit_dashboard.png
-   :alt: Gerrit dashboard
-   :width: 70%
-   :align: center
+- On a repository page click the green "Code" button.
+- Copy the SSH (or HTTPS) clone URL shown, e.g. ``git@github.com:opencord/voltha-docs.git``.
+- ``git clone git@github.com:opencord/voltha-docs.git``
 
-|
+See also :doc:`accounts` for setting up a GitHub account and SSH key.
 
-From the BROWSE pull-down menu select Repositories
-""""""""""""""""""""""""""""""""""""""""""""""""""
-.. figure:: images/menu_repositories.png
-   :alt: BROWSE pull-down menu selection
-   :align: center
+.. note::
 
-|
-
-In the Filter: box search for 'voltha-'
-"""""""""""""""""""""""""""""""""""""""
-
-- Click browse to view repository clone command and available versions.
-- Click branch=master to browse the code base.
-
-.. figure:: images/repository_select_VOLTHA.png
-   :alt: voltha- repository search
-   :width: 70%
-   :align: center
-
-|
-
-
-Github
-++++++
-A mirror of the VOLTHA gerrit repositories can also be found on github.
-
-- https://github.com/opencord/voltha-docs
-
-  - Gerrit repositories can also be accessed through a mirror on github.
+   VOLTHA repositories were previously mirrored on Gerrit (gerrit.lfbroadband.org).
+   Gerrit has been retired; GitHub is now the sole, canonical source.

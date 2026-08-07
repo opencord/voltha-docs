@@ -11,7 +11,7 @@ Docs for VOLTHA can be found on the website or via web search
 
 Browse repository content
 """""""""""""""""""""""""
-- :vol-ger:`voltha-docs`
+- `voltha-docs <https://github.com/opencord/voltha-docs>`_
 - :vol-git:`voltha-docs`
 
 Documentation Guide
@@ -53,7 +53,7 @@ Checkout, modify and test
 
 .. sourcecode:: shell
 
-   $ git clone ssh://gerrit.lfbroadband.org:29418/voltha-docs
+   $ git clone git@github.com:opencord/voltha-docs.git
 
    $ cd voltha-docs
    $ vi *.rst
@@ -75,7 +75,7 @@ content.
 
 .. sourcecode:: shell
 
-   $ git clone ssh://gerrit.lfbroadband.org:29418/voltha-docs
+   $ git clone git@github.com:opencord/voltha-docs.git
 
    $ cd voltha-docs
    $ make reload

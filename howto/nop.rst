@@ -11,7 +11,7 @@ run when a status of jenkins "No Builds Executed" is reported.
 A compile may not be needed but lint, syntax and license checking normally are.
 
 After "git commit --amend" has updated your patch.
-Visit gerrit and perform a recheck (:ref:`_pull-request-see-also`.)
+Push the branch and re-trigger CI checks on the pull request (:ref:`_pull-request-see-also`.)
 
 ..
    [comments: begin]

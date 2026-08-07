@@ -17,7 +17,7 @@ Install
 
 .. code:: bash
 
-    % git clone ssh://gerrit.lfbroadband.org:29418/bbsim.git
+    % git clone git@github.com:opencord/bbsim.git
     % cd bbsim
 
     % make help

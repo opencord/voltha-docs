@@ -80,14 +80,15 @@ the release branch directly as these instructions will.
 - git pull --ff-only origin voltha-2.12
 - git rebase -i voltha-2.12
 - git diff --name-only votlha-2.12 2>&1 | less
-- git review --reviewers foo@foo bar@bar
+- git push origin voltha-2.12
+- open a pull request against ``voltha-2.12`` and add reviewers foo, bar
 
 Patch creation on release branch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 `docs.voltha.org - create the initial release <https://docs.voltha.org/master/release_notes/release_process.html#creating-the-initial-release>`_
 
-- git clone ssh://gerrit.lfbroadband.org:29418/voltha-protos.git
+- git clone git@github.com:opencord/voltha-protos.git
 - git checkout -b dev_tux
 - Edit VERSION file, increment and suffix a -dev modifier
 

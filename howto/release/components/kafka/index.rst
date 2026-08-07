@@ -1,7 +1,7 @@
 ONOS Component: mcast
 =====================
 
-Repository: kafka-onos (ssh://gerrit.lfbroadband.org:29418/kafka-onos)
+Repository: kafka-onos (git@github.com:opencord/kafka-onos.git)
 App: kafka
 
 Dependencies (pom.xml)

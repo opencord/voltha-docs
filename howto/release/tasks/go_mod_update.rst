@@ -13,7 +13,7 @@ NOTE: Files in the vendor/ directory should not be modified
 .. code-block:: shell-session
    :caption: Update copyrigth notice ending date.
 
-   % git clone ssh://gerrit.lfbroadband.org:29418/ofagent-go.git
+   % git clone git@github.com:opencord/ofagent-go.git
    % cd ofagent-go
 
    # ---------------------------------------

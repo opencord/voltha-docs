@@ -14,7 +14,7 @@ Clone, edit, build & test
 
 .. code:: bash
 
-    git clone ssh://gerrit.lfbroadband.org:29418/voltha-protos.git
+    git clone git@github.com:opencord/voltha-protos.git
     cd voltha-protos
     vi ...
 

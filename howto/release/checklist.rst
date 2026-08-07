@@ -121,7 +121,7 @@ Version(s) of external packages in the vendor/ directory may need to be updated.
    :hilight: 2, 4
 
    # Clone repo:voltha-go
-   git clone ssh://gerrit.lfbroadband.org:29418/voltha-go.git
+   git clone git@github.com:opencord/voltha-go.git
 
    cd voltha-go
    make help

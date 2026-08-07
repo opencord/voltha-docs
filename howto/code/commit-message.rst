@@ -56,9 +56,10 @@ git commit ...
 
    $ vi commit.txt
    $ git add *stuff*
-   $ git commit --F ./commit.txt
+   $ git commit -s -F ./commit.txt
    # appropriate git rebase command
-   $ git review --reviewers tux@onf.org foo@onf.org bar@onf.org
+   $ git push origin HEAD:my-branch-name
+   # then open a pull request on GitHub, adding reviewers from the PR UI
 
 Commit Message: extra credit
 ++++++++++++++++++++++++++++

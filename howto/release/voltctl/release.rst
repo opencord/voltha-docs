@@ -21,7 +21,7 @@ Development
 .. code-block:: shell-session
    :caption: Build and test volctl locally
 
-   % git clone ssh://gerrit.lfbroadband.org:29418/voltctl.git
+   % git clone git@github.com:opencord/voltctl.git
    % cd voltctl
 
    % make help

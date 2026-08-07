@@ -36,7 +36,7 @@ Content and use of the VERSION file is documented [`here <https://docs.voltha.or
   - This is a normal development event, when it happens check the repository
     to determine the latest VERSION string, increment the value and include
     the VERSION file in your patch.
-  - ie: git commit --amend; git rebase; git review
+  - ie: git commit --amend; git rebase; git push --force-with-lease
 
 
 

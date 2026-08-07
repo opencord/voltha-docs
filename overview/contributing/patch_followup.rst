@@ -1,149 +1,91 @@
 Pull request followup
 =====================
 
-Once a patch has been submitted gerrit can be used to track progress.
+Once a pull request has been opened, GitHub can be used to track progress.
 
-Find your patch
----------------
+Find your pull request
+-----------------------
 
-| Begin by viewing the history for your patch in gerrit.
-| A patch can be accessed in a few different ways.
+| Begin by viewing the pull request you opened, or search for it.
+| A pull request can be accessed in a few different ways.
 
-Item of Note:
+Capture pull request URL output
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- A Gerrit Change-Id is required to interact with a patch. This hashed
-  value will be distinct from the underlying git checksum used when
-  changes are stored in a repository.
-
-Capture commit message output
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Gerrit commit hash and a URL are readily available in output.
+After ``git push`` of a new branch, GitHub prints a direct link to open a pull request.
 
 .. code-block:: shell-session
    :linenos:
-   :emphasize-lines: 22
+   :emphasize-lines: 10
 
-   % git commit -F ../jira/5100
-   % git rebase
-   % git review --reviewers tux@onf.org
+   % git push origin VOL-5100-fix-something
 
    remote:
-   remote: Processing changes: (\)
-   remote: Processing changes: (|)
-   remote: Processing changes: (/)
-   remote: Processing changes: (-)
-   remote: Processing changes: (\)
-   remote: Processing changes: (|)
-   remote: Processing changes: (/)
-   remote: Processing changes: (-)
-   remote: Processing changes: new: 1 (\)
-   remote: Processing changes: refs: 1, new: 1 (\)
-   remote: Processing changes: refs: 1, new: 1 (\)
-   remote: Processing changes: refs: 1, new: 1, done
+   remote: Create a pull request for 'VOL-5100-fix-something' on GitHub by visiting:
+   remote:      https://github.com/opencord/ci-management/pull/new/VOL-5100-fix-something
    remote:
-   remote: SUCCESS
-   remote:
-   remote:   https://gerrit.lfbroadband.org/c/ci-management/+/34600 Disable jobs dependent on offline menlo-3 node [NEW]
-   fremote:
-   To ssh://gerrit.lfbroadband.org:29418/ci-management.git
-    * [new reference]     HEAD -> refs/for/master%topic=dev-joey
+   To github.com:opencord/ci-management.git
+    * [new branch]      VOL-5100-fix-something -> VOL-5100-fix-something
 
-.. list-table:: Git commit message
-   :widths: 20, 5, 60
-   :header-rows: 1
+Once the pull request is opened, GitHub assigns it a number and URL, e.g.
+``https://github.com/opencord/ci-management/pull/1234``.
 
-   * - Id
-     - Line
-     - Description
-   * -
-     - 2
-     - Git commit hash
-   * - `34598 <https://gerrit.lfbroadband.org/c/ci-management/+/34598>`_
-     - 10
-     - Gerrit URL for direct patch access
-   * -
-     - 14
-     -
+Search by branch, author or keyword
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- Visit ``https://github.com/opencord/{repo}/pulls``
+- Use the search box to filter, e.g. ``is:pr author:@me`` or ``is:pr is:open``.
+- Or search across the whole organization: ``https://github.com/search?q=org%3Aopencord+is%3Apr+author%3A%40me``
+
+Search by Jira ticket
+^^^^^^^^^^^^^^^^^^^^^^
+
+Since commit messages and pull request titles are prefixed with a Jira ticket
+(e.g. ``[VOL-5100]``), you can search for a ticket number the same way:
+
+- ``https://github.com/search?q=org%3Aopencord+is%3Apr+VOL-5100``
 
 Git log
 ^^^^^^^
 
-Gerrit Change-IDs are appended as the last line in a commit mesage.
-git log can be used to search for them.
+``git log`` can also be used locally to find your commit, and the PR opened from it.
 
 .. code-block:: shell-session
    :linenos:
-   :emphasize-lines: 3,14
 
    % git log --author="joey" | less
 
    commit 23ce887c4cb3f98506536e00c58ffc8c2af16afe
    Author: Joey Armstrong <joey@lfbroadband.org>
-   Date:   Thu Aug 24 09:46:22 2023 -0400
+   Date:   Thu Aug 24 09:46:22 2026 -0400
 
-      [VOL-5009] - Update release notes
+      [VOL-5100] - Update release notes
 
       release_notes/voltha_2.12.rst
       -----------------------------
         o Import Mahir(s) word doc containing tickets and descriptions.
         o Reformat using a grid layout so tickets and description are aligned.
 
-      Change-Id: Ic8ca17f5923496731f88ce8918c9852d904ea066
+      Signed-off-by: Joey Armstrong <joey@lfbroadband.org>
 
-.. list-table:: Git log commit IDs
-   :widths: 20, 5, 60
-   :header-rows: 1
+Pull request status and checks
+-------------------------------
 
-   * - Id
-     - Line
-     - Description
-   * - 23ce887c4cb3f98506536e00c58ffc8c2af16afe
-     - 3
-     - Git commit hash
-   * - Ic8ca17f5923496731f88ce8918c9852d904ea066
-     - 14
-     - Gerrit Change-Id
+While viewing a pull request, scroll down to see:
 
+- **Conversation** tab: review comments and discussion.
+- **Checks** tab (or the checks list at the bottom of Conversation): GitHub Actions CI status
+  for each configured workflow (unit tests, lint, licensing, etc).
+- A green check mark means the job succeeded; a red X means it failed; a yellow dot means
+  it is still running.
 
-Patch lookup by Change-Id string
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Click any individual check to view its job log directly, the same way you would view a
+Jenkins job log.
 
-When you have a Change-Id value (~43 chars)
+- Example: `a pull request in voltha-go <https://github.com/opencord/voltha-go/pulls>`_
 
-- Change-Id: Ic8ca17f5923496731f88ce8918c9852d904ea066
+If a check needs to be re-run and you believe the failure is unrelated to your change:
 
-  - Visit the `Gerrit dashboard <https://gerrit.lfbroadband.org/dashboard/self>`_
-  - Paste Change-Id into the search box at the top right
-  - Gerrit UI will navigate to the patch.
-
-Brute force patch lookup
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-- Visit `Gerrit dashboard open+is:wip <https://gerrit.lfbroadband.org/q/status:open+-is:wip>`_
-
-  - View all open/unmerged patches
-  - Scroll down through the list until something of interest is found.
-  - Under the # column (2nd column on left hand side) right click and open
-    to view the patch.
-  - For example: `repo:voltha-system-tests <https://gerrit.lfbroadband.org/c/voltha-system-tests/+/33380>`_
-
-Patch history and jenkins jobs
-------------------------------
-
-While viewing a patch (`repo:voltha-system-tests <https://gerrit.lfbroadband.org/c/voltha-system-tests/+/33380>`_)
-scroll down to the 'Change Log' section at the bottom.
-| Line items represent historical comments, code review messages and
-processed job status.
-
-Entries prefixed with ``Jenkins Technical User`` contain jenkins job
-information.  Jenkins pipeline jobs are constructed by performing
-several atomic tasks each of which will generate a log with status.
-
-To view job logs click on an entry to expand (Verified +1, 4th entry from
-the bottom) to view a set of clickable jenkins URLs.
-
-- `Patch 33380 <https://gerrit.lfbroadband.org/c/voltha-system-tests/+/33380>`_
-  - `verify_voltha-system-tests_unit-test <https://jenkins.lfbroadband.org/job/verify_voltha-system-tests_unit-test>`_          : SUCCESS
-  - `verify_voltha-system-tests_licensed <https://jenkins.lfbroadband.org/job/verify_voltha-system-tests_licensed>`_       : SUCCESS
-  - `verify_voltha-system-tests_sanity-test <https://jenkins.lfbroadband.org/job/verify_voltha-system-tests_sanity-test>`_ : FAILED
+- Push an empty commit: ``git commit --allow-empty -m "Trigger CI"``.
+- Or, if you have write access to the repository, open the "Actions" tab, select the
+  failed workflow run, and click "Re-run jobs".

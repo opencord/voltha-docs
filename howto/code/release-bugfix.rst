@@ -10,7 +10,7 @@ Create a patch on a release branch
    # Clone a repostiory of interest (ex: votlha-lib-go)
    # Checkout release branch voltha-2.12 for patching
    # ------------------------------------------------
-   % git clone "ssh://gerrit.lfbroadband.org:29418/voltha-lib-go.git"
+   % git clone "git@github.com:opencord/voltha-lib-go.git"
    % cd voltha-lib-go
 
    # Pull in all remote tags/branches
@@ -160,22 +160,23 @@ Code Review
 -----------
 
 .. code-block:: shell-session
-   :caption: Push to gerrit, code review
+   :caption: Push the branch and open a pull request
 
-   % git review --reviewers "foo@bar.org"
+   % git push origin dev-joey
+
+Open the pull request against the release branch (``voltha-2.12``, **not** ``master``),
+either from the "Compare & pull request" prompt GitHub shows after the push, or by
+visiting ``https://github.com/opencord/{repo}/pull/new/dev-joey``. Add reviewers from
+the "Reviewers" panel on the pull request.
 
 
-Verify Patch Creation
----------------------
-
-.. code-block:: shell-session
-   :caption: Verify patch creation
-
-   % git review --reviewers "foo@bar.org" "bar@tans.org"
+Verify Pull Request Creation
+-----------------------------
 
 ::
 
-   As a cross check visit gerrit and verify your release bugfix is correctly
-   decorated.  In gerrit, review the 'Repo|Branch' item in the top left corner.
-   'votlha-2.12' or the release tag will be visible.  If branch 'master' is
-   listed abandon the patch, it will not be applied to the proper branch.
+   As a cross check visit the pull request on GitHub and verify your release bugfix is
+   correctly targeted. The "base" branch shown near the top of the pull request should be
+   'voltha-2.12' or the release branch/tag. If the base branch is 'master' close the
+   pull request and re-open it targeting the correct branch; it will not be applied to
+   the proper branch otherwise.

@@ -70,14 +70,14 @@ Suggestions: Additional ticket documentation
      - Jira ticket
    * - `jenkins <https://jenkins.lfbroadband.org/>`_
      - Capture job URLs to document errors and log messages.
-   * - `gerrit:34854 <https://gerrit.lfbroadband.org/c/ci-management/+/34854>`_
-     - Capture gerrit patch URLs for state and job reconstruction.
+   * - GitHub PR
+     - Capture GitHub pull request URLs for state and job reconstruction.
 
 - NOTE: Jenkins logs become unavailable due to aging
 
   - Jenkins job logs become inaccessible over time after growing old or
     due to volume job runs.  To avoid lost problem reproduction steps always
-    include a gerrit patch link which can be used to reproduce state or job
+    include a GitHub pull request link which can be used to reproduce state or job
     results when original job logs disappear.
 
 - Document as links VS textual comments.
@@ -86,8 +86,8 @@ Suggestions: Additional ticket documentation
   - Select [M]ore from the menu above Description and Details.
   - Select [L]ink
   - Select Web Link in the left margin
-  - Paste a gerrit or jenkins URL into the URL text box.
-  - Enter a summry in the link text box -- job number or gerrit ID.
+  - Paste a GitHub PR or jenkins URL into the URL text box.
+  - Enter a summry in the link text box -- job number or PR number.
   - Click the [Link] butotn.
 
 - Example `VOL-5009 <https://lf-broadband.atlassian.net/browse/VOL-5009>`_

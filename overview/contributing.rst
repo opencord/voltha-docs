@@ -10,7 +10,13 @@ Guides, Rules and Best Practices
 VOLTHA follows `Google's Engineering Practices <https://google.github.io/eng-practices/>`_,
 `Golang Formatting Guide <https://go.dev/doc/effective_go#formatting>`_. Use these documents as a guide when
 writing, submitting or reviewing code.
-VOLTHA uses gerrit to submit, review, tests and finally merge patches.
+VOLTHA uses GitHub pull requests to submit, review, test and finally merge patches.
+
+.. note::
+
+   VOLTHA previously used Gerrit (gerrit.lfbroadband.org) for code review.
+   Gerrit has been retired; all code review now happens through GitHub pull
+   requests against the `opencord <https://github.com/opencord>`_ repositories.
 
 Submitting Code
 +++++++++++++++
@@ -21,23 +27,31 @@ Some additional points for developers:
   with corrections early in the process prevent huge changes later.
 - :doc:`Create a Jira ticket for code changes <contributing/jira_tickets>` (required)
 - :doc:`Update copyright notices <contributing/copyright>`
-- `Commit message <https://docs.voltha.org/master/howto/code/commit-message.html#pull-request-commit-message>`_ and jenkins automation.
+- `Commit message <https://docs.voltha.org/master/howto/code/commit-message.html#pull-request-commit-message>`_ and CI automation.
 
   - To enable automation, prefix your commit message with a jira ticket
 
      - ``[VOL-4550]`` - Spiffy enhancement/feature/problem summary
 
-  - This addition will allow jenkins to magically update tickets
+  - This addition will allow the CI pipeline to update tickets
     with processed job status.
 - :doc:`Request a code review <contributing/code_review>`
 
 Steps to successful PRs
 +++++++++++++++++++++++
 
- 1. Checkout the code base and prepare your patch.
- 2. Workflow to modify VOLTHA code through gerrit is identical to `onos-classic`
-    and is described in `Sample Gerrit Workflow page <https://wiki.onosproject.org/display/ONOS/Sample+Gerrit+Workflow>`_
- 3. Before submitting your patch via `git review` please pre-screen your changes to ensure code quality.
+ 1. Checkout the code base and prepare your patch on a branch.
+
+    - If you have write access to the repository, push a branch directly.
+    - Otherwise, fork the repository on GitHub and push your branch to your fork.
+
+ 2. Commit your changes.
+
+    - Sign off your commit (``git commit -s``) to include a ``Signed-off-by`` trailer, as
+      required by the project's DCO.
+    - :ref:`Commit message syntax and testing directives <pull-request--commit-message>`
+
+ 3. Before opening your pull request please pre-screen your changes to ensure code quality.
 
  .. list-table:: Patch Pre-Screening
     :widths: 10, 40
@@ -55,49 +69,46 @@ Steps to successful PRs
     * - make help
       - Show available targets: make help | grep lint
 
- 4. :ref:`Commit message syntax and testing directives <pull-request--commit-message>`
+ 4. Push your branch and open a pull request against ``master`` in the
+    `github.com/opencord <https://github.com/opencord>`_ repository, either from the
+    "Compare & pull request" prompt GitHub shows after a push, or by visiting
+    ``https://github.com/opencord/{repo}/pull/new/{your-branch}``.
 
- 5. Submitting your patch will initiate a validation
-    `jenkins job <https://jenkins.lfbroadband.org>`_.
-    Wait for job completion status before proceeding.
+ 5. Opening (or updating) a pull request automatically triggers GitHub Actions CI checks.
+    Wait for the checks to complete before proceeding.
 
-    - Job status will be sent to you asynchronously in email at job completion.
-    - For direct monitoring :doc:`review gerrit Change Log<contributing/patch_followup>` for your patch.
-
-    - If testing fails please fix your patch with step 3 then repeat 2 and 3 as needed.
+    - Check status is shown directly on the pull request, and under the repository's
+      "Actions" tab.
+    - :doc:`Follow up on the status of your pull request <contributing/patch_followup>`.
+    - If testing fails please fix your patch with step 3 then repeat 2 through 4 as needed.
 
     **Passing CI verification is mandatory.**
 
-    To view accumulated job status:
-
-      - `navigate to a patch <https://gerrit.lfbroadband.org/c/ci-management/+/34599>`_
-      - View "Submit requirements" in the top left.
-      - Verified ``+1 Jenkins Technical User`` will indicate SUCCESS.
-      - Verified ``-1 Jenkins Technical User`` will indicate FAILURE.
-
-    If the CI check does not start or fails and you believe the issue is
-    un-related to a changeset you can re-trigger by commenting on the
-    patch with `recheck <https://docs.voltha.org/master/howto/code/pull_request.html#development-and-code-reviews>`_
+    If a check does not start, or fails and you believe the issue is unrelated to your
+    changeset, you can re-trigger it: push an empty commit
+    (``git commit --allow-empty -m "Trigger CI"``), or, if you have write access, use
+    "Re-run jobs" in the Actions tab.
 
     If failures persist `ask for assistance <https://lf-broadband.atlassian.net/wiki>`_ in slack or a mailing list.
 
- 6. When patch comments are offered please make the appropriate fixes and then
-    amend your commit with `git commit --amend` and re-upload to gerrit with `git review`.
+ 6. When review comments are offered please make the appropriate fixes, then either push
+    additional commits or amend and force-push (``git commit --amend`` /
+    ``git push --force-with-lease``) to the same branch. The pull request updates automatically.
 
  7. Await review. Everyone can comment on code changes, but only Core contributors
     can give final review approval.
 
-    **All changes must acquire +2 Approval**.
+    **Changes must be approved by a Core Contributor before merging.**
 
-    Join one of the `communication channels <https://lf-broadband.atlassian.net/wiki>`_
+    Request reviewers from the "Reviewers" panel on the pull request, or join one of the
+    `communication channels <https://lf-broadband.atlassian.net/wiki>`_
     to request a review or to bring additional attention to your patch.
 
-  8. A patch will be ready to submit a merge request when
+ 8. A pull request is ready to merge when
 
-     - "Submit requirements" in the top left is showing:
-
-       - Code-Review: +2 approval (or 2 x +1 approval)
-       - Verified ``+1 Jenkins Technical User``
+    - All required GitHub Actions checks are green.
+    - It has the required approving review(s) from Core Contributors.
+    - A Core Contributor merges it using the GitHub "Merge pull request" button.
 
 Versioning
 ++++++++++
@@ -126,8 +137,8 @@ and the same rules to be enforced by reviewers during the core review process.
 Core Contributors
 -----------------
 
-Anyone with a Gerrit account can open new issues, comment on existing issues, or
-contribute code by opening a review.
+Anyone with a GitHub account can open new issues, comment on existing issues, or
+contribute code by opening a pull request.
 
 A **“core contributor”** is someone who can manage, approve and
 merge patches, and create new branches in the main repository.
@@ -152,7 +163,7 @@ to become new core contributors. Nominations can also be made (including
 self-nominations) to the VOLTHA TST (`voltha-tst@lists.voltha.org`) at any time.
 
 A good nomination will include details about who the person is (including their email
-and Github and/or Gerrit username) and outline their experience with the VOLTHA codebase
+and Github username) and outline their experience with the VOLTHA codebase
 and project at large.
 Nominations are intended to start a conversation that results in a decision to
 make the person a core contributor – anyone whose nomination is not initially
@@ -172,18 +183,18 @@ have questions or concerns.
 Guidelines for Core Contributors
 ++++++++++++++++++++++++++++++++
 
-Contributions in VOLTHA can should be merged after two different +1 arrive on a
-given patch-set that is verified by CI as well.
+Contributions in VOLTHA should be merged after approving review(s) arrive on a
+given pull request that is verified by CI as well.
 For your own contributions, you now have the ability to approve and merge your
-own code, pending that you received two other positive reviews.
+own code, pending that you received other positive reviews.
 For larger or potentially controversial reviews, please give the
 community an opportunity (at least a few business days) to review your
 contribution. Please always ask for comments on the #voltha-dev Slack channel.
 **With great power comes great responsibility; please don't abuse
 this privilege.**
 
-All Core Contributors have +2 and merge capabilities on all the repositories related
-to the VOLTHA project, but we expect that they are responsible and exercise their
+All Core Contributors have review-approval and merge capabilities on all the repositories
+related to the VOLTHA project, but we expect that they are responsible and exercise their
 privilege **only** on patches and repositories they have expertise in and are comfortable reviewing and merging.
 
 To help patchset verification the VOLTHA test infrastructure offers Per-Patchset Verification Jobs

@@ -1,28 +1,24 @@
-Gerrit SSH Access
-#################
+GitHub SSH Access
+##################
 
-- `Gerrit Login <https://gerrit.lfbroadband.org/login/%2Fq%2Fstatus%3Aopen%2B-is%3Awip>`_
+- `GitHub Login <https://github.com/login>`_
 
-Generate an :ref:`SSH Key <gerrit-user-account>` for access
-============================================================
+Generate an :ref:`SSH Key <github-user-account>` for access
+==============================================================
 
 .. sourcecode:: shell
 
-   $ ssh-keygen -t ed25519 -f id_gerrit -C 'tux@lfbroadband.org'
+   $ ssh-keygen -t ed25519 -f id_github -C 'tux@lfbroadband.org'
 
-- Login and configure gerrit
+- Add the public key at https://github.com/settings/keys
 
 - Verify your ssh connection (manual/explicit args)
-   - ssh -T -p 29418 -i ~/.ssh/id_gerrit tux@gerrit.lfbroadband.org
+   - ssh -T -i ~/.ssh/id_github git@github.com
       - -T # disable pseudo terminal access, simple verify
-      - -p(port)
       - -i(dentity) # ssh key
    - Expect to see::
-      \*\*\*\*    Welcome to Gerrit Code Review    \*\*\*\*
 
-      Hi tux, you have successfully connected over SSH.
-
-      Unfortunately, interactive shells are disabled.
+      Hi tux! You've successfully authenticated, but GitHub does not provide shell access.
 
 
 Load your ssh key(s) to prompt for a passprase once
@@ -32,7 +28,7 @@ Load your ssh key(s) to prompt for a passprase once
 
    # ssh-add will prompt for the passphrase for your key.
    # This is a one-time operation per login session.
-   $ ssh-add ~/.ssh/id_gerrit
+   $ ssh-add ~/.ssh/id_github
    $ ssh-add -l
 
 Create ~/.ssh/config to simplify your connections
@@ -52,17 +48,9 @@ Create ~/.ssh/config to simplify your connections
       # (default) Port 22
       User tux
 
-   Host gerrit.lfbroadband.org
-      Hostname gerrit.lfbroadband.org
-      IdentityFile ~/.ssh/gerrit.lfbroadband.org/id_ed25519
-      IdentitiesOnly yes
-      AddKeysToAgent yes
-      Port 29418
-      User tux@lfbroadband.org
-
 With ~/.ssh/config setup simply connect to the target machine:
 ==============================================================
-   - ssh gerrit.lfbroadband.org
+   - ssh -T github.com
 
 
 Secure permissions on ~/.ssh
@@ -83,3 +71,9 @@ Debugging connection problems
   - For conneciton problems be explicit when specifying arguments:
      - ssh -p(ort) -i(dentity) {user}@{host}
   - Use ssh-add -D to clear your keyring and force passphrase prompting.
+
+.. note::
+
+   VOLTHA previously used Gerrit (gerrit.lfbroadband.org, port 29418) for code review,
+   which required a separate SSH key and ``~/.ssh/config`` entry. Gerrit has been
+   retired; only GitHub SSH access is needed now.
