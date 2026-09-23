@@ -139,8 +139,8 @@ Releases
      -
      -
    * - `VOLTHA 2.16 <../release_notes/voltha_2.16.html>`_
-     - July 31, 2026
-     - Jan 31, 2027
+     - September 18, 2026
+     - March 18, 2027
      -
      -
 
