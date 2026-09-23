@@ -3,6 +3,9 @@ VOLTHA Releases
 
 VOLTHA, up until the 2.8 release had a tight development and release schedule of 3 months.
 Starting June 2021 operates on a 6 months release schedule.
+The Long Term Support (LTS) designation, first used for VOLTHA 2.8, is no longer offered;
+only the most recent release is maintained.
+
 VOLTHA process for releases is as follows:
 
 
