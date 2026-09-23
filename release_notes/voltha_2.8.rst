@@ -1,6 +1,10 @@
 VOLTHA 2.8 Release Notes
 ========================
 
+.. note::
+   The Long Term Support (LTS) designation described below is no longer offered and
+   VOLTHA 2.8 is no longer maintained.
+
 Highlights
 ----------
 
