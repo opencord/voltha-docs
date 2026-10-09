@@ -9,7 +9,7 @@ Getting Started
 - github user account
 
 Register with LF BB
-=================
+===================
 
 Begin by registering with LF BB, this will create a
 user account for you to access resources: gerrit, jenkins, wiki, etc.
@@ -21,7 +21,7 @@ Gerrit user account
 ===================
 
 Next navigate to gerrit.lfbroadband.org, login and configure your user account
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - `Gerrit Login <https://gerrit.lfbroadband.org/login>`_
 
