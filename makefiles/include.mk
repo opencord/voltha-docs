@@ -64,9 +64,9 @@ include $(onf-mk-top)/makefiles/config.mk
 include $(onf-mk-lib)/include.mk
 include $(onf-mk-loc)/include.mk
 
-## -----------------------------------------
-## Submodue init target for new repositories
-## -----------------------------------------
+## ------------------------------------------
+## Submodule init target for new repositories
+## ------------------------------------------
 create-onf-lib : $(onf-mk-lib)
 $(onf-mk-lib):
 	mkdir -p $(dir $@)# makefiles
