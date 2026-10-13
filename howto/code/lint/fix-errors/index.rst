@@ -2,7 +2,7 @@ LINT: Fixing errors
 =========================
 
 .. toctree::
-    :glob:
+   :glob:
 
    sphinx/spelling/spelling-exclusions.rst
    yamllint/long-lines.rst

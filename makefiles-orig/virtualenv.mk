@@ -48,7 +48,7 @@ $(venv-activate-script):
 	@echo "============================="
 	@echo "Installing python virtual env"
 	@echo "============================="
-	virtualenv -p python3 $(venv-name)
+	python3 -m venv $(venv-name)
 	$(activate) && python -m pip install --upgrade pip
 	$(activate) && pip install --upgrade setuptools
 	$(activate) && [[ -r requirements.txt ]] \

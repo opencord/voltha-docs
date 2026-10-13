@@ -127,7 +127,8 @@ smv_tag_whitelist = "disabled_a^"  # Was = None
 # Exclude voltha-2.4 and voltha-2.5: their Makefiles clone the kind-voltha
 # repository which no longer exists, causing multiversion builds to fail.
 # All other voltha-* branches do not reference kind-voltha and build cleanly.
-smv_branch_whitelist = r"^(master|voltha-2\.(?!4$|5$)\d.*)$"
+# smv_branch_whitelist = r"^(master|voltha-2\.(?!4$|5$)\d.*)$"
+smv_branch_whitelist = r"^(master)$"
 
 # include all remote branches
 smv_remote_whitelist = r"^.*$"
