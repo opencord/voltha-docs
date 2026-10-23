@@ -128,6 +128,16 @@ in the `VOLTHA wiki page <https://lf-broadband.atlassian.net/wiki>`_
 .. toctree::
    :maxdepth: 1
    :hidden:
+   :caption: Message Flows
+
+   Overview <message-flows/index.md>
+   OLT Bring-Up <message-flows/olt-bring-up.md>
+   ONT Bring-Up <message-flows/ont-bring-up.md>
+   HSIA and DHCP <message-flows/hsia-dhcp.md>
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
    :caption: Components
 
    BBSIM <bbsim/docs/source/index.rst>
