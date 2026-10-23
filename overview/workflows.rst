@@ -26,6 +26,9 @@ README <../voltha-helm-charts/README.md>`_.
 A workflow in VOLTHA entails different elements: Customer tag allocation, Technology profile, Bandwidth profile,
 Flow and Group Management
 
+Message flow diagrams for OLT and ONT bring-up and for subscriber HSIA and
+DHCP provisioning in the TT workflow are in :doc:`../message-flows/index`.
+
 Customer tag allocation
 -----------------------
 
