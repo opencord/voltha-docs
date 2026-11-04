@@ -19,17 +19,23 @@ order given: ``=``, ``-`` ``"``, ``'``, ``^``.
 Building the Docs
 ------------------
 
-The documentation build process is stored in the ``Makefile``. Building docs
-requires Python to be installed, and most steps will create a virtualenv
-(``venv_docs``) which contains the required tools.  You may also need to
-install the ``enchant`` C library using your system's package manager for the
-spelling checker to function properly.
+The published site is built by `Read the Docs <https://readthedocs.org>`_
+from ``.readthedocs.yaml``. Before Sphinx runs, RTD executes
+``scripts/fetch-external-docs.sh`` which:
 
-Run ``make html`` to generate html documentation in ``_build/html``.
+- clones every repository listed in ``git_refs`` and copies it into the
+  docs source tree (``./bbsim/``, ``./voltctl/``, ...), where
+  ``index.rst`` toctrees reference it, and
+- renders Robot Framework ``libdoc``/``testdoc`` HTML for
+  ``voltha-system-tests`` and ``cord-tester`` into ``_static/``.
 
-To check the formatting of documentation, run ``make lint``. This will be done
-in Jenkins to validate the documentation, so please do this before you create a
-patchset.
+To build locally run ``make docs``. This creates a virtualenv (``.venv``),
+runs the same staging script, and writes HTML to ``_build/<branch>``. You
+may also need to install the ``enchant`` C library using your system's
+package manager for the spelling checker to function properly.
+
+To check the formatting of documentation, run ``make lint``. Please do this
+before you create a pull request.
 
 To check spelling, run ``make spelling``. If there are additional words that
 are correctly spelled but not in the dictionary (acronyms, trademarks, etc.)
@@ -41,10 +47,10 @@ Creating new Versions of Docs
 To change the version shown on the built site, change the contents of the
 ``VERSION`` file.
 
-There is a ``make multiversion`` target which will build all versions published
-on the remote to ``_build``. This will use a fork of `sphinx-multiversion
-<https://github.com/Holzhaus/sphinx-multiversion>`_ to build multiple versions
-for the site.
+Read the Docs builds one copy of the documentation per activated branch or
+tag and provides the version switcher. To publish a release branch
+(``voltha-2.x``), activate it in the Read the Docs project settings; the
+branch must carry a ``.readthedocs.yaml`` and ``scripts/fetch-external-docs.sh``.
 
 Creating Graphs and Diagrams
 ----------------------------

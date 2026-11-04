@@ -23,11 +23,20 @@ Sphinx~=8.1.3
 recommonmark~=0.7.1
 doc8~=1.1.2
 docutils~=0.21.2
-git+https://github.com/eb-oss/sphinx-multiversion@main
 sphinx-reload~=0.2.0
 sphinx-rtd-theme~=3.0.2
 sphinxcontrib-openapi~=0.8.4
 sphinxcontrib-spelling~=8.0.1
+
+##------------------------------------------------##
+##---]  Robot Framework docs (libdoc/testdoc)  [---##
+##------------------------------------------------##
+# scripts/fetch-external-docs.sh renders voltha-system-tests and
+# cord-tester robot sources into _static/. libdoc imports the python
+# keyword libraries in cord-tester, which need pyyaml and pexpect.
+robotframework~=7.2
+pyyaml
+pexpect
 
 ##----------------##
 ##---]  LINT  [---##

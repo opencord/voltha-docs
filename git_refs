@@ -4,8 +4,12 @@
 # references (branch/tag/commit hash) that are checked out with `git checkout
 # <ref>` during creation of documentation.
 #
+# Consumed by scripts/fetch-external-docs.sh (Read the Docs pre_build job
+# and `make prep`). Every listed repo is cloned and copied into the docs
+# source tree, so only list repos that index.rst actually references.
+#
 # - First column is the git repo name
-# - Second column is the subdirectory of the repo to symlink into the
+# - Second column is the subdirectory of the repo to copy into the
 #   docs directory
 # - Third column is the reference (branch/tag/commit) to checkout
 
@@ -16,7 +20,6 @@ cord-tester                  /        master
 ofagent-go                   /        master
 openolt                      /        master
 voltctl                      /        master
-voltha-go                    /        master
 voltha-openolt-adapter       /        master
 voltha-openonu-adapter-go    /        master
 voltha-protos                /        master

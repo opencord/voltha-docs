@@ -45,14 +45,10 @@ else
 endif
 
 # Other repos with documentation to include.
-# edit the `git_refs` file with the commit/tag/branch that you want to use
+# edit the `git_refs` file with the commit/tag/branch that you want to use.
+# The list below must mirror git_refs; it is used for clean/freeze/lint only.
+# Cloning and copying is done by scripts/fetch-external-docs.sh.
 OTHER_REPO_DOCS ?= bbsim ofagent-go openolt voltctl voltha-openolt-adapter voltha-openonu-adapter-go voltha-protos device-management-interface voltha-helm-charts voltha-system-tests cord-tester
-
-ifdef NO_OTHER_REPO_DOCS
-  # Inhibit pulling in external repos.
-  # python 3.10+ patching not supported by all repos yet.
-  OTHER_REPO_DOCS := $(null)
-endif
 
 # Static docs, built by other means (usually robot framework)
 STATIC_DOCS    := _static/voltha-system-tests _static/cord-tester
@@ -109,7 +105,7 @@ test-all : test
 # [TODO] Create repo:onf-make/makefiles/lint/mdl
 # -----------------------------------------------------------------------
 LINT_STYLE ?= mdl_strict.rb
-md-lint: | $(OTHER_REPO_DOCS)
+md-lint: | prep
 	@echo "markdownlint(mdl) version: `mdl --version`"
 	@echo "style config:"
 	@echo "---"
@@ -128,9 +124,6 @@ clean-all sterile :: clean
 repos:
 	mkdir repos
 
-# build directory paths in repos/* to perform 'git clone <repo>' into
-CHECKOUT_REPOS   = $(foreach repo,$(OTHER_REPO_DOCS),repos/$(repo))
-
 # Host holding the git server
 REPO_HOST       ?= https://github.com/opencord
 
@@ -138,40 +131,20 @@ REPO_HOST       ?= https://github.com/opencord
 # pre-populate it under repos/ with the specific commit to being validated
 SKIP_CHECKOUT   ?=
 
-# clone (only if doesn't exist)
-$(CHECKOUT_REPOS): | repos
-	if [ ! -d '$@' ] ;\
-	  then git clone $(REPO_HOST)/$(@F) $@ ;\
-	fi
-
 ## -----------------------------------------------------------------------
-## Intent: checkout correct ref if not under test, then copy
-##         subdirectories into main docs dir
+## Intent: Stage external repos (./<repo>/) and robot docs (_static/)
+##         so sphinx can find them. Same script Read the Docs runs as
+##         its pre_build job - see .readthedocs.yaml.
 ## -----------------------------------------------------------------------
-$(OTHER_REPO_DOCS): | $(CHECKOUT_REPOS)
-	if [ "$(SKIP_CHECKOUT)" != "$@" ] ;\
-	  then GIT_REF=`grep '^$@ ' git_refs | awk '{print $$3}'` ;\
-	  cd "repos/$@" && git checkout $$GIT_REF ;\
-	fi
-	GIT_SUBDIR=`grep '^$@ ' git_refs | awk '{print $$2}'` ;\
-	cp -r repos/$(@)$$GIT_SUBDIR $@ ;\
-
-# Build Robot documentation in voltha-system-tests and copy it into _static.
-_static/voltha-system-tests: | $(OTHER_REPO_DOCS)
-	make -C voltha-system-tests gendocs
-	mkdir -p $@
-	cp -r voltha-system-tests/gendocs/* $@
-
-# Build Robot documentation in cord-tester and copy it into _static.
-_static/cord-tester: | $(OTHER_REPO_DOCS)
-	make -C cord-tester gendocs
-	mkdir -p $@
-	cp -r cord-tester/gendocs/* $@
+prep: $(venv-activate-script)
+	$(activate) \
+	 && REPO_HOST="$(REPO_HOST)" SKIP_CHECKOUT="$(SKIP_CHECKOUT)" PYTHON=python \
+	    ./scripts/fetch-external-docs.sh
 
 ## -----------------------------------------------------------------------
 ## Intent: Build docs for the current branch
 ## -----------------------------------------------------------------------
-docs: $(venv-activate-script) Makefile | prep $(OTHER_REPO_DOCS)
+docs: $(venv-activate-script) Makefile | prep
 	$(activate) && sphinx-build "$(SOURCEDIR)" "$(BUILDDIR)/$(BRANCH)" $(SPHINXOPTS)
 ifeq ($(BRANCH),master)
 	cp "$(SOURCEDIR)/_templates/meta_refresh.html" "$(BUILDDIR)/index.html"
@@ -188,19 +161,6 @@ freeze: repos
 	    printf "%-24s %-8s %-40s\n" $$repo $$GIT_SUBDIR $$HEAD_SHA ;\
 	  cd ../.. ;\
 	done
-
-## -----------------------------------------------------------------------
-## Intent: build multiple versions
-## -----------------------------------------------------------------------
-multiversion: $(venv-activate-script) Makefile | prep $(OTHER_REPO_DOCS)
-	$(activate)\
- && sphinx-multiversion "$(SOURCEDIR)" "$(BUILDDIR)/multiversion" $(SPHINXOPTS)
-	cp "$(SOURCEDIR)/_templates/meta_refresh.html" "$(BUILDDIR)/multiversion/index.html"
-
-## -----------------------------------------------------------------------
-## Intent: used in sphinx-multiversion to properly link
-## -----------------------------------------------------------------------
-prep: | $(OTHER_REPO_DOCS) $(STATIC_DOCS)
 
 ## -----------------------------------------------------------------------
 ## Intent: Display makefile target help
