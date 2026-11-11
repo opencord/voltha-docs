@@ -22,7 +22,7 @@ jobs:
     # Mirrors the values previously defined for the 'sync-dir' job in
     # ci-management/jjb/repos/voltha-docs.yaml
     env:
-      BUILD_OUTPUT_PATH: "_build/multiversion/"
+      BUILD_OUTPUT_PATH: "_build/"
       SYNC_TARGET_USER: "jenkins"
       SYNC_TARGET_SERVER: "static.lfbroadband.org"
       SYNC_TARGET_PATH: "/srv/sites/docs.voltha.org/"
@@ -31,10 +31,6 @@ jobs:
       - name: Checkout repository
         # yamllint disable-line rule:line-length
         uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
-        with:
-          # Full history, branches and tags are required by
-          # sphinx-multiversion to build every documented version
-          fetch-depth: 0
 
       - name: Configure Python
         # yamllint disable-line rule:line-length
@@ -45,13 +41,14 @@ jobs:
       - name: Install libenchant
         run: |
           sudo apt update
-          sudo apt install -y libenchant-2-2 python3-virtualenv
+          sudo apt install -y libenchant-2-2
 
-      - name: Build multiversion documentation
+      - name: Build documentation
         env:
-          # Makefile uses GERRIT_BRANCH to identify the current branch
-          GERRIT_BRANCH: ${{ github.ref_name }}
-        run: make multiversion
+          # Publish under _build/master/ with a root redirect, matching the
+          # layout the former sphinx-multiversion build produced.
+          GERRIT_BRANCH: master
+        run: make docs
 
       - name: Configure SSH access to docs server
         env:

@@ -1,0 +1,44 @@
+---
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 Linux Foundation Broadband Contributors
+#
+# Read the Docs configuration file
+# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+#
+# Build sequence on RTD:
+#   1. checkout this repo (RTD)
+#   2. apt install libenchant (sphinxcontrib.spelling)
+#   3. pip install -r requirements.txt (RTD)
+#   4. pre_build: scripts/fetch-external-docs.sh
+#        - clone the repos listed in git_refs into ./<repo>/
+#        - generate Robot Framework docs into _static/
+#   5. sphinx-build (RTD)
+#
+# Versions: RTD builds one copy of the docs per activated branch/tag and
+# provides the version switcher, replacing the former sphinx-multiversion
+# based `make multiversion` flow.
+
+version: 2
+
+build:
+  os: ubuntu-24.04
+  tools:
+    # matches .python-version and the known-good CI build; bump separately
+    python: "3.10"
+  apt_packages:
+    - libenchant-2-2
+  jobs:
+    pre_build:
+      - scripts/fetch-external-docs.sh
+
+sphinx:
+  configuration: conf.py
+  # The tree currently emits ~80 pre-existing warnings (undefined labels,
+  # missing howto/release docs, table widths). Enable once they are fixed.
+  fail_on_warning: false
+
+python:
+  install:
+    - requirements: requirements.txt
+
+# [EOF]

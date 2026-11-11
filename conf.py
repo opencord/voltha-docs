@@ -75,7 +75,9 @@ release = version
 #
 # needs_sphinx = '1.0'
 
-# make all warnings errors
+# NOTE: Sphinx has no `warning_is_error` config option; the line below has
+# never had any effect. Warnings-as-errors is controlled by `sphinx-build -W`
+# (or `sphinx.fail_on_warning` in .readthedocs.yaml).
 warning_is_error = True
 
 # Add any Sphinx extension module names here, as strings. They can be
@@ -91,7 +93,6 @@ extensions = [
     "sphinx.ext.mathjax",
     "sphinx.ext.todo",
     "sphinxcontrib.spelling",
-    "sphinx_multiversion",
     "sphinx.ext.intersphinx",
     "sphinxcontrib.openapi",
 ]
@@ -112,26 +113,6 @@ extensions = [
 spelling_word_list_filename = [
     "dict.txt",
 ]
-
-# sphinx-multiversion prep, run in each versioned source directory
-prep_commands = [
-    "ln -sf _root_/repos _target_/repos",
-    "make prep",
-]
-
-# don't include tags
-# smv_tag_whitelist = None
-# smv_tag_whitelist = disabled^ # Was = None
-smv_tag_whitelist = "disabled_a^"  # Was = None
-
-# Exclude voltha-2.4 and voltha-2.5: their Makefiles clone the kind-voltha
-# repository which no longer exists, causing multiversion builds to fail.
-# All other voltha-* branches do not reference kind-voltha and build cleanly.
-# smv_branch_whitelist = r"^(master|voltha-2\.(?!4$|5$)\d.*)$"
-smv_branch_whitelist = r"^(master)$"
-
-# include all remote branches
-smv_remote_whitelist = r"^.*$"
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
