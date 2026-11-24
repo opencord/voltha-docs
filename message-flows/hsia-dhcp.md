@@ -222,7 +222,6 @@ sequenceDiagram
     VOLTHA->>OLT: OnuPacketOut
     OLT->>ONU: DHCPACK
     ONU->>RG: DHCPACK
-
 ```
 
 ### Step description (part 3)
