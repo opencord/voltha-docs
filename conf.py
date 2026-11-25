@@ -75,16 +75,11 @@ release = version
 #
 # needs_sphinx = '1.0'
 
-# NOTE: Sphinx has no `warning_is_error` config option; the line below has
-# never had any effect. Warnings-as-errors is controlled by `sphinx-build -W`
-# (or `sphinx.fail_on_warning` in .readthedocs.yaml).
-warning_is_error = True
-
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    "recommonmark",
+    "myst_parser",
     "sphinx.ext.coverage",
     "sphinx.ext.extlinks",
     "sphinx.ext.graphviz",
@@ -94,6 +89,7 @@ extensions = [
     "sphinx.ext.todo",
     "sphinxcontrib.spelling",
     "sphinx.ext.intersphinx",
+    "sphinxcontrib.mermaid",
     "sphinxcontrib.openapi",
 ]
 
@@ -120,8 +116,13 @@ templates_path = ["_templates"]
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-# source_suffix = ['.rst', '.md']
-source_suffix = [".rst", ".md"]
+source_suffix = {
+    ".rst": "restructuredtext",
+    ".md": "markdown",
+}
+
+# Render ```mermaid fenced blocks in Markdown through sphinxcontrib.mermaid
+myst_fence_as_directive = ["mermaid"]
 
 # The master toctree document.
 master_doc = "index"
@@ -288,27 +289,3 @@ extlinks = {
 # -- Options for todo extension ----------------------------------------------
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
-
-# -- Configure recommonmark to use AutoStructify -----------------------------
-# Docs: https://recommonmark.readthedocs.io/en/latest/auto_structify.html
-
-import recommonmark
-from recommonmark.transform import AutoStructify
-
-github_doc_root = "https://github.com/opencord/voltha-docs"
-
-
-def setup(app):
-
-    app.add_css_file("css/rtd_theme_mods.css")
-
-    app.add_config_value(
-        "recommonmark_config",
-        {
-            "url_resolver": lambda url: github_doc_root + url,
-            "auto_toc_tree_section": "Contents",
-        },
-        True,
-    )
-
-    app.add_transform(AutoStructify)
